@@ -3,29 +3,29 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: @padding-xs 0;
+  padding: $padding-xs 0;
   
   > div {
     width: 300px;
     text-align: center;
-    margin: @margin-small;
+    margin: $margin-small;
     
-    @media screen and (min-width: @medium) {
-      margin: @margin;
+    @media screen and (min-width: $medium) {
+      margin: $margin;
     }
   }
   
   i {
-    .large-icon();
+    @include large-icon();
   }
   
   h2 {
-    .huge();
-    margin-bottom: @padding-small;
+    @include huge();
+    margin-bottom: $padding-small;
   }
   
   .text-wrapper {
-    margin-bottom: @padding-small;
+    margin-bottom: $padding-small;
     
     p {
       line-height: 1.5em;
@@ -35,11 +35,11 @@
   .mobile {
     
     i {
-      .font-size(35);
+      @include font-size(35);
     }
   }
   
-  @media screen and (min-width: @medium){
+  @media screen and (min-width: $medium){
     flex-direction: row;
   }
 }

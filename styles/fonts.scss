@@ -1,0 +1,80 @@
+/* dimensioni font per titolazioni */
+
+%x-small-fancy{
+  @include font-size(13);
+}
+
+%small-fancy{
+  @include font-size(15);
+}
+
+%normal-fancy {
+  @include font-size(16);
+}
+
+%large-fancy{
+  @include font-size(18);
+}
+
+%very-large-fancy{
+  @include font-size(21);
+  line-height: 26px;
+}
+
+%huge-fancy {
+  @include font-size(32);
+  line-height: 32px;
+}
+
+/* dimensioni font per testo */
+%x-small {
+  @include font-size(10);
+  line-height: 15px;
+}
+
+%small {
+  @include font-size(11);
+  line-height: 16px;
+}
+
+%normal {
+  @include font-size(13);
+  line-height: 16px;
+}
+
+%large {
+  @include font-size(13.5);
+  line-height: 19px;
+}
+
+%very-large {
+  @include font-size(15);
+  line-height: 21px;
+}
+
+%huge {
+  @include font-size(25);
+  line-height: 38px;
+}
+
+/* dimensioni per icon font */
+
+%small-icon{
+  font-size: 16px;
+  line-height: 16px;
+}
+
+%normal-icon{
+  font-size: 20px;
+  line-height: 20px;
+}
+
+%medium-icon{  
+  font-size: 22px;
+  line-height: 22px;
+}
+
+%large-icon{
+  font-size: 30px;
+  line-height: 30px;
+}

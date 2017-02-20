@@ -14,8 +14,8 @@
 [type='url'],
 [type='color'],
 textarea {
-  .normal();
-  border: 1px solid @border-dark;
+  @extend %normal;
+  border: 1px solid $border-dark;
   border-radius: 0;
   box-shadow: none;
   line-height: normal;
@@ -28,7 +28,7 @@ textarea {
   &[readonly]{
     -moz-appearance: none;
   	background: transparent none repeat scroll 0 0;
-    background-color: @background-disabled;
+    background-color: $background-disabled;
     pointer-events: none;
   }
 }
@@ -38,7 +38,7 @@ input:not(.riTextBox){
   min-width: 100%;
   display: block;
     
-  @media screen and (min-width: @medium){
+  @media screen and (min-width: $medium){
     min-width: 400px;
     width: 400px;
   }
@@ -53,11 +53,11 @@ input[type="checkbox"] {
 
 select{
   cursor: pointer;
-  border: 1px solid @border-dark;
+  border: 1px solid $border-dark;
   padding: 5px 0 5px 5px;
   margin: 0;
   height: auto;
-  .normal();
+  @extend %normal;
   line-height: normal;
   border-radius: 0;
   background-color: #fff;
@@ -74,7 +74,7 @@ select{
     -moz-appearance: none;
     color:#000;
     background: transparent none repeat scroll 0 0;
-    background-color: @background-disabled;
+    background-color: $background-disabled;
     pointer-events: none;
     &::-ms-value {
       color:#000;
@@ -88,7 +88,7 @@ select{
     }
   }
   
-  @media screen and (min-width: @medium){
+  @media screen and (min-width: $medium){
     width: 400px;
   }
 }
@@ -109,7 +109,7 @@ select::-ms-expand {
         margin: 12px 0 0;
       }
       
-      @media screen and (min-width: @medium){
+      @media screen and (min-width: $medium){
         margin: 6px 0;
         
         &:last-of-type {
@@ -135,7 +135,7 @@ select::-ms-expand {
         margin: 12px 0 0;
       }
       
-      @media screen and (min-width: @medium){
+      @media screen and (min-width: $medium){
         margin: 6px 0;
         
         &:last-of-type {
@@ -171,7 +171,7 @@ select::-ms-expand {
 			&.rcDisabled:hover,
 			&.riTextBox[disabled],
 			&:disabled{
-				background-color: @background-disabled;
+				background-color: $background-disabled;
 				pointer-events: none;
 			}
 		}
@@ -183,7 +183,7 @@ select::-ms-expand {
 	-moz-appearance: none;
     color:#000;
 	background: transparent none repeat scroll 0 0;
-    background-color: @background-disabled;
+    background-color: $background-disabled;
 }
 
 
@@ -195,28 +195,28 @@ select::-ms-expand {
 /* griglia della form */
 
 .form-container{
-	margin-top: @padding-big;
-	margin-left: @padding-big;
+	margin-top: $padding-big;
+	margin-left: $padding-big;
 }
 
 .row {
   /* etichetta */
   .unibo-label {
     text-align: left;
-    margin: @margin-xs 0 0;
+    margin: $margin-xs 0 0;
     
     label {
-      .very-large();
+      @extend %very-large;
     }
 		
     .formHelp {
       font-weight: normal;
       margin-top: 5px;
-      color: @dark-gray;
-      .small();
+      color: $dark-gray;
+      @extend %small;
     }
     
-    @media screen and (min-width: @medium){
+    @media screen and (min-width: $medium){
       text-align: right;
       margin: 10px 0;
     }
@@ -224,20 +224,20 @@ select::-ms-expand {
 
   /* campi */
   .fields {
-    margin: 0 0 @margin-small 0;
+    margin: 0 0 $margin-small 0;
       
     .RadAutoCompleteBox_MetroTouch{
       font-size: 1em;
       font-weight: normal;
       max-width: 100%;
       
-      @media screen and (min-width: @medium){
+      @media screen and (min-width: $medium){
         max-width: auto;
       }
         
       .racDisabled {
         color: #000;
-        background-color: @background-disabled;
+        background-color: $background-disabled;
       }
     }
     
@@ -245,8 +245,8 @@ select::-ms-expand {
       font:inherit;
     }
     
-    @media screen and (min-width: @medium){
-      margin: @margin-xs 0;
+    @media screen and (min-width: $medium){
+      margin: $margin-xs 0;
     }
   }
   /* informazioni aggiuntive */
@@ -258,16 +258,16 @@ select::-ms-expand {
 
   /* note finali */
   .warning {
-    color: @dark-gray;
+    color: $dark-gray;
     margin-bottom: 0;
-    .small();
+    @extend %small;
     &:before{
       content: "\f071";
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
-      color: @base-font-color;
+      color: $base-font-color;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       margin-right: 3px;
@@ -282,19 +282,19 @@ select::-ms-expand {
     
     textarea:not(.riTextBox),
     input:not(.riTextBox) {
-      @media screen and (min-width: @medium){
+      @media screen and (min-width: $medium){
         min-width: 100%;
       }
     }
     
-    @media screen and (min-width: @medium){
+    @media screen and (min-width: $medium){
       width: 400px;
     }
   }
 
   /* campi in evidenza (sono quelli importanti e devono essere ben visibili) */
   .highlight {
-    .large();
+    @extend %large;
     font-weight: bold;
     margin-bottom: 0;
     min-width: 400px;
@@ -303,8 +303,8 @@ select::-ms-expand {
 
 .title-fieldset {
   margin-bottom: 0;
-  border-bottom: 1px solid @border-color;
-  padding-bottom: @padding-xs;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: $padding-xs;
 }
 
 /* popup */

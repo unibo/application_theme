@@ -19,7 +19,7 @@ header {
     top: 0px;
     width: 960px;
     
-    @media screen and (min-width: @medium){
+    @media screen and (min-width: $medium){
       background-size: auto 95%;
       padding: 35px 0px 35px 130px;
     }
@@ -42,16 +42,16 @@ header {
 
 .title-page {
   flex: none;
-  padding: @padding-small 0;
+  padding: $padding-small 0;
   display: block;
   width: 100%;
-  border-bottom: 1px solid @border-color;
+  border-bottom: 1px solid $border-color;
   
   h1{    
     font-size: 2em;
     margin-bottom: 0;
     float: left;
-    color: @primary;
+    color: $primary;
   }
   
   h2{
@@ -60,38 +60,38 @@ header {
   }
   
   .title {
-    .normal-fancy();
+    @extend %normal-fancy;
     margin-bottom: 0;
     float: left;
-    color: @base-font-color;
+    color: $base-font-color;
     text-decoration: none;
     font-weight: 300;
     line-height: 38px;
-    @media screen and (min-width: @medium){
-      .huge();
+    @media screen and (min-width: $medium){
+      @extend %huge;
     }
   }
   
   .home{
-    .very-large();
+    @extend %very-large;
   }
   
   .breadcrumbs{
     float: left;
-    margin: 0 @padding-xs;
-    .normal-fancy();
+    margin: 0 $padding-xs;
+    @extend %normal-fancy;
     line-height: 38px;
     
     .separator{
       
-      @media screen and (min-width: @medium){
-        margin-right: @padding-small;
-        margin-left: @padding-small;
+      @media screen and (min-width: $medium){
+        margin-right: $padding-small;
+        margin-left: $padding-small;
       }
     }
     
     a{
-      color: @base-font-color;
+      color: $base-font-color;
       text-decoration: none;
     }
   }
@@ -102,16 +102,16 @@ header {
   align-items: center;
   margin: 4px 0;
   
-  @media screen and (min-width: @medium){
+  @media screen and (min-width: $medium){
     float: right;
   }
   
   a {
     display: inline-block;
-    color: @base-font-color;
-    padding: @padding-xs;
+    color: $base-font-color;
+    padding: $padding-xs;
     text-decoration: none;
-    border: 1px solid @border-dark;
+    border: 1px solid $border-dark;
     position: relative;
     white-space: nowrap;
     max-width: 400px;
@@ -120,19 +120,19 @@ header {
     padding-right: 25px;
     
     &:hover{
-      border: 1px solid @medium-gray;
+      border: 1px solid $medium-gray;
     }
   }
   
   span{
-    padding: @padding-small;
+    padding: $padding-small;
   }
   
   .btn {
-    .only-icon();
+    @extend %only-icon;
     margin: 0;
     margin-top: -5px;
-    margin-left: @padding-small;
+    margin-left: $padding-small;
     position: absolute;
     top: 10px;
     right: 5px;

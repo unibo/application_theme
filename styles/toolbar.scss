@@ -1,6 +1,6 @@
 /* contenitore di pulsanti e azioni */
 .toolbar{
-	margin-bottom: @padding;
+	margin-bottom: $padding;
 	overflow: hidden;
 	
 	.export{
@@ -28,22 +28,22 @@
 	  	min-width: 165px;
 	  }
 	  select{
-	    background-color: @background-button;
+	    background-color: $background-button;
 	  }
 	  button{
-	    .btn-primary();
+	    @include btn-primary();
 	    padding: 0 7px;
 	    margin: 0;
-	    background-color: @red;
-	    border: 1px solid @red;
+	    background-color: $red;
+	    border: 1px solid $red;
 	  }
 	}
 
 	.filter{
 		float: left;
-		width: calc(~"100% - 36em");
+		width: calc(100% - 36em);
 		select{
-			background-color: @background-button;
+			background-color: $background-button;
 			max-width: 100%;
 		}
 	}
@@ -52,68 +52,68 @@
 /* toolbar bottom (della form) che contiene i pulsanti salva/annulla */
 
 .form-container + .toolbar{
-	margin-top: @padding-big;
-	margin-left: @padding-big;
+	margin-top: $padding-big;
+	margin-left: $padding-big;
 }
 
 
 .toolbar-request{
-	border: 1px solid @border-color;
-	margin-bottom: @padding-big;
+	border: 1px solid $border-color;
+	margin-bottom: $padding-big;
 
 	.info-container{
 		display: flex;
 		justify-content: space-between;
-		padding: @padding;
+		padding: $padding;
         flex-wrap: wrap;
       
 		p {
-			.large();
-			color: @base-font-color;
-			margin-bottom: @padding-small;
+			@include large();
+			color: $base-font-color;
+			margin-bottom: $padding-small;
 		}
 		strong {
-			margin-right: @padding-xs;
+			margin-right: $padding-xs;
 			font-weight: 600;
 		}
 		.stato-label {
-			.very-large();
+			@include very-large();
 			text-align: right;
 		}
-      @media screen and (min-width: @medium){
+      @media screen and (min-width: $medium){
         flex-wrap: nowrap;
       }
 	}
     .toolbar-info{
       min-width: 100%;
       
-      @media screen and (min-width: @medium){
+      @media screen and (min-width: $medium){
         min-width: 300px;
       }
     }
 	.button-container{
 		margin-bottom: 0;
-		padding: @padding;
+		padding: $padding;
 		padding-top: 0;
 	}
 	/* campi aggiuntivi */
 	.row {
-		padding: @padding-xs;
-		background-color: @background-disabled;
+		padding: $padding-xs;
+		background-color: $background-disabled;
 		margin-bottom: 0;
-		border-top: 1px dashed @border-dark;
+		border-top: 1px dashed $border-dark;
       
 		.btn-primary,
 		.btn{
-			margin-top: @padding-small;
+			margin-top: $padding-small;
 		}
 		+ .row {
 			border-top: none;
 			padding-top: 0;
 		}
 		+ .button-container{
-			padding-top: @padding;
-			border-top: 1px dashed @border-dark;
+			padding-top: $padding;
+			border-top: 1px dashed $border-dark;
 		}
 	}
 }

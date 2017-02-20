@@ -1,0 +1,25 @@
+/* settings */
+@import "variables.scss";
+@import "functions.scss";
+@import "fonts.scss";
+@import "base.scss";
+@import "grid.scss";
+@import "font-awesome/css/font-awesome.css";
+
+/* Foundation 6 without grid */
+//$import "foundation.css";
+
+/* elementi comuni */
+@import "form.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "buttons.scss";
+@import "table.scss";
+@import "unibo_login.scss";
+@import "secondary_info.scss";
+@import "main_menu.scss";
+@import "toolbar.scss";
+@import "actions.scss";
+@import "state.scss";
+@import "history.scss";
+@import "box_option.scss";

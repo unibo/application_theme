@@ -1,38 +1,38 @@
 .main-menu {
 	
   > li {
-    .small-fancy();
+    @include small-fancy();
     line-height: 28px;
-    border-bottom: 1px solid @border-dark;
+    border-bottom: 1px solid $border-dark;
     position: relative;
     font-weight: 400;
   }
   
   i {
-    margin-right: @margin-xs;
+    margin-right: $margin-xs;
   }
   
   a {
-    color: @base-font-color;
-    padding: @padding-xs @padding-xs @padding-xs @padding-small;
+    color: $base-font-color;
+    padding: $padding-xs $padding-xs $padding-xs $padding-small;
     text-decoration: none;
     display: block;
   }
   
   .selected {
     &:before {
-      color: @red;
+      color: $red;
     }
     
     > a {
       position: relative;
       font-weight: normal;
-      color: @red;
+      color: $red;
              
       &:before{
         content: "";
         width: 6px;
-        background-color: @red;
+        background-color: $red;
         position: absolute;
         height: 100%;
         top: 0;
@@ -41,24 +41,24 @@
     }
     
     > ul {
-      padding-bottom: @padding;
+      padding-bottom: $padding;
     }
     
     > li {
-      .x-small();
+      @include x-small();
       font-weight: normal;
       border-bottom: none;
       margin-left: 46px;
             
       a {
         padding: 0;
-        padding-bottom: @padding-small;
+        padding-bottom: $padding-small;
       }
     }
   }
 }
 
-@media screen and (max-width: @medium-max){
+@media screen and (max-width: $medium-max){
 
 .main-menu-icons {
   display: flex;
@@ -74,7 +74,7 @@
       &:before {
         height: 6px;
         width: 100%;
-        background-color: @red;
+        background-color: $red;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -87,7 +87,7 @@
   .text {
 	display: none;
     
-    @media screen and (min-width: @medium) {
+    @media screen and (min-width: $medium) {
       display: inline;
     }
   }

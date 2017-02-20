@@ -9,9 +9,9 @@
   th {
     color: #fff;
     font-weight: 400;
-    background-color: @dark-gray;
-    padding: @padding-xs @padding-small;
-    .x-small-fancy();
+    background-color: $dark-gray;
+    padding: $padding-xs $padding-small;
+    @include x-small-fancy();
     line-height: 20px;
     
     a {
@@ -28,7 +28,7 @@
     }
     
     &.sort-asc{
-      background-color: @primary;
+      background-color: $primary;
 	
       a:after {
       	content: "\f0de";
@@ -39,7 +39,7 @@
     }
     
     &.sort-desc{
-      background-color: @primary;
+      background-color: $primary;
       
       a:after{
         content: "\f0dd";
@@ -53,11 +53,11 @@
   td {
     vertical-align: middle;
     border-color: #fff;
-    padding: @padding-small;
+    padding: $padding-small;
     
     &.sort-desc,
     &.sort-asc {
-      background-color: @selected;
+      background-color: $selected;
     }
     
     .autorizzazioni {
@@ -68,28 +68,28 @@
   }
   
   tr:nth-child(even) td {
-    background-color: @background-menu;
+    background-color: $background-menu;
     
     &.sort-desc,
     &.sort-asc {
-      background-color: @selected;
+      background-color: $selected;
     }
   }
 
 	/* paginazione */
 
 	tr.grid-pager {
-		margin-top: @padding;
+		margin-top: $padding;
 		overflow: hidden;
 		td{
 			background-color: #fff;
 			padding: 0;
-			padding-top: @padding;
+			padding-top: $padding;
 		}
 		table:not(.pager-summary){
 			float: right;
 			td{
-				border: 1px solid @border-dark;
+				border: 1px solid $border-dark;
 				background-color: #fff;
 				padding: 0;
 				a,
@@ -98,11 +98,11 @@
 					display: inline-block;
 				}
 				a{
-					color: @base-font-color;
+					color: $base-font-color;
 					text-decoration: none;
 				}
 				span{
-					background-color: @red;
+					background-color: $red;
 					color: #fff;
 				}
 			}

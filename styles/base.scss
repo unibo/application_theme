@@ -86,6 +86,7 @@ video {
   padding: 0;
   vertical-align: baseline;
 }
+
 article,
 aside,
 details,
@@ -99,25 +100,31 @@ nav,
 section {
   display: block;
 }
+
 body {
-  color: black;
-  font-family: @base-font;
+  color: #000;
+  font-family: $base-font;
   font-size: 81.3%;
   height: 100%;
   line-height: 1;
 }
+
 ol {
   list-style: none;
 }
+
 ul {
   list-style: none;
 }
+
 blockquote {
   quotes: none;
 }
+
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -152,20 +159,20 @@ html {
 }
 
 main {
-  padding: @padding-xs 0;
+  padding: $padding-xs 0;
   
-  @media screen and (min-height: @medium){
-    padding: @padding 0;
+  @media screen and (min-height: $medium){
+    padding: $padding 0;
   }
   
   &.row.expanded {
-    padding: @padding 0 0 0;
+    padding: $padding 0 0 0;
   }
 }
 
 aside {
-  border-left: 1px solid @border-color;
-  background-color: @background-menu;		
+  border-left: 1px solid $border-color;
+  background-color: $background-menu;		
   display: flex;
   flex-direction: column;
 }
@@ -183,23 +190,23 @@ h6 {
   line-height: normal;
 }
 h1 {
-  .very-large-fancy();
+  @extend %very-large-fancy;
   margin-bottom: 0.7em;
 }
 h2 {
-  .large-fancy();
+  @extend %large-fancy;
   margin-bottom: 0.5em;
 }
 h3 {
-  .normal-fancy();
+  @extend %normal-fancy;
   margin-bottom: 0.3em;
 }
 h4 {
-  .small-fancy();
+  @extend %small-fancy;
   margin-bottom: 0.2em;
 }
 h5 {
-  .x-small-fancy();
+  @extend %x-small-fancy;
   margin-bottom: 0.1em;
 }
 h6 {
@@ -208,7 +215,7 @@ h6 {
   margin-bottom: 0;
 }
 p {
-  .normal();
+  @extend %normal;
   margin-bottom: 0.5em;
 }
 strong {
@@ -254,7 +261,7 @@ a {
 /*
 .is-closed,
 .is-opened{
-  color: @base-font-color;
+  color: $base-font-color;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
@@ -274,27 +281,27 @@ a {
 /* pagina di errore */
 .error-container{
   text-align: center;
-  margin-top: @padding*4;
+  margin-top: $padding*4;
   h1{
-    .huge();
+    @extend huge();
   }
   h2{
-    margin-bottom: @padding;
+    margin-bottom: $padding;
   }
   p{
-    margin-bottom: @padding;
-    color: @dark-gray;
+    margin-bottom: $padding;
+    color: $dark-gray;
   }
 }
 
 .warning-message{
   display: block;
-  margin: -@padding*2;
-  margin-bottom: @padding*2;
-  padding: @padding @padding*2;
-  background-color: @background-warning-message;
+  margin: -$padding*2;
+  margin-bottom: $padding*2;
+  padding: $padding $padding*2;
+  background-color: $background-warning-message;
   &::before{
-    margin-right: @padding/2;
+    margin-right: $padding/2;
     content: "\f06a";
     font: normal normal normal 14px/1 FontAwesome;
   }
@@ -310,13 +317,13 @@ body.popup{
     display: block;
     .label{
       text-align: left;
-      margin-bottom: @padding/2;
+      margin-bottom: $padding/2;
     }
   }
 
   /* fix tendina in scegli apparato */
   .RadDropDownList_Metro .rddlInner{
-    padding: @padding/2;
+    padding: $padding/2;
   }
   .RadDropDownList_Metro .rddlIcon{
     line-height: 2;
@@ -338,7 +345,7 @@ body form.popup{
 
 
 .RadWindow.rwRoundedCorner .rwTitleBar {
-    background-color: @dark-gray;
+    background-color: $dark-gray;
 }
 
 .RadWindow_Metro .rwTitleBar .rwTitleWrapper .rwTitle{

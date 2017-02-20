@@ -1,7 +1,7 @@
 /* Customized Grid taken from Foundation 6 CSS */
 
 .row {
-  max-width: @grid-max-width;
+  max-width: $grid-max-width;
   margin-right: auto;
   margin-left: auto; }
   .row::before, .row::after {
@@ -13,16 +13,16 @@
     padding-right: 0;
     padding-left: 0; }
   .row .row {
-    margin-right: -@grid-margin;
-    margin-left: -@grid-margin; }
-    @media print, screen and (min-width: @medium) {
+    margin-right: -$grid-margin;
+    margin-left: -$grid-margin; }
+    @media print, screen and (min-width: $medium) {
       .row .row {
-        margin-right: -@grid-margin;
-        margin-left: -@grid-margin; } }
-    @media print, screen and (min-width: @large) {
+        margin-right: -$grid-margin;
+        margin-left: -$grid-margin; } }
+    @media print, screen and (min-width: $large) {
       .row .row {
-        margin-right: -@grid-margin;
-        margin-left: -@grid-margin; } }
+        margin-right: -$grid-margin;
+        margin-left: -$grid-margin; } }
     .row .row.collapse {
       margin-right: 0;
       margin-left: 0; }
@@ -35,8 +35,8 @@
 .column, .columns {
   width: 100%;
   float: left;
-  padding-right: @grid-margin;
-  padding-left: @grid-margin; }
+  padding-right: $grid-margin;
+  padding-left: $grid-margin; }
   .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
     float: right; }
   .column.end:last-child:last-child, .end.columns:last-child:last-child {
@@ -306,8 +306,8 @@
 
 .small-uncollapse > .column,
 .small-uncollapse > .columns {
-  padding-right: @grid-margin;
-  padding-left: @grid-margin; }
+  padding-right: $grid-margin;
+  padding-left: $grid-margin; }
 
 // Unibo: added to remove padding inside column
 .small-collapse.column,
@@ -335,7 +335,7 @@
   margin-right: 0;
   margin-left: 0; }
 
-@media print, screen and (min-width: @medium) {
+@media print, screen and (min-width: $medium) {
   .medium-1 {
     width: 8.33333%; }
   .medium-push-1 {
@@ -532,8 +532,8 @@
     margin-right: 0;
     margin-left: 0; }
   .medium-uncollapse > .column, .medium-uncollapse > .columns {
-    padding-right: @grid-margin;
-    padding-left: @grid-margin; }
+    padding-right: $grid-margin;
+    padding-left: $grid-margin; }
   .medium-centered {
     margin-right: auto;
     margin-left: auto; }
@@ -548,7 +548,7 @@
     margin-right: 0;
     margin-left: 0; } }
 
-@media print, screen and (min-width: @large) {
+@media print, screen and (min-width: $large) {
   .large-1 {
     width: 8.33333%; }
   .large-push-1 {
@@ -745,8 +745,8 @@
     margin-right: 0;
     margin-left: 0; }
   .large-uncollapse > .column, .large-uncollapse > .columns {
-    padding-right: @grid-margin;
-    padding-left: @grid-margin; }
+    padding-right: $grid-margin;
+    padding-left: $grid-margin; }
   .large-centered {
     margin-right: auto;
     margin-left: auto; }
@@ -762,6 +762,6 @@
     margin-left: 0; } }
 
 .column-block {
-  margin-bottom: @grid-total-gutter; }
+  margin-bottom: $grid-total-gutter; }
   .column-block > :last-child {
     margin-bottom: 0; }

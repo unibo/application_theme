@@ -3,7 +3,7 @@
 .actions{
   display: flex;
   justify-content: center;
-  padding: @padding;
+  padding: $padding;
   flex-flow: column;
   align-items: center;
   .btn-primary,

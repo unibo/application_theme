@@ -1,12 +1,12 @@
 .history{
-  margin-top: @padding-small;
+  margin-top: $padding-small;
 
   .history-info{
-    margin-left: @padding-small;
-    margin-right: @padding-small;
+    margin-left: $padding-small;
+    margin-right: $padding-small;
     
     p {
-      .large();
+      @include large();
       &:before{
 		content: "";
 		display: inline-block;
@@ -28,17 +28,17 @@
   }
 
   h2 {
-    color: @base-font-color;
+    color: $base-font-color;
     margin-bottom: 0;
     display: block;
     text-decoration: none;
-    padding: @padding-small;
+    padding: $padding-small;
     background-color: #eee;
       
     &:before {
       content: "\f017";
       font: normal normal normal 14px/1 FontAwesome;
-      margin-right: @padding-small;
+      margin-right: $padding-small;
     }
   }
     
@@ -48,23 +48,23 @@
   
   .grid-history {  
     width: 100%;
-    margin-top: @padding;
+    margin-top: $padding;
     
 		th {
 		  background-color: #fff;
-		  color: @base-font-color;
+		  color: $base-font-color;
 		  border: none;
-		  border-bottom: 1px solid @border-color;
+		  border-bottom: 1px solid $border-color;
 		  font-weight: 500;
-		  padding: @padding-xs;
-          .x-small-fancy();
+		  padding: $padding-xs;
+          @include x-small-fancy();
           line-height: 20px;
 		}
 
 		td {
           vertical-align: middle;
           border-color: #fff;
-		  padding: @padding-small @padding-xs;
+		  padding: $padding-small $padding-xs;
 		}
 
 		table {
@@ -78,7 +78,7 @@
 
 		tr {
           &:nth-child(even) td {
-            background-color: @background-menu;
+            background-color: $background-menu;
           }
           
           &:after {  /* clearing float */

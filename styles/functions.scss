@@ -1,0 +1,51 @@
+// Utility function
+// Here live all the utilities mixin that are useful
+// to avoid to type in all the prefixes, etc
+
+// Zoomable baseline grid
+// type size presets
+
+
+@mixin font-size($size) {
+  @if $size < $font-size {
+    font-size: $size / $em;
+    line-height: $line / ($font-size + ($font-size - $size));
+  }
+  @if $size == $font-size {
+    font-size: $size / $em;
+    line-height: $line / ($font-size + ($font-size - $size));
+  }
+  @else if $size > $font-size {
+    font-size: $size / $em;
+  }
+}
+
+
+@mixin box-sizing($sizing) {
+  -webkit-box-sizing: $sizing;
+     -moz-box-sizing: $sizing;
+       -o-box-sizing: $sizing;
+          box-sizing: $sizing;
+}
+
+@mixin transition($property, $duration) {
+          transition: $arguments;
+     -moz-transition: $arguments;
+  -webkit-transition: $arguments;
+       -o-transition: $arguments;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin box-shadow ($border, $background-color) {
+		 box-shadow: $arguments;
+    -moz-box-shadow: $arguments;
+ -webkit-box-shadow: $arguments;
+       -o-boxshadow: $arguments;
+}
+
+
+// TODO: mettere border-radius, etc
