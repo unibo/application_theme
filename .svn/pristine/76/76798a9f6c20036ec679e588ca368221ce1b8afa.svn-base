@@ -1,0 +1,360 @@
+/* elementi generali */
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  .normal();
+  border: 1px solid @border-dark;
+  border-radius: 0;
+  box-shadow: none;
+  line-height: normal;
+  padding: 6px 5px;
+  margin: 0;
+  height: auto;
+  
+  &[disabled],
+  &[readonly="readonly"],
+  &[readonly]{
+    -moz-appearance: none;
+  	background: transparent none repeat scroll 0 0;
+    background-color: @background-disabled;
+    pointer-events: none;
+  }
+}
+
+input:not(.riTextBox){
+  width: 100%;
+  min-width: 100%;
+  display: block;
+    
+  @media screen and (min-width: @medium){
+    min-width: 400px;
+    width: 400px;
+  }
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	width: auto;
+	min-width: 0px;
+	display: inline-block;
+}
+
+select{
+  cursor: pointer;
+  border: 1px solid @border-dark;
+  padding: 5px 0 5px 5px;
+  margin: 0;
+  height: auto;
+  .normal();
+  line-height: normal;
+  border-radius: 0;
+  background-color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('../img/arrow.png');
+  background-size: 15px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  min-height: 30px;
+  width: 100%;
+   
+  &:disabled {
+    -moz-appearance: none;
+    color:#000;
+    background: transparent none repeat scroll 0 0;
+    background-color: @background-disabled;
+    pointer-events: none;
+    &::-ms-value {
+      color:#000;
+    }
+  }
+  &.field-diff {
+    color:#e60000;
+    
+    &::-ms-value {
+      color:#e60000;
+    }
+  }
+  
+  @media screen and (min-width: @medium){
+    width: 400px;
+  }
+}
+
+/* nascondo freccina select in ie */
+select::-ms-expand {
+    display: none;
+}
+
+.radio-container {
+  
+  .fields {
+    .columns,
+    .column {
+      margin: 12px 0;
+      
+      &:last-of-type {
+        margin: 12px 0 0;
+      }
+      
+      @media screen and (min-width: @medium){
+        margin: 6px 0;
+        
+        &:last-of-type {
+          margin: 6px 0;
+        }
+      }
+    }
+  }
+  
+  input {
+    margin: 0;
+  }
+}
+
+.checkboxlist-container {
+  
+  .fields {
+    .columns,
+    .column {
+      margin: 12px 0;
+      
+      &:last-of-type {
+        margin: 12px 0 0;
+      }
+      
+      @media screen and (min-width: @medium){
+        margin: 6px 0;
+        
+        &:last-of-type {
+          margin: 6px 0;
+        }
+      }
+    }
+  }
+  
+  input {
+    margin: 0;
+  }
+}
+
+/* calendario */
+
+.RadPicker{
+	td{
+		background-color: transparent;
+		input{
+			border-right: none;
+			background-color: #fff;
+		}
+		.rcCalPopup,
+		.rcCalPopup:hover{
+			border-left: none;
+			background-color: #fff;
+		}
+		.rcCalPopup,
+		input{
+			/* disabilitato input e calendario popup */
+			&.rcDisabled,
+			&.rcDisabled:hover,
+			&.riTextBox[disabled],
+			&:disabled{
+				background-color: @background-disabled;
+				pointer-events: none;
+			}
+		}
+	}
+}
+
+/* disabilitato */
+.aspNetDisabled td{
+	-moz-appearance: none;
+    color:#000;
+	background: transparent none repeat scroll 0 0;
+    background-color: @background-disabled;
+}
+
+
+
+.imei, .phone {
+    white-space: nowrap;
+}
+
+/* griglia della form */
+
+.form-container{
+	margin-top: @padding-big;
+	margin-left: @padding-big;
+}
+
+.row {
+  /* etichetta */
+  .unibo-label {
+    text-align: left;
+    margin: @margin-xs 0 0;
+    
+    label {
+      .very-large();
+    }
+		
+    .formHelp {
+      font-weight: normal;
+      margin-top: 5px;
+      color: @dark-gray;
+      .small();
+    }
+    
+    @media screen and (min-width: @medium){
+      text-align: right;
+      margin: 10px 0;
+    }
+  }
+
+  /* campi */
+  .fields {
+    margin: 0 0 @margin-small 0;
+      
+    .RadAutoCompleteBox_MetroTouch{
+      font-size: 1em;
+      font-weight: normal;
+      max-width: 100%;
+      
+      @media screen and (min-width: @medium){
+        max-width: auto;
+      }
+        
+      .racDisabled {
+        color: #000;
+        background-color: @background-disabled;
+      }
+    }
+    
+    textarea{
+      font:inherit;
+    }
+    
+    @media screen and (min-width: @medium){
+      margin: @margin-xs 0;
+    }
+  }
+  /* informazioni aggiuntive */
+  .info,
+  .warning {
+    margin-top: 5px;
+    max-width: 400px;
+  }
+
+  /* note finali */
+  .warning {
+    color: @dark-gray;
+    margin-bottom: 0;
+    .small();
+    &:before{
+      content: "\f071";
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      color: @base-font-color;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      margin-right: 3px;
+    }
+  }
+
+  /* errore */
+  .input-validation-error {
+    background-color: #FEF3F2;
+    border: 1px solid #bb2e29;
+    padding: 0.5em;
+    
+    textarea:not(.riTextBox),
+    input:not(.riTextBox) {
+      @media screen and (min-width: @medium){
+        min-width: 100%;
+      }
+    }
+    
+    @media screen and (min-width: @medium){
+      width: 400px;
+    }
+  }
+
+  /* campi in evidenza (sono quelli importanti e devono essere ben visibili) */
+  .highlight {
+    .large();
+    font-weight: bold;
+    margin-bottom: 0;
+    min-width: 400px;
+  }
+}
+
+.title-fieldset {
+  margin-bottom: 0;
+  border-bottom: 1px solid @border-color;
+  padding-bottom: @padding-xs;
+}
+
+/* popup */
+body.popup {
+    select,
+    textarea,
+    input {
+        &:not(.riTextBox) {
+            width: 380px;
+            min-width: 380px;
+        }
+    }
+}
+
+/* telerik */
+
+/* TODO: Spostare nel posto giusto */
+.RadAutoCompleteBox input.racInput {
+    /*min-width: 10px;*/
+}
+.RadInput_MetroTouch.riSingle .riTextBox {
+    font-size: 14px;
+}
+.RadPicker_MetroTouch td a.rcCalPopup  {
+    margin: 0 -1px;
+}
+.RadPicker_MetroTouch .rcTable .rcDisabled {
+    opacity: 1;
+}
+/* --- */
+
+.racItem table.results,
+.rddlItem table.results,
+.rsbListItem table.results  {
+    width:100%;
+    margin: 5px 0 5px 0;
+    th {
+        background-color: inherit;
+        border: none;
+        font-weight: bold;
+        text-align: left;
+        padding: 0;
+        font-size:0.9em;
+    }
+
+    td {
+        background-color: inherit;
+        border: none;
+        padding: 0;
+        font-size:0.8em;
+    }
+}
+

@@ -1,0 +1,165 @@
+/* pulsanti */
+
+.btn-hover-bg(@bgcolor){
+  background-color: darken(@bgcolor, 10%);
+}
+
+.btn {
+  .normal();
+  border: 1px solid @border-dark;
+  background-color: @background-button;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: @padding-small;
+  padding: 7px 12px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+  color: @base-font-color;
+  margin-right: @padding-xs;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  
+  &:hover {
+    .btn-hover-bg(@background-button);
+    color: @base-font-color;
+  }
+}
+
+.btn-w-icon{
+  &:before{
+    content: "";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: @padding-small;
+  }
+}
+
+.only-icon{
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  &:before{
+    margin-right: 0;
+  }
+}
+
+.btn-primary {
+  .btn();
+  background-color: @primary;
+  color: #fff;
+  border: 1px solid @primary;
+  
+  &:hover {
+    .btn-hover-bg(@primary);
+    color: #fff;
+  }
+}
+
+.btn-alert {
+  .btn();
+  background-color: @error;
+  border: 1px solid @error;
+  color: #fff;
+  
+  &:hover {
+    .btn-hover-bg(@error);
+    color: #fff;
+  }
+}
+
+.btn-success {
+  .btn();
+  background-color: @success;
+  border: 1px solid @success;
+  color: #fff;
+  
+  &:hover {
+    .btn-hover-bg(@success);
+    color: #fff;
+  }
+}
+
+.btn-disabled {
+  .btn();
+  color: @medium-gray;
+  pointer-events:none;
+  
+  &:hover {
+    color: @medium-gray;
+  }
+}
+
+.editable{
+  .btn{
+    .only-icon();
+    margin: 0;
+    padding: 6px 8px;
+    float: right;
+  }
+  
+  &:hover {
+    .btn-hover-bg(@background-button);
+    color: @base-font-color;
+  }
+}
+
+.add{
+  .btn-w-icon();
+  &:before{
+    content: "\f067";
+  }
+}
+
+.export{
+  .btn-w-icon();
+  &:before{
+    content: "\f019";
+  }
+}
+
+.edit{
+  .btn-w-icon();
+  &:before{
+    content: "\f040";
+  }
+}
+
+.remove{
+  .btn-w-icon();
+  &:before{
+    content: "\f05e";
+  }
+}
+
+.exchange{
+  .btn-w-icon();
+  &:before{
+    content: "\f0ec";
+  }
+}
+
+.log{
+  .btn-w-icon();
+  &:before{
+    content: "\f017";
+  }
+}
+
+/* Link */
+
+.link-box {
+  background-position: 95% 5%;
+  background-size: 36px auto;
+  flex: 1 1 40%;
+}
+.link-box h3 {
+  display: block;
+}
+.link-box p {
+  display: block;
+}

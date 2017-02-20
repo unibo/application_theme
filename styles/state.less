@@ -1,0 +1,102 @@
+/* progress in tabella richieste */
+
+.stato{
+	p{
+		margin-bottom: 0;
+	}	
+}
+.stato-label{
+	.small();
+	text-transform: capitalize;
+	margin-bottom: @padding-xs;
+	color: @dark-gray;
+}
+.stato-value{
+	width: 100%;
+	height: 10px;
+	border: 1px solid @border-dark;
+	border-radius: 5px;
+	/*background-color: #f9f9f9;*/
+    background-color: #ffffff;
+	position: relative;
+		&:before{
+		content: "";
+		display: inline-block;
+		position: absolute;
+		height: 8px;
+	}
+}
+
+.stato-nuovo{
+	.stato-value();
+	&:before{
+		background-color: @pending;
+		width: 0;
+		border-radius: 5px 0 0 5px;
+	}
+}
+
+.stato-inserito{
+	.stato-value();
+	&:before{
+		background-color: @light-gray;
+		width: 10%;
+		border-radius: 5px 0 0 5px;
+	}
+}
+.stato-rifiutato{
+	.stato-value();
+	&:before{
+		background-color: @rejected;
+		width: 100%;
+		border-radius: 5px 5px 5px 5px;
+	}
+}	
+.stato-accettato{
+	.stato-value();
+	&:before{
+		background-color: @pending;
+		width: 25%;
+		border-radius: 5px 0 0 5px;
+	}
+}
+.stato-ordinato{
+	.stato-value();
+	&:before{
+		background-color: @pending;
+		width: 50%;
+		border-radius: 5px 0 0 5px;
+	}
+}
+.stato-ricevuto{
+	.stato-value();
+	&:before{
+		background-color: @pending;
+		width: 75%;
+		border-radius: 5px 0 0 5px;
+	}
+}
+.stato-consegnato{
+	.stato-value();
+	&:before{
+		background-color: @success;
+		width: 100%;
+		border-radius: 5px 5px 5px 5px;
+	}
+}
+.stato-richiesto{
+	.stato-value();
+	&:before{
+		background-color: @pending;
+		width: 50%;
+		border-radius: 5px 0 0 5px;
+	}
+}
+.stato-completato{
+	.stato-value();
+	&:before{
+		background-color: @success;
+		width: 100%;
+		border-radius: 5px 5px 5px 5px;
+	}
+}

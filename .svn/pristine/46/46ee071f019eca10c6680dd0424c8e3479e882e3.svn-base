@@ -1,0 +1,128 @@
+.unibo-login {
+  background-color: @base-font-color;
+  box-shadow: 5px 1px 5px #cccccc;
+  color: white;
+  flex: none;
+  line-height: 32px;
+  padding: 0px;
+  text-align: right;
+  
+  a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    
+    &:hover{
+      background-color: white;
+      color: @base-font-color;
+    }
+  }
+  
+  span{
+    display: inline-block;
+  }
+  
+  img {
+    height: 18px;
+    vertical-align: text-top;
+    width: 18px;
+  }
+  
+  .is-opened,
+  .is-closed{
+    border-left: 1px solid @medium-gray;
+    padding: 0 @padding-small;
+    display: inline-block;
+    
+    &::after{
+      content: "";
+      border: 4px solid transparent;
+      border-top: 4px solid #fff;
+      float: right;
+      margin-top: 14px;
+      margin-left: 5px;
+    }
+    
+    &:hover:after{
+      border-top: 4px solid @base-font-color;
+    }
+    
+    + ul{
+      position: absolute;
+      background-color: #fff;
+      color: @base-font-color;
+      right: 0;
+      box-shadow: 3px 3px 6px -4px rgba(0,0,0,0.3),-3px 3px 6px -4px rgba(0,0,0,0.3);
+      border: 1px solid @light-gray;
+      border-top: none;
+      z-index:100;
+      
+      li{
+        line-height: normal;
+        white-space: nowrap;
+        text-align: left;
+        /*border-top: 1px solid @border-dark;*/
+        
+        &:first-child{
+          border-top: none;
+        }
+      }
+      
+      a{
+        padding: 10px 2em 10px @padding;
+        color: @base-font-color;
+        display: block;
+        
+        &:hover {
+          background-color: @background-button;
+        }
+      }
+    }
+  }
+  
+  .is-closed{
+    + ul{
+      display: none;
+    }
+  }
+  
+  .is-opened{
+    background-color: #fff;
+    color: @base-font-color;
+    
+    &::after{
+      border-top: 4px solid @base-font-color;
+    }
+  }
+  
+  #dropdown-login{
+    + ul{
+      width: 100%;
+    }
+  }
+  
+  .dropdown{
+    position: relative;
+    display: inline-block;
+  }
+
+  .settings{
+    margin-left: -5px;
+    margin-right: 5px;
+    
+    .is-opened,
+    .is-closed{
+      border-right: 1px solid @medium-gray;
+      
+      &::after{
+        display:none;
+      }
+    }
+    
+    li.separator{
+        border-top: 1px solid @border-dark;
+        height:1px;
+    }
+  }
+}
+

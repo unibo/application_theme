@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet/less"
+	      type="text/css"
+	      href="../styles/application.less" />
+		      
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes, width=device-width, minimum-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Layout 2 Columns</title>
+  </head>
+  <body>
+	    
+    <form method="post" action="/tol/mobile/" id="mainForm">
+		    
+		  @@include "../snippets/unibo_login.html"
+
+          @@include "../snippets/header.html"
+
+	      <div class="title-page">
+            <div class="row expanded">
+              <div class="large-6 column">
+              
+                <a class="title" href="">Telefonia Mobile</a>
+                
+                <div class="breadcrumbs">
+                  <span class="separator">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                  <a href="">Elenco Utenze</a>
+                </div>
+                
+              </div>
+              <div class="large-6 column">
+               
+                <div class="context-view">
+	      	    <a href="">
+                    Centro di Ricerca sui Sistemi Elettronici per l'Ingegneria dell'Informazione e delle Telecomunicazioni "Ercole De Castro" - Advanced Research Center On Electronic System
+                    <span class="btn edit" href=""></span>
+	              </a>
+	      	  </div>
+             
+              </div>
+            </div>
+	      </div>
+
+          <div class="row expanded">
+          
+	          <aside class="large-2 column small-collapse">
+	            
+                @@include "../snippets/main_menu.html"
+                @@include "../snippets/actions.html"
+	            
+	          </aside>
+	          
+	          <main class="large-10 column">
+                  <p class="main-label">Lorem ipsum</p>
+		          <h1>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</h1>
+		          <h2>Sed ut perspiciatis unde omnis iste natus</h2>
+		          <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+	          </main>
+	          
+          </div>
+
+	        @@include "../snippets/footer.html"	    
+
+    </form>
+  </body>
+</html>

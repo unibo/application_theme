@@ -1,0 +1,31 @@
+body > h1 {
+  font-size: 3em;
+}
+section {
+  margin-bottom: 2em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2em;
+}
+section section {		
+  margin-bottom: 1em;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1em;
+}
+section section:last-of-type {		
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+section > h2,
+section > h3{
+  color: #3191d4;
+  font-weight: normal;
+}
+.section-description{
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  color: #666;
+}
+.label-font{
+  color: #00b7ff;
+}

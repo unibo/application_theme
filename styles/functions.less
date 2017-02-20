@@ -1,0 +1,45 @@
+// Utility function
+// Here live all the utilities mixin that are useful
+// to avoid to type in all the prefixes, etc
+
+// Zoomable baseline grid
+// type size presets
+.font-size(@size) when (@size =< @font-size) {
+  font-size: @size / @em;
+  line-height: @line / (@font-size + (@font-size - @size));
+}
+
+.font-size(@size) when (@size > @font-size) {
+  font-size: @size / @em;
+  //line-height: 1.2*1.2em;
+}
+
+
+.box-sizing(@sizing) {
+  -webkit-box-sizing: @sizing;
+     -moz-box-sizing: @sizing;
+       -o-box-sizing: @sizing;
+          box-sizing: @sizing;
+}
+
+.transition(@property, @duration) {
+          transition: @arguments;
+     -moz-transition: @arguments;
+  -webkit-transition: @arguments;
+       -o-transition: @arguments;
+}
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+       -o-border-radius: @radius;
+          border-radius: @radius;
+}
+.box-shadow (@border, @background-color) {
+		 box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+ -webkit-box-shadow: @arguments;
+       -o-boxshadow: @arguments;
+}
+
+
+// TODO: mettere border-radius, etc

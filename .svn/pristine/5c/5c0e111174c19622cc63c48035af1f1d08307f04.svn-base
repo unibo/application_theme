@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="label">
+        <label for="ctl00_MainContent_Utilizzatore">Utilizzatore</label>
+    </div>
+    <div class="fields">
+        <p class="highlight editable">
+        	<span>De Donno Francesco</span>
+            <a class="btn edit" href=""></a>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="label">
+        <label for="ctl00_MainContent_Utilizzatore">Utilizzatore</label>
+    </div>
+    <div class="fields">
+        <p class="highlight">
+        	<a href="" class="editable">De Donno Francesco
+            <span class="btn edit" href=""></span>
+            </a>
+        </p>
+    </div>
+</div>
+

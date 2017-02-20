@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="label">
+    <label for="input">
+      Nome del campo
+    </label>
+    <p class="formHelp">
+            L'aiuto contestuale
+            (qualora la label non fosse sufficiente)
+        </p>
+    </div>
+    
+    <div class="fields">
+        <p class="info">
+            Informazioni aggiuntive alla compilazione
+        </p>
+        <div class="checkboxlist-container">          
+          <input name="input1" id="input3" type="checkbox"><label for="input3">Prima opzione</label>
+
+          <input name="input2" id="input4" type="checkbox"><label for="input4">Seconda opzione</label>
+        </div>
+        <p class="warning"><strong>Attenzione: </strong>Avviso per la compilazione</p>
+    </div>
+    
+</div>
+

@@ -1,0 +1,55 @@
+/* azioni presenti nella primary sidebar (crea nuova utenza) */
+
+.actions{
+  display: flex;
+  justify-content: center;
+  padding: @padding;
+  flex-flow: column;
+  align-items: center;
+  .btn-primary,
+  .btn{   
+    width: 100%;
+    max-width: 175px;
+  }
+}
+
+
+.RadButton {
+    &.rbToggleButton {
+        padding: 4px;
+        font: inherit;
+        &.yesChecked {
+            background-color: green;
+            color: #fff;
+            &.rbHovered {
+                background-color: #cc0000;
+                span {
+                    &.rbText {
+                        color: #fff;
+                        &::after{
+                            content:' / No';
+                        }
+                    }
+                }
+            }
+        }
+        &.noChecked {
+            background-color: #cc0000;
+            color: #fff;
+            &.rbHovered {
+                color: #fff;
+                background-color: green;
+                span {
+                    &.rbText {
+                        color: #fff;
+                        &::after{
+                            content:' / Si';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
