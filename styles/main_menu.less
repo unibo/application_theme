@@ -1,109 +1,95 @@
 .main-menu {
 	
-	li {
-		.small-fancy();
-		line-height: 28px;
-		border-bottom: 1px solid @border-dark;
-		position: relative;
-  		font-weight: 400;
-      
-		.icon:before {
-			content: "";
-			display: inline-block;
-			font: normal normal normal 18px/1 FontAwesome;
-			position: absolute;
-			color: @dark-gray;
-			top: 12px;
-			left: 20px;
-		    text-rendering: auto;
-		    -webkit-font-smoothing: antialiased;
-		    -moz-osx-font-smoothing: grayscale;
-		}		
-	}
-
-	a {
-      color: @base-font-color;
-      padding: 6px 8px;
-      padding-left: 45px;
-      text-decoration: none;
-      display: block;
-      .text {
-        display: inline;
-        
-        @media screen and (min-width: @medium){
-          display: inline;
-        }
+  > li {
+    .small-fancy();
+    line-height: 28px;
+    border-bottom: 1px solid @border-dark;
+    position: relative;
+    font-weight: 400;
+  }
+  
+  i {
+    margin-right: @margin-xs;
+  }
+  
+  a {
+    color: @base-font-color;
+    padding: @padding-xs @padding-xs @padding-xs @padding-small;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .selected {
+    &:before {
+      color: @red;
+    }
+    
+    > a {
+      position: relative;
+      font-weight: normal;
+      color: @red;
+             
+      &:before{
+        content: "";
+        width: 6px;
+        background-color: @red;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
       }
-	}
-	.home {
-		.icon:before {
-			content: "\f015";
-		}
-	}
-	.apparati {
-		.icon:before {
-			content: "\f095";
-		}
-	}
-	.utenze {
-		.icon:before {
-			content: "\f007";
-		}
-	}
-	.trasferimenti {
-		.icon:before {
-			content: "\f0ec";
-		}
-	}
-	.storico {
-		.icon:before {
-			content: "\f017";
-		}
-	}
-    .nuovo {
-		.icon:before {
-			content: "\f067";
-		}
-	}
-	
-	.autorizzazioni {
-		.icon:before {
-			content: "\f084";
-		}
-	}
-	.selected {
-		&:before {
-			color: @red;
-		}
-		> a {
-			display: flex;
-			position: relative;
-			font-weight: normal;
-			color: @red;
-          
-			&:before{
-				content: "";
-				width: 6px;
-				background-color: @red;
-				position: absolute;
-				height: 100%;
-				top: 0;
-				left: 0;
-			}
-		}
-		ul {
-			padding-bottom: @padding;
-		}
-		li {
-			.x-small();
-			font-weight: normal;
-			border-bottom: none;
-			margin-left: 46px;
-          
-			a {
-				padding: 0;
-				padding-bottom: @padding-small;
-			}
-		}
-	}
+    }
+    
+    > ul {
+      padding-bottom: @padding;
+    }
+    
+    > li {
+      .x-small();
+      font-weight: normal;
+      border-bottom: none;
+      margin-left: 46px;
+            
+      a {
+        padding: 0;
+        padding-bottom: @padding-small;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @medium-max){
+
+.main-menu-icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+  > li {
+    flex-grow: 1;
+  }
+  
+  .selected {
+    a {
+      &:before {
+        height: 6px;
+        width: 100%;
+        background-color: @red;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+      }
+    }
+  }
+  
+  .text {
+	display: none;
+    
+    @media screen and (min-width: @medium) {
+      display: inline;
+    }
+  }
+}
 }
