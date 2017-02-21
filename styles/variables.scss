@@ -10,8 +10,8 @@ $primary: #3191d4;
 $dark-primary: #2079b7;
 $portal-red: #bb2e29;
 $red: #cc0000;
-
 $selected: #d8ecf9;
+
 $background-body: #eaeaea;
 $background-menu: #f3f3f3;
 $background-page: #fff;
@@ -21,22 +21,12 @@ $background-warning-message: #fff4da;
 
 $border-color: #eee;
 $border-dark: #ddd;
-
 $disabled: #d0d0d0;
-
-$dark-gray: #595959;
-$medium-gray: #999;
-$light-gray: #ccc;
-
 $base-font-color:#333;
-
 $link: #07C;
 $link-border: #c5d5de;
 $link-visited: #551A8B;
-
 $error: #BD362F;
-
-
 
 // Stati
 $success: #20b758;
@@ -44,33 +34,23 @@ $pending: #ffa500;
 $rejected: #da3116;
 
 
-
-// Plain Font Face
-$base-font: "Helvetica Neue", "Segoe UI", "Segoe", Helvetica, sans-serif, Arial;
-
+// Using custom variable
+$base-font: $body-font-family;
 
 
-// Grid
-
-$medium: 768px;
-$medium-max: 767px;
-$large: 992px;
-
-$grid-max-width: 62.5rem;
-$grid-total-gutter: 1.875rem;
-$grid-margin: $grid-total-gutter / 2;
-
+// Misures used in media queries
+$medium: map-get($breakpoints, medium);
+$medium-max: map-get($breakpoints, medium) - 1;
+$large: map-get($breakpoints, large);
 
 
 // Padding / Margin
-$margin: $grid-total-gutter;
-$margin-xs: $grid-total-gutter / 4;
-$margin-small: $grid-total-gutter / 2;
-$margin-big: $grid-total-gutter * 2;
+$margin: $global-margin;
+$margin-xs: $margin / 4;
+$margin-small: $margin / 2;
+$margin-big: $margin * 2;
 
-$padding: $grid-total-gutter;
-$padding-xs: $grid-total-gutter / 4;
-$padding-small: $grid-total-gutter / 2;
-$padding-big: $grid-total-gutter *2;
-
-
+$padding: $global-padding;
+$padding-xs: $padding / 4;
+$padding-small: $padding / 2;
+$padding-big: $padding *2;

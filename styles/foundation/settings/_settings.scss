@@ -50,23 +50,23 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
+  primary: #3191d4,
   secondary: #767676,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #cc4b37,
+  success: #20b758,
+  warning: #ffa500,
+  alert: #da3116,
 );
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
+$light-gray: #ccc;
+$medium-gray: #999;
+$dark-gray: #595959;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: "Helvetica Neue", "Segoe UI", "Segoe", Helvetica, sans-serif, Arial;
 $body-antialiased: true;
-$global-margin: 1rem;
-$global-padding: 1rem;
+$global-margin: 1.875rem;
+$global-padding: 1.875rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 0;
@@ -81,8 +81,8 @@ $print-transparent-backgrounds: true;
 
 $breakpoints: (
   small: 0,
-  medium: 640px,
-  large: 1024px,
+  medium: 768px,
+  large: 992px,
   xlarge: 1200px,
   xxlarge: 1440px,
 );
@@ -113,20 +113,20 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 21),
+    'h2': ('font-size': 18),
+    'h3': ('font-size': 16),
+    'h4': ('font-size': 15),
+    'h5': ('font-size': 13),
+    'h6': ('font-size': 12),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 21),
+    'h2': ('font-size': 18),
+    'h3': ('font-size': 16),
+    'h4': ('font-size': 15),
+    'h5': ('font-size': 13),
+    'h6': ('font-size': 12),
   ),
 );
 $header-text-rendering: optimizeLegibility;
@@ -240,7 +240,7 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1em;
+$button-padding: rem-calc(7) rem-calc(12);
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;

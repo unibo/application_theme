@@ -1,104 +1,5 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -136,22 +37,24 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-table th {
-  background-color: #efefef;
-  border-color: #eeeeee;
-  border-style: solid;
-  border-width: 1px;
-  font-weight: bold;
-  padding: 8px;
-  text-align: left;
-}
-table td {
-  background-color: white;
-  border-color: #eeeeee;
-  border-style: solid;
-  border-width: 1px;
-  padding: 8px;
+  
+  > th {
+    background-color: #efefef;
+    border-color: #eeeeee;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  > td {
+    background-color: white;
+    border-color: #eeeeee;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px;
+  }
 }
 
 html {
@@ -177,9 +80,6 @@ aside {
   flex-direction: column;
 }
 
-* {
-  box-sizing: border-box;
-}
 h1,
 h2,
 h3,
@@ -187,47 +87,48 @@ h4,
 h5,
 h6 {
   font-weight: 300;
-  line-height: normal;
-  
   &.huge {
     @include huge-fancy();
   }
 }
+
 h1 {
-  @include very-large-fancy();
   margin-bottom: 0.7em;
 }
+
 h2 {
-  @include large-fancy();
   margin-bottom: 0.5em;
 }
+
 h3 {
-  @include normal-fancy();
   margin-bottom: 0.3em;
 }
+
 h4 {
-  @include small-fancy();
   margin-bottom: 0.2em;
 }
+
 h5 {
-  @include x-small-fancy();
   margin-bottom: 0.1em;
 }
+
 h6 {
-  font-size: 0.9em;
   line-height: 0.9em;
-  margin-bottom: 0;
+  margin-bottom: 0.1em;
 }
+
 p {
-  @include normal();
   margin-bottom: 0.5em;
 }
+
 strong {
   font-weight: bold;
 }
+
 a {
   color: #1d6684;
 }
+
 .onlyprint {
   display: none;
 }
@@ -249,12 +150,14 @@ a {
     flex-direction: column;
     overflow: hidden; /* fix popup con iframe che compariva lo scroll (es. trasferisci cdc) */
 }
+
 .content-wrapper::after {
   content: '\00a0';
   display: block;
   height: 0px;
   visibility: hidden;
 }
+
 .content-core {
   margin: 0px auto;
   max-width: 960px;
@@ -262,6 +165,7 @@ a {
   min-width: 320px;
   padding: 1.5em 0.5em;
 }
+
 /*
 .is-closed,
 .is-opened{
@@ -304,6 +208,7 @@ a {
   margin-bottom: $padding*2;
   padding: $padding $padding*2;
   background-color: $background-warning-message;
+  
   &::before{
     margin-right: $padding-small;
     content: "\f06a";
@@ -314,6 +219,7 @@ a {
 /* popup */
 
 body.popup{
+  
   > form{
     min-width: 0;
   }
@@ -346,7 +252,6 @@ body.popup{
 body form.popup{
   min-width: 0;
 }
-
 
 .RadWindow.rwRoundedCorner .rwTitleBar {
     background-color: $dark-gray;
