@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 ol {
   list-style: none;
 }
@@ -47,10 +51,6 @@ table {
     border-width: 1px;
     padding: 8px;
   }
-}
-
-html {
-  height: 100%;
 }
 
 main {
@@ -120,6 +120,15 @@ strong {
 a {
   color: #1d6684;
 }
+
+.column,
+.columns {  
+  &.nopadding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 
 .onlyprint {
   display: none;

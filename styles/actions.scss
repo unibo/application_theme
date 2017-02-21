@@ -3,14 +3,9 @@
 .actions{
   display: flex;
   justify-content: center;
-  padding: $padding;
+  padding: $padding $padding-xs;
   flex-flow: column;
   align-items: center;
-  .btn-primary,
-  .btn{   
-    width: 100%;
-    max-width: 175px;
-  }
 }
 
 

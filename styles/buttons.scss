@@ -133,13 +133,6 @@
   }
 }
 
-.add{
-  @include btn-w-icon();
-  &:before{
-    content: "\f067";
-  }
-}
-
 .export{
   @include btn-w-icon();
   &:before{
@@ -172,6 +165,16 @@
   @include btn-w-icon();
   &:before{
     content: "\f017";
+  }
+}
+
+// Styling foundation buttons with fa's icon
+.button {
+  .fa {
+    margin-right: $margin-xs;
+  }
+  .show-for-sr + .fa {
+    margin-right: 0;
   }
 }
 
