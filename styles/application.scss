@@ -6,8 +6,8 @@
 @import "grid.scss";
 @import "font-awesome/css/font-awesome.css";
 
-/* Foundation 6 without grid */
-//$import "foundation.css";
+/* Foundation 6.3.0 */
+@import "foundation/foundation";
 
 /* elementi comuni */
 @import "buttons.scss";
