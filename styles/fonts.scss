@@ -5,82 +5,82 @@
 }
 
 @mixin x-small-fancy() {
-  font-size: 13px;
+  font-size: rem-calc(13);
 }
 
 @mixin small-fancy() {
-  font-size: 15px;
+  font-size: rem-calc(15);
 }
 
 @mixin normal-fancy() {
-  font-size: 16px;
+  font-size: rem-calc(16);
 }
 
 @mixin large-fancy() {
-  font-size: 18px;
+  font-size: rem-calc(18);
 }
 
 @mixin very-large-fancy() {
-  font-size: 21px;
-  line-height: 26px;
+  font-size: rem-calc(21);
+  line-height: rem-calc(26);
 }
 
 @mixin huge-fancy() {
-  font-size: 32px;
-  line-height: 32px;
+  font-size: rem-calc(32);
+  line-height: rem-calc(32);
 }
 
 /* dimensioni font per testo */
 @mixin x-small() {
-  font-size: 10px;
-  line-height: 15px;
+  font-size: rem-calc(10);
+  line-height: rem-calc(15);
 }
 
 @mixin small() {
-  font-size: 11px;
-  line-height: 16px;
+  font-size: rem-calc(11);
+  line-height: rem-calc(16);
 }
 
 @mixin normal() {
-  font-size: 13px;
-  line-height: 16px;
+  font-size: rem-calc(13);
+  line-height: rem-calc(16);
 }
 
 @mixin large() {
-  font-size: 14px;
-  line-height: 19px;
+  font-size: rem-calc(14);
+  line-height: rem-calc(19);
 }
 
 @mixin very-large() {
-  font-size: 15px;
-  line-height: 21px;
+  font-size: rem-calc(15);
+  line-height: rem-calc(21);
 }
 
 @mixin huge() {
-  font-size: 25px;
-  line-height: 38px;
+  font-size: rem-calc(25);
+  line-height: rem-calc(38);
 }
 
 /* dimensioni per icon font */
 
 @mixin small-icon() {
-  font-size: 16px;
-  line-height: 16px;
+  font-size: rem-calc(16);
+  line-height: rem-calc(16);
 }
 
 @mixin normal-icon() {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: rem-calc(20);
+  line-height: rem-calc(20);
 }
 
 @mixin medium-icon() {  
-  font-size: 22px;
-  line-height: 22px;
+  font-size: rem-calc(22);
+  line-height: rem-calc(22);
 }
 
 @mixin large-icon() {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: rem-calc(30);
+  line-height: rem-calc(30)
 }
 
 .huge {

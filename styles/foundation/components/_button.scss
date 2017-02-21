@@ -114,7 +114,7 @@ $button-transition: background-color 0.25s ease-out, color 0.25s ease-out !defau
 @mixin button-style(
   $background: $button-background,
   $background-hover: $button-background-hover,
-  $color: $button-color,
+  $color: auto,
   $background-hover-lightness: $button-background-hover-lightness
 ) {
   @if $color == auto {

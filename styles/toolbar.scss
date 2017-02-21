@@ -10,8 +10,10 @@
 	/* ricerca (con filtro) */
 	.search{
 	  display: flex;
-	  float: right;
 	  min-width: 280px;
+      margin-bottom: $margin-small;
+      float: right;
+      
 	  input,
 	  select{
 	    width: auto;
@@ -25,7 +27,7 @@
 	    margin: 0;
 	  }
 	  input{
-	  	min-width: 165px;
+	  	min-width: 162px;
 	  }
 	  select{
 	    background-color: $background-button;
