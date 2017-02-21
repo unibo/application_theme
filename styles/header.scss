@@ -47,20 +47,20 @@ header {
   width: 100%;
   border-bottom: 1px solid $border-color;
   
-  h1{    
+  h1 {    
     font-size: 2em;
     margin-bottom: 0;
     float: left;
     color: $primary;
   }
   
-  h2{
+  h2 {
     font-weight: 200;
     margin-bottom: 0;
   }
   
   .title {
-    @extend %normal-fancy;
+    @include normal-fancy();
     margin-bottom: 0;
     float: left;
     color: $base-font-color;
@@ -68,21 +68,21 @@ header {
     font-weight: 300;
     line-height: 38px;
     @media screen and (min-width: $medium){
-      @extend %huge;
+      @include huge();
     }
   }
   
-  .home{
-    @extend %very-large;
+  .home {
+    @include very-large();
   }
   
-  .breadcrumbs{
+  .breadcrumbs {
     float: left;
     margin: 0 $padding-xs;
-    @extend %normal-fancy;
+    @include normal-fancy();
     line-height: 38px;
     
-    .separator{
+    .separator {
       
       @media screen and (min-width: $medium){
         margin-right: $padding-small;
@@ -90,7 +90,7 @@ header {
       }
     }
     
-    a{
+    a {
       color: $base-font-color;
       text-decoration: none;
     }
@@ -129,7 +129,7 @@ header {
   }
   
   .btn {
-    @extend %only-icon;
+    @include only-icon();
     margin: 0;
     margin-top: -5px;
     margin-left: $padding-small;

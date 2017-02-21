@@ -14,7 +14,7 @@
 [type='url'],
 [type='color'],
 textarea {
-  @extend %normal;
+  @include normal();
   border: 1px solid $border-dark;
   border-radius: 0;
   box-shadow: none;
@@ -57,7 +57,7 @@ select{
   padding: 5px 0 5px 5px;
   margin: 0;
   height: auto;
-  @extend %normal;
+  @include normal();
   line-height: normal;
   border-radius: 0;
   background-color: #fff;
@@ -206,14 +206,14 @@ select::-ms-expand {
     margin: $margin-xs 0 0;
     
     label {
-      @extend %very-large;
+      @include very-large();
     }
 		
     .formHelp {
       font-weight: normal;
       margin-top: 5px;
       color: $dark-gray;
-      @extend %small;
+      @include small();
     }
     
     @media screen and (min-width: $medium){
@@ -260,7 +260,7 @@ select::-ms-expand {
   .warning {
     color: $dark-gray;
     margin-bottom: 0;
-    @extend %small;
+    @include small();
     &:before{
       content: "\f071";
       display: inline-block;
@@ -294,7 +294,7 @@ select::-ms-expand {
 
   /* campi in evidenza (sono quelli importanti e devono essere ben visibili) */
   .highlight {
-    @extend %large;
+    @include large();
     font-weight: bold;
     margin-bottom: 0;
     min-width: 400px;

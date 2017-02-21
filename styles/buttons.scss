@@ -4,8 +4,8 @@
   background-color: darken($bgcolor, 10%);
 }
 
-.btn {
-  @extend %normal;
+@mixin btn() {
+  @include normal();
   border: 1px solid $border-dark;
   background-color: $background-button;
   cursor: pointer;
@@ -26,7 +26,11 @@
   }
 }
 
-.btn-w-icon{
+.btn {
+  @include btn();
+}
+
+@mixin btn-w-icon() {
   &:before{
     content: "";
     display: inline-block;
@@ -39,12 +43,33 @@
   }
 }
 
-.only-icon{
+@mixin only-icon() {
   border: none;
   background-color: transparent;
   padding: 0;
   &:before{
     margin-right: 0;
+  }
+}
+
+.only-icon {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  &:before{
+    margin-right: 0;
+  }
+}
+
+@mixin btn-primary() {
+  @include btn();
+  background-color: $primary;
+  color: #fff;
+  border: 1px solid $primary;
+  
+  &:hover {
+    @include btn-hover-bg($primary);
+    color: #fff;
   }
 }
 

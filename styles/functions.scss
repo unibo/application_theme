@@ -2,24 +2,6 @@
 // Here live all the utilities mixin that are useful
 // to avoid to type in all the prefixes, etc
 
-// Zoomable baseline grid
-// type size presets
-
-
-@mixin font-size($size) {
-  @if $size < $font-size {
-    font-size: $size / $em;
-    line-height: $line / ($font-size + ($font-size - $size));
-  }
-  @if $size == $font-size {
-    font-size: $size / $em;
-    line-height: $line / ($font-size + ($font-size - $size));
-  }
-  @else if $size > $font-size {
-    font-size: $size / $em;
-  }
-}
-
 
 @mixin box-sizing($sizing) {
   -webkit-box-sizing: $sizing;
@@ -47,5 +29,3 @@
        -o-boxshadow: $arguments;
 }
 
-
-// TODO: mettere border-radius, etc

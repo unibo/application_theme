@@ -188,25 +188,29 @@ h5,
 h6 {
   font-weight: 300;
   line-height: normal;
+  
+  &.huge {
+    @include huge-fancy();
+  }
 }
 h1 {
-  @extend %very-large-fancy;
+  @include very-large-fancy();
   margin-bottom: 0.7em;
 }
 h2 {
-  @extend %large-fancy;
+  @include large-fancy();
   margin-bottom: 0.5em;
 }
 h3 {
-  @extend %normal-fancy;
+  @include normal-fancy();
   margin-bottom: 0.3em;
 }
 h4 {
-  @extend %small-fancy;
+  @include small-fancy();
   margin-bottom: 0.2em;
 }
 h5 {
-  @extend %x-small-fancy;
+  @include x-small-fancy();
   margin-bottom: 0.1em;
 }
 h6 {
@@ -215,7 +219,7 @@ h6 {
   margin-bottom: 0;
 }
 p {
-  @extend %normal;
+  @include normal();
   margin-bottom: 0.5em;
 }
 strong {
@@ -282,13 +286,13 @@ a {
 .error-container{
   text-align: center;
   margin-top: $padding*4;
-  h1{
-    @extend huge();
+  h1 {
+    @include huge();
   }
-  h2{
+  h2 {
     margin-bottom: $padding;
   }
-  p{
+  p {
     margin-bottom: $padding;
     color: $dark-gray;
   }
@@ -301,7 +305,7 @@ a {
   padding: $padding $padding*2;
   background-color: $background-warning-message;
   &::before{
-    margin-right: $padding/2;
+    margin-right: $padding-small;
     content: "\f06a";
     font: normal normal normal 14px/1 FontAwesome;
   }
@@ -317,13 +321,13 @@ body.popup{
     display: block;
     .label{
       text-align: left;
-      margin-bottom: $padding/2;
+      margin-bottom: $padding-small;
     }
   }
 
   /* fix tendina in scegli apparato */
   .RadDropDownList_Metro .rddlInner{
-    padding: $padding/2;
+    padding: $padding-small;
   }
   .RadDropDownList_Metro .rddlIcon{
     line-height: 2;

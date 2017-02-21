@@ -1,80 +1,88 @@
 /* dimensioni font per titolazioni */
 
-%x-small-fancy{
-  @include font-size(13);
+@mixin font-size($fontsize) {
+  font-size: $fontsize;
 }
 
-%small-fancy{
-  @include font-size(15);
+@mixin x-small-fancy() {
+  font-size: 13px;
 }
 
-%normal-fancy {
-  @include font-size(16);
+@mixin small-fancy() {
+  font-size: 15px;
 }
 
-%large-fancy{
-  @include font-size(18);
+@mixin normal-fancy() {
+  font-size: 16px;
 }
 
-%very-large-fancy{
-  @include font-size(21);
+@mixin large-fancy() {
+  font-size: 18px;
+}
+
+@mixin very-large-fancy() {
+  font-size: 21px;
   line-height: 26px;
 }
 
-%huge-fancy {
-  @include font-size(32);
+@mixin huge-fancy() {
+  font-size: 32px;
   line-height: 32px;
 }
 
 /* dimensioni font per testo */
-%x-small {
-  @include font-size(10);
+@mixin x-small() {
+  font-size: 10px;
   line-height: 15px;
 }
 
-%small {
-  @include font-size(11);
+@mixin small() {
+  font-size: 11px;
   line-height: 16px;
 }
 
-%normal {
-  @include font-size(13);
+@mixin normal() {
+  font-size: 13px;
   line-height: 16px;
 }
 
-%large {
-  @include font-size(13.5);
+@mixin large() {
+  font-size: 14px;
   line-height: 19px;
 }
 
-%very-large {
-  @include font-size(15);
+@mixin very-large() {
+  font-size: 15px;
   line-height: 21px;
 }
 
-%huge {
-  @include font-size(25);
+@mixin huge() {
+  font-size: 25px;
   line-height: 38px;
 }
 
 /* dimensioni per icon font */
 
-%small-icon{
+@mixin small-icon() {
   font-size: 16px;
   line-height: 16px;
 }
 
-%normal-icon{
+@mixin normal-icon() {
   font-size: 20px;
   line-height: 20px;
 }
 
-%medium-icon{  
+@mixin medium-icon() {  
   font-size: 22px;
   line-height: 22px;
 }
 
-%large-icon{
+@mixin large-icon() {
   font-size: 30px;
   line-height: 30px;
+}
+
+.huge {
+  @include huge();
 }
