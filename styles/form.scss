@@ -103,19 +103,12 @@ select::-ms-expand {
   .fields {
     .columns,
     .column {
-      margin: 12px 0;
+      margin: $margin-xs 0;
       
       &:last-of-type {
-        margin: 12px 0 0;
+        margin: $margin-xs 0 $margin-small;
       }
       
-      @media screen and (min-width: $medium){
-        margin: 6px 0;
-        
-        &:last-of-type {
-          margin: 6px 0;
-        }
-      }
     }
   }
   
@@ -129,18 +122,10 @@ select::-ms-expand {
   .fields {
     .columns,
     .column {
-      margin: 12px 0;
+      margin: $margin-xs 0;
       
       &:last-of-type {
-        margin: 12px 0 0;
-      }
-      
-      @media screen and (min-width: $medium){
-        margin: 6px 0;
-        
-        &:last-of-type {
-          margin: 6px 0;
-        }
+        margin: $margin-xs 0 $margin-small;
       }
     }
   }
