@@ -33,17 +33,6 @@ textarea {
   }
 }
 
-input:not(.riTextBox){
-  width: 100%;
-  min-width: 100%;
-  display: block;
-    
-  @media screen and (min-width: $medium){
-    min-width: 400px;
-    width: 400px;
-  }
-}
-
 input[type="radio"],
 input[type="checkbox"] {
 	width: auto;
@@ -86,10 +75,6 @@ select{
     &::-ms-value {
       color:#e60000;
     }
-  }
-  
-  @media screen and (min-width: $medium){
-    width: 400px;
   }
 }
 
@@ -234,7 +219,6 @@ select::-ms-expand {
     .info,
     .warning {
       margin-top: 5px;
-      max-width: 400px;
     }
   
     /* note finali */
@@ -271,10 +255,6 @@ select::-ms-expand {
       @media screen and (min-width: $medium){
         min-width: 100%;
       }
-    }
-    
-    @media screen and (min-width: $medium){
-      width: 400px;
     }
   }
 
