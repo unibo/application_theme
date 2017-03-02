@@ -17,10 +17,15 @@ section > h2,
 section > h3{
   color: #3191d4;
   font-weight: normal;
+  display: inline-block;
+}
+h3 + a {
+  margin-left: 1em;
 }
 .section-description{
   font-size: 1.1em;
-  margin-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
   color: #666;
 }
 .label-font{

@@ -1,0 +1,42 @@
+<p class="section-description">Basics</p>
+<div class="reveal" id="exampleModal1" data-reveal>
+  <h1>Awesome. I Have It.</h1>
+  <p class="lead">Your couch. It is mine.</p>
+  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<p><a data-open="exampleModal1">Click me for a modal</a></p>
+
+
+<p class="section-description">Nested Modal</p>
+<!-- This is the first modal -->
+<div class="reveal" id="exampleModal2" data-reveal>
+  <h1>Awesome!</h1>
+  <p class="lead">I have another modal inside of me!</p>
+  <a class="button" data-open="exampleModal3">Click me for another modal!</a>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<!-- This is the nested modal -->
+<div class="reveal" id="exampleModal3" data-reveal>
+  <h2>ANOTHER MODAL!!!</h2>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<p><a data-open="exampleModal2">Click me for a modal</a></p>
+
+
+<p class="section-description">Full-screen</p>
+<div class="full reveal" id="exampleModal8" data-reveal>
+  <p>OH I'M SO FUUUUL</p>
+  <img src="http://placekitten.com/1920/1280" alt="Intropsective Cage">
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<p><a data-toggle="exampleModal8">Click me for a full-screen modal</a></p>
