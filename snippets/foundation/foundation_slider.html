@@ -29,36 +29,42 @@
 </div>
 
 <p class="section-description">Data Binding</p>
-<div class="small-10 columns">
-  <div class="slider" data-slider data-initial-start="50">
-    <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1"></span>
-    <span class="slider-fill" data-slider-fill></span>
+<div class="row">
+  <div class="small-10 columns">
+    <div class="slider" data-slider data-initial-start="50">
+      <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1"></span>
+      <span class="slider-fill" data-slider-fill></span>
+    </div>
   </div>
-</div>
-<div class="small-2 columns">
-  <input type="number" id="sliderOutput1">
+  <div class="small-2 columns">
+    <input type="number" id="sliderOutput1">
+  </div>
 </div>
 
 <p class="section-description">Data Binding with step size</p>
-<div class="small-10 columns">
-  <div class="slider" data-slider data-initial-start="50" data-step="5">
-    <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput2"></span>
-    <span class="slider-fill" data-slider-fill></span>
+<div class="row">
+  <div class="small-10 columns">
+    <div class="slider" data-slider data-initial-start="50" data-step="5">
+      <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput2"></span>
+      <span class="slider-fill" data-slider-fill></span>
+    </div>
   </div>
-</div>
-<div class="small-2 columns">
-  <input type="number" id="sliderOutput2">
+  <div class="small-2 columns">
+    <input type="number" id="sliderOutput2">
+  </div>
 </div>
 
 <p class="section-description">Native Range Slider</p>
 <input type="range" min="1" max="100" step="1">
 
 <p class="section-description">Non-linear value translation</p>
-<div class="small-10 columns">
-<div class="slider" data-slider data-initial-start="50" data-step="1" data-position-value-function="log" data-non-linear-base="5">
-  <span class="slider-handle" data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutputNonLinear"></span>
-</div>
-</div>
-<div class="small-2 columns">
-  <input type="number" id="sliderOutputNonLinear">
+<div class="row">
+  <div class="small-10 columns">
+  <div class="slider" data-slider data-initial-start="50" data-step="1" data-position-value-function="log" data-non-linear-base="5">
+    <span class="slider-handle" data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutputNonLinear"></span>
+  </div>
+  </div>
+  <div class="small-2 columns">
+    <input type="number" id="sliderOutputNonLinear">
+  </div>
 </div>
