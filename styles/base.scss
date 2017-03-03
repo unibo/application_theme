@@ -129,6 +129,18 @@ a {
   }
 }
 
+#mainForm {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  
+  @media screen and (min-width: $large) {
+    > .row {
+      display: flex;
+      flex-grow: 1;
+    }
+  }
+}
 
 .onlyprint {
   display: none;
