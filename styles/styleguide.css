@@ -31,3 +31,10 @@ h3 + a {
 .label-font{
   color: #00b7ff;
 }
+pre {
+  display: flex;
+  margin-bottom: 2em;
+}
+code {
+  width: 100%;
+}
