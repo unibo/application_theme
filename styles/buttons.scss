@@ -1,5 +1,13 @@
 /* Custom Buttons */
 
+.button.secondary, .button.hollow.secondary {
+  border: 1px solid #ddd;
+}
+.button.hollow.secondary {
+  border: 1px solid #cbcbcb;
+  color: #747474;
+}
+
 @mixin btn-hover-bg($bgcolor){
   background-color: darken($bgcolor, 10%);
 }
@@ -101,11 +109,11 @@
   @include btn();
   background-color: $success;
   border: 1px solid $success;
-  color: #fff;
+  color: #333;
   
   &:hover {
     @include btn-hover-bg($success);
-    color: #fff;
+    color: #333;
   }
 }
 
