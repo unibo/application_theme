@@ -13,14 +13,19 @@
     
     <main>
       <div class="row">
-        <div class="large-12 columns">
+       
+        <div class="large-2 columns" data-sticky-container>
+          @@include "../snippets/toc.html"
+        </div>
+        
+        <div class="large-10 columns">
 
         <h1 class="huge">Style Guide Unibo Containers</h1>
 
         <h2>In questa pagina ci sono i componenti custom relativi ai contenitori sviluppati ed utilizzati esclusivamente per applicazioni unibo.</h2>
 
           <section>
-            <h3>Tabella stati</h3>
+            <h3 id="tabella_stati">Tabella stati</h3>
 		    <p class="section-description">
               Contiene gli stati della richiesta. Possono essere: Inserito, accettato, rifiutato, ordinato, ricevuto, consegnato.
 		    </p>
@@ -35,7 +40,7 @@
           </section>
 
           <section>
-            <h3>Popup history</h3>
+            <h3 id="popup_history">Popup history</h3>
             <p class="section-description">
               Contiene la popup con la history. Ci si accede cliccando sul pulsante "storico" nel dettaglio dell'utenza
             </p>
@@ -55,6 +60,8 @@
     </main>
     
     @@include "../snippets/end_of_body.html"
+    
+    <script src="../js/toc.js"></script>
     
   </body>
 </html>

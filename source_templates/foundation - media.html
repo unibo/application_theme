@@ -13,37 +13,42 @@
     
     <main>
       <div class="row">
-        <div class="large-12 columns">
+       
+        <div class="large-2 columns" data-sticky-container>
+          @@include "../snippets/toc.html"
+        </div>
+        
+        <div class="large-10 columns">
         
         <h1 class="huge">Foundation Media</h1>
           <h2></h2>
         
         <section>
-          <h3>Badge</h3>
+          <h3 id="badge">Badge</h3>
           <a href="http://foundation.zurb.com/sites/docs/badge.html">See on Foundation Guide</a>
           @@include "../snippets/foundation/foundation_badge.html"
         </section>
         
         <section>
-          <h3>Label</h3>
+          <h3 id="label">Label</h3>
           <a href="http://foundation.zurb.com/sites/docs/label.html">See on Foundation Guide</a>
           @@include "../snippets/foundation/foundation_label.html"
         </section>
         
         <section>
-          <h3>Orbit</h3>
+          <h3 id="orbit">Orbit</h3>
           <a href="http://foundation.zurb.com/sites/docs/orbit.html">See on Foundation Guide</a>
           @@include "../snippets/foundation/foundation_orbit.html"
         </section>
         
         <section>
-          <h3>Progress Bar</h3>
+          <h3 id="progress_bar">Progress Bar</h3>
           <a href="http://foundation.zurb.com/sites/docs/progress-bar.html">See on Foundation Guide</a>
           @@include "../snippets/foundation/foundation_progress_bar.html"
         </section>
         
         <section>
-          <h3>Tooltip</h3>
+          <h3 id="tooltip">Tooltip</h3>
           <a href="http://foundation.zurb.com/sites/docs/tooltip.html">See on Foundation Guide</a>
           @@include "../snippets/foundation/foundation_tooltip.html"
         </section>
@@ -54,6 +59,8 @@
     </main>
     
     @@include "../snippets/end_of_body.html"
+    
+    <script src="../js/toc.js"></script>
 
   </body>
 </html>

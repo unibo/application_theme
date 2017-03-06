@@ -13,14 +13,19 @@
     
     <main>
       <div class="row">
-        <div class="large-12 columns">
+       
+        <div class="large-2 columns" data-sticky-container>
+          @@include "../snippets/toc.html"
+        </div>
+        
+        <div class="large-10 columns">
         
         <h1 class="huge">Style Guide Unibo Forms</h1>
 
         <h2>In questa pagina ci sono i componenti custom relativi alle form sviluppati ed utilizzati esclusivamente per applicazioni unibo.</h2>
       
         <section>
-        	<h3>Select</h3>
+        	<h3 id="select">Select</h3>
         	<p class="section-description">
         		Il menu a tendina può avere: una descrizione del campo (aiuto contestuale), delle informazioni aggiuntive e una nota finale (avviso per la compilazione).
         		<br> 
@@ -37,7 +42,7 @@
         </section>
     
         <section>
-  		<h3>Input</h3>
+  		<h3 id="input">Input</h3>
   		  <p class="section-description">
   		    Campo di testo: può essere semplice, con aiuto contestuale, con informazioni aggiuntive e note finali.
   		  </p>
@@ -51,7 +56,7 @@
         </section>
     
         <section>
-          <h3>Radio</h3>
+          <h3 id="radio">Radio</h3>
   		  <p class="section-description">
   		    Campo con radio button: può essere semplice, con aiuto contestuale, con informazioni aggiuntive e note finali.
             </p>
@@ -64,7 +69,7 @@
         </section>
     
         <section>
-          <h3>Checkbox</h3>
+          <h3 id="checkbox">Checkbox</h3>
           <p class="section-description">
             Campo con checkboxes: può essere semplice, con aiuto contestuale, con informazioni aggiuntive e note finali.
           </p>
@@ -77,7 +82,7 @@
         </section>
     
         <section>
-          <h3>Fieldset</h3>
+          <h3 id="fieldset">Fieldset</h3>
           <p class="section-description">
             Campo di testo: può essere semplice, con aiuto contestuale, con informazioni aggiuntive e note finali.
           </p>
@@ -90,7 +95,7 @@
           </section>
 
         <section>
-          <h3>Wizard Stato richiesta</h3>
+          <h3 id="stato_richiesta">Wizard Stato richiesta</h3>
           <p class="section-description">
             Contiene il wizard con gli stati della richiesta. Possono essere: Inserito, accettato, rifiutato, ordinato, ricevuto, consegnato.
             <br>
@@ -112,6 +117,8 @@
     </main>
     
     @@include "../snippets/end_of_body.html"
+    
+    <script src="../js/toc.js"></script>
     
   </body>
 </html>

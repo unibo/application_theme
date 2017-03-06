@@ -18,6 +18,7 @@ section > h3{
   color: #3191d4;
   font-weight: normal;
   display: inline-block;
+  padding-top: 1em;
 }
 h3 + a {
   margin-left: 1em;

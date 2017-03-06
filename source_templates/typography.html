@@ -13,13 +13,18 @@
     
     <main>
       <div class="row">
-        <div class="large-12 columns">
+       
+        <div class="large-2 columns" data-sticky-container>
+          @@include "../snippets/toc.html"
+        </div>
+        
+        <div class="large-10 columns">
         
         <h1 class="huge">Foundation Typography</h1>
         <h2>Stile degli elementi base di Foundation adattati alla grafica Unibo</h2>
 
         <section>  
-          <h3>Titoli e testo</h3>
+          <h3 id="titoli">Titoli</h3>
           <pre>
             <code class="html">
               <h1>h1. This is a very large header.</h1>
@@ -41,7 +46,7 @@
         </section>
         
         <section>
-          <h3>Subheaders</h3>
+          <h3 id="subh">Sottotitoli</h3>
           <pre>
             <code class="html">
               <h1 class="subheader">h1.subheader</h1>
@@ -63,7 +68,7 @@
         </section>
 
         <section>
-          <h3>Corpo del testo</h3>
+          <h3 id="testo">Corpo del testo</h3>
           <pre>
             <code class="html">
               <p>
@@ -89,7 +94,7 @@
         </section>
 
         <section>
-          <h3>Small</h3>
+          <h3 id="small">Small</h3>
           <pre>
             <code class="html">
               <p>Foundation for Sites <small>Version 6.3.0</small></p>
@@ -99,7 +104,7 @@
         </section>
         
         <section>
-          <h3>Link</h3>
+          <h3 id="link">Link</h3>
           <pre>
             <code class="html">
               <p>Links are very standard, and the color is preset to the Foundation primary color. <a href="global.html">Learn more about Foundation's global colors.</a></p>
@@ -109,7 +114,7 @@
         </section>
         
         <section>
-          <h3>Divider</h3>
+          <h3 id="divider">Divider</h3>
           <pre>
             <code class="html">
               <hr>
@@ -119,7 +124,7 @@
         </section>
         
         <section>
-          <h3>Unordered Lists</h3>
+          <h3 id="ulist">Unordered Lists</h3>
           <pre>
             <code class="html">
               <ul>
@@ -155,7 +160,7 @@
         </section>
         
         <section>
-          <h3>Ordered Lists</h3>
+          <h3 id="olist">Ordered Lists</h3>
           <pre>
             <code class="html">
               <ol>
@@ -189,7 +194,7 @@
         </section>
         
         <section>
-          <h3>Definition Lists</h3>
+          <h3 id=dlist"">Definition Lists</h3>
           <pre>
             <code class="html">
               <dl>
@@ -211,7 +216,7 @@
         </section>
         
         <section>
-          <h3>Blockquotes</h3>
+          <h3 id="blockquotes">Blockquotes</h3>
           <pre>
             <code class="html">
               <blockquote>
@@ -227,7 +232,7 @@
         </section>
         
         <section>
-          <h3>Abbreviations</h3>
+          <h3 id="abbr">Abbreviations</h3>
           <pre>
             <code class="html">
               <p>In my dream last night, I saw <abbr title="John Ronald Reuel">J. R. R.</abbr> Tolkien and George <abbr title="Raymond Richard">R. R.</abbr> Martin hanging out on Sunset <abbr title="Boulevard">Blvd</abbr>.</p>
@@ -237,7 +242,7 @@
         </section>
         
         <section>
-          <h3>Code</h3>
+          <h3 id="code">Code</h3>
           <pre>
             <code class="html">
               <p>Remember to escape angle brackets when printing HTML: <code>&lt;div&gt;</code></p>
@@ -247,7 +252,7 @@
         </section>
         
         <section>
-          <h3>Keystrokes</h3>
+          <h3 id="keystrokes">Keystrokes</h3>
           <pre>
             <code class="html">
               <p>Press <kbd>Cmd+Q</kbd> (or <kbd>Ctrl+Q</kbd> on Windows) to play Half-Life 3.</p>
@@ -260,7 +265,7 @@
         <h2>Stile degli elementi di Unibo</h2>
         
         <section>
-          <h3>Testo Huge</h3>
+          <h3 id="testo_huge">Testo Huge</h3>
           <pre>
             <code class="html">
               <h1 class="huge">Questo è un h1 Huge</h1>
@@ -277,6 +282,8 @@
     </main>
     
     @@include "../snippets/end_of_body.html"
+    
+    <script src="../js/toc.js"></script>
     
   </body>
 </html>
