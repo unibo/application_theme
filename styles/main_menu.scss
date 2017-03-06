@@ -27,7 +27,7 @@
       }
     }
   }
-    
+  
   .selected {
     &:before {
       color: $red;
@@ -45,7 +45,7 @@
         position: absolute;
         height: 100%;
         top: 0;
-        left: -1px;
+        left: 0;
       }
     }
     
@@ -69,36 +69,49 @@
 
 @media screen and (max-width: $medium-max){
 
-.main-menu-icons {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  
-  > li {
-    flex-grow: 1;
-  }
-  
-  .selected {
-    a {
-      &:before {
-        height: 6px;
-        width: 100%;
-        background-color: $red;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: auto;
+  .main-menu-icons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    > li {
+      flex-grow: 1;
+    }
+    
+    .selected {
+      a {
+        &:before {
+          height: 6px;
+          width: 100%;
+          background-color: $red;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          top: auto;
+        }
+      }
+    }
+    
+    .text {
+  	display: none;
+      
+      @media screen and (min-width: $medium) {
+        display: inline;
       }
     }
   }
+}
+
+// Foundation custom
+.title-bar {
+  border-left: 6px solid $primary;
+}
+.title-bar-title {
+  color: white;
   
-  .text {
-	display: none;
-    
-    @media screen and (min-width: $medium) {
-      display: inline;
-    }
+  &:hover {
+    color: darken(white, 15%);
   }
 }
-}
+
