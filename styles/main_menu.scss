@@ -7,19 +7,22 @@
     border-bottom: 1px solid $border-dark;
     position: relative;
     font-weight: 400;
-  }
   
-  i {
-    margin-right: $margin-xs;
+    > a {
+      color: $base-font-color;
+      padding: $padding-xs $padding-xs $padding-xs $padding-small;
+      text-decoration: none;
+      display: block;
+      line-height: inherit;
+      
+      i {
+        vertical-align: baseline;
+        line-height: inherit;
+        margin-right: $margin-xs;
+      }
+    }
   }
-  
-  a {
-    color: $base-font-color;
-    padding: $padding-xs $padding-xs $padding-xs $padding-small;
-    text-decoration: none;
-    display: block;
-  }
-  
+    
   .selected {
     &:before {
       color: $red;

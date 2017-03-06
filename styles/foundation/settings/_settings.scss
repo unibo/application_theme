@@ -56,7 +56,7 @@ $foundation-palette: (
   warning: #ffa500,
   alert: #bb2e29,
 );
-$light-gray: #ccc;
+$light-gray: #f5f5f5;
 $medium-gray: #999;
 $dark-gray: #595959;
 $black: #0a0a0a;
@@ -343,7 +343,7 @@ $dropdown-sizes: (
 
 $dropdownmenu-arrows: true;
 $dropdownmenu-arrow-color: $anchor-color;
-$dropdownmenu-arrow-size: 6px;
+$dropdownmenu-arrow-size: 4px;
 $dropdownmenu-min-width: 200px;
 $dropdownmenu-background: $white;
 $dropdownmenu-border: 1px solid $medium-gray;
@@ -588,9 +588,9 @@ $thumbnail-radius: $global-radius;
 // 35. Title Bar
 // -------------
 
-$titlebar-background: $black;
+$titlebar-background: #333;
 $titlebar-color: $white;
-$titlebar-padding: 0.5rem;
+$titlebar-padding: 1rem;
 $titlebar-text-font-weight: bold;
 $titlebar-icon-color: $white;
 $titlebar-icon-color-hover: $medium-gray;
@@ -612,7 +612,7 @@ $tooltip-radius: $global-radius;
 // 37. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
+$topbar-padding: 0;
 $topbar-background: $light-gray;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
