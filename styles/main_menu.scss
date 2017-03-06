@@ -1,14 +1,19 @@
 .main-menu {
   margin: 0;
 	
-  > li {
+  li {
     @include small-fancy();
     line-height: 28px;
     border-bottom: 1px solid $border-dark;
     position: relative;
     font-weight: 400;
+    transition: background-color 0.3s;
+    
+    &:hover {
+      background-color: #eee;
+    }
   
-    > a {
+    a {
       color: $base-font-color;
       padding: $padding-xs $padding-xs $padding-xs $padding-small;
       text-decoration: none;
