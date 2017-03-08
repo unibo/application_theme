@@ -15,7 +15,7 @@
       float: right;
       
 	  input,
-	  select{
+	  select {
 	    width: auto;
 	    min-width: 110px;
 	    border-right: 0;
@@ -26,13 +26,13 @@
 	    border-radius: 0;
 	    margin: 0;
 	  }
-	  input{
+	  input {
 	  	min-width: 162px;
 	  }
-	  select{
+	  select {
 	    background-color: $background-button;
 	  }
-	  button{
+	  button {
 	    @include btn-primary();
 	    padding: 0 7px;
 	    margin: 0;
@@ -54,8 +54,8 @@
 /* toolbar bottom (della form) che contiene i pulsanti salva/annulla */
 
 .form-container + .toolbar{
-	margin-top: $padding-big;
-	margin-left: $padding-big;
+  margin-top: $padding-big;
+  margin-left: $padding-big;
 }
 
 
@@ -102,13 +102,8 @@
 	.row {
 		padding: $padding-xs;
 		background-color: $background-disabled;
-		margin-bottom: 0;
+		margin: 0;
 		border-top: 1px dashed $border-dark;
-      
-		.btn-primary,
-		.btn{
-			margin-top: $padding-small;
-		}
 		+ .row {
 			border-top: none;
 			padding-top: 0;

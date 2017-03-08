@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    @@include "../snippets/head.html"
+    
+    <link rel="stylesheet" type="text/css" href="../styles/styleguide.css" />
+
+    <title>Foundation Typography</title>
+  </head>
+	
+  <body>
+    
+    <main>
+      <div class="row">
+       
+        <div class="large-2 columns" data-sticky-container>
+          @@include "../snippets/toc.html"
+        </div>
+        
+        <div class="large-10 columns">
+        
+        <h1 class="huge">Forms</h1>
+        <h2></h2>
+
+        <section>  
+          <h3 id="text">Text Inputs</h3>
+          <p>These input types create a text field: text, date, datetime, datetime-local, email, month, number, password, search, tel, time, url, and week.</p>
+          <pre>
+            <code>
+              @@include "../snippets/foundation/forms/text.html"
+            </code>
+          </pre>
+          @@include "../snippets/foundation/forms/text.html"
+        </section>
+        
+        <section>  
+          <h3 id="number">Number Inputs</h3>
+          <p></p>
+          <pre>
+            <code>
+              @@include "../snippets/foundation/forms/number.html"
+            </code>
+          </pre>
+          @@include "../snippets/foundation/forms/number.html"
+        </section>
+        
+        <section>  
+          <h3 id="text_areas">Text Areas</h3>
+          <pre>
+            <code>
+              @@include "../snippets/foundation/forms/text_areas.html"
+            </code>
+          </pre>
+          @@include "../snippets/foundation/forms/text_areas.html"
+        </section>
+        
+        <section>  
+          <h3 id="select">Select Menus</h3>
+          <pre>
+            <code>
+              @@include "../snippets/foundation/forms/select.html"
+            </code>
+          </pre>
+          @@include "../snippets/foundation/forms/select.html"
+        </section>
+        
+        <section>
+          <h3 id="selectm">Select Multiple</h3>
+          <p>Add the multiple attribute to allow more than one option to be selected. Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+          <pre>
+            <code>
+              @@include "../snippets/foundation/forms/select_multiple.html"
+            </code>
+          </pre>
+          @@include "../snippets/foundation/forms/select_multiple.html"
+        </section>
+        
+        <section>  
+          <h3 id="cb">Checkboxes</h3>
+          <pre>
+            <code>
+              @@include "../snippets/foundation/forms/checkbox.html"
+            </code>
+          </pre>
+          @@include "../snippets/foundation/forms/checkbox.html"
+        </section>
+        
+        <section>  
+          <h3 id="radio">Radio</h3>
+          <pre>
+            <code>
+              @@include "../snippets/foundation/forms/radio.html"
+            </code>
+          </pre>
+          @@include "../snippets/foundation/forms/radio.html"
+        </section>
+        
+        <section>  
+          <h3 id="fieldset">Fieldset</h3>
+          <pre>
+            <code>
+              @@include "../snippets/foundation/forms/fieldset.html"
+            </code>
+          </pre>
+          @@include "../snippets/foundation/forms/fieldset.html"
+        </section>
+        
+        <section>  
+          <h3 id="fieldset">Inline Labels and Buttons</h3>
+          <pre>
+            <code>
+              @@include "../snippets/foundation/forms/inline_label_button.html"
+            </code>
+          </pre>
+          @@include "../snippets/foundation/forms/inline_label_button.html"
+        </section>
+        
+        <section>  
+          <h3 id="fileupload">File Upload Button</h3>
+          <pre>
+            <code>
+              @@include "../snippets/foundation/forms/file_upload_button.html"
+            </code>
+          </pre>
+          @@include "../snippets/foundation/forms/file_upload_button.html"
+        </section>
+        
+        <h1 class="huge">Unibo Forms</h1>
+
+        <h2>Di seguito i componenti custom relativi alle form sviluppati ed utilizzati esclusivamente per applicazioni unibo.</h2>
+    
+        <section>
+          <h3 id="griglia_form">Griglia Form</h3>
+  		  <p class="section-description">Come creare la struttura del form.</p>
+            <pre>
+        	  <code class="html">
+        	    @@include "../snippets/form/griglia_form.html"
+        	  </code>
+        	</pre>
+            @@include "../snippets/form/griglia_form.html"
+        </section>
+
+        <section>
+          <h3 id="unibo_stato_richiesta">Wizard Stato richiesta</h3>
+          <p class="section-description">
+            Contiene il wizard con gli stati della richiesta. Possono essere: Inserito, accettato, rifiutato, ordinato, ricevuto, consegnato.
+            <br>
+            Contiene i pulsanti per andare avanti nella procedura.
+          </p>
+          <pre>
+            <code class="html">
+              @@include "../snippets/toolbar_richiesta.html"
+            </code>
+          </pre>
+          @@include "../snippets/toolbar_richiesta.html"
+        </section>
+        
+        </div>
+      </div>
+      
+    </main>
+    
+    @@include "../snippets/end_of_body.html"
+    
+    <script src="../js/toc.js"></script>
+    
+  </body>
+</html>
