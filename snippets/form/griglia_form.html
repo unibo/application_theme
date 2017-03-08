@@ -1,3 +1,4 @@
+<form id="ex_form">
 <div class="row">
   <div class="medium-3 column">
     <h2 class="title-fieldset">
@@ -11,7 +12,7 @@
     <label for="el_text">Text</label>
   </div>
   <div class="medium-4 column end fields">
-    <input id="el_text" type="text" placeholder="Input placeholder">
+    <input id="el_text" type="text" placeholder="Insert 6 or more characters" required pattern=".{6,}">
   </div>
 </div>
 
@@ -52,16 +53,16 @@
   <div class="medium-9 column fields">
     <div class="row">
       <div class="medium-6 columns">
-        <input id="checkbox1" type="checkbox">
-        <label for="checkbox1">Checkbox 1</label>
+        <input id="checkbox4" type="checkbox">
+        <label for="checkbox4">Checkbox 1</label>
       </div>
       <div class="medium-6 columns">
-        <input id="checkbox2" type="checkbox">
-        <label for="checkbox2">Checkbox 2</label>
+        <input id="checkbox5" type="checkbox">
+        <label for="checkbox5">Checkbox 2</label>
       </div>
       <div class="medium-6 columns end">
-        <input id="checkbox3" type="checkbox">
-        <label for="checkbox3">Checkbox 3</label>
+        <input id="checkbox6" type="checkbox">
+        <label for="checkbox6">Checkbox 3</label>
       </div>
     </div>
   </div>
@@ -75,12 +76,12 @@
     <p class="info">Informazioni aggiuntive alla compilazione</p>
     <div class="row">
       <div class="medium-6 columns">
-        <input type="radio" name="pokemon" value="Red" id="pokemonRed" required>
-        <label for="pokemonRed">Red</label>
+        <input type="radio" name="pokemon2" value="Red" id="pokemonRed2" required>
+        <label for="pokemonRed2">Red</label>
       </div>
       <div class="medium-6 columns end">
-        <input type="radio" name="pokemon" value="Blue" id="pokemonBlue">
-        <label for="pokemonBlue">Blue</label>
+        <input type="radio" name="pokemon2" value="Blue" id="pokemonBlue2">
+        <label for="pokemonBlue2">Blue</label>
       </div>
     </div>
   </div>
@@ -92,3 +93,4 @@
     <button class="button primary" type="submit">Submit</button>
   </div>
 </div>
+</form>
