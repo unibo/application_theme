@@ -2,25 +2,26 @@
 @import "foundation/foundation";
 
 /* settings */
-@import "variables.scss";
-@import "functions.scss";
-@import "fonts.scss";
-@import "base.scss";
+@import "variables";
+@import "functions";
+@import "fonts";
+@import "base";
 @import "font-awesome/css/font-awesome.css";
 
 
 /* elementi comuni */
-@import "buttons.scss";
-@import "form.scss";
-@import "header.scss";
-@import "footer.scss";
-@import "table.scss";
-@import "unibo_login.scss";
-@import "secondary_info.scss";
-@import "main_menu.scss";
-@import "toolbar.scss";
-@import "actions.scss";
-@import "state.scss";
-@import "history.scss";
-@import "box_option.scss";
+@import "buttons";
+@import "form";
+@import "header";
+@import "footer";
+@import "table";
+@import "unibo_login";
+@import "secondary_info";
+@import "main_menu";
+@import "toolbar";
+@import "actions";
+@import "state";
+@import "history";
+@import "box_option";
 @import "toc";
+@import "wizard";

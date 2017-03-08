@@ -11,6 +11,8 @@ $portal-red: #bb2e29;
 $red: #bb2e29;
 $selected: #d8ecf9;
 
+$light-black: #333;
+
 $background-body: #eaeaea;
 $background-menu: #f3f3f3;
 $background-page: #fff;
@@ -21,7 +23,7 @@ $background-warning-message: #fff4da;
 $border-color: #eee;
 $border-dark: #ddd;
 $disabled: #d0d0d0;
-$base-font-color:#333;
+$base-font-color: $light-black;
 $link: #07C;
 $link-border: #c5d5de;
 $link-visited: #551A8B;

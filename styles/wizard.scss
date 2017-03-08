@@ -1,0 +1,175 @@
+.wizard-path {
+  margin: 2.5em 0;
+  counter-reset: step;
+  li {
+    position: relative;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    padding-left: 6em;
+    &:before {
+      content: "";
+      width: 1px;
+      background-color: #ccc;
+      position: absolute;
+      top: 0;
+      left: 45px;
+      height: 100%;
+    }
+    &:first-child {
+      padding-left: 5em;
+      font-weight: 600;
+      a {
+        color: $light-black;
+        &:before {
+          margin-left: -31px;
+          color: currentColor;
+        }
+      }
+      &.current-step a {
+        color: $primary;
+      }
+    }
+    &:last-child {
+      font-weight: 600;
+      padding-left: 5em;
+      &:before {
+        display: none;
+      }
+      a {
+        padding-bottom: 0;
+        &:before {
+          margin-left: -28px;
+          top: 0;
+        }
+      }
+    }
+    a {
+      font-size: 1.15384615em;
+      line-height: 19px;
+      color: $light-black;
+      display: block;
+      margin-bottom: 0.5em;
+      padding-top: 3px;
+      text-decoration: none;
+      &:before {
+        counter-increment: step;
+        content: counter(step);
+        position: absolute;
+        margin-left: -44px;
+        top: -2px;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        background-color: $light-gray;
+        border: 1px solid currentColor;
+        width: 26px;
+        border-radius: 50%;
+        padding: 2px;
+      }
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .previous-step {
+    a {
+      cursor: pointer;
+      &:before {
+        color: $success;
+      }
+    }
+    &.warning-step a:before {
+      color: $pending;
+      content: "!";
+    }
+  }
+  .final-step {
+    a {
+      color: $medium-gray;
+      display: block;
+      color: $light-black;
+      &:before {
+        color: inherit;
+      }
+    }
+    &.current-step a {
+      color: $primary;
+      &:before {
+        margin-left: -31px;
+      }
+    }
+  }
+  .current-step a {
+    color: $medium-gray;
+    display: block;
+    font-weight: 600;
+    color: $primary;
+    display: block;
+    &:before {
+      color: $primary;
+    }
+  }
+  .next-step a {
+    color: $medium-gray;
+    display: block;
+    &:before {
+      content: "\f111";
+      font-size: 8px;
+      color: $medium-gray;
+      margin-left: -36px;
+      top: 5px;
+    }
+  }
+  
+  // Horizontal flex Wizard
+  &.horizontal {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    overflow-x: hidden;
+    li {
+      padding: 35px 10px;
+      width: 100%;
+      
+      &:last-of-type {
+        z-index: 1;
+        
+        &:after {
+          content: "";
+          width: 50%;
+          height: 100%;
+          position: absolute;
+          left: 50%;
+          top: 0;
+          background-color: white;
+          z-index: -1;
+        }
+      }
+      
+      &:before {
+        width: 500%;
+        top: 13px;
+        left: 50%;
+        height: 1px;
+      }
+      
+      a {
+        position: relative;
+        
+        &:before {
+          margin: 0 !important;
+          top: -35px;
+          left: calc(50% - 13px);
+        }
+        
+        span {
+          display: none;
+          
+          @media screen and (min-width: $medium){
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+}
