@@ -56,7 +56,7 @@ table {
 main {
   padding: $padding-xs 0;
   
-  @media screen and (min-height: $medium){
+  @media screen and (min-width: $medium){
     padding: $padding 0;
   }
   
@@ -223,9 +223,11 @@ a {
 
 .warning-message{
   display: block;
-  margin: -$padding*2;
-  margin-bottom: $padding*2;
-  padding: $padding $padding*2;
+  margin: -$padding;
+  margin-left: -$padding/2;
+  margin-right: -$padding/2;
+  margin-bottom: $padding;
+  padding: $padding/2;
   background-color: $background-warning-message;
   
   &::before{

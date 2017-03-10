@@ -5,6 +5,12 @@
 
 .gridview {
   width: 100%;
+  table{
+    width: auto;
+    tbody{
+      border: none;
+    }
+  }
   
   th {
     color: #fff;
