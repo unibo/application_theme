@@ -11,36 +11,32 @@ header {
     background-image: url("../img/sigillo2x.png");
     background-position: 0 center;
     background-repeat: no-repeat;
-    background-size: auto 60%;
+    background-size: auto 70px;
     border: medium none;
-    display: block;
+    display: inline-block;
     max-width: 100%;
-    padding: 35px 0px 35px 78px;
-    top: 0px;
-    width: 960px;
+    padding: 25px 0px 25px 78px;
+    /* alma mater studiorum */
+    .alma{
+      color: #333;
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
+    /* nome dell'applicativo */
+    color: $primary;
+    font-family: "Cinzel", san-serif;
+    font-size: 2rem;
+    line-height: 1em;
     
     @media screen and (min-width: $medium){
-      background-size: auto 95%;
+      background-size: auto 100px;
       padding: 35px 0px 35px 130px;
     }
     
-    img {
-      border: medium none;
-      display: block;
-      height: auto;
-      margin: 0;
-      max-width: 100%;
-      width: 384px;
-      
-      + img {
-        margin-top: 6px;
-        width: 270px;
-      }
-    }
   }
 }
 
-.title-page {
+.info-page {
   flex: none;
   padding: $padding-small 0;
   display: block;
@@ -94,48 +90,6 @@ header {
       color: $base-font-color;
       text-decoration: none;
     }
-  }
-}
-
-.context-view {
-  display: flex;
-  align-items: center;
-  margin: 4px 0;
-  
-  @media screen and (min-width: $medium){
-    float: right;
-  }
-  
-  a {
-    display: inline-block;
-    color: $base-font-color;
-    padding: $padding-xs;
-    text-decoration: none;
-    border: 1px solid $border-dark;
-    position: relative;
-    white-space: nowrap;
-    max-width: 400px;
-    text-overflow: ellipsis;
-    overflow: hidden;    
-    padding-right: 25px;
-    
-    &:hover{
-      border: 1px solid $medium-gray;
-    }
-  }
-  
-  span{
-    padding: $padding-small;
-  }
-  
-  .btn {
-    @include only-icon();
-    margin: 0;
-    margin-top: -5px;
-    margin-left: $padding-small;
-    position: absolute;
-    top: 10px;
-    right: 5px;
   }
 }
 
