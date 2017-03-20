@@ -17,6 +17,7 @@
 		}
 	}
 	.main-label{
+  		text-transform: uppercase;
 		&:after{
 			content: "";
 			width: 50px;

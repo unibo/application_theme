@@ -148,35 +148,6 @@ a {
   }
 }
 
-.onlyprint {
-  display: none;
-}
-
-.no-result {
-  color: #999999;
-  margin: 2em 0;
-}
-
-.main-label {
-  text-transform: uppercase;
-}
-
-/* pagina di errore */
-.error-container{
-  text-align: center;
-  margin-top: $padding*4;
-  h1 {
-    @include huge();
-  }
-  h2 {
-    margin-bottom: $padding;
-  }
-  p {
-    margin-bottom: $padding;
-    color: $dark-gray;
-  }
-}
-
 .warning-message{
   display: block;
   margin: -$padding;
@@ -191,50 +162,4 @@ a {
     content: "\f06a";
     font: normal normal normal 14px/1 FontAwesome;
   }
-}
-
-/* popup */
-
-body.popup{
-  
-  > form{
-    min-width: 0;
-  }
-  .row{
-    display: block;
-    .label{
-      text-align: left;
-      margin-bottom: $padding-small;
-    }
-  }
-
-  /* fix tendina in scegli apparato */
-  .RadDropDownList_Metro .rddlInner{
-    padding: $padding-small;
-  }
-  .RadDropDownList_Metro .rddlIcon{
-    line-height: 2;
-  }
-  .rddlPopup .rddlList{
-    font-size: 16px;
-    line-height: normal;
-  }
-
-  /* diminuito font in cambia utente */
-  .RadSearchBox_MetroTouch .rsbInner{
-    font-size: 13px;
-  }
-}
-
-body form.popup{
-  min-width: 0;
-}
-
-.RadWindow.rwRoundedCorner .rwTitleBar {
-    background-color: $dark-gray;
-}
-
-.RadWindow_Metro .rwTitleBar .rwTitleWrapper .rwTitle{
-  line-height: 25px;
-  font-size: 1.1em;    
 }

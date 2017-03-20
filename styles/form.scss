@@ -51,47 +51,6 @@ select::-ms-expand {
   }
 }
 
-/* calendario */
-
-.RadPicker{
-	td{
-		background-color: transparent;
-		input{
-			border-right: none;
-			background-color: #fff;
-		}
-		.rcCalPopup,
-		.rcCalPopup:hover{
-			border-left: none;
-			background-color: #fff;
-		}
-		.rcCalPopup,
-		input{
-			/* disabilitato input e calendario popup */
-			&.rcDisabled,
-			&.rcDisabled:hover,
-			&.riTextBox[disabled],
-			&:disabled{
-				background-color: $background-disabled;
-				pointer-events: none;
-			}
-		}
-	}
-}
-
-/* disabilitato */
-.aspNetDisabled td{
-	-moz-appearance: none;
-    color:#000;
-	background: transparent none repeat scroll 0 0;
-    background-color: $background-disabled;
-}
-
-
-
-.imei, .phone {
-    white-space: nowrap;
-}
 
 /* griglia della form */
 
@@ -202,56 +161,5 @@ select::-ms-expand {
   margin-bottom: 0;
   border-bottom: 1px solid $border-color;
   padding-bottom: $padding-xs;
-}
-
-/* popup */
-body.popup {
-    select,
-    textarea,
-    input {
-        &:not(.riTextBox) {
-            width: 380px;
-            min-width: 380px;
-        }
-    }
-}
-
-/* telerik */
-
-/* TODO: Spostare nel posto giusto */
-.RadAutoCompleteBox input.racInput {
-    /*min-width: 10px;*/
-}
-.RadInput_MetroTouch.riSingle .riTextBox {
-    font-size: 14px;
-}
-.RadPicker_MetroTouch td a.rcCalPopup  {
-    margin: 0 -1px;
-}
-.RadPicker_MetroTouch .rcTable .rcDisabled {
-    opacity: 1;
-}
-/* --- */
-
-.racItem table.results,
-.rddlItem table.results,
-.rsbListItem table.results  {
-    width:100%;
-    margin: 5px 0 5px 0;
-    th {
-        background-color: inherit;
-        border: none;
-        font-weight: bold;
-        text-align: left;
-        padding: 0;
-        font-size:0.9em;
-    }
-
-    td {
-        background-color: inherit;
-        border: none;
-        padding: 0;
-        font-size:0.8em;
-    }
 }
 
