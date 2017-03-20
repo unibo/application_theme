@@ -1,0 +1,38 @@
+<p class="section-description">Basics</p>
+<p>Accordion menus follow the basic Menu syntax of &lt;ul>, &lt;li>, and &lt;a>. To convert a basic menu into an accordion, add the attribute data-accordion-menu. You probably also want it to be vertical, so add the class .vertical as well.
+<br/>
+Any &lt;a> will behave like a standard link. However, any &lt;a> paired with a nested &lt;ul> menu will then slide that sub-menu up and down when clicked on.</p>
+<p>You can use the built-in .nested class to add an indent to a nested menu.</p>
+<p>To have a sub-menu already open when the page loads, add the class .is-active to that sub-menu.</p>
+
+<pre>
+  <code>
+<ul class="vertical menu" data-accordion-menu>
+  <li>
+    <a href="#">Item 1</a>
+    <ul class="menu vertical nested">
+      <li><a href="#">Item 1A</a></li>
+      <li><a href="#">Item 1B</a></li>
+      <li><a href="#">Item 1C</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Item 2</a></li>
+  <li><a href="#">Item 3</a></li>
+  <li><a href="#">Item 4</a></li>
+</ul>
+  </code>
+</pre>
+
+<ul class="vertical menu" data-accordion-menu>
+  <li>
+    <a href="#">Item 1</a>
+    <ul class="menu vertical nested">
+      <li><a href="#">Item 1A</a></li>
+      <li><a href="#">Item 1B</a></li>
+      <li><a href="#">Item 1C</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Item 2</a></li>
+  <li><a href="#">Item 3</a></li>
+  <li><a href="#">Item 4</a></li>
+</ul>
