@@ -34,7 +34,10 @@ h3 + a {
 }
 pre {
   display: flex;
-  margin-bottom: 2em;
+  margin: 2em 0;
+}
+pre + *:not(pre) {
+  padding-bottom: 2em;
 }
 code {
   width: 100%;
