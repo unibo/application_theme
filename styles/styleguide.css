@@ -44,7 +44,7 @@ code {
 }
 .js:after {
   content: 'JS';
-  padding: 2px 3px;
+  padding: 2px 4px;
   background-color: #1779ba;
   color: #fff;
   font-size: 0.7em;
