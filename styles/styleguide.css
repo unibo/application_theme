@@ -24,10 +24,14 @@ h3 + a {
   margin-left: 1em;
 }
 .section-description{
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-top: 3em;
   margin-bottom: 0.5em;
   color: #666;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-left: 4px solid #1779ba;
+  padding: 0 0.5em;
 }
 .label-font{
   color: #00b7ff;
