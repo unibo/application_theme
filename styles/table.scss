@@ -1,0 +1,12 @@
+table {
+  td {
+    vertical-align: middle;
+    padding: 1rem;
+  }
+  &.dark {
+    thead {
+      color: white;
+      background-color: #595959;
+    }
+  }
+}
