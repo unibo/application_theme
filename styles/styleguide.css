@@ -24,10 +24,14 @@ h3 + a {
   margin-left: 1em;
 }
 .section-description{
-  font-size: 1.1em;
-  margin-top: 2em;
+  font-size: 1.2em;
+  margin-top: 3em;
   margin-bottom: 0.5em;
   color: #666;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-left: 4px solid #1779ba;
+  padding: 0 0.5em;
 }
 .label-font{
   color: #00b7ff;
@@ -35,9 +39,6 @@ h3 + a {
 pre {
   display: flex;
   margin: 2em 0;
-}
-pre + *:not(pre) {
-  padding-bottom: 2em;
 }
 code {
   width: 100%;
@@ -50,4 +51,26 @@ code {
   font-size: 0.7em;
   margin-left: 5px;
   font-weight: bold;
+}
+.row.display {
+  background: #eee;
+  font-size: 11px;
+  margin-bottom: 10px;
+  line-height: 2rem;
+  border: solid 1px #c6c6c6;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.row.display-end {
+  background: #fff;
+  font-size: 11px;
+  margin-bottom: 10px;
+  line-height: 2rem;
+  border: solid 1px #c6c6c6;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.row.display-end .columns {
+  background: #e1e1e1;
+  border-left: 1px solid #c6c6c6;
 }

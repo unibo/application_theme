@@ -1,4 +1,5 @@
 <p class="section-description">Basics</p>
+
 <pre>
   <code class="html">
 <table>
@@ -33,6 +34,7 @@
 </table>
   </code>
 </pre>
+
 <table>
   <thead>
     <tr>
@@ -64,4 +66,227 @@
   </tbody>
 </table>
 
+
+<p class="section-description">Hover State</p>
+<p>Need to spiff up the table just a tad? Just add the class .hover to lightly darken the table rows on hover.</p>
+
+<pre>
+  <code>
+<table class="hover">
+</table>
+  </code>
+</pre>
+
+<table class="hover">
+  <thead>
+    <tr>
+      <th width="200">Table Header</th>
+      <th>Table Header</th>
+      <th width="150">Table Header</th>
+      <th width="150">Table Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p class="section-description">Stripes</p>
+<p>By default, table rows are striped. There's an .unstriped class to remove the stripes. If you change $table-is-striped to false to remove stripes from all tables, use the .striped class to add stripes.</p>
+
+<pre>
+  <code>
+<table class="unstriped">
+</table>
+  </code>
+</pre>
+
+<table class="unstriped">
+  <thead>
+    <tr>
+      <th width="200">Table Header</th>
+      <th>Table Header</th>
+      <th width="150">Table Header</th>
+      <th width="150">Table Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p class="section-description">Stacked Table</p>
+<p>To stack a table on small screens, add the class .stack.</p>
+
+<pre>
+  <code>
+<table class="stack">
+</table>
+  </code>
+</pre>
+
+<table class="stack">
+  <thead>
+    <tr>
+      <th width="200">Table Header</th>
+      <th>Table Header</th>
+      <th width="150">Table Header</th>
+      <th width="150">Table Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p class="section-description">Scrolling Table</p>
+<p>Got a lot of tubular tabular data? Add a wrapper element with the class .table-scroll around your table to enable horizontal scrolling.</p>
+
+<pre>
+  <code>
+<div class="table-scroll">
+  <table></table>
+</div>
+  </code>
+</pre>
+
+<div class="table-scroll">
+  <table>
+    <thead>
+      <tr>
+        <th>This is the description!</th>
+        <th>One</th>
+        <th>Two</th>
+        <th>Three</th>
+        <th>Four</th>
+        <th>Five</th>
+        <th>Six</th>
+        <th>Seven</th>
+        <th>Eight</th>
+        <th>Nine</th>
+        <th>Ten</th>
+        <th>Eleven</th>
+        <th>Twelve</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="display:block; width:400px;">These are all the words that people use to describe Foundation 6!</td>
+        <td>Cool</td>
+        <td>Swag</td>
+        <td>Chill</td>
+        <td>Killer</td>
+        <td>Rad</td>
+        <td>Baller</td>
+        <td>OMG</td>
+        <td>Sweet</td>
+        <td>Awesome</td>
+        <td>Beast</td>
+        <td>Dope</td>
+        <td>Tubular</td>
+      </tr>
+      <tr>
+        <td>These are some words that people use to describe other web frameworks.</td>
+        <td>Whatevs</td>
+        <td>Ugh.</td>
+        <td>LOL</td>
+        <td>K</td>
+        <td>Aight</td>
+        <td>Eh.</td>
+        <td>Grrr...</td>
+        <td>Meh.</td>
+        <td>TTYL</td>
+        <td>Bleh.</td>
+        <td>Really?</td>
+        <td>Why?</td>
+      </tr>
+      <tr>
+        <td>Here are some great super heros.</td>
+        <td>Batman</td>
+        <td>Superman</td>
+        <td>Spiderman</td>
+        <td>Wonder Woman</td>
+        <td>Hulk</td>
+        <td>Nicolas Cage</td>
+        <td>Antman</td>
+        <td>Aquaman</td>
+        <td>Captain America</td>
+        <td>Wolverine</td>
+        <td>Thor</td>
+        <td>Iron Man</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Here's a footer, just in case</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
 
