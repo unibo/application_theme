@@ -1,4 +1,7 @@
-<form id="ex_form">
+<form id="ex_form" data-abide novalidate>
+
+  <!-- Add "display: none" right away -->
+  
 <div class="row">
   <div class="medium-3 column">
     <h2 class="title-fieldset">
@@ -7,6 +10,10 @@
   </div>
 </div>
 
+<div data-abide-error class="alert callout" style="display: none;">
+    <p><i class="fi-alert"></i> There are some errors in your form.</p>
+  </div>
+  
 <div class="row">
   <div class="medium-3 column unibo-label">
     <label for="el_text">Text</label>
