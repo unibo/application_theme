@@ -1,6 +1,6 @@
 
 /* grid forms */
-.grid-form{
+.grid-form {
   /* titolo del fieldset */
   .title-fieldset {
     border-bottom: 1px solid $border-color;
@@ -19,31 +19,38 @@
   fieldset > .row {
     display: flex;
     flex-wrap: wrap;
-    .column{
+    .column {
       display: flex;
       margin-bottom: $margin-xs;      
-      input{
+      input {
         margin-top: 4px;
       }
     }
   }
 
-  /* tolgo margine di default perchè il margine è sulle colonne*/
+  /* gruppi di radio e check inline */
+  fieldset {
+    > span {
+      white-space: nowrap;
+    }
+  } 
+
+  /* diminuito margine di default perchè il margine è sulle colonne*/
   [type="file"], 
   [type="checkbox"], 
-  [type="radio"]{
+  [type="radio"] {
     margin-bottom: $margin-xs;
   }
 
   /* allineamento forzato a sinistra in mobile */
   .lead,
-  .subheader{
+  .subheader {
     &.text-right{
       text-align: left;
 
     }
-    @media screen and (min-width: $medium){        
-      &.text-right{
+    @media screen and (min-width: $medium) {        
+      &.text-right {
         text-align: right;
       }        
     }
