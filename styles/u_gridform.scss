@@ -1,0 +1,53 @@
+
+/* grid forms */
+.grid-form{
+  /* titolo del fieldset */
+  .title-fieldset {
+    border-bottom: 1px solid $border-color;
+    padding-bottom: $padding-xs;
+  }
+
+  /* spaziature maggiori tra row */
+  .row{
+    margin-bottom: $margin-xs;
+    .row{
+      margin-bottom: 0;
+    }
+  }
+
+  /* griglia innestata: gruppi di radio e check */
+  .row > fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    .column{
+      display: flex;
+      margin-bottom: $margin-xs;
+      
+      input{
+        margin-top: $margin-xs;
+      }
+    }
+  }
+
+  /* tolgo margine di default perchè il margine è sulle colonne*/
+  [type="file"], 
+  [type="checkbox"], 
+  [type="radio"]{
+    margin-bottom: $margin-xs;
+  }
+
+  /* allineamento forzato a sinistra in mobile */
+  .lead,
+  .subheader{
+    &.text-right{
+      text-align: left;
+
+    }
+    @media screen and (min-width: $medium){        
+      &.text-right{
+        text-align: right;
+      }        
+    }
+  }
+}
+

@@ -20,78 +20,44 @@
         
         <div class="large-10 columns">
         
-        <h1 class="huge">Style Guide Unibo Forms</h1>
+          <h1 class="huge">Style Guide Unibo Forms</h1>
 
-        <h2>In questa pagina ci sono i componenti custom relativi alle form sviluppati ed utilizzati esclusivamente per applicazioni unibo.</h2>
-      
-        <section>
-        	<h3 id="select">Select</h3>
-        	<p class="section-description">
-        		Il menu a tendina può avere: una descrizione del campo (aiuto contestuale), delle informazioni aggiuntive e una nota finale (avviso per la compilazione).
-        		<br> 
-        		Gli elementi possono essere inseriti tutti, alcuni oppure nessuno.
-        	</p>
-        	
-        	<pre>
-        	  <code class="html">
-        	    @@include "../snippets/form/select.html"
-        	  </code>
-        	</pre>
-        	
-        	@@include "../snippets/form/select.html"
-        </section>
-    
-        <section>
-  		<h3 id="input">Input</h3>
-  		  <p class="section-description">
-  		    Campo di testo: può essere semplice, con aiuto contestuale, con informazioni aggiuntive e note finali.
-  		  </p>
-  		  
-  		  <pre>
-            <code class="html">
-              @@include "../snippets/form/input.html"
-            </code>
-          </pre>
-	      @@include "../snippets/form/input.html"
-        </section>
-    
-        <section>
-          <h3 id="radio">Radio</h3>
-  		  <p class="section-description">
-  		    Campo con radio button: può essere semplice, con aiuto contestuale, con informazioni aggiuntive e note finali.
+          <h2>In questa pagina ci sono i componenti custom relativi alle form sviluppati ed utilizzati esclusivamente per applicazioni unibo.</h2>
+        
+          <section>
+            <h3 id="griglia_form">Griglia Form</h3>
+            <p class="section-description">Form strutturato in una griglia</p>
+            <p>
+              La struttura è la griglia utilizzata in Foundation ed è attivo il plugin <kbd>Abide</kbd>. <br />
+              Sono stati utilizzati anche i componenti <code> &lt;p class="subheader"&gt;</code> e <code> &lt;p class="help-text"&gt;</code> 
             </p>
+            
+            <p>E' stato inserito un titolo aggiuntivo, in caso ci sia bisogno di esplicitare il titolo della form <code> &lt;h2 class="title-fieldset"&gt;</code> </p>
+            
             <pre>
-        	  <code class="html">
-        	    @@include "../snippets/form/radio.html"
-        	  </code>
-        	</pre>
-            @@include "../snippets/form/radio.html"
-        </section>
-    
-        <section>
-          <h3 id="checkbox">Checkbox</h3>
-          <p class="section-description">
-            Campo con checkboxes: può essere semplice, con aiuto contestuale, con informazioni aggiuntive e note finali.
-          </p>
-          <pre>
-            <code class="html">
-              @@include "../snippets/form/checkbox.html"
-            </code>
-          </pre>
-          @@include "../snippets/form/checkbox.html"
-        </section>
-    
-        <section>
-          <h3 id="fieldset">Fieldset</h3>
-          <p class="section-description">
-            Campo di testo: può essere semplice, con aiuto contestuale, con informazioni aggiuntive e note finali.
-          </p>
+              <code class="html">
+                @@include "../snippets/form/griglia_form.html"
+              </code>
+            </pre>
+            
+            @@include "../snippets/form/griglia_form.html"
+
+          </section>
+          <section>
+            <h3 id="griglia_form">Griglia Form innestata</h3>
+            <p class="section-description">Form strutturato con più colonne all'interno</p>
+
+             <p>In questo componente è prevista la possibilità di inserire una griglia innestata per le input all'interno che possono essere su più colonne. In particolare questa funzionalità è utile per i radio button e checkbox.</p>
+
             <pre>
-        	  <code class="html">
-        	    @@include "../snippets/form/fieldset.html"
-        	  </code>
-        	</pre>
-          @@include "../snippets/form/fieldset.html"
+              <code class="html">
+                @@include "../snippets/form/griglia_form_nested_col.html"
+              </code>
+            </pre>
+
+            @@include "../snippets/form/griglia_form_nested_col.html"
+           
+
           </section>
       
         </div>
