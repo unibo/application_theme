@@ -16,15 +16,14 @@
   }
 
   /* griglia innestata: gruppi di radio e check */
-  .row > fieldset{
+  fieldset > .row {
     display: flex;
     flex-wrap: wrap;
     .column{
       display: flex;
-      margin-bottom: $margin-xs;
-      
+      margin-bottom: $margin-xs;      
       input{
-        margin-top: $margin-xs;
+        margin-top: 4px;
       }
     }
   }
