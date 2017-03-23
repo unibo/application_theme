@@ -19,11 +19,17 @@
   fieldset > .row {
     display: flex;
     flex-wrap: wrap;
+    &:before,
+    &:after{
+      display: none;
+    }
     .column {
       display: flex;
       margin-bottom: $margin-xs;      
       input {
         margin-top: 4px;
+        flex-grow: 0;
+        flex-shrink: 0;
       }
     }
   }
