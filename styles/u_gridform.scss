@@ -62,4 +62,14 @@
     }
   }
 }
+/* errori nella form */
+
+.form-error{
+  margin-top: -$margin-xs;
+}
+
+.column.is-invalid-input {
+  border-width: 1px;
+  border-style: solid;
+}
 

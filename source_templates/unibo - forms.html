@@ -44,7 +44,7 @@
 
           </section>
           <section>
-            <h3 id="griglia_form">Griglia Form innestata</h3>
+            <h3 id="griglia_nested_form">Griglia Form innestata</h3>
             <p class="section-description">Form strutturato con più colonne all'interno</p>
 
              <p>In questo componente è prevista la possibilità di inserire una griglia innestata per le input all'interno che possono essere su più colonne. In particolare questa funzionalità è utile per i radio button e checkbox.</p>
@@ -57,6 +57,22 @@
 
             @@include "../snippets/form/griglia_form_nested_col.html"
            
+
+          </section>
+
+          <section>
+            <h3 id="grid_error_form">Errori nella Griglia Form</h3>
+            <p class="section-description">Errori nei radio button e checkbox</p>
+
+             <p>E' possibile inserire la classe <kbd>is-invalid-inuput</kbd> su tutto il contenitore del campo, cioè su <kbd>column</kbd>. Consigliamo di evidenziare sempre anche la relativa label utilizzando la classe <kbd>is-invalid-label</kbd>. <br /> Questa funzionalità è utile per i gruppi di radio e checkbutton.</p>
+
+            <pre>
+              <code class="html">
+                @@include "../snippets/form/error_griglia.html"
+              </code>
+            </pre>
+
+            @@include "../snippets/form/error_griglia.html"           
 
           </section>
       
