@@ -26,7 +26,7 @@ I am an Accordion on small and large but I am Tabs on medium</p>
   </code>
 </pre>
 
-<ul class="accordion" data-responsive-accordion-tabs="tabs medium-accordion large-tabs">
+<ul class="accordion" data-responsive-accordion-tabs="accordion medium-tabs large-accordion">
   <li class="accordion-item is-active" data-accordion-item>
     <a href="#" class="accordion-title">Accordion 1</a>
     <div class="accordion-content" data-tab-content>
@@ -41,34 +41,35 @@ I am an Accordion on small and large but I am Tabs on medium</p>
   </li>
 </ul>
 
-
 <p>Tabs HTML Markup</p>
 <p>Scale your browser down to see the toggle happen.<br/>
 I am Tabs on small and large and Accordion on medium</p>
 
 <pre>
   <code>
-<div class="tabs-content" data-tabs-content="example-tabs">
-  <div class="tabs-panel is-active" id="panel1zz">
-    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
-  </div>
-  <div class="tabs-panel" id="panel2zz">
-    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
-  </div>
-</div>
+
   </code>
 </pre>
 
-<ul class="tabs" data-deep-link="true" data-tabs="" data-responsive-accordion-tabs="tabs medium-accordion large-accordion">
-  <li class="tabs-title is-active"><a href="#panel1cc" aria-selected="true">Tab 1</a></li>
-  <li class="tabs-title"><a href="#panel2cc">Tab 2</a></li>
+<ul class="tabs" data-deep-link="true" id="tabs-markup" data-responsive-accordion-tabs="accordion medium-accordion large-tabs">
+  <li class="tabs-title is-active"><a href="#panel1_tab_acc" aria-selected="true">Tab 1</a></li>
+  <li class="tabs-title"><a href="#panel2_tab_acc">Tab 2</a></li>
+  <li class="tabs-title"><a href="#panel3_tab_acc">Tab 3</a></li>
+  <li class="tabs-title"><a href="#panel4_tab_acc">Tab 4</a></li>
 </ul>
-<div class="tabs-content" data-tabs-content="example-tabs" >
-  <div class="tabs-panel is-active" id="panel1cc">
+
+<div class="tabs-content" data-tabs-content="tabs-markup">
+  <div class="tabs-panel is-active" id="panel1_tab_acc">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  <div class="tabs-panel" id="panel2_tab_acc">
     <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
   </div>
-  <div class="tabs-panel" id="panel2cc">
-    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+  <div class="tabs-panel" id="panel3_tab_acc">
+    <img class="thumbnail" src="../snippets/foundation/assets/img/generic/rectangle-3.jpg">
+  </div>
+  <div class="tabs-panel" id="panel4_tab_acc">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   </div>
 </div>
 
