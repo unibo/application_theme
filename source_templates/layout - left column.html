@@ -20,38 +20,47 @@
 
           @@include "../snippets/header.html"
 
-	      <div class="info-page">
-            <div class="row expanded">
-              <div class="medium-12 column">
-              
-                <a class="title" href="">Telefonia Mobile</a>
-                
-                <div class="breadcrumbs">
-                  <span class="separator">
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                  </span>
-                  <a href="">Elenco Utenze</a>
-                </div>
-                
-              </div>
-            </div>
-	      </div>
+          <!-- breadcrumbs -->               
+          @@include "../snippets/u_breadcrumbs.html"
 
           <div class="row expanded">
           
 	          <aside class="large-2 column nopadding">
 	            
                 @@include "../snippets/main_menu.html"
-                @@include "../snippets/actions.html"
 	            
 	          </aside>
-	          
-	          <main class="large-10 column">
-                  <p class="main-label">Lorem ipsum</p>
-		          <h1>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</h1>
-		          <h2>Sed ut perspiciatis unde omnis iste natus</h2>
-		          <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-	          </main>
+
+	          <div class="large-10 column">
+
+              
+              <div class="u-breadcrumbs">
+                <nav aria-label="You are here:" role="navigation">
+                  <ul class="breadcrumbs">
+                  <li><a href="#">Home - Nome dell'applicativo</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li class="disabled">Gene Splicing</li>
+                  <li>
+                    <span class="show-for-sr">Current: </span> Cloning
+                  </li>
+                  </ul>
+                </nav>
+              </div>
+                  
+  	          <main>
+                <div class="row">
+                  <div class="large-12 column">
+                    <h1>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</h1>
+                    <h2>Sed ut perspiciatis unde omnis iste natus</h2>
+                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                  </div>
+                </div>
+                
+                @@include "../snippets/form/griglia_form.html"  
+                @@include "../snippets/form/griglia_form_nested_col.html"  
+                  
+  	          </main>
+           </div>
 	          
           </div>
 

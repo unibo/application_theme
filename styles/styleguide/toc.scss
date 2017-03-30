@@ -1,11 +1,11 @@
 .toc {
-  padding: $padding 0;
+  padding: 0.5em 0;
   width: 100%;
   margin-top: 2em;
   
-  @media screen and (min-width: $large){
-    padding: $padding-small;
-    border-left: 4px solid $primary;
+  @media screen and (min-width: 1024px){
+    padding: 0.5em;
+    border-left: 4px solid #1779ba;
   }
   
   nav {
@@ -13,7 +13,7 @@
       list-style: none;
       margin: 0;
       > li {
-        padding: $padding-xs;
+        padding: 0.5em;
         transition: background 0.3s;
         &:hover {
           background-color: #f1f1f1;

@@ -19,13 +19,18 @@ section > h3{
   font-weight: normal;
   display: inline-block;
   padding-top: 1em;
+  font-size: 1.3em;
+  font-size: 1.8em;
 }
 h3 + a {
   margin-left: 1em;
 }
+section > p{
+  font-size: 1.2em;
+}
 .section-description{
   font-size: 1.2em;
-  margin-top: 3em;
+  margin-top: 0.5em;
   margin-bottom: 0.5em;
   color: #666;
   font-weight: bold;
@@ -74,3 +79,6 @@ code {
   background: #e1e1e1;
   border-left: 1px solid #c6c6c6;
 }
+
+/* stili styleguide */
+@import "toc";

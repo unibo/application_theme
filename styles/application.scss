@@ -8,11 +8,14 @@
 @import "base";
 @import "font-awesome/css/font-awesome.css";
 
-
-/* elementi comuni */
+/* override elementi foundation */
 @import "buttons";
+@import "u_error";
+
+/* elementi custom unibo */
 @import "form";
 @import "header";
+@import "u_breadcrumbs.scss";
 @import "footer";
 @import "table";
 @import "unibo_login";
@@ -21,5 +24,4 @@
 @import "top_bar";
 @import "state";
 @import "box_option";
-@import "toc";
 @import "wizard";

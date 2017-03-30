@@ -1,4 +1,4 @@
-/* Application Footer */
+/* header con sigillo allineato a sinistra */
 
 header {
   background-color: whitesmoke;
@@ -36,62 +36,6 @@ header {
   }
 }
 
-.info-page {
-  flex: none;
-  padding: $padding-small 0;
-  display: block;
-  width: 100%;
-  border-bottom: 1px solid $border-color;
-  
-  h1 {    
-    font-size: 2em;
-    margin-bottom: 0;
-    float: left;
-    color: $primary;
-  }
-  
-  h2 {
-    font-weight: 200;
-    margin-bottom: 0;
-  }
-  
-  .title {
-    @include normal-fancy();
-    margin-bottom: 0;
-    float: left;
-    color: $base-font-color;
-    text-decoration: none;
-    font-weight: 300;
-    line-height: 38px;
-    @media screen and (min-width: $medium){
-      @include huge();
-    }
-  }
-  
-  .home {
-    @include very-large();
-  }
-  
-  .breadcrumbs {
-    float: left;
-    margin: 0 $padding-xs;
-    @include normal-fancy();
-    line-height: 38px;
-    
-    .separator {
-      
-      @media screen and (min-width: $medium){
-        margin-right: $padding-small;
-        margin-left: $padding-small;
-      }
-    }
-    
-    a {
-      color: $base-font-color;
-      text-decoration: none;
-    }
-  }
-}
 
 
 @media screen and (max-width: 768px) {

@@ -4,8 +4,6 @@
 
     @@include "../snippets/head.html"
     
-    <link rel="stylesheet" type="text/css" href="../styles/styleguide.css" />
-
     <title>Form</title>
   </head>
 	
@@ -127,21 +125,21 @@
           </pre>
           @@include "../snippets/foundation/forms/file_upload_button.html"
         </section>
-        
-        <h1 class="huge">Unibo Forms</h1>
 
-        <h2>Di seguito i componenti custom relativi alle form sviluppati ed utilizzati esclusivamente per applicazioni unibo.</h2>
-    
-        <section>
-          <h3 id="griglia_form">Griglia Form</h3>
-  		  <p class="section-description">Come creare la struttura del form.</p>
-            <pre>
-        	  <code class="html">
-@@include "../snippets/form/griglia_form.html"
-        	  </code>
-        	</pre>
-            @@include "../snippets/form/griglia_form.html"
+        <section>  
+          <h3 id="error">Errori</h3>
+          <p>Foundation utilizza il plugin Abide per validare i campi required in html5.</p>
+          <p>Per utilizzare il plugin è sufficiente inserire gli attributi <kbd>data-abide</kbd> e <kbd>novalidate</kbd> all'interno del tag <kbd>form</kbd>. L'attributo <kbd>novalidate</kbd> impedisce di inserire gli stili di default del browser per la validazione, poiché questi vengono inseriti dal plugin.</p>
+          <p><a href="http://foundation.zurb.com/sites/docs/abide.html">Maggiori informazioni su Abide</a>
+        </p>
+          <pre>
+            <code>
+@@include "../snippets/form/error.html"
+            </code>
+          </pre>
+          @@include "../snippets/form/error.html"
         </section>
+          
         
         </div>
       </div>
@@ -151,9 +149,6 @@
     @@include "../snippets/end_of_body.html"
     
     <script src="../js/toc.js"></script>
-    <script>
-      var elem = new Foundation.Abide($('#ex_form'));
-    </script>
     
   </body>
 </html>

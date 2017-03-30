@@ -1,0 +1,14 @@
+/* stili delle label per unibo */
+
+label{
+	&.lead{
+	  font-size: $global-font-size * 1.25;
+	}
+}
+
+    @media screen and (min-width: $medium){  
+	[type="checkbox"] + label, 
+	[type="radio"] + label{
+		line-height: 1.5;
+	}
+}
