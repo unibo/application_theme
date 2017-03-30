@@ -1,5 +1,4 @@
 .u-card-option {
-  width: 300px;
   text-align: center;
   margin: $margin-small auto;
   
@@ -7,5 +6,11 @@
     margin-bottom: $padding-small;
     font-size: 1.92308rem;
     line-height: 2.92308rem;
+  }
+  &.fixed-width{
+  	width: 300px;
+  }
+  .button{
+  	margin-top: $padding-small;
   }
 }
