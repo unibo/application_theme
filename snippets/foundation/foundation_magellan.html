@@ -1,17 +1,15 @@
 <div data-sticky-container>
-  <div class="sticky" id="example" data-sticky data-margin-top="0" style="width:100%;" data-margin-bottom="0" data-top-anchor="topAnchorExample" data-btm-anchor="bottomOfContentId:bottom">
+  <div class="sticky" id="example" data-sticky data-margin-top="0" style="width:100%;" data-margin-bottom="0" data-top-anchor="setup" data-btm-anchor="stickynav:end">
     <nav data-magellan>
-      <ul class="horizontal menu expanded">
-      <li><a href="#first">First Arrival</a></li>
-      <li><a href="#second">Second Arrival</a></li>
-      <li><a href="#third">Third Arrival</a></li>
+      <ul class="horizontal menu expanded u-magellan-menu">
+      <li><a href="#setup">First Arrival</a></li>
+      <li><a href="#stickynav">Second Arrival</a></li>
       </ul>
     </nav>
   </div>
 </div>
 
-
-<p id="first" class="section-description" data-magellan-target="first">Setup</p>
+<p id="setup" class="section-description" data-magellan-target="setup">Setup</p>
 <p>You can use Magellan with any navigation element, like our Menu or your own custom component. Just add the attribute data-magellan to the container, and links to specific sections of your page. Each section needs a unique ID.</p>
 
 <pre>
@@ -30,7 +28,7 @@
 </pre>
 
 
-<p id="second" class="section-description" data-magellan-target="second">Sticky Navigation</p>
+<p id="stickynav" class="section-description" data-magellan-target="stickynav">Sticky Navigation</p>
 <p>You can use Magellan with our Sticky plugin to create a persistent navigation header or sidebar.</p>
 <p>This first example is a simplified version of the table of contents on the right side of this page:</p>
 
@@ -53,15 +51,16 @@
 <pre>
   <code>
 <div data-sticky-container>
-  <div class="sticky" id="example" data-sticky data-margin-top="0" style="width:100%;" data-margin-bottom="0" data-top-anchor="topAnchorExample" data-btm-anchor="bottomOfContentId:bottom">
+  <div class="sticky" id="example" data-sticky data-margin-top="0" style="width:100%;" data-margin-bottom="0" data-top-anchor="setup" data-btm-anchor="stickynav:end">
     <nav data-magellan>
       <ul class="horizontal menu expanded">
-      <li><a href="#first">First Arrival</a></li>
-      <li><a href="#second">Second Arrival</a></li>
-      <li><a href="#third">Third Arrival</a></li>
+      <li><a href="#setup">First Arrival</a></li>
+      <li><a href="#stickynav">Second Arrival</a></li>
       </ul>
     </nav>
   </div>
 </div>
+<p id="mag_first">First</p>
+<p id="mag_second">Second</p>
   </code>
 </pre>
