@@ -3,10 +3,19 @@ table {
     vertical-align: middle;
     padding: 1rem;
   }
+  
   &.dark {
     thead {
       color: white;
       background-color: #595959;
+    }
+  }
+  
+  &.no-border {
+    thead,
+    tbody,
+    tfoot {
+      border: 0;
     }
   }
 }
