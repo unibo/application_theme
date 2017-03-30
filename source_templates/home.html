@@ -1,54 +1,48 @@
 <!DOCTYPE html>
-<html>
-	<head>
-  		<link rel="stylesheet/scss"
-	          type="text/css"
-	          href="../styles/application.scss" />
-		      
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<meta charset="UTF-8">
-		<meta name="viewport" content="initial-scale=1.0, user-scalable=yes, width=device-width, minimum-scale=1.0"/>
-		<meta name="format-detection" content="telephone=no">
-
-  		<title>Homepage</title>
-	</head>
-	<body>
-		<form method="post" action="/tol/mobile/" class="content-wrapper" id="mainForm">
-		
-			@@include "../snippets/unibo_login.html"
-
-	        @@include "../snippets/header.html"
-        
-            <main>
-	          <div class="row">
-	            <div class="medium-6 column">
-                 
-                  @@include "../snippets/u_card_option.html"
-                  
-                </div>
-                <div class="medium-6 column">
-                   
-                  @@include "../snippets/u_card_option.html"
-                  
-                </div>
-	          </div>
-	        </main>
-	        
-	        <div class="secondary-info">  
-              <div class="row">
-	            
-	            <div class="large-12 column">
-	        	  <div class="text-wrapper">
-		            <p class="main-label">Lorem ipsum</p>
-		            <h3>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</h3>
-		            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-				  </div>
-                </div>
+<html>  
+  <head>
+    @@include "../snippets/head.html" 
+    
+  	<title>Homepage</title>
+  </head>
+  
+  <body>
+  	<form method="post" action="/tol/mobile/" class="content-wrapper" id="mainForm">
+  	
+  		@@include "../snippets/u_barra_login.html"  
+          @@include "../snippets/header.html"
+      
+          <main>
+            <div class="row">
+              <div class="medium-6 column">
+               
+                @@include "../snippets/u_card_option.html"
                 
-	          </div>
-	        </div>
-
-        	@@include "../snippets/footer.html"
-		</form>
-  	</body>
+              </div>
+              <div class="medium-6 column">
+                 
+                @@include "../snippets/u_card_option.html"
+                
+              </div>
+            </div>
+          </main>
+          
+          <div class="secondary-info">  
+            <div class="row">
+              
+              <div class="large-12 column">
+          	  <div class="text-wrapper">
+  	            <p class="main-label">Lorem ipsum</p>
+  	            <h3>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</h3>
+  	            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+  			  </div>
+              </div>
+              
+            </div>
+          </div>  
+      	@@include "../snippets/footer.html"
+  	</form>
+  	
+  	@@include "../snippets/end_of_body.html"
+  </body>
 </html>

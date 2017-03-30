@@ -1,0 +1,68 @@
+.u-barra-login {
+  background-color: $base-font-color;
+  box-shadow: 5px 1px 5px #cccccc;
+  color: white;
+  line-height: 32px;
+  padding: 0px;
+  
+  a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover{
+      background-color: white;
+      color: $base-font-color;
+    }
+  }
+  
+  img {
+    height: 18px;
+    vertical-align: text-top;
+    width: 18px;
+  }
+  
+  .dropdown.menu {
+    border-right: 1px solid white;
+    > li {
+      border-left: 1px solid white;
+      
+      &.is-dropdown-submenu-parent {
+        padding-right: 0.7rem;
+        > a {
+          &:hover {
+            color: white;
+            background-color: transparent;
+          }
+          &:after { // Dropdown Arrow
+            border-color: white transparent transparent;
+          }
+        }
+        
+        .only-icon { 
+	      padding-right: 0;
+          &:after { // Nascondo la freccia
+            display: none;
+          }
+        }
+        .menu {
+          li {
+            a {
+              color: $base-font-color;
+              &:hover {
+                background-color: $light-gray;
+                color: darken($base-font-color, 25%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.content-wrapper {
+  .u-barra-login {
+	flex-grow: 0;
+  }
+}
