@@ -1,47 +1,54 @@
-/* header con sigillo allineato a sinistra */
-
 header {
   background-color: whitesmoke;
   border-bottom: 1px solid #e7e7e7;
-  flex: none;
-  padding: 0;
+  padding: $padding-small;
   width: 100%;
+  font-family: "Cinzel", san-serif;
   
-  .logo {
-    background-image: url("../img/sigillo2x.png");
-    background-position: 0 center;
-    background-repeat: no-repeat;
-    background-size: auto 70px;
-    border: medium none;
-    display: inline-block;
-    max-width: 100%;
-    padding: 25px 0px 25px 78px;
-    /* alma mater studiorum */
-    .alma{
-      color: #333;
-      font-size: 1.2rem;
-      margin-bottom: 0;
-    }
-    /* nome dell'applicativo */
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .title {
     color: $primary;
-    font-family: "Cinzel", san-serif;
     font-size: 2rem;
     line-height: 1em;
+    margin: 0;
+  }
+  
+  .sub-title {
+	display: block;
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
+  .img {
+    width: 100px;
+    margin-right: $padding-xs;
     
-    @media screen and (min-width: $medium){
-      background-size: auto 100px;
-      padding: 35px 0px 35px 130px;
+    @media screen and (min-width: $large) {
+      margin-right: $padding-small
+    }
+  }
+  
+  &.u-header-center { // Header centrato
+    
+    .content {
+      justify-content: center;
     }
     
+    .title {
+      text-align: center;
+    }
+    
+    .img {
+      width: 100px;
+      
+      @media screen and (min-width: $large) {
+        width: 140px;
+      }
+    }
+
   }
-}
-
-
-
-@media screen and (max-width: 768px) {
-  
-  header .logo {
-    padding-right: 10px;
-  }
-  
 }
