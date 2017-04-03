@@ -11,7 +11,12 @@
     
     <main>
       <div class="row">
-        <div class="large-12 columns">
+       
+        <div class="large-2 columns" data-sticky-container>
+          @@include "../snippets/toc.html"
+        </div>
+        
+        <div class="large-10 columns">
         
         <h1 class="huge">Style Guide Unibo Navigation</h1>
 
@@ -25,12 +30,12 @@
           
           <pre>
             <code class="html">
-@@include "../snippets/main_menu_icons.html"
+@@include "../snippets/u_main_menu_icons.html"
             </code>
           </pre>
           <div class="row">
             <div class="column large-4">
-              @@include "../snippets/main_menu_icons.html"
+              @@include "../snippets/u_main_menu_icons.html"
             </div>
           </div>
         </section>
@@ -62,6 +67,8 @@
     </main>
     
     @@include "../snippets/end_of_body.html"
+    
+    <script src="../js/toc.js"></script>
     
   </body>
 </html>
