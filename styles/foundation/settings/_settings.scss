@@ -250,8 +250,8 @@ $button-color: $white;
 $button-color-alt: $black;
 $button-radius: $global-radius;
 $button-sizes: (
-  tiny: 0.5rem,
-  small: 0.75rem,
+  tiny: rem-calc(11),
+  small: rem-calc(12),
   default: 1rem,
   large: 1.3rem,
 );
