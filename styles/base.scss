@@ -120,15 +120,20 @@ a {
   min-height: 100%;
   flex-direction: column;
   
+  &:after{
+    content: '';
+    height: 100%;
+    visibility: hidden;
+    position: absolute;
+  }
+  
   > .row {
-    flex-grow: 1;
     width: 100%;
       
     @media screen and (min-width: $large) {
       
       display: flex;
       min-height: 100%;
-      
     }
   }
 }
