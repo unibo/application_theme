@@ -7,7 +7,16 @@
   </head>
 	
   <body>
-    <main>
+    <div class="off-canvas position-left" id="off_canvas" data-off-canvas>
+      <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+      
+<!--   TODO: Inserire Menu   -->
+      
+    </div>
+    
+    <main class="off-canvas-content" data-off-canvas-content>
       <div class="row">
       
         <div class="large-2 columns" data-sticky-container>
@@ -71,6 +80,27 @@
           <h3 id="resptabs" class="js">Accordion Tabs</h3>
           <a href="http://foundation.zurb.com/sites/docs/responsive-accordion-tabs.html">See on Foundation Guide</a>
 @@include "../snippets/foundation/foundation_responsive_accordion_tabs.html"
+        </section>
+        
+        <section>
+          <h3 id="offcanvas" class="js">Off canvas</h3>
+          <a href="http://foundation.zurb.com/sites/docs/off-canvas.html">See on Foundation Guide</a>
+          <p>Setting up the Off-canvas only requires two elements! To setup the Off-canvas create an off-canvas container with the class .off-canvas and the attribute data-off-canvas. This is the container that holds your Off-canvas content.</p>
+          <p>The Off-canvas container also needs a positioning class to determine which side of the viewport it opens from:</p>
+          <ul>
+            <li>.position-left</li>
+            <li>.position-right</li>
+            <li>.position-top</li>
+            <li>.position-bottom</li>
+          </ul>
+          <p>Also be sure the off-canvas panel has a unique ID so it can be targeted by the click trigger.</p>
+          <p>Along with the Off-canvas container, the main content of your page will be housed in its own container with the class .off-canvas-content and attribute data-off-canvas-content. This is where your page content lives.</p>
+          <pre>
+            <code>
+@@include "../snippets/foundation/foundation_off_canvas.html"
+            </code>
+          </pre>
+          <button type="button" class="button" data-toggle="off_canvas">Open Menu</button>
         </section>
        
         </div>
