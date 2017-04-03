@@ -1,56 +1,64 @@
 .u-barra-login {
   background-color: $base-font-color;
-  box-shadow: 5px 1px 5px #cccccc;
-  color: white;
+  box-shadow: 5px 1px 5px #ccc;
+  color: #fff;
   line-height: 32px;
   padding: 0px;
   
   a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     display: inline-block;
 
     &:hover{
-      background-color: white;
+      background-color: #fff;
       color: $base-font-color;
     }
   }
-  
   img {
     height: 18px;
     vertical-align: text-top;
     width: 18px;
   }
-  
+  .no-arrow { 
+    padding-right: 0 !important;
+    &:after { // Nascondo la freccia
+      display: none !important;
+    }
+  }
+  .login {
+    border-top: 1px solid #ccc;
+  }
   .dropdown.menu {
-    border-right: 1px solid white;
+    border-right: 1px solid #fff;
     > li {
-      border-left: 1px solid white;
+      border-left: 1px solid #fff;
       
       &.is-dropdown-submenu-parent {
         padding-right: 0.7rem;
+        transition: background-color 0.2s;
+        
+        &:hover {
+          background-color: lighten($black, 30%);
+        }
+        
         > a {
           &:hover {
-            color: white;
+            color: #fff;
             background-color: transparent;
           }
           &:after { // Dropdown Arrow
-            border-color: white transparent transparent;
-          }
-        }
-        
-        .only-icon { 
-	      padding-right: 0;
-          &:after { // Nascondo la freccia
-            display: none;
+            border-color: #fff transparent transparent;
           }
         }
         .menu {
           li {
             a {
               color: $base-font-color;
+              transition: background-color 0.2s;
+              
               &:hover {
-                background-color: $light-gray;
+                background-color: darken(#fff, 12%);
                 color: darken($base-font-color, 25%);
               }
             }
