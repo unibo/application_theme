@@ -49,11 +49,9 @@
         left: 0;
       }
     }
-    
     > ul {
       padding-bottom: $padding;
     }
-    
     > li {
       @include x-small();
       font-weight: normal;
