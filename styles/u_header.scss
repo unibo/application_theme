@@ -6,42 +6,39 @@ header {
   font-family: "Cinzel", san-serif;
   
   .content {
-    display: flex;
-    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: block;
   }
-  
   .title {
     color: $primary;
     font-size: 2rem;
     line-height: 1em;
     margin: 0;
+    display: inline-table;
+    vertical-align: middle;
   }
-  
   .sub-title {
 	display: block;
     color: #333;
     font-size: 1.2rem;
   }
-  
   .img {
     width: 100px;
     margin-right: $padding-xs;
+    vertical-align: middle;
     
     @media screen and (min-width: $large) {
-      margin-right: $padding-small
+      margin-right: $padding-small;
     }
   }
   
   &.u-header-center { // Header centrato
-    
-    .content {
-      justify-content: center;
-    }
-    
+    text-align: center;
+
     .title {
       text-align: center;
     }
-    
     .img {
       width: 100px;
       
