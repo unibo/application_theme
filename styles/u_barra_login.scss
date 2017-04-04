@@ -1,6 +1,5 @@
 .u-barra-login {
   background-color: $base-font-color;
-  box-shadow: 5px 1px 5px #ccc;
   color: #fff;
   line-height: 32px;
   padding: 0px;
@@ -39,13 +38,18 @@
         transition: background-color 0.2s;
         
         &:hover {
-          background-color: lighten($black, 30%);
+          
+          background-color: #fff;
         }
         
         > a {
           &:hover {
-            color: #fff;
+            color: #333;
             background-color: transparent;
+            
+            &:after { // Dropdown Arrow
+              border-color: #333 transparent transparent;
+            }
           }
           &:after { // Dropdown Arrow
             border-color: #fff transparent transparent;
