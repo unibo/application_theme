@@ -1,21 +1,15 @@
-.u-main-menu {
+.u-menu {
   margin: 0;
   list-style-type: none;
 	
   li {
     @include small-fancy();
     line-height: 28px;
-    border-bottom: 1px solid $border-dark;
     position: relative;
     font-weight: 400;
     transition: background-color 0.3s;
-    
-    &:hover {
-      background-color: #eee;
-    }
   
     a {
-      color: $base-font-color;
       padding: $padding-xs $padding-xs $padding-xs $padding-small;
       text-decoration: none;
       display: block;
@@ -30,19 +24,13 @@
   }
   
   .selected {
-    &:before {
-      color: $red;
-    }
-    
     > a {
       position: relative;
       font-weight: normal;
-      color: $red;
              
-      &:before{
+      &:before {
         content: "";
         width: 6px;
-        background-color: $red;
         position: absolute;
         height: 100%;
         top: 0;
@@ -61,6 +49,95 @@
       a {
         padding: 0;
         padding-bottom: $padding-small;
+      }
+    }
+  }
+}
+
+.u-menu-main {
+  li {
+    border-bottom: 1px solid $border-dark;
+    
+    &:hover {
+      background-color: #eee;
+    }
+    a {
+      color: $base-font-color;
+    }
+  }
+  .selected {
+    > a {
+      color: $red;
+      
+      &:before {
+        background-color: $red;
+      }
+    }
+  }
+}
+
+.u-menu-off-canvas {
+  li {
+    border-bottom: 1px solid #555;
+    
+    &:hover {
+      background-color: $primary;
+    }
+    a {
+      color: #fff;
+      
+      &:focus {
+        outline: none;
+        
+        &:before {
+          content: "";
+          width: 6px;
+          position: absolute;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #fff;
+        }
+      }
+    }
+    &.close {
+      a {
+        height: 48px;
+      }
+    }
+    &.is-submenu-item {
+      background-color: #555;
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+  .selected {
+    > a {
+      color: #eee;
+      
+      &:before {
+        background-color: $primary;
+      }
+    }
+  }
+  .is-accordion-submenu-parent {
+    > a {
+      &:after {
+        border-color: #fff transparent transparent;
+      }
+    }
+  }
+}
+[data-whatinput="mouse"] {
+  .u-menu-off-canvas {
+    li {
+      a {  
+        &:focus {
+          &:before {
+            content: none;
+          }
+        }
       }
     }
   }
