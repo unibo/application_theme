@@ -2,19 +2,15 @@
   flex: 1 0 auto;
   background-color: $background-menu;
   padding: $padding;
+  text-align: center;
+  color: $dark-gray;
 
-  .text-wrapper {
+  &.fixed-width .row{
     margin: 0 auto;
     max-width: 550px;
-    text-align: center;
-    color: $dark-gray;
-      
-    h3 {
-      @include very-large-fancy();
-    }
-    p {
-      line-height: 1.5em;
-    }
+  }
+  p {
+    line-height: 1.5em;
   }
   .main-label {
     text-transform: uppercase;
