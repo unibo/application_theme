@@ -3,16 +3,11 @@
   color: #fff;
   line-height: 32px;
   padding: 0px;
-  
+
   a {
     color: #fff;
     text-decoration: none;
     display: inline-block;
-
-    &:hover{
-      background-color: #fff;
-      color: $base-font-color;
-    }
   }
   img {
     height: 18px;
@@ -21,6 +16,7 @@
   }
   .no-arrow { 
     padding-right: 0 !important;
+    
     &:after { // Nascondo la freccia
       display: none !important;
     }
@@ -28,10 +24,19 @@
   .login {
     border-top: 1px solid #ccc;
   }
-  .dropdown.menu {
+  .dropdown.menu { // Foundation menu
     border-right: 1px solid #fff;
+    
     > li {
       border-left: 1px solid #fff;
+      
+      &:hover{
+        background-color: #fff;
+        
+        a {
+          color: #333;
+        }
+      }
       
       &.is-dropdown-submenu-parent {
         padding-right: 0.7rem;
@@ -39,21 +44,26 @@
         
         &:hover {
           background-color: #fff;
+          
+          > a {
+            color: #333;
+            
+            &:after { // Dropdown Arrow
+              border-color: #333 transparent transparent;
+            }
+          }
         }
         
         > a {
           &:hover {
             color: #333;
             background-color: transparent;
-            
-            &:after { // Dropdown Arrow
-              border-color: #333 transparent transparent;
-            }
           }
           &:after { // Dropdown Arrow
             border-color: #fff transparent transparent;
           }
         }
+        
         .menu {
           li {
             a {
