@@ -43,6 +43,7 @@ table {
 
 main {
   padding: $padding-xs 0;
+  flex-grow: 1;
   
   @media screen and (min-width: $medium){
     padding: $padding 0;
