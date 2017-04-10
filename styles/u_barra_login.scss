@@ -87,3 +87,19 @@
 	flex-grow: 0;
   }
 }
+
+.u-utente-reale {
+  font-style: italic;
+  color: $dark-gray;
+  font-size: 0.9em;
+  text-align: center;
+  border-bottom: 1px solid $medium-gray;
+  padding: $menu-item-padding;
+  
+  &:before {
+    content: "(";
+  }
+  &:after {
+    content: ")";
+  }
+}
