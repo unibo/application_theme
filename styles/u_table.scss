@@ -1,13 +1,11 @@
 table {
-  td {
-    vertical-align: middle;
-    padding: 1rem;
-  }
-  
+  border-collapse: collapse;
+  border-spacing: 0;
+
   &.dark {
     thead {
-      color: white;
-      background-color: #595959;
+      color: #fff;
+      background-color: $dark-gray;
     }
   }
   
