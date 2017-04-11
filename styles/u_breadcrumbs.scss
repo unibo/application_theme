@@ -1,12 +1,13 @@
-/* stile per breadcrumbs in unibo */
-/* aggiunta possibilità di avere il link a home più grande */
+// stile per breadcrumbs in unibo
+// aggiunta possibilità di avere il link a home più grande
 
 .u-breadcrumbs {
   flex: none;
   padding: $padding-small;
   display: block;
   border-bottom: 1px solid $border-color;
-  .breadcrumbs{
+  
+  .breadcrumbs {
     margin: 0;
     display: flex;
     align-items: center;
@@ -17,9 +18,9 @@
     font-weight: 300;
     text-transform: none;
     color: $base-font-color;
-    a{
+    
+    a {
       color: inherit;
     }
   }
-  
 }

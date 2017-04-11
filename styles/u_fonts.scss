@@ -1,6 +1,6 @@
-/* foglio di stile per la gestione dei font */
+// foglio di stile per la gestione dei font
 
-//Cinzel per la testata
+// Cinzel per la testata
 
 @font-face {
     font-family: 'Cinzel';
@@ -11,11 +11,10 @@
          url('../webfonts/Cinzel-Regular.svg#open_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
-/* dimensioni font per titolazioni */
 
+// dimensioni font per titolazioni
 @mixin font-size($fontsize) {
   font-size: $fontsize;
 }
@@ -46,7 +45,8 @@
   line-height: rem-calc(32);
 }
 
-/* dimensioni font per testo */
+
+// dimensioni font per testo
 @mixin x-small() {
   font-size: rem-calc(10);
   line-height: rem-calc(15);
@@ -75,28 +75,6 @@
 @mixin huge() {
   font-size: rem-calc(25);
   line-height: rem-calc(38);
-}
-
-/* dimensioni per icon font */
-
-@mixin small-icon() {
-  font-size: rem-calc(16);
-  line-height: rem-calc(16);
-}
-
-@mixin normal-icon() {
-  font-size: rem-calc(20);
-  line-height: rem-calc(20);
-}
-
-@mixin medium-icon() {  
-  font-size: rem-calc(22);
-  line-height: rem-calc(22);
-}
-
-@mixin large-icon() {
-  font-size: rem-calc(30);
-  line-height: rem-calc(30)
 }
 
 .huge {

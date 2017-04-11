@@ -6,26 +6,23 @@
 @import "font-awesome/css/font-awesome.css";
 
 /* Unibo Settings */
-@import "variables";
-@import "functions";
-@import "fonts";
-@import "base";
-@import "buttons";
-@import "u_error";
+@import "u_variables";
+@import "u_fonts";
 
 /* Elementi custom Unibo */
-@import "form";
-@import "u_header";
-@import "u_breadcrumbs.scss";
-@import "footer";
-@import "u_table";
+@import "u_base";
 @import "u_barra_login";
+@import "u_breadcrumbs";
+@import "u_buttons";
+@import "u_card_option";
+@import "u_error";
+@import "u_footer";
+@import "u_form";
+@import "u_header";
 @import "u_highlight_text";
 @import "u_menu";
-@import "top_bar";
-@import "state";
-@import "u_card_option";
-@import "wizard";
-@import "u_visibility";
 @import "u_stati";
+@import "u_table";
 @import "u_top_bar";
+@import "u_visibility";
+@import "u_wizard";

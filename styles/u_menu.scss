@@ -78,7 +78,7 @@
 
 .u-menu-off-canvas {
   li {
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid $dark-gray;
     
     &:hover {
       background-color: $primary;
@@ -96,7 +96,7 @@
       }
     }
     &.is-submenu-item {
-      background-color: #555;
+      background-color: $dark-gray;
       &:hover {
         background-color: $primary;
       }
@@ -104,7 +104,7 @@
   }
   .selected {
     > a {
-      color: #eee;
+      color: #eee; 
       
       &:before {
         background-color: $primary;
@@ -177,7 +177,7 @@
 
 // Foundation custom
 .title-bar {
-  border-left: 6px solid $primary;
+  border-left: 6px solid $primary-color;
 }
 .title-bar-title {
   color: white;
@@ -186,4 +186,3 @@
     color: darken(white, 15%);
   }
 }
-

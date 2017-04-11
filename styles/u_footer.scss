@@ -1,10 +1,6 @@
-/* Application Footer */
-
 footer {
-  -webkit-text-size-adjust: 100%;
-  background-color: #666666;
-  background-image: linear-gradient(#666666, #444444);
-  color: white;
+  background-color: $dark-gray;
+  color: #fff;
   padding: $padding 0;
   text-align: center;
   line-height: 1.4;
@@ -15,12 +11,12 @@ footer {
   }
   
   .link-container {
-    padding: $padding-xs;
     text-align: center;
+    padding-top: $padding;
     
     @media screen and (min-width: $large){
       float: right;
-      padding: 0;
+      padding-top: 0;
     }
   }
   
@@ -28,8 +24,7 @@ footer {
   a:visited,
   a:hover,
   a:link {
-    color: white;
+    color: #fff;
     text-decoration: underline;
   }
 }
-

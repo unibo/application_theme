@@ -20,7 +20,7 @@ $background-button: #f3f3f3;
 $background-disabled: #fafafa;
 $background-warning-message: #fff4da;
 
-$border-color: #eee;
+$border-color: #eee; // TODO cambiare nome variabile per #eee
 $border-dark: #ddd;
 $disabled: #d0d0d0;
 $base-font-color: $light-black;
@@ -55,3 +55,11 @@ $padding: $global-padding;
 $padding-xs: $padding / 4;
 $padding-small: $padding / 2;
 $padding-big: $padding *2;
+
+// Paletta colori stati
+$u-stati-palette: (
+  default: $medium-gray,
+  rifiutato: $alert-color,
+  attesa: $warning-color,
+  completato: $success-color,
+);

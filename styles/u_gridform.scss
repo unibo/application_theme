@@ -1,32 +1,34 @@
-
-/* grid forms */
+// grid forms
 .u-grid-form {
   margin: $margin-xs 0;
-  /* titolo del fieldset */
+  
+  // titolo del fieldset
   .title-fieldset {
     border-bottom: 1px solid $border-color;
     padding-bottom: $padding-xs;
   }
 
-  /* spaziature maggiori tra row */
-  .row{
+  // spaziature maggiori tra row
+  .row {
     margin-bottom: $margin-xs;
-    .row{
+    .row {
       margin-bottom: 0;
     }
   }
 
-  /* griglia innestata: gruppi di radio e check */
+  // griglia innestata: gruppi di radio e check
   fieldset > .row {
     display: flex;
     flex-wrap: wrap;
+    
     &:before,
     &:after{
       display: none;
     }
     .column {
       display: flex;
-      margin-bottom: $margin-xs;      
+      margin-bottom: $margin-xs;  
+      
       input {
         margin-top: 4px;
         flex-grow: 0;
@@ -35,21 +37,21 @@
     }
   }
 
-  /* gruppi di radio e check inline */
+  // gruppi di radio e check inline
   fieldset {
     > span {
       white-space: nowrap;
     }
   } 
 
-  /* diminuito margine di default perchè il margine è sulle colonne*/
+  // diminuito margine di default perchè il margine è sulle colonne
   [type="file"], 
   [type="checkbox"], 
   [type="radio"] {
     margin-bottom: $margin-xs;
   }
 
-  /* allineamento forzato a sinistra in mobile */
+  // allineamento forzato a sinistra in mobile
   .lead,
   .subheader {
     &.text-right{
@@ -63,4 +65,3 @@
     }
   }
 }
-

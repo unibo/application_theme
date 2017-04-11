@@ -1,12 +1,15 @@
-.wizard-path {
+//TODO: da corregge posizionamento numeri
+.u-wizard-path {
   margin: 2.5em 0;
   counter-reset: step;
+  
   li {
     list-style: none;
     position: relative;
     padding-bottom: 2em;
     padding-right: 2em;
     padding-left: 6em;
+    
     &:before {
       content: "";
       width: 1px;
@@ -19,8 +22,10 @@
     &:first-child {
       padding-left: 5em;
       font-weight: 600;
+      
       a {
         color: $light-black;
+        
         &:before {
           margin-left: -31px;
           color: currentColor;
@@ -33,11 +38,13 @@
     &:last-child {
       font-weight: 600;
       padding-left: 5em;
+      
       &:before {
         display: none;
       }
       a {
         padding-bottom: 0;
+        
         &:before {
           margin-left: -28px;
           top: 0;
@@ -52,6 +59,7 @@
       margin-bottom: 0.5em;
       padding-top: 3px;
       text-decoration: none;
+      
       &:before {
         counter-increment: step;
         content: counter(step);
@@ -75,6 +83,7 @@
   .previous-step {
     a {
       cursor: pointer;
+      
       &:before {
         color: $success;
       }
@@ -89,12 +98,14 @@
       color: $medium-gray;
       display: block;
       color: $light-black;
+      
       &:before {
         color: inherit;
       }
     }
     &.current-step a {
       color: $primary;
+      
       &:before {
         margin-left: -31px;
       }
@@ -106,6 +117,7 @@
     font-weight: 600;
     color: $primary;
     display: block;
+    
     &:before {
       color: $primary;
     }
@@ -113,6 +125,7 @@
   .next-step a {
     color: $medium-gray;
     display: block;
+    
     &:before {
       content: "\f111";
       font-size: 8px;
@@ -128,6 +141,7 @@
     justify-content: space-between;
     text-align: center;
     overflow-x: hidden;
+    
     li {
       padding: 35px 10px;
       width: 100%;
@@ -142,18 +156,16 @@
           position: absolute;
           left: 50%;
           top: 0;
-          background-color: white;
+          background-color: #fff;
           z-index: -1;
         }
       }
-      
       &:before {
         width: 500%;
         top: 13px;
         left: 50%;
         height: 1px;
       }
-      
       a {
         position: relative;
         
@@ -162,7 +174,6 @@
           top: -35px;
           left: calc(50% - 13px);
         }
-        
         span {
           display: none;
           

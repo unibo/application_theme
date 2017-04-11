@@ -1,0 +1,15 @@
+// Colori più scuri per il secondary button
+.button.hollow.secondary {
+  border: 1px solid $medium-gray;
+  color: $dark-gray;
+}
+
+// Margine per icona di FA dentro ai bottoni
+.button {
+  .fa {
+    margin-right: $margin-xs;
+  }
+  .show-for-sr + .fa {
+    margin-right: 0;
+  }
+}
