@@ -20,12 +20,26 @@
             <h1>Esempio layout con tabella e controlli</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             
-            <div class="top-bar">
-              <div class="top-bar-left clearfix">
-                <a class="button secondary" href="#">Reset</a>
-                <a class="button primary" href="#">Edit</a>
+            <div class="row u-top-bar">
+              <div class="medium-5 column">
+                <button class="button secondary" href="#">Aggiorna</button>
+                <button class="button warning" href="#">Reset</button>
+                <button class="button alert" type="button">
+                 <!-- Screen readers will see "close" -->
+                  <span class="show-for-sr">Elimina</span>
+                 <!-- Visual users will see the X, but not the "Close" text -->
+                  <i class="fa fa-trash" aria-hidden="true"></i>
+                </button>
               </div>
-              <div class="top-bar-right">
+              <div class="medium-3 column">
+                <select class="float-left">
+                  <option value="husker">Husker</option>
+                  <option value="starbuck">Starbuck</option>
+                  <option value="hotdog">Hot Dog</option>
+                  <option value="apollo">Apollo</option>
+                </select>
+              </div>
+              <div class="medium-4 column">
                 <div class="input-group">
                  <input class="input-group-field" type="text" placeholder="Cerca...">
                   
@@ -35,7 +49,6 @@
                 </div>
               </div>
             </div>
-
             
             <table class="hover stack">
               <thead>
@@ -57,13 +70,19 @@
                   <td>Content Goes Here</td>
                   <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
                   <td>Content Goes Here</td>
+                  <td><p class="u-stato-completato"><i class="fa fa-circle"></i>Completato</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
                   <td><p class="u-stato-attesa"><i class="fa fa-circle"></i> In attesa</td>
                 </tr>
                 <tr>
                   <td>Content Goes Here</td>
                   <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
                   <td>Content Goes Here</td>
-                  <td><p class="u-stato-completato"><i class="fa fa-circle"></i>Completato</td>
+                  <td><p class="u-stato-rifiutato"><i class="fa fa-circle"></i>Rifiutato</td>
                 </tr>
               </tbody>
             </table>

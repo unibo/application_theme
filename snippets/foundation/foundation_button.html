@@ -72,10 +72,12 @@
   Use the .show-for-sr class to define screen reader-only text.</p>
 <pre>
   <code class="html">
-<!-- Screen readers will see "close" -->
-<span class="show-for-sr">Close</span>
-<!-- Visual users will see the X, but not the "Close" text -->
-<i class="fa fa-close" aria-hidden="true"></i>
+<button class="button" type="button">
+ <!-- Screen readers will see "close" -->
+  <span class="show-for-sr">Close</span>
+ <!-- Visual users will see the X, but not the "Close" text -->
+  <i class="fa fa-close" aria-hidden="true"></i>
+</button>
   </code>
 </pre>
 <button class="button" type="button">
