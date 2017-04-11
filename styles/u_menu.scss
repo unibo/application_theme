@@ -56,13 +56,13 @@
 
 .u-menu-main {
   li {
-    border-bottom: 1px solid $border-dark;
+    border-bottom: 1px solid $medium-gray;
     
     &:hover {
-      background-color: #eee;
+      background-color: $e-gray;
     }
     a {
-      color: $base-font-color;
+      color: $light-black;
     }
   }
   .selected {
@@ -81,10 +81,10 @@
     border-bottom: 1px solid $dark-gray;
     
     &:hover {
-      background-color: $primary;
+      background-color: $primary-color;
     }
     a {
-      color: #fff;
+      color: $white;
       
       &:focus {
         outline: none;
@@ -98,23 +98,23 @@
     &.is-submenu-item {
       background-color: $dark-gray;
       &:hover {
-        background-color: $primary;
+        background-color: $primary-color;
       }
     }
   }
   .selected {
     > a {
-      color: #eee; 
+      color: $e-gray; 
       
       &:before {
-        background-color: $primary;
+        background-color: $primary-color;
       }
     }
   }
   .is-accordion-submenu-parent {
     > a {
       &:after {
-        border-color: #fff transparent transparent;
+        border-color: $white transparent transparent;
       }
     }
   }
@@ -131,7 +131,7 @@
             height: 100%;
             top: 0;
             left: 0;
-            background-color: #fff;
+            background-color: $white;
           }
         }
       }
@@ -139,7 +139,7 @@
   }
 }
 
-@media screen and (max-width: $medium-max){
+@include breakpoint(medium down){
 
   .u-main-menu-icons {
     display: flex;
@@ -168,7 +168,7 @@
     .text {
   	display: none;
       
-      @media screen and (min-width: $medium) {
+      @include breakpoint(medium){
         display: inline;
       }
     }
@@ -179,10 +179,11 @@
 .title-bar {
   border-left: 6px solid $primary-color;
 }
+
 .title-bar-title {
-  color: white;
+  color: $white;
   
   &:hover {
-    color: darken(white, 15%);
+    color: darken($white, 15%);
   }
 }

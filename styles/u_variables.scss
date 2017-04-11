@@ -1,51 +1,9 @@
-/* Application Variables */
-
-// Constants (should not be changed)
-$font-size: 13;
-$line: 24;
-
-
 // Colors
-$primary: #1779ba;
-$portal-red: #bb2e29;
-$red: #bb2e29;
-$selected: #d8ecf9;
-
-$light-black: #333;
-
-$background-body: #eaeaea;
-$background-menu: #f3f3f3;
-$background-page: #fff;
-$background-button: #f3f3f3;
-$background-disabled: #fafafa;
-$background-warning-message: #fff4da;
-
-$border-color: #eee; // TODO cambiare nome variabile per #eee
-$border-dark: #ddd;
-$disabled: #d0d0d0;
+$red: $alert-color;
 $base-font-color: $light-black;
-$link: #07C;
-$link-border: #c5d5de;
-$link-visited: #551A8B;
-$error: #bb2e29;
-
-// Stati
-$success: #39d071;
-$pending: #ffa500;
-$rejected: #bb2e29;
 
 
-// Using custom variable
-$base-font: $body-font-family;
-
-
-// Misures used in media queries
-$medium: map-get($breakpoints, medium);
-$medium-max: map-get($breakpoints, medium) - 1;
-$large: map-get($breakpoints, large);
-
-
-// Padding / Margin
+// Padding e Margin
 $margin: $global-margin;
 $margin-xs: $margin / 4;
 $margin-small: $margin / 2;
@@ -54,7 +12,8 @@ $margin-big: $margin * 2;
 $padding: $global-padding;
 $padding-xs: $padding / 4;
 $padding-small: $padding / 2;
-$padding-big: $padding *2;
+$padding-big: $padding * 2;
+
 
 // Paletta colori stati
 $u-stati-palette: (
@@ -63,3 +22,7 @@ $u-stati-palette: (
   attesa: $warning-color,
   completato: $success-color,
 );
+
+
+// Variabili foundation sovrascritte
+$border-color: $e-gray;

@@ -1,11 +1,11 @@
 .u-barra-login {
-  background-color: $base-font-color;
-  color: #fff;
+  background-color: $light-black;
+  color: $white;
   line-height: 32px;
   padding: 0px;
 
   a {
-    color: #fff;
+    color: $white;
     text-decoration: none;
     display: inline-block;
   }
@@ -22,19 +22,19 @@
     }
   }
   .login {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $medium-gray;
   }
   .dropdown.menu { // Foundation menu
-    border-right: 1px solid #fff;
+    border-right: 1px solid $white;
     
     > li {
-      border-left: 1px solid #fff;
+      border-left: 1px solid $white;
       
       &:hover{
-        background-color: #fff;
+        background-color: $white;
         
         a {
-          color: #333;
+          color: $light-black;
         }
       }
       
@@ -43,36 +43,36 @@
         transition: background-color 0.2s;
         
         &:hover {
-          background-color: #fff;
+          background-color: $white;
           
           > a {
-            color: #333;
+            color: $light-black;
             
             &:after { // Dropdown Arrow
-              border-color: #333 transparent transparent;
+              border-color: $light-black transparent transparent;
             }
           }
         }
         
         > a {
           &:hover {
-            color: #333;
+            color: $light-black;
             background-color: transparent;
           }
           &:after { // Dropdown Arrow
-            border-color: #fff transparent transparent;
+            border-color: $white transparent transparent;
           }
         }
         
         .menu {
           li {
             a {
-              color: $base-font-color;
+              color: $light-black;
               transition: background-color 0.2s;
               
               &:hover {
-                background-color: darken(#fff, 12%);
-                color: darken($base-font-color, 25%);
+                background-color: darken($white, 12%);
+                color: darken($light-black, 25%);
               }
             }
           }

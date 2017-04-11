@@ -1,11 +1,11 @@
 footer {
   background-color: $dark-gray;
-  color: #fff;
+  color: $white;
   padding: $padding 0;
   text-align: center;
   line-height: 1.4;
   
-  @media screen and (min-width: $large){
+  @include breakpoint(large){
     line-height: normal;
     text-align: left;
   }
@@ -14,7 +14,7 @@ footer {
     text-align: center;
     padding-top: $padding;
     
-    @media screen and (min-width: $large){
+    @include breakpoint(large){
       float: right;
       padding-top: 0;
     }
@@ -24,7 +24,7 @@ footer {
   a:visited,
   a:hover,
   a:link {
-    color: #fff;
+    color: $white;
     text-decoration: underline;
   }
 }

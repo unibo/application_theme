@@ -5,7 +5,7 @@
   flex: none;
   padding: $padding-small;
   display: block;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $e-gray;
   
   .breadcrumbs {
     margin: 0;
@@ -17,7 +17,7 @@
     @include very-large-fancy();
     font-weight: 300;
     text-transform: none;
-    color: $base-font-color;
+    color: $light-black;
     
     a {
       color: inherit;

@@ -28,7 +28,7 @@ header {
     margin-right: $padding-xs;
     vertical-align: middle;
     
-    @media screen and (min-width: $large) {
+    @include breakpoint(large){
       margin-right: $padding-small;
     }
   }
@@ -42,7 +42,7 @@ header {
     .img {
       width: 100px;
       
-      @media screen and (min-width: $large) {
+      @include breakpoint(large){
         width: 140px;
       }
     }

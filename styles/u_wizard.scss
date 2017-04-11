@@ -13,7 +13,7 @@
     &:before {
       content: "";
       width: 1px;
-      background-color: #ccc;
+      background-color: $medium-gray;
       position: absolute;
       top: 0;
       left: 45px;
@@ -32,7 +32,7 @@
         }
       }
       &.current-step a {
-        color: $primary;
+        color: $primary-color;
       }
     }
     &:last-child {
@@ -85,11 +85,11 @@
       cursor: pointer;
       
       &:before {
-        color: $success;
+        color: $success-color;
       }
     }
     &.warning-step a:before {
-      color: $pending;
+      color: $warning-color;
       content: "!";
     }
   }
@@ -104,7 +104,7 @@
       }
     }
     &.current-step a {
-      color: $primary;
+      color: $primary-color;
       
       &:before {
         margin-left: -31px;
@@ -115,11 +115,11 @@
     color: $medium-gray;
     display: block;
     font-weight: 600;
-    color: $primary;
+    color: $primary-color;
     display: block;
     
     &:before {
-      color: $primary;
+      color: $primary-color;
     }
   }
   .next-step a {
@@ -156,7 +156,7 @@
           position: absolute;
           left: 50%;
           top: 0;
-          background-color: #fff;
+          background-color: $white;
           z-index: -1;
         }
       }
@@ -177,7 +177,7 @@
         span {
           display: none;
           
-          @media screen and (min-width: $medium){
+          @include breakpoint(medium){
             display: inline;
           }
         }

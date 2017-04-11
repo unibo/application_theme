@@ -4,7 +4,7 @@
   
   // titolo del fieldset
   .title-fieldset {
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $e-gray;
     padding-bottom: $padding-xs;
   }
 
@@ -58,7 +58,7 @@
       text-align: left;
 
     }
-    @media screen and (min-width: $medium) {        
+    @include breakpoint(medium){
       &.text-right {
         text-align: right;
       }        

@@ -6,7 +6,7 @@ main {
   padding: $padding-xs 0;
   flex-grow: 1;
   
-  @media screen and (min-width: $medium){
+  @include breakpoint(medium){
     padding: $padding 0;
   }
   
@@ -16,8 +16,8 @@ main {
 }
 
 aside {
-  border-left: 1px solid $border-color;
-  background-color: $background-menu;		
+  border-left: 1px solid $e-gray;
+  background-color: $light-gray;		
   display: flex;
   flex-direction: column;
 }
@@ -46,8 +46,7 @@ aside {
   > .row {
     width: 100%;
       
-    @media screen and (min-width: $large) {
-      
+    @include breakpoint(large){
       display: flex;
       min-height: 100%;
     }
@@ -55,5 +54,5 @@ aside {
 }
 
 .u-magellan-menu {
-  background-color: white;
+  background-color: $white;
 }
