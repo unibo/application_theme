@@ -11,11 +11,23 @@
   	
       @@include "../../snippets/u_barra_login.html"
       
-      @@include "../../snippets/u_header.html"
-      
+      @@include "../../snippets/u_header_center.html"
+        
       <main>
         <div class="row">
-          <div class="small-12 column">
+
+          <div class="small-12 column">    
+
+            <div class="u-breadcrumbs">
+              <nav aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li><a href="#">Home - Nome dell'applicativo</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li class="disabled">Gene Splicing</li>
+                  <li><span class="show-for-sr">Current: </span> Cloning</li>
+                </ul>
+              </nav>
+            </div>                  
           
             <h1>Esempio layout con tabella e controlli</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -25,9 +37,9 @@
                 <button class="button secondary" href="#">Aggiorna</button>
                 <button class="button warning" href="#">Reset</button>
                 <button class="button alert" type="button">
-                 <!-- Screen readers will see "close" -->
+                  <!-- Screen readers will see "close" -->
                   <span class="show-for-sr">Elimina</span>
-                 <!-- Visual users will see the X, but not the "Close" text -->
+                  <!-- Visual users will see the X, but not the "Close" text -->
                   <i class="fa fa-trash" aria-hidden="true"></i>
                 </button>
               </div>
@@ -41,7 +53,7 @@
               </div>
               <div class="medium-4 column">
                 <div class="input-group">
-                 <input class="input-group-field" type="text" placeholder="Cerca...">
+                  <input class="input-group-field" type="text" placeholder="Cerca...">
                   
                   <div class="input-group-button">
                     <a class="button primary" href="#">Vai</a>
@@ -101,11 +113,46 @@
             
           </div>
         </div>
-      </main>  
+      </main>
+      
+      @@include "../../snippets/footer.html"
+      
   	</form>
-  	
-    @@include "../../snippets/footer.html"
 
+          <div class="row">
+        <div class="large-12 column">
+          <p style="margin-top: 2em;">La classe "u-content-wrapper" può essere associata a un <kbd>div</kbd> o un altro elemento, ad esempio <kbd>form</kbd>.
+            L'importante è che sia il primo elemento dopo il <kbd>body</kbd> e che contenga tutta la pagina.
+          </p>
+          <p>Le eventuali Breadcrumbs vanno inserite all'interno del <kbd>main</kbd>.</p>
+          <pre>
+            <code>
+<form class="u-content-wrapper">
+ 
+  <div class="row expanded u-barra-login"> ... </div>
+  
+  <header> ... </header>
+
+  <main>
+    <div class="row">
+      <div class="small-12 column">
+        <div class="u-breadcrumbs">...</div>
+        ...
+        <div class="row u-top-bar">...</div>
+        <table class="hover stack"></table>
+        <ul class="pagination text-center">...</ul>
+      </div>
+    </div>  
+  </main>
+
+  <footer> ... </footer>
+  
+</form>
+            </code>
+          </pre>
+        </div>
+      </div>
+  	
   	@@include "../../snippets/end_of_body.html"
   </body>
 </html>

@@ -3,19 +3,17 @@ html, body {
 }
 
 main {
-  padding: $padding-xs 0;
   flex-grow: 1;
-  
-  @include breakpoint(medium){
+  padding: $padding-xs 0;
+    @include breakpoint(medium){
     padding: $padding 0;
   }
-  
   &.row.expanded {
-    padding: $padding 0 0 0;
+    padding: $padding-small 0 0 0;
   }
 }
 
-aside {
+nav.column {
   border-left: 1px solid $e-gray;
   background-color: $light-gray;		
   display: flex;
@@ -35,6 +33,11 @@ aside {
   width: 100%;
   min-height: 100%;
   flex-direction: column;
+  
+  header + .row,
+  .u-breadcrumbs + .row{
+    flex-grow: 1;
+  }
   
   &:after{
     content: '';

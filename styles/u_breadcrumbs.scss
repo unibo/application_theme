@@ -23,4 +23,16 @@
       color: inherit;
     }
   }
+  + main{
+    padding-top: 0;
+  }
+}
+
+.column .u-breadcrumbs{
+  margin-bottom: $margin;
+}
+
+main .u-breadcrumbs {
+  padding-left: 2px;
+  padding-right: 2px;
 }
