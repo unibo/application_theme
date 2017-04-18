@@ -1,3 +1,6 @@
-templates/*
-styles/styleguide/styleguide.css
-*.map
+templates/*.html
+templates/*/*.html
+styleguide.css
+styleguide.css.map
+application.css
+application.css.map
