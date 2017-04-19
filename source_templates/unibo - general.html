@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+    @@include "../snippets/head.html"
+    
+    <title>Unibo General</title>
+  </head>
+	
+  <body>
+    
+    <main>
+      <div class="row">
+        <div class="large-2 columns" data-sticky-container>
+          @@include "../snippets/toc.html"
+        </div>
+        <div class="large-10 columns">
+        
+        <h1>Style Guide Unibo General</h1>
+        
+        <section>
+          <h3 id="visibilitysr">Visibilità</h3>
+          <p class="section-description">Visibilità per Screenreaders</p>
+          <p>Utilizzare queste classi per nascondere il contenuto solamente in determinati breakpoints, mantenendo la leggibilità per gli screen readers</p>
+          <pre>
+            <code class="html">
+<p class="hide-for-sr-small-only">You are <em>definitely not</em> on a small screen.</p>
+<p class="hide-for-sr-medium-only">You are <em>definitely not</em> on a medium screen.</p>
+<p class="hide-for-sr-large-only">You are <em>definitely not</em> on a large screen.</p>
+            </code>
+          </pre>
+          
+          <p class="hide-for-sr-small-only">You are <em>definitely not</em> on a small screen.</p>
+          <p class="hide-for-sr-medium-only">You are <em>definitely not</em> on a medium screen.</p>
+          <p class="hide-for-sr-large-only">You are <em>definitely not</em> on a large screen.</p>
+        </section>
+
+      
+        </div>
+      </div>
+      
+    </main>
+    
+    @@include "../snippets/end_of_body.html"
+    
+    <script src="../js/toc.js"></script>
+    
+  </body>
+</html>
