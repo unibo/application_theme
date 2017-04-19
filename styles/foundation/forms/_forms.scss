@@ -16,7 +16,7 @@ $form-spacing: rem-calc(16) !default;
 @import 'help-text';
 @import 'input-group';
 @import 'fieldset';
-@import 'select';
+//@import 'select';
 @import 'range';
 @import 'progress';
 @import 'meter';
@@ -29,6 +29,6 @@ $form-spacing: rem-calc(16) !default;
   @include foundation-form-helptext;
   @include foundation-form-prepostfix;
   @include foundation-form-fieldset;
-  @include foundation-form-select;
+//  @include foundation-form-select;
   @include foundation-form-error;
 }
