@@ -18,9 +18,9 @@ $padding-big: $padding * 2;
 // Paletta colori stati
 $u-stati-palette: (
   default: $medium-gray,
-  rifiutato: $alert-color,
-  attesa: $warning-color,
-  completato: $success-color,
+  rejected: $alert-color,
+  progress: $warning-color,
+  completed: $success-color,
 );
 
 

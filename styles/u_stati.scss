@@ -1,5 +1,5 @@
 @each $stato, $colore in $u-stati-palette {
-  .u-stato-#{$stato} {
+  .u-state-#{$stato} {
     .fa {
       color: $colore;
       margin: 0 0.3em;
