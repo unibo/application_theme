@@ -385,7 +385,7 @@ $input-font-weight: $global-weight-normal;
 $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid #ddd;
+$input-border: 1px solid $medium-gray;
 $input-border-focus: 1px solid $medium-gray;
 $input-shadow: none;
 $input-shadow-focus: 0 0 5px $medium-gray;

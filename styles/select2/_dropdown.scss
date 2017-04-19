@@ -1,8 +1,7 @@
 .select2-dropdown {
-  background-color: white;
-
-  border: 1px solid #aaa;
-  border-radius: 4px;
+  background-color: $select-background;
+  border: 1px solid $dark-gray;
+  border-radius: 0;
 
   box-sizing: border-box;
 

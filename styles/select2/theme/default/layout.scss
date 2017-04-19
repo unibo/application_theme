@@ -18,7 +18,7 @@
 
   .select2-search--dropdown {
     .select2-search__field {
-      border: 1px solid #aaa;
+      border: 1px solid $medium-gray;
     }
   }
 
@@ -43,11 +43,11 @@
     }
 
     &[aria-disabled=true] {
-      color: #999;
+      color: $gray;
     }
 
     &[aria-selected=true] {
-      background-color: #ddd;
+      background-color: $medium-gray;
     }
 
     .select2-results__option {
@@ -85,8 +85,8 @@
   }
 
   .select2-results__option--highlighted[aria-selected] {
-    background-color: #5897fb;
-    color: white;
+    background-color: $primary-color;
+    color: #fff;
   }
 
   .select2-results__group {
