@@ -28,13 +28,6 @@
   .is-dropdown-submenu {
     border-top: 0;
   }
-  .menu {
-    > li {
-      > a {
-        padding: $padding-xs $padding-small;
-      }
-    }
-  }
   .dropdown.menu { // Foundation menu
     border-left: 1px solid $white;
     opacity: 0;
@@ -44,6 +37,7 @@
     
     &[role="menubar"] {
       opacity: 1;
+      overflow: visible;
     }
     
     > li {
@@ -55,7 +49,6 @@
           right: -2px;
         }
       }
-      
       &:hover{
         background-color: $white;
         
@@ -63,7 +56,6 @@
           color: $light-black;
         }
       }
-      
       &.is-dropdown-submenu-parent {
         padding-right: 0.7rem;
         transition: background-color 0.2s;
