@@ -153,11 +153,11 @@
     .selected {
       a {
         &:before {
-          height: 6px;
+          height: 3px;
           width: 100%;
           background-color: $red;
           position: absolute;
-          bottom: 0;
+          bottom: -1px;
           left: 0;
           right: 0;
           top: auto;
