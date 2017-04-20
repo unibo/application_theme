@@ -25,11 +25,36 @@
   .login {
     border-top: 1px solid $medium-gray;
   }
+  .is-dropdown-submenu {
+    border-top: 0;
+  }
+  .menu {
+    > li {
+      > a {
+        padding: $padding-xs $padding-small;
+      }
+    }
+  }
   .dropdown.menu { // Foundation menu
-    border-right: 1px solid $white;
+    border-left: 1px solid $white;
+    opacity: 0;
+    transition: opacity 0.5s;
+    height: 31px;
+    overflow: hidden;
+    
+    &[role="menubar"] {
+      opacity: 1;
+    }
     
     > li {
-      border-left: 1px solid $white;
+      transition: opacity 2s linear;
+      border-right: 1px solid $white;
+      
+      &.opens-left {
+        > .is-dropdown-submenu {
+          right: -2px;
+        }
+      }
       
       &:hover{
         background-color: $white;
