@@ -23,7 +23,7 @@
           <p class="section-description">Visibilità per Screenreaders</p>
           <p>Utilizzare queste classi per nascondere il contenuto solamente in determinati breakpoints, mantenendo la leggibilità per gli screen readers</p>
           <pre>
-            <code class="html">
+            <code>
 <p class="hide-for-sr-small-only">You are <em>definitely not</em> on a small screen.</p>
 <p class="hide-for-sr-medium-only">You are <em>definitely not</em> on a medium screen.</p>
 <p class="hide-for-sr-large-only">You are <em>definitely not</em> on a large screen.</p>
@@ -35,6 +35,28 @@
           <p class="hide-for-sr-large-only">You are <em>definitely not</em> on a large screen.</p>
         </section>
 
+        <section>
+          <h3 id="spinner">Spinner</h3>
+          <p>Il widget per lo spinner ha una posizione Absolute, pertanto deve essere messo all'interno di qualsiasi elemento con "position: relative" se si vuole delimitarlo. Per averlo full-screen basta inserirlo come primo figlio del body (<a href="../templates/Layout%20Examples/Layout%20-%20Spinner.html">Vedi esempio</a>).</p>
+          <pre>
+            <code>
+@@include "../snippets/u_spinner.html"
+            </code>
+          </pre>
+          
+          <div class="u-styleguide-spinner-container">
+            <div class="u-highlight-text fixed-width">  
+              <div class="row">
+                <div class="large-12 column">
+                  <p class="main-label">Lorem ipsum</p>
+                  <h3>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</h3>
+                  <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                </div>
+              </div>
+            </div>
+            @@include "../snippets/u_spinner.html"
+          </div>
+        </section>
       
         </div>
       </div>

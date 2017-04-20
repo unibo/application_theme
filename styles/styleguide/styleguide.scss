@@ -1,4 +1,7 @@
 // Stile per la styleguide
+
+@import "toc";
+
 section {
   margin-bottom: 2em;
   border-bottom: 1px solid #ddd;
@@ -85,4 +88,6 @@ code {
   }
 }
 
-@import "toc";
+.u-styleguide-spinner-container {
+  position: relative;
+}

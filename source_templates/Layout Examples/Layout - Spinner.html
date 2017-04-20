@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>  
+  <head>
+    @@include "../../snippets/head.html" 
+    
+  	<title>Unibo Tabella</title>
+  </head>
+  
+  <body>
+  	<form method="post" action="/tol/mobile/" class="u-content-wrapper" id="mainForm">
+  	
+      @@include "../../snippets/u_barra_login.html"
+      
+      @@include "../../snippets/u_header.html"
+        
+      <main>
+        <div class="row">
+
+          <div class="small-12 column">    
+
+            <div class="u-breadcrumbs">
+              <nav aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li><a href="#">Home - Nome dell'applicativo</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li class="disabled">Gene Splicing</li>
+                  <li><span class="show-for-sr">Current: </span> Cloning</li>
+                </ul>
+              </nav>
+            </div>                  
+          
+            <h1>Esempio layout con tabella e controlli</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
+            <div class="row u-top-bar">
+              <div class="medium-5 column">
+                <button class="button secondary" href="#">Aggiorna</button>
+                <button class="button warning" href="#">Reset</button>
+                <button class="button alert" type="button">
+                  <!-- Screen readers will see "close" -->
+                  <span class="show-for-sr">Elimina</span>
+                  <!-- Visual users will see the X, but not the "Close" text -->
+                  <i class="fa fa-trash" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="medium-3 column">
+                <select class="float-left">
+                  <option value="husker">Husker</option>
+                  <option value="starbuck">Starbuck</option>
+                  <option value="hotdog">Hot Dog</option>
+                  <option value="apollo">Apollo</option>
+                </select>
+              </div>
+              <div class="medium-4 column">
+                <div class="input-group">
+                  <input class="input-group-field" type="text" placeholder="Cerca...">
+                  
+                  <div class="input-group-button">
+                    <a class="button primary" href="#">Vai</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <table class="hover stack">
+              <thead>
+                <tr>
+                  <th width="200">Table Header</th>
+                  <th>Table Header</th>
+                  <th width="150">Table Header</th>
+                  <th width="150">Stati</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td><span class="u-state-default"><i class="fa fa-circle"></i>Default</span></td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td><span class="u-state-completed"><i class="fa fa-circle"></i>Completato</span></td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td><span class="u-state-progress"><i class="fa fa-circle"></i> In attesa</span></td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td><span class="u-state-rejected"><i class="fa fa-circle"></i>Rifiutato</span></td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+              <li class="pagination-previous disabled">Previous</li>
+              <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+              <li><a href="#" aria-label="Page 2">2</a></li>
+              <li><a href="#" aria-label="Page 3">3</a></li>
+              <li><a href="#" aria-label="Page 4">4</a></li>
+              <li class="ellipsis"></li>
+              <li><a href="#" aria-label="Page 12">12</a></li>
+              <li><a href="#" aria-label="Page 13">13</a></li>
+              <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+            </ul>
+            
+          </div>
+        </div>
+      </main>
+      
+      @@include "../../snippets/footer.html"
+      
+  	</form>
+  	
+    <div class="u-spinner-container">
+      <div class="u-spinner"></div>
+    </div>
+  	
+  	@@include "../../snippets/end_of_body.html"
+  </body>
+</html>
