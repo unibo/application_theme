@@ -6,10 +6,14 @@ table {
     a {
       color: $base-font-color;
     }
+    .active {
+	  background-color: $primary-color;
+      color: color-pick-contrast($primary-color, (#fff, $base-font-color))
+    }
   }
   
-  .sorted {
-    background-color: $medium-gray;
+  .active {
+    background-color: lighten($primary-color, 50%);
   }
 
   &.dark {
