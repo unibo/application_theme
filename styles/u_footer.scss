@@ -4,6 +4,7 @@ footer {
   padding: $padding 0;
   text-align: center;
   line-height: 1.4;
+  flex: none;
   
   @include breakpoint(large){
     line-height: normal;
