@@ -8,6 +8,9 @@ header {
 
   .content {
 	text-align: center;
+    > a {
+      display: inline-block;
+    }
   }
   .text {
     margin: $margin-small 0 0;
@@ -31,10 +34,12 @@ header {
     }
   }
   .logo {
-    width: 70px;  
+    width: 70px;
+    margin: 0 calc(50% - 35px);
 
     @include breakpoint(medium){      
       width: 120px;
+      margin: auto;
     }
   }
   
