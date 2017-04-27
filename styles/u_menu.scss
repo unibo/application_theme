@@ -76,10 +76,10 @@
   }
   .selected {
     > a {
-      color: $primary-color;
+      color: $theme-color;
       
       &:before {
-        background-color: $primary-color;
+        background-color: $theme-color;
       }
     }
   }
@@ -90,7 +90,7 @@
     border-bottom: 1px solid $dark-gray;
     
     &:hover {
-      background-color: $primary-color;
+      background-color: $theme-color;
     }
     a {
       color: $white;
@@ -107,7 +107,7 @@
     &.is-submenu-item {
       background-color: $dark-gray;
       &:hover {
-        background-color: $primary-color;
+        background-color: $theme-color;
       }
     }
   }
@@ -116,7 +116,7 @@
       color: $e-gray; 
       
       &:before {
-        background-color: $primary-color;
+        background-color: $theme-color;
       }
     }
   }
@@ -164,7 +164,7 @@
         &:before {
           height: 3px;
           width: 100%;
-          background-color: $primary-color;
+          background-color: $theme-color;
           position: absolute;
           bottom: -1px;
           left: 0;
@@ -186,7 +186,7 @@
 
 // Foundation custom
 .title-bar {
-  border-left: 6px solid $primary-color;
+  border-left: 6px solid $theme-color;
 }
 
 .title-bar-title {

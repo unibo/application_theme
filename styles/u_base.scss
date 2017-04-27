@@ -46,17 +46,14 @@ nav.column {
     flex-grow: 1;
     /* layout 2 colonne */
     &.expanded{
-      display: flex;
+      @include breakpoint(large){
+        display: flex;
+      }
     }
   }
   
   > .row {
-    
-    width: 100%;
-    
-      
-    @include breakpoint(large){
-    }
+    width: 100%;        
   }
 }
 

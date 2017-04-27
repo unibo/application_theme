@@ -25,9 +25,10 @@ header {
     }
   }
   .title {
-	font-size: 1.4rem;
+	  font-size: 1.4rem;
     margin: 0;
     line-height: 1;
+    color: $theme-color;
     
     @include breakpoint(medium){
       font-size: 2rem;
