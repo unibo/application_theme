@@ -38,7 +38,7 @@ header {
     }
   }
   
-  &.u-header-left { // Header centrato
+  &.u-header-left { // Header allineato a sinistra
 
     @include breakpoint(medium) {
       .content {
