@@ -45,6 +45,7 @@
   fieldset {
     > span {
       display: inline-block;
+      width: 33%;
       
       > [type="radio"],
       > [type="checkbox"] {
@@ -53,7 +54,7 @@
       > label {
         display: inline-block;
         width: calc(100% - 5rem);
-        vertical-align: middle;
+        vertical-align: top;
         line-height: 1.4;
       }
     }
