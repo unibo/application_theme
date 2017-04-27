@@ -2,10 +2,15 @@ html, body {
   height: 100%;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 main {
   
-  flex-grow: 1;
-  
+  flex-grow: 1;  
   padding: $padding-xs 0;
     @include breakpoint(medium){
     padding: $padding 0;
@@ -34,13 +39,12 @@ nav.column {
   }
 }
 
-.u-content-wrapper {
-  
+.u-content-wrapper {  
   display: flex;
   width: 100%;
   min-height: 100%;
   flex-direction: column;
-  
+  flex: 1 0 auto;  
   
   header + .row,
   .u-breadcrumbs + .row{
