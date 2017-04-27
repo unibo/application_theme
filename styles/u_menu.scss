@@ -26,7 +26,6 @@
   .selected {
     > a {
       position: relative;
-      font-weight: normal;
              
       &:before {
         content: "";
@@ -37,18 +36,28 @@
         left: 0;
       }
     }
-    > ul {
-      padding-bottom: $padding;
-    }
-    > li {
-      @include x-small();
+  }
+  /* menu gerarchico */
+  .nested{
+    margin-left: $margin;
+    margin-bottom: $margin-small;
+    
+    li {
+      @include normal();
       font-weight: normal;
-      border-bottom: none;
-      margin-left: 46px;
-            
-      a {
-        padding: 0;
-        padding-bottom: $padding-small;
+      border-bottom: none;        
+    }
+    a{
+      padding-left: 10px;
+      padding-top: $padding-xs;
+      padding-bottom: $padding-xs;
+    }
+    .selected{
+      a{
+        font-weight: bold;
+        &:before{
+          display: none;
+        }
       }
     }
   }
@@ -58,19 +67,19 @@
   li {
     border-bottom: 1px solid $medium-gray;
     
-    &:hover {
-      background-color: $e-gray;
-    }
     a {
       color: $light-black;
+      &:hover {
+        background-color: lighten($secondary-color, 47%);
+      }
     }
   }
   .selected {
     > a {
-      color: $red;
+      color: $primary-color;
       
       &:before {
-        background-color: $red;
+        background-color: $primary-color;
       }
     }
   }
@@ -155,7 +164,7 @@
         &:before {
           height: 3px;
           width: 100%;
-          background-color: $red;
+          background-color: $primary-color;
           position: absolute;
           bottom: -1px;
           left: 0;
