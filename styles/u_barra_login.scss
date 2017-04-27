@@ -1,13 +1,13 @@
 .u-barra-login {
-  background-color: $light-black;
-  color: $white;
+  background-color: $barra-login-background;
+  color: color-pick-contrast($barra-login-background, (#fff, $base-font-color));
   line-height: 32px;
   padding: 0px;
   flex-grow: 0;
   flex: none;
 
   a {
-    color: $white;
+    color: color-pick-contrast($barra-login-background, (#fff, $base-font-color));
     text-decoration: none;
     display: inline-block;
   }

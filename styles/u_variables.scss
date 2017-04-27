@@ -3,6 +3,15 @@ $red: $alert-color;
 $base-font-color: $light-black;
 
 
+// Paletta colori stati
+$u-stati-palette: (
+  default: $medium-gray,
+  rejected: $alert-color,
+  progress: $warning-color,
+  completed: $success-color,
+);
+
+
 // Padding e Margin
 $margin: $global-margin;
 $margin-xs: $margin / 4;
@@ -15,14 +24,12 @@ $padding-small: $padding / 2;
 $padding-big: $padding * 2;
 
 
-// Paletta colori stati
-$u-stati-palette: (
-  default: $medium-gray,
-  rejected: $alert-color,
-  progress: $warning-color,
-  completed: $success-color,
-);
-
-
 // Variabili foundation sovrascritte
 $border-color: $e-gray;
+
+
+
+// *** COMPONENTI UNIBO ***
+
+// Barra login
+$barra-login-background: $light-black;

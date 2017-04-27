@@ -8,7 +8,7 @@ table {
     }
     .active {
 	  background-color: $primary-color;
-      color: color-pick-contrast($primary-color, (#fff, $base-font-color))
+      color: color-pick-contrast($primary-color, (#fff, $base-font-color));
     }
   }
   
