@@ -7,6 +7,10 @@ table {
       color: $base-font-color;
     }
   }
+  
+  .sorted {
+    background-color: $medium-gray;
+  }
 
   &.dark {
     thead {
