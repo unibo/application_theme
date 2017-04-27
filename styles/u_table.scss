@@ -12,10 +12,8 @@ table {
         color: $base-font-color;
       }
     }
-    .sorted {
+    .sort {
       position: relative;
-	  background-color: $primary-color;
-      color: color-pick-contrast($primary-color, (#fff, $base-font-color));
       padding-right: 2rem;
       
       &:after {
