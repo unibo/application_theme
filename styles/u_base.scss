@@ -3,7 +3,9 @@ html, body {
 }
 
 main {
+  
   flex-grow: 1;
+  
   padding: $padding-xs 0;
     @include breakpoint(medium){
     padding: $padding 0;
@@ -16,9 +18,12 @@ main {
 aside.column,
 nav.column {
   border-left: 1px solid $e-gray;
-  background-color: $light-gray;		
+  background-color: $light-gray;
+  /*
   display: flex;
   flex-direction: column;
+  height: 100%;
+  */
 }
 
 .column,
@@ -30,29 +35,40 @@ nav.column {
 }
 
 .u-content-wrapper {
+  
   display: flex;
   width: 100%;
   min-height: 100%;
   flex-direction: column;
   
+  
   header + .row,
   .u-breadcrumbs + .row{
     flex-grow: 1;
+    /* layout 2 colonne */
+    &.expanded{
+      display: flex;
+    }
   }
   
+  /*
   &:after{
     content: '';
     height: 100%;
     visibility: hidden;
     position: absolute;
   }
-  
+  */
   > .row {
+    
     width: 100%;
+    
       
     @include breakpoint(large){
+      /*
       display: flex;
       min-height: 100%;
+      */
     }
   }
 }
