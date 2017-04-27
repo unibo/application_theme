@@ -12,9 +12,7 @@ header {
       display: inline-block;
     }
   }
-  .text {
-    margin: $margin-small 0 0;
-  }
+
   .alma-mater {
     color: $light-black;
     font-size: 1.1rem;
@@ -24,6 +22,7 @@ header {
       font-size: 1.4rem;
     }
   }
+
   .title {
     font-size: 1.4rem;
     margin: 0;
@@ -34,12 +33,13 @@ header {
       font-size: 2rem;
     }
   }
+
   .logo {
     width: 70px;
     margin: 0 calc(50% - 35px);
 
     @include breakpoint(medium){      
-      width: 100px;
+      width: 110px;
       margin: auto;
     }
   }
@@ -53,6 +53,7 @@ header {
       .text {
         display: inline-block;
         vertical-align: middle;
+        margin-left: $margin-small;
       }
     }
   }
