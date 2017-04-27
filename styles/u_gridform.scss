@@ -10,7 +10,11 @@
 
   // spaziature maggiori tra row
   .row {
-    margin-bottom: $margin-xs;
+    margin-bottom: $margin * 0.7;
+    
+    @include breakpoint(medium){
+      margin-bottom: $margin-small;
+    }
     .row {
       margin-bottom: 0;
     }
@@ -41,6 +45,7 @@
   fieldset {
     > span {
       white-space: nowrap;
+      display: inline-block;
     }
   } 
 
