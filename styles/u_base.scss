@@ -24,11 +24,6 @@ aside.column,
 nav.column {
   border-left: 1px solid $e-gray;
   background-color: $light-gray;
-  /*
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  */
 }
 
 .column,
@@ -55,24 +50,12 @@ nav.column {
     }
   }
   
-  /*
-  &:after{
-    content: '';
-    height: 100%;
-    visibility: hidden;
-    position: absolute;
-  }
-  */
   > .row {
     
     width: 100%;
     
       
     @include breakpoint(large){
-      /*
-      display: flex;
-      min-height: 100%;
-      */
     }
   }
 }
