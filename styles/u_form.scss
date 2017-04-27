@@ -3,3 +3,11 @@
 
 /* override elementi foundation */
 @import 'u_label';
+
+form {
+  .required {
+    &:after {
+      content: '*';
+    }
+  }
+}
