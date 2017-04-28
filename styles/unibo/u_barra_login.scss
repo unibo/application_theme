@@ -41,7 +41,6 @@
     overflow: hidden;
     
     @include breakpoint(medium){
-      border-left: 1px solid #fff;
       float: right;
     }
     
@@ -62,8 +61,11 @@
     > li {
       transition: opacity 2s linear;
       
-      @include breakpoint(medium){
-        border-right: 1px solid #fff;
+      &:nth-of-type(odd) {
+        @include breakpoint(medium){
+          border-right: 1px solid #fff;
+          border-left: 1px solid #fff;
+        }
       }
       .is-dropdown-submenu {
         left: -2px;
@@ -80,6 +82,7 @@
       &.is-dropdown-submenu-parent {
         padding-right: 0.7rem;
         transition: background-color 0.2s;
+        box-sizing: content-box;
         
         &:hover {
           background-color: #fff;
