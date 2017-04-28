@@ -9,8 +9,6 @@
   
   .breadcrumbs {
     margin: 0;
-    display: flex;
-    align-items: center;
   }
   
   .home {
@@ -21,6 +19,19 @@
     
     a {
       color: inherit;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    //fratelli di .home
+    ~ li{
+      text-transform: lowercase;
+      font-size: 1.25em;
+      a {
+      }
+    }
+    &:not(:last-child)::after {
+      top: -1px;
     }
   }
   + main{
@@ -29,10 +40,8 @@
 }
 
 .column .u-breadcrumbs{
-  margin-bottom: $margin;
-}
-
-main .u-breadcrumbs {
+  margin: 0 $margin-small $margin $margin-small;
+  padding: $padding-small 0;
   padding-left: 2px;
   padding-right: 2px;
 }

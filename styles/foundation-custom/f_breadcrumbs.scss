@@ -1,0 +1,13 @@
+/* personalizzazione breadcrumbs di foundation */
+
+//cambio lo slash
+.breadcrumbs {
+    li:not(:last-child)::after {
+        content: "\f105";
+        font-family: FontAwesome;
+        font-size: 13px;
+        line-height: 1;
+        color: $secondary-color;
+    }
+}
+
