@@ -3,8 +3,6 @@
   color: color-pick-contrast($barra-login-background, (#fff, $base-font-color));
   line-height: 32px;
   padding: 0px;
-  flex-grow: 0;
-  flex: none;
 
   a {
     color: color-pick-contrast($barra-login-background, (#fff, $base-font-color));
@@ -16,22 +14,45 @@
     vertical-align: text-top;
     width: 18px;
   }
-  .no-arrow { 
+  .menu {
+    > li {
+      > a {
+        @include breakpoint(small only){
+          padding: 1rem;
+        }
+      }
+    }
+  }
+  .no-arrow {
     padding-right: 0 !important;
     
-    &:after { // Nascondo la freccia
-      display: none !important;
+    @include breakpoint(medium){
+      &:after { // Nascondo la freccia
+        display: none !important;
+      }
     }
   }
   .is-dropdown-submenu {
     border-top: 0;
   }
   .dropdown.menu { // Foundation menu
-    border-left: 1px solid #fff;
     opacity: 0;
     transition: opacity 0.5s;
-    height: 31px;
     overflow: hidden;
+    
+    @include breakpoint(medium){
+      border-left: 1px solid #fff;
+      float: right;
+    }
+    
+    &.vertical {
+      > li.opens-right > a::after {
+        border-color: transparent transparent transparent #fff;
+        @include breakpoint(medium){
+          border-color: $white transparent transparent;
+        }
+      }
+    }
     
     &[role="menubar"] {
       opacity: 1;
@@ -40,8 +61,10 @@
     
     > li {
       transition: opacity 2s linear;
-      border-right: 1px solid #fff;
       
+      @include breakpoint(medium){
+        border-right: 1px solid #fff;
+      }
       .is-dropdown-submenu {
         left: -2px;
         min-width: 100%;
@@ -74,9 +97,6 @@
           &:hover {
             color: $light-black;
             background-color: transparent;
-          }
-          &:after { // Dropdown Arrow
-            border-color: $white transparent transparent;
           }
         }
         
