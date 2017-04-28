@@ -1,0 +1,11 @@
+.title-bar {
+  border-left: 6px solid $theme-color;
+}
+
+.title-bar-title {
+  color: $white;
+  
+  &:hover {
+    color: darken($white, 15%);
+  }
+}

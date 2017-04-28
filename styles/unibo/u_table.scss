@@ -1,17 +1,5 @@
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  
   thead {
-    a {
-      color: $base-font-color;
-      
-      &:hover,
-      &:active,
-      &:focus {
-        color: $base-font-color;
-      }
-    }
     .sort {
       position: relative;
       padding-right: 2rem;

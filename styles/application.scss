@@ -7,25 +7,30 @@
 @import "select2/core";
 
 /* Unibo Settings */
-@import "u_variables";
-@import "u_fonts";
+@import "unibo/u_variables";
+@import "unibo/u_fonts";
 
 /* Elementi custom Unibo */
-@import "u_base";
-@import "u_barra_login";
-@import "u_breadcrumbs";
-@import "u_buttons";
-@import "u_card_option";
-@import "u_error";
-@import "u_footer";
-@import "u_form";
-@import "u_header";
-@import "u_highlight_text";
-@import "u_menu";
-@import "u_stati";
-@import "u_table";
-@import "u_top_bar";
-@import "u_visibility";
-@import "u_wizard";
-@import "u_spinner";
-@import "u_to_top";
+@import "unibo/u_barra_login";
+@import "unibo/u_base";
+@import "unibo/u_breadcrumbs";
+@import "unibo/u_card_option";
+@import "unibo/u_footer";
+@import "unibo/u_form";
+@import "unibo/u_header";
+@import "unibo/u_highlight_text";
+@import "unibo/u_menu";
+@import "unibo/u_spinner";
+@import "unibo/u_stati";
+@import "unibo/u_table";
+@import "unibo/u_to_top";
+@import "unibo/u_top_bar";
+@import "unibo/u_visibility";
+@import "unibo/u_wizard";
+
+/* Elementi Foundation Custom */
+@import "foundation-custom/f_buttons";
+@import "foundation-custom/f_error";
+@import "foundation-custom/f_form";
+@import "foundation-custom/f_menu";
+@import "foundation-custom/f_table";

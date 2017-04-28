@@ -1,3 +1,16 @@
+form {
+    .required {
+        &:after {
+            content: '*';
+            margin-right: -10px;
+            padding-left: 3px;
+            color: red;
+            font-weight: bold;
+            vertical-align: top;
+        }
+    }
+}
+
 // grid forms
 .u-grid-form {
   margin: $margin-xs 0;
@@ -45,6 +58,7 @@
   fieldset {
     > span {
       display: inline-block;
+      padding: ($padding-xs/2) 0;
       
       > [type="radio"],
       > [type="checkbox"] {
@@ -52,20 +66,21 @@
       }
       > label {
         display: inline-block;
-        max-width: calc(100% - 5rem);
+        width: calc(100% - 5rem);
         vertical-align: top;
         line-height: 1.4;
       }
     }
     > div {
-            > [type="radio"],
+      padding: ($padding-xs/2) 0;
+      > [type="radio"],
       > [type="checkbox"] {
         display: inline-block;
       }
       > label {
         display: inline-block;
         width: calc(100% - 5rem);
-        vertical-align: middle;
+        vertical-align: top;
         line-height: 1.4;
       }
     }
