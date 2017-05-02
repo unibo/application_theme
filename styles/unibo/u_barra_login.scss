@@ -3,6 +3,8 @@
   color: color-pick-contrast($barra-login-background, (#fff, $base-font-color));
   line-height: 32px;
   padding: 0px;
+
+  //fix per float
   &:after{
     content: "";
     display: table;
@@ -15,50 +17,53 @@
     text-decoration: none;
     display: inline-block;
   }
+
+  //sso
   img {
     height: 18px;
     vertical-align: text-top;
     width: 18px;
   }
+
   .menu {
     > li {
       white-space: nowrap;
       > a {
         @include breakpoint(small only){
-          padding: 1rem;
+          padding: 0.7rem;
         }
       }
     }
+    @include breakpoint(small only){
+      background-color: lighten($barra-login-background, 5%);
+      .is-dropdown-submenu{
+        background: #fff;
+      }
+    }
   }
+
+  //elementi senza dropdown arrow
   .no-arrow {
-    padding-right: 0 !important;
-    
-    @include breakpoint(medium){
-      &:after { // Nascondo la freccia
+     @include breakpoint(medium){
+      padding-right: 0 !important;
+      &:after { // Nascondo la freccia per dispositivi da medium in su
         display: none !important;
       }
     }
   }
+
   .is-dropdown-submenu {
     border-top: 0;
   }
+
   .dropdown.menu { // Foundation menu
     opacity: 0;
     transition: opacity 0.5s;
     overflow: hidden;
-    border-left: 1px solid $gray;
     
     @include breakpoint(medium){
       float: right;
-    }
-    
-    &.vertical {
-      > li.opens-right > a::after {
-        border-color: transparent transparent transparent #fff;
-        @include breakpoint(medium){
-          border-color: $white transparent transparent;
-        }
-      }
+      border-left: 1px solid $gray;
     }
     
     &[role="menubar"] {
@@ -69,6 +74,7 @@
           .is-dropdown-submenu {
             &.vertical {
                 margin-left: -1px;
+                top: 100%;
             }
           }
         }
@@ -118,14 +124,13 @@
           
           > a {
             color: $light-black;
-            
-            &:after { // Dropdown Arrow
-              border-color: $light-black transparent transparent;
-            }
           }
         }
         
         > a {
+          &:after { // Dropdown Arrow
+              border-color: currentColor transparent transparent;
+            }
           &:hover {
             color: $light-black;
             background-color: transparent;
