@@ -1,3 +1,12 @@
+/* stile per la barra (nera) con le informazioni sulla login e altre info inerenti all'accesso in generale */
+
+/* colore di sfondo più chiaro quando è un menu apri/chiudi */
+.title-bar + .u-barra-login .menu {
+    @include breakpoint(small only){
+      background-color: lighten($barra-login-background, 5%);
+    }
+  }
+
 .u-barra-login {
   background-color: $barra-login-background;
   color: color-pick-contrast($barra-login-background, (#fff, $base-font-color));
@@ -154,12 +163,6 @@
   }
 }
 
-/* colore di sfondo più chiaro quando è un menu apri/chiudi */
-.title-bar + .u-barra-login .menu {
-    @include breakpoint(small only){
-      background-color: lighten($barra-login-background, 5%);
-    }
-  }
 
 .content-wrapper {
   .u-barra-login {
