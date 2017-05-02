@@ -16,6 +16,8 @@
     font-weight: 300;
     text-transform: none;
     color: $light-black;
+    position: relative;
+    top: -2px;
     
     a {
       color: inherit;
@@ -27,11 +29,12 @@
     ~ li{
       text-transform: none;
       font-size: 1.25em;
-      a {
+      &:not(:last-child)::after {
+        top: 0px;
       }
     }
     &:not(:last-child)::after {
-      top: -1px;
+      top: 0px;
     }
   }
   + main{
