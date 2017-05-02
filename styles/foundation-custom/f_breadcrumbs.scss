@@ -2,12 +2,15 @@
 
 //cambio lo slash
 .breadcrumbs {
-    li:not(:last-child)::after {
-        content: "\f105";
-        font-family: FontAwesome;
-        font-size: 13px;
-        line-height: 1;
-        color: $secondary-color;
+    li{
+        color: $base-font-color;
+        &:not(:last-child)::after {
+            content: "\f105";
+            font-family: FontAwesome;
+            font-size: 13px;
+            line-height: 1;
+            color: $secondary-color;
+        }
     }
 }
 
