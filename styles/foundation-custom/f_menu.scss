@@ -6,10 +6,6 @@
 .title-bar-title {
   color: $white;
   text-transform: uppercase;
-  border: 1px solid $gray;
-  border-radius: 2px;
-  padding: $padding-xs/2 $padding-xs;
-  font-weight: normal;
   
   &:hover {
     color: darken($white, 15%);

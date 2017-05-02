@@ -35,7 +35,6 @@
       }
     }
     @include breakpoint(small only){
-      background-color: lighten($barra-login-background, 5%);
       .is-dropdown-submenu{
         background: #fff;
       }
@@ -154,6 +153,13 @@
     }
   }
 }
+
+/* colore di sfondo più chiaro quando è un menu apri/chiudi */
+.title-bar + .u-barra-login .menu {
+    @include breakpoint(small only){
+      background-color: lighten($barra-login-background, 5%);
+    }
+  }
 
 .content-wrapper {
   .u-barra-login {
