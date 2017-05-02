@@ -7,6 +7,7 @@ table {
         font-family: FontAwesome;
         margin-left: $margin-xs;
       }
+      &ed-desc,
       &ed-up {
 	      background-color: $primary-color;
         color: color-pick-contrast($primary-color, (#fff, $base-font-color));
@@ -19,6 +20,7 @@ table {
           top: 3px;
         }
       }
+      &ed-asc,
       &ed-down {
 	      background-color: $primary-color;
         color: color-pick-contrast($primary-color, (#fff, $base-font-color));
