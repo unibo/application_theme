@@ -4,12 +4,12 @@ table {
   
   thead {
     a {
-      color: $base-font-color;
+      color: inherit;
       
       &:hover,
       &:active,
       &:focus {
-        color: $base-font-color;
+        color: inherit;
       }
     }
   }

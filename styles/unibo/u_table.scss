@@ -1,40 +1,34 @@
 table {
   thead {
     .sort {
-      position: relative;
-      padding-right: 2rem;
-      
       &:after {
         content: '\f0dc';
-        position: absolute;
-        font-family: FontAwesome;
-        right: 1rem;
-      }
-      &-up {
         position: relative;
-	    background-color: $primary-color;
+        font-family: FontAwesome;
+        margin-left: $margin-xs;
+      }
+      &ed-up {
+	      background-color: $primary-color;
         color: color-pick-contrast($primary-color, (#fff, $base-font-color));
-        padding-right: 2rem;
         
         &:after {
           content: '\f0de';
-          position: absolute;
+          position: relative;
           font-family: FontAwesome;
-          right: 1rem;
+          margin-left: $margin-xs;
+          top: 3px;
         }
       }
-      &-down {
-        position: relative;
-	    background-color: $primary-color;
+      &ed-down {
+	      background-color: $primary-color;
         color: color-pick-contrast($primary-color, (#fff, $base-font-color));
-        padding-right: 2rem;
         
         &:after {
           content: '\f0dd';
-          position: absolute;
+          position: relative;
           font-family: FontAwesome;
-          right: 1rem;
-          line-height: 1.3;
+          margin-left: $margin-xs;
+          top: -3px;
         }
       }
     }
