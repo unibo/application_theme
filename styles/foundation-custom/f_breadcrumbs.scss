@@ -3,7 +3,7 @@
 //cambio lo slash
 .breadcrumbs {
     li{
-        color: $base-font-color;
+        color: $body-font-color;
         &:not(:last-child)::after {
             content: "\f105";
             font-family: FontAwesome;
