@@ -1,5 +1,6 @@
 footer {
   background-color: $dark-gray;
+  background-image: linear-gradient($dark-gray, darken($dark-gray, 10%));
   color: $white;
   padding: $padding 0;
   text-align: center;
