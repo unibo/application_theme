@@ -3,6 +3,12 @@
   color: color-pick-contrast($barra-login-background, (#fff, $base-font-color));
   line-height: 32px;
   padding: 0px;
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+  }
 
   a {
     color: color-pick-contrast($barra-login-background, (#fff, $base-font-color));
@@ -58,6 +64,31 @@
     &[role="menubar"] {
       opacity: 1;
       overflow: visible;
+      &.vertical {
+        > li {
+          .is-dropdown-submenu {
+            &.vertical {
+                margin-left: -1px;
+            }
+          }
+        }
+        .is-active {
+        background-color: $white;
+          a {
+            color: $light-black;
+
+            &::after {
+              border-color: $light-black transparent transparent;
+            }
+          }
+          &:hover {
+            background-color: $white;
+            a {
+                color: $light-black;
+            }
+          }
+        }
+      }
     }
     
     > li {
