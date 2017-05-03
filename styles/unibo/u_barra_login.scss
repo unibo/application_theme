@@ -41,6 +41,11 @@
         @include breakpoint(small only){
           padding: 0.7rem;
         }
+        img,
+        i{
+          min-width: 18px;
+          text-align: center;
+        }
       }
     }
     @include breakpoint(small only){
@@ -140,6 +145,9 @@
         
         > a {
           &:after { // Dropdown Arrow
+              border: inset 5px;
+              border-top-style: solid;
+              right: 5px;
               border-color: currentColor transparent transparent;
             }
           &:hover {
