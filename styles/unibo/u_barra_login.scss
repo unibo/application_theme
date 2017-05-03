@@ -86,21 +86,24 @@
             }
           }
         }
-        .is-active {
+      }
+      .is-active {
         background-color: $white;
-          a {
-            color: $light-black;
+        a {
+          color: $light-black;
 
-            &::after {
-              border-color: $light-black transparent transparent;
-            }
+          &::after {
+            border-color: $light-black transparent transparent;
           }
-          &:hover {
-            background-color: $white;
-            a {
-                color: $light-black;
-            }
+        }
+        &:hover {
+          background-color: $white;
+          a {
+              color: $light-black;
           }
+        }
+        > .is-dropdown-submenu {
+          left: -1px;
         }
       }
     }
