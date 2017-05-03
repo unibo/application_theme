@@ -173,18 +173,35 @@
   }
 }
 
-.u-utente-reale {
-  font-style: italic;
+.dropdown.menu > li.is-dropdown-submenu-parent .u-utente-reale {
   color: $dark-gray;
-  font-size: 0.9em;
-  text-align: center;
   border-bottom: 1px solid $medium-gray;
   padding: $menu-item-padding;
-  
-  &:before {
-    content: "(";
+  white-space: normal;
+  background-color: $light-gray;
+  p{
+    margin: 0;
   }
-  &:after {
-    content: ")";
+  i{
+    margin-right: $margin-xs;
+  }
+  strong{
+    @include large();
+    font-weight: normal;
+    color: $black;
+  }  
+  .u-login-info{
+    @include small();
+    margin: $margin-xs 0;
+    a,
+    a:visited,
+    a:link{
+      color: $primary-color;
+      &:hover{
+        background-color: transparent;
+        color: inherit;
+        text-decoration: underline;
+      }
+    }
   }
 }
