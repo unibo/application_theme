@@ -183,3 +183,50 @@
     }
   }
 }
+
+/* Menu azioni */
+.menu {
+    li {
+        &.u-menu-tools {
+            background-color: #f4f4f4;
+            border: 1px solid #e0e0e0;
+            display: table;
+
+            a {
+                color: #333333;
+                font-size: 13px;
+                padding: 5px;
+
+                &:visited {
+                    color: #333333;
+                }
+
+                i {
+                    margin-right: 0;
+                }
+            }
+
+            &.is-active {
+                background-color: #bbb;
+                border-color: #bbb;
+            }
+
+            .is-dropdown-submenu {
+                min-width: 100%;
+                white-space: nowrap;
+
+                .is-dropdown-submenu-item {
+                    padding: 0 5px 0 5px;
+
+                    &:hover {
+                        background-color: #f8f8f8;
+                    }
+
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
