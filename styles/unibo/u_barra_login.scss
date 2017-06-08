@@ -110,6 +110,11 @@
         > .is-dropdown-submenu {
           left: -1px;
         }
+        &:last-of-type{
+          > .is-dropdown-submenu {
+            left: auto;
+          }
+        }
       }
     }
     
