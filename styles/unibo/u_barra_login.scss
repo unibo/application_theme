@@ -12,6 +12,9 @@
   color: color-pick-contrast($barra-login-background, (#fff, $base-font-color));
   line-height: 32px;
   padding: 0px;
+  @include breakpoint(large only){
+    height: 31px;
+  }
 
   //fix per float
   &:after{
