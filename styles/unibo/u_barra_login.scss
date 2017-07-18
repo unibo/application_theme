@@ -38,7 +38,10 @@
   }
 
   .menu {
+    float: right;
+    border-left: 1px solid $gray;
     > li {
+      border-right: 1px solid $gray;
       white-space: nowrap;
       > a {
         @include breakpoint(small only){
@@ -51,6 +54,7 @@
         }
       }
     }
+
     @include breakpoint(small only){
       .is-dropdown-submenu{
         background: #fff;
@@ -60,12 +64,11 @@
 
   //elementi senza dropdown arrow
   .no-arrow {
-     @include breakpoint(medium){
-      padding-right: 0 !important;
-      &:after { // Nascondo la freccia per dispositivi da medium in su
-        display: none !important;
-      }
+    padding-right: 0 !important;
+    &:after { // Nascondo la freccia per dispositivi da medium in su
+      display: none !important;
     }
+    
   }
 
   .is-dropdown-submenu {
@@ -78,8 +81,6 @@
     overflow: hidden;
     
     @include breakpoint(medium){
-      float: right;
-      border-left: 1px solid $gray;
     }
     
     &[role="menubar"] {
@@ -125,7 +126,6 @@
       transition: opacity 2s linear;
       
       @include breakpoint(medium){
-        border-right: 1px solid $gray;
       }
 
       .is-dropdown-submenu.vertical {
