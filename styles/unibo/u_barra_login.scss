@@ -80,7 +80,17 @@
     transition: opacity 0.5s;
     overflow: hidden;
     
-    @include breakpoint(medium){
+    @include breakpoint(large){
+      &[role="menubar"] {
+        .is-active{
+          &:hover {
+            background-color: $white;
+            a {
+                color: $light-black;
+            }
+          }
+        }
+      }
     }
     
     &[role="menubar"] {
@@ -105,12 +115,7 @@
             border-color: $light-black transparent transparent;
           }
         }
-        &:hover {
-          background-color: $white;
-          a {
-              color: $light-black;
-          }
-        }
+        
         > .is-dropdown-submenu {
           left: -1px;
         }
@@ -125,31 +130,52 @@
     > li {
       transition: opacity 2s linear;
       
-      @include breakpoint(medium){
+      @include breakpoint(large){
+        &:hover{
+          background-color: $white;
+          
+          a {
+            color: $light-black;
+          }
+        }
+        &.is-dropdown-submenu-parent {
+        
+          &:hover {
+            background-color: #fff;
+            
+            > a {
+              color: $light-black;
+            }
+          }
+        }
+        > a{
+          &:hover {
+            color: $light-black;
+            background-color: transparent;
+          }
+        }
+
+        .menu {
+          li {
+            a {              
+              &:hover {
+                background-color: darken($white, 12%);
+                color: darken($light-black, 25%);
+              }
+            }
+          }
+        }
+
       }
 
       .is-dropdown-submenu.vertical {
         min-width: 100%;
-      }
-      &:hover{
-        background-color: $white;
-        
-        a {
-          color: $light-black;
-        }
       }
       &.is-dropdown-submenu-parent {
         padding-right: 0.7rem;
         transition: background-color 0.2s;
         box-sizing: content-box;
         
-        &:hover {
-          background-color: #fff;
-          
-          > a {
-            color: $light-black;
-          }
-        }
         
         > a {
           &:after { // Dropdown Arrow
@@ -158,10 +184,6 @@
               right: 5px;
               border-color: currentColor transparent transparent;
             }
-          &:hover {
-            color: $light-black;
-            background-color: transparent;
-          }
         }
         
         .menu {
@@ -170,10 +192,6 @@
               color: $light-black;
               transition: background-color 0.2s;
               
-              &:hover {
-                background-color: darken($white, 12%);
-                color: darken($light-black, 25%);
-              }
             }
           }
         }
