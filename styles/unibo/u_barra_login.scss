@@ -40,7 +40,7 @@
   .menu {
     float: right;
     border-left: 1px solid $gray;
-    > li {
+    > li:not(.is-dropdown-submenu-item) {
       border-right: 1px solid $gray;
       white-space: nowrap;
       > a {
@@ -80,18 +80,6 @@
     transition: opacity 0.5s;
     overflow: hidden;
     
-    @include breakpoint(large){
-      &[role="menubar"] {
-        .is-active{
-          &:hover {
-            background-color: $white;
-            a {
-                color: $light-black;
-            }
-          }
-        }
-      }
-    }
     
     &[role="menubar"] {
       opacity: 1;
@@ -117,19 +105,48 @@
         }
         
         > .is-dropdown-submenu {
-          left: -1px;
-        }
-        &:last-of-type{
-          > .is-dropdown-submenu {
-            left: auto;
-          }
-        }
+          border: 1px solid $medium-gray;
+          border-top: none;
+          /*cambio apertura popup perché il menu è a destra */
+          left: auto;
+          right: -1px;
+        }        
       }
     }
     
     > li {
       transition: opacity 2s linear;
       
+
+      .is-dropdown-submenu.vertical {
+        min-width: 100%;
+      }
+      &.is-dropdown-submenu-parent {
+        padding-right: 0.7rem;
+        transition: background-color 0.2s;
+        box-sizing: content-box;
+        
+        
+        > a {
+          &:after { // Dropdown Arrow
+              border: inset 5px;
+              border-top-style: solid;
+              right: 5px;
+              border-color: currentColor transparent transparent;
+            }
+        }
+        
+        .menu {
+          li {
+            a {
+              color: $light-black;
+              transition: background-color 0.2s;
+              
+            }
+          }
+        }
+      }
+
       @include breakpoint(large){
         &:hover{
           background-color: $white;
@@ -167,31 +184,15 @@
         }
 
       }
+    }
 
-      .is-dropdown-submenu.vertical {
-        min-width: 100%;
-      }
-      &.is-dropdown-submenu-parent {
-        padding-right: 0.7rem;
-        transition: background-color 0.2s;
-        box-sizing: content-box;
-        
-        
-        > a {
-          &:after { // Dropdown Arrow
-              border: inset 5px;
-              border-top-style: solid;
-              right: 5px;
-              border-color: currentColor transparent transparent;
-            }
-        }
-        
-        .menu {
-          li {
+    @include breakpoint(large){
+      &[role="menubar"] {
+        .is-active{
+          &:hover {
+            background-color: $white;
             a {
-              color: $light-black;
-              transition: background-color 0.2s;
-              
+                color: $light-black;
             }
           }
         }
@@ -204,7 +205,6 @@
   color: $dark-gray;
   border-bottom: 1px solid $medium-gray;
   padding: $menu-item-padding;
-  white-space: normal;
   background-color: $light-gray;
   p{
     margin: 0;
