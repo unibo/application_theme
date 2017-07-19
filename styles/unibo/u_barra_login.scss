@@ -44,9 +44,6 @@
       border-right: 1px solid $gray;
       white-space: nowrap;
       > a {
-        @include breakpoint(small only){
-          padding: 0.7rem;
-        }
         img,
         i{
           min-width: 18px;
@@ -139,9 +136,7 @@
         .menu {
           li {
             a {
-              color: $light-black;
               transition: background-color 0.2s;
-              
             }
           }
         }
@@ -201,11 +196,22 @@
   }
 }
 
-.dropdown.menu > li.is-dropdown-submenu-parent .u-utente-reale {
+.dropdown.menu > li.is-dropdown-submenu-parent .u-utente-reale,
+.dropdown.menu > li.is-dropdown-submenu-parent .u-change-user {
   color: $dark-gray;
   border-bottom: 1px solid $medium-gray;
   padding: $menu-item-padding;
   background-color: $light-gray;
+  a,
+  a:visited,
+  a:link{
+    color: $primary-color;
+    &:hover{
+      background-color: transparent;
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
   p{
     margin: 0;
   }
@@ -215,20 +221,13 @@
   strong{
     @include large();
     font-weight: normal;
-    color: $black;
   }  
   .u-login-info{
     @include small();
     margin: $margin-xs 0;
-    a,
-    a:visited,
-    a:link{
-      color: $primary-color;
-      &:hover{
-        background-color: transparent;
-        color: inherit;
-        text-decoration: underline;
-      }
-    }
+    
   }
+}
+.dropdown.menu > li.is-dropdown-submenu-parent .u-change-user {
+  background-color: #fff;
 }
