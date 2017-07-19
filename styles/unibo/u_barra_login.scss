@@ -184,12 +184,7 @@
     @include breakpoint(large){
       &[role="menubar"] {
         .is-active{
-          &:hover {
-            background-color: $white;
-            a {
-                color: $light-black;
-            }
-          }
+          
         }
       }
     }
@@ -208,7 +203,7 @@
     color: $primary-color;
     &:hover{
       background-color: transparent;
-      color: inherit;
+      color: $primary-color;
       text-decoration: underline;
     }
   }
