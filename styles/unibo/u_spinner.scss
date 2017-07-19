@@ -13,7 +13,7 @@ $spinner-size-distance2: $spinner-size * 1.7;
 $spinner-size-distance2n: $spinner-size-distance2 * -1;
 
 .u-spinner-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -24,7 +24,7 @@ $spinner-size-distance2n: $spinner-size-distance2 * -1;
 
 .u-spinner:not(:required) { // :not(:required) hides this rule from IE9 and below
   overflow: hidden;
-  position: relative;
+  position: absolute;
   top: calc(50% - #{$spinner-size-distance1});
   left: 50%;
   text-indent: -9999px;
