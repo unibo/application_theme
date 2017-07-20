@@ -28,8 +28,7 @@
           <p>Per aumentare la spaziatura laterale è possibile utilizzare la classe <kbd>row</kbd> che inserisce un padding left e right.</p>
           <p>In linea generale è preferibile lasciare le voci di menù sempre visibili. In caso ci siano molte voci è tuttavia preferibile utilizzare la versione con l'apertura sul click poiché nella versione mobile, l'hover può non essere interpretato correttamente da alcuni dispositivi.</p>
           <h3>Login con dropdown che si apre al click</h3>
-          <p>In questo caso per la versione responsive abbiamo inserito l'apri/chiudi <kbd> div class="title-bar" data-responsive-toggle="barra-login" data-hide-for="medium"</kbd> inserendo l'etichetta "menu".</p>
-          <p>E' preferibile <strong>non</strong> utilizzare l'apri/chiudi ma lasciare le voci visibili. Solamente se sono tanti elementi ha senso nascondere le voci del menu.</p>
+                  
           <pre>
             <code>
 @@include "../snippets/u_barra_login.html"
@@ -37,6 +36,18 @@
           </pre>  
           
           @@include "../snippets/u_barra_login.html"
+
+          <h3>Login barra apri/chiudi in responsive</h3>
+          <p>In questo caso per la versione responsive abbiamo inserito l'apri/chiudi <kbd> div class="title-bar" data-responsive-toggle="barra-login" data-hide-for="medium"</kbd> inserendo l'etichetta "menu".</p>
+          <p>E' preferibile <strong>non</strong> utilizzare l'apri/chiudi ma lasciare le voci visibili. Solamente se sono tanti elementi ha senso nascondere le voci del menu.</p>
+          <pre>
+            <code>
+@@include "../snippets/u_barra_login_responsive.html"
+            </code>
+          </pre>  
+          
+          @@include "../snippets/u_barra_login_responsive.html"
+
           <h3>Login con dropdown che si apre all'hover</h3>
           <p>E' preferibile utilizzare la versione con l'apertura sul click poiché nella versione mobile, l'hover può non essere interpretato correttamente da alcuni dispositivi.</p>
           <p>In questo caso per la versione responsive non abbiamo inserito l'apri/chiudi e non abbiamo inserito la classe <kbd>vertical</kbd> poiché preferiamo lasciare le voci visibili.</p>

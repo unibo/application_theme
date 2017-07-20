@@ -116,13 +116,15 @@
       
 
       .is-dropdown-submenu.vertical {
+        //eliminato min-width perché forza la larghezza massima al 100% del contenitore
         min-width: 100%;
+        //min-width: 100px;
+        //max-width: 250px;
       }
       &.is-dropdown-submenu-parent {
         padding-right: 0.7rem;
-        transition: background-color 0.2s;
-        box-sizing: content-box;
-        
+        transition: background-color 0.2s;    
+        box-sizing: content-box;    
         
         > a {
           &:after { // Dropdown Arrow
@@ -191,12 +193,16 @@
   }
 }
 
+/* stile per impersonamento */
+
 .dropdown.menu > li.is-dropdown-submenu-parent .u-utente-reale,
 .dropdown.menu > li.is-dropdown-submenu-parent .u-change-user {
   color: $dark-gray;
   border-bottom: 1px solid $medium-gray;
   padding: $menu-item-padding;
   background-color: $light-gray;
+  white-space: normal;
+  min-width: 250px;
   a,
   a:visited,
   a:link{
@@ -225,4 +231,23 @@
 }
 .dropdown.menu > li.is-dropdown-submenu-parent .u-change-user {
   background-color: #fff;
+}
+
+@include breakpoint(small only){
+  /* comportamento quando c'è pulsante apri-chiudi (le sottovoci devono essere width 100% e non avere il float) */
+  div[data-responsive-toggle]{
+    + .u-barra-login{
+      .dropdown.menu[role="menubar"] {
+        float: none;
+        > li{
+          display: block;
+          width: 100%;
+          border-bottom: 1px solid $light-black;
+        }
+        .is-active > .is-dropdown-submenu{
+          right: auto;
+        }
+      }
+    }
+  }
 }
