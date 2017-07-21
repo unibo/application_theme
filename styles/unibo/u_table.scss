@@ -8,7 +8,8 @@ table {
         margin-left: $margin-xs;
       }
       &ed-desc,
-      &ed-up {
+      &ed-up,
+      &ed-up-light {
 	      background-color: $primary-color;
         color: color-pick-contrast($primary-color, (#fff, $base-font-color));
         
@@ -21,7 +22,8 @@ table {
         }
       }
       &ed-asc,
-      &ed-down {
+      &ed-down,
+      &ed-down-light {
 	      background-color: $primary-color;
         color: color-pick-contrast($primary-color, (#fff, $base-font-color));
         
@@ -34,6 +36,14 @@ table {
         }
       }
     }
+    /* stile leggero per ordinamento */
+    .sorted-up-light,
+    .sorted-down-light,
+    .sorted-desc-light,
+    .sorted-up-light {
+      background-color: #d7edf6;
+      color: $base-font-color;
+    }
   }
   
   .sorted,
@@ -42,11 +52,33 @@ table {
     background-color: lighten($primary-color, 50%);
   }
 
+  /* stile leggero per ordinamento */
+  .sorted-up-light,
+  .sorted-down-light,
+  .sorted-desc-light,
+  .sorted-up-light {
+    background-color: #eef7fb;    
+  }
+
   &.dark { // Tabella Dark
     thead {
       color: $white;
       background-color: $dark-gray;
+      .sorted-up-light,
+      .sorted-down-light,
+      .sorted-desc-light,
+      .sorted-up-light {
+        background-color: #000;
+        color: #fff;
+      }
     }
+    .sorted-up-light,
+    .sorted-down-light,
+    .sorted-desc-light,
+    .sorted-up-light{
+      background-color: #efefef;
+    }
+
   }
   
   &.no-border { // Tabella senza bordi
