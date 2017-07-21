@@ -238,14 +238,24 @@
   div[data-responsive-toggle]{
     + .u-barra-login{
       .dropdown.menu[role="menubar"] {
+        border: none;
         float: none;
         > li{
           display: block;
           width: 100%;
+          border-right: none;
           border-bottom: 1px solid $light-black;
+          padding-right: 0;
+          box-sizing: inherit;
         }
-        .is-active > .is-dropdown-submenu{
-          right: auto;
+        .is-active {
+          > a{
+            border-left: 1px solid $medium-gray;
+            border-right: 1px solid $medium-gray;
+          }
+          > .is-dropdown-submenu{
+            right: auto;
+          }
         }
       }
     }
