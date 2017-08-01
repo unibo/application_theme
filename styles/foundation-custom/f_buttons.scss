@@ -13,3 +13,8 @@
     margin-right: 0;
   }
 }
+
+//aggiunto bordo in pulsante secondario altrimenti poco visibile
+.button.secondary{
+  border: 1px solid #ddd;
+}

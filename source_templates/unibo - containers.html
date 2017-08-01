@@ -196,6 +196,8 @@
           <section>
             <h3 id="tabella_sort">Ordinamento tabella</h3>
 		    <p>Inserire le classi <kbd>.sort</kbd> , <kbd>.sorted-up</kbd> e <kbd>.sorted-down</kbd> per stilare la colonna con ordinamento.</p>
+        <p>La classe <kbd>.sort</kbd> inserisce un'icona con le doppie frecce che sta ad indicare che quella colonna è ordinabile. </p>
+        <p>Le classi <kbd>.sorted-up</kbd> e <kbd>.sorted-down</kbd> indicano se quella colonna è ordinata in modo crescente o decrescente.</p>
 		    
 		    <pre>
 		      <code class="html">
@@ -212,19 +214,19 @@
     <tr>
       <td>Content Goes Here</td>
       <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-      <td class="sorted-up">Content Goes Here</td>
+      <td class="sorted">Content Goes Here</td>
       <td>Content Goes Here</td>
     </tr>
     <tr>
       <td>Content Goes Here</td>
       <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-      <td class="sorted-up">Content Goes Here</td>
+      <td class="sorted">Content Goes Here</td>
       <td>Content Goes Here</td>
     </tr>
     <tr>
       <td>Content Goes Here</td>
       <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-      <td class="sorted-up">Content Goes Here</td>
+      <td class="sorted">Content Goes Here</td>
       <td>Content Goes Here</td>
     </tr>
   </tbody>
@@ -245,27 +247,26 @@
                 <tr>
                   <td>Content Goes Here</td>
                   <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-                  <td class="sorted-up">Content Goes Here</td>
+                  <td class="sorted">Content Goes Here</td>
                   <td>Content Goes Here</td>
                 </tr>
                 <tr>
                   <td>Content Goes Here</td>
                   <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-                  <td class="sorted-up">Content Goes Here</td>
+                  <td class="sorted">Content Goes Here</td>
                   <td>Content Goes Here</td>
                 </tr>
                 <tr>
                   <td>Content Goes Here</td>
                   <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-                  <td class="sorted-up">Content Goes Here</td>
+                  <td class="sorted">Content Goes Here</td>
                   <td>Content Goes Here</td>
                 </tr>
               </tbody>
             </table>
 
-            <p>E' possibile utilizzare le classi <kbd>.sort-light</kbd> , <kbd>.sorted-up-light</kbd> e <kbd>.sorted-down-light</kbd> per avere uno stile più leggero.</p>
-            <p>Si può utilizzare anche nelle tabelle <kbd>.dark</kbd>, in quel caso lo stile è differente in base ai colori più scuri della tabella.</p>
-            
+            <p>E' possibile utilizzare le classi <kbd>.sorted-up-light</kbd> e <kbd>.sorted-down-light</kbd> nel <kbd><th></th></kbd> per avere uno stile più leggero nelle colonne ordinate.</p>
+            <p>Nelle celle della colonna evidenziata va inserito <kbd>.sorted-light</kbd>.</p>
 		    <pre>
 		      <code class="html">
 <table>
@@ -273,7 +274,7 @@
     <tr>
       <th width="200" class="sort">Table Header</th>
       <th class="sort">Table Header</th>
-      <th width="150" class="sorted-up">Table Header</th>
+      <th width="150" class="sorted-up-light">Table Header</th>
       <th width="150" class="sort">Table Header</th>
     </tr>
   </thead>
@@ -281,19 +282,19 @@
     <tr>
       <td>Content Goes Here</td>
       <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-      <td class="sorted-up-light">Content Goes Here</td>
+      <td class="sorted-light">Content Goes Here</td>
       <td>Content Goes Here</td>
     </tr>
     <tr>
       <td>Content Goes Here</td>
       <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-      <td class="sorted-up-light">Content Goes Here</td>
+      <td class="sorted-light">Content Goes Here</td>
       <td>Content Goes Here</td>
     </tr>
     <tr>
       <td>Content Goes Here</td>
       <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-      <td class="sorted-up-light">Content Goes Here</td>
+      <td class="sorted-light">Content Goes Here</td>
       <td>Content Goes Here</td>
     </tr>
   </tbody>
@@ -314,24 +315,28 @@
                 <tr>
                   <td>Content Goes Here</td>
                   <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-                  <td class="sorted-up-light">Content Goes Here</td>
+                  <td class="sorted-light">Content Goes Here</td>
                   <td>Content Goes Here</td>
                 </tr>
                 <tr>
                   <td>Content Goes Here</td>
                   <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-                  <td class="sorted-up-light">Content Goes Here</td>
+                  <td class="sorted-light">Content Goes Here</td>
                   <td>Content Goes Here</td>
                 </tr>
                 <tr>
                   <td>Content Goes Here</td>
                   <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-                  <td class="sorted-up-light">Content Goes Here</td>
+                  <td class="sorted-light">Content Goes Here</td>
                   <td>Content Goes Here</td>
                 </tr>
               </tbody>
             </table>
-
+            
+            <p>Si può utilizzare anche nelle tabelle <kbd>.dark</kbd>, in quel caso lo stile è differente in base ai colori più scuri della tabella.</p>
+            <p>Le classi da utilizzare per la tabella dark sono <kbd>.sorted-up</kbd> e <kbd>.sorted-down</kbd>.</p>
+            <p>Nelle celle della colonna evidenziata va inserito <kbd>.sorted</kbd>.</p>
+            
             <table class="dark">
               <thead>
                 <tr>
@@ -345,19 +350,19 @@
                 <tr>
                   <td>Content Goes Here</td>
                   <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-                  <td class="sorted-up-light">Content Goes Here</td>
+                  <td class="sorted">Content Goes Here</td>
                   <td>Content Goes Here</td>
                 </tr>
                 <tr>
                   <td>Content Goes Here</td>
                   <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-                  <td class="sorted-up-light">Content Goes Here</td>
+                  <td class="sorted">Content Goes Here</td>
                   <td>Content Goes Here</td>
                 </tr>
                 <tr>
                   <td>Content Goes Here</td>
                   <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-                  <td class="sorted-up-light">Content Goes Here</td>
+                  <td class="sorted">Content Goes Here</td>
                   <td>Content Goes Here</td>
                 </tr>
               </tbody>

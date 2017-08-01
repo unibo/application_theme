@@ -1,6 +1,6 @@
 table {
   thead {
-    .sort {
+    .sort{
       &:after {
         content: '\f0dc';
         position: relative;
@@ -40,7 +40,7 @@ table {
     .sorted-up-light,
     .sorted-down-light,
     .sorted-desc-light,
-    .sorted-up-light {
+    .sorted-asc-light {
       background-color: #d7edf6;
       color: $base-font-color;
     }
@@ -53,10 +53,11 @@ table {
   }
 
   /* stile leggero per ordinamento */
+  .sorted-light,
   .sorted-up-light,
   .sorted-down-light,
   .sorted-desc-light,
-  .sorted-up-light {
+  .sorted-asc-light {
     background-color: #eef7fb;    
   }
 
@@ -67,15 +68,16 @@ table {
       .sorted-up-light,
       .sorted-down-light,
       .sorted-desc-light,
-      .sorted-up-light {
+      .sorted-asc-light {
         background-color: #000;
         color: #fff;
       }
     }
-    .sorted-up-light,
-    .sorted-down-light,
-    .sorted-desc-light,
-    .sorted-up-light{
+    .sorted,
+    .sorted-up,
+    .sorted-down,
+    .sorted-desc,
+    .sorted-asc{
       background-color: #efefef;
     }
 

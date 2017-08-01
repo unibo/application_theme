@@ -37,7 +37,7 @@
 
         <section>
           <h3 id="spinner">Spinner</h3>
-          <p>Il widget per lo spinner ha una posizione Absolute, pertanto deve essere messo all'interno di qualsiasi elemento con "position: relative" se si vuole delimitarlo. Per averlo full-screen basta inserirlo come figlio del body (<a href="../templates/Layout%20Examples/Layout%20-%20Spinner.html">Vedi esempio</a>).</p>
+          <p>Il widget per lo spinner ha una posizione Fixed, pertanto deve essere messo all'interno di qualsiasi elemento con "position: relative" se si vuole delimitarlo. Per averlo full-screen basta inserirlo come figlio del body (<a href="../templates/Layout%20Examples/Layout%20-%20Spinner.html">Vedi esempio</a>).</p>
           <pre>
             <code>
 @@include "../snippets/u_spinner.html"
@@ -45,16 +45,20 @@
           </pre>
           
           <div class="u-styleguide-spinner-container">
-            <div class="u-highlight-text fixed-width">  
-              <div class="row">
-                <div class="large-12 column">
-                  <p class="main-label">Lorem ipsum</p>
-                  <h3>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</h3>
-                  <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            <div class="u-styleguide-spinner-container">
+              <div class="u-highlight-text fixed-width">  
+                <div class="row">
+                  <div class="large-12 column">
+                    <p class="main-label">Lorem ipsum</p>
+                    <h3>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</h3>
+                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            @@include "../snippets/u_spinner.html"
+              <div class="u-spinner-container" style="position: absolute">
+                <div class="u-spinner"></div>
+              </div>
+          </div>
           </div>
         </section>
         
