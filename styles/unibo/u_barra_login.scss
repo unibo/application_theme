@@ -259,6 +259,13 @@
           }
         }
       }
+      /* quando c'è apri/chiudi responsive la lingua va allineata a sinistra */
+      .u-lang{
+        text-align: left;
+        a{
+          text-align: left;
+        }
+      }
     }
   }
 }
