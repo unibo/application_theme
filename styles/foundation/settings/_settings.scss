@@ -59,7 +59,7 @@ $foundation-palette: (
 
 $white:           #fff;
 $light-gray:      #f5f5f5;
-$e-gray:          #eee;
+$e-gray:          #e5e5e5;
 $medium-gray:     #ccc;
 $gray:            #999;
 $dark-gray:       #444;
@@ -336,7 +336,7 @@ $dropdown-background: $body-background;
 $dropdown-border: 1px solid $medium-gray;
 $dropdown-font-size: 1rem;
 $dropdown-width: 300px;
-$dropdown-radius: $global-radius;
+$dropdown-radius: 0;
 $dropdown-sizes: (
   tiny: 100px,
   small: 200px,
@@ -568,24 +568,24 @@ $show-header-for-stacked: false;
 
 $tab-margin: 0;
 $tab-background: $white;
-$tab-color: $primary-color;
-$tab-background-active: $light-gray;
-$tab-active-color: $primary-color;
+$tab-color: $gray;
+$tab-background-active: $white;
+$tab-active-color: $black;
 $tab-item-font-size: rem-calc(12);
 $tab-item-background-hover: $white;
-$tab-item-padding: 1.25rem 1.5rem;
+$tab-item-padding: 1rem 1.5rem;
 $tab-expand-max: 6;
 $tab-content-background: $white;
-$tab-content-border: $light-gray;
+$tab-content-border: $e-gray;
 $tab-content-color: $body-font-color;
 $tab-content-padding: 1rem;
 
 // 34. Thumbnail
 // -------------
 
-$thumbnail-border: solid 4px $white;
+$thumbnail-border: none;
 $thumbnail-margin-bottom: $global-margin;
-$thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
+$thumbnail-shadow: none;
 $thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
 $thumbnail-transition: box-shadow 200ms ease-out;
 $thumbnail-radius: $global-radius;
