@@ -81,6 +81,9 @@
     &[role="menubar"] {
       opacity: 1;
       overflow: visible;
+      display: flex;
+      line-height: 34px;
+      
       &.vertical {
         > li {
           .is-dropdown-submenu {
@@ -127,6 +130,8 @@
         box-sizing: content-box;    
         
         > a {
+          padding: 0.5rem 1rem;
+          padding-right: 1.5rem;
           &:after { // Dropdown Arrow
               border: inset 5px;
               border-top-style: solid;
@@ -139,6 +144,7 @@
           li {
             a {
               transition: background-color 0.2s;
+              display: block;
             }
           }
         }
@@ -153,6 +159,7 @@
           }
         }
         &.is-dropdown-submenu-parent {
+          
         
           &:hover {
             background-color: #fff;
@@ -199,7 +206,7 @@
 .dropdown.menu > li.is-dropdown-submenu-parent .u-change-user {
   color: $dark-gray;
   border-bottom: 1px solid $medium-gray;
-  padding: $menu-item-padding;
+  padding: 0.5rem 1rem;
   background-color: $light-gray;
   white-space: normal;
   min-width: 250px;
@@ -226,6 +233,9 @@
   .u-login-info{
     @include small();
     margin: $margin-xs 0;
+    a{
+      padding: 0;
+    }
     
   }
 }

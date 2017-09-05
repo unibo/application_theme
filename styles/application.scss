@@ -1,14 +1,14 @@
-/* Foundation 6.3.0 */
+/* Foundation Version 6.4.3 */
 @import "foundation/foundation";
+
+/* Unibo Settings */
+@import "unibo/u_variables";
+@import "unibo/u_fonts";
 
 /* Vendors */
 @import "motion-ui/motion-ui.css";
 @import "font-awesome/css/font-awesome.css";
 @import "select2/core";
-
-/* Unibo Settings */
-@import "unibo/u_variables";
-@import "unibo/u_fonts";
 
 /* Elementi custom Unibo */
 @import "unibo/u_barra_login";
