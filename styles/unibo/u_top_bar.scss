@@ -1,3 +1,23 @@
 .u-top-bar {
 	padding: $padding-big 0 $padding-xs 0;
+	max-width: none;
+	.u-input-group{
+		display: flex;
+		select,
+		.select2-selection{
+			height: $input-font-size + $form-spacing * 1.5;
+			border-right: 0;
+			background-color: $light-gray;
+			width: auto;
+			min-width: 120px;
+		}
+		input[type="text"]{
+			width: auto;
+			min-width: 120px;
+			flex-grow: 1;
+		}
+		.input-group-button{
+			width: auto;
+		}
+	}
 }

@@ -11,3 +11,19 @@ label {
     line-height: 1.5;
   }
 }
+
+textarea,
+input{
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $dark-gray;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: $dark-gray;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: $dark-gray;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $dark-gray;
+  }
+}

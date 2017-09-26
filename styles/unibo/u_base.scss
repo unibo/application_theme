@@ -60,3 +60,10 @@ nav.column {
 .u-magellan-menu {
   background-color: $white;
 }
+
+//fix temporanea per select (il compilatore non ha autoprefix)
+select{
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+}

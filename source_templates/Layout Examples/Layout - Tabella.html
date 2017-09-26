@@ -32,35 +32,7 @@
             <h1>Esempio layout con tabella e controlli</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             
-            <div class="row u-top-bar">
-              <div class="medium-5 column">
-                <button class="button secondary" href="#">Aggiorna</button>
-                <button class="button warning" href="#">Reset</button>
-                <button class="button alert" type="button">
-                  <!-- Screen readers will see "close" -->
-                  <span class="show-for-sr">Elimina</span>
-                  <!-- Visual users will see the X, but not the "Close" text -->
-                  <i class="fa fa-trash" aria-hidden="true"></i>
-                </button>
-              </div>
-              <div class="medium-3 column">
-                <select class="float-left">
-                  <option value="husker">Husker</option>
-                  <option value="starbuck">Starbuck</option>
-                  <option value="hotdog">Hot Dog</option>
-                  <option value="apollo">Apollo</option>
-                </select>
-              </div>
-              <div class="medium-4 column">
-                <div class="input-group">
-                  <input class="input-group-field" type="text" placeholder="Cerca...">
-                  
-                  <div class="input-group-button">
-                    <a class="button primary" href="#">Vai</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            @@include "../../snippets/u_top_bar.html"
             
             <table class="hover stack">
               <thead>
