@@ -95,7 +95,17 @@
         
         <section>
           <h3 id="unibo-topbar">Unibo Top Bar</h3>
-          <p>Per utilizzare la top bar custom Unibo inserire la classe u-top-bar insieme alla classe row. All'interno strutturare il componente con colonne. Es.:</p>
+          <p>Per utilizzare la top bar custom Unibo inserire la classe u-top-bar. 
+            <br>
+            Questo componente sfrutta la proprietà css <kbd>display: flex</kbd> e agisce come fosse una griglia fluida negli elementi contenuti in esso.
+            Per poter sfruttare la fluidità del componente, i box al suo interno devono avere la classe <kbd>.top-bar-box</kbd>.
+            <br>
+            Di default un elemento <kbd>.top-bar-box</kbd> si allarga a seconda dello spazio disponibile e se non c'è più spazio va a capo.
+            <br>
+            Un elemento <kbd>.top-bar-box</kbd> può avere anche classe <kbd>.u-button-group</kbd>, pensato appositamente per pulsanti che devono allinearsi agli altri strumenti a destra della pagina.
+            <br>
+            L'elemento <kbd>.top-bar-box</kbd> può avere anche classe <kbd>.u-search-group</kbd>, ovvero una ricerca contestuale a seconda dell'elemento selezionato dalla tendina. 
+            </p>
           <pre>
             <code>
 @@include "../snippets/u_top_bar.html"
