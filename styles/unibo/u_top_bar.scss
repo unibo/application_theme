@@ -12,14 +12,22 @@
 	.top-bar-box{
 		flex-grow: 1;
 		padding: 0 $padding-xs;
-		@include breakpoint(large){
-		}
+		
 		@include breakpoint(xlarge){
 		}
 	}
+	input,
 	select{
-		width: auto;
-		min-width: 200px;
+		display: inline-block;
+		min-width: 100%;
+		vertical-align: top;
+		@include breakpoint(large){		
+			width: auto;
+			min-width: 200px;
+		}
+	}
+	.button{
+		margin-bottom: $margin-small;
 	}
 	.u-search-group{
 		display: flex;
@@ -30,6 +38,7 @@
 		//tendina con il cerca
 		select,
 		.select2-selection{
+			width: auto;
 			height: $input-font-size + $form-spacing * 1.5;
 			border-right: 0;
 			background-color: $light-gray;
@@ -48,13 +57,10 @@
 		order: 1;
 		width: 100%;
 		flex-grow: 0;
-		.button{
-			margin-bottom: $margin-xs;
-		}
+		
 		@include breakpoint(large){
 			order: initial;
 			width: auto;
-			text-align: right;
 		}
 	}
 }
