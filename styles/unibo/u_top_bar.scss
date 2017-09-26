@@ -1,5 +1,6 @@
 .u-top-bar {
-	padding: $padding-big $padding-xs $padding-xs $padding-xs;
+	padding: $padding-big 0 $padding-xs 0;
+	margin: 0 -$padding-xs;
 	max-width: none;
 	display: flex;
 	flex-wrap: wrap;
