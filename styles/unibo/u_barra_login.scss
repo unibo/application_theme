@@ -12,8 +12,8 @@
   color: color-pick-contrast($barra-login-background, (#fff, $base-font-color));
   line-height: 32px;
   padding: 0px;
+  max-height: 34px;
   @include breakpoint(large){
-    max-height: 34px;
   }
 
   //fix per float
@@ -250,6 +250,7 @@
       .dropdown.menu[role="menubar"] {
         border: none;
         float: none;
+        display: block;
         > li{
           display: block;
           width: 100%;
