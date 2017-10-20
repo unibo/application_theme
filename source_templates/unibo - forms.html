@@ -43,6 +43,28 @@
 
           </section>
           <section>
+              <h3 id="griglia_form_horizontal">Griglia Form singola colonna <kbd>(u-grid-form)</kbd></h3>
+              <p class="section-description">Form strutturato in una griglia</p>
+              <p>
+                E' possibile utilizzare <kbd>u-grid-form</kbd> con gli elementi visti precedentemente anche in una singola colonna.<br />
+                Rispetto alla versione in due colonna è sufficiente non utilizzare le classi <kbd>text-right</kbd> sulla <kbd>label</kbd> e sul <code> &lt;p class="subheader"&gt;</code>, in modo da eliminare l'allineamento a destra. <br />
+                Inoltre è preferibile utilizzare un unico <code> &lt;p class="subheader"&gt;</code> </kbd> che contiene l'aiuto contestuale.
+              </p>
+              <p>
+                La struttura è la griglia utilizzata in Foundation, quindi si utilizza la larghezza 12 nel caso in cui si voglia la riga piena. <br />
+                In alternativa si può usare la larghezza che si preferisce con l'aggiunta della classe <kbd>end</kbd>.
+              </p>
+              
+              <pre>
+                <code class="html">
+  @@include "../snippets/form/u_griglia_form_onecolumn.html"
+                </code>
+              </pre>
+              
+              @@include "../snippets/form/u_griglia_form_onecolumn.html"
+  
+            </section>
+          <section>
             <h3 id="griglia_nested_form">Griglia Form innestata <kbd>(u-grid-form)</kbd></h3>
             <p class="section-description">Form strutturato con più colonne all'interno</p>
 
