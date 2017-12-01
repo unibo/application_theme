@@ -2,7 +2,7 @@
 @mixin u-callout{
     background-image: url("../img/bg_geometric.png");
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right 78%;
     background-size: 100%;
     background-color: #dbeef9;
     padding: $padding $padding-big;
@@ -55,6 +55,7 @@
 
 .u-callout-center{
     @include u-callout;
+    background-position: right 60%;
     .column{
         flex-flow: column;
     }
