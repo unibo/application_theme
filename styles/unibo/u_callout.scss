@@ -1,0 +1,68 @@
+
+@mixin u-callout{
+    background-image: url("../img/bg_geometric.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 100%;
+    background-color: #dbeef9;
+    padding: $padding $padding-big;
+    width: 100%;
+    margin-bottom: $margin;
+    .column{
+        display: flex;
+    }
+
+    .text-wrapper{
+        flex-basis: 60%;
+        h2{
+            @include huge;
+            margin-bottom: 0;
+        }
+        h3{
+            @include large-fancy;
+        }
+    }
+
+    .action-wrapper{
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        a{
+            border-radius: 4px;
+            margin: 0 $margin-small;
+            @include large;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+        }
+        .primary{
+            border-color: #fff;
+            background-color: #fff;
+            color: $base-font-color;
+        }
+        .secondary{
+            border-color: #fff;
+            border-width: 2px;
+            background-color: transparent;
+            color: #fff;
+        }
+    }
+}
+
+.u-callout{
+    @include u-callout;
+}
+
+.u-callout-center{
+    @include u-callout;
+    .column{
+        flex-flow: column;
+    }
+    .text-wrapper{
+        text-align: center;
+    }
+    .action-wrapper{
+        justify-content: center;
+        margin-top: 2em;
+    }
+}
