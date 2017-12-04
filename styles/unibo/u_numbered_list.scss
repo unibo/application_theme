@@ -1,4 +1,4 @@
-.u-numbered-list{
+@mixin u-numbered-list{
     /* numeri lista colorati */
 	ol { 
         counter-reset: item; 
@@ -28,4 +28,29 @@
           border-radius: 15px;
           flex-shrink: 0;
       }
+}
+
+.u-numbered-list{
+    @include u-numbered-list;
+}
+
+.u-numbered-list.centered{
+    @include u-numbered-list;
+    text-align: center;
+    ol li {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &:before{
+            margin-right: 0;
+            margin-bottom: $margin-small; 
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 20px;
+        }
+        .text-wrap{
+
+        }
+    }
 }
