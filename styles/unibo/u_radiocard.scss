@@ -16,15 +16,11 @@
             cursor: pointer;
             &:checked{
                 + .radio-tile{
-                    background-color: $primary-color;
-                    color: #fff;
-                    .text-wrap{
-                        background-color:rgba(255,255,255, 0.9);
-                        color: $base-font-color;
-                    }
-                    i{
-                        color: #fff;
-                    }
+                    border-radius: 0;
+                    border-top: 4px solid #08c;
+                    position: relative;
+                    top: -3px;
+
                     label{
                         display: none;
                         background-color: $button-background-hover;
@@ -33,7 +29,7 @@
                         display: inline-block;
                         color: $success-color;
                         font-size: 2.5em;
-                        margin-top: $margin-small;
+                        margin-top: 12px;
                         margin-bottom: 0;
                         position: relative;
                         &:before{
