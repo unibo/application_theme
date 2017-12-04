@@ -1,0 +1,31 @@
+.u-numbered-list{
+    /* numeri lista colorati */
+	ol { 
+        counter-reset: item; 
+      }
+      ol li { 
+        display: flex;
+        margin-bottom: $margin;
+        @include large;
+      }
+      ol li:before {
+          display: inline-block;
+          margin-left: -22px;
+          margin-right: $margin;
+          content: counter(item);
+          counter-increment: item;
+          color: #fff;
+          width: 30px;
+          height: 30px;
+          background-color: $primary-color;
+          position: relative;
+          top: 4px;
+          text-align: center;
+          @include very-large-fancy;
+          line-height: 30px;
+          text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4), 5px 5px 10px rgba(0, 0, 0, 0.5);
+          overflow: hidden;
+          border-radius: 15px;
+          flex-shrink: 0;
+      }
+}
