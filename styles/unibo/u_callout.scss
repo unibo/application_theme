@@ -55,6 +55,30 @@
     @include u-callout;
 }
 
+.u-callout-photo{
+    @include u-callout;
+    background-image: url("../img/bg_photo.jpeg");
+    background-position: top center;
+    background-size: cover;
+    background-attachment:fixed;
+    background-color: (0,0,0,0.5);
+    position: relative;
+    &:after{
+        content: "";
+        background: #222;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.7;
+    }
+    .column{
+        position: relative;
+        z-index: 9;
+    }
+}
+
 .u-callout-center{
     @include u-callout;
     background-position: right 60%;
