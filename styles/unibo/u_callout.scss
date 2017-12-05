@@ -12,6 +12,10 @@
     margin-bottom: $margin;
     .column{
         display: flex;
+        flex-direction: column;
+        @include breakpoint(large){
+            flex-direction: row;
+        }
     }
 
     .text-wrapper{
@@ -26,13 +30,19 @@
     }
 
     .action-wrapper{
-        flex-grow: 1;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        @include breakpoint(large){
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            a{
+                margin: 0 $margin-small;
+            }
+        }
         a{
             border-radius: 4px;
-            margin: 0 $margin-small;
+            margin-top: $margin-small;
+            margin-bottom: 0;
             @include large;
             padding-left: 1.5em;
             padding-right: 1.5em;
@@ -90,6 +100,7 @@
     }
     .action-wrapper{
         justify-content: center;
+        text-align: center;
         margin-top: 2em;
     }
 }
