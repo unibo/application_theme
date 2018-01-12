@@ -14,6 +14,11 @@
             margin-top: -16px;
             font-weight: bold;
         }
+        &[aria-expanded=false]{
+            &:before{
+                margin-top: -13px;
+            }
+        }
     }
     .accordion-item{
         &.is-active{
