@@ -14,17 +14,14 @@
             margin-top: -16px;
             font-weight: bold;
         }
-        &[aria-expanded=false]{
-            &:before{
-                margin-top: -13px;
-            }
-        }
     }
     .accordion-item{
+        .accordion-title{
+            line-height: normal;
+        }
         &.is-active{
             .accordion-title{
                 font-weight: bold;
-                line-height: normal;
             }
             .accordion-content{
                 border-top: none;

@@ -28,6 +28,10 @@ nav.column {
 
 aside.column{
   overflow: hidden;
+  margin-top: $margin;
+  @include breakpoint(medium){
+    margin-top: 0;
+  }
 }
 
 .column,
