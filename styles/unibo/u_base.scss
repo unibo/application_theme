@@ -26,6 +26,10 @@ nav.column {
   background-color: $light-gray;
 }
 
+aside.column{
+  overflow: hidden;
+}
+
 .column,
 .columns {  
   &.nopadding {

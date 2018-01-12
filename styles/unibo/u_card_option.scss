@@ -13,4 +13,40 @@
   .button{
   	margin-top: $padding-small;
   }
+  &.contact{
+    position: relative;
+    h2{
+      font-size: 1.38462rem;
+      line-height: normal;
+      margin-top: $margin-xs;
+    }
+    .info{
+      text-align: left;
+      max-width: 320px;
+      margin: $margin*2 auto $margin;
+      padding: 0 $padding-xs;
+
+      &:before{
+        content: "";
+        display: block;
+        border-top: 1px solid #ddd;
+        position: absolute;
+        width: 200%;
+        margin-top: -2em;
+        left: -50%;
+      }
+      .email{
+        word-wrap: break-word; 
+      }
+
+      @include breakpoint(xxlarge){
+        padding: 0 $padding-small;
+      }
+    }
+  }
+  &.color-icon{
+    i{
+      color: $primary-color;
+    }
+  }
 }

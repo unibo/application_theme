@@ -1,0 +1,11 @@
+.u-search-header{
+    max-width: 700px;
+    margin: auto;
+    .description{
+        @include large();
+    }
+    .input-group,
+    .accordion{
+        margin: $margin*1.5 0 0;
+    }
+}

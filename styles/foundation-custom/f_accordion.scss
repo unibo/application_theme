@@ -11,7 +11,7 @@
             left: 1rem;
             right: auto;
             font-size: 20px;
-            margin-top: -13px;
+            margin-top: -16px;
             font-weight: bold;
         }
     }
@@ -19,6 +19,7 @@
         &.is-active{
             .accordion-title{
                 font-weight: bold;
+                line-height: normal;
             }
             .accordion-content{
                 border-top: none;
