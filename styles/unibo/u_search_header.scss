@@ -8,4 +8,9 @@
     .accordion{
         margin: $margin*1.5 0 0;
     }
+    .accordion{
+        .accordion-title{
+            color: $base-font-color;
+        }
+    }
 }
