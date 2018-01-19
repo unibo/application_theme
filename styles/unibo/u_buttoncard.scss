@@ -1,0 +1,40 @@
+.u-buttoncard{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    button{
+        margin: 0 $margin-small;
+        margin-bottom: $margin;    
+        max-width: 200px;
+        flex-basis: 200px;
+        text-align: center;    
+        cursor: pointer;
+        border: 1px solid $border-color;
+        box-shadow: 0px 1px 3px $border-color;
+        padding: $padding-small;
+        border-radius: $global-radius;
+        @include breakpoint(medium){
+        }
+        i{
+            color: $primary-color;
+            margin-bottom: $margin-small;
+        }
+        h3{
+            text-transform: uppercase;
+            margin-bottom: $margin-xs;
+            @include large();
+        }
+        p{
+            margin: 0;
+        }
+    }
+    &.colored{
+        button{
+            background-color: $primary-color;
+            color: #fff;
+            i{
+                color: #fff;
+            }
+        }
+    }
+}
