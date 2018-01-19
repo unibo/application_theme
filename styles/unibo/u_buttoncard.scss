@@ -9,10 +9,9 @@
         flex-basis: 200px;
         text-align: center;    
         cursor: pointer;
-        border: 1px solid $border-color;
-        box-shadow: 0px 1px 3px $border-color;
+        border: 1px solid $primary-color;
         padding: $padding-small;
-        border-radius: $global-radius;
+        border-radius: 3px;
         @include breakpoint(medium){
         }
         i{
@@ -32,6 +31,7 @@
         button{
             background-color: $primary-color;
             color: #fff;
+            border: none;
             i{
                 color: #fff;
             }
