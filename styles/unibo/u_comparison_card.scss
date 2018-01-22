@@ -24,7 +24,7 @@
             color: #0f820f;
         }
         .worst{
-            color: #bf440c;
+            color: #ca4103;
         }
         .card-tile{
             padding: $padding-small;
@@ -37,6 +37,7 @@
         h3{
             text-transform: uppercase;
             margin-bottom: $margin-xs;
+            font-weight: 500;
             @include large();
         }
         .text-wrap{
