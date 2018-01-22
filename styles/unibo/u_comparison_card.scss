@@ -20,6 +20,12 @@
         @include breakpoint(medium){
             margin-bottom: 0;     
         }
+        .best{
+            color: #0f820f;
+        }
+        .worst{
+            color: #bf440c;
+        }
         .card-tile{
             padding: $padding-small;
             padding-bottom: 0;
