@@ -1,0 +1,35 @@
+<div class="u-adjacent-grid">
+    <div class="row">
+        <div class="column large-4">
+            <i class="fa fa-lg fa-upload" aria-hidden="true"></i>
+            <h2>Carica il documento</h2>
+            <label for="doc">
+                <p>Seleziona un documento da firmare</p>
+                <input name="doc" id="doc" type="file">
+            </label>
+        </div>
+        <div class="column large-4">
+            <i class="fa fa-lg fa-key" aria-hidden="true"></i>
+            <h2>Inserisci il pin</h2>
+            <label for="pin">
+                <p>PIN del certificato</p>
+                <input name="pin" id="pin" placeholder="PIN" type="password">
+            </label>
+        </div>
+        <div class="column large-4">
+            <i class="fa fa-lg fa-clock-o" aria-hidden="true"></i>
+            <h2>Inserisci OTP</h2>
+            <label for="otp">
+                <p>Crea OTP e inserisci il codice inviato</p>
+                <div class="input-group">
+                    <a class="input-group-button button secondary" href="#">Genera OTP</a>
+                    <input class="input-group-field" name="otp" id="otp" placeholder="OTP" type="password">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="action">
+        <a class="button primary">Firma</a>
+    </div>
+</div>
