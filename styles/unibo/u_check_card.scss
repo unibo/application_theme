@@ -42,7 +42,7 @@
                 color: $success-color;
             }
             h2{
-                color: darken( $success-color, 20% );
+                color: darken( $success-color, 35% );
             }
         }
         &.failure{
@@ -51,7 +51,7 @@
             }
 
             h2{
-                color: darken( $alert-color, 10% );
+                color: darken( $alert-color, 15% );
             }
         }
     }
