@@ -86,14 +86,6 @@ form {
     }
   }
 
-  //fix per checkbox e radio singole senza fieldset
-  [type="checkbox"] + label, 
-  [type="radio"] + label{
-    vertical-align: top;
-    width: calc(100% - 3em);
-    line-height: 1.4;
-  }
-
   // diminuito margine di default perchè il margine è sulle colonne
   [type="file"], 
   [type="checkbox"], 
