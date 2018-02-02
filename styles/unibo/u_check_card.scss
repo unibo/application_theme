@@ -64,27 +64,44 @@
             text-align: left;
             padding-top: $padding-small;
             i{
-                position: absolute;
-                top: $margin;
-                left: $margin*1.5;
+                float: left;
+                margin-left: $margin;
+                margin-right: $margin-small;
+                @include breakpoint(medium){
+                    position: absolute;
+                    top: $margin;
+                    left: $margin*1.5;
+                    margin: 0;
+                }
             }
+            
             h2{
-                margin-left: $margin*2;
+                margin-left: $margin;
                 margin-bottom: $margin-xs;
-                padding-left: $padding;
+                @include breakpoint(medium){
+                    margin-left: $margin*2;
+                    padding-left: $padding;
+                }
             }
             .controls{
                 background-color: transparent;
-                margin-left: $margin*2;
                 padding-bottom: $padding-small;
                 padding-top: 0;
+                @include breakpoint(medium){
+                    margin-left: $margin*2;
+                }
             }
             .button{
-                position: absolute;
-                top: 50%;
-                right: $margin*1.5;
-                margin-top: -14px;
+                margin: 0 $margin $margin;
             }
+            @include breakpoint(medium){
+                .button{
+                    position: absolute;
+                    top: 50%;
+                    right: $margin*1.5;
+                    margin-top: -14px;
+                }
+          }
         }
     }
 }
