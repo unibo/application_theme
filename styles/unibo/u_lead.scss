@@ -3,6 +3,11 @@
     margin-bottom: $margin;
     color: #fff;
     background-color: #222;
+    text-align: center;
+
+    @include breakpoint(large){
+        padding: $padding $padding-big;
+    }
 }
 
 .u-lead{

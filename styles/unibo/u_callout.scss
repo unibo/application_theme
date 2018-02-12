@@ -6,9 +6,12 @@
     background-size: 100%;
     background-color: #222;
     color: #fff;
-    padding: $padding $padding;
+    padding: $padding $padding-small;
     width: 100%;
     margin-bottom: $margin;
+    @include breakpoint(large){
+        padding: $padding;
+    }
     .column{
         display: flex;
         flex-direction: column;
@@ -115,6 +118,11 @@
             border-color: $primary-color;
             color: $primary-color;
             background-color: transparent;
+        }
+        .primary:not(.hollow){
+            border-color: $primary-color;
+            color: #fff;
+            background-color: $primary-color;
         }
     }
 }
