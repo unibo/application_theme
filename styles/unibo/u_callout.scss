@@ -6,10 +6,12 @@
     background-size: 100%;
     background-color: #222;
     color: #fff;
-    box-shadow: inset 0px 0px 4px #777;
-    padding: $padding $padding-big;
+    padding: $padding $padding-small;
     width: 100%;
     margin-bottom: $margin;
+    @include breakpoint(large){
+        padding: $padding;
+    }
     .column{
         display: flex;
         flex-direction: column;
@@ -58,6 +60,16 @@
             background-color: transparent;
             color: #fff;
         }
+
+        @include breakpoint(large){
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            a{
+                margin: 0 $margin-small;
+            }
+        }
     }
 }
 
@@ -102,5 +114,24 @@
         justify-content: center;
         text-align: center;
         margin-top: 2em;
+    }
+}
+
+.u-callout-light{
+    @include u-callout;
+    background-image: none;
+    background-color: $e-gray;
+    color: $base-font-color;
+    .action-wrapper{
+        .hollow{
+            border-color: $primary-color;
+            color: $primary-color;
+            background-color: transparent;
+        }
+        .primary:not(.hollow){
+            border-color: $primary-color;
+            color: #fff;
+            background-color: $primary-color;
+        }
     }
 }
