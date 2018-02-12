@@ -35,11 +35,11 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            a{
+            a.button{
                 margin: 0 $margin-small;
             }
         }
-        a{
+        a.button{
             border-radius: 4px;
             margin-top: $margin-small;
             margin-bottom: 0;
