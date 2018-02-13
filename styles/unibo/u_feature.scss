@@ -1,18 +1,15 @@
 @mixin u-feature{
-    padding: 0 $padding-small;
     margin-bottom: $margin;
 
-    @include breakpoint(large){
-        padding: 0 $padding;
-    }
     .row{
-        padding: 0;
+        padding: 0 $padding-small;
+
         .column{
             margin-bottom: $margin-small;
         }
 
         @include breakpoint(large){
-            padding: $padding-small 0;
+            padding: $padding-small $padding;
             .column{
                 margin-bottom: 0;
             }
@@ -57,4 +54,10 @@
     i{
         background-color: $primary-color;
     }
+}
+
+.u-feature-background{
+    @include u-feature;
+    background-color: $e-gray;
+    padding: $padding-small 0;    
 }
