@@ -29,6 +29,10 @@
         h3{
             @include large-fancy;
         }
+
+        @include breakpoint(large){
+            padding: 0 $padding;
+        }
     }
 
     .action-wrapper{
@@ -66,7 +70,7 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            a{
+            a.button{
                 margin: 0 $margin-small;
             }
         }

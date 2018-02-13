@@ -1,0 +1,60 @@
+@mixin u-feature{
+    padding: 0 $padding-small;
+    margin-bottom: $margin;
+
+    @include breakpoint(large){
+        padding: 0 $padding;
+    }
+    .row{
+        padding: 0;
+        .column{
+            margin-bottom: $margin-small;
+        }
+
+        @include breakpoint(large){
+            padding: $padding-small 0;
+            .column{
+                margin-bottom: 0;
+            }
+        }
+    }
+    i{
+        background-color: $base-font-color;
+        border-radius: 50%;
+        color: #fff;
+        padding: $padding-small 0;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+    }
+    .icon-left{
+        display: flex;
+        align-items: center;
+        margin-bottom: $margin/4;
+        i{
+            margin-right: $margin-small;
+        }
+    }
+    .icon-center{
+        text-align: center;
+        margin-bottom: $margin/4;
+        i{
+            margin-bottom: $margin/4;
+        }
+        + p {
+            text-align: center;
+        }
+    }
+
+}
+
+.u-feature{
+    @include u-feature;
+}
+
+.u-feature-primary{
+    @include u-feature;
+    i{
+        background-color: $primary-color;
+    }
+}
