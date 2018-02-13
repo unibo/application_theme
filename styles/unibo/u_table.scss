@@ -90,4 +90,8 @@ table {
       border: 0;
     }
   }
+  //fix allineamento th
+  th{
+    text-align: inherit;    
+  }
 }
