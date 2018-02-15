@@ -18,6 +18,9 @@ main {
   &.row.expanded {
     padding: $padding-small 0 0 0;
   }
+  &.nopadding{
+    padding: 0;
+  }
 }
 
 aside.column,
