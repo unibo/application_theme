@@ -1,10 +1,7 @@
 @mixin u-lead{
     padding: $padding;
     margin-bottom: $margin;
-    color: #fff;
-    background-color: #222;
-    text-align: center;
-
+    border-bottom: 1px solid $medium-gray;
     @include breakpoint(large){
         padding: $padding $padding-big;
     }
@@ -22,6 +19,10 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    color: #fff;
+    background-color: #222;
+    border-bottom: 0;
+    text-align: center;
     &:before {
         content: "";
         background: #000;
