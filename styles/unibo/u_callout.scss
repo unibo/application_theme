@@ -15,8 +15,25 @@
     .column{
         display: flex;
         flex-direction: column;
-        @include breakpoint(large){
+        margin: 0 auto;
+        width: 100%;
+        float: none;
+        @include breakpoint(840px){
             flex-direction: row;
+            max-width: 1150px;
+        }
+        @include breakpoint(1400px){
+            padding: 0 116px; 
+            max-width: none;
+        }
+    }
+
+    .row{
+        .column{
+            @include breakpoint(1400px){
+                padding: 0 3em;
+                max-width: 1150px;
+            }
         }
     }
 
@@ -30,8 +47,7 @@
             @include large-fancy;
         }
 
-        @include breakpoint(large){
-            padding: 0 $padding;
+        @include breakpoint(xlarge){
         }
     }
 
@@ -117,7 +133,10 @@
     .action-wrapper{
         justify-content: center;
         text-align: center;
-        margin-top: 2em;
+        margin-top: 1em;
+        @include breakpoint(large){
+            margin-top: 2em;
+        }
     }
 }
 
