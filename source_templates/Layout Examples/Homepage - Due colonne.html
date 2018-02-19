@@ -16,7 +16,44 @@
 
         <div class="row expanded">
           <nav class="large-2 column nopadding">
-            @@include "../../snippets/u_main_menu_icons.html"
+            <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="large">
+            <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+            <a class="title-bar-title" data-toggle="example-menu">Menu</a>
+          </div>
+
+          <div id="example-menu">
+              <ul class="menu vertical u-menu u-menu-main">
+                  <li>
+                    <a href="">
+                      <i class="fa fa-home"></i>
+                      <span>Home</span>
+                    </a>
+                  </li>
+                
+                  <li class="selected">
+                    <a href="">
+                      <i class="fa fa-user"></i>
+                      <span>Elenco Utenze</span>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="">
+                      <i class="fa fa-phone"></i>
+                      <span>Elenco Apparati</span>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="">
+                      <i class="fa fa-clock-o"></i>
+                      <span>Storico Richieste</span>
+                    </a>
+                  </li>
+                </ul>
+      
+</div>
+
           </nav>
 
           <div class="large-10 column nopadding">
