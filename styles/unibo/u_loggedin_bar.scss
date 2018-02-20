@@ -2,8 +2,10 @@
     background-color: $e-gray;
     margin-bottom: $margin;
     padding: $padding 0;
+    p{
+        @include large;
+    }
     .action-wrapper{
-        
         .button{
             border-radius: 4px;
             margin-top: $margin-small;
