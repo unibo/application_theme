@@ -1,7 +1,7 @@
 .u-loggedin-bar{
-    background-color: $e-gray;
-    margin-bottom: $margin;
-    padding: $padding 0;
+    margin-bottom: $margin-small;
+    padding: 0 0 $padding*1.5;
+    border-bottom: 1px solid $medium-gray;
     p{
         @include large;
     }
