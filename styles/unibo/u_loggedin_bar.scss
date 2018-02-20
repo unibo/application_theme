@@ -1,0 +1,17 @@
+.u-loggedin-bar{
+    background-color: $e-gray;
+    margin-bottom: $margin;
+    padding: $padding 0;
+    .action-wrapper{
+        
+        .button{
+            border-radius: 4px;
+            margin-top: $margin-small;
+            margin-bottom: 0;
+            @include large;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+        }
+    }
+}
+
