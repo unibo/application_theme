@@ -72,9 +72,15 @@ aside.column{
   background-color: $white;
 }
 
+.colored-icon{
+  i{
+    color: $primary-color;
+  }
+}
 //fix temporanea per select (il compilatore non ha autoprefix)
 select{
   -webkit-appearance: none;
   -moz-appearance:    none;
   appearance:         none;
 }
+
