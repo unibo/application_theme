@@ -39,6 +39,7 @@
 
     .text-wrapper{
         flex-basis: 60%;
+        flex-grow: 1;
         h2{
             @include huge;
             margin-bottom: 0;
