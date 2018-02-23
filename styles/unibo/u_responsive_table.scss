@@ -1,0 +1,96 @@
+
+//tabella responsive
+table{
+    &.collapse-column{
+        @include breakpoint($table-label-resolution down){            
+            display: flex;
+            flex-direction: row;            
+            tr,
+            th,
+            td {
+                display: block;
+                width: 100%;
+            }
+            td,
+            th {
+                border-bottom: 1px solid $e-gray;
+                padding-top: $padding-xs;
+                padding-bottom: $padding-xs;
+                background-color: #fff;
+            }
+            thead{
+                border-bottom: none;
+                border-right: none;
+                th{
+                    font-weight: normal;
+                    text-align: left;
+                }
+                tr{
+                    border-bottom: none;
+                }
+            }
+            tbody{
+                display: flex;
+                flex-grow: 1;
+                border-bottom: none;
+                text-align: right;
+                border-left: none;
+                font-weight: bold;
+                tr{
+                    border-bottom: none;
+                }
+            }
+        }
+        .hide-label{
+            @include breakpoint($table-label-resolution){
+                display: none;
+            }
+        }
+        .show-label{
+            @include breakpoint($table-label-resolution down){
+                display: none;
+            }
+        }
+    }
+    &.double-label{
+        .data-label{            
+            @include breakpoint($table-label-resolution){
+                display: none;
+            }
+        }
+        .data-row{
+            @include breakpoint($table-label-resolution){
+                text-align: center;
+            }
+        }        
+        @include breakpoint($table-label-resolution down){
+            display: block;            
+            tbody,
+            tr,
+            td{
+                display: block;
+            }            
+            .data-row{
+                display: flex;
+                justify-content: space-between;
+                padding-top: $padding-xs;
+                padding-bottom: $padding-xs;
+                font-weight: bold;
+                border-top: 1px solid $e-gray;
+                span{
+                    font-weight: normal;
+                }
+            }
+        }
+        .hide-label{
+            @include breakpoint($table-label-resolution){
+                display: none;
+            }
+        }
+        .show-label{
+            @include breakpoint($table-label-resolution down){
+                display: none;
+            }
+        }
+    }
+}

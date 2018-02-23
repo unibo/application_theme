@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+    @@include "../snippets/head.html"
+    
+    <title>Unibo Responsive table</title>
+  </head>
+	
+  <body>
+    
+    <main>
+      <div class="row">
+       
+        <div class="large-2 columns" data-sticky-container>
+          @@include "../snippets/toc.html"
+        </div>
+        
+        <div class="large-10 columns">
+        
+        <h1 class="huge">Style Guide Unibo Responsive Table</h1>
+
+        <h2>Tabelle responsive personalizzate sviluppate appositamente per Unibo</h2>
+
+        <p>
+          Esistono diverse soluzioni in css e js per creare delle tabelle responsive. <br>
+          Per questo pacchetto non abbiamo previsto librerie js, ma abbiamo deciso di adottare soluzioni basate sull'uso di solo css.
+        </p>
+        <p>
+          In generale si consiglia di scegliere la soluzione in base al tipo di tabella e di contenuto da visualizzare. <br>
+          Su <a href="https://css-tricks.com/accessible-simple-responsive-tables/">css-tricks.com</a> ci sono 4 proposte, da cui abbiamo
+          preso spunto per sviluppare le nostre soluzioni:
+        </p>
+        <img class="float-center" src="https://cdn.css-tricks.com/wp-content/uploads/2016/03/types-of-responsive-tables.gif" alt="esempi tabelle responsive">
+        <p>
+          La soluzione <strong>squish</strong> è il comportamento di base di una tabella senza nessuno stile applicato.<br>
+          La soluzione <strong>scroll</strong> è la soluzione adottata dal pacchetto di Foundation base visibile nella
+          pagina <a href="foundation%20-%20containers.html#tables">Foundation Containers.html</a> nella sezione "Scrolling Table".<br>
+          Le soluzioni <strong>collapse rows</strong> e <strong>collapse columns</strong> sono di seguito sviluppate:
+        </p>
+        <section>
+            <h3 id="unibo-collapse-row">Tabella orientata per colonne</h3>
+            <p class="section-description">Informazioni per colonna</p>
+            <p>
+              Nella maggior parte dei casi, le informazioni delle tabelle sono disposte per colonne. In questo caso, nel
+              responsive il <kbd>thead</kbd> e il <kbd>tbody</kbd> vengono affiancati.
+            </p>
+            <pre>
+              <code class="html">
+  @@include "../snippets/responsive_table/u_collapse_column.html"
+              </code>
+            </pre>
+            <div class="row">
+              <div class="column large-4">
+                @@include "../snippets/responsive_table/u_collapse_column.html"
+              </div>
+            </div>
+          </section>
+
+        <section>
+          <h3 id="unibo-collapse-row">Tabella orientata per righe</h3>
+          <p class="section-description">Informazioni per riga</p>
+          <p>
+            Le informazioni della tabella sono disposte per riga, quindi nel responsive le informazioni saranno
+            visualizzate come una tabella inline.
+          </p>
+          <pre>
+            <code class="html">
+@@include "../snippets/responsive_table/u_collapse_row.html"
+            </code>
+          </pre>
+          <div class="row">
+            <div class="column large-4">
+              @@include "../snippets/responsive_table/u_collapse_row.html"
+            </div>
+          </div>
+        </section>    
+
+        <section>
+            <h3 id="unibo-collapse-row">Tabella orientamento misto</h3>
+            <p class="section-description">Informazioni su riga e colonna, con necessità di duplicare il testo</p>
+            <p>
+              Le informazioni della tabella sono eterogenee e vengono disposte sia per riga che per colonna.<br>
+              Nel responsive i <kbd>th</kbd> che si trovano all'interno del <kbd>thead</kbd> vengono nascosti nella versione responsive 
+              e le etichette vengono duplicate a fianco al valore.<br>
+              Per poter visualizzare l'etichetta di fianco al valore è necessario duplicare la label dentro il <kbd>td</kbd> 
+              usando <kbd><span class="data-label"></span></kbd>.
+            </p>
+            
+            <pre>
+              <code class="html">
+  @@include "../snippets/responsive_table/u_double_label.html"
+              </code>
+            </pre>
+            <div class="row">
+              <div class="column large-4">
+                @@include "../snippets/responsive_table/u_double_label.html"
+              </div>
+            </div>
+          </section>    
+        
+      
+        </div>
+      </div>
+      
+    </main>
+    
+    @@include "../snippets/end_of_body.html"
+    
+    <script src="../js/toc.js"></script>
+    
+  </body>
+</html>
