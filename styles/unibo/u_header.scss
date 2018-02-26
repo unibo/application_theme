@@ -12,13 +12,18 @@ header {
       display: inline-block;
     }
   }
+  .text{
+    margin-top: $margin-xs;
+  }
 
   .alma-mater {
     color: $light-black;
-    margin-bottom: 0;
-    margin-top: $margin-xs;
+    margin: $margin-xs auto;
+    line-height: normal;
+    width: 200px;
     
     @include breakpoint(medium){
+      width: auto;
       font-size: 1.2rem;
       margin-top: 0;
     }
@@ -58,27 +63,29 @@ header {
       }
     }
 
-    @include breakpoint(small only) {
-      &.small-left{
-        .content{
-          text-align: left;
-          > a{
-            display: flex;
-            align-items: center;
-          }
+  }
+
+  @include breakpoint(small only) {
+    &.small-left{
+      .content{
+        text-align: left;
+        > a{
+          display: flex;
+          align-items: center;
         }
-        .logo{
+      }
+      .logo{
+        margin: 0;
+        float: left;
+      }
+      .text{
+        overflow: hidden;
+        padding-left: 2px;
+        .alma-mater{
+          font-size: 0.68em;
           margin: 0;
-          float: left;
-        }
-        .text{
-          overflow: hidden;
-          padding-left: 2px;
-          .alma-mater{
-            font-size: 0.68em;
-            margin-top: 0;
-            white-space: nowrap;
-          }
+          white-space: nowrap;
+          width: auto;
         }
       }
     }
