@@ -2,6 +2,15 @@
   z-index: 1;
   padding: $padding-xs;
   display: none;
+
+  @include breakpoint(medium down){
+    + div{
+      position: absolute;
+      z-index: 9;
+      background-color: $light-gray;
+      width: 100%;
+    }
+  }
 }
 
 .title-bar-title {
@@ -11,4 +20,5 @@
   &:hover {
     color: darken($white, 15%);
   }
+
 }
