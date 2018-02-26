@@ -11,6 +11,40 @@
       width: 100%;
     }
   }
+  .menu-icon{
+    width: auto;
+    height: auto;
+    padding: 6px;
+    border: 1px solid #fff;
+    border-radius: 4px 1px 0px 3px;
+    border-right: 0;
+    margin-right: -5px;
+    &:after {
+      content: "\f0c9";
+      font: normal normal normal 14px/1 FontAwesome;
+      position: static;
+      top: 0;
+      left: 0;
+      width: auto;
+      height: auto;
+      text-align: center;
+      color: #fff;
+      background: transparent;
+      box-shadow: none;
+    }
+    &:hover:after{
+      background: transparent;
+      box-shadow: none;
+    }
+    + .title-bar-title{
+      padding: 3px 5px;
+      padding-left: 5px;
+      border: 1px solid #fff;
+      padding-left: 0;
+      border-left: 0;
+      border-radius: 0px 3px 3px 0;
+    }
+  }
 }
 
 .title-bar-title {
@@ -20,5 +54,4 @@
   &:hover {
     color: darken($white, 15%);
   }
-
 }
