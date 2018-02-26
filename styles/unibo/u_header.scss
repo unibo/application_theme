@@ -20,7 +20,6 @@ header {
     color: $light-black;
     margin: $margin-xs auto;
     line-height: normal;
-    width: 200px;
     
     @include breakpoint(medium){
       width: auto;
