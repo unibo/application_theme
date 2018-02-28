@@ -13,8 +13,7 @@
         box-shadow: 0px 1px 3px $border-color;
         border-radius: 3px;
         padding-top: $padding;
-        i{
-            color: $primary-color;
+        > i{
             margin-bottom: $margin-small;
         }
         h2{
