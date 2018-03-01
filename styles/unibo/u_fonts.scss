@@ -45,6 +45,28 @@
   line-height: rem-calc(32);
 }
 
+//possono essere usati anche come classi
+
+.x-small-fancy{
+  @include x-small-fancy();
+}
+.small-fancy{
+  @include small-fancy();
+}
+.normal-fancy{
+  @include normal-fancy();
+}
+.large-fancy{
+  @include large-fancy();
+}
+.very-large-fancy{
+  @include very-large-fancy();
+}
+.huge-fancy {
+  @include huge-fancy();
+}
+
+
 
 // dimensioni font per testo
 @mixin x-small() {
@@ -77,6 +99,23 @@
   line-height: rem-calc(38);
 }
 
+//possono essere usati anche come classi
+
+.x-small{
+  @include x-small();
+}
+.small{
+  @include small();
+}
+.normal{
+  @include normal();
+}
+.large{
+  @include large();
+}
+.very-large{
+  @include very-large();
+}
 .huge {
   @include huge();
 }

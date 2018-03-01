@@ -141,11 +141,54 @@
                   </div>
                 </div>
               </div>
+              <div class="row background-light">
+                <div class="large-12 column">
+                  <h2 class="text-center margin-1 very-large-fancy">Consulta i rapporti per anno</h2>
+                </div>
+              </div>
+              <div class="row background-light">
+                  <div class="large-12 column">
+                    <div class="multiple-items">
+                      <div class="u-card-option">
+                        <h3>Anno 2013</h3>
+                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+                        <a href="" class="button button-primary">Vedi tutto</a>
+                      </div>
+                      <div class="u-card-option">
+                        <h3>Anno 2014</h3>
+                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+                        <a href="" class="button button-primary">Vedi tutto</a>
+                      </div>
+                      <div class="u-card-option">
+                        <h3>Anno 2015</h3>
+                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+                        <a href="" class="button button-primary">Vedi tutto</a>
+                      </div>
+                      <div class="u-card-option">
+                        <h3>Anno 2016</h3>
+                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+                        <a href="" class="button button-primary">Vedi tutto</a>
+                      </div>
+                      <div class="u-card-option">
+                        <h3>Anno 2017</h3>
+                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+                        <a href="" class="button button-primary">Vedi tutto</a>
+                      </div>
+                    </div>
+                </div>
+              </div>
             </main>
           </div>
         </div>
       @@include "../../snippets/footer.html"
     </div>   
     @@include "../../snippets/end_of_body.html"
+    <script>
+      $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+    </script>
   </body>
 </html>

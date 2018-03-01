@@ -81,6 +81,10 @@ i.colored-icon{
   color: $primary-color;
 }
 
+.background-light{
+  background-color: $e-gray;
+}
+
 //fix temporanea per select (il compilatore non ha autoprefix)
 select{
   -webkit-appearance: none;
