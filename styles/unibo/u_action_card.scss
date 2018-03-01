@@ -1,11 +1,10 @@
-.u-check-card{
+.u-action-card{
     justify-content: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     .card-tile{
         margin: 0 $margin-small;
-        margin-bottom: $margin;    
         max-width: 300px;
         min-width: 290px;
         text-align: center;    
@@ -13,6 +12,8 @@
         box-shadow: 0px 1px 3px $border-color;
         border-radius: 3px;
         padding-top: $padding;
+        display: flex;
+        flex-direction: column;
         > i{
             margin-bottom: $margin-small;
         }
@@ -22,9 +23,7 @@
         .controls{
             background-color: $light-gray;
             padding: $padding;
-            strong{
-                display: block;
-            }
+            flex-grow: 1;
             input{
                 margin-bottom: 0;
             }
@@ -36,8 +35,14 @@
             margin-bottom: 0;
         }
 
+        &.disabled{
+            > i{
+                color: $medium-gray;
+            }
+        }
+
         &.success{
-            i{
+            > i{
                 color: $success-color;
             }
             h2{
@@ -45,10 +50,9 @@
             }
         }
         &.failure{
-            i{
+            > i{
                 color: $alert-color;
             }
-
             h2{
                 color: darken( $alert-color, 15% );
             }
@@ -63,10 +67,26 @@
             text-align: left;
             margin: 0;
             padding: $padding-small $padding-small $padding-xs;
+            //icone
             .column > i{
                 margin: 0 $margin $margin-small;
                 @include breakpoint(medium){
                     margin: $margin-small;
+                }
+            }
+            &.disabled{
+                .column > i{
+                    color: $medium-gray;
+                }
+            }
+            &.success{
+                .column > i{
+                    color: $success-color;
+                }
+            }
+            &.failure{
+                .column > i{
+                    color: $alert-color;
                 }
             }
             h2{
@@ -83,6 +103,9 @@
                 [type="file"]{
                     width: auto;
                 }
+                .result{
+                    margin: 0;
+                }
                 @include breakpoint(medium){
                     text-align: left;
                     [type="file"]{
@@ -98,7 +121,7 @@
                     margin: $margin-small;
                     float: right;
                 }
-          }
+            }
         }
     }
 }
