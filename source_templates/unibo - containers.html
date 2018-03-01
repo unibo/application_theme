@@ -438,10 +438,11 @@
           </section>
 
           <section>
-            <h3 id="u-check-card">Card con azioni <kbd>(u-action-card)</kbd></h3>
+            <h3 id="u-action-card">Card con azioni <kbd>(u-action-card)</kbd></h3>
             <p>Questo elemento può essere utilizzato come box per verificare il corretto funzionamento di un processo o di un'azione.</p>
             <p>Viene utilizzata la card <kbd>card-tile</kbd> per inserire i valori da verificare e successivamente le card <kbd>card-tile success</kbd> e <kbd>card-tile failure</kbd>
             definiscono il risultato che può essere positivo o negativo.</p>
+            <p>E' presente anche una card <kbd>disabled</kbd> per gestire anche gli stati intermedi di caricamento o disabilitate.</p>
             <pre>
               <code>
 @@include "../snippets/u_action_card.html"
@@ -449,6 +450,15 @@
             </pre>
             
             @@include "../snippets/u_action_card.html"
+
+            <p>E' possibile usare questa tipologia di card anche in forma orizzontale usando la classe <kbd>horizontal</kbd>.</p>
+            <pre>
+              <code>
+@@include "../snippets/u_action_card_horizontal.html"
+              </code>
+            </pre>
+            
+            @@include "../snippets/u_action_card_horizontal.html"
           </section>
 
           <section>
