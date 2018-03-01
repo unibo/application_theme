@@ -38,3 +38,31 @@
         }
     }
 }
+
+//quando c'è uno sfondo background-light
+.background-light{
+    .u-buttoncard {
+        button{
+            background-color: #fff;
+            border-color: $medium-gray;
+        }
+
+        &.colored{
+            button{
+                background-color: $primary-color;
+                border-color: $primary-color;
+            }
+        }
+    }
+}
+
+//elemento inserito nello slideshow slick
+.slick-initialized  .slick-slide{
+    &.u-buttoncard{
+        display: flex;
+        button{
+            flex-basis: 100%;
+            max-width: none;
+        }
+    }
+}
