@@ -37,8 +37,7 @@
 		}
 
 		//tendina con il cerca
-		select,
-		.select2-selection{
+		select{
 			width: auto;
 			height: $input-font-size + $form-spacing * 1.5;
 			border-right: 0;
