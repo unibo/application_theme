@@ -1,0 +1,48 @@
+.u-jumbo-lead{
+    position: relative;
+    width: 100%;
+    max-height: 550px;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+    .highlighted{
+        background-color: #fff;
+        padding: 0 5px;
+        display: inline;
+        line-height: 1.5em;
+        margin-left: $margin-xs;
+        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
+        -webkit-box-decoration-break: clone;
+        -ms-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+        box-shadow: $padding-xs 0 0 white, -$padding-xs 0 0 white;
+
+        @include breakpoint(medium){
+            @include huge-fancy;
+            line-height: 1.5em;
+        }
+    }
+    .button{
+        border-radius: 4px;
+    }
+    .primary,
+    .primary:hover{
+        background-color: $theme-color;
+        @include breakpoint(medium){
+            @include large-fancy;
+        }
+    }
+
+    .text-wrap{
+        padding-top: $padding-small;
+        @include breakpoint(medium){
+            padding-top: 0;
+            position: absolute;
+            bottom: $margin;
+        }
+    }
+}
