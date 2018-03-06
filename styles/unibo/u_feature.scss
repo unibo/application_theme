@@ -57,9 +57,3 @@
         background-color: $primary-color;
     }
 }
-
-.u-feature-background{
-    @include u-feature;
-    background-color: $e-gray;
-    padding: $padding-small 0;    
-}
