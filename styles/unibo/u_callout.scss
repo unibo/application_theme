@@ -139,6 +139,24 @@
             margin-top: 2em;
         }
     }
+    &.transparent{
+        background-image: none;
+        background-color: transparent;
+        color: $base-font-color;
+        .action-wrapper{
+            .primary{
+                border-color: $primary-color;
+                background-color: $primary-color;
+                color: #fff;
+            }
+            .secondary{
+                border-color: $primary-color;
+                border-width: 1px;
+                background-color: transparent;
+                color: $primary-color;
+            }
+        }
+    }
 }
 
 .u-callout-light{
