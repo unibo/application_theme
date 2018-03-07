@@ -57,10 +57,28 @@
           </nav>
 
           <div class="large-10 column nopadding">
-
-              @@include "../../snippets/u_lead_photo.html"
-
-              @@include "../../snippets/u_lead.html"
+              <div class="u-jumbo-lead">
+                  <picture>
+                      <source media="(min-width: 1024px)" srcset="https://placeimg.com/1360/400/people">
+                      <source media="(min-width: 769px)" srcset="https://placeimg.com/1024/301/people">
+                      <source srcset="https://placeimg.com/550/161/people">
+              
+                      <!-- fallback -->
+                      <img src="https://placeimg.com/1024/414/people" alt="">
+              
+                  </picture>
+              
+                  <div class="row">
+                      <div class="text-wrap">
+                          <div class="large-8 columns">
+                              <h1>
+                                  <span class="highlighted">Anno accademico 2016/2017</span>
+                              </h1>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                  
 
               <main class="nopadding">
               <div class="row">
