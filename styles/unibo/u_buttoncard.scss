@@ -59,9 +59,7 @@
 //elemento inserito nello slideshow slick
 .slick-initialized  .slick-slide{
     &.u-buttoncard{
-        display: flex;
         button{
-            flex-basis: 100%;
             max-width: none;
         }
     }
