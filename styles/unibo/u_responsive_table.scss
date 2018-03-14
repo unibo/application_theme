@@ -2,7 +2,7 @@
 //tabella responsive
 table{
     &.collapse-column{
-        @include breakpoint($table-label-resolution down){            
+        @include breakpoint($table-label-resolution - 1px down){            
             display: flex;
             flex-direction: row;            
             tr,
@@ -47,7 +47,7 @@ table{
             }
         }
         .show-label{
-            @include breakpoint($table-label-resolution down){
+            @include breakpoint($table-label-resolution - 1px down){
                 display: none;
             }
         }
@@ -58,7 +58,7 @@ table{
                 display: none;
             }
         }      
-        @include breakpoint($table-label-resolution down){
+        @include breakpoint($table-label-resolution - 1px down){
             display: block;            
             tbody,
             tr,
@@ -84,7 +84,7 @@ table{
             }
         }
         .show-label{
-            @include breakpoint($table-label-resolution down){
+            @include breakpoint($table-label-resolution - 1px down){
                 display: none;
             }
         }
