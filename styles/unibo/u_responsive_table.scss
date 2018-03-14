@@ -57,12 +57,7 @@ table{
             @include breakpoint($table-label-resolution){
                 display: none;
             }
-        }
-        .data-row{
-            @include breakpoint($table-label-resolution){
-                text-align: center;
-            }
-        }        
+        }      
         @include breakpoint($table-label-resolution down){
             display: block;            
             tbody,
@@ -77,6 +72,7 @@ table{
                 padding-bottom: $padding-xs;
                 font-weight: bold;
                 border-top: 1px solid $e-gray;
+                flex-wrap: wrap;
                 span{
                     font-weight: normal;
                 }
