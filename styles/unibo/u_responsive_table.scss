@@ -64,6 +64,13 @@ table{
             tr,
             td{
                 display: block;
+            }
+            &.unstriped tr{
+                border-top: 5px solid $e-gray;
+                border-bottom: none;
+                &:first-child{
+                    border-top: none;
+                }
             }            
             .data-row{
                 display: flex;
