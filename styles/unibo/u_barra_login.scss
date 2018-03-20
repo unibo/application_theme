@@ -13,7 +13,10 @@
   line-height: 32px;
   padding: 0px;
   max-height: 34px;
-  @include breakpoint(large){
+
+  .column, .columns{
+    padding-left: 0;
+    padding-right: 0;
   }
 
   //fix per float
