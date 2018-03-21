@@ -208,17 +208,8 @@
 }
 
 /* stile per impersonamento */
-.u-barra-login .dropdown.menu > li.is-dropdown-submenu-parent.u-user-fake.is-active,
-.u-barra-login .dropdown.menu > li.is-dropdown-submenu-parent.u-user-fake:hover{
-  background-color: $light-gray;
 
-  .fa-user-secret{
-    background-color: $base-font-color;
-    color: #fff;
-  }
-
-}
-.dropdown.menu > li.is-dropdown-submenu-parent {
+.u-barra-login .dropdown.menu > li.is-dropdown-submenu-parent {
   .u-utente-reale,
   .u-change-user {
     color: $dark-gray;
@@ -241,16 +232,22 @@
     }
   }
   .u-login-info{
-    background-color: $light-gray;
     color: $base-font-color;
     margin: 0;
-    padding: 0 $padding-small $padding-xs;
+    padding: $padding-small;
     border-bottom: 1px solid $medium-gray;
+    p{
+      margin: 0;
+      white-space: normal;
+      font-size: 0.9em;
+      line-height: normal;
+    }
     a,
     a:visited,
     a:link{
       color: $primary-color;
       padding: 0;
+      display: inline;
       &:hover{
         background-color: transparent;
         color: $primary-color;
@@ -260,12 +257,6 @@
     
   }
   .fa-user-secret{
-    background-color: #fff;
-    color: $base-font-color;
-    border-radius: 10px;
-    height: 16px;
-    line-height: 20px;
-    width: 16px;
   }
 }
 
