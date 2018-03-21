@@ -55,6 +55,10 @@
       }
     }
 
+    li:last-of-type{
+      border-right: 0;
+    }
+    
     @include breakpoint(small only){
       .is-dropdown-submenu{
         background: #fff;
@@ -204,44 +208,67 @@
 }
 
 /* stile per impersonamento */
-
-.dropdown.menu > li.is-dropdown-submenu-parent .u-utente-reale,
-.dropdown.menu > li.is-dropdown-submenu-parent .u-change-user {
-  color: $dark-gray;
-  border-bottom: 1px solid $medium-gray;
-  padding: 0.5rem 1rem;
+.u-barra-login .dropdown.menu > li.is-dropdown-submenu-parent.u-user-fake.is-active,
+.u-barra-login .dropdown.menu > li.is-dropdown-submenu-parent.u-user-fake:hover{
   background-color: $light-gray;
-  white-space: normal;
-  min-width: 250px;
-  a,
-  a:visited,
-  a:link{
-    color: $primary-color;
-    &:hover{
-      background-color: transparent;
+
+  .fa-user-secret{
+    background-color: $base-font-color;
+    color: #fff;
+  }
+
+}
+.dropdown.menu > li.is-dropdown-submenu-parent {
+  .u-utente-reale,
+  .u-change-user {
+    color: $dark-gray;
+    border-bottom: 1px solid $medium-gray;
+    padding: 0.5rem 1rem;
+    white-space: normal;
+    min-width: 250px;
+    a,
+    a:visited,
+    a:link{
       color: $primary-color;
-      text-decoration: underline;
+      &:hover{
+        background-color: transparent;
+        color: $primary-color;
+        text-decoration: underline;
+      }
+    }
+    p{
+      margin: 0;
     }
   }
-  p{
-    margin: 0;
-  }
-  i{
-    margin-right: $margin-xs;
-  }
-  strong{
-    @include large();
-    font-weight: normal;
-  }  
   .u-login-info{
-    @include small();
-    margin: $margin-xs 0;
-    a{
+    background-color: $light-gray;
+    color: $base-font-color;
+    margin: 0;
+    padding: 0 $padding-small $padding-xs;
+    border-bottom: 1px solid $medium-gray;
+    a,
+    a:visited,
+    a:link{
+      color: $primary-color;
       padding: 0;
+      &:hover{
+        background-color: transparent;
+        color: $primary-color;
+        text-decoration: underline;
+      }
     }
     
   }
+  .fa-user-secret{
+    background-color: #fff;
+    color: $base-font-color;
+    border-radius: 10px;
+    height: 16px;
+    line-height: 20px;
+    width: 16px;
+  }
 }
+
 .dropdown.menu > li.is-dropdown-submenu-parent .u-change-user {
   background-color: #fff;
 }
