@@ -213,7 +213,6 @@
   .u-utente-reale,
   .u-change-user {
     color: $dark-gray;
-    border-bottom: 1px solid $medium-gray;
     padding: 0.5rem 1rem;
     white-space: normal;
     min-width: 250px;
@@ -234,8 +233,8 @@
   .u-login-info{
     color: $base-font-color;
     margin: 0;
-    padding: $padding-small;
     border-bottom: 1px solid $medium-gray;
+    padding: 0em 34px $padding-small;
     p{
       margin: 0;
       white-space: normal;
@@ -262,6 +261,7 @@
 
 .dropdown.menu > li.is-dropdown-submenu-parent .u-change-user {
   background-color: #fff;
+  border-bottom: 1px solid $medium-gray;
 }
 
 @include breakpoint(small only){
