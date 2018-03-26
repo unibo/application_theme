@@ -36,11 +36,12 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  font-size: 14px;
-  top: 2px;
+  font-size: 17px;
+  float: left;
+  margin-right: 5px;
+  margin-top: -2px;
 }
 
-.ui-spy:before {
+.ui-user-change:before {
   content: "\61";
 }
