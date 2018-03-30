@@ -1,0 +1,55 @@
+//mixin per bordo in variabile
+@mixin border(
+  $size: null
+) {
+  @if $size != null {
+    border: $size+px solid $border-color;
+  }
+}
+
+@mixin border-top(
+  $size: null
+) {
+  @if $size != null {
+    border-top: $size+px solid $border-color;
+  }
+}
+@mixin border-bottom(
+  $size: null
+) {
+  @if $size != null {
+    border-top: $size+px solid $border-color;
+  }
+}
+@mixin border-left(
+  $size: null
+) {
+  @if $size != null {
+    border-top: $size+px solid $border-color;
+  }
+}
+@mixin border-right(
+  $size: null
+) {
+  @if $size != null {
+    border-top: $size+px solid $border-color;
+  }
+}
+
+@for $spacer from 0 through 3{
+    &.border-#{$spacer} {
+        @include border($spacer);
+    }
+    &.border-top-#{$spacer} {
+        @include border-top($spacer);
+    }
+    &.border-bottom-#{$spacer} {
+        @include border-top($spacer);
+    }
+    &.border-right-#{$spacer} {
+        @include border-top($spacer);
+    }
+    &.border-left-#{$spacer} {
+        @include border-top($spacer);
+    }
+}

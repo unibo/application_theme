@@ -1,0 +1,15 @@
+.u-dropdown{
+    border: 1px solid $border-color;
+    [data-toggle]{
+        cursor: pointer;
+        .column > *{
+            line-height: 39px;
+        }
+    }    
+    .dropdown-content{
+        display: none;
+        &.is-open{
+            display: block;
+        }
+    }
+}
