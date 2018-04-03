@@ -18,21 +18,21 @@
   $size: null
 ) {
   @if $size != null {
-    border-top: $size+px solid $border-color;
+    border-bottom: $size+px solid $border-color;
   }
 }
 @mixin border-left(
   $size: null
 ) {
   @if $size != null {
-    border-top: $size+px solid $border-color;
+    border-left: $size+px solid $border-color;
   }
 }
 @mixin border-right(
   $size: null
 ) {
   @if $size != null {
-    border-top: $size+px solid $border-color;
+    border-right: $size+px solid $border-color;
   }
 }
 
@@ -44,12 +44,12 @@
         @include border-top($spacer);
     }
     &.border-bottom-#{$spacer} {
-        @include border-top($spacer);
+        @include border-bottom($spacer);
     }
     &.border-right-#{$spacer} {
-        @include border-top($spacer);
+        @include border-right($spacer);
     }
     &.border-left-#{$spacer} {
-        @include border-top($spacer);
+        @include border-left($spacer);
     }
 }
