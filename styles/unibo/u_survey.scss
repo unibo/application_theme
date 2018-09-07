@@ -2,14 +2,48 @@
     border: 1px solid $border-color;
     box-shadow: 0px 1px 3px $border-color;
     border-radius: 3px;
-    margin-top: $margin;
-    padding: $padding;
-    fieldset{
+    margin-top: $margin-xs;
+    @include breakpoint(large){
         display: flex;
-        justify-content: space-around;
-        margin: $margin -2em 0;
+        padding-right: 0;
+    }
+    .text-wrap{
+        padding: $padding-small;
+        @include breakpoint(large){
+            border-left: 1px solid $border-color;
+            width: 50%;
+        }
+    }
+    .radio-wrap{
+        display: flex;
+        flex-direction: column;
+        @include breakpoint(large){
+            border-left: 1px solid $border-color;
+            width: 50%;
+        }
+    }
+    .radio-heading{
+        @include small();
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        padding: $padding-small;
         border-top: 1px solid $border-color;
-        padding-top: $padding;
+        background-color: $light-gray;
+        @include breakpoint(large){
+            border-top: none;
+            margin-bottom: $margin-small;
+        }
+    }
+    .radio-group{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: $padding-small;
+        @include breakpoint(large){
+            padding: $padding-small 0;
+            margin: 0;
+        }
         > span{
             text-align: center;
         }
