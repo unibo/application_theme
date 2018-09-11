@@ -3,37 +3,24 @@
     box-shadow: 0px 1px 3px $border-color;
     border-radius: 3px;
     margin-top: $margin-xs;
-    @include breakpoint(large){
-        display: flex;
-        padding-right: 0;
-    }
-    .text-wrap{
-        padding: $padding-small;
-        @include breakpoint(large){
-            border-left: 1px solid $border-color;
-            width: 50%;
-        }
-    }
-    .radio-wrap{
-        display: flex;
-        flex-direction: column;
-        @include breakpoint(large){
-            border-left: 1px solid $border-color;
-            width: 50%;
-        }
-    }
-    .radio-heading{
-        @include small();
+    .survey-heading{
         text-transform: uppercase;
-        display: flex;
-        justify-content: space-between;
+        padding: $padding-small;
+        background-color: $light-gray;
+        h1,h2,h3,h4,h5,h6{
+            margin: 0;
+        }
+    }
+    .survey-content{
         padding: $padding-small;
         border-top: 1px solid $border-color;
-        background-color: $light-gray;
-        @include breakpoint(large){
-            border-top: none;
-            margin-bottom: $margin-small;
-        }
+    }
+    .range-value{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 22px;
+        @include small();
     }
     .radio-group{
         display: flex;
