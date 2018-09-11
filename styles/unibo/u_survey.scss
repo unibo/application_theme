@@ -12,8 +12,11 @@
         }
     }
     .survey-content{
-        padding: $padding-small;
+        padding: 0 $padding-small;
         border-top: 1px solid $border-color;
+    }
+    .text-wrap{
+        padding: $padding-small 0;
     }
     .range-value{
         display: flex;
@@ -61,8 +64,8 @@
         @extend .show-for-sr;
         &:checked{
             + label .value{
-                background-color: $primary-color;
-                color: #fff;
+                border: 2px solid $primary-color;
+                line-height: 26px;
             }
         }
     }
