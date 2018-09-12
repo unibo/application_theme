@@ -17,13 +17,15 @@
     .survey-content,
     .survey-heading{
         padding: 0 $padding-small;
-        .row{
-            display: flex;
-            .column{
-                border-left: 1px solid $border-color;
-                align-items: flex-end;
-                &:first-child{
-                    border-left: none;
+        @include breakpoint(large){
+            .row{
+                display: flex;
+                .column{
+                    border-left: 1px solid $border-color;
+                    align-items: flex-end;
+                    &:first-child{
+                        border-left: none;
+                    }
                 }
             }
         }
