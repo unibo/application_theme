@@ -5,24 +5,38 @@
     margin-top: $margin-xs;
     .survey-heading{
         text-transform: uppercase;
-        padding: $padding-small;
         background-color: $light-gray;
         h1,h2,h3,h4,h5,h6{
             margin: 0;
         }
     }
     .survey-content{
-        padding: 0 $padding-small;
         border-top: 1px solid $border-color;
+    }
+    //colonne con flex per bordo e allineamento
+    .survey-content,
+    .survey-heading{
+        padding: 0 $padding-small;
+        .row{
+            display: flex;
+            .column{
+                border-left: 1px solid $border-color;
+                align-items: flex-end;
+                &:first-child{
+                    border-left: none;
+                }
+            }
+        }
     }
     .text-wrap{
         padding: $padding-small 0;
     }
     .range-value{
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
-        min-height: 22px;
+        padding: $padding-small 0;
+        height: 100%;
         @include small();
     }
     .radio-group{
