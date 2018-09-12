@@ -31,7 +31,10 @@
         }
     }
     .text-wrap{
-        padding: $padding-small 0;
+        padding: $padding-small 0 0;
+        @include breakpoint(large){
+            padding-bottom: $padding-small;
+        }
     }
     .range-value{
         display: flex;
@@ -45,9 +48,9 @@
         display: flex;
         justify-content: space-between;
         margin: 0;
-        padding: $padding-small;
+        padding: $padding-xs 0 $padding-small;
         @include breakpoint(large){
-            padding: $padding-small 0;
+            padding: $padding-small;
             margin: 0;
         }
         > span{
@@ -55,16 +58,21 @@
         }
         label{
             text-align: center;
-            margin: 0 $margin;
+            margin: 0 $margin-small;
             max-width: none;
         }
         .value{
             display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 50%;
             min-width: 30px;
             height: 30px;
             line-height: 27px;
-            border: 1px solid #ccc;
-            border-radius: 50%;
+            @include breakpoint(large){
+                min-width: 25px;
+                height: 25px;
+                line-height: 23px;
+            }
         }
         .legend-label{
             @include small();
