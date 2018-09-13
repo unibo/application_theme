@@ -129,22 +129,43 @@
                 line-height: 23px;
             }
         }
+        .no-value{
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            min-width: 25px;
+            height: 25px;
+            color: $medium-gray;
+            line-height: 16px;
+            @include breakpoint(large){
+                min-width: 20px;
+                height: 20px;
+            }
+        }
         .legend-label{
             @include small();
             display: block;
             max-width: 100px;
             text-align: center;
-            margin-top: $margin-small;
+            margin-top: $margin-xs;
         }
     }
 
     input[type=radio]{
         @extend .show-for-sr;
         &:checked{
-            + label .value{
-                background-color: $primary-color;
-                border-color: $primary-color;
-                color: #fff;
+            + label {
+                .value{
+                    background-color: $primary-color;
+                    border-color: $primary-color;
+                    color: #fff;
+                }
+                .no-value{
+                    margin-top: 1px;
+                    background-color: #fff;
+                    border: 2px solid $primary-color;
+                    color: $primary-color;
+                }
             }
         }
     }
