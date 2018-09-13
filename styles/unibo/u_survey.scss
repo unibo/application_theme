@@ -141,10 +141,11 @@
             min-width: 25px;
             height: 25px;
             color: $medium-gray;
-            line-height: 16px;
+            line-height: 20px;
             @include breakpoint(large){
                 min-width: 20px;
                 height: 20px;
+                line-height: 16px;
             }
         }
         .legend-label{
@@ -166,10 +167,12 @@
                     color: #fff;
                 }
                 .no-value{
-                    margin-top: 1px;
                     background-color: #fff;
                     border: 2px solid $primary-color;
                     color: $primary-color;
+                    @include breakpoint(large){
+                        margin-top: 1px;
+                    }
                 }
             }
         }
