@@ -11,22 +11,30 @@
   	
       @@include "../../snippets/u_barra_login.html"
       
-      @@include "../../snippets/u_header_left.html"
+      <header class="u-header-left small-left">
+          <div class="row">
+            <div class="large-12 column content">
+              <a href="">
+                <img class="logo" src="../../img/sigillo2x.png" alt="">
+                <div class="text">
+                  <p class="alma-mater">Alma Mater Studiorum Università di Bologna</p>
+                  <p class="title">Nome dell'applicativo</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </header>
         
-      <main>
         <div class="row">
 
           <div class="small-12 column">    
-              
           
-            <h1>Esempio layout con diverse tipologie di questionario</h1>
-            <h3>Pensando al lavoro e al tuo futuro, per favore rispondi alle domande che seguono basandoti sulla scala di seguito indicata: </h3>
+            <h3 class="u-section-title margin-top-1">Pensando al lavoro e al tuo futuro, per favore rispondi alle domande che seguono basandoti sulla scala di seguito indicata: </h3>
             
             @@include "../../snippets/u_survey.html"
             
           </div>
         </div>
-      </main>
       
       @@include "../../snippets/footer.html"
       

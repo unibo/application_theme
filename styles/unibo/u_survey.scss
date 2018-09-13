@@ -1,27 +1,53 @@
+
+.u-survey-legend{
+    border: 1px solid $border-color;
+    box-shadow: 0px 1px 3px $border-color;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 0 $padding-small;
+    max-width: 850px;
+    margin: 0 auto;
+    @include small();
+    @include breakpoint(large){
+        .row{
+            display: flex;
+            .column{
+                border-left: 1px solid $border-color;
+                align-items: flex-end;
+                &:first-child{
+                    border-left: none;
+                }
+            }
+        }
+    }
+    .column{
+        flex-grow: 1;
+        text-align: center;
+        padding: $padding-xs;
+    }
+    .badge{
+        @include small();
+        line-height: 1.5;
+        border: 1px solid #ccc;
+        margin-bottom: $margin-xs;
+        background: #fff;
+        padding: 2px;
+        color: inherit;
+    }
+    p{
+        margin: 0;
+    }
+}
+
 .u-survey{
     border: 1px solid $border-color;
     box-shadow: 0px 1px 3px $border-color;
     border-radius: 3px;
-
-    .survey-legend{
-        .column{
-            flex-grow: 1;
-            text-align: center;
-            padding-top: $padding-small;
-            padding-bottom: $padding-small;
-        }
-        .badge{
-            @include small();
-            line-height: 1.5;
-            border: 1px solid #ccc;
-            margin-bottom: $margin-xs;
-        }
-    }
+    background-color: #fff;
 
     //colonne con flex per bordo e allineamento
     .survey-content,
-    .survey-heading,
-    .survey-legend{
+    .survey-heading{
         padding: 0 $padding-small;
         @include breakpoint(large){
             .row{
@@ -56,7 +82,11 @@
     
     .text-wrap{
         padding: $padding-xs 0 $padding-xs;
-        @include breakpoint(large){
+        display: flex;
+        align-items: center;
+        height: 100%;
+        p{
+            line-height: 1.4;
         }
     }
     .range-value{
@@ -66,6 +96,7 @@
         justify-content: space-between;
         padding: $padding-small 0;
         height: 100%;
+        font-weight: 800;
         @include small();
     }
     .radio-group{
