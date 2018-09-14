@@ -103,20 +103,32 @@
 //possono essere usati anche come classi
 
 .x-small{
-  @include x-small();
+  &:not(.button){
+    @include x-small();
+  }
 }
 .small{
-  @include small();
+  &:not(.button){
+    @include small();
+  }
 }
 .normal{
-  @include normal();
+  &:not(.button){
+    @include normal();
+  }
 }
 .large{
-  @include large();
+  &:not(.button){
+    @include large();
+  }
 }
 .very-large{
-  @include very-large();
+  &:not(.button){
+    @include very-large();
+  }
 }
 .huge {
-  @include huge();
+  &:not(.button){
+    @include huge();
+  }
 }
