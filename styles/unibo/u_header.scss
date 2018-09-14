@@ -5,12 +5,15 @@ header {
   width: 100%;
   font-family: "Cinzel", san-serif;
   flex: none;
-  min-height: 117px;
-
+  @include breakpoint(medium){
+    min-height: 117px;
+  }
   .content {
 	text-align: center;
     > a {
       display: inline-block;
+      display: inline-flex;
+      align-items: center;
     }
   }
   .text{
@@ -33,7 +36,7 @@ header {
     font-size: 1.8rem;
     margin: 0;
     line-height: 1;
-    color: $theme-color;
+    color: $title-site-color;
     
     @include breakpoint(medium){
       font-size: 2.4rem;

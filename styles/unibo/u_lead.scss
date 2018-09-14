@@ -38,4 +38,50 @@
     }
 }
 
+.u-lead-colored{
+    background-color: $theme-color;
+    box-shadow: 0px 0px 10px 0px darken($theme-color, 20) inset;
+    padding: $padding-small 0;
+    color: #fff; 
+    
+    h1 {
+       @include huge();
+        margin-bottom: 40px; 
+        @include breakpoint(large){
+            @include huge-fancy();
+        }
+        &:after {
+            content: "";
+            width: 70px;
+            height: 3px;
+            background-color: darken($theme-color, 20);
+            display: block;
+            position: absolute;
+            left: 50%;
+            margin-left: -35px;
+            margin-top: 20px; 
+        }
+    }
+    .text-wrap{
+       @include large();
+    }
+    @include breakpoint(large){
+        padding: $padding-big 0 $padding*3; 
+    }
 
+    //progress bar
+    .progress {
+        margin-bottom: $margin-xs;
+        .progress-meter {
+            background-color: darken($theme-color, 20);
+        }
+    }
+
+    //l'elemento successivo al lead colorato crea una piega
+    + .row {
+        background-color: #fff;
+        @include breakpoint(large){
+            margin-top: -50px;
+        }
+    }
+}
