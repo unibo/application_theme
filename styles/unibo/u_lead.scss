@@ -43,23 +43,32 @@
     box-shadow: 0px 0px 10px 0px darken($theme-color, 20) inset;
     padding: $padding-small 0;
     color: #fff; 
+    flex-grow:0;
     
     h1 {
-       @include huge();
-        margin-bottom: 40px; 
+        margin-bottom: 20px; 
         @include breakpoint(large){
             @include huge-fancy();
+            margin-bottom: 40px; 
         }
         &:after {
             content: "";
-            width: 70px;
-            height: 3px;
+            width: 30px;
+            height: 2px;
             background-color: darken($theme-color, 20);
             display: block;
             position: absolute;
             left: 50%;
-            margin-left: -35px;
-            margin-top: 20px; 
+            margin-left: -15px;
+            margin-top: 10px; 
+        }
+        @include breakpoint(large){
+            &:after {
+                height: 3px;
+                width: 70px;
+                margin-left: -35px;
+                margin-top: 20px; 
+            }
         }
     }
     .text-wrap{
