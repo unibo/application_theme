@@ -4,7 +4,6 @@
 
 .u-survey-legend{
     border: 1px solid $border-color;
-    box-shadow: 0px 1px 3px $border-color;
     border-radius: 3px;
     background-color: #fff;
     padding: 0 $padding-small;
@@ -44,8 +43,6 @@
 }
 
 .u-survey{
-    border: 1px solid $border-color;
-    box-shadow: 0px 1px 3px $border-color;
     border-radius: 3px;
     background-color: #fff;
 
@@ -67,12 +64,21 @@
         }
     }
     .survey-heading{
+        &:first-child {
+            border-bottom: 1px solid $border-color;
+        }
+        &:last-child {
+            border-top: 1px solid $border-color;
+        }
         h1,h2,h3,h4,h5,h6{
             margin: 0;
         }
     }
     .survey-content{
-        border-top: 1px solid $border-color;
+        ~ .survey-content{
+            border-top: 1px solid $border-color;
+        }
+        
         .text-wrap{
             @include large();
             font-weight: 500;
