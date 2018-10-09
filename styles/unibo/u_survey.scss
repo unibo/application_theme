@@ -170,6 +170,11 @@
     .radio-group-vertical{
         flex-direction: column;
         padding: $padding-xs 0;
+        label{
+            min-height: 22px;
+            display: flex;
+            align-items: center;
+        }
         > span{
             text-align: left;
             margin-bottom: $margin-small;
@@ -178,8 +183,9 @@
             @include normal();
             display: inline-block;
             margin: 0;
-            margin-left: $margin-xs;
+            margin-left: $margin-small;
             max-width: none;
+            text-align: left;
         }
     }
 
@@ -202,8 +208,6 @@
                     }
                     + .legend-label{
                         @include breakpoint(large){
-                            position: relative;
-                            top: -1px;
                         }
                     }
                 }
