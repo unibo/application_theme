@@ -35,6 +35,10 @@
                             position: relative;
                         }
                     }
+                    .option-container{
+                        opacity: 1;
+                        pointer-events: initial;
+                    }
                 }
             }
         }
@@ -61,6 +65,8 @@
         .option-container{
             padding: $padding;
             background-color: $light-gray;
+            opacity: .5;
+            pointer-events: none;
         }
         input[type="file"]{
             text-align: center;
