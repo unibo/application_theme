@@ -112,6 +112,8 @@
         @include small();
         line-height: 1.8;
     }
+
+    .check-group-vertical,
     .radio-group-vertical,
     .radio-group{
         display: flex;
@@ -165,8 +167,16 @@
             margin-top: $margin-xs;
         }
     }
+
+    //checkbox ha un quadrato invece del cerchio
+    .check-group-vertical{
+        .no-value{
+            border-radius: 0;
+        }
+    }
     
-    //radio button verticali
+    //radio button e checkbox verticali
+    .check-group-vertical,
     .radio-group-vertical{
         flex-direction: column;
         padding: $padding-xs 0;
@@ -188,7 +198,7 @@
             text-align: left;
         }
     }
-
+    input[type=checkbox],
     input[type=radio]{
         @extend .show-for-sr;
         &:checked{
