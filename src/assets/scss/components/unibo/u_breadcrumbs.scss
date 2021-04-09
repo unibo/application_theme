@@ -1,0 +1,49 @@
+// stile per breadcrumbs in unibo
+// aggiunta possibilità di avere il link a home più grande
+
+.u-breadcrumbs {
+  flex: none;
+  padding: $padding-small;
+  display: block;
+  border-bottom: 1px solid $e-gray;
+  
+  .breadcrumbs {
+    margin: 0;
+  }
+  
+  .home {
+    @include very-large-fancy();
+    font-weight: 300;
+    text-transform: none;
+    position: relative;
+    top: -2px;
+    
+    a {
+      color: inherit;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    //fratelli di .home
+    ~ li{
+      text-transform: none;
+      font-size: 1.25em;
+      &:not(:last-child)::after {
+        top: 0px;
+      }
+    }
+    &:not(:last-child)::after {
+      top: 0px;
+    }
+  }
+  + main{
+    padding-top: 0;
+  }
+}
+
+.column .u-breadcrumbs{
+  margin: 0 $margin-small $margin $margin-small;
+  padding: $padding-small 0;
+  padding-left: 2px;
+  padding-right: 2px;
+}

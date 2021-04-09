@@ -1,0 +1,29 @@
+<!-- Stato iniziale -->
+<form data-abide novalidate>
+  <!-- Add "display: none" right away -->
+  <div data-abide-error class="alert callout" style="display: none;">
+    <p>There are some errors in your form.</p>
+  </div>
+  <label>
+    Name
+    <input type="text" required>
+    <span class="form-error">This field is required.</span>
+  </label>
+</form>
+
+<!-- Stato Errore -->
+<form data-abide novalidate>
+  <!-- Add role="alert" -->
+  <!-- Add "display: block" -->
+  <div data-abide-error role="alert" class="alert callout" style="display: block;">
+    <p>There are some errors in your form.</p>
+  </div>
+  <!-- Add "is-invalid-label" -->
+  <label class="is-invalid-label">
+    Name
+    <!-- Add "is-invalid-input" -->
+    <input type="text" class="is-invalid-input" required aria-invalid aria-describedby="uuid">
+    <!-- Add "is-visible" -->
+    <span class="form-error is-visible" id="uuid">This field is required.</span>
+  </label>
+</form>

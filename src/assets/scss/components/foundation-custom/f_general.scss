@@ -1,0 +1,12 @@
+// allineamenti con margini in caso di immagini (pensato per i testi)
+
+img.float-left{
+    margin-right: $margin-small;
+}
+img.float-right{
+    margin-left: $margin-small;
+}
+img.float-center{
+    margin-top: $margin-small;
+    margin-bottom: $margin-small;
+}

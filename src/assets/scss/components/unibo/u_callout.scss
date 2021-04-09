@@ -1,0 +1,180 @@
+
+@mixin u-callout{
+    background-image: url("../img/bg_geometric.png");
+    background-repeat: no-repeat;
+    background-position: right 78%;
+    background-size: 100%;
+    background-color: #222;
+    color: #fff;
+    padding: $padding $padding-small;
+    width: 100%;
+    margin-bottom: $margin;
+    @include breakpoint(large){
+        padding: $padding;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        float: none;
+        @include breakpoint(840px){
+            flex-direction: row;
+            max-width: 1150px;
+        }
+        @include breakpoint(1400px){
+            padding: 0 116px; 
+            max-width: none;
+        }
+    }
+
+    .row{
+        .column{
+            @include breakpoint(1400px){
+                padding: 0 3em;
+                max-width: 1150px;
+            }
+        }
+    }
+
+    .text-wrapper{
+        flex-basis: 60%;
+        flex-grow: 1;
+        h2{
+            @include huge;
+            margin-bottom: 0;
+        }
+        h3{
+            @include large-fancy;
+        }
+
+        @include breakpoint(xlarge){
+        }
+    }
+
+    .action-wrapper{
+        @include breakpoint(large){
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            a.button{
+                margin: 0 $margin-small;
+            }
+        }
+        a.button{
+            border-radius: 4px;
+            margin-top: $margin-small;
+            margin-bottom: 0;
+            @include large;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+        }
+        .primary{
+            border-color: #fff;
+            background-color: #fff;
+            color: $base-font-color;
+        }
+        .secondary{
+            border-color: #fff;
+            border-width: 2px;
+            background-color: transparent;
+            color: #fff;
+        }
+
+        @include breakpoint(large){
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            a.button{
+                margin: 0 $margin-small;
+            }
+        }
+    }
+}
+
+.u-callout{
+    @include u-callout;
+}
+
+.u-callout-photo{
+    @include u-callout;
+    background-image: url("../img/bg_photo.jpeg");
+    background-position: top center;
+    background-size: cover;
+    background-attachment:fixed;
+    background-color: (0,0,0,0.5);
+    position: relative;
+    &:after{
+        content: "";
+        background: #222;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.7;
+    }
+    .column{
+        position: relative;
+        z-index: 9;
+    }
+}
+
+.u-callout-center{
+    @include u-callout;
+    background-position: right 60%;
+    .column{
+        flex-flow: column;
+    }
+    .text-wrapper{
+        text-align: center;
+        flex-basis: auto;
+    }
+    .action-wrapper{
+        justify-content: center;
+        text-align: center;
+        margin-top: 1em;
+        @include breakpoint(large){
+            margin-top: 2em;
+        }
+    }
+    &.transparent{
+        background-image: none;
+        background-color: transparent;
+        color: $base-font-color;
+        .action-wrapper{
+            .primary{
+                border-color: $primary-color;
+                background-color: $primary-color;
+                color: #fff;
+            }
+            .secondary{
+                border-color: $primary-color;
+                border-width: 1px;
+                background-color: transparent;
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.u-callout-light{
+    @include u-callout;
+    background-image: none;
+    background-color: $e-gray;
+    color: $base-font-color;
+    .action-wrapper{
+        .hollow{
+            border-color: $primary-color;
+            color: $primary-color;
+            background-color: transparent;
+        }
+        .primary:not(.hollow){
+            border-color: $primary-color;
+            color: #fff;
+            background-color: $primary-color;
+        }
+    }
+}

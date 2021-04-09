@@ -1,0 +1,67 @@
+.u-top-bar {
+	padding: $padding-big 0 $padding-xs 0;
+	margin: 0 -$padding-xs;
+	max-width: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&:before,
+	&:after{
+		display: none;
+	}
+	.top-bar-box{
+		flex-grow: 1;
+		padding: 0 $padding-xs;
+		
+		@include breakpoint(xlarge){
+		}
+	}
+	input,
+	select{
+		display: inline-block;
+		min-width: 100%;
+		vertical-align: top;
+		@include breakpoint(large){		
+			width: auto;
+			min-width: 200px;
+			max-width: 360px;
+		}
+	}
+	.button{
+		margin-bottom: $margin-small;
+	}
+	.u-search-group{
+		display: flex;
+		@include breakpoint(large){
+			max-width: 50%;
+		}
+
+		//tendina con il cerca
+		select{
+			width: auto;
+			height: $input-font-size + $form-spacing * 1.5;
+			border-right: 0;
+			background-color: $light-gray;
+			min-width: 120px;
+		}
+		input[type="text"]{
+			width: auto;
+			min-width: 120px;
+			flex-grow: 1;
+			max-width: none;
+		}
+		.input-group-button{
+			width: auto;
+		}
+	}
+	.u-button-group{
+		order: 1;
+		width: 100%;
+		flex-grow: 0;
+		
+		@include breakpoint(large){
+			order: initial;
+			width: auto;
+		}
+	}
+}

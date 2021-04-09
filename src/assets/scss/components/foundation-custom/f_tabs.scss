@@ -1,0 +1,48 @@
+/* personalizzazione tabs di foundation */
+
+.tabs{
+    .tabs-title{
+        text-transform: uppercase; 
+        > a{
+            background-color: $light-gray;
+        }
+        > a:focus, 
+        > a[aria-selected="true"]{
+            background-color: $white;
+            font-weight: bold;
+        }
+    }
+    &:not(.vertical){
+        border-top: none;
+        border-right: none;
+        .tabs-title{
+            > a{
+                border: 1px solid $e-gray;
+                border-bottom: none;
+                border-left: none;
+                position: relative;
+                top: 1px;
+            }
+            > a:focus, 
+            > a[aria-selected="true"]{
+                border-top: 2px solid $primary-color;
+            }
+        }
+    }
+    &.vertical{
+        .tabs-title{
+            > a{
+                padding: $padding/2 1.5rem;
+                border-top: 1px solid $e-gray;
+                
+            }
+            &:first-child >a{
+                border-top: none;
+            }
+            > a:focus, 
+            > a[aria-selected="true"]{
+                border-left: 3px solid $primary-color;
+            }
+        }
+    }
+}

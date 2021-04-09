@@ -1,0 +1,165 @@
+<div class="u-grid-form" >
+  <form data-abide novalidate>
+    
+    <div class="row">
+      <div class="medium-3 column">
+        <h2 class="title-fieldset">
+          Titolo del fieldset
+        </h2> 
+      </div>
+    </div>
+
+    <div data-abide-error class="alert callout" style="display: none;">
+      <p>There are some errors in your form.</p>
+    </div>
+
+    <div class="row">
+      <div class="medium-3 column">
+        <label class="text-right lead required" for="el_text">Text</label>
+      </div>
+      <div class="large-4 medium-8 column end">
+        <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+        <input id="el_text" type="text" placeholder="Insert 6 or more characters" required pattern=".{6,}">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="medium-3 column">
+        <label class="text-right lead required" for="el_text2">Text con info</label>
+        <p class="text-right subheader">L'aiuto contestuale (qualora la label non fosse sufficiente)</p>
+      </div>
+      <div class="large-4 medium-8 end column">
+        <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+        <input id="el_text2" required type="text" placeholder="Input placeholder">
+        <p class="help-text">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <strong>Attenzione: </strong>Avviso per la compilazione
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="medium-3 column">
+        <label class="text-right lead required" for="el_select">Select</label>
+        <p class="text-right subheader">L'aiuto contestuale (qualora la label non fosse sufficiente)</p>
+      </div>
+       
+      <div class="large-4 medium-8 end column">
+        <p class="subheader">Informazioni aggiuntive per la compilazione</p>
+        <select required id="el_select">
+          
+          <option selected disabled value="">Seleziona opzione</option>
+          <option value="husker">Husker</option>
+          <option value="starbuck">Starbuck</option>
+          <option value="hotdog">Hot Dog</option>
+          <option value="apollo">Apollo</option>
+        </select>
+        <p class="help-text">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <strong>Attenzione: </strong>Avviso per la compilazione
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="medium-3 column">
+        <label class="text-right lead">Checkboxes</label>
+        <p class="subheader text-right">Questo componente ha una opzione per riga e utilizza dei div</p>
+      </div>
+      <div class="medium-9 column">
+        <p class="subheader">E' particolarmente indicato per opzioni con testo lungo</p>
+          <fieldset>
+            <div>
+              <input id="checkbox1" type="checkbox">
+              <label for="checkbox1">Authoritatively</label>
+            </div>
+            <div>
+              <input id="checkbox2" type="checkbox">
+              <label for="checkbox2">Progressively</label>
+            </div>
+            <div>
+              <input id="checkbox3" type="checkbox">
+              <label for="checkbox3">Energistically</label>
+            </div>
+          </fieldset>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="medium-3 column">
+        <label class="text-right lead">Radio Inline</label>
+        <p class="subheader text-right">Questo componente ha le opzioni inlinea e utilizza degli span</p>
+      </div>
+      <div class="medium-9 column">
+        <p class="subheader">E' particolarmente indicato per opzioni con testo breve, per avere una form compatta</p>
+       
+        <fieldset>
+          <span>
+            <input type="radio" name="radio1" value="Red" id="radio1">
+            <label for="radio1">Proactively</label>
+          </span>
+          <span>
+            <input type="radio" name="radio1" value="Blue" id="radio2">
+            <label for="radio2">Alignments</label>
+          </span>
+        </fieldset>
+      </div>
+    </div>
+
+  <div class="row">
+      <div class="medium-3 column">
+        <label class="text-right lead">Checkboxes Inline</label>
+        <p class="subheader text-right">Questo componente ha le opzioni inlinea e utilizza degli span</p>
+      </div>
+      <div class="medium-9 column">
+        <p class="subheader">E' particolarmente indicato per opzioni con testo breve, per avere una form compatta</p>
+          <fieldset>
+            <span>
+              <input id="checkbox4" type="checkbox">
+              <label for="checkbox4">Authoritatively</label>
+            </span>
+            <span>
+              <input id="checkbox5" type="checkbox">
+              <label for="checkbox5">Progressively</label>
+            </span>
+            <span>
+              <input id="checkbox6" type="checkbox">
+              <label for="checkbox6">Energistically</label>
+            </span>
+            <span>
+              <input id="checkbox7" type="checkbox">
+              <label for="checkbox7">Seamless</label>
+            </span>
+            <span>
+              <input id="checkbox8" type="checkbox">
+              <label for="checkbox8">Quickly strategize</label>
+            </span>
+          </fieldset>
+      </div>
+    </div>
+
+
+    <div class="row">
+        <div class="medium-3 column">
+          <label class="text-right lead">Checkboxes</label>
+          <p class="subheader text-right">Questo componente ha una opzione per riga e utilizza dei div</p>
+        </div>
+        <div class="medium-9 column">
+          <p class="subheader">E' particolarmente indicato per opzioni con testo lungo</p>
+          <div>
+            <input id="checkbox1" type="checkbox">
+            <label for="checkbox1"><b>Verifica delle informazioni di identità e consenso al trattamento dei dati personali</b></label>
+          </div>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="medium-9 column medium-offset-3">
+        <button class="button secondary" type="reset">Reset</button>
+        <button class="button primary" type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

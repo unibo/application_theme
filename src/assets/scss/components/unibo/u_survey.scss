@@ -1,0 +1,227 @@
+.u-section-title{
+    font-weight: 500;
+}
+
+.u-survey-legend{
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 0 $padding-small;
+    max-width: 850px;
+    margin: 0 auto;
+    @include small();
+    @include breakpoint(large){
+        .row{
+            display: flex;
+            .column{
+                border-left: 1px solid $border-color;
+                align-items: flex-end;
+                &:first-child{
+                    border-left: none;
+                }
+            }
+        }
+    }
+    .column{
+        flex-grow: 1;
+        text-align: center;
+        padding: $padding-xs;
+    }
+    .badge{
+        @include small();
+        line-height: 1.5;
+        border: 1px solid #ccc;
+        margin-bottom: $margin-xs;
+        background: #fff;
+        padding: 2px;
+        color: inherit;
+    }
+    p{
+        margin: 0;
+        font-style: italic;
+    }
+}
+
+.u-survey{
+    border-radius: 3px;
+    background-color: #fff;
+
+    //colonne con flex per bordo e allineamento
+    .survey-content,
+    .survey-heading{
+        padding: 0 $padding-small;
+        @include breakpoint(large){
+            .row{
+                display: flex;
+                .column{
+                    border-left: 1px solid $border-color;
+                    align-items: flex-end;
+                    &:first-child{
+                        border-left: none;
+                    }
+                }
+            }
+        }
+    }
+    .survey-heading{
+        &:first-child {
+            border-bottom: 1px solid $border-color;
+        }
+        &:last-child {
+            border-top: 1px solid $border-color;
+        }
+        h1,h2,h3,h4,h5,h6{
+            margin: 0;
+        }
+    }
+    .survey-content{
+        ~ .survey-content{
+            border-top: 1px solid $border-color;
+        }
+        
+        .text-wrap{
+            @include large();
+            font-weight: 500;
+            padding: $padding-xs 0 0;
+            @include breakpoint(large){
+                font-weight: normal;
+            }
+        }
+        .large-12 .text-wrap{
+            height: auto;
+        }
+    }
+    
+    .text-wrap{
+        padding: $padding-xs 0;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        p{
+            line-height: 1.4;
+        }
+    }
+    .range-value{
+        text-transform: uppercase;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: $padding-xs 0;
+        height: 100%;
+        font-weight: 800;
+        @include small();
+        line-height: 1.8;
+    }
+
+    .check-group-vertical,
+    .radio-group-vertical,
+    .radio-group{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: $padding-xs 0 $padding-small;
+        @include breakpoint(large){
+            padding: $padding-small;
+            margin: 0;
+        }
+        > span{
+            text-align: center;
+        }
+        label{
+            text-align: center;
+            margin: 0 $margin-small;
+            max-width: none;
+        }
+        .value{
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            min-width: 30px;
+            height: 30px;
+            line-height: 27px;
+            @include breakpoint(large){
+                min-width: 25px;
+                height: 25px;
+                line-height: 23px;
+            }
+        }
+        .no-value{
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            min-width: 25px;
+            height: 25px;
+            color: $medium-gray;
+            line-height: 20px;
+            @include breakpoint(large){
+                min-width: 20px;
+                height: 20px;
+                line-height: 16px;
+            }
+        }
+        .legend-label{
+            @include small();
+            display: block;
+            max-width: 100px;
+            text-align: center;
+            margin-top: $margin-xs;
+        }
+    }
+
+    //checkbox ha un quadrato invece del cerchio
+    .check-group-vertical{
+        .no-value{
+            border-radius: 0;
+        }
+    }
+    
+    //radio button e checkbox verticali
+    .check-group-vertical,
+    .radio-group-vertical{
+        flex-direction: column;
+        padding: $padding-xs 0;
+        label{
+            min-height: 22px;
+            display: flex;
+            align-items: center;
+        }
+        > span{
+            text-align: left;
+            margin-bottom: $margin-small;
+        }
+        .legend-label{
+            @include normal();
+            display: inline-block;
+            margin: 0;
+            margin-left: $margin-small;
+            max-width: none;
+            text-align: left;
+        }
+    }
+    input[type=checkbox],
+    input[type=radio]{
+        @extend .show-for-sr;
+        &:checked{
+            + label {
+                .value{
+                    background-color: $primary-color;
+                    border-color: $primary-color;
+                    color: #fff;
+                }
+                .no-value{
+                    background-color: #fff;
+                    border: 2px solid $primary-color;
+                    color: $primary-color;
+                    @include breakpoint(large){
+                        margin-top: 1px;
+                        
+                    }
+                    + .legend-label{
+                        @include breakpoint(large){
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

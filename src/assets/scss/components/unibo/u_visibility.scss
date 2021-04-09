@@ -1,0 +1,9 @@
+// Per nascondere il contenuto solamente in determinati breakpoints, mantenendo la leggibilità per gli screen readers
+
+@each $size in $breakpoint-classes {
+  .hide-for-sr-#{$size}-only {
+    @include breakpoint($size only) {
+      @include element-invisible;
+    }
+  }
+}

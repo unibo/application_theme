@@ -1,0 +1,303 @@
+/* stile per la barra (nera) con le informazioni sulla login e altre info inerenti all'accesso in generale */
+
+/* colore di sfondo più chiaro quando è un menu apri/chiudi */
+.title-bar + .u-barra-login .menu {
+    @include breakpoint(small only){
+      background-color: lighten($barra-login-background, 5%);
+    }
+  }
+
+.u-barra-login {
+  background-color: $barra-login-background;
+  color: color-pick-contrast($barra-login-background, (#fff, $base-font-color));
+  line-height: 32px;
+  padding: 0px;
+  max-height: 34px;
+
+  .column, .columns{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  //fix per float
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+  }
+
+  a {
+    color: color-pick-contrast($barra-login-background, (#fff, $base-font-color));
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  //sso
+  img {
+    height: 18px;
+    vertical-align: text-top;
+    width: 18px;
+  }
+
+  .menu {
+    float: right;
+    border-left: 1px solid $gray;
+    > li:not(.is-dropdown-submenu-item) {
+      border-right: 1px solid $gray;
+      white-space: nowrap;
+      > a {
+        img,
+        i{
+          min-width: 18px;
+          text-align: center;
+        }
+      }
+    }
+
+    li:last-of-type{
+      border-right: 0;
+    }
+    
+    @include breakpoint(small only){
+      .is-dropdown-submenu{
+        background: #fff;
+      }
+    }
+  }
+
+  //elementi senza dropdown arrow
+  .no-arrow {
+    padding-right: 0 !important;
+    &:after { // Nascondo la freccia per dispositivi da medium in su
+      display: none !important;
+    }
+    
+  }
+
+  .is-dropdown-submenu {
+    border-top: 0;
+  }
+
+  .dropdown.menu { // Foundation menu
+    opacity: 0;
+    transition: opacity 0.5s;
+    overflow: hidden;
+    
+    
+    &[role="menubar"] {
+      opacity: 1;
+      overflow: visible;
+      display: flex;
+      line-height: 34px;
+      
+      &.vertical {
+        > li {
+          .is-dropdown-submenu {
+            &.vertical {
+                margin-left: -1px;
+                top: 100%;
+            }
+          }
+        }
+      }
+      .is-active {
+        background-color: $white;
+        a {
+          color: $light-black;
+
+          &::after {
+            border-color: $light-black transparent transparent;
+          }
+        }
+        
+        > .is-dropdown-submenu {
+          border: 1px solid $medium-gray;
+          border-top: none;
+          /*cambio apertura popup perché il menu è a destra */
+          left: auto;
+          right: 0px;
+        }        
+      }
+    }
+    
+    > li {
+      transition: opacity 2s linear;
+      
+
+      .is-dropdown-submenu.vertical {
+        //eliminato min-width perché forza la larghezza massima al 100% del contenitore
+        min-width: 100%;
+        //min-width: 100px;
+        //max-width: 250px;
+      }
+      &.is-dropdown-submenu-parent {
+        padding-right: 0.7rem;
+        transition: background-color 0.2s;    
+        box-sizing: content-box;    
+        
+        > a {
+          padding: 0.5rem 1rem;
+          padding-right: 1.5rem;
+          &:after { // Dropdown Arrow
+              border: inset 5px;
+              border-top-style: solid;
+              right: 5px;
+              border-color: currentColor transparent transparent;
+            }
+        }
+        
+        .menu {
+          li {
+            a {
+              transition: background-color 0.2s;
+              display: block;
+            }
+          }
+        }
+      }
+
+      @include breakpoint(large){
+        &:hover{
+          background-color: $white;
+          
+          a {
+            color: $light-black;
+          }
+        }
+        &.is-dropdown-submenu-parent {
+          
+        
+          &:hover {
+            background-color: #fff;
+            
+            > a {
+              color: $light-black;
+            }
+          }
+        }
+        > a{
+          &:hover {
+            color: $light-black;
+            background-color: transparent;
+          }
+        }
+
+        .menu {
+          li {
+            a {              
+              &:hover {
+                background-color: darken($white, 12%);
+                color: darken($light-black, 25%);
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    @include breakpoint(large){
+      &[role="menubar"] {
+        .is-active{
+          
+        }
+      }
+    }
+  }
+}
+
+/* stile per impersonamento */
+
+.u-barra-login .dropdown.menu > li.is-dropdown-submenu-parent {
+  .u-utente-reale,
+  .u-change-user {
+    color: $dark-gray;
+    padding: 0.5rem 1rem;
+    white-space: normal;
+    min-width: 250px;
+    a,
+    a:visited,
+    a:link{
+      color: $primary-color;
+      &:hover{
+        background-color: transparent;
+        color: $primary-color;
+        text-decoration: underline;
+      }
+    }
+    p{
+      margin: 0;
+    }
+  }
+  .u-login-info{
+    color: $base-font-color;
+    margin: 0;
+    border-bottom: 1px solid $medium-gray;
+    padding: 0em 34px $padding-small;
+    p{
+      margin: 0;
+      white-space: normal;
+      font-size: 0.9em;
+      line-height: normal;
+    }
+    a,
+    a:visited,
+    a:link{
+      color: $primary-color;
+      padding: 0;
+      display: inline;
+      &:hover{
+        background-color: transparent;
+        color: $primary-color;
+        text-decoration: underline;
+      }
+    }
+    
+  }
+  .fa-user-secret{
+  }
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent .u-change-user {
+  background-color: #fff;
+  border-bottom: 1px solid $medium-gray;
+}
+
+@include breakpoint(small only){
+  /* comportamento quando c'è pulsante apri-chiudi (le sottovoci devono essere width 100% e non avere il float) */
+  div[data-responsive-toggle]{
+    + .u-barra-login{
+      .dropdown.menu[role="menubar"] {
+        border: none;
+        float: none;
+        display: block;
+        > li{
+          display: block;
+          width: 100%;
+          border-right: none;
+          border-bottom: 1px solid $light-black;
+          padding-right: 0;
+          box-sizing: inherit;
+        }
+        .is-active {
+          > a{
+            border-left: 1px solid $medium-gray;
+            border-right: 1px solid $medium-gray;
+          }
+          > .is-dropdown-submenu{
+            right: auto;
+            text-align: left;
+          }
+        }
+      }
+      /* quando c'è apri/chiudi responsive la lingua va allineata a sinistra */
+      .u-lang{
+        text-align: left;
+        a{
+          text-align: left;
+        }
+      }
+    }
+  }
+}
