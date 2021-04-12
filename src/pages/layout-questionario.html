@@ -1,0 +1,45 @@
+
+<title>Unibo Questionario</title>
+<form method="post" action="/tol/mobile/" class="u-content-wrapper" id="mainForm">
+  {{> u_barra_login}}
+<header class="u-header-left small-left">
+  <div class="row">
+    <div class="large-7 small-centered column content">
+      <a href="">
+        <img class="logo" src="../../img/sigillo2x.png" alt="">
+        <div class="text">
+          <p class="alma-mater">Alma Mater Studiorum Università di Bologna</p>
+          <p class="title">Questionario - Job Placement</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</header>
+<main>
+
+  {{> u_lead_colored}}
+
+  <div class="row margin-bottom-2">
+
+    <div class="small-12 column">    
+    
+      <h3 class="u-section-title margin-top-1 text-center">Pensando al lavoro e al tuo futuro, per favore rispondi alle domande che seguono basandoti sulla scala di seguito indicata: </h3>
+      <p class="margin-bottom-1 margin-top-half large text-center">
+          Holisticly communicate one-to-one services after standardized experiences. Authoritatively incubate progressive intellectual capital through 24/365 intellectual capital. Phosfluorescently brand cooperative applications after B2C convergence. Completely integrate parallel networks whereas performance based e-commerce. Dynamically mesh strategic e-business and effective bandwidth.
+
+        Appropriately transform holistic ideas with ethical.
+      </p>
+      {{> u_survey_legend.}}
+      {{> u_survey}}
+      {{> u_survey_w_legend}}
+      {{> u_survey_w_legend_vertical}}
+      {{> u_survey_w_legend_check}}
+      <div class="text-center margin-top-1">
+          <input value="Avanti >" type="submit" class="button large">
+        </div>
+    </div>
+  </div>
+</main>
+{{> footer}}
+</form>
+{{> end_of_body}}
