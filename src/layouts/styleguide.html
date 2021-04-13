@@ -5,13 +5,33 @@
   <head>
     {{> head}}
     <title> {{ title }} </title>
+
   </head>
-<body>
 
-{{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-{{> body}}
+  <body>
+    <div class="grid-container padded">
+      <div class="grid-x grid-margin-x" data-sticky-container>
+        <div class="large-3 medium-4 cell">
+          <div class="sticky" data-sticky data-top-anchor="sg-header:bottom">
+            <ul class="vertical menu sg-side-menu" data-smooth-scroll data-animation-easing="swing">
+              menu
+            </ul>
+          </div>
+        </div>
 
-{{> end_of_body}}
+        <div class="large-9 medium-8 cell">
+          <section>
+              {{!-- Pages you create in the src/pages/styleguide are inserted here when the flattened page is created. --}}
 
-</body>
+              {{> body }}
+
+            </section>
+        </div>
+
+      </div>
+    </div>
+
+    {{> end_of_body}}
+
+  </body>
 </html>
