@@ -25,8 +25,5 @@ PATHS:
   # Paths to JavaScript entry points for webpack to bundle modules
   entries:
     - "src/assets/js/app.js"
-    - "src/assets/js/slick.min.js"
-    - "src/assets/js/u_to_top.js"
-    - "src/assets/js/font-awesome.js"
 
 
