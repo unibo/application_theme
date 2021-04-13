@@ -11,23 +11,20 @@
   <body>
     <div class="grid-container padded">
       <div class="grid-x grid-margin-x" data-sticky-container>
-        <div class="large-3 medium-4 cell">
-          <div class="sticky" data-sticky data-top-anchor="sg-header:bottom">
-            <ul class="vertical menu sg-side-menu" data-smooth-scroll data-animation-easing="swing">
-              menu
-            </ul>
-          </div>
+        <div class="large-3 show-form-medium">
+          <nav class="docs-toc-wrap sticky-container" id="docsToc" data-sticky-container="">
+              <div class="toc docs-toc  sticky is-at-top is-stuck">
+                  <a class="back" href="../"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>Indietro</a>
+              </div>
+          </nav>
         </div>
-
         <div class="large-9 medium-8 cell">
           <section>
-              {{!-- Pages you create in the src/pages/styleguide are inserted here when the flattened page is created. --}}
+            {{!-- Pages you create in the src/pages/styleguide are inserted here when the flattened page is created. --}}
 
-              {{> body }}
-
-            </section>
+            {{> body }}
+          </section>
         </div>
-
       </div>
     </div>
 

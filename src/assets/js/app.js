@@ -20,6 +20,7 @@ require('foundation-sites');
 import './font-awesome';
 import './slick.min';
 import './u_to_top';
+import './toc';
 
 $(document).on('ready page:load', function () {
     $(document).foundation();
