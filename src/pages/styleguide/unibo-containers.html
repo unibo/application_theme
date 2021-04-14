@@ -3,538 +3,507 @@ layout: styleguide
 title: Style Guide Unibo Containers
 ---
 
+<h1 class="huge">Style Guide Unibo Containers</h1>
+<h2>In questa pagina ci sono i componenti custom relativi ai contenitori sviluppati ed utilizzati esclusivamente per applicazioni unibo.</h2>
+<section>
+	<h3 id="barra-login">Barra Login</h3>
+	<p>La barra di Login è composta da un dropdown menù di Foundation. Questo può avere dei sottomenù che si aprono sull'hover o sul click.</p>
+	<p>Per aumentare la spaziatura laterale è possibile utilizzare la classe 
+		<kbd>row</kbd> che inserisce un padding left e right.
+	</p>
+	<p>In linea generale è preferibile lasciare le voci di menù sempre visibili. In caso ci siano molte voci è tuttavia preferibile utilizzare la versione con l'apertura sul click poiché nella versione mobile, l'hover può non essere interpretato correttamente da alcuni dispositivi.</p>
+	<h3 id="barra-login-click">Login con dropdown che si apre al click</h3>
+	<pre>
+		<code>
+			{{> u_barra_login}}
+		</code>
+	</pre>  
+	{{> u_barra_login}}
 
-<div class="grid-container padded">
-	<div class="grid-x grid-margin-x">
-		<div class="large-3 medium-4 cell">
-			<div data-sticky-container data-animation-easing="linear">
-				  <div class="is-stuck" is-stuck data-sticky data-margin-top="0" id="example-menu">
-					<div class="top-bar">
-						<ul class="menu" data-magellan>
-							<li><a href="#barra-login">Barra Login</a></li>
-							<li><a href="#barra-login-click">Login con dropdown che si apre al click</a></li>
-							<li><a href="#third">Three</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-			<nav class="sticky-container" data-sticky-container>
-				<div class="sticky" data-sticky data-anchor="exampleId" data-sticky-on="large">
-				<ul class="vertical menu" data-magellan>
-					<li><a href="#barra-login">Barra Login</a></li>
-					<li><a href="#barra-login-click">Login con dropdown che si apre al click</a></li>
-					<li><a href="#third">Three</a></li>
-				</ul>
-				</div>
-			</nav>
-
-		</div>
-		<div class="large-9 medium-8 cell">
-			<h1 class="huge">Style Guide Unibo Containers</h1>
-			<h2>In questa pagina ci sono i componenti custom relativi ai contenitori sviluppati ed utilizzati esclusivamente per applicazioni unibo.</h2>
-			<section>
-				<h3 id="barra-login">Barra Login</h3>
-				<p>La barra di Login è composta da un dropdown menù di Foundation. Questo può avere dei sottomenù che si aprono sull'hover o sul click.</p>
-				<p>Per aumentare la spaziatura laterale è possibile utilizzare la classe 
-					<kbd>row</kbd> che inserisce un padding left e right.
-				</p>
-				<p>In linea generale è preferibile lasciare le voci di menù sempre visibili. In caso ci siano molte voci è tuttavia preferibile utilizzare la versione con l'apertura sul click poiché nella versione mobile, l'hover può non essere interpretato correttamente da alcuni dispositivi.</p>
-				<h3 id="barra-login-click">Login con dropdown che si apre al click</h3>
-				<pre>
-					<code>
-                		{{> u_barra_login}}
-            		</code>
-				</pre>  
-				{{> u_barra_login}}
-          
-				<h3 id="barra-unibo-login-responsive">Login barra apri/chiudi in responsive</h3>
-				<p>In questo caso per la versione responsive abbiamo inserito l'apri/chiudi 
-					<kbd> div class="title-bar" data-responsive-toggle="barra-login" data-hide-for="medium"</kbd> inserendo l'etichetta "menu".
-				</p>
-				<p>E' preferibile 
-					<strong>non</strong> utilizzare l'apri/chiudi ma lasciare le voci visibili. Solamente se sono tanti elementi ha senso nascondere le voci del menu.
-				</p>
-				<pre>
-					<code>
-                		{{> u_barra_login_responsive}}
-            		</code>
-			</pre>  
+	<h3 id="barra-unibo-login-responsive">Login barra apri/chiudi in responsive</h3>
+	<p>In questo caso per la versione responsive abbiamo inserito l'apri/chiudi 
+		<kbd> div class="title-bar" data-responsive-toggle="barra-login" data-hide-for="medium"</kbd> inserendo l'etichetta "menu".
+	</p>
+	<p>E' preferibile 
+		<strong>non</strong> utilizzare l'apri/chiudi ma lasciare le voci visibili. Solamente se sono tanti elementi ha senso nascondere le voci del menu.
+	</p>
+	<pre>
+		<code>
 			{{> u_barra_login_responsive}}
-	
-			<h3 id="barra-login-hover">Login con dropdown che si apre all'hover</h3>
-			<p>E' preferibile utilizzare la versione con l'apertura sul click poiché nella versione mobile, l'hover può non essere interpretato correttamente da alcuni dispositivi.</p>
-			<p>In questo caso per la versione responsive non abbiamo inserito l'apri/chiudi e non abbiamo inserito la classe 
-				<kbd>vertical</kbd> poiché preferiamo lasciare le voci visibili.
-			</p>
-			<pre>
-				<code>
-					{{> u_barra_login_hover}}
-				</code>
-			</pre>  
+		</code>
+	</pre>  
+	{{> u_barra_login_responsive}}
+
+	<h3 id="barra-login-hover">Login con dropdown che si apre all'hover</h3>
+	<p>E' preferibile utilizzare la versione con l'apertura sul click poiché nella versione mobile, l'hover può non essere interpretato correttamente da alcuni dispositivi.</p>
+	<p>In questo caso per la versione responsive non abbiamo inserito l'apri/chiudi e non abbiamo inserito la classe 
+		<kbd>vertical</kbd> poiché preferiamo lasciare le voci visibili.
+	</p>
+	<pre>
+		<code>
 			{{> u_barra_login_hover}}
-        
-				<h3 id="barra-login-impersonamento">Login con impersonamento</h3>
-				<p>E' preferibile utilizzare la versione con l'apertura sul click poiché nella versione mobile, l'hover può non essere interpretato correttamente da alcuni dispositivi.</p>
-				<p>In questo caso per la versione responsive non abbiamo inserito l'apri/chiudi e non abbiamo inserito la classe 
-					<kbd>vertical</kbd> poiché preferiamo lasciare le voci visibili.
-				</p>
-				<pre>
-					<code>
-						{{> u_barra_login_impersonamento}}
-					</code>
-				</pre>  
-          
-           {{> u_barra_login_impersonamento}}
-        
-			</section>
-			<section>
-				<h3 id="header">Header</h3>
-				<pre>
-					<code>
-						{{> u_header_left}}
-					</code>
-				</pre>
-          		{{> u_header_left}}
-				<p class="section-description">Header centrato</p>
-				<pre>
-					<code>
-						{{> u_header}}
-					</code>
-				</pre>
-          
-          	{{> u_header}}
-        
-			</section>
-			<section>
-				<h3 id="hightlight-text">Highlight text</h3>
-				<p>Questo elemento può essere utilizzato in un layout ad una colonna per evidenziare o differenziare una sezione, in quanto inserisce uno sfondo grigio su tutta la riga. </p>
-				<p>Può avere una griglia di più colonne all'interno per avere più blocchi di elementi. </p>
-				<pre>
-					<code>
-						{{> u_highlight_text}}
-					</code>
-				</pre>
+		</code>
+	</pre>  
+	{{> u_barra_login_hover}}
+
+		<h3 id="barra-login-impersonamento">Login con impersonamento</h3>
+		<p>E' preferibile utilizzare la versione con l'apertura sul click poiché nella versione mobile, l'hover può non essere interpretato correttamente da alcuni dispositivi.</p>
+		<p>In questo caso per la versione responsive non abbiamo inserito l'apri/chiudi e non abbiamo inserito la classe 
+			<kbd>vertical</kbd> poiché preferiamo lasciare le voci visibili.
+		</p>
+		<pre>
+			<code>
+				{{> u_barra_login_impersonamento}}
+			</code>
+		</pre>  
+
+	{{> u_barra_login_impersonamento}}
+
+	</section>
+	<section>
+		<h3 id="header">Header</h3>
+		<pre>
+			<code>
+				{{> u_header_left}}
+			</code>
+		</pre>
+		{{> u_header_left}}
+		<p class="section-description">Header centrato</p>
+		<pre>
+			<code>
+				{{> u_header}}
+			</code>
+		</pre>
+
+	{{> u_header}}
+
+	</section>
+	<section>
+		<h3 id="hightlight-text">Highlight text</h3>
+		<p>Questo elemento può essere utilizzato in un layout ad una colonna per evidenziare o differenziare una sezione, in quanto inserisce uno sfondo grigio su tutta la riga. </p>
+		<p>Può avere una griglia di più colonne all'interno per avere più blocchi di elementi. </p>
+		<pre>
+			<code>
 				{{> u_highlight_text}}
-          
-				<p>Se viene inserita la classe 
-					<kbd>fixed-width</kbd>, la 
-					<kbd>row</kbd> all'interno avrà una larghezza massima di 550px, utile per non avere un contenuto troppo lungo e difficile da leggere.
-				</p>
-				<pre>
-					<code>
-						{{> u_highlight_text_fixed_width}}
-					</code>
-				</pre>
-          
-         		{{> u_highlight_text_fixed_width}}
-        
-			</section>
-			<section>
-				<h3 id="tabella_dark">Tabella dark</h3>
-				<p>
-              		Versione scura della tabella di default.
-		    	</p>
-				<table class="dark">
-					<thead>
-						<tr>
-							<th width="200">Table Header</th>
-							<th>Table Header</th>
-							<th width="150">Table Header</th>
-							<th width="150">Table Header</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Content Goes Here</td>
-							<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-							<td>Content Goes Here</td>
-							<td>Content Goes Here</td>
-						</tr>
-						<tr>
-							<td>Content Goes Here</td>
-							<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-							<td>Content Goes Here</td>
-							<td>Content Goes Here</td>
-						</tr>
-						<tr>
-							<td>Content Goes Here</td>
-							<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-							<td>Content Goes Here</td>
-							<td>Content Goes Here</td>
-						</tr>
-					</tbody>
-				</table>
-			</section>
-			<section>
-				<h3 id="tabella_bordi">Tabella senza bordi</h3>
-				<p>
-              Per ottenere una tabella senza i bordi.
-		    </p>
-				<pre>
-					<code class="html">
-						<table class="no-border"></table>
-					</code>
-				</pre>
-				<table class="no-border">
-					<thead>
-						<tr>
-							<th width="200">Table Header</th>
-							<th>Table Header</th>
-							<th width="150">Table Header</th>
-							<th width="150">Table Header</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Content Goes Here</td>
-							<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-							<td>Content Goes Here</td>
-							<td>Content Goes Here</td>
-						</tr>
-						<tr>
-							<td>Content Goes Here</td>
-							<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-							<td>Content Goes Here</td>
-							<td>Content Goes Here</td>
-						</tr>
-						<tr>
-							<td>Content Goes Here</td>
-							<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-							<td>Content Goes Here</td>
-							<td>Content Goes Here</td>
-						</tr>
-					</tbody>
-				</table>
-			</section>
-			<section>
-				<h3 id="tabella_sort">Ordinamento tabella</h3>
-				<p>Inserire le classi 
-					<kbd>.sort</kbd> , 
-					<kbd>.sorted-up</kbd> e 
-					<kbd>.sorted-down</kbd> per stilare la colonna con ordinamento.
-				</p>
-				<p>La classe 
-					<kbd>.sort</kbd> inserisce un'icona con le doppie frecce che sta ad indicare che quella colonna è ordinabile. 
-				</p>
-				<p>Le classi 
-					<kbd>.sorted-up</kbd> e 
-					<kbd>.sorted-down</kbd> indicano se quella colonna è ordinata in modo crescente o decrescente.
-				</p>
-				<pre>
-					<code class="html">
-						<table>
-							<thead>
-								<tr>
-									<th width="200" class="sort">Table Header</th>
-									<th class="sort">Table Header</th>
-									<th width="150" class="sorted-up">Table Header</th>
-									<th width="150" class="sort">Table Header</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Content Goes Here</td>
-									<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-									<td class="sorted">Content Goes Here</td>
-									<td>Content Goes Here</td>
-								</tr>
-								<tr>
-									<td>Content Goes Here</td>
-									<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-									<td class="sorted">Content Goes Here</td>
-									<td>Content Goes Here</td>
-								</tr>
-								<tr>
-									<td>Content Goes Here</td>
-									<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-									<td class="sorted">Content Goes Here</td>
-									<td>Content Goes Here</td>
-								</tr>
-							</tbody>
-						</table>
-					</code>
-				</pre>
-				<table>
-					<thead>
-						<tr>
-							<th width="200" class="sort">Table Header</th>
-							<th class="sort">Table Header</th>
-							<th width="150" class="sorted-up">Table Header</th>
-							<th width="150" class="sort">Table Header</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Content Goes Here</td>
-							<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-							<td class="sorted">Content Goes Here</td>
-							<td>Content Goes Here</td>
-						</tr>
-						<tr>
-							<td>Content Goes Here</td>
-							<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-							<td class="sorted">Content Goes Here</td>
-							<td>Content Goes Here</td>
-						</tr>
-						<tr>
-							<td>Content Goes Here</td>
-							<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-							<td class="sorted">Content Goes Here</td>
-							<td>Content Goes Here</td>
-						</tr>
-					</tbody>
-				</table>
-				<p>E' possibile utilizzare le classi 
-					<kbd>.sorted-up-light</kbd> e 
-					<kbd>.sorted-down-light</kbd> nel 
-					<kbd>
-						<th></th>
-					</kbd> per avere uno stile più leggero nelle colonne ordinate.
-				</p>
-				<p>Nelle celle della colonna evidenziata va inserito 
-					<kbd>.sorted-light</kbd>.
-				</p>
-				<pre>
-					<code class="html">
-						<table>
-							<thead>
-								<tr>
-									<th width="200" class="sort">Table Header</th>
-									<th class="sort">Table Header</th>
-									<th width="150" class="sorted-up-light">Table Header</th>
-									<th width="150" class="sort">Table Header</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Content Goes Here</td>
-									<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-									<td class="sorted-light">Content Goes Here</td>
-									<td>Content Goes Here</td>
-								</tr>
-								<tr>
-									<td>Content Goes Here</td>
-									<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-									<td class="sorted-light">Content Goes Here</td>
-									<td>Content Goes Here</td>
-								</tr>
-								<tr>
-									<td>Content Goes Here</td>
-									<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-									<td class="sorted-light">Content Goes Here</td>
-									<td>Content Goes Here</td>
-								</tr>
-							</tbody>
-						</table>
-					</code>
-				</pre>
-				<table>
-					<thead>
-						<tr>
-							<th width="200" class="sort">Table Header</th>
-							<th class="sort">Table Header</th>
-							<th width="150" class="sorted-up-light">Table Header</th>
-							<th width="150" class="sort">Table Header</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Content Goes Here</td>
-							<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-							<td class="sorted-light">Content Goes Here</td>
-							<td>Content Goes Here</td>
-						</tr>
-						<tr>
-							<td>Content Goes Here</td>
-							<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-							<td class="sorted-light">Content Goes Here</td>
-							<td>Content Goes Here</td>
-						</tr>
-						<tr>
-							<td>Content Goes Here</td>
-							<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-							<td class="sorted-light">Content Goes Here</td>
-							<td>Content Goes Here</td>
-						</tr>
-					</tbody>
-				</table>
-				<p>Si può utilizzare anche nelle tabelle 
-					<kbd>.dark</kbd>, in quel caso lo stile è differente in base ai colori più scuri della tabella.
-				</p>
-				<p>Le classi da utilizzare per la tabella dark sono 
-					<kbd>.sorted-up</kbd> e 
-					<kbd>.sorted-down</kbd>.
-				</p>
-				<p>Nelle celle della colonna evidenziata va inserito 
-					<kbd>.sorted</kbd>.
-				</p>
-				<table class="dark">
-					<thead>
-						<tr>
-							<th width="200" class="sort">Table Header</th>
-							<th class="sort">Table Header</th>
-							<th width="150" class="sorted-down-light">Table Header</th>
-							<th width="150" class="sort">Table Header</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Content Goes Here</td>
-							<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-							<td class="sorted">Content Goes Here</td>
-							<td>Content Goes Here</td>
-						</tr>
-						<tr>
-							<td>Content Goes Here</td>
-							<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-							<td class="sorted">Content Goes Here</td>
-							<td>Content Goes Here</td>
-						</tr>
-						<tr>
-							<td>Content Goes Here</td>
-							<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-							<td class="sorted">Content Goes Here</td>
-							<td>Content Goes Here</td>
-						</tr>
-					</tbody>
-				</table>
-			</section>
-			<section>
-				<h3 id="u-card">Card Option 
-					<kbd>(u-card-option)</kbd>
-				</h3>
-				<p>Questo elemento può essere utilizzato come box esplicativo per linkare un servizio o una sezione. 
-					<br /> Può contenere un'icona (Fontawesome), del testo (anche titolazioni) e un pulsante.
-				</p>
-				<p>Questo componente può essere inserito in una griglia per avere più blocchi di elementi. In alternativa, può avere una larghezza fissa di 300px se viene inserita la classe 
-					<kbd>fixed-width</kbd>.
-				</p>
-				<pre>
-					<code>
-                  {{> u_card_option}}
-              </code>
-				</pre>
-            {{> u_card_option}}
+			</code>
+		</pre>
+		{{> u_highlight_text}}
 
-            
-				<pre>
-					<code>
-                {{> u_card_option_fixed_width}}
-              </code>
-				</pre>
-           {{> u_card_option_fixed_width}}
-          
-			</section>
-			<section>
-				<h3 id="u-numbered-list">Lista con numeri 
-					<kbd>(u-numbered-list)</kbd>
-				</h3>
-				<p>Questo elemento può essere utilizzato come box per spiegare una procedura in più step.</p>
-				<p>Può anche essere centrato e a quel punto va aggiunta la classe 
-					<kbd>centered</kbd>
-				</p>
-				<pre>
-					<code>
-                {{> u_numbered_list}}
-              </code>
-				</pre>
-            {{> u_numbered_list}}
-            
-				<pre>
-					<code>
-                    {{> u_numbered_list_centered}}
-                </code>
-				</pre>
-              {{> u_numbered_list_centered}}
-          
-			</section>
-			<section>
-				<h3 id="u-comparison-card">Card feature 
-					<kbd>(u-comparison-card)</kbd>
-				</h3>
-				<p>Questo elemento può essere utilizzato come box per comparare diverse feature e spiegare la differenza tra diverse opzioni.</p>
-				<p>Graficamente è uguale al componente 
-					<a href="/++theme++application_theme/templates/unibo%20-%20controls.html#radio-card">Radio card</a> 
-              a parte che non ha la possibilità di selezionare l'opzione.
-				</p>
-				<pre>
-					<code>
-                {{> u_comparison_card}}
-              </code>
-				</pre>
-            {{> u_comparison_card}}
-          
-			</section>
-			<section>
-				<h3 id="u-adjacent-grid">Azioni in griglia 
-					<kbd>(u-adjacent-grid)</kbd>
-				</h3>
-				<p>Il componente serve per distinguere graficamente una serie di azioni che sono necessarie per completare un determinato processo.</p>
-				<p>E' possibile anche inserire dei campi aggiuntivi, ad esempio 
-					<kbd>fieldset</kbd> prima del pulsante di azione.
-				</p>
-				<pre>
-					<code>
-                {{> u_adjacent_grid}}
-              </code>
-				</pre>
-          
-              {{> u_adjacent_grid}}
-          
-			</section>
-			<section>
-				<h3 id="u-action-card">Card con azioni 
-					<kbd>(u-action-card)</kbd>
-				</h3>
-				<p>Questo elemento può essere utilizzato come box per verificare il corretto funzionamento di un processo o di un'azione.</p>
-				<p>Viene utilizzata la card 
-					<kbd>card-tile</kbd> per inserire i valori da verificare e successivamente le card 
-					<kbd>card-tile success</kbd> e 
-					<kbd>card-tile failure</kbd>
-            definiscono il risultato che può essere positivo o negativo.
-				</p>
-				<p>E' presente anche una card 
-					<kbd>disabled</kbd> per gestire anche gli stati intermedi di caricamento o disabilitate.
-				</p>
-				<pre>
-					<code>
-                {{> u_action_card}}
-              </code>
-				</pre>
-            
-            {{> u_action_card}}
+		<p>Se viene inserita la classe 
+			<kbd>fixed-width</kbd>, la 
+			<kbd>row</kbd> all'interno avrà una larghezza massima di 550px, utile per non avere un contenuto troppo lungo e difficile da leggere.
+		</p>
+		<pre>
+			<code>
+				{{> u_highlight_text_fixed_width}}
+			</code>
+		</pre>
 
-            
-				<p>E' possibile usare questa tipologia di card anche in forma orizzontale usando la classe 
-					<kbd>horizontal</kbd>.
-				</p>
-				<pre>
-					<code>
-                {{> u_action_card_horizontal}}
+		{{> u_highlight_text_fixed_width}}
 
-              </code>
-				</pre>
-            
-            {{> u_action_card_horizontal}}
-          
-			</section>
-			<section>
-				<h3 id="u-contact">Contatto
-					<kbd>
-						<u-contact></u-contact>
-					</kbd>
-				</h3>
-				<p>Questo elemento può essere utilizzato come box inserire un contatto.</p>
-				<pre>
-					<code>
-                  {{> u_contact}}
-              </code>
-				</pre>
-            
-            {{> u_contact}}
-          
-			</section>
-		</div>
-	</div>
-</div>
+</section>
+<section>
+	<h3 id="tabella_dark">Tabella dark</h3>
+	<p>
+		Versione scura della tabella di default.
+	</p>
+	<table class="dark">
+		<thead>
+			<tr>
+				<th width="200">Table Header</th>
+				<th>Table Header</th>
+				<th width="150">Table Header</th>
+				<th width="150">Table Header</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Content Goes Here</td>
+				<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+				<td>Content Goes Here</td>
+				<td>Content Goes Here</td>
+			</tr>
+			<tr>
+				<td>Content Goes Here</td>
+				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+				<td>Content Goes Here</td>
+				<td>Content Goes Here</td>
+			</tr>
+			<tr>
+				<td>Content Goes Here</td>
+				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+				<td>Content Goes Here</td>
+				<td>Content Goes Here</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+<section>
+	<h3 id="tabella_bordi">Tabella senza bordi</h3>
+	<p>
+	Per ottenere una tabella senza i bordi.
+	</p>
+	<pre>
+		<code class="html">
+			<table class="no-border"></table>
+		</code>
+	</pre>
+	<table class="no-border">
+		<thead>
+			<tr>
+				<th width="200">Table Header</th>
+				<th>Table Header</th>
+				<th width="150">Table Header</th>
+				<th width="150">Table Header</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Content Goes Here</td>
+				<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+				<td>Content Goes Here</td>
+				<td>Content Goes Here</td>
+			</tr>
+			<tr>
+				<td>Content Goes Here</td>
+				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+				<td>Content Goes Here</td>
+				<td>Content Goes Here</td>
+			</tr>
+			<tr>
+				<td>Content Goes Here</td>
+				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+				<td>Content Goes Here</td>
+				<td>Content Goes Here</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+<section>
+	<h3 id="tabella_sort">Ordinamento tabella</h3>
+	<p>Inserire le classi 
+		<kbd>.sort</kbd> , 
+		<kbd>.sorted-up</kbd> e 
+		<kbd>.sorted-down</kbd> per stilare la colonna con ordinamento.
+	</p>
+	<p>La classe 
+		<kbd>.sort</kbd> inserisce un'icona con le doppie frecce che sta ad indicare che quella colonna è ordinabile. 
+	</p>
+	<p>Le classi 
+		<kbd>.sorted-up</kbd> e 
+		<kbd>.sorted-down</kbd> indicano se quella colonna è ordinata in modo crescente o decrescente.
+	</p>
+	<pre>
+		<code class="html">
+			<table>
+				<thead>
+					<tr>
+						<th width="200" class="sort">Table Header</th>
+						<th class="sort">Table Header</th>
+						<th width="150" class="sorted-up">Table Header</th>
+						<th width="150" class="sort">Table Header</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Content Goes Here</td>
+						<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+						<td class="sorted">Content Goes Here</td>
+						<td>Content Goes Here</td>
+					</tr>
+					<tr>
+						<td>Content Goes Here</td>
+						<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+						<td class="sorted">Content Goes Here</td>
+						<td>Content Goes Here</td>
+					</tr>
+					<tr>
+						<td>Content Goes Here</td>
+						<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+						<td class="sorted">Content Goes Here</td>
+						<td>Content Goes Here</td>
+					</tr>
+				</tbody>
+			</table>
+		</code>
+	</pre>
+	<table>
+		<thead>
+			<tr>
+				<th width="200" class="sort">Table Header</th>
+				<th class="sort">Table Header</th>
+				<th width="150" class="sorted-up">Table Header</th>
+				<th width="150" class="sort">Table Header</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Content Goes Here</td>
+				<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+				<td class="sorted">Content Goes Here</td>
+				<td>Content Goes Here</td>
+			</tr>
+			<tr>
+				<td>Content Goes Here</td>
+				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+				<td class="sorted">Content Goes Here</td>
+				<td>Content Goes Here</td>
+			</tr>
+			<tr>
+				<td>Content Goes Here</td>
+				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+				<td class="sorted">Content Goes Here</td>
+				<td>Content Goes Here</td>
+			</tr>
+		</tbody>
+	</table>
+	<p>E' possibile utilizzare le classi 
+		<kbd>.sorted-up-light</kbd> e 
+		<kbd>.sorted-down-light</kbd> nel 
+		<kbd>
+			<th></th>
+		</kbd> per avere uno stile più leggero nelle colonne ordinate.
+	</p>
+	<p>Nelle celle della colonna evidenziata va inserito 
+		<kbd>.sorted-light</kbd>.
+	</p>
+	<pre>
+		<code class="html">
+			<table>
+				<thead>
+					<tr>
+						<th width="200" class="sort">Table Header</th>
+						<th class="sort">Table Header</th>
+						<th width="150" class="sorted-up-light">Table Header</th>
+						<th width="150" class="sort">Table Header</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Content Goes Here</td>
+						<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+						<td class="sorted-light">Content Goes Here</td>
+						<td>Content Goes Here</td>
+					</tr>
+					<tr>
+						<td>Content Goes Here</td>
+						<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+						<td class="sorted-light">Content Goes Here</td>
+						<td>Content Goes Here</td>
+					</tr>
+					<tr>
+						<td>Content Goes Here</td>
+						<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+						<td class="sorted-light">Content Goes Here</td>
+						<td>Content Goes Here</td>
+					</tr>
+				</tbody>
+			</table>
+		</code>
+	</pre>
+	<table>
+		<thead>
+			<tr>
+				<th width="200" class="sort">Table Header</th>
+				<th class="sort">Table Header</th>
+				<th width="150" class="sorted-up-light">Table Header</th>
+				<th width="150" class="sort">Table Header</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Content Goes Here</td>
+				<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+				<td class="sorted-light">Content Goes Here</td>
+				<td>Content Goes Here</td>
+			</tr>
+			<tr>
+				<td>Content Goes Here</td>
+				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+				<td class="sorted-light">Content Goes Here</td>
+				<td>Content Goes Here</td>
+			</tr>
+			<tr>
+				<td>Content Goes Here</td>
+				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+				<td class="sorted-light">Content Goes Here</td>
+				<td>Content Goes Here</td>
+			</tr>
+		</tbody>
+	</table>
+	<p>Si può utilizzare anche nelle tabelle 
+		<kbd>.dark</kbd>, in quel caso lo stile è differente in base ai colori più scuri della tabella.
+	</p>
+	<p>Le classi da utilizzare per la tabella dark sono 
+		<kbd>.sorted-up</kbd> e 
+		<kbd>.sorted-down</kbd>.
+	</p>
+	<p>Nelle celle della colonna evidenziata va inserito 
+		<kbd>.sorted</kbd>.
+	</p>
+	<table class="dark">
+		<thead>
+			<tr>
+				<th width="200" class="sort">Table Header</th>
+				<th class="sort">Table Header</th>
+				<th width="150" class="sorted-down-light">Table Header</th>
+				<th width="150" class="sort">Table Header</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Content Goes Here</td>
+				<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+				<td class="sorted">Content Goes Here</td>
+				<td>Content Goes Here</td>
+			</tr>
+			<tr>
+				<td>Content Goes Here</td>
+				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+				<td class="sorted">Content Goes Here</td>
+				<td>Content Goes Here</td>
+			</tr>
+			<tr>
+				<td>Content Goes Here</td>
+				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+				<td class="sorted">Content Goes Here</td>
+				<td>Content Goes Here</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+<section>
+	<h3 id="u-card">Card Option 
+		<kbd>(u-card-option)</kbd>
+	</h3>
+	<p>Questo elemento può essere utilizzato come box esplicativo per linkare un servizio o una sezione. 
+		<br /> Può contenere un'icona (Fontawesome), del testo (anche titolazioni) e un pulsante.
+	</p>
+	<p>Questo componente può essere inserito in una griglia per avere più blocchi di elementi. In alternativa, può avere una larghezza fissa di 300px se viene inserita la classe 
+		<kbd>fixed-width</kbd>.
+	</p>
+	<pre>
+		<code>
+		{{> u_card_option}}
+	</code>
+	</pre>
+{{> u_card_option}}
+
+
+	<pre>
+		<code>
+	{{> u_card_option_fixed_width}}
+	</code>
+	</pre>
+{{> u_card_option_fixed_width}}
+
+</section>
+<section>
+	<h3 id="u-numbered-list">Lista con numeri 
+		<kbd>(u-numbered-list)</kbd>
+	</h3>
+	<p>Questo elemento può essere utilizzato come box per spiegare una procedura in più step.</p>
+	<p>Può anche essere centrato e a quel punto va aggiunta la classe 
+		<kbd>centered</kbd>
+	</p>
+	<pre>
+		<code>
+	{{> u_numbered_list}}
+	</code>
+	</pre>
+{{> u_numbered_list}}
+
+	<pre>
+		<code>
+		{{> u_numbered_list_centered}}
+	</code>
+	</pre>
+	{{> u_numbered_list_centered}}
+
+</section>
+<section>
+	<h3 id="u-comparison-card">Card feature 
+		<kbd>(u-comparison-card)</kbd>
+	</h3>
+	<p>Questo elemento può essere utilizzato come box per comparare diverse feature e spiegare la differenza tra diverse opzioni.</p>
+	<p>Graficamente è uguale al componente 
+		<a href="/++theme++application_theme/templates/unibo%20-%20controls.html#radio-card">Radio card</a> 
+	a parte che non ha la possibilità di selezionare l'opzione.
+	</p>
+	<pre>
+		<code>
+	{{> u_comparison_card}}
+	</code>
+	</pre>
+{{> u_comparison_card}}
+
+</section>
+<section>
+	<h3 id="u-adjacent-grid">Azioni in griglia 
+		<kbd>(u-adjacent-grid)</kbd>
+	</h3>
+	<p>Il componente serve per distinguere graficamente una serie di azioni che sono necessarie per completare un determinato processo.</p>
+	<p>E' possibile anche inserire dei campi aggiuntivi, ad esempio 
+		<kbd>fieldset</kbd> prima del pulsante di azione.
+	</p>
+	<pre>
+		<code>
+	{{> u_adjacent_grid}}
+	</code>
+	</pre>
+
+	{{> u_adjacent_grid}}
+
+</section>
+<section>
+	<h3 id="u-action-card">Card con azioni 
+		<kbd>(u-action-card)</kbd>
+	</h3>
+	<p>Questo elemento può essere utilizzato come box per verificare il corretto funzionamento di un processo o di un'azione.</p>
+	<p>Viene utilizzata la card 
+		<kbd>card-tile</kbd> per inserire i valori da verificare e successivamente le card 
+		<kbd>card-tile success</kbd> e 
+		<kbd>card-tile failure</kbd>
+definiscono il risultato che può essere positivo o negativo.
+	</p>
+	<p>E' presente anche una card 
+		<kbd>disabled</kbd> per gestire anche gli stati intermedi di caricamento o disabilitate.
+	</p>
+	<pre>
+		<code>
+	{{> u_action_card}}
+	</code>
+	</pre>
+
+{{> u_action_card}}
+
+
+	<p>E' possibile usare questa tipologia di card anche in forma orizzontale usando la classe 
+		<kbd>horizontal</kbd>.
+	</p>
+	<pre>
+		<code>
+	{{> u_action_card_horizontal}}
+
+	</code>
+	</pre>
+
+{{> u_action_card_horizontal}}
+
+</section>
+<section>
+	<h3 id="u-contact">Contatto
+		<kbd>
+			<u-contact></u-contact>
+		</kbd>
+	</h3>
+	<p>Questo elemento può essere utilizzato come box inserire un contatto.</p>
+	<pre>
+		<code>
+		{{> u_contact}}
+	</code>
+	</pre>
+
+{{> u_contact}}
+
+</section>
