@@ -1,8 +1,8 @@
 import $ from 'jquery';
 
 var ToC =
-  "<h2>On this page:</h2>" +
-  "<ul class='vertical menu'>";
+  "<h2>In questa pagina:</h2>" +
+  "<ul class='vertical menu' data-magellan=''>";
 
 var newLine, el, title, link;
 
@@ -24,4 +24,4 @@ $("section > h3").each(function() {
 ToC +=
   "</ul>";
 
-$(".toc").prepend(ToC);
+$(".docs-toc").prepend(ToC);
