@@ -86,6 +86,13 @@
 @import "components/font-awesome/regular";
 @import "components/font-awesome/solid";
 
+
+/* Styleguide */
+
+@import "styleguide/styleguide";
+@import "styleguide/highlight";
+
+
 /* Elementi custom Unibo */
 @import "components/unibo/u_barra_login";
 @import "components/unibo/u_base";
