@@ -25,3 +25,9 @@ ToC +=
   "</ul>";
 
 $(".docs-toc").prepend(ToC);
+
+
+$("body").on("click",".docs-toc a",function() {
+  $(".docs-toc a").removeClass("is-active");
+  $(this).addClass("is-active");
+});
