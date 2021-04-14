@@ -1,9 +1,8 @@
 import $ from 'jquery';
 
 var ToC =
-  "<nav role='navigation' class='table-of-contents'>" +
   "<h2>On this page:</h2>" +
-  "<ul>";
+  "<ul class='vertical menu'>";
 
 var newLine, el, title, link;
 
@@ -23,7 +22,6 @@ $("section > h3").each(function() {
   ToC += newLine;
 });
 ToC +=
-  "</ul>" +
-  "</nav>";
+  "</ul>";
 
 $(".toc").prepend(ToC);
