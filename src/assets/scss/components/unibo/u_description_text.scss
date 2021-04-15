@@ -1,11 +1,11 @@
 .u-description-text{
     padding: 0 $padding-small;
     margin-bottom: $margin;
-    h2{
+    h2 {
         @include very-large-fancy;
     }
-    ul{
-        li{
+    ul {
+        li {
             margin-bottom: $margin-xs;
         }
     }

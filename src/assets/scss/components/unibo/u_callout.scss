@@ -98,7 +98,7 @@
     @include u-callout;
 }
 
-.u-callout-photo{
+.u-callout-photo {
     @include u-callout;
     background-image: url("../img/bg_photo.jpeg");
     background-position: top center;
@@ -106,7 +106,7 @@
     background-attachment:fixed;
     background-color: (0,0,0,0.5);
     position: relative;
-    &:after{
+    &:after {
         content: "";
         background: #222;
         top: 0;
@@ -116,7 +116,7 @@
         position: absolute;
         opacity: 0.7;
     }
-    .column{
+    .cell {
         position: relative;
         z-index: 9;
     }
@@ -125,7 +125,7 @@
 .u-callout-center{
     @include u-callout;
     background-position: right 60%;
-    .column{
+    .cell {
         flex-flow: column;
     }
     .text-wrapper{

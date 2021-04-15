@@ -20,12 +20,12 @@
     
     a {
       color: inherit;
-      &:hover{
+      &:hover {
         text-decoration: none;
       }
     }
     //fratelli di .home
-    ~ li{
+    ~ li {
       text-transform: none;
       font-size: 1.25em;
       &:not(:last-child)::after {
@@ -36,12 +36,12 @@
       top: 0px;
     }
   }
-  + main{
+  + main {
     padding-top: 0;
   }
 }
 
-.column .u-breadcrumbs{
+.cell .u-breadcrumbs {
   margin: 0 $margin-small $margin $margin-small;
   padding: $padding-small 0;
   padding-left: 2px;
