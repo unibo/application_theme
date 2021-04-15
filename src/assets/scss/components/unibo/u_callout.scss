@@ -12,7 +12,7 @@
     @include breakpoint(large){
         padding: $padding;
     }
-    .column{
+    .cell {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -28,8 +28,8 @@
         }
     }
 
-    .row{
-        .column{
+    .grid-x {
+        .cell {
             @include breakpoint(1400px){
                 padding: 0 3em;
                 max-width: 1150px;

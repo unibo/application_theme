@@ -22,27 +22,27 @@ form {
   }
 
   // spaziature maggiori tra row
-  .row {
+  .grid-x {
     margin-bottom: $margin * 0.7;
     
     @include breakpoint(medium){
       margin-bottom: $margin-small;
     }
-    .row {
+    .grid-x {
       margin-bottom: 0;
     }
   }
 
   // griglia innestata: gruppi di radio e check
-  fieldset > .row {
+  fieldset > .grid-x {
     display: flex;
     flex-wrap: wrap;
     
     &:before,
-    &:after{
+    &:after {
       display: none;
     }
-    .column {
+    .cell {
       display: flex;
       margin-bottom: $margin-xs;  
       

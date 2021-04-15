@@ -63,7 +63,7 @@
         margin-left: 5px;
         font-weight: bold;
     }
-    .row.display {
+    .grid-x.display {
         background: #eee;
         font-size: 11px;
         margin-bottom: 10px;
@@ -72,7 +72,7 @@
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
-    .row.display-end {
+    .grid-x.display-end {
         background: #fff;
         font-size: 11px;
         margin-bottom: 10px;
@@ -81,9 +81,9 @@
         margin-left: 0 !important;
         margin-right: 0 !important;
         
-        .columns {
-        background: #e1e1e1;
-        border-left: 1px solid #c6c6c6;
+        .cell {
+            background: #e1e1e1;
+            border-left: 1px solid #c6c6c6;
         }
     }
     

@@ -1,23 +1,23 @@
 @mixin u-feature{
     margin-bottom: $margin;
-    h2{
+    h2 {
         @include very-large-fancy;
     }
-    .row{
+    .grid-x {
         padding: 0 $padding-small;
 
-        .column{
+        .cell {
             margin-bottom: $margin-small;
         }
 
         @include breakpoint(large){
             padding: $padding-small $padding;
-            .column{
+            .cell {
                 margin-bottom: 0;
             }
         }
     }
-    i{
+    i, svg {
         background-color: $base-font-color;
         border-radius: 50%;
         color: #fff;
@@ -26,18 +26,21 @@
         height: 40px;
         text-align: center;
     }
-    .icon-left{
+    .icon-left {
         display: flex;
         align-items: center;
         margin-bottom: $margin/4;
-        i{
+        i, 
+        svg {
             margin-right: $margin-small;
+            width: 40px;
         }
     }
     .icon-center{
         text-align: center;
         margin-bottom: $margin/4;
-        i{
+        i, 
+        svg {
             margin-bottom: $margin/4;
         }
         + p {
@@ -47,13 +50,14 @@
 
 }
 
-.u-feature{
+.u-feature {
     @include u-feature;
 }
 
-.u-feature-primary{
+.u-feature-primary {
     @include u-feature;
-    i{
+    i, 
+    svg {
         background-color: $primary-color;
     }
 }

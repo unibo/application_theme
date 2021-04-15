@@ -87,7 +87,7 @@
     }
 
     //l'elemento successivo al lead colorato crea una piega
-    + .row {
+    + .grid-x {
         background-color: #fff;
         @include breakpoint(large){
             margin-top: -50px;

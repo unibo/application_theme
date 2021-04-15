@@ -5,7 +5,7 @@
   text-align: center;
   color: $dark-gray;
 
-  &.fixed-width .row{
+  &.fixed-width .grid-x {
     margin: 0 auto;
     max-width: 550px;
   }
@@ -15,7 +15,7 @@
   .main-label {
     text-transform: uppercase;
 
-    &:after{
+    &:after {
       content: "";
       width: 50px;
       height: 3px;

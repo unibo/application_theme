@@ -11,9 +11,9 @@
     margin: 0 auto;
     @include small();
     @include breakpoint(large){
-        .row{
+        .grid-x {
             display: flex;
-            .column{
+            .cell {
                 border-left: 1px solid $border-color;
                 align-items: flex-end;
                 &:first-child{
@@ -22,7 +22,7 @@
             }
         }
     }
-    .column{
+    .cell {
         flex-grow: 1;
         text-align: center;
         padding: $padding-xs;
@@ -51,9 +51,9 @@
     .survey-heading{
         padding: 0 $padding-small;
         @include breakpoint(large){
-            .row{
+            .grid-x {
                 display: flex;
-                .column{
+                .cell {
                     border-left: 1px solid $border-color;
                     align-items: flex-end;
                     &:first-child{

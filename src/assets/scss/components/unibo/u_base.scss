@@ -15,7 +15,7 @@ main {
     @include breakpoint(medium){
     padding: $padding 0;
   }
-  &.row.expanded {
+  &.grid-x {
     padding: $padding-small 0 0 0;
   }
   &.nopadding{
@@ -23,12 +23,12 @@ main {
   }
 }
 
-aside.column,
-nav.column {
+aside.cell,
+nav.cell {
   background-color: $light-gray;
 }
 
-aside.column{
+aside.cell {
   overflow: hidden;
   margin-top: $margin;
   @include breakpoint(medium){
@@ -36,7 +36,7 @@ aside.column{
   }
 }
 
-.column,
+.cell,
 .columns {  
   &.nopadding {
     padding-left: 0;
@@ -51,8 +51,8 @@ aside.column{
   flex-direction: column;
   flex: 1 0 auto;  
   
-  header + .row,
-  .u-breadcrumbs + .row{
+  header + .grid-x,
+  .u-breadcrumbs + .grid-x {
     flex-grow: 1;
     /* layout 2 colonne */
     &.expanded{
@@ -62,7 +62,7 @@ aside.column{
     }
   }
   
-  > .row {
+  > .grid-x {
     width: 100%;        
   }
 }

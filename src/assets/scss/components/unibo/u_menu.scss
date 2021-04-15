@@ -15,7 +15,7 @@
       display: block;
       line-height: inherit;
       
-      i {
+      i, svg {
         vertical-align: baseline;
         line-height: inherit;
         margin-right: $margin-xs;
@@ -203,7 +203,7 @@
                     color: #333333;
                 }
 
-                i {
+                i, svg {
                     margin-right: 0;
                 }
             }
@@ -224,7 +224,7 @@
                         background-color: #f8f8f8;
                     }
 
-                    i {
+                    i, svg {
                         margin-right: 5px;
                     }
                 }

@@ -70,7 +70,7 @@
         }
     }
 
-    .row{ 
+    .grid-x { 
         padding-top: $padding;
         @include breakpoint(large){
             display: flex;
