@@ -1,6 +1,9 @@
 .u-top-bar {
 	padding: $padding-big 0 $padding-xs 0;
-	margin: 0 -$padding-xs;
+	margin-top: 0;
+	margin-left: -$padding-xs;
+	margin-right: -$padding-xs;
+	margin-bottom: $margin-small;
 	max-width: none;
 	display: flex;
 	flex-wrap: wrap;
@@ -21,16 +24,17 @@
 		display: inline-block;
 		min-width: 100%;
 		vertical-align: top;
+		margin-bottom: 0;
 		@include breakpoint(large){		
 			width: auto;
 			min-width: 200px;
 			max-width: 360px;
 		}
 	}
-	.button{
-		margin-bottom: $margin-small;
+	.button {
+		margin-bottom: 0;
 	}
-	.u-search-group{
+	.u-search-group {
 		display: flex;
 		@include breakpoint(large){
 			max-width: 50%;
@@ -43,6 +47,7 @@
 			border-right: 0;
 			background-color: $light-gray;
 			min-width: 120px;
+			margin-bottom: 0;
 		}
 		input[type="text"]{
 			width: auto;
@@ -54,14 +59,20 @@
 			width: auto;
 		}
 	}
-	.u-button-group{
+	.u-button-group {
 		order: 1;
 		width: 100%;
 		flex-grow: 0;
+
+		@include breakpoint(medium only){
+			margin-top: $margin-small;
+		}
 		
 		@include breakpoint(large){
 			order: initial;
 			width: auto;
 		}
+
+		
 	}
 }
