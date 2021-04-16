@@ -1,16 +1,16 @@
-.u-adjacent-grid{
+.u-adjacent-grid {
     margin: 0 auto;
     max-width: 600px;
     padding: 0 $padding-small;
     @include breakpoint(large){
         max-width: none;
     }
-    .column{
+    .cell {
         border: 1px solid $border-color;
         border-top: none;
         padding: $padding-small;
         position: relative; 
-        &:first-child{
+        &:first-child {
             border-top: 1px solid $border-color;
         }
         @include breakpoint(medium){
@@ -24,7 +24,7 @@
             }
         }
         
-        .input-group-field{
+        .input-group-field {
             margin-left: $margin-xs;
             width: calc(100% - 0.5rem);
         }

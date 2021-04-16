@@ -1,16 +1,16 @@
-.u-section-title{
+.u-section-title {
     font-weight: 500;
 }
 
-.u-survey-legend{
+.u-survey-legend {
     border: 1px solid $border-color;
     border-radius: 3px;
     background-color: #fff;
-    padding: 0 $padding-small;
+    padding: 0;
     max-width: 850px;
     margin: 0 auto;
     @include small();
-    @include breakpoint(large){
+    @include breakpoint(large only){
         .grid-x {
             display: flex;
             .cell {
@@ -26,8 +26,18 @@
         flex-grow: 1;
         text-align: center;
         padding: $padding-xs;
+        border-left: 1px solid $border-color;
+        align-items: flex-end;
+
+        &:first-child {
+            border-left: none;
+        }
+
+        @include breakpoint(small only){
+            border: none;
+        }
     }
-    .badge{
+    .badge {
         @include small();
         line-height: 1.5;
         border: 1px solid #ccc;
@@ -145,7 +155,7 @@
                 line-height: 23px;
             }
         }
-        .no-value{
+        .no-value {
             display: inline-block;
             border: 1px solid #ccc;
             border-radius: 50%;
@@ -156,7 +166,14 @@
             @include breakpoint(large){
                 min-width: 20px;
                 height: 20px;
-                line-height: 16px;
+                margin-top: 1px;
+                align-items: center;
+                display: inline-flex;
+                align-content: center;
+                justify-content: center;
+                svg {
+                    font-size: 0.9rem;
+                }
             }
         }
         .legend-label{
