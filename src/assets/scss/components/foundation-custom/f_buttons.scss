@@ -15,6 +15,14 @@
 }
 
 //aggiunto bordo in pulsante secondario altrimenti poco visibile
-.button.secondary{
+.button.secondary {
   border: 1px solid #ddd;
+}
+
+
+.input-group-field + .input-group-button {
+  .button {
+    display: flex;
+    align-items: center;
+  }
 }

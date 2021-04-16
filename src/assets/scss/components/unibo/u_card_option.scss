@@ -7,15 +7,20 @@
     font-size: 1.92308rem;
     line-height: 2.92308rem;
   }
+
+  svg {
+    font-size: 0.95rem;
+  }
+
   &.fixed-width{
   	width: 300px;
   }
-  .button{
+  .button {
   	margin-top: $padding-small;
   }
   &.contact{
     position: relative;
-    .info{
+    .info {
       margin: $margin*2 auto $margin;
       padding: 0 $padding-xs;
       max-width: 320px;
@@ -24,7 +29,7 @@
         padding: 0 $padding-small;
       }
     }
-    .info:before{
+    .info:before {
       content: "";
       display: block;
       border-top: 1px solid #ddd;

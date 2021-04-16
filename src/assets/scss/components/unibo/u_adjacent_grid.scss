@@ -33,7 +33,8 @@
                 line-height: 1.4;
             }
         }
-        > i {
+        > i, 
+        > svg {
             color: $primary-color;
             float: left;
             margin-top: 7px;

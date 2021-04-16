@@ -7,11 +7,9 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 
 code {
   display: block;
-  padding: 1rem;
-  overflow-x: scroll;
-  margin-bottom: 1.5rem;
-  background-color: #23241f;
-  color: #fff;
+  padding: 0;
+  overflow-x: auto;
+  border: none;
 }
 
 

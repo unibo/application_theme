@@ -21,6 +21,7 @@
         margin-right: $margin-xs;
         min-width: 20px;
         text-align: center;
+        font-size: 0.95rem;
       }
     }
   }
@@ -40,7 +41,7 @@
     }
   }
   /* menu gerarchico */
-  .nested{
+  .nested {
     margin-left: $margin;
     margin-bottom: $margin-small;
     
@@ -49,13 +50,13 @@
       font-weight: normal;
       border-bottom: none;        
     }
-    a{
+    a {
       padding-left: 10px;
       padding-top: $padding-xs;
       padding-bottom: $padding-xs;
     }
-    .selected{
-      a{
+    .selected {
+      a {
         font-weight: bold;
         &:before{
           display: none;

@@ -71,8 +71,8 @@ aside.cell {
   background-color: $white;
 }
 
-.colored-icon{
-  i{
+.colored-icon {
+  i, svg {
     color: $primary-color;
   }
 }
