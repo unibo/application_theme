@@ -9,14 +9,14 @@ header {
     min-height: 117px;
   }
   .content {
-	text-align: center;
+	  text-align: center;
     > a {
       display: inline-block;
       display: inline-flex;
       align-items: center;
     }
   }
-  .text{
+  .text {
     margin-top: $margin-xs;
   }
 
@@ -55,9 +55,19 @@ header {
   
   &.u-header-left { // Header allineato a sinistra
 
-    @include breakpoint(medium) {
+    .content {
+      text-align: center;
+      a {
+        text-align: left;
+      }
+    }
+    
+    @include breakpoint(medium only) {
       .content {
         text-align: left;
+        a {
+          text-align: left;
+        }
       }
       .text {
         display: inline-block;
@@ -69,22 +79,22 @@ header {
   }
 
   @include breakpoint(small only) {
-    &.small-left{
-      .content{
+    &.small-left {
+      .content {
         text-align: left;
-        > a{
+        > a {
           display: flex;
           align-items: center;
         }
       }
-      .logo{
+      .logo {
         margin: 0;
         float: left;
       }
-      .text{
+      .text {
         overflow: hidden;
         padding-left: 2px;
-        .alma-mater{
+        .alma-mater {
           font-size: 0.68em;
           margin: 0;
           white-space: nowrap;
@@ -93,4 +103,5 @@ header {
       }
     }
   }
+
 }
