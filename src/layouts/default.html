@@ -11,5 +11,13 @@
 {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
 {{> body}}
 
+<script>
+  jQuery('pre code').each(function () {
+    var $block = jQuery(this);
+    $block.text($block.html());
+  });
+  hljs.initHighlightingOnLoad();
+</script>
+
 </body>
 </html>
