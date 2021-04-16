@@ -15,7 +15,8 @@
       display: block;
       line-height: inherit;
       
-      i, svg {
+      i, 
+      svg {
         vertical-align: baseline;
         line-height: inherit;
         margin-right: $margin-xs;
@@ -189,47 +190,48 @@
 
 /* Menu azioni */
 .menu {
-    li {
-        &.u-menu-tools {
-            background-color: #f4f4f4;
-            border: 1px solid $medium-gray;
-            display: table;
+  li {
+    &.u-menu-tools {
+        background-color: #f4f4f4;
+        border: 1px solid $medium-gray;
+        display: table;
 
-            a {
-                color: #333333;
-                font-size: 13px;
-                padding: 5px;
+      a {
+          color: #333333;
+          font-size: 13px;
+          padding: 5px;
 
-                &:visited {
-                    color: #333333;
-                }
+          &:visited {
+              color: #333333;
+          }
 
-                i, svg {
-                    margin-right: 0;
-                }
-            }
+          i, svg {
+              margin-right: 0;
+          }
+      }
 
-            &.is-active {
-                background-color: #bbb;
-                border-color: #bbb;
-            }
+      &.is-active {
+          background-color: #bbb;
+          border-color: #bbb;
+      }
 
-            .is-dropdown-submenu {
-                min-width: 100%;
-                white-space: nowrap;
+      .is-dropdown-submenu {
+          min-width: 100%;
+          white-space: nowrap;
 
-                .is-dropdown-submenu-item {
-                    padding: 0 5px 0 5px;
+          .is-dropdown-submenu-item {
+              padding: 0 5px 0 5px;
 
-                    &:hover {
-                        background-color: #f8f8f8;
-                    }
+              &:hover {
+                  background-color: #f8f8f8;
+              }
 
-                    i, svg {
-                        margin-right: 5px;
-                    }
-                }
-            }
-        }
+              i, 
+              svg {
+                  margin-right: 5px;
+              }
+          }
+      }
     }
+  }
 }

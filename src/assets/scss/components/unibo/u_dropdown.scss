@@ -1,4 +1,4 @@
-.u-dropdown{
+.u-dropdown {
     border: 1px solid $border-color;
     [data-toggle]{
         cursor: pointer;
@@ -6,7 +6,7 @@
             line-height: 39px;
         }
     }    
-    .dropdown-content{
+    .dropdown-content {
         display: none;
         &.is-open{
             display: block;

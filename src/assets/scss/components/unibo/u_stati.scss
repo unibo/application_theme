@@ -1,6 +1,6 @@
 @each $stato, $colore in $u-stati-palette {
   .u-state-#{$stato} {
-    .fa {
+    svg {
       color: $colore;
       margin: 0 0.3em;
     }
