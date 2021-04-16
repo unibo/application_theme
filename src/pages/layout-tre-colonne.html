@@ -4,47 +4,46 @@
     {{> u_header_left}}
     <!-- breadcrumbs -->               
     {{> u_breadcrumbs}}
-      <div class="grid-x expanded">
-        <nav class="large-2 cell nopadding">
-          {{> u_main_menu}}
-        </nav>
+    <div class="grid-x expanded grid-padding-x">
+      <nav class="large-2 cell nopadding">
+        {{> u_main_menu}}
+      </nav>
 
-        <div class="large-8 cell">
+      <div class="large-8 cell">
+          <div class="u-breadcrumbs">
+            <nav aria-label="You are here:" role="navigation">
+              <ul class="breadcrumbs">
+                <li><a href="#">Home - Nome dell'applicativo</a></li>
+                <li><a href="#">Features</a></li>
+                <li class="disabled">Gene Splicing</li>
+                <li><span class="show-for-sr">Current: </span> Cloning</li>
+              </ul>
+            </nav>
+          </div>
 
-            <div class="u-breadcrumbs">
-              <nav aria-label="You are here:" role="navigation">
-                <ul class="breadcrumbs">
-                  <li><a href="#">Home - Nome dell'applicativo</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li class="disabled">Gene Splicing</li>
-                  <li><span class="show-for-sr">Current: </span> Cloning</li>
-                </ul>
-              </nav>
-            </div>
-
-            <main>
-              <div class="grid-x">
-                <div class="large-12 cell">
-                  <h1>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</h1>
-                  <h2>Sed ut perspiciatis unde omnis iste natus</h2>
-                  <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-                </div>
+          <main class="grid-container">
+            <div class="grid-x grid-padding-x">
+              <div class="large-12 cell">
+                <h1>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</h1>
+                <h2>Sed ut perspiciatis unde omnis iste natus</h2>
+                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
               </div>
-              {{> u_griglia_form}}
-            </main>
-        </div>
-        <aside class="large-2 cell">
-            <div class="u-card-option">
-              <h2>Robortis nisl ut aliquip</h2>
-              <p>Energistically deliver user-centric systems without orthogonal catalysts for change. Synergistically productivate market positioning niches whereas distributed best practices.</p>
-              <h3>Assistenza</h3>
-              <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
-              <a href="" class="button button-primary">Vai</a>
             </div>
-
-        </aside>
+            {{> u_griglia_form}}
+          </main>
       </div>
-      {{> footer}}
+      <aside class="large-2 cell">
+          <div class="u-card-option">
+            <h2>Robortis nisl ut aliquip</h2>
+            <p>Energistically deliver user-centric systems without orthogonal catalysts for change. Synergistically productivate market positioning niches whereas distributed best practices.</p>
+            <h3>Assistenza</h3>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+            <a href="" class="button button-primary">Vai</a>
+          </div>
+
+      </aside>
+    </div>
+    {{> footer}}
   </div>   
 
   <div class="grid-container styleguide">        

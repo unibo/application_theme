@@ -53,6 +53,9 @@
     }
     code {
         width: 100%;
+        @include breakpoint(small only){
+           max-width: 94vw;
+        }
     }
     .js:after {
         content: 'JS';

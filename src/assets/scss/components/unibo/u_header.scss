@@ -14,6 +14,14 @@ header {
       display: inline-block;
       display: inline-flex;
       align-items: center;
+
+      @include breakpoint(small){
+        flex-direction: columns;
+        justify-content: center;
+        max-width: 100vw;
+        flex-wrap: wrap;
+        margin-bottom: $padding-small;
+      }
     }
   }
   .text {
