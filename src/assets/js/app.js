@@ -12,15 +12,11 @@ window.hljs = hljs;
 // This is why we have to use CommonJS require() here since it doesn't
 // have the hoisting behavior.
 window.jQuery = $;
-// require('foundation-sites');
 require('foundation-sites');
 
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // // the line below
 // import './lib/foundation-explicit-pieces';
-
-// Original js
-// $(document).foundation();
 
 
 import './font-awesome';
@@ -29,6 +25,4 @@ import './u_to_top';
 import './toc';
 
 
-//window.onload = function () {
-    $(document).foundation();
-//};
+$(document).foundation();
