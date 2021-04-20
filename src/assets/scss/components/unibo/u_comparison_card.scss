@@ -7,7 +7,7 @@
         flex-direction: row;
         align-items: flex-start;
     }
-    .card-tile{
+    .card-tile {
         margin: 0 $margin;
         margin-bottom: $margin;    
         max-width: 320px;
@@ -26,7 +26,8 @@
         .worst{
             color: #ca4103;
         }
-        i{
+        i, 
+        svg {
             color: $primary-color;
             margin-bottom: $margin-small;
         }

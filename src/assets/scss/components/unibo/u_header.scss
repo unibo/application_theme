@@ -14,11 +14,12 @@ header {
       display: inline-block;
       display: inline-flex;
       align-items: center;
+      margin-bottom: 0;
 
       @include breakpoint(small){
         flex-direction: columns;
         justify-content: center;
-        max-width: 100vw;
+        max-width: 100vw; 
         flex-wrap: wrap;
         margin-bottom: $padding-small;
       }
@@ -64,26 +65,21 @@ header {
   &.u-header-left { // Header allineato a sinistra
 
     .content {
-      text-align: center;
-      a {
-        text-align: left;
-      }
-    }
-    
-    @include breakpoint(medium only) {
-      .content {
-        text-align: left;
-        a {
-          text-align: left;
+      text-align: left;
+      > a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        align-content: center;
+        margin-bottom: 0;
+
+        .text {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: $margin-small;
         }
       }
-      .text {
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: $margin-small;
-      }
     }
-
   }
 
   @include breakpoint(small only) {

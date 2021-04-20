@@ -28,26 +28,26 @@
 ## Unibo
 
 
-*   [Containers](/unibo-containers.html)
-*   [Controls](/unibo-controls.html)
-*   [Forms](/unibo-forms.html)
-*   [General](/unibo-general.html)
-*   [Media](/unibo-media.html)
-*   [Navigation](/unibo-navigation.html)
-*   [ResponsiveTable](/unibo-responsive-table.html)
+*   [Containers](/styleguide/unibo-containers.html)
+*   [Controls](/styleguide/unibo-controls.html)
+*   [Forms](/styleguide/unibo-forms.html)
+*   [General](/styleguide/unibo-general.html)
+*   [Media](/styleguide/unibo-media.html)
+*   [Navigation](/styleguide/unibo-navigation.html)
+*   [ResponsiveTable](/styleguide/unibo-responsive-table.html)
 
 
 ## Foundation
 
 
-*   [Containers](/foundation-containers.html)
-*   [Controls](/foundation-controls.html)
-*   [Forms](/foundation-forms.html)
-*   [General](/foundation-general.html)
-*   [Grid](/foundation-grid.html)
-*   [Media](/foundation-media.html)
-*   [Navigation](/foundation-navigation.html)
-*   [Typography](/foundation-typography.html)
+*   [Containers](/styleguide/foundation-containers.html)
+*   [Controls](/styleguide/foundation-controls.html)
+*   [Forms](/styleguide/foundation-forms.html)
+*   [General](/styleguide/foundation-general.html)
+*   [Grid](/styleguide/foundation-grid.html)
+*   [Media](/styleguide/foundation-media.html)
+*   [Navigation](/styleguide/foundation-navigation.html)
+*   [Typography](/styleguide/foundation-typography.html)
 
 
 

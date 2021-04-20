@@ -1,6 +1,11 @@
 // Stile per la styleguide
 .styleguide {
 
+
+    code {
+        text-indent: -100px;
+    }
+
     section {
         margin-bottom: 2em;
         border-bottom: 1px solid #ddd;

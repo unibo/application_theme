@@ -30,11 +30,12 @@
             margin-bottom: 0;
         }
 
-        .primary{
-            .icon-wrap{
+        .primary {
+            .icon-wrap {
                 background-color: $primary-color;
             }
-            i{
+            i, 
+            svg {
                 color: #fff;
             }
         }

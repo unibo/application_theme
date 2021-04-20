@@ -14,7 +14,7 @@ title: Style Guide Unibo Containers
 	<p>In linea generale è preferibile lasciare le voci di menù sempre visibili. In caso ci siano molte voci è tuttavia preferibile utilizzare la versione con l'apertura sul click poiché nella versione mobile, l'hover può non essere interpretato correttamente da alcuni dispositivi.</p>
 	<h3 id="barra-login-click">Login con dropdown che si apre al click</h3>
 	<pre>
-		<code>
+		<code class="html">
 			{{> u_barra_login}}
 		</code>
 	</pre>  
@@ -28,7 +28,7 @@ title: Style Guide Unibo Containers
 		<strong>non</strong> utilizzare l'apri/chiudi ma lasciare le voci visibili. Solamente se sono tanti elementi ha senso nascondere le voci del menu.
 	</p>
 	<pre>
-		<code>
+		<code class="html">
 			{{> u_barra_login_responsive}}
 		</code>
 	</pre>  
@@ -40,7 +40,7 @@ title: Style Guide Unibo Containers
 		<kbd>vertical</kbd> poiché preferiamo lasciare le voci visibili.
 	</p>
 	<pre>
-		<code>
+		<code class="html">
 			{{> u_barra_login_hover}}
 		</code>
 	</pre>  
@@ -52,7 +52,7 @@ title: Style Guide Unibo Containers
 			<kbd>vertical</kbd> poiché preferiamo lasciare le voci visibili.
 		</p>
 		<pre>
-			<code>
+			<code class="html">
 				{{> u_barra_login_impersonamento}}
 			</code>
 		</pre>  
@@ -63,14 +63,14 @@ title: Style Guide Unibo Containers
 	<section>
 		<h3 id="header">Header</h3>
 		<pre>
-			<code>
+			<code class="html">
 				{{> u_header_left}}
 			</code>
 		</pre>
 		{{> u_header_left}}
 		<p class="section-description">Header centrato</p>
 		<pre>
-			<code>
+			<code class="html">
 				{{> u_header}}
 			</code>
 		</pre>
@@ -83,7 +83,7 @@ title: Style Guide Unibo Containers
 		<p>Questo elemento può essere utilizzato in un layout ad una colonna per evidenziare o differenziare una sezione, in quanto inserisce uno sfondo grigio su tutta la riga. </p>
 		<p>Può avere una griglia di più colonne all'interno per avere più blocchi di elementi. </p>
 		<pre>
-			<code>
+			<code class="html">
 				{{> u_highlight_text}}
 			</code>
 		</pre>
@@ -94,7 +94,7 @@ title: Style Guide Unibo Containers
 			<kbd>row</kbd> all'interno avrà una larghezza massima di 550px, utile per non avere un contenuto troppo lungo e difficile da leggere.
 		</p>
 		<pre>
-			<code>
+			<code class="html">
 				{{> u_highlight_text_fixed_width}}
 			</code>
 		</pre>
@@ -107,6 +107,12 @@ title: Style Guide Unibo Containers
 	<p>
 		Versione scura della tabella di default.
 	</p>
+	<pre>
+		<code class="html">
+			<table class="dark">
+			</table>
+		</code>
+	</pre>
 	<table class="dark">
 		<thead>
 			<tr>
