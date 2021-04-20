@@ -14,8 +14,51 @@
   <main class="grid-container">
     <div class="grid-x">
       <div class="cell">
-        <h2>La struttura dei contenuti</h2>
-        <p> Nella cartella <code>src</code> si trovano i contenuti da elaborare per il riutilizzo del pacchetto Unibo Template.</p>
+        <h2>La struttura dei contenuti - CARTELLA SRC</h2>
+        <p> Nella cartella <code>src</code> si trovano i contenuti da elaborare per il riutilizzo del pacchetto <strong>Unibo Application Theme.</strong></p>
+        <p> Le cartelle sono divise in 
+          <ul>
+            <li>
+              <strong>assets</strong>: che a sua volta contiene:
+              <ul>
+                <li>
+                  <strong>img</strong>: cartella dove posizionare tutte le immagini statiche
+                </li>
+                <li>
+                  <strong>js</strong>: cartella dei javascript che verranno poi utilizzati dal template ed il file che li incorpora tutti, app.js
+                </li>
+                <li>
+                  <strong>scss</strong>: cartella con tutti i file scss. In essa i file sono stati suddivisi per macro-funzionalità. 
+                  In seguito vediamo il suo funzionamento nel dettaglio
+                </li>
+                <li>
+                  <strong>webfonts</strong>: troviamo tutti i file che riguardano i font, suddivisi nelle rispettive cartelle
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>layouts</strong>: in questa cartella troviamo tutti i template di base che vengono richiamati dalle pagine. Nell'attuale pacchetto troviamo il file default, che viene utilizzato 
+              come base per tutte le pagine. Il file styleguide, invece, viene utilizzato per la creazione delle pagine che si trovano all'interno della cartella styleguide e che quindi servono
+              alla creazione delle linee guida per lo stile dei singoli elementi del pacchetto.
+            </li>
+
+            <li>
+              <strong>pages</strong>: all'interno di questa cartella ci sono tutte le pagine create per questo tema e una cartella <strong>styleguide</strong>
+              contenente le pagine che invece sono da guida per la stilizzazione dei singoli elementi.
+            </li>
+
+            <li>
+              <strong>partials</strong>: la cartella contiene tutti gli snippet di codice da richiamare nelle pages. 
+              All'interno della cartella troviamo ulteriori cartelle, come ad esempio foundation, che racchiude tutti gli snippet di foundation, form, che contiene tutti gli snippet relativi alle form,
+              responsive table, che contiene tutti gli snippet relativi alle tabelle responsive.
+            </li>
+
+            <li>
+              <strong>template-list</strong>: in questa cartella troviamo il file template.html che serve a scrivere la struttura della pagina iniziale, dove visualizzare tutti i template disponibili e il file md che viene inglobato e letto da template.html.
+            </li>
+          </ul>
+        </p>
       </div>
     </div>
   </main>
