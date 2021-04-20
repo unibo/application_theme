@@ -34,7 +34,7 @@
         margin-left: 1em;
     }
     
-    .section-description{
+    .section-description {
         font-size: 1.2em;
         margin-top: 2.5em;
         margin-bottom: 0.5em;
@@ -44,19 +44,22 @@
         border-left: 4px solid #1779ba;
         padding: 0 0.5em;
     }
-    .label-font{
+    .label-font {
         color: #00b7ff;
     }
+    
     pre {
         display: flex;
         margin: 2em 0;
-    }
-    code {
-        width: 100%;
-        @include breakpoint(small only){
-           max-width: 94vw;
+
+        code {
+            width: 100%;
+            @include breakpoint(small only){
+               max-width: 94vw;
+            }
         }
     }
+    
     .js:after {
         content: 'JS';
         padding: 2px 4px;

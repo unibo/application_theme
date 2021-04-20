@@ -3,15 +3,28 @@
 Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
 
 */
-
-
-code {
-  display: block;
-  padding: 0;
-  overflow-x: auto;
-  border: none;
+pre {
+  width: 100%;
+  display: flex;
+  margin: 2em 0;
+  code {
+    display: block;
+    padding: 0;
+    overflow-x: auto;
+    border: none;
+    background-color:#23241f;
+    color: $white;
+    position: relative;
+  }
 }
 
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0;
+  background: #23241f;
+}
 
 .hljs-code,
 .hljs-title,

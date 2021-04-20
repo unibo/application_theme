@@ -217,14 +217,16 @@ $stat-font-size: 2.5rem;
 $cite-color: $dark-gray;
 $cite-font-size: rem-calc(13);
 $cite-pseudo-content: '\2014 \0020';
-$code-color: $white;
+$code-color: $black;
 $code-font-family: $font-family-monospace;
 $code-font-weight: $global-weight-normal;
-$code-background: $black;
+$code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
 $code-block-padding: 1rem;
 $code-block-margin-bottom: 1.5rem;
+$keystroke-background: $light-gray;
+$keystroke-color: $black;
 
 // 6. Abide
 // --------
