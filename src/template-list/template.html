@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+
+    <header class="sg-header">
+      <div class="grid-container">
+        <h1>Unibo Application Theme - Template Style Guide</h1>
+      </div>
+    </header>
+
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x" data-sticky-container>
+
+        <div class="large-3 medium-4 cell">
+          <div class="sticky" data-sticky data-top-anchor="sg-header:bottom">
+            <ul class="vertical menu sg-side-menu" data-smooth-scroll data-animation-easing="swing">
+              {{#each pages}}
+                <li><a href="#{{ anchor }}">{{ title }}</a></li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+
+        <div class="large-9 medium-8 cell">
+          {{#each pages}}
+            <section class="ss-section" id="{{ anchor }}">
+              {{ body }}
+            </section>
+          {{/each}}
+        </div>
+
+      </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

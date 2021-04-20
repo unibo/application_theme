@@ -70,11 +70,11 @@ function resetPages(done) {
   done();
 }
 
-// Generate a style guide from the Markdown content and HTML template in styleguide/
+// Generate a style guide from the Markdown content and HTML template in template-list/
 function styleGuide(done) {
-  sherpa('src/styleguide/index.md', {
-    output: PATHS.dist + '/styleguide.html',
-    template: 'src/styleguide/template.html'
+  sherpa('src/template-list/index.md', {
+    output: PATHS.dist + '/template-list.html',
+    template: 'src/template-list/template.html'
   }, done);
 }
 
@@ -169,5 +169,5 @@ function watch() {
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
-  gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
+  gulp.watch('src/template-list/**').on('all', gulp.series(styleGuide, browser.reload));
 }
