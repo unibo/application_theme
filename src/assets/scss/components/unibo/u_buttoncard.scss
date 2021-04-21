@@ -14,7 +14,8 @@
         border-radius: 3px;
         @include breakpoint(medium){
         }
-        i{
+        i, 
+        svg {
             color: $primary-color;
             margin-bottom: $margin-small;
         }
@@ -27,8 +28,8 @@
             margin: 0;
         }
     }
-    &.colored{
-        button{
+    &.colored {
+        button {
             background-color: $primary-color;
             color: #fff;
             border: none;

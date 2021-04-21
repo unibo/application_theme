@@ -48,7 +48,8 @@
       white-space: nowrap;
       > a {
         img,
-        i{
+        i, 
+        svg {
           min-width: 18px;
           text-align: center;
         }
@@ -200,14 +201,6 @@
 
       }
     }
-
-    @include breakpoint(large){
-      &[role="menubar"] {
-        .is-active{
-          
-        }
-      }
-    }
   }
 }
 
@@ -258,8 +251,6 @@
       }
     }
     
-  }
-  .fa-user-secret{
   }
 }
 
