@@ -1,8 +1,9 @@
-.u-buttoncard{
+.u-buttoncard {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    button{
+
+    button {
         margin: 0 $margin-small;
         margin-bottom: $margin;    
         max-width: 200px;
@@ -19,12 +20,12 @@
             color: $primary-color;
             margin-bottom: $margin-small;
         }
-        h3{
+        h3 {
             text-transform: uppercase;
             margin-bottom: $margin-xs;
             @include large();
         }
-        p{
+        p {
             margin: 0;
         }
     }
@@ -33,7 +34,8 @@
             background-color: $primary-color;
             color: #fff;
             border: none;
-            i{
+            i, 
+            svg {
                 color: #fff;
             }
         }
@@ -58,9 +60,9 @@
 }
 
 //elemento inserito nello slideshow slick
-.slick-initialized  .slick-slide{
-    &.u-buttoncard{
-        button{
+.slick-slide {
+    .u-buttoncard {
+        button {
             max-width: none;
         }
     }
