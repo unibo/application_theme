@@ -20,7 +20,7 @@ require('foundation-sites');
 
 
 import './font-awesome';
-import './slick.min';
+import './slick';
 import './u_to_top';
 import './toc';
 
