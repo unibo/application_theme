@@ -158,6 +158,10 @@
     display: flex;
     justify-content: center;
     text-align: center;
+
+    &.menu.vertical {
+      flex-direction: row;
+    }
     
     > li {
       flex-grow: 1;

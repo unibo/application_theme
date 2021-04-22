@@ -11,13 +11,14 @@
 # Layout
 
 
+*   [Una colonna](/layout-una-colonna.html)
+*   [Due colonne](/layout-due-colonne.html)
+*   [Tre colonne](/layout-tre-colonne.html)
 *   [Errore](/layout-errore.html)
 *   [Guida o faq](/layout-guida-o-faq.html)
 *   [Questionario](/layout-questionario.html)
 *   [Spinner](/layout-spinner.html)
 *   [Tabella](/layout-tabella.html)
-*   [Tre colonne](/layout-tre-colonne.html)
-*   [Una colonna](/layout-una-colonna.html)
 
 
 
