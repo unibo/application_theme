@@ -1,306 +1,89 @@
-<p class="section-description">Combined Column/Row</p>
-<p>If you need a full-width column to use as a container, put the .column and .row classes on the same element. You can still nest more grids inside this container like usual.</p>
-<p>Column rows can use sizing classes like .small-8, but only when used as a top-level container—not when nested inside another row.</p>
-
+<p class="section-description">Responsive Adjustments</p>
+<p>To switch back to the auto behavior from a percentage or shrink behavior, use the classes <code>.[size]-auto</code> or <code>.[size]-shrink</code>. In the below example, the cells stack on small screens, and become even-width on large screens.</p>
 <pre>
-  <code>
-<div class="column row">
-  Row column
+  <code class="html">
+<div class="grid-x">
+  <div class="cell large-auto">One</div>
+  <div class="cell large-auto">Two</div>
+  <div class="cell large-auto">Three</div>
+  <div class="cell large-auto">Four</div>
+  <div class="cell large-auto">Five</div>
+  <div class="cell large-auto">Six</div>
 </div>
   </code>
 </pre>
-
-<div class="column row display">
-  Row column
+<div class="grid-x display">
+  <div class="cell large-auto">One</div>
+  <div class="cell large-auto">Two</div>
+  <div class="cell large-auto">Three</div>
+  <div class="cell large-auto">Four</div>
+  <div class="cell large-auto">Five</div>
+  <div class="cell large-auto">Six</div>
 </div>
 
-
-<p class="section-description">Fluid Row</p>
-<p>Normally, a row is always 1200 pixels wide. Make a row completely fluid by adding the .expanded class.</p>
-
+<p class="section-description">Collapse Cells </p>
+<p>The <code>.[size]-[gutter-type]-collapse</code> class lets you remove cell gutters.</p>
+<p>There are times when you won't want each media query to be collapsed. In this case, use the media query size you want and collapse and add that to your grid element. Example shows gutters at small and no gutters on medium and up.
+</p>
 <pre>
-  <code>
-<div class="expanded row">
-</div>
-  </code>
-</pre>
-<div></div>
-
-<p class="section-description">Nesting</p>
-<p>You can nest the grids indefinitely, though at a certain point it will get absurd.</p>
-
-<pre>
-  <code>
-<div class="row">
-  <div class="small-8 columns">8
-    <div class="row">
-      <div class="small-8 columns">8 Nested
-        <div class="row">
-          <div class="small-8 columns">8 Nested Again</div>
-          <div class="small-4 columns">4</div>
-        </div>
-      </div>
-      <div class="small-4 columns">4</div>
-    </div>
+  <code class="html">
+<div class="grid-x grid-margin-x medium-margin-collapse">
+  <div class="cell small-6">
+    Gutters at small no gutters at medium.
   </div>
-  <div class="small-4 columns">4</div>
-</div>
-  </code>
-</pre>
-
-<div class="row display">
-  <div class="small-8 columns">8
-    <div class="row">
-      <div class="small-8 columns">8 Nested
-        <div class="row">
-          <div class="small-8 columns">8 Nested Again</div>
-          <div class="small-4 columns">4</div>
-        </div>
-      </div>
-      <div class="small-4 columns">4</div>
-    </div>
-  </div>
-  <div class="small-4 columns">4</div>
-</div>
-
-
-<p class="section-description">Offsets</p>
-<p>Move blocks up to 11 columns to the right by using classes like .large-offset-1 and .small-offset-3.</p>
-
-<pre>
-  <code>
-<div class="row">
-  <div class="large-1 columns">1</div>
-  <div class="large-11 columns">11</div>
-</div>
-<div class="row">
-  <div class="large-1 columns">1</div>
-  <div class="large-10 large-offset-1 columns">10, offset 1</div>
-</div>
-<div class="row">
-  <div class="large-1 columns">1</div>
-  <div class="large-9 large-offset-2 columns">9, offset 2</div>
-</div>
-<div class="row">
-  <div class="large-1 columns">1</div>
-  <div class="large-8 large-offset-3 columns">8, offset 3</div>
-</div>
-  </code>
-</pre>
-
-<div class="row display">
-  <div class="large-1 columns">1</div>
-  <div class="large-11 columns">11</div>
-</div>
-<div class="row display">
-  <div class="large-1 columns">1</div>
-  <div class="large-10 large-offset-1 columns">10, offset 1</div>
-</div>
-<div class="row display">
-  <div class="large-1 columns">1</div>
-  <div class="large-9 large-offset-2 columns">9, offset 2</div>
-</div>
-<div class="row display">
-  <div class="large-1 columns">1</div>
-  <div class="large-8 large-offset-3 columns">8, offset 3</div>
-</div>
-
-
-<p class="section-description">Incomplete Rows</p>
-<p>In order to work around browsers' different rounding behaviors, Foundation will float the last column in a row to the right so the edge aligns. If your row doesn't have a count that adds up to 12 columns, you can tag the last column with a class of .end in order to override that behavior. Alternatively, you can set the $grid-column-align-edge variable to false to turn off this behavior entirely.</p>
-
-<pre>
-  <code>
-<div class="row">
-  <div class="medium-3 columns">3</div>
-  <div class="medium-3 columns">3</div>
-  <div class="medium-3 columns">3</div>
-</div>
-<div class="row">
-  <div class="medium-3 columns">3</div>
-  <div class="medium-3 columns">3</div>
-  <div class="medium-3 columns end">3 end</div>
-</div>
-  </code>
-</pre>
-
-<div class="row display-end">
-  <div class="medium-3 columns">3</div>
-  <div class="medium-3 columns">3</div>
-  <div class="medium-3 columns">3</div>
-</div>
-<div class="row display-end">
-  <div class="medium-3 columns">3</div>
-  <div class="medium-3 columns">3</div>
-  <div class="medium-3 columns end">3 end</div>
-</div>
-
-
-<p class="section-description">Collapse/Uncollapse Rows</p>
-<p>The .collapse class lets you remove column gutters (padding).</p>
-<p>There are times when you won't want each media query to be collapsed or uncollapsed. In this case, use the media query size you want and collapse or uncollapse and add that to your row element. Example shows no gutter at small media size and then adds the gutter to columns at medium.</p>
-
-<pre>
-  <code>
-<div class="row medium-uncollapse large-collapse">
-  <div class="small-6 columns">
-    Removes gutter at large media query
-  </div>
-  <div class="small-6 columns">
-    Removes gutter at large media query
+  <div class="cell small-6">
+    Gutters at small no gutters at medium.
   </div>
 </div>
   </code>
 </pre>
-
-<div class="row medium-uncollapse large-collapse">
-  <div class="small-6 columns">
-    <div class="callout secondary">
-      <p class="show-for-small-only">On a small screen, I have gutters!</p>
-      <p class="show-for-medium-only">On a medium screen, I have gutters!</p>
-      <p class="show-for-large">On a large screen, I have no gutters!</p>
-    </div>
+<div class="grid-x grid-margin-x medium-margin-collapse display">
+  <div class="cell small-6">
+    Gutters at small no gutters at medium.
   </div>
-  <div class="small-6 columns">
-    <div class="callout secondary">
-      <p class="show-for-small-only">On a small screen, I have gutters!</p>
-      <p class="show-for-medium-only">On a medium screen, I have gutters!</p>
-      <p class="show-for-large">On a large screen, I have no gutters!</p>
-    </div>
+  <div class="cell small-6">
+    Gutters at small no gutters at medium.
   </div>
 </div>
 
 
-<p class="section-description">Centered Columns</p>
-<p>Center your columns by adding a class of .small-centered to your column. Large will inherit small centering by default, but you can also center solely on large by applying a .large-centered class. To uncenter on large screens, use .large-uncentered.</p>
-
+<p class="section-description">Offset</p>
+<p>Offsets work by applying <code>margin-left</code> to a grid.</p>
 <pre>
-  <code>
-<div class="row">
-  <div class="small-3 small-centered columns">3 centered</div>
-</div>
-<div class="row">
-  <div class="small-6 large-centered columns">6 centered</div>
-</div>
-<div class="row">
-  <div class="small-9 small-centered large-uncentered columns">9 centered</div>
-</div>
-<div class="row">
-  <div class="small-11 small-centered columns">11 centered</div>
+  <code class="html">
+<div class="grid-x grid-margin-x">
+  <div class="cell small-4 large-offset-2">Offset 2 on large</div>
+  <div class="cell small-4">4 cells</div>
 </div>
   </code>
 </pre>
 
-<div class="row display">
-  <div class="small-3 small-centered columns">3 centered</div>
-</div>
-<div class="row display">
-  <div class="small-6 large-centered columns">6 centered, large</div>
-</div>
-<div class="row display">
-  <div class="small-9 small-centered large-uncentered columns">9 centered small</div>
-</div>
-<div class="row display">
-  <div class="small-11 small-centered columns">11 centered</div>
+<div class="grid-x grid-margin-x display">
+  <div class="cell small-4 large-offset-2">Offset 2 on large</div>
+  <div class="cell small-4">4 cells</div>
 </div>
 
 
-<p class="section-description">Source Ordering</p>
-<p>Using these source ordering classes, you can shift columns around between our breakpoints. This means if you place sub-navigation below main content on small displays, you have the option to position the sub-navigation on either the left or right of the page for large displays. Prefix push/pull with the size of the device you want to apply the styles to. .medium-push-#, .large-push-# is the syntax you'll use. Use the number 0 instead to reset a push/pull, such as .medium-push-0 or .large-pull-0.</p>
 
+<p class="section-description">Block Grid - X Grid only</p>
+<p>To define cell widths within a direction-level, instead of the individual cell level, add the class <code>.[size]-up-[n]</code> to a <code>grid-x</code>, where <code>[n]</code> is the number of cells to display per direction, and <code>[size]</code> is the breakpoint at which to apply the effect.</p>
 <pre>
-  <code>
-<div class="row">
-  <div class="small-10 small-push-2 columns">10</div>
-  <div class="small-2 small-pull-10 columns">2, last</div>
-</div>
-<div class="row">
-  <div class="large-9 large-push-3 columns">9</div>
-  <div class="large-3 large-pull-9 columns">3, last</div>
-</div>
-<div class="row">
-  <div class="large-8 large-push-4 columns">8</div>
-  <div class="large-4 large-pull-8 columns">4, last</div>
-</div>
-<div class="row">
-  <div class="small-5 small-push-7 medium-7 medium-push-5 columns">7</div>
-  <div class="small-7 small-pull-5 medium-5 medium-pull-7 columns">5, last</div>
-</div>
-<div class="row">
-  <div class="medium-6 medium-push-6 columns">6</div>
-  <div class="medium-6 medium-pull-6 columns">6, last</div>
+  <code class="html">
+<div class="grid-x grid-padding-x small-up-2 medium-up-4 large-up-6">
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
 </div>
   </code>
 </pre>
-
-<div class="row display">
-  <div class="small-10 small-push-2 columns">10</div>
-  <div class="small-2 small-pull-10 columns">2, last</div>
+<div class="grid-x grid-padding-x small-up-2 medium-up-4 large-up-6 display">
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
 </div>
-<div class="row display">
-  <div class="large-9 large-push-3 columns">9</div>
-  <div class="large-3 large-pull-9 columns">3, last</div>
-</div>
-<div class="row display">
-  <div class="large-8 large-push-4 columns">8</div>
-  <div class="large-4 large-pull-8 columns">4, last</div>
-</div>
-<div class="row display">
-  <div class="small-5 small-push-7 medium-7 medium-push-5 columns">7</div>
-  <div class="small-7 small-pull-5 medium-5 medium-pull-7 columns">5, last</div>
-</div>
-<div class="row display">
-  <div class="medium-6 medium-push-6 columns">6</div>
-  <div class="medium-6 medium-pull-6 columns">6, last</div>
-</div>
-
-
-<p class="section-description">Block Grids</p>
-<p>Block grids are a shorthand way to create equally-sized columns. Add a class of the format <code>.[size]-up-[n]</code> to change the number of columns within the row. By default, the max number of columns you can use with block grid are 8. Adding the <code>.column-block</code> class to columns will apply a bottom margin equal to the width of gutters.</p>
-
-<pre>
-  <code>
-<div class="row small-up-2 medium-up-3 large-up-4">
-  <div class="column column-block">
-    <img src="http://placehold.it/600x600" class="thumbnail" alt="">
-  </div>
-  <div class="column column-block">
-    <img src="http://placehold.it/600x600" class="thumbnail" alt="">
-  </div>
-  <div class="column column-block">
-    <img src="http://placehold.it/600x600" class="thumbnail" alt="">
-  </div>
-  <div class="column column-block">
-    <img src="http://placehold.it/600x600" class="thumbnail" alt="">
-  </div>
-  <div class="column column-block">
-    <img src="http://placehold.it/600x600" class="thumbnail" alt="">
-  </div>
-  <div class="column column-block">
-    <img src="http://placehold.it/600x600" class="thumbnail" alt="">
-  </div>
-</div>
-  </code>
-</pre>
-
-<div class="row small-up-2 medium-up-3 large-up-4">
-  <div class="column column-block">
-    <img src="http://placehold.it/600x600" class="thumbnail" alt="">
-  </div>
-  <div class="column column-block">
-    <img src="http://placehold.it/600x600" class="thumbnail" alt="">
-  </div>
-  <div class="column column-block">
-    <img src="http://placehold.it/600x600" class="thumbnail" alt="">
-  </div>
-  <div class="column column-block">
-    <img src="http://placehold.it/600x600" class="thumbnail" alt="">
-  </div>
-  <div class="column column-block">
-    <img src="http://placehold.it/600x600" class="thumbnail" alt="">
-  </div>
-  <div class="column column-block">
-    <img src="http://placehold.it/600x600" class="thumbnail" alt="">
-  </div>
-</div>
-
