@@ -2,14 +2,13 @@ html, body {
   height: 100%;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
 
 main {
-  
   flex-grow: 1;  
   padding: $padding-xs 0;
     @include breakpoint(medium){
@@ -77,24 +76,24 @@ aside.cell {
   }
 }
 svg.colored-icon,
-i.colored-icon{
+i.colored-icon {
   color: $primary-color;
 }
 
-.background-light{
+.background-light {
   background-color: $e-gray;
   width: 100%;
 }
 
-.color-light{
+.color-light {
   color: $medium-gray;
 }
 
-.color-theme{
+.color-theme {
   color: $theme-color;
 }
 
-.color-primary{
+.color-primary {
   color: $primary-color;
 }
 

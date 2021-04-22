@@ -63,9 +63,14 @@ header {
   }
   
   &.u-header-left { // Header allineato a sinistra
-
+    
     .content {
       text-align: left;
+
+      @include breakpoint(large){      
+        text-align: center;
+      }
+
       > a {
         display: inline-flex;
         align-items: center;
@@ -77,6 +82,11 @@ header {
           display: inline-block;
           vertical-align: middle;
           margin-left: $margin-small;
+
+          @include breakpoint(large){      
+            text-align: left;
+          }
+
         }
       }
     }

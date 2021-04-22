@@ -38,12 +38,20 @@
     }
 }
 
-.u-lead-colored{
+.u-lead-colored {
     background-color: $theme-color;
     box-shadow: 0px 0px 10px 0px darken($theme-color, 20) inset;
     padding: $padding-small 0;
     color: #fff; 
     flex-grow:0;
+
+    //l'elemento successivo al lead colorato crea una piega
+    + .grid-container > .grid-x:first-child {
+        background-color: $white;
+        @include breakpoint(large){
+            margin-top: -50px;
+        }
+    }
     
     h1 {
         margin-bottom: 20px; 
@@ -83,14 +91,6 @@
         margin-bottom: $margin-xs;
         .progress-meter {
             background-color: darken($theme-color, 20);
-        }
-    }
-
-    //l'elemento successivo al lead colorato crea una piega
-    + .grid-x {
-        background-color: #fff;
-        @include breakpoint(large){
-            margin-top: -50px;
         }
     }
 }
