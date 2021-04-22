@@ -7,9 +7,9 @@
   </head>
 
   <body>
-    <main class="grid-container padded">
-      <div class="grid-x grid-margin-x">
-        <div class="large-3 columns show-for-large">
+    <main class="grid-container fluid">
+      <div class="grid-x">
+        <div class="large-2 cell show-for-large">
           <nav class="docs-toc-wrap sticky-container" id="docsToc" data-sticky-container>
               <div class="docs-toc sticky is-at-top is-stuck" data-sticky-on>
                   <a class="back" href="../">
@@ -19,11 +19,9 @@
           </nav>
         </div>    
 
-        <div class="large-9 columns medium-8 cell styleguide">
-          <section>
-            {{!-- Pages you create in the src/pages/styleguide are inserted here when the flattened page is created. --}}
-            {{> body }}
-          </section>
+        <div class="large-10 cell styleguide">
+          {{!-- Pages you create in the src/pages/styleguide are inserted here when the flattened page is created. --}}
+          {{> body }}
         </div>
       </div>
     </main>

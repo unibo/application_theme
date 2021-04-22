@@ -4,13 +4,12 @@
     margin-bottom: 1rem;
     padding-top: 1rem;
     font-size: 1rem;
-    max-width: 270px;
-  
     max-height: 100vh;
     padding-bottom: 100px;
     overflow-y: auto;
+
     &.is-stuck {
-      width: 100%;
+      width: auto;
     }
 
     .back {
@@ -20,7 +19,6 @@
             padding-right: 5px;
         }
     }
-
 
    .vertical.menu {
         border-left: 4px solid #1779ba;
@@ -39,7 +37,7 @@
     .menu > li > a {
       line-height: 1.5;
       padding: 0.45rem 1rem;
-      font-size: 0.85rem;
+      font-size: 1rem;
     }
   
     .is-active {
@@ -60,7 +58,6 @@
     margin-right: auto;
     > div {
       padding: 1rem;
-  //    border: 1px solid #cacaca;
       margin-bottom: 2rem;
     }
   }

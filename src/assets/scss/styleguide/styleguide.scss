@@ -1,37 +1,38 @@
 // Stile per la styleguide
 .styleguide {
 
-
-    code {
-        text-indent: -100px;
+    .docs-toc {
+        font-size: 1.2em;
     }
 
     section {
         margin-bottom: 2em;
         border-bottom: 1px solid #ddd;
         padding-bottom: 2em;
+        display: block;
         
         section {		
-        margin-bottom: 1em;
-        border-bottom: 1px solid #eee;
-        padding-bottom: 1em;
-        
-        &:last-of-type {		
-            margin-bottom: 0;
-            border-bottom: 0;
-            padding-bottom: 0;
-        }
+            margin-bottom: 1em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1em;
+            display: block;
+            
+            &:last-of-type {		
+                margin-bottom: 0;
+                border-bottom: 0;
+                padding-bottom: 0;
+            }
         }
         > h2,
-        > h3{
-        color: #3191d4;
-        font-weight: normal;
-        display: inline-block;
-        padding-top: 1em;
-        font-size: 1.8em;
+        > h3 {
+            color: #3191d4;
+            font-weight: normal;
+            display: inline-block;
+            padding-top: 1em;
+            font-size: 1.8em;
         }
         > p {
-        font-size: 1.2em;
+            font-size: 1.2em;
         }
     }
     
@@ -59,7 +60,7 @@
 
         code {
             width: 100%;
-            @include breakpoint(small only){
+            @include breakpoint(medium down){
                max-width: 92vw;
             }
         }
