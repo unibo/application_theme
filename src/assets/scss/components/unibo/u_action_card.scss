@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
     .card-tile {
         margin: 0 $margin-small;
         max-width: 300px;
@@ -16,7 +17,7 @@
         flex-direction: column;
         > i, 
         > svg {
-            margin-bottom: $margin-small;
+           margin: 0 auto 1rem;
         }
         h2{
             margin-bottom: $margin;
@@ -63,10 +64,10 @@
         }
     }
 
-    &.horizontal{
+    &.horizontal {
         display: block;
         position: relative;
-        .card-tile{
+        .card-tile {
             max-width: 100%;
             text-align: left;
             margin: 0;
@@ -129,6 +130,11 @@
                     margin: $margin-small;
                     float: right;
                 }
+            }
+
+            .margin-0 {
+                display: flex;
+                align-items: center;
             }
         }
     }
