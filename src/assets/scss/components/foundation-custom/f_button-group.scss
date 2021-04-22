@@ -1,0 +1,5 @@
+.button-group.expanded .button:first-child:nth-last-child(3), .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button {
+    display: inline-block;
+    width: calc(33.33333% - 1px);
+    margin-right: 1px;
+}
