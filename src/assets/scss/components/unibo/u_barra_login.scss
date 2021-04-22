@@ -171,7 +171,6 @@
           }
         }
         &.is-dropdown-submenu-parent {
-          
         
           &:hover {
             background-color: #fff;
@@ -227,7 +226,7 @@
       margin: 0;
     }
   }
-  .u-login-info{
+  .u-login-info {
     color: $base-font-color;
     margin: 0;
     border-bottom: 1px solid $medium-gray;
@@ -254,10 +253,6 @@
   }
 }
 
-.dropdown.menu > li.is-dropdown-submenu-parent .u-change-user {
-  background-color: #fff;
-  border-bottom: 1px solid $medium-gray;
-}
 
 @include breakpoint(small only){
   /* comportamento quando c'è pulsante apri-chiudi (le sottovoci devono essere width 100% e non avere il float) */
@@ -287,9 +282,9 @@
         }
       }
       /* quando c'è apri/chiudi responsive la lingua va allineata a sinistra */
-      .u-lang{
+      .u-lang {
         text-align: left;
-        a{
+        a {
           text-align: left;
         }
       }

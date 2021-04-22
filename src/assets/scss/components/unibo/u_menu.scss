@@ -196,9 +196,9 @@
 .menu {
   li {
     &.u-menu-tools {
-        background-color: #f4f4f4;
+        display: inline-block;
         border: 1px solid $medium-gray;
-        display: table;
+        background-color: #f4f4f4;
 
       a {
           color: #333333;

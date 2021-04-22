@@ -1,0 +1,17 @@
+.dropdown.menu {
+    > li.is-dropdown-submenu-parent {
+        .u-change-user {
+            background-color: #fff;
+            border-bottom: 1px solid $medium-gray;
+        }
+        &.is-active > a {
+            svg {
+                color: $dropdown-menu-item-color-active;
+            }
+        
+            &::after {
+                border-color: $dropdown-menu-item-color-active transparent transparent;
+            }
+        }
+    }
+  }
