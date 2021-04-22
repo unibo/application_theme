@@ -98,9 +98,16 @@ i.colored-icon {
 }
 
 //fix temporanea per select (il compilatore non ha autoprefix)
-select{
+select {
   -webkit-appearance: none;
   -moz-appearance:    none;
   appearance:         none;
 }
 
+.padding-top-big {
+  padding-top: $padding-big;
+}
+
+.margin-top-big {
+  padding-top: $margin-big;
+}

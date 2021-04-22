@@ -67,10 +67,6 @@ header {
     .content {
       text-align: left;
 
-      @include breakpoint(large){      
-        text-align: center;
-      }
-
       > a {
         display: inline-flex;
         align-items: center;
@@ -82,11 +78,17 @@ header {
           display: inline-block;
           vertical-align: middle;
           margin-left: $margin-small;
+        }
+      }
+    }
 
-          @include breakpoint(large){      
-            text-align: left;
-          }
-
+    &.large-hader-center {
+      @include breakpoint(large){
+        .content {
+          text-align: center;
+        }
+        .text {
+          text-align: left;
         }
       }
     }

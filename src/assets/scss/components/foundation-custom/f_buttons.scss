@@ -10,7 +10,7 @@
   .fa {
     margin-right: $margin-xs;
   }
-  .show-for-sr + .fa
+  .show-for-sr + .fa,
   .show-for-sr + svg {
     margin-right: 0;
   }
