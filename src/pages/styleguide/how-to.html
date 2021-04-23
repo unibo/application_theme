@@ -174,21 +174,21 @@ yarn build
 </section>
 
 <section>
-  <h3 id="layout">Approfondimento: Layouts</h3>
+  <h3 id="layout">Gestione dei Layouts</h3>
   <p> I layout attualmente creati sono due:
     <ul>
       <li>
         <p>
           <strong>default.html</strong>
         </p>
-        <p>Questo template si applica automaticamente a tutte le pagine create nella cartella <code>pages /</code>
+        <p>Questo layout si applica automaticamente a tutte le pagine create nella cartella <code>pages /</code>
         </p>
       </li>
       <li>
         <p>
           <strong>styleguide.html</strong>
         </p>
-        <p>Questo template si applica a tutte le pagine create nella cartella <code>styleguide /</code>. Per poter richiamare questo template è necessario aggiungere il codice
+        <p>Questo layout serve per le pagine che andremo a creare nella cartella <code>styleguide /</code>. Per poter usare questo template è necessario aggiungere il codice:
           <pre>
             <code class="html">
 ---
@@ -197,25 +197,63 @@ title: Nome della pagina che vogliamo creare
 ---
             </code>
           </pre>
-        
-        
+          all'inizio della nuova pagina della guida che creiamo.
         </p>
+        Con lo stesso metodo è possibile creare altri layout da associare a nuove tipologie di pagine, semplicemente creando un template nella cartella layouts
+        <code>
+nome-layout.html
+        </code>
+        e richiamandone il titolo in testa alla pagina con questo markdown:
+                  <pre>
+            <code class="html">
+---
+layout: nome-layout
+title: Nome della pagina che vogliamo creare
+---
+            </code>
+          </pre>
       </li>
     </ul>
   </p>
-
+  <p> Inoltre, mentre nel layout <strong>default.html </strong> il contenuto della pagina viene sostituito all'interno del tag body, nel layout <strong>styleguide.html </strong>
+  abbiamo due colonne preimpostate. Il markup che dovremo scrivere nelle pagine sarà solo quello relativo al contenuto della pagina stessa, in quanto la colonna di sinistra, 
+  con l'indice dei contenuti, viene generata automaticamente leggendo tutti gli <code>h3</code> con un qualsiasi <strong>id </strong> inseriti nel contenuto della pagina.
+  </p>
 </section>
 
 <section>
-  <h3 id="pages">Approfondimento: Pages</h3>
-</section>
+  <h3 id="pages">Creazione delle Pagine</h3>
+  <p>
+    Qualsiasi file <code>.html</code> venga creato all'interno della cartella <code>pages /</code> verrà compilato come una pagina.
+    In ogni pagina è necessario inserire solo il contenuto del tag <code>body</code>
+    che vogliamo creare, perché il markup restante è preimpostato nel layout di default.
+  </p>
+  <p>Le pagine nella cartella <code>styleguide /</code> devono avere come intestazione il markdown che indica il template da applicare
+    <pre>
+     <code class="html">
+---
+layout: styleguide
+title: Nome della pagina che vogliamo creare
+---
+    </code>
+  </pre>
+  e poi il markup che si vuole rappresentare.
 
+  </p>
+  <p>La pagina <code>index.html</code> va modificata solo quanto viene aggiunta una nuova pagina, inserendone il rispettivo link nel markup.
+  </p>
+</section>
 <section>
-  <h3 id="partials">Approfondimento:  Partials</h3>
+	  <h3 id="partials">Gestione dei Partials</h3>
+    <p>I partials sono degli snippet di codice <code>.html</code> da inglobare in qualsiasi pagina o layout del pacchetto. 
+  Per inglobare un Partials, il codice da usare è:
+    <code>
+&#123;&#123;&gt;  nome-del-partial&#125;&#125;
+</code>
+  </p>
+  <p> In questa cartella sono stati suddivisi per funzionalità, ma non è necessario inserire il percorso specifico nel richiamarli in una pagina, l'importante è utilizzare il nome corretto senza estensione.
+  </p>
+  <p> Inoltre con i partials Panini è possibile configurare azioni avanzate. Per approfondire: <a href="https://zurb.com/university/lessons/159" target="_blank">https://zurb.com/university/lessons/159</a>
+  </p>
 </section>
-
-<section>
-  <h3 id="template-list">Approfondimento: Template List</h3>
-</section>
-
 

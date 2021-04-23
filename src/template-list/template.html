@@ -8,7 +8,7 @@
   </head>
   <body>
 
-  <header class="u-header-left small-left">
+  <header class="u-header small-left">
     <div class="grid-x grid-padding-x">
       <div class="cell content medium-12">
         <a href="/">
@@ -22,19 +22,10 @@
     </div>
   </header>
 
-    <main class="grid-container padded">
-      <div class="grid-x grid-margin-x" data-sticky-container>
-        <div class="large-3 medium-4 cell">
-          <div class="sticky" data-sticky data-top-anchor="sg-header:bottom">
-            <ul class="vertical menu sg-side-menu" data-smooth-scroll data-animation-easing="swing">
-              {{#each pages}}
-                <li><a href="#{{ anchor }}">{{ title }}</a></li>
-              {{/each}}
-            </ul>
-          </div>
-        </div>
+    <main class="grid-container">
+      <div class="grid-x grid-padding-x" data-sticky-container>
 
-        <div class="large-9 medium-8 cell">
+        <div class="large-12 medium-12 cell">
           {{#each pages}}
             <section class="ss-section" id="{{ anchor }}">
               {{ body }}
@@ -48,3 +39,6 @@
     <script src="assets/js/app.js"></script>
   </body>
 </html>
+
+
+
