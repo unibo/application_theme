@@ -5,87 +5,217 @@ title: Unibo Application Theme How To
 
 <section>
   <h3 id="struttura">La struttura dei contenuti</h3>
-  <h4> CARTELLA SRC
-  </h4>
-  <p> Nella cartella <code>src</code> si trovano i contenuti da elaborare per il riutilizzo del pacchetto <strong>Unibo Application Theme.</strong></p>
-  <p> Le cartelle sono divise in:
+  <pre>
+  <code class="html">
+├─ assets         Contiene tutti i file statici, gli scess ed i file javascript.
+   ├─ img         * Immagini di base utilizzate nel tema.
+   ├─ js          * Tutti i javascript che non vengono inglobati tramite webpack ed il file app.js di configurazione.
+   ├─ scss        * File scss, divisi in cartelle per funzionalità, da modificare per editare lo stile del tema.
+   └─ webfonts    * Fonts usati nel tema.
+├─ data       
+└─ layout         Contiene i file che possono essere usati come base per le pagine.
+   ├─ default     * Template applicato di default a tutte le pagine che vengono create nella cartella pages.
+   ├─ styleguide  * Template applicato alle pagine usate come styleguide.
+└─ pages          Contiene tutte le pagine del tema e quelle della styleguide.
+   ├─ index       * Pagina di apertura del tema, da aggiornare manualmente, per visualizzare la lista contenuti del tema.
+   ├─ styleguide  * Tutte le pagine della Styleguide.
+└─ partials       Contiene tutti gli snippet html da includere nelle pagine.
+└─ template-list  Contiene il layout di base per la gestione della lista delle pagine del tema.
+    </code>
+  </pre>
+</section>
+
+<section>
+		<p>La cartella <code>src / </code> contiene tutti i file sorgente da editare e che produrranno, 
+      una volta compilato il bundle, una cartella <code>dist /</code> con il tema pronto per la produzione.</p>
+
+    <p>Per avviare la compilazione del tema, dopo l'installazione, basta eseguire il comando:
+    <pre>
+      <code>
+yarn start
+      </code>
+    </pre>
+    </p>
+
+    <p>
+      Durante lo sviluppo, <strong>Gulp</strong> aggiorna continuamente la cartella <code>dist /</code>
+      con nuove versioni dei file, visibili all'indirizzo:
+      <strong><a href="http://localhost:8000/" target="_blank">http://localhost:8000/</a></strong></p>
+      <p>Per compilare una build di produzione, basta eseguire il comando:
+      <pre>
+        <code>
+yarn build
+        </code>
+      </pre>
+		</p>
+</section>
+
+<section>
+  <h3 id="caratteristiche">Le caratteristiche del Tema</h3>
+<p>Cosa fa questo pacchetto tema:</p>
+  <ul>
+    <li>
+      <p>
+        <strong>Copia delle risorse</strong>
+      </p>
+      Gulp copierà qualsiasi cosa sia contenuta nella cartella <code>src/assets</code> così com'è nella cartella <code>assets</code> del progetto finale. 
+      I file Sass, quelli JavaScript e le immagini non fanno parte di questo processo di copia, in quanto soggetti alla compilazione.
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>
+        <strong>Compilazione delle Pagine</strong>
+      </p>
+      <p>La cartella <code>src/</code> contiene tre cartelle usate per la generazione delle pagine HTML:
+        <code>pages/</code>, 
+        <code>layouts/</code>, e
+        <code>partials/</code>. Il compilatore chiamato <strong>Panini</strong>
+        viene utilizzato per elaborare le varie pagine del progetto, inserendole in un modello di default e inserendo eventuali snippet di codice HTML. 
+        Tutto ciò viene reso possibile dal linguaggio di templating 
+       <strong> <a href="https://handlebarsjs.com/">Handlebars</a></strong>.
+        <br />Per approfondire, Panini ha una
+        <strong>
+          <a href="https://get.foundation/sites/docs/panini.html">sua pagina dedicata</a>.
+        </strong>
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>Compilazione dei file Sass</strong>
+      </p>
+      <p>I file Scss vengono compilati in CSS mediante <a href="https://sass-lang.com/libsass">Libsass</a> (via 
+        <a href="https://github.com/sass/node-sass">node-sass</a>). Il file 
+        <code>src/assets/scss/app.scss</code> importa tutti i moduli node installati, come ad esempio Foundation and Motion UI. Tutti i file Sass aggiunti dovranno essere
+        richiamati in questo file, per essere compilati.  
+      </p>
+      
+      <p>Il CSS prodotto è un normale CSS. Viene anche creata una mappa sorgente, che può essere letta dagli strumenti per sviluppatori (come ad esempio Chrome Web Inspector).</p>
+
+      <p>Quando si compila per la produzione, il CSS viene anche compresso con <a href="https://github.com/jakubpawlowicz/clean-css/issues">clean-css</a>,
+       e minimizzato con  <a href="https://github.com/giakki/uncss">UnCSS</a>. UnCSS esegue la scansione dell'HTML delle pagine 
+      e rimuove le classi non utilizzate.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Compilazione del JavaScript</strong>
+      </p>
+      <p>I file JavaScript vengono compilati tramite <a href="https://babeljs.io">Babel</a> (con il <a href="https://babeljs.io/docs/plugins/#es2015">plugin es2015</a>).</p>
+          <p>Il file principale è in 
+        <code>src/assets/js/app.js</code>, e importa Foundation, jQuery, whatInput, Slick Slider, Highlight, lo script custom Toc e FontAwesome.
+        Qualsiasi altro javascript si voglia includere nel pacchetto va richiamato in questo file, dopo aver inserito il file nella cartella js, oppure installato il modulo con node o yarn.
+      </p>
+      <p>Nella compilazione viene creata una mappa che esegue la mappatura ai file originali. Per impostazione predefinita, il file <code>app.js</code> in bundle non è compresso. 
+        Durante la creazione per la produzione, il file viene eseguito tramite <strong>UglifyJS</strong> per la compressione.
+        L'intero processo di raggruppamento è gestito da <strong>Webpack</strong>, che gestisce tutte le risorse e le dipendenze e le compila in un unico file.
+      </p>
+      <p>The whole bundling process is handled by 
+        <a href="https://webpack.js.org">webpack</a>: it manages all assets and dependencies for you and compiles them into one single file. If you're unfamiliar with imports or module bundling, check out:
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>Compressione delle immagini</strong>
+      </p>
+      <p>Di default tutte le immagini vengono copiate così come sono dalla cartella <code>assets/img</code> nella cartella <code>dist</code>. Durante la compilazione per la produzione, 
+      le immagini vengono eseguite tramite <a href="https://github.com/sindresorhus/gulp-imagemin">gulp-imagemin</a> per la compressione. 
+      Il plugin supporta file JPEG, PNG, SVG e GIF.
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>BrowserSync</strong>
+      </p>
+     <p>Il pacchetto tema crea un
+        <a href="https://www.browsersync.io/">BrowserSync</a> server, che si apre su 
+        <code>http://localhost:8000</code>. Da questo URL è possibile vedere tutte le pagine compilate. Mentre il server è in esecuzione, 
+        ogni volta che salvi un file, tutte le pagine aperte si aggiorneranno automaticamente, permettendoti di vedere le modifiche in tempo reale mentre lavori.
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>Listing delle pagine disponsibili e Style Guide</strong>
+      </p>
+      <p>Nella cartella 
+        <code>src/template-list</code> ci sono due file, che servono alla creazione della pagina di atterraggio del progetto, contenente tutte le pagine visualizzabili. 
+      </p>
+    </li>
+  </ul>
+</section>
+
+
+
+<section>
+  <h3 id="scss"> Approfondimento: SCSS
+  </h3>
+  <div>
+    <p> La cartella <code>scss /</code> è la cartella dove si trovano tutti i file scss da elaborare per modificare lo stile del tema.
+      Troviamo la cartella <code>components /</code>, che ospita i file scss relativi ai componenti, suddivisi per funzionalità, come ad esempio slick-slider oppure font-awesome, o ancora per modello di base, ovvero se sono stati realizzati ad hoc per Unibo
+      oppure customizzati, sovrascrivendo i file di Zurb Foundation.
+    </p>
+    <p>La cartella <code>global /</code>, invece, contiene tutti i file scss che sono ritenuti di utilità generale.</p>
+    <p>Nella cartella <code>styleguide /</code>, troviamo gli stili che vengono applicati nei template della guida. Questi stili vengono applicati di default nelle pagine della guida, ma possiamo usarne 
+    le caratteristiche anche nelle altre pagine del nostro tema, assegnando la classe <code>styleguide</code> al contenuto al quale vogliamo applicar lo stile della guida.
+    </p>
+    <p> Infine abbiamo il file <code>_settings.scss</code> nel quale poter modificare tutte le impostazioni generali del nostro css, dalle variabili colore, ai font, 
+    al gutter delle griglie e ultimo, ma non meno importante, il file <code>app.scss</code>. 
+    <br />Quest'ultimo è fondamentale perché è il file che viene letto per la compilazione del css compresso. Ogni qual volta creiamo un nuovo componente dobbiamo includerlo in questo 
+    file, includendone il percorso corretto. 
+    </p>
+    <p>Se includiamo nel nostro tema un nuovo pacchetto, installandolo tramite <strong>npm, yarn o webpack</strong>, dobbiamo includere il relativo modulo nel file <code>app.scss</code>
+    in questo modo:
+      <pre>
+        <code class="html">
+@import 'nome-del-modulo';
+        </code>
+      </pre>
+    </p>
+  </div>
+</section>
+
+<section>
+  <h3 id="layout">Approfondimento: Layouts</h3>
+  <p> I layout attualmente creati sono due:
     <ul>
       <li>
-        <strong>assets</strong>: che a sua volta contiene:
-        <ul>
-          <li>
-            <strong>img</strong>: cartella dove posizionare tutte le immagini statiche
-          </li>
-          <li>
-            <strong>js</strong>: cartella dei javascript che verranno poi utilizzati dal template ed il file che li incorpora tutti, app.js
-          </li>
-          <li>
-            <strong>scss</strong>: cartella con tutti i file scss. In essa i file sono stati suddivisi per macro-funzionalità. 
-            In seguito vediamo il suo funzionamento nel dettaglio
-          </li>
-          <li>
-            <strong>webfonts</strong>: troviamo tutti i file che riguardano i font, suddivisi nelle rispettive cartelle
-          </li>
-        </ul>
+        <p>
+          <strong>default.html</strong>
+        </p>
+        <p>Questo template si applica automaticamente a tutte le pagine create nella cartella <code>pages /</code>
+        </p>
       </li>
-
       <li>
-        <strong>layouts</strong>: in questa cartella troviamo tutti i template di base che vengono richiamati dalle pagine. Nell'attuale pacchetto troviamo il file default, che viene utilizzato 
-        come base per tutte le pagine. Il file styleguide, invece, viene utilizzato per la creazione delle pagine che si trovano all'interno della cartella styleguide e che quindi servono
-        alla creazione delle linee guida per lo stile dei singoli elementi del pacchetto.
-      </li>
-
-      <li>
-        <strong>pages</strong>: all'interno di questa cartella ci sono tutte le pagine create per questo tema e una cartella <strong>styleguide</strong>
-        contenente le pagine che invece sono da guida per la stilizzazione dei singoli elementi.
-      </li>
-
-      <li>
-        <strong>partials</strong>: la cartella contiene tutti gli snippet di codice da richiamare nelle pages. 
-        All'interno della cartella troviamo ulteriori cartelle, come ad esempio foundation, che racchiude tutti gli snippet di foundation, form, che contiene tutti gli snippet relativi alle form,
-        responsive table, che contiene tutti gli snippet relativi alle tabelle responsive.
-      </li>
-
-      <li>
-        <strong>template-list</strong>: in questa cartella troviamo il file template.html che serve a scrivere la struttura della pagina iniziale, dove visualizzare tutti i template disponibili e il file md che viene inglobato e letto da template.html.
+        <p>
+          <strong>styleguide.html</strong>
+        </p>
+        <p>Questo template si applica a tutte le pagine create nella cartella <code>styleguide /</code>. Per poter richiamare questo template è necessario aggiungere il codice
+          <pre>
+            <code class="html">
+---
+layout: styleguide
+title: Nome della pagina che vogliamo creare
+---
+            </code>
+          </pre>
+        
+        
+        </p>
       </li>
     </ul>
   </p>
-</section>
-<h2 id="assets">Assets</h2>
-<section>
-  <h3 id="scss"> SCSS
-  </h3>
+
 </section>
 
 <section>
-  <h3 id="js-folder"> Javascript
-  </h3>
+  <h3 id="pages">Approfondimento: Pages</h3>
 </section>
 
 <section>
-  <h3 id="fonts"> Webfont
-  </h3>
+  <h3 id="partials">Approfondimento:  Partials</h3>
 </section>
 
 <section>
-  <h3 id="images"> Immagini
-  </h3>
+  <h3 id="template-list">Approfondimento: Template List</h3>
 </section>
 
-<section>
-  <h3 id="layout">Layout</h3>
-</section>
-
-<section>
-  <h3 id="pages">Pages</h3>
-</section>
-
-<section>
-  <h3 id="partials">Partials</h3>
-</section>
-
-<section>
-  <h3 id="template-list">Template List</h3>
-</section>
 
