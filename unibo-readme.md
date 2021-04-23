@@ -25,7 +25,7 @@ To use this template, your computer needs:
 To manually set up the template, first download it with Git:
 
 ```bash
-git clone https://github.com/zurb/foundation-zurb-template projectname
+git clone projectname
 ```
 
 Then open the folder in your command line, and install the needed dependencies:
