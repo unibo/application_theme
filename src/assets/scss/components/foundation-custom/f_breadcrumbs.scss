@@ -2,11 +2,11 @@
 
 //cambio lo slash
 .breadcrumbs {
-    li{
+    li {
         color: $body-font-color;
         &:not(:last-child)::after {
-            content: "\f105";
-            font-family: FontAwesome;
+            content: "\f054";
+            font-family: "Font Awesome 5 Free Solid";
             font-size: 13px;
             line-height: 1;
             color: $gray;

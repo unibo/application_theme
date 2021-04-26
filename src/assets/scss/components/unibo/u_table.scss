@@ -4,7 +4,7 @@ table {
       &:after {
         content: '\f0dc';
         position: relative;
-        font-family: FontAwesome;
+        font-family: "Font Awesome 5 Free Solid";
         margin-left: $margin-xs;
       }
       &ed-desc,
@@ -16,7 +16,7 @@ table {
         &:after {
           content: '\f0de';
           position: relative;
-          font-family: FontAwesome;
+          font-family: "Font Awesome 5 Free Solid";
           margin-left: $margin-xs;
           top: 3px;
         }
@@ -30,7 +30,7 @@ table {
         &:after {
           content: '\f0dd';
           position: relative;
-          font-family: FontAwesome;
+          font-family: "Font Awesome 5 Free Solid";
           margin-left: $margin-xs;
           top: -3px;
         }
