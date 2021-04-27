@@ -6,10 +6,11 @@
         color: $body-font-color;
         &:not(:last-child)::after {
             content: "\f054";
-            font-family: "Font Awesome 5 Free Solid";
+            font-family: "Font Awesome 5 Free";
             font-size: 13px;
             line-height: 1;
             color: $gray;
+            font-weight: 800;
         }
     }
 }

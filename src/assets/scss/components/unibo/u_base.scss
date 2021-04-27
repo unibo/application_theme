@@ -111,3 +111,9 @@ select {
 .margin-top-big {
   padding-top: $margin-big;
 }
+
+//fix per slick font awesome aggiornamento icone necessita di font-weight
+
+.slick-prev, .slick-next{
+  font-weight: 800;
+}
