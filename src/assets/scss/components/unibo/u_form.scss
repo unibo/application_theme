@@ -1,0 +1,111 @@
+form {
+    .required {
+        &:after {
+            content: '*';
+            position: absolute;
+            padding-left: 3px;
+            color: red;
+            font-weight: bold;
+            vertical-align: top;
+        }
+    }
+}
+
+// grid forms
+.u-grid-form {
+  margin: $margin-xs 0;
+  
+  // titolo del fieldset
+  .title-fieldset {
+    border-bottom: 1px solid $e-gray;
+    padding-bottom: $padding-xs;
+  }
+
+  // spaziature maggiori tra row
+  .grid-x {
+    margin-bottom: $margin * 0.7;
+    
+    @include breakpoint(medium){
+      margin-bottom: $margin-small;
+    }
+    .grid-x {
+      margin-bottom: 0;
+    }
+  }
+
+  // griglia innestata: gruppi di radio e check
+  fieldset > .grid-x {
+    display: flex;
+    flex-wrap: wrap;
+    
+    &:before,
+    &:after {
+      display: none;
+    }
+    .cell {
+      display: flex;
+      margin-bottom: $margin-xs;  
+      
+      input {
+        margin-top: 4px;
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  // gruppi di radio e check inline
+  fieldset {
+    > span {
+      display: inline-block;
+      padding: ($padding-xs/2) 0;
+      
+      > [type="radio"],
+      > [type="checkbox"] {
+        display: inline-block;
+      }
+      > label {
+        display: inline-block;
+        /*width: calc(100% - 5rem);*/
+        vertical-align: top;
+        line-height: 1.4;
+      }
+    }
+    > div {
+      padding: ($padding-xs/2) 0;
+      > [type="radio"],
+      > [type="checkbox"] {
+        display: inline-block;
+      }
+      > label {
+        display: inline-block;
+        width: calc(100% - 5rem);
+        vertical-align: top;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  // diminuito margine di default perchè il margine è sulle colonne
+  [type="file"], 
+  [type="checkbox"], 
+  [type="radio"] {
+    margin-bottom: $margin-xs;
+  }
+
+  // allineamento forzato a sinistra in mobile
+  .lead,
+  .subheader {
+    margin-bottom: 0.3rem;
+
+    &.text-right{
+      text-align: left;
+
+    }
+    @include breakpoint(medium){
+      &.text-right {
+        text-align: right;
+      }        
+    }
+  }
+}

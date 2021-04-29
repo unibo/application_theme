@@ -1,0 +1,45 @@
+<form data-abide>
+  <div data-abide-error role="alert" class="alert callout" style="display: block;">
+    <p>There are some errors in your form.</p>
+  </div>
+  
+  <div class="grid-x grid-padding-x">
+    <div class="medium-3 cell">
+      <label class="text-right lead is-invalid-label required" for="nest_el_text2">Text con info</label>
+      <p class="text-right subheader">L'aiuto contestuale (qualora la label non fosse sufficiente)</p>
+    </div>
+    <div class="medium-4 end cell">
+      <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+      <input id="nest_el_text2" class="is-invalid-input" aria-invalid required type="text" placeholder="Input placeholder">
+      <p class="help-text">
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+        <strong>Attenzione: </strong>Avviso per la compilazione
+      </p>
+      <span class="form-error is-visible" id="uuid">Questo campo è obbligatorio.</span>
+      
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x">
+    <div class="medium-3 cell">
+      <label class="text-right lead is-invalid-label required">Radio</label>
+    </div>
+    <div class="medium-9 cell is-invalid-input">
+      <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+     
+      <fieldset>
+        <div class="grid-x grid-padding-x">
+          <div class="medium-6 cells">
+            <input type="radio" required name="nest_radio1" value="Red" id="nest_radio1a">
+            <label for="nest_radio1a">Proactively iterate accurate</label>
+          </div>
+          <div class="medium-6 cells end">
+            <input type="radio" required name="nest_radio1" value="Blue" id="nest_radio2a">
+            <label for="nest_radio2a">Alignments after bricks-and-clicks channels</label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+
+</form>

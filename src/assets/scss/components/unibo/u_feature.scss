@@ -1,0 +1,66 @@
+@mixin u-feature{
+    margin-bottom: $margin;
+    h2 {
+        @include very-large-fancy;
+    }
+    .grid-x {
+        padding: 0 $padding-small;
+
+        .cell {
+            margin-bottom: $margin-small;
+        }
+
+        @include breakpoint(large){
+            padding: $padding-small $padding;
+            .cell {
+                margin-bottom: 0;
+            }
+        }
+    }
+    i, svg {
+        background-color: $base-font-color;
+        border-radius: 50%;
+        color: #fff;
+        padding: $padding-small 0;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+    }
+    .icon-left {
+        display: flex;
+        align-items: center;
+        margin-bottom: $margin/4;
+        i, 
+        svg {
+            margin-right: $margin-small;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .icon-center{
+        text-align: center;
+        margin-bottom: $margin/4;
+        i, 
+        svg {
+            margin-bottom: $margin/4;
+            width: 40px;
+            height: 40px;
+        }
+        + p {
+            text-align: center;
+        }
+    }
+
+}
+
+.u-feature {
+    @include u-feature;
+}
+
+.u-feature-primary {
+    @include u-feature;
+    i, 
+    svg {
+        background-color: $primary-color;
+    }
+}

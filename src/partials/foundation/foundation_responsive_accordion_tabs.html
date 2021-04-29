@@ -1,0 +1,83 @@
+<p class="section-description">Basics</p>
+<p>Either the Accordion Markup or the Tabs Markup can be used to responsively switch between the two components at different breakpoints.</p>
+<p>The Accordion should have an id specified, but the plugin will automatically generate one if the id is omitted.</p>
+<p>Accordion content should also have an ID, or the # of the href should be specified, otherwise a random id will be generated</p>
+
+<p>Once you put it all together, here's what you get!<br/>
+Scale your browser down to see the toggle happen.<br/>
+I am an Accordion on small and large but I am Tabs on medium</p>
+
+<pre>
+  <code>
+<ul class="accordion" data-responsive-accordion-tabs="tabs medium-accordion large-tabs">
+  <li class="accordion-item is-active" data-accordion-item>
+    <a href="#" class="accordion-title">Accordion 1</a>
+    <div class="accordion-content" data-tab-content>
+      I would start in the open state, due to using the `is-active` state class.
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title">Accordion 2</a>
+    <div class="accordion-content" data-tab-content>
+      Content of the second Accordion.
+    </div>
+  </li>
+</ul>
+  </code>
+</pre>
+
+<ul class="accordion" data-responsive-accordion-tabs="accordion medium-tabs large-accordion">
+  <li class="accordion-item is-active" data-accordion-item>
+    <a href="#" class="accordion-title">Accordion 1</a>
+    <div class="accordion-content" data-tab-content>
+      I would start in the open state, due to using the `is-active` state class.
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title">Accordion 2</a>
+    <div class="accordion-content" data-tab-content>
+      Content of the second Accordion.
+    </div>
+  </li>
+</ul>
+
+<p>Tabs HTML Markup</p>
+<p>Scale your browser down to see the toggle happen.<br/>
+I am Tabs on small and large and Accordion on medium</p>
+
+<pre>
+  <code>
+<ul class="tabs" data-deep-link="true" id="tabs-markup" data-responsive-accordion-tabs="accordion medium-accordion large-tabs">
+  <li class="tabs-title is-active"><a href="#panel1_tab_acc" aria-selected="true">Tab 1</a></li>
+  <li class="tabs-title"><a href="#panel2_tab_acc">Tab 2</a></li>
+  <li class="tabs-title"><a href="#panel3_tab_acc">Tab 3</a></li>
+  <li class="tabs-title"><a href="#panel4_tab_acc">Tab 4</a></li>
+</ul>
+
+  </code>
+</pre>
+
+<ul class="tabs" data-deep-link="true" id="tabs-markup" data-responsive-accordion-tabs="accordion medium-accordion large-tabs">
+  <li class="tabs-title is-active"><a href="#panel1_tab_acc" aria-selected="true">Tab 1</a></li>
+  <li class="tabs-title"><a href="#panel2_tab_acc">Tab 2</a></li>
+  <li class="tabs-title"><a href="#panel3_tab_acc">Tab 3</a></li>
+  <li class="tabs-title"><a href="#panel4_tab_acc">Tab 4</a></li>
+</ul>
+
+<div class="tabs-content" data-tabs-content="tabs-markup">
+  <div class="tabs-panel is-active" id="panel1_tab_acc">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  <div class="tabs-panel" id="panel2_tab_acc">
+    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+  </div>
+  <div class="tabs-panel" id="panel3_tab_acc">
+    <img class="thumbnail" src="../snippets/foundation/assets/img/generic/rectangle-3.jpg">
+  </div>
+  <div class="tabs-panel" id="panel4_tab_acc">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+</div>
+
+<p>The responsive behavior can be set through the data-responsive-accordion-tabs option.
+tabs|accordion , medium-tabs|accordion , large-tabs|accordion sets the behavior</p>

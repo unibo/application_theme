@@ -1,0 +1,55 @@
+<title>Layout ad una colonna</title>
+<form method="post" action="/tol/mobile/" id="mainForm" class="u-content-wrapper">
+    
+  {{> u_barra_login}}
+  {{> u_header}}
+  <main>
+    <div class="grid-x grid-padding-x">
+      <div class="medium-6 cell">
+        {{> u_card_option}}
+      </div>
+      <div class="medium-6 cell">
+        {{> u_card_option}}
+      </div>
+    </div>
+      
+    {{> u_highlight_text}}
+  </main>
+  {{> footer}}   
+</form>
+
+<div class="grid-container styleguide"> 
+  <div class="grid-x">
+    <div class="large-12 cell">
+      <h2 style="margin-top: 2em;">Istruzioni per l'implementazione di questo template</h2>
+      <ul>
+        <li>
+          <p>La classe "u-content-wrapper" può essere associata a un <kbd>div</kbd> o un altro elemento, ad esempio <kbd>form</kbd>.
+            L'importante è che sia il primo elemento dopo il <kbd>body</kbd> e che contenga tutta la pagina.
+          </p>
+        </li>
+        <li>
+          <p>Il <kbd>main</kbd> ha sempre una spaziatura superiore e inferiore (padding-top e padding-bottom).</p>
+        </li>
+      </ul>
+  <pre>
+    <code class="html">
+        <form class="u-content-wrapper">
+          <div class="grid-x expanded u-barra-login"> ... </div>
+          <header> ... </header>
+          <main>
+            <div class="grid-x">
+              <div class="large-12 cell">
+                  ...
+              </div>
+            </div>
+          </main>
+          <div class="u-highlight-text"> ... </div>
+          <footer> ... </footer>
+        </form>
+    </code>
+  </pre>
+    </div>
+  </div>
+</div>
+{{> end_of_body}}

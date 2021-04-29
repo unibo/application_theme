@@ -1,0 +1,16 @@
+li.u-lang{
+    > a{
+        text-align: center;
+        span{
+            display: inline-block;
+            width: 30px;
+        }
+        i, 
+        svg {
+            margin-right: 0;
+        }
+    }
+    ul{
+        text-align: center;
+    }
+}

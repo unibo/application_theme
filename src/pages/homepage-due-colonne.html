@@ -1,0 +1,231 @@
+<title>Homepage a due colonne</title>  
+<div class="u-content-wrapper">
+  {{> u_barra_login_impersonamento}}
+
+  {{> u_header_left}}
+  <!-- breadcrumbs -->               
+
+  {{> u_breadcrumbs}}
+
+  <div class="grid-x">
+    <nav class="large-2 cell nopadding">
+      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="large">
+        <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+        <a class="title-bar-title" data-toggle="example-menu">Menu</a>
+      </div>
+
+      <div id="example-menu">
+        <ul class="menu vertical u-menu u-menu-main">
+          <li>
+            <a href="">
+              <i class="fa fa-home"></i>
+              <span>Home</span>
+            </a>
+          </li>
+        
+          <li class="selected">
+            <a href="">
+              <i class="fa fa-user"></i>
+              <span>Elenco Utenze</span>
+            </a>
+          </li>
+        
+          <li>
+            <a href="">
+              <i class="fas fa-phone-alt"></i>
+              <span>Elenco Apparati</span>
+            </a>
+          </li>
+        
+          <li>
+            <a href="">
+              <i class="far fa-clock"></i>
+              <span>Storico Richieste</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+      <div class="large-10 cell nopadding">
+        <main class="nopadding">
+          <div class="u-jumbo-lead height-200 margin-bottom-1">
+              <picture>
+                  <source media="(min-width: 1024px)" srcset="https://placeimg.com/1200/200/people">
+                  <source media="(min-width: 769px)" srcset="https://placeimg.com/1024/170/people">
+                  <source srcset="https://placeimg.com/550/91/people">
+          
+                  <!-- fallback -->
+                  <img src="https://placeimg.com/1024/170/people" alt="">
+          
+              </picture>
+          
+              <div class="grid-x text-wrap">
+                  <div class="large-8 cell">
+                      <h1>
+                          <span class="highlighted">Anno accademico 2016/2017</span>
+                      </h1>
+                  </div>
+              </div>
+          </div>
+          <div class="u-feature">    
+            <div class="grid-x grid-padding-x">
+              <div class="large-12 cell">                   
+              <h2>Guida alla consultazione dei risultati</h2>
+              <p>Per ciascun Corso di Studio sono riportate le percentuali di risposta a tutte le domande a risposta chiusa del questionario.</p>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <div class="large-6 cell">
+                  <div class="icon-left">
+                    <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                    <h3>Anno di iscrizione</h3>
+                  </div>
+                  <p>Sono riportate le percentuali di risposta relative all’anno di iscrizione, sulla base di quanto indicato dallo studente nel questionario</p>
+                </div>
+                <div class="large-6 cell">
+                  <div class="icon-left">
+                    <i class="far fa-chart-bar" aria-hidden="true"></i>
+                    <h3>% di lezioni frequentate (in media)</h3>
+                  </div>
+                  <p>Dato medio relativo alla frequenza in aula sulla base delle risposte alla seguente domanda del questionario: "Quanta parte delle lezioni finora svolte di questo insegnamento hai, in percentuale, frequentato?"</p> 
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+              <div class="large-6 cell">
+                <div class="icon-left">
+                  <i class="far fa-file-alt" aria-hidden="true"></i>
+                  <h3>Numero di questionari compilati</h3>
+                </div>
+                  <p>Per ciascun Corso di Studio è riportato il numero di questionari compilati. I questionari sono assegnati al Corso di Studio sulla base di quanto indicato dallo studente. La scheda prevede un apposito spazio in cui gli studenti devono inserire un codice identificativo del proprio Corso di Studio di iscrizione. Nel caso il rispondente sia uno studente in mobilità internazionale in entrata, le risposte del questionario non sono state attribuite a un Corso di Studio, ma considerate solo per ulteriori aggregazioni a livello di Scuola e di Ateneo.  </p>
+              </div>
+              <div class="large-6 cell">
+                <div class="icon-left">
+                    <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                    <h3>Modalità bilanciata</h3>
+                </div>
+                <p>
+                    Le ulteriori domande prevedono la possibilità di rispondere secondo una scala a quattro modalità bilanciate (Decisamente no, Più no che sì, Più sì che no, Decisamente sì). Si considerano giudizi positivi le risposte “Più si che no” e “Decisamente sì”.<br>
+                    Per le due domande che prevedono la modalità “non presenti” vengono mostrate le percentuali di risposta a quest’ultima modalità e le conseguenti percentuali di giudizi positivi sulle rimanenti risposte valide.
+                </p>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+              <div class="large-12 cell">
+                <div class="icon-left">
+                    <i class="fa fa-lg fa-question" aria-hidden="true"></i>
+                    <h3>Legenda aggregazioni</h3>
+                </div>
+                <p>Per ciascuna domanda, per facilitare un confronto, sono pubblicate le percentuali di giudizi positivi calcolate secondo diverse aggregazioni.</p>
+                
+                <p><strong>Totale:</strong> giudizi positivi sul totale dei questionari attribuiti al Corso di Studio</p>
+                <p><strong>I Anno:</strong> giudizi positivi espressi dagli studenti che indicano l’iscrizione al primo anno di corso</p>
+                <p><strong>Altri anni:</strong> giudizi positivi espressi dagli studenti che indicano l’iscrizione a anni successivi al primo.</p>
+                <p><strong>Ateneo:</strong> giudizi positivi sul totale dei questionari raccolti in Ateneo. </p>
+              </div>
+            </div>
+          </div>
+          
+          {{> u_callout_light}}
+          <div class="grid-x grid-padding-x">
+            <div class="large-4 cell">
+              <div class="u-description-text">                       
+                <h2>Il questionario</h2>
+                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+              </div>
+            </div>
+            <div class="large-4 cell">
+                <div class="u-description-text">                       
+                    <h2>Qualità dei corsi</h2>
+                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                  </div>
+            </div>
+            <div class="large-4 cell">
+                <div class="u-description-text">                       
+                    <h2>Elaborazione dei dati</h2>
+                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                  </div>
+            </div>
+          </div>        
+          
+          <div class="grid-container fluid background-light">
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 cell">
+                    <h2 class="text-center margin-1 very-large-fancy">Accedi ai risultati degli anni accademici precedenti</h2>
+                </div>
+            </div>
+            <div class="grid-x padding-bottom-1">
+              <div class="large-12 cell">
+                <div class="multiple-items">
+                  <div class="u-buttoncard">
+                    <button>
+                      <i class="far fa-2x fa-calendar-alt" aria-hidden="true"></i>
+                      
+                      <h3>Anno 2012/2013</h3>
+                      <p>Consulta le opinioni degli studenti per l'anno 2012/2013</p>
+                    </button>
+                    </div>
+                  <div class="u-buttoncard">
+                    <button>
+                        <i class="far fa-2x fa-calendar-alt" aria-hidden="true"></i>
+                      <h3>Anno 2013/2014</h3>
+                      <p>Consulta le opinioni degli studenti per l'anno 2013/2014</p>
+                    </button>
+                  </div>
+                  <div class="u-buttoncard">
+                    <button>
+                      <i class="far fa-2x fa-calendar-alt" aria-hidden="true"></i>
+                      <h3>Anno 2014/2015</h3>
+                      <p>Consulta le opinioni degli studenti per l'anno 2014/2015</p>
+                  </button>
+                  </div>
+                  <div class="u-buttoncard">
+                    <button>
+                      <i class="far fa-2x fa-calendar-alt" aria-hidden="true"></i>
+                      <h3>Anno 2015/2016</h3>
+                      <p>Consulta le opinioni degli studenti per l'anno 2015/2016</p>
+                    </button>
+                  </div>
+                  <div class="u-buttoncard">
+                    <button>
+                      <i class="far fa-2x fa-calendar-alt" aria-hidden="true"></i>
+                      <h3>Anno 2016/2017</h3>
+                      <p>Consulta le opinioni degli studenti per l'anno 2016/2017</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+</div>
+{{> footer}}
+{{> end_of_body}}
+<script>
+  jQuery('.multiple-items').slick({
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    mobileFirst: true,
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    }
+  ]
+  });
+</script>
+

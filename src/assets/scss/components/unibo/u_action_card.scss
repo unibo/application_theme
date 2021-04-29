@@ -1,0 +1,141 @@
+.u-action-card {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .card-tile {
+        margin: 0 $margin-small;
+        max-width: 300px;
+        min-width: 290px;
+        text-align: center;    
+        border: 1px solid $border-color;
+        box-shadow: 0px 1px 3px $border-color;
+        border-radius: 3px;
+        padding-top: $padding;
+        display: flex;
+        flex-direction: column;
+        > i, 
+        > svg {
+           margin: 0 auto 1rem;
+        }
+        h2{
+            margin-bottom: $margin;
+        }
+        .controls{
+            background-color: $light-gray;
+            padding: $padding;
+            flex-grow: 1;
+            input{
+                margin-bottom: 0;
+            }
+            .result{
+                margin-bottom: $margin;
+            }
+        }
+        .button{
+            margin-bottom: 0;
+        }
+
+        &.disabled{
+            > i, 
+            > svg {
+                color: $medium-gray;
+            }
+        }
+
+        &.success{
+            > i, 
+            > svg {
+                color: $success-color;
+            }
+            h2{
+                color: darken( $success-color, 35% );
+            }
+        }
+        &.failure{
+            > i, 
+            > svg {
+                color: $alert-color;
+            }
+            h2{
+                color: darken( $alert-color, 15% );
+            }
+        }
+    }
+
+    &.horizontal {
+        display: block;
+        position: relative;
+        .card-tile {
+            max-width: 100%;
+            text-align: left;
+            margin: 0;
+            padding: $padding-small $padding-small $padding-xs;
+            //icone
+            .column > i, 
+            .column > svg {
+                margin: 0 $margin $margin-small;
+                @include breakpoint(medium){
+                    margin: $margin-small;
+                }
+            }
+            &.disabled{
+                .cell > i, 
+                .cell > svg{
+                    color: $medium-gray;
+                }
+            }
+            &.success{
+                .cell > i, 
+                .cell > svg {
+                    color: $success-color;
+                }
+            }
+            &.failure{
+                .cell > i, 
+                .cell > svg {
+                    color: $alert-color;
+                }
+            }
+            h2{
+                margin-bottom: $margin-xs;
+                text-align: center;
+                @include breakpoint(medium){
+                    text-align: left;
+                }
+            }
+            .controls {
+                background-color: transparent;
+                padding: 0 0 $padding-small 0;
+                text-align: center;
+                [type="file"]{
+                    width: auto;
+                }
+                .result {
+                    margin: 0;
+                }
+                @include breakpoint(medium){
+                    text-align: left;
+                    [type="file"]{
+                        width: 100%;
+                    }
+                }
+            }
+            .button {
+                margin: 0 $margin $margin;
+            }
+            @include breakpoint(medium){
+                .button {
+                    margin: $margin-small;
+                    float: right;
+                }
+            }
+
+            .margin-0 {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

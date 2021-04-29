@@ -1,0 +1,89 @@
+<p class="section-description">Responsive Adjustments</p>
+<p>To switch back to the auto behavior from a percentage or shrink behavior, use the classes <code>.[size]-auto</code> or <code>.[size]-shrink</code>. In the below example, the cells stack on small screens, and become even-width on large screens.</p>
+<pre>
+  <code class="html">
+<div class="grid-x">
+  <div class="cell large-auto">One</div>
+  <div class="cell large-auto">Two</div>
+  <div class="cell large-auto">Three</div>
+  <div class="cell large-auto">Four</div>
+  <div class="cell large-auto">Five</div>
+  <div class="cell large-auto">Six</div>
+</div>
+  </code>
+</pre>
+<div class="grid-x display">
+  <div class="cell large-auto">One</div>
+  <div class="cell large-auto">Two</div>
+  <div class="cell large-auto">Three</div>
+  <div class="cell large-auto">Four</div>
+  <div class="cell large-auto">Five</div>
+  <div class="cell large-auto">Six</div>
+</div>
+
+<p class="section-description">Collapse Cells </p>
+<p>The <code>.[size]-[gutter-type]-collapse</code> class lets you remove cell gutters.</p>
+<p>There are times when you won't want each media query to be collapsed. In this case, use the media query size you want and collapse and add that to your grid element. Example shows gutters at small and no gutters on medium and up.
+</p>
+<pre>
+  <code class="html">
+<div class="grid-x grid-margin-x medium-margin-collapse">
+  <div class="cell small-6">
+    Gutters at small no gutters at medium.
+  </div>
+  <div class="cell small-6">
+    Gutters at small no gutters at medium.
+  </div>
+</div>
+  </code>
+</pre>
+<div class="grid-x grid-margin-x medium-margin-collapse display">
+  <div class="cell small-6">
+    Gutters at small no gutters at medium.
+  </div>
+  <div class="cell small-6">
+    Gutters at small no gutters at medium.
+  </div>
+</div>
+
+
+<p class="section-description">Offset</p>
+<p>Offsets work by applying <code>margin-left</code> to a grid.</p>
+<pre>
+  <code class="html">
+<div class="grid-x grid-margin-x">
+  <div class="cell small-4 large-offset-2">Offset 2 on large</div>
+  <div class="cell small-4">4 cells</div>
+</div>
+  </code>
+</pre>
+
+<div class="grid-x grid-margin-x display">
+  <div class="cell small-4 large-offset-2">Offset 2 on large</div>
+  <div class="cell small-4">4 cells</div>
+</div>
+
+
+
+<p class="section-description">Block Grid - X Grid only</p>
+<p>To define cell widths within a direction-level, instead of the individual cell level, add the class <code>.[size]-up-[n]</code> to a <code>grid-x</code>, where <code>[n]</code> is the number of cells to display per direction, and <code>[size]</code> is the breakpoint at which to apply the effect.</p>
+<pre>
+  <code class="html">
+<div class="grid-x grid-padding-x small-up-2 medium-up-4 large-up-6">
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+</div>
+  </code>
+</pre>
+<div class="grid-x grid-padding-x small-up-2 medium-up-4 large-up-6 display">
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+  <div class="cell">cell</div>
+</div>

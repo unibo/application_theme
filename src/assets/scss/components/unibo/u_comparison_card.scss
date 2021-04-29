@@ -1,0 +1,58 @@
+.u-comparison-card{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include breakpoint(medium){
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .card-tile {
+        margin: 0 $margin;
+        margin-bottom: $margin;    
+        max-width: 320px;
+        flex-basis: 320px;
+        text-align: center;    
+        border: 1px solid $border-color;
+        box-shadow: 0px 1px 3px $border-color;
+        border-radius: 3px;
+        padding-top: $padding-small;
+        @include breakpoint(medium){
+            margin-bottom: 0;     
+        }
+        .best{
+            color: #0f820f;
+        }
+        .worst{
+            color: #ca4103;
+        }
+        i, 
+        svg {
+            color: $primary-color;
+            margin-bottom: $margin-small;
+        }
+        h3{
+            text-transform: uppercase;
+            margin-bottom: $margin-xs;
+            font-weight: 500;
+            @include large();
+        }
+        .text-wrap{
+            padding-top: $padding-small;
+            padding-bottom: $padding-small;   
+            border-top: 1px solid $border-color;
+            background-color: $light-gray;
+            &:first-of-type{
+                margin-top: $margin;
+            } 
+        }
+        ul{
+            text-align: left;
+            margin: 0;
+            li{
+                margin: 0 $margin-big;
+                padding: 2px 10px;
+            }
+        }
+    }
+}

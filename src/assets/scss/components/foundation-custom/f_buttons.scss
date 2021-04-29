@@ -1,0 +1,31 @@
+// Colori più scuri per il secondary button
+.button.hollow.secondary {
+  border: 1px solid $medium-gray;
+  color: $dark-gray;
+}
+
+// Margine per icona di FA dentro ai bottoni
+.button {
+  svg, 
+  .fa {
+    margin-right: $margin-xs;
+  }
+  .show-for-sr + .fa,
+  .show-for-sr + svg {
+    margin-right: 0;
+  }
+}
+
+//aggiunto bordo in pulsante secondario altrimenti poco visibile
+.button.secondary {
+  border: 1px solid #ddd;
+}
+
+
+.input-group-field + .input-group-button {
+  .button {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}

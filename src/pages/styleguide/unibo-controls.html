@@ -1,0 +1,146 @@
+---
+layout: styleguide
+title: Unibo Controls
+---
+
+<h1>Style Guide Unibo Controls</h1>
+<h2>In questa pagina ci sono i componenti custom relativi ai controlli e azioni sviluppati ed utilizzati esclusivamente per applicazioni unibo.</h2>
+
+<section>
+<h3 id="wizard">Wizard</h3>
+<p>
+  Elemento Wizard.
+</p>
+
+<pre>
+  <code class="html">
+      {{> u_wizard}}
+  </code>
+</pre>
+
+{{> u_wizard}}
+</section>
+
+<section>
+<h3 id="wizard">Wizard Orizzontale</h3>
+<p>
+  Elemento Wizard in versione orizzontale e responsive.
+</p>
+
+<pre>
+  <code class="html">
+    {{> u_wizard_horizontal}}
+  </code>
+</pre>
+
+{{> u_wizard_horizontal}}
+</section>
+
+<section>
+<h3 id="menu-tools">Menu azioni</h3>
+<p>
+  Menu azioni per elementi singoli che necessitano di un pulsante azioni sull'elemento.
+</p>
+
+<pre>
+  <code class="html">
+    {{> u_menu_tools}}
+  </code>
+</pre>
+
+  {{> u_menu_tools}}
+</section>
+
+<section>
+<h3 id="sso-button">SSO button</h3>
+<p>
+  Questo è il pulsante di SSO da utilizzare per fare login al sistema di Single Sign-On di Ateneo. 
+  <br/>
+  E' possibile utilizzare tutti gli stili adottati per gli altri pulsanti, cioè: tiny, small, large, expanded.
+</p>
+
+<pre>
+  <code class="html">
+  {{> u_sso_button.}}
+  </code>
+</pre>
+{{> u_sso_button.}}
+</section>
+
+<section>
+<h3 id="radio-card">Radio card</h3>
+<p>
+  Elemento che si contraddistingue come fosse una card ma in realtà è un radio button che permette di effettuare una scelta.
+</p>
+
+<pre>
+  <code class="html">
+    {{> u_radiocard}}
+  </code>
+</pre>
+{{> u_radiocard}}
+</section>
+
+<section>
+<h3 id="radio-card-custom">Radio card custom</h3>
+<p>
+  Elemento che si contraddistingue come fosse una card ma in realtà è un radio button che permette di effettuare una scelta.
+  <br>
+  Si differenzia dalla precedente perchè è esplicitato il radio button e permette di inserire ulteriori componenti all'interno.
+</p>
+
+<pre>
+  <code class="html">
+    {{> u_radiocard_custom}}
+  </code>
+</pre>
+{{> u_radiocard_custom}}
+</section>
+
+<section>
+<h3 id="button-card">Button Card</h3>
+<p>
+  Elemento che si contraddistingue come fosse una card ma in realtà è un button che permette di effettuare una scelta. <br>
+  Può avere sfondo colorato utilizzando la classe <kbd>colored</kbd>.
+</p>
+
+<pre>
+  <code class="html">
+    {{> u_buttoncard}}
+  </code>
+</pre>
+
+{{> u_buttoncard}}
+</section>
+
+<section>
+  <h3 id="u-dropdown">Dropdown</h3>
+  <p>
+    Elemento che si contraddistingue come fosse una card ma in realtà è un button che permette di effettuare una scelta. <br>
+    Può avere sfondo colorato utilizzando la classe <kbd>colored</kbd>.
+  </p>
+  
+  <pre>
+    <code class="html">
+      {{> u_dropdown}}
+    </code>
+  </pre>
+  {{> u_dropdown}}
+</section>
+
+<section>
+  <h3 id="u-survey">Questionario</h3>
+  <p>
+    Elemento utilizzabile per inserire un questionario che prevede la possibilità di esprimere una preferenza o valori diversi. <br>
+    Sono utilizzati elementi radio button per selezionare i diversi elementi. <br>
+  </p>
+  <p>
+    E' possibile inserire un'etichetta di descrizione sotto le diverse voci <kbd>&lt;span class="legend-label show-for-sr"&gt;</kbd>.
+  </p>
+  <pre>
+    <code class="html">
+      {{> u_survey}}
+    </code>
+  </pre>
+  {{> u_survey}}
+</section>

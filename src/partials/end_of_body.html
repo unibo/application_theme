@@ -1,0 +1,9 @@
+<script src="{{root}}assets/js/app.js"></script>
+<script>
+  jQuery('pre code').each(function () {
+    var $block = jQuery(this);
+    $block.text($block.html());
+  });
+  hljs.highlightAll();
+</script> 
+

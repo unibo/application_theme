@@ -1,0 +1,83 @@
+.u-adjacent-grid {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0 $padding-small;
+    @include breakpoint(large){
+        max-width: none;
+    }
+    .cell {
+        border: 1px solid $border-color;
+        border-top: none;
+        padding: $padding-small;
+        position: relative; 
+        &:first-child {
+            border-top: 1px solid $border-color;
+        }
+        @include breakpoint(medium){
+            padding: $padding;
+        }
+        @include breakpoint(large){
+            border-left: none;
+            border-top: 1px solid $border-color;
+            &:first-child{
+                border-left: 1px solid $border-color;
+            }
+        }
+        
+        .input-group-field {
+            margin-left: $margin-xs;
+            width: calc(100% - 0.5rem);
+        }
+        label{
+            p{
+                line-height: 1.4;
+            }
+        }
+        > i, 
+        svg {
+            color: $primary-color;
+            float: left;
+            margin-top: 7px;
+            margin-right: 12px;
+
+            @include breakpoint(large){                
+                position: absolute;
+                display: block;
+                left: 50%;
+                top: 0;
+                margin: 0;
+                margin-top: -20px;
+                margin-left: -20px;
+                float: none;
+                background-color: #fff;
+                border: 1px solid $border-color;
+                border-radius: 100%;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                line-height: 37px;
+                padding: 11px;
+            }
+        }
+    }
+    
+    .action{
+        text-align: center;
+        padding-top: $padding;
+        > *:nth-last-child(2){
+            margin-bottom: $margin-small;
+        }
+        fieldset > span {
+            display: inline-block;
+            padding: $margin-xs 0;
+        }
+    }
+
+    .grid-x { 
+        padding-top: $padding;
+        @include breakpoint(large){
+            display: flex;
+            justify-content: center;
+      }
+    }
+}

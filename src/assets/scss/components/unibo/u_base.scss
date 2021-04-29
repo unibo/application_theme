@@ -1,0 +1,119 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  flex-grow: 1;  
+  padding: $padding-xs 0;
+    @include breakpoint(medium){
+    padding: $padding 0;
+  }
+  &.grid-x {
+    padding: $padding-small 0 0 0;
+  }
+  &.nopadding{
+    padding: 0;
+  }
+}
+
+aside.cell,
+nav.cell {
+  background-color: $light-gray;
+}
+
+aside.cell {
+  overflow: hidden;
+  margin-top: $margin;
+  @include breakpoint(medium){
+    margin-top: 0;
+  }
+}
+
+.cell,
+.columns {  
+  &.nopadding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.u-content-wrapper {  
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  flex: 1 0 auto;  
+  
+  header + .grid-x,
+  .u-breadcrumbs + .grid-x {
+    flex-grow: 1;
+    /* layout 2 colonne */
+    &.expanded{
+      @include breakpoint(large){
+        display: flex;
+      }
+    }
+  }
+  
+  > .grid-x {
+    width: 100%;        
+  }
+}
+
+.u-magellan-menu {
+  background-color: $white;
+}
+
+.colored-icon {
+  i, svg {
+    color: $primary-color;
+  }
+}
+svg.colored-icon,
+i.colored-icon {
+  color: $primary-color;
+}
+
+.background-light {
+  background-color: $e-gray;
+  width: 100%;
+}
+
+.color-light {
+  color: $medium-gray;
+}
+
+.color-theme {
+  color: $theme-color;
+}
+
+.color-primary {
+  color: $primary-color;
+}
+
+//fix temporanea per select (il compilatore non ha autoprefix)
+select {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+}
+
+.padding-top-big {
+  padding-top: $padding-big;
+}
+
+.margin-top-big {
+  padding-top: $margin-big;
+}
+
+//fix per slick font awesome aggiornamento icone necessita di font-weight
+
+.slick-prev, .slick-next{
+  font-weight: 800;
+}

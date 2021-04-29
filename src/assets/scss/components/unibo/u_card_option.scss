@@ -1,0 +1,53 @@
+.u-card-option {
+  text-align: center;
+  margin: $margin-small auto;
+  
+  h2 {
+    margin-bottom: $padding-small;
+    font-size: 1.92308rem;
+    line-height: 2.92308rem;
+  }
+
+  .icon-medium {
+    font-size: 1.3rem;
+  }
+
+  .icon-large {
+    font-size: 2.3rem;
+  }
+
+  &.fixed-width{
+  	width: 300px;
+  }
+  .button {
+  	margin-top: $padding-small;
+  }
+  &.contact {
+    position: relative;
+    .info {
+      margin: $margin*2 auto $margin;
+      padding: 0 $padding-xs;
+      max-width: 320px;
+
+      i, 
+      svg {
+        font-size: 0.98rem;
+        margin-right: 5px;
+      }
+
+
+      @include breakpoint(xxlarge){
+        padding: 0 $padding-small;
+      }
+    }
+    .info:before {
+      content: "";
+      display: block;
+      border-top: 1px solid #ddd;
+      position: absolute;
+      width: 200%;
+      margin-top: -2em;
+      left: -50%;
+    }
+  }
+}

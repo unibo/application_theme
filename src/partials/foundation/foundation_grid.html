@@ -1,0 +1,245 @@
+<p>Start by adding an element with a class of .grid-x. This will create a horizontal block to contain vertical cell. Then add elements with a .column class within that grid-x. You can use .column or .cell—the only difference is grammar. Specify the widths of each column with the .small-#, .medium-#, and .large-# classes.</p>
+<p>Foundation is mobile-first. Code for small screens first, and larger devices will inherit those styles. Customize for larger screens as necessary.</p>
+
+<pre>
+  <code class="html">
+<div class="grid-x grid-padding-x">
+  <div class="small-2 large-4 cell"><!-- ... --></div>
+  <div class="small-4 large-4 cell"><!-- ... --></div>
+  <div class="small-6 large-4 cell"><!-- ... --></div>
+</div>
+<div class="grid-x grid-padding-x">
+  <div class="large-3 cell"><!-- ... --></div>
+  <div class="large-6 cell"><!-- ... --></div>
+  <div class="large-3 cell"><!-- ... --></div>
+</div>
+<div class="grid-x grid-padding-x">
+  <div class="small-6 large-2 cell"><!-- ... --></div>
+  <div class="small-6 large-8 cell"><!-- ... --></div>
+  <div class="small-12 large-2 cell"><!-- ... --></div>
+</div>
+<div class="grid-x grid-padding-x">
+  <div class="small-3 cell"><!-- ... --></div>
+  <div class="small-9 cell"><!-- ... --></div>
+</div>
+<div class="grid-x grid-padding-x">
+  <div class="large-4 cell"><!-- ... --></div>
+  <div class="large-8 cell"><!-- ... --></div>
+</div>
+<div class="grid-x grid-padding-x">
+  <div class="small-6 large-5 cell"><!-- ... --></div>
+  <div class="small-6 large-7 cell"><!-- ... --></div>
+</div>
+<div class="grid-x grid-padding-x">
+  <div class="large-6 cell"><!-- ... --></div>
+  <div class="large-6 cell"><!-- ... --></div>
+</div>
+  </code>
+</pre>
+
+<div class="grid-x display grid-padding-x">
+  <div class="small-2 large-4 cell"><span class="hide-for-large">2</span><span class="show-for-large">4</span></div>
+  <div class="small-4 large-4 cell">4</div>
+  <div class="small-6 large-4 cell"><span class="hide-for-large">6</span><span class="show-for-large">4</span></div>
+</div>
+<div class="grid-x display grid-padding-x">
+  <div class="large-3 cell"><span class="hide-for-large">full</span><span class="show-for-large">3</span></div>
+  <div class="large-6 cell"><span class="hide-for-large">full</span><span class="show-for-large">6</span></div>
+  <div class="large-3 cell"><span class="hide-for-large">full</span><span class="show-for-large">3</span></div>
+</div>
+<div class="grid-x display grid-padding-x">
+  <div class="small-6 large-2 cell"><span class="hide-for-large">6</span><span class="show-for-large">2</span></div>
+  <div class="small-6 large-8 cell"><span class="hide-for-large">6</span><span class="show-for-large">8</span></div>
+  <div class="small-12 large-2 cell"><span class="hide-for-large">full</span><span class="show-for-large">2</span></div>
+</div>
+<div class="grid-x display grid-padding-x">
+  <div class="small-3 cell">3</div>
+  <div class="small-9 cell">9</div>
+</div>
+<div class="grid-x display grid-padding-x">
+  <div class="large-4 cell"><span class="hide-for-large">full</span><span class="show-for-large">4</span></div>
+  <div class="large-8 cell"><span class="hide-for-large">full</span><span class="show-for-large">8</span></div>
+</div>
+<div class="grid-x display grid-padding-x">
+  <div class="small-6 large-5 cell"><span class="hide-for-large">6</span><span class="show-for-large">5</span></div>
+  <div class="small-6 large-7 cell"><span class="hide-for-large">6</span><span class="show-for-large">7</span></div>
+</div>
+<div class="grid-x display grid-padding-x">
+  <div class="large-6 cell"><span class="hide-for-large">full</span><span class="show-for-large">6</span></div>
+  <div class="large-6 cell"><span class="hide-for-large">full</span><span class="show-for-large">6</span></div>
+</div>
+
+<p class="section-description">Small Grid</p>
+<p>Small grids expand to large screens easier than large grids cram into small screens.</p>
+
+<pre>
+  <code class="html">
+<div class="grid-x grid-padding-x">
+  <div class="small-2 cell">2 <span class="hide-for-small-only">cell</span></div>
+  <div class="small-10 cell">10 cell</div>
+</div>
+<div class="grid-x grid-padding-x">
+  <div class="small-3 cell">3 cell</div>
+  <div class="small-9 cell">9 cell</div>
+</div>
+  </code>
+</pre>
+
+<div class="grid-x display grid-padding-x">
+  <div class="small-2 cell">2 <span class="hide-for-small-only">cell</span></div>
+  <div class="small-10 cell">10 cell</div>
+</div>
+<div class="grid-x display grid-padding-x">
+  <div class="small-3 cell">3 cell</div>
+  <div class="small-9 cell">9 cell</div>
+</div>
+
+
+<p class="section-description">Medium Grid</p>
+<p>Medium sized screens will inherit styles from small, unless you specify a different layout using the medium grid classes.</p>
+
+<pre>
+  <code class="html">
+<div class="grid-x grid-padding-x">
+  <div class="medium-2 cell">2 cell</div>
+  <div class="medium-10 cell">10 cell</div>
+</div>
+<div class="grid-x grid-padding-x">
+  <div class="medium-3 cell">3 cell</div>
+  <div class="medium-9 cell">9 cell</div>
+</div>
+  </code>
+</pre>
+
+<div class="grid-x display grid-padding-x">
+  <div class="medium-2 cell">2 cell</div>
+  <div class="medium-10 cell">10 cell</div>
+</div>
+<div class="grid-x display grid-padding-x">
+  <div class="medium-3 cell">3 cell</div>
+  <div class="medium-9 cell">9 cell</div>
+</div>
+
+
+<p class="section-description">Gutters</p>
+<p>The defining feature of the XY grid is the ability to use margin AND padding grids in harmony.
+To define a grid type, simply set <code>.grid-margin-x</code>/<code>.grid-margin-y</code> or <code>.grid-padding-x</code>/<code>.grid-padding-y</code> on the grid.</p>
+
+<pre>
+  <code class="html">
+<div class="grid-x grid-margin-x">
+  <div class="cell medium-6 large-4">12/6/4 cells</div>
+  <div class="cell medium-6 large-8">12/6/8 cells</div>
+</div>
+<div class="grid-x grid-padding-x">
+  <div class="cell medium-6 large-4">12/6/4 cells</div>
+  <div class="cell medium-6 large-8">12/6/8 cells</div>
+</div>
+  </code>
+</pre>
+
+<div class="grid-x grid-margin-x display">
+  <div class="cell medium-6 large-4" style="background: #7bc1ef;color: #0a0a0a;">12/6/4 cells</div>
+  <div class="cell medium-6 large-8" style="background: #1779ba;color: #fefefe;">12/6/8 cells</div>
+</div>
+<div class="grid-x grid-padding-x display">
+  <div class="cell medium-6 large-4" style="background: #7bc1ef;color: #0a0a0a;">12/6/4 cells</div>
+  <div class="cell medium-6 large-8" style="background: #1779ba;color: #fefefe;">12/6/8 cells</div>
+</div>
+
+
+<p class="section-description">Grid Container</p>
+<p>The grid defaults to the full width of the available space. To contain it horizontally use the <code>grid-container</code> class. The container will be centered and have a max-width equal to your <code>$grid-container</code> setting (1200px by default), along with padding on the left/right equal to half your <code>$grid-container-padding</code> setting.</p>
+<pre>
+  <code class="html">
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="cell small-4">cell</div>
+    <div class="cell small-4">cell</div>
+    <div class="cell small-4">cell</div>
+  </div>
+</div>
+  </code>
+</pre>
+
+<p class="section-description">Grid Container Fluid</p>
+<p>To stretch the content to the full width of the available space, simply add the class <code>fluid</code> to your <code>grid-container</code>.</p>
+
+<pre>
+  <code class="html">
+<div class="grid-container fluid">
+  <div class="grid-x grid-margin-x">
+    <div class="cell small-4">cell</div>
+    <div class="cell small-4">cell</div>
+    <div class="cell small-4">cell</div>
+  </div>
+</div>
+  </code>
+</pre>
+
+
+<p class="section-description">Grid Container Full</p>
+<p>To stretch the content to the full width of the available space and remove grid container padding, simply add the class <code>full</code> to your <code>grid-container</code>. Note that this variation is primarily for use for the <code>grid-margin-x</code> - it works with <code>grid-padding-x</code> too, but will work the same as <code>.grid-container.fluid</code>.</p>
+
+<div class="callout alert">
+  <p>Please note that when you are using <code>grid-margin-x</code> on a <code>grid-container</code> with <code>full</code> class you will also need to hide the horizontal overflow in order for this to work correctly if your content is going to touch the sides of the viewport.</p>
+  <p>The best way to do this is:&nbsp; <code>body {overflow-x: hidden;}</code></p>
+</div>
+<pre>
+  <code class="html">
+<div class="grid-container full">
+  <div class="grid-x grid-margin-x">
+    <div class="cell small-4">cell</div>
+    <div class="cell small-4">cell</div>
+    <div class="cell small-4">cell</div>
+  </div>
+</div>
+  </code>
+</pre>
+
+
+<p class="section-description">Auto Sizing</p>
+<p>If the class <code>.auto</code> or <code>.[size]-auto</code> is added to the cell, it will take up the remaining space.</p>
+<pre>
+  <code class="html">
+<div class="grid-x grid-margin-x">
+  <div class="cell small-4">4 cells</div>
+  <div class="cell auto">Whatever's left!</div>
+</div>
+  </code>
+</pre>
+<div class="grid-x grid-margin-x display">
+  <div class="cell small-4">4 cells</div>
+  <div class="cell auto">Whatever's left!</div>
+</div>
+
+
+<p>Multiple expanding cells will share the leftover space equally.</p>
+<pre>
+  <code class="html">
+<div class="grid-x grid-margin-x">
+  <div class="cell small-4">4 cells</div>
+  <div class="cell auto">Whatever's left!</div>
+  <div class="cell auto">Whatever's left!</div>
+</div>
+  </code>
+</pre>
+<div class="grid-x grid-margin-x display">
+  <div class="cell small-4">4 cells</div>
+  <div class="cell auto">Whatever's left!</div>
+  <div class="cell auto">Whatever's left!</div>
+</div>
+
+<p>A cell can also be made to <em>shrink</em>, by adding the <code>.shrink</code> or <code>.[size]-shrink</code> class. This means it will only take up the space its contents need.</p>
+<pre>
+  <code class="html">
+<div class="grid-x grid-margin-x">
+  <div class="cell shrink">Shrink!</div>
+  <div class="cell auto">Expand!</div>
+</div>
+  </code>
+</pre>
+<div class="grid-x grid-margin-x display">
+  <div class="cell shrink">Shrink!</div>
+  <div class="cell auto">Expand!</div>
+</div>
