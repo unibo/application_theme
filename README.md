@@ -25,7 +25,7 @@ To use this template, your computer needs:
 To manually set up the template, first download it with Git:
 
 ```bash
-git clone projectname
+git clone https://github.com/unibo/application_theme.git projectname
 ```
 
 Then open the folder in your command line, and install the needed dependencies:
