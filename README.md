@@ -1,6 +1,6 @@
 # UNIBO APPLICATION TEMPLATE - based on ZURB Template
 
-This is the official Unibo Application Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). 
+This is the official Unibo Application Template for use with [Foundation for Sites](https://get.foundation/). 
 It has a Gulp-powered build system with these features:
 
 - Handlebars HTML templates with Panini
