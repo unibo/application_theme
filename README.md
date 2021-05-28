@@ -58,9 +58,11 @@ The components distributed with Unibo Applicatione Theme that have their own lic
   - [Cinzel Google Font](https://fonts.google.com/specimen/Cinzel) ©  Google, licenza MIT
   - [Font Awesome Free](https://fontawesome.com) 5.15.3 © License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
   - [Monokai Sublime style](http://nn.mit-license.org). Derived from Monokai by noformnocontent http://nn.mit-license.org/
-    What Input[https://github.com/ten1seven/what-input] is freely available under the MIT License.
-    Highlight.js[https://highlightjs.org/] is released under the BSD License
-    jQuery[https://jquery.com/] © jQuery Foundation, licenza MIT    
+  - [What Input](https://github.com/ten1seven/what-input) is freely available under the MIT License.
+  - [Highlight.js](https://highlightjs.org/) is released under the BSD License
+  - [jQuery](https://jquery.com/) © jQuery Foundation, licenza MIT    
+  - [https://placeimg.com] 
+  - [http://placehold.it]
 
 ### Principali dipendenze per la fase di compilazione e sviluppo
   - [NodeJS](https://nodejs.org/en/) (Version 10 or greater recommended, tested with 10)
