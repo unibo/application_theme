@@ -1,14 +1,28 @@
 
 @mixin u-callout{
-    background-image: url("../img/bg_geometric.png");
+    background-image: url("../img/workspace.jpg");
+    background-position: top center;
     background-repeat: no-repeat;
-    background-position: right 78%;
-    background-size: 100%;
+    background-size: cover;
     background-color: #222;
     color: #fff;
     padding: $padding $padding-small;
     width: 100%;
     margin-bottom: $margin;
+    background-attachment:fixed;
+    background-color: (0,0,0,0.5);
+    position: relative;
+    &:after {
+        content: "";
+        background: #222;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.7;
+    }
+
     @include breakpoint(large){
         padding: $padding;
     }
@@ -17,6 +31,8 @@
         flex-direction: column;
         margin: 0 auto;
         width: 100%;
+        position: relative;
+        z-index: 9;
         float: none;
         @include breakpoint(840px){
             flex-direction: row;
@@ -98,30 +114,6 @@
     @include u-callout;
 }
 
-.u-callout-photo {
-    @include u-callout;
-    background-image: url("../img/workspace.jpg");
-    background-position: top center;
-    background-size: cover;
-    background-attachment:fixed;
-    background-color: (0,0,0,0.5);
-    position: relative;
-    &:after {
-        content: "";
-        background: #222;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        opacity: 0.7;
-    }
-    .cell {
-        position: relative;
-        z-index: 9;
-    }
-}
-
 .u-callout-center{
     @include u-callout;
     background-position: right 60%;
@@ -144,6 +136,9 @@
         background-image: none;
         background-color: transparent;
         color: $base-font-color;
+        &::after{
+            display: none;
+        }
         .action-wrapper{
             .primary{
                 border-color: $primary-color;
@@ -165,6 +160,9 @@
     background-image: none;
     background-color: $e-gray;
     color: $base-font-color;
+    &::after{
+        display: none;
+    }
     .action-wrapper{
         .hollow{
             border-color: $primary-color;
