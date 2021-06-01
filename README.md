@@ -90,6 +90,7 @@ The components distributed with Unibo Applicatione Theme that have their own lic
   - [jQuery](https://jquery.com/) © jQuery Foundation, MIT license.  
   - [https://placeimg.com] sample images from 500px and Flickr, Creative Commons Attribution. 
   - [https://placeholder.com/] Free Image Placeholder Service C/O https://placeholder.com/.
+  - Background photo by [artsandcrafts](https://stocksnap.io/author/artsandcrafts), CC0 License.
 
 ### Principali dipendenze per la fase di compilazione e sviluppo
   - [NodeJS](https://nodejs.org/en/) (Version 10 or greater recommended, tested with 10)
