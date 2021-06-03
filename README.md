@@ -20,7 +20,7 @@ It has a Gulp-powered build system with these features:
 To use this template, your computer needs:
 
 - [NodeJS](https://nodejs.org/en/) (Version 10 or greater recommended, tested with 10)
-- [SASS node-sass](https://github.com/sass/node-sass/), © Andrew Nesbitt, licenza MIT
+- [SASS node-sass](https://github.com/sass/node-sass/), © Andrew Nesbitt, license MIT
 - [Git](https://git-scm.com/)
 
 
@@ -92,10 +92,13 @@ The components distributed with Unibo Applicatione Theme that have their own lic
   - [https://placeholder.com/] Free Image Placeholder Service C/O https://placeholder.com/.
   - Background photo by [artsandcrafts](https://stocksnap.io/author/artsandcrafts), CC0 License.
 
-### Principali dipendenze per la fase di compilazione e sviluppo
+### Main dependencies for the build and development
   - [NodeJS](https://nodejs.org/en/) (Version 10 or greater recommended, tested with 10)
-  - [SASS node-sass](https://github.com/sass/node-sass/), © Andrew Nesbitt, licenza MIT
+  - [SASS node-sass](https://github.com/sass/node-sass/), © Andrew Nesbitt, license MIT
     
 ## Copyright and terms of use 
 The license of Unibo Applicatione Theme is BSD 3-Clause and is visible in LICENSE file.
 If you use Unibo Applicatione Theme for your projects, the link to this repository must be reported in the software interface exposed to the public.
+
+- Institutional Brand is owned by the University of Bologna and its legal use is permitted under the conditions described at this page [Legal Use of the Institutional Brand by third parties](https://www.unibo.it/en/university/who-we-are/image-identity-brand/legal-use-of-trade-mark-by-third-parties)
+- The DSA Logo (`ssologo36x36.png`) is is owned by the University of Bologna - [CeSIA - Settore Sistemi e middleware - Ufficio Unità specialistica Identità digitale](https://www.unibo.it/it/ateneo/organizzazione/amministrazione-generale/1931/2108/2375/index.html) and its use is permitted only for internal university applications that use DSA directory system.
