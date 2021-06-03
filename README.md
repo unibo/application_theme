@@ -88,8 +88,8 @@ The components distributed with Unibo Applicatione Theme that have their own lic
   - [What Input](https://github.com/ten1seven/what-input) is freely available under the MIT License.
   - [Highlight.js](https://highlightjs.org/) is released under the BSD License
   - [jQuery](https://jquery.com/) © jQuery Foundation, MIT license.  
-  - [https://placeimg.com] sample images from 500px and Flickr, Creative Commons Attribution. 
-  - [https://placeholder.com/] Free Image Placeholder Service C/O https://placeholder.com/.
+  - [placeimg.com](https://placeimg.com) sample photos from 500px and Flickr, Creative Commons Attribution. 
+  - [placeholder.com/](https://placeholder.com/) Free Image Placeholder Service C/O https://placeholder.com/ with dimension informations.
   - Background photo by [artsandcrafts](https://stocksnap.io/author/artsandcrafts), CC0 License.
 
 ### Main dependencies for the build and development
@@ -98,7 +98,9 @@ The components distributed with Unibo Applicatione Theme that have their own lic
     
 ## Copyright and terms of use 
 The license of Unibo Applicatione Theme is BSD 3-Clause and is visible in LICENSE file.
+
 If you use Unibo Applicatione Theme for your projects, the link to this repository must be reported in the software interface exposed to the public.
 
+### Logos and Brand 
 - Institutional Brand is owned by the University of Bologna and its legal use is permitted under the conditions described at this page [Legal Use of the Institutional Brand by third parties](https://www.unibo.it/en/university/who-we-are/image-identity-brand/legal-use-of-trade-mark-by-third-parties)
 - The DSA Logo (`ssologo36x36.png`) is is owned by the University of Bologna - [CeSIA - Settore Sistemi e middleware - Ufficio Unità specialistica Identità digitale](https://www.unibo.it/it/ateneo/organizzazione/amministrazione-generale/1931/2108/2375/index.html) and its use is permitted only for internal university applications that use DSA directory system.
