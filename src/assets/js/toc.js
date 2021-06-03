@@ -6,7 +6,7 @@ var ToC =
 
 var newLine, el, title, link;
 
-$("section > h3").each(function() {
+$("section h3[id]").each(function() {
 
   el = $(this);
   title = el.text();

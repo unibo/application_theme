@@ -6,21 +6,58 @@ title: Style Guide Unibo Containers
 <h1 class="huge">Style Guide Unibo Containers</h1>
 <h2>In questa pagina ci sono i componenti custom relativi ai contenitori sviluppati ed utilizzati esclusivamente per applicazioni unibo.</h2>
 <section>
-	<h3 id="barra-login">Barra Login</h3>
-	<p>La barra di Login è composta da un dropdown menù di Foundation. Questo può avere dei sottomenù che si aprono sull'hover o sul click.</p>
-	<p>Per aumentare la spaziatura laterale è possibile utilizzare la classe 
-		<kbd>row</kbd> che inserisce un padding left e right.
-	</p>
-	<p>In linea generale è preferibile lasciare le voci di menù sempre visibili. In caso ci siano molte voci è tuttavia preferibile utilizzare la versione con l'apertura sul click poiché nella versione mobile, l'hover può non essere interpretato correttamente da alcuni dispositivi.</p>
-	<h3 id="barra-login-click">Login con dropdown che si apre al click</h3>
+	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+					<h3 id="barra-login">
+						Barra Login DSA
+					</h3>
+					<p>La barra di Login è composta da un dropdown menù di Foundation. Questo può avere dei sottomenù che si aprono sull'hover o sul click.</p>
+					<p>In linea generale è preferibile lasciare le voci di menù sempre visibili. In caso ci siano molte voci è tuttavia preferibile utilizzare la versione con l'apertura sul click poiché nella versione mobile, l'hover può non essere interpretato correttamente da alcuni dispositivi.</p>
+					<p>Ci sono più versioni di questo elemento:</p>
+					<ul>
+						<li>
+							<a href="#barra-login-click">Login con dropdown che si apre al click</a>
+						</li>
+						<li>
+							<a href="#barra-login-hover">Login con dropdown che si apre all'hover</a>
+						</li>
+						<li>
+							<a href="#barra-login-impersonamento">Login con impersonamento</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-6 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_barra_login.scss</kbd>
+					</div>
+				</div>
+				<div class="large-6 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classe da utilizzare:</strong> <kbd>u-barra-login</kbd> 
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
+	<h4 class="section-description" id="barra-login-click">Login con dropdown che si apre al click</h4>
+
+
 	<pre>
 		<code class="html">
 {{> u_barra_login}}
 		</code>
 	</pre>  
+
 	{{> u_barra_login}}
 
-	<h3 id="barra-unibo-login-responsive">Login barra apri/chiudi in responsive</h3>
+	<h4 class="section-description" id="barra-unibo-login-responsive">Login barra apri/chiudi in responsive</h4>
 	<p>In questo caso per la versione responsive abbiamo inserito l'apri/chiudi 
 		<kbd> div class="title-bar" data-responsive-toggle="barra-login" data-hide-for="medium"</kbd> inserendo l'etichetta "menu".
 	</p>
@@ -32,9 +69,10 @@ title: Style Guide Unibo Containers
 {{> u_barra_login_responsive}}
 		</code>
 	</pre>  
+
 	{{> u_barra_login_responsive}}
 
-	<h3 id="barra-login-hover">Login con dropdown che si apre all'hover</h3>
+	<h4 class="section-description" id="barra-login-hover">Login con dropdown che si apre all'hover</h4>
 	<p>E' preferibile utilizzare la versione con l'apertura sul click poiché nella versione mobile, l'hover può non essere interpretato correttamente da alcuni dispositivi.</p>
 	<p>In questo caso per la versione responsive non abbiamo inserito l'apri/chiudi e non abbiamo inserito la classe 
 		<kbd>vertical</kbd> poiché preferiamo lasciare le voci visibili.
@@ -44,9 +82,10 @@ title: Style Guide Unibo Containers
 {{> u_barra_login_hover}}
 		</code>
 	</pre>  
+
 	{{> u_barra_login_hover}}
 
-		<h3 id="barra-login-impersonamento">Login con impersonamento</h3>
+	<h4 class="section-description" id="barra-login-impersonamento">Login con impersonamento</h4>
 		<p>E' preferibile utilizzare la versione con l'apertura sul click poiché nella versione mobile, l'hover può non essere interpretato correttamente da alcuni dispositivi.</p>
 		<p>In questo caso per la versione responsive non abbiamo inserito l'apri/chiudi e non abbiamo inserito la classe 
 			<kbd>vertical</kbd> poiché preferiamo lasciare le voci visibili.
@@ -57,18 +96,52 @@ title: Style Guide Unibo Containers
 			</code>
 		</pre>  
 
-	{{> u_barra_login_impersonamento}}
+		{{> u_barra_login_impersonamento}}
 
 	</section>
 	<section>
-		<h3 id="header">Header</h3>
+		<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+			<div class="grid-container">
+				<div class="grid-x grid-padding-x">
+					<div class="large-12 cell">                   
+						<h3 id="header">Header</h3>
+						<p>Ci sono due versioni di questo elemento:</p>
+						<ul>
+							<li>
+								<a href="#u-header-left">Header allineato a sinistra</a>
+							</li>
+							<li>
+								<a href="#u-header-centered">Header centrato</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="grid-x grid-padding-x">
+					<div class="large-4 cell">
+						<div class="icon-left">
+						<i class="fab fa-css3-alt fa-2x"></i>
+						<strong>SCSS da includere:</strong> <kbd>u_header.scss</kbd>
+						</div>
+					</div>
+					<div class="large-8 cell">
+						<div class="icon-left">
+						<i class="far fa-file-code fa-2x"></i>
+						<strong>Classe da utilizzare:</strong> <kbd>u-header-left</kbd> solo se si vuole allineamento a sinistra 
+						</div>
+						
+					</div>
+				</div>
+			</div>  
+		</div>
+		<h4 id="u-header-left" class="section-description">Header allineato a sinistra</h4>
 		<pre>
 			<code class="html">
 {{> u_header_left}}
 			</code>
 		</pre>
 		{{> u_header_left}}
-		<p class="section-description">Header centrato</p>
+		
+		<h4 id="u-header-centered" class="section-description">Header centrato</h4>
 		<pre>
 			<code class="html">
 				{{> u_header}}
@@ -79,19 +152,53 @@ title: Style Guide Unibo Containers
 
 	</section>
 	<section>
-		<h3 id="hightlight-text">Highlight text</h3>
-		<p>Questo elemento può essere utilizzato in un layout ad una colonna per evidenziare o differenziare una sezione, in quanto inserisce uno sfondo grigio su tutta la riga. </p>
-		<p>Può avere una griglia di più colonne all'interno per avere più blocchi di elementi. </p>
+		<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+			<div class="grid-container">
+				<div class="grid-x grid-padding-x">
+					<div class="large-12 cell">                   
+						
+						<h3 id="hightlight-text">Highlight text</h3>
+						<p>Questo elemento può essere utilizzato in un layout ad una colonna per evidenziare o differenziare una sezione, in quanto inserisce uno sfondo grigio su tutta la riga. </p>
+						<p>Può avere una griglia di più colonne all'interno per avere più blocchi di elementi. </p>
+						<p>Ci sono due versioni di questo elemento:</p>
+						<ul>
+							<li>
+								<a href="#u-hightlight">Highlight Basic</a>
+							</li>
+							<li>
+								<a href="#u-hightlight-fixed">Highlight a dimensione fissa</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="grid-x grid-padding-x">
+					<div class="large-6 cell">
+						<div class="icon-left">
+						<i class="fab fa-css3-alt fa-2x"></i>
+						<strong>SCSS da includere:</strong> <kbd>u_highlight_text.scss</kbd>
+						</div>
+					</div>
+					<div class="large-6 cell">
+						<div class="icon-left">
+						<i class="far fa-file-code fa-2x"></i>
+						<strong>Classe da utilizzare:</strong> <kbd>u-highlight-text</kbd>
+						</div>
+						
+					</div>
+				</div>
+			</div>  
+		</div>
+		<h4 class="section-description" id="u-hightlight">Highlight Basic</h4>
+		
 		<pre>
 			<code class="html">
 {{> u_highlight_text}}
 			</code>
 		</pre>
 		{{> u_highlight_text}}
-
+		<h4 class="section-description" id="u-hightlight-fixed">Highlight a dimensione fissa</h4>
 		<p>Se viene inserita la classe 
-			<kbd>fixed-width</kbd>, la 
-			<kbd>row</kbd> all'interno avrà una larghezza massima di 550px, utile per non avere un contenuto troppo lungo e difficile da leggere.
+			<kbd>fixed-width</kbd>, l'elemento all'interno avrà una larghezza massima di 550px, utile per non avere un contenuto troppo lungo e difficile da leggere.
 		</p>
 		<pre>
 			<code class="html">
@@ -103,10 +210,36 @@ title: Style Guide Unibo Containers
 
 </section>
 <section>
-	<h3 id="tabella_dark">Tabella dark</h3>
-	<p>
-		Versione scura della tabella di default.
-	</p>
+	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+					
+					<h3 id="tabella_dark">Tabella dark</h3>
+					<p>
+						Versione scura della tabella di default.
+					</p>
+					
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-6 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_table.scss</kbd>
+					</div>
+				</div>
+				<div class="large-6 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classe da utilizzare:</strong> <kbd>dark</kbd>
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
+	
 	<pre>
 		<code class="html">
 <table class="dark">
@@ -145,10 +278,35 @@ title: Style Guide Unibo Containers
 	</table>
 </section>
 <section>
-	<h3 id="tabella_bordi">Tabella senza bordi</h3>
-	<p>
-	Per ottenere una tabella senza i bordi.
-	</p>
+	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+					
+				<h3 id="tabella_bordi">Tabella senza bordi</h3>
+				<p>
+				Per ottenere una tabella senza i bordi.
+				</p>
+					
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-6 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_table.scss</kbd>
+					</div>
+				</div>
+				<div class="large-6 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classe da utilizzare:</strong> <kbd>no-border</kbd>
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
 	<pre>
 		<code class="html">
 <table class="no-border"></table>
@@ -186,19 +344,65 @@ title: Style Guide Unibo Containers
 	</table>
 </section>
 <section>
-	<h3 id="tabella_sort">Ordinamento tabella</h3>
-	<p>Inserire le classi 
-		<kbd>.sort</kbd> , 
-		<kbd>.sorted-up</kbd> e 
-		<kbd>.sorted-down</kbd> per stilare la colonna con ordinamento.
-	</p>
-	<p>La classe 
-		<kbd>.sort</kbd> inserisce un'icona con le doppie frecce che sta ad indicare che quella colonna è ordinabile. 
-	</p>
-	<p>Le classi 
-		<kbd>.sorted-up</kbd> e 
-		<kbd>.sorted-down</kbd> indicano se quella colonna è ordinata in modo crescente o decrescente.
-	</p>
+	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+					
+				<h3 id="tabella_sort">Ordinamento tabella</h3>
+				<p>
+				Per ottenere lo stile sull'ordinamento.
+				</p>
+				<p>La classe 
+					<kbd>.sort</kbd> inserisce un'icona con le doppie frecce che sta ad indicare che quella colonna è ordinabile. 
+				</p>
+				<p>Le classi 
+					<kbd>.sorted-up</kbd> e 
+					<kbd>.sorted-down</kbd> indicano se quella colonna è ordinata in modo crescente o decrescente.
+				</p>
+				<p>E' possibile utilizzare le classi 
+					<kbd>.sorted-up-light</kbd> e 
+					<kbd>.sorted-down-light</kbd> nel 
+					<kbd>
+						<th></th>
+					</kbd> per avere uno stile più leggero nelle colonne ordinate.
+				</p>
+				<p>Nelle celle della colonna evidenziata va inserito 
+					<kbd>.sorted-light</kbd>.
+				</p>
+				<p>Si può utilizzare anche nelle tabelle 
+					<kbd>.dark</kbd>, in quel caso lo stile è differente in base ai colori più scuri della tabella.
+				</p>
+				<p>Le classi da utilizzare per la tabella dark sono 
+					<kbd>.sorted-up</kbd> e 
+					<kbd>.sorted-down</kbd>.
+				</p>
+				<p>Nelle celle della colonna evidenziata va inserito 
+					<kbd>.sorted</kbd>.
+				</p>
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-4 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_table.scss</kbd>
+					</div>
+				</div>
+				<div class="large-8 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classi da utilizzare:</strong> 
+					<kbd>.sort</kbd> , 
+					<kbd>.sorted-up</kbd> e 
+					<kbd>.sorted-down</kbd>
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
+	
 	<pre>
 		<code class="html">
 <table>
@@ -263,16 +467,7 @@ title: Style Guide Unibo Containers
 			</tr>
 		</tbody>
 	</table>
-	<p>E' possibile utilizzare le classi 
-		<kbd>.sorted-up-light</kbd> e 
-		<kbd>.sorted-down-light</kbd> nel 
-		<kbd>
-			<th></th>
-		</kbd> per avere uno stile più leggero nelle colonne ordinate.
-	</p>
-	<p>Nelle celle della colonna evidenziata va inserito 
-		<kbd>.sorted-light</kbd>.
-	</p>
+	<h4 class="section-description" id="light-table">Tabella con stile light</h4>
 	<pre>
 		<code class="html">
 <table>
@@ -307,6 +502,7 @@ title: Style Guide Unibo Containers
 </table>
 		</code>
 	</pre>
+	
 	<table>
 		<thead>
 			<tr>
@@ -337,16 +533,7 @@ title: Style Guide Unibo Containers
 			</tr>
 		</tbody>
 	</table>
-	<p>Si può utilizzare anche nelle tabelle 
-		<kbd>.dark</kbd>, in quel caso lo stile è differente in base ai colori più scuri della tabella.
-	</p>
-	<p>Le classi da utilizzare per la tabella dark sono 
-		<kbd>.sorted-up</kbd> e 
-		<kbd>.sorted-down</kbd>.
-	</p>
-	<p>Nelle celle della colonna evidenziata va inserito 
-		<kbd>.sorted</kbd>.
-	</p>
+	<h4 class="section-description" id="dark-table">Tabella con stile dark</h4>
 	<table class="dark">
 		<thead>
 			<tr>
@@ -379,21 +566,59 @@ title: Style Guide Unibo Containers
 	</table>
 </section>
 <section>
-	<h3 id="u-card">Card Option 
-		<kbd>(u-card-option)</kbd>
-	</h3>
-	<p>Questo elemento può essere utilizzato come box esplicativo per linkare un servizio o una sezione. 
-		<br /> Può contenere un'icona (Fontawesome), del testo (anche titolazioni) e un pulsante.
-	</p>
-	<p>Questo componente può essere inserito in una griglia per avere più blocchi di elementi. In alternativa, può avere una larghezza fissa di 300px se viene inserita la classe 
-		<kbd>fixed-width</kbd>.
-	</p>
+
+	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+					
+				<h3 id="u-card">
+					Card Option 
+				</h3>
+				<p>Questo elemento può essere utilizzato come box esplicativo per linkare un servizio o una sezione. 
+					<br /> Può contenere un'icona (Fontawesome), del testo (anche titolazioni) e un pulsante.
+				</p>
+				<p>Ci sono due versioni di questo elemento:</p>
+					<ul>
+						<li>
+							<a href="#u-card-option">Card Option Basic</a>
+						</li>
+						<li>
+							<a href="#u-card-option-fixed">Card Option a dimensione fissa</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-4 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_card_option.scss</kbd>
+					</div>
+				</div>
+				<div class="large-8 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classe da utilizzare:</strong> 
+					<kbd>u-card-option</kbd>
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
+	<h4 class="section-description" id="u-card-option">Card Option Basic</h4>
 	<pre>
 		<code>
 {{> u_card_option}}
 		</code>
 	</pre>
 {{> u_card_option}}
+<h4 class="section-description" id="u-card-option-fixed">Card Option con larghezza fissa</h4>
+
+<p>Questo componente può essere inserito in una griglia per avere più blocchi di elementi. In alternativa, può avere una larghezza fissa di 300px se viene inserita la classe 
+	<kbd>fixed-width</kbd>.
+</p>
 	<pre>
 		<code>
 {{> u_card_option_fixed_width}}
