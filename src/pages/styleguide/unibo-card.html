@@ -1,0 +1,268 @@
+---
+layout: styleguide
+title: Style Guide Unibo Card
+---
+
+<h1 class="huge">Style Guide Unibo Card</h1>
+<h2>In questa pagina ci sono i componenti custom relativi ai contenitori sviluppati con una grafica a card.</h2>
+
+<section>
+
+	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+					
+				<h3 id="u-card">
+					Card Option 
+				</h3>
+				<p>Questo elemento può essere utilizzato come box esplicativo per linkare un servizio o una sezione. 
+					<br /> Può contenere un'icona (Fontawesome), del testo (anche titolazioni) e un pulsante.
+				</p>
+				<p>Ci sono due versioni di questo elemento:</p>
+					<ul>
+						<li>
+							<a href="#u-card-option">Card Option Basic</a>
+						</li>
+						<li>
+							<a href="#u-card-option-fixed">Card Option a dimensione fissa</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-4 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_card_option.scss</kbd>
+					</div>
+				</div>
+				<div class="large-8 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classe da utilizzare:</strong> 
+					<kbd>u-card-option</kbd>
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
+	<h4 class="section-description" id="u-card-option">Card Option Basic</h4>
+	<pre>
+		<code>
+{{> u_card_option}}
+		</code>
+	</pre>
+{{> u_card_option}}
+<h4 class="section-description" id="u-card-option-fixed">Card Option con larghezza fissa</h4>
+
+<p>Questo componente può essere inserito in una griglia per avere più blocchi di elementi. In alternativa, può avere una larghezza fissa di 300px se viene inserita la classe 
+	<kbd>fixed-width</kbd>.
+</p>
+	<pre>
+		<code>
+{{> u_card_option_fixed_width}}
+		</code>
+	</pre>
+	{{> u_card_option_fixed_width}}
+</section>
+
+<section>
+
+	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+				
+				<h3 id="u-comparison-card">Card feature 
+				</h3>
+				<p>Questo elemento può essere utilizzato come box per comparare diverse feature e spiegare la differenza tra diverse opzioni.</p>
+				<p>Graficamente è uguale al componente 
+					<a href="#radio-card">Radio card</a> 
+				a parte che non ha la possibilità di selezionare l'opzione.
+				</p>
+				<p>Questo elemento può essere utilizzato come box esplicativo per linkare un servizio o una sezione. 
+					<br /> Può contenere un'icona (Fontawesome), del testo (anche titolazioni) e un pulsante.
+				</p>
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-6 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_comparison_card.scss</kbd>
+					</div>
+				</div>
+				<div class="large-6 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classe da utilizzare:</strong> 
+					<kbd>u-comparison-card</kbd>
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
+	<pre>
+		<code>
+{{> u_comparison_card}}
+		</code>
+	</pre>
+{{> u_comparison_card}}
+
+</section>
+
+<section>
+	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+				
+					<h3 id="radio-card">Radio card</h3>
+					<p>
+						Elemento che si contraddistingue come fosse una card ma in realtà è un radio button che permette di effettuare una scelta.
+					</p>
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-6 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_radiocard.scss</kbd>
+					</div>
+				</div>
+				<div class="large-6 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classe da utilizzare:</strong> 
+					<kbd>u-radiocard</kbd>
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
+	
+
+<pre>
+	<code class="html">
+	{{> u_radiocard}}
+	</code>
+</pre>
+{{> u_radiocard}}
+</section>
+
+
+<section>
+	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+				
+					<h3 id="button-card">Button Card</h3>
+					<p>
+					Elemento che si contraddistingue come fosse una card ma in realtà è un button che permette di effettuare una scelta. <br>
+					Può avere sfondo colorato utilizzando la classe <kbd>colored</kbd>.
+					</p>
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-6 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_buttoncard.scss</kbd>
+					</div>
+				</div>
+				<div class="large-6 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classe da utilizzare:</strong> 
+					<kbd>u-buttoncard</kbd>
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
+	
+	<pre>
+	  <code class="html">
+		{{> u_buttoncard}}
+	  </code>
+	</pre>
+	
+{{> u_buttoncard}}
+</section>
+
+<section>
+
+	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+				
+				<h3 id="u-action-card">Card con azioni </h3>
+				<p>Questo elemento può essere utilizzato come box per verificare il corretto funzionamento di un processo o di un'azione.</p>
+				<p>Viene utilizzata la card 
+					<kbd>card-tile</kbd> per inserire i valori da verificare e successivamente le card 
+					<kbd>card-tile success</kbd> e 
+					<kbd>card-tile failure</kbd>
+			definiscono il risultato che può essere positivo o negativo.
+				</p>
+				<p>E' presente anche una card 
+					<kbd>disabled</kbd> per gestire anche gli stati intermedi di caricamento o disabilitate.
+				</p>
+
+				<p>E' possibile usare questa tipologia di card anche in forma orizzontale usando la classe 
+					<kbd>horizontal</kbd>.
+				</p>
+
+				<p>Ci sono due versioni di questo elemento:</p>
+					<ul>
+						<li>
+							<a href="#u-action-card-based">Card con azioni Basic</a>
+						</li>
+						<li>
+							<a href="#u-action-card-horizontal">Card con azioni orizzontale</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-4 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_action_card.scss</kbd>
+					</div>
+				</div>
+				<div class="large-8 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classe da utilizzare:</strong> 
+					<kbd>u-action-card</kbd>
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
+	<h4 class="section-description" id="u-action-card-based">Card con azioni Basic</h4>
+	<pre>
+		<code>
+{{> u_action_card}}
+		</code>
+	</pre>
+
+{{> u_action_card}}
+<h4 class="section-description" id="u-action-card-horizontal">Card con azioni orizzontale</h4>
+	<pre>
+		<code>
+{{> u_action_card_horizontal}}
+		</code>
+	</pre>
+
+	{{> u_action_card_horizontal}}
+
+</section>

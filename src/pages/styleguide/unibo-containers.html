@@ -566,155 +566,60 @@ title: Style Guide Unibo Containers
 	</table>
 </section>
 <section>
-
 	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
 		<div class="grid-container">
 			<div class="grid-x grid-padding-x">
 				<div class="large-12 cell">                   
-					
-				<h3 id="u-card">
-					Card Option 
+				
+				<h3 id="u-numbered-list">Lista con numeri
 				</h3>
-				<p>Questo elemento può essere utilizzato come box esplicativo per linkare un servizio o una sezione. 
-					<br /> Può contenere un'icona (Fontawesome), del testo (anche titolazioni) e un pulsante.
+				<p>Questo elemento può essere utilizzato come box per spiegare una procedura in più step.</p>
+				<p>Può anche essere centrato e a quel punto va aggiunta la classe 
+					<kbd>centered</kbd>
 				</p>
 				<p>Ci sono due versioni di questo elemento:</p>
 					<ul>
 						<li>
-							<a href="#u-card-option">Card Option Basic</a>
+							<a href="#u-numbered-list-basic">Lista con numeri</a>
 						</li>
 						<li>
-							<a href="#u-card-option-fixed">Card Option a dimensione fissa</a>
+							<a href="#u-numbered-list-centered">Lista con numeri centrato</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="grid-x grid-padding-x">
-				<div class="large-4 cell">
+				<div class="large-5 cell">
 					<div class="icon-left">
 					<i class="fab fa-css3-alt fa-2x"></i>
-					<strong>SCSS da includere:</strong> <kbd>u_card_option.scss</kbd>
+					<strong>SCSS da includere:</strong> <kbd>u_numbered_list.scss</kbd>
 					</div>
 				</div>
-				<div class="large-8 cell">
+				<div class="large-7 cell">
 					<div class="icon-left">
 					<i class="far fa-file-code fa-2x"></i>
 					<strong>Classe da utilizzare:</strong> 
-					<kbd>u-card-option</kbd>
+					<kbd>u-numbered-list</kbd>
 					</div>
 					
 				</div>
 			</div>
 		</div>  
 	</div>
-	<h4 class="section-description" id="u-card-option">Card Option Basic</h4>
-	<pre>
-		<code>
-{{> u_card_option}}
-		</code>
-	</pre>
-{{> u_card_option}}
-<h4 class="section-description" id="u-card-option-fixed">Card Option con larghezza fissa</h4>
-
-<p>Questo componente può essere inserito in una griglia per avere più blocchi di elementi. In alternativa, può avere una larghezza fissa di 300px se viene inserita la classe 
-	<kbd>fixed-width</kbd>.
-</p>
-	<pre>
-		<code>
-{{> u_card_option_fixed_width}}
-		</code>
-	</pre>
-	{{> u_card_option_fixed_width}}
-</section>
-<section>
-	<h3 id="u-numbered-list">Lista con numeri 
-		<kbd>(u-numbered-list)</kbd>
-	</h3>
-	<p>Questo elemento può essere utilizzato come box per spiegare una procedura in più step.</p>
-	<p>Può anche essere centrato e a quel punto va aggiunta la classe 
-		<kbd>centered</kbd>
-	</p>
+	<h4 class="section-description" id="u-numbered-list-basic">Lista con numeri</h4>
 	<pre>
 		<code>
 {{> u_numbered_list}}
 	</code>
 	</pre>
 	{{> u_numbered_list}}
-
+	<h4 class="section-description" id="u-numbered-list-centered">Lista con numeri centrato</h4>
 	<pre>
 		<code>
 {{> u_numbered_list_centered}}
 		</code>
 	</pre>
 	{{> u_numbered_list_centered}}
-
-</section>
-<section>
-	<h3 id="u-comparison-card">Card feature 
-		<kbd>(u-comparison-card)</kbd>
-	</h3>
-	<p>Questo elemento può essere utilizzato come box per comparare diverse feature e spiegare la differenza tra diverse opzioni.</p>
-	<p>Graficamente è uguale al componente 
-		<a href="/++theme++application_theme/templates/unibo%20-%20controls.html#radio-card">Radio card</a> 
-	a parte che non ha la possibilità di selezionare l'opzione.
-	</p>
-	<pre>
-		<code>
-{{> u_comparison_card}}
-		</code>
-	</pre>
-{{> u_comparison_card}}
-
-</section>
-<section>
-	<h3 id="u-adjacent-grid">Azioni in griglia 
-		<kbd>(u-adjacent-grid)</kbd>
-	</h3>
-	<p>Il componente serve per distinguere graficamente una serie di azioni che sono necessarie per completare un determinato processo.</p>
-	<p>E' possibile anche inserire dei campi aggiuntivi, ad esempio 
-		<kbd>fieldset</kbd> prima del pulsante di azione.
-	</p>
-	<pre>
-		<code>
-{{> u_adjacent_grid}}
-		</code>
-	</pre>
-
-	{{> u_adjacent_grid}}
-
-</section>
-<section>
-	<h3 id="u-action-card">Card con azioni 
-		<kbd>(u-action-card)</kbd>
-	</h3>
-	<p>Questo elemento può essere utilizzato come box per verificare il corretto funzionamento di un processo o di un'azione.</p>
-	<p>Viene utilizzata la card 
-		<kbd>card-tile</kbd> per inserire i valori da verificare e successivamente le card 
-		<kbd>card-tile success</kbd> e 
-		<kbd>card-tile failure</kbd>
-definiscono il risultato che può essere positivo o negativo.
-	</p>
-	<p>E' presente anche una card 
-		<kbd>disabled</kbd> per gestire anche gli stati intermedi di caricamento o disabilitate.
-	</p>
-	<pre>
-		<code>
-{{> u_action_card}}
-		</code>
-	</pre>
-
-{{> u_action_card}}
-
-	<p>E' possibile usare questa tipologia di card anche in forma orizzontale usando la classe 
-		<kbd>horizontal</kbd>.
-	</p>
-	<pre>
-		<code>
-{{> u_action_card_horizontal}}
-		</code>
-	</pre>
-
-	{{> u_action_card_horizontal}}
 
 </section>
 <section>

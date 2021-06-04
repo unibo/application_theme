@@ -80,7 +80,7 @@ Otherwise, if you want to report a security issue write us at ***@****.it . Don'
 
 The components distributed with Unibo Applicatione Theme that have their own license other than CC0 are listed below. 
 
-  - [Foundation](foundation.zurb.com/) ©  Zurb Foundation, MIT license.
+  - [Foundation](foundation.zurb.com/) 6.6.3 ©  Zurb Foundation, MIT license.
   - [Slick](http://kenwheeler.github.io/slick/) ©  kenwheeler, MIT license.
   - [Cinzel Google Font](https://fonts.google.com/specimen/Cinzel) ©  Google, MIT license.
   - [Font Awesome Free](https://fontawesome.com) 5.15.3 © License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)

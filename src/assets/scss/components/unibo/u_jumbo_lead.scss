@@ -34,13 +34,25 @@
         -o-box-decoration-break: clone;
         box-decoration-break: clone;
         box-shadow: $padding-xs 0 0 white, -$padding-xs 0 0 white;
-
         @include breakpoint(large){
-            @include huge-fancy;
-            line-height: 1.5em;
             margin-left: $margin-xs;
         }
     }
+    @include breakpoint(large){
+        h1{
+            @include huge-fancy;
+            line-height: 1.5em;
+        }
+        h2{
+            @include very-large-fancy;
+            line-height: 1.2em;
+        }
+        h3{
+            @include large-fancy;
+            line-height: 1em;
+        }
+    }
+
     .button{
         border-radius: 4px;
     }
