@@ -2,16 +2,55 @@
 layout: styleguide
 title: Unibo Controls
 ---
+<!--  
+  SPDX-FileCopyrightText: 2021 Università di Bologna
+  SPDX-License-Identifier: BSD 3-Clause "New" or "Revised" License
+-->
 
 <h1>Style Guide Unibo Controls</h1>
 <h2>In questa pagina ci sono i componenti custom relativi ai controlli e azioni sviluppati ed utilizzati esclusivamente per applicazioni unibo.</h2>
 
 <section>
-<h3 id="wizard">Wizard</h3>
-<p>
-  Elemento Wizard.
-</p>
+	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+				
+        <h3 id="wizard">Wizard</h3>
+        <p>
+          Elemento Wizard.
+        </p>
 
+				<p>Ci sono due versioni di questo elemento:</p>
+					<ul>
+						<li>
+							<a href="#u-wizard-vertical">Wizard verticale</a>
+						</li>
+						<li>
+							<a href="#u-wizard-horizontal">Wizard orizzontale</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-4 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_wizard.scss</kbd>
+					</div>
+				</div>
+				<div class="large-8 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classe da utilizzare:</strong> 
+					<kbd>u-wizard-path</kbd>
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
+  <h4 class="section-description" id="u-wizard-vertical">Wizard verticale</h4>
 <pre>
   <code class="html">
       {{> u_wizard}}
@@ -22,10 +61,7 @@ title: Unibo Controls
 </section>
 
 <section>
-<h3 id="wizard">Wizard Orizzontale</h3>
-<p>
-  Elemento Wizard in versione orizzontale e responsive.
-</p>
+<h4 class="section-description" id="u-wizard-horizontal">Wizard Orizzontale</h4>
 
 <pre>
   <code class="html">
@@ -37,10 +73,36 @@ title: Unibo Controls
 </section>
 
 <section>
-<h3 id="menu-tools">Menu azioni</h3>
-<p>
-  Menu azioni per elementi singoli che necessitano di un pulsante azioni sull'elemento.
-</p>
+  <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+       
+          <h3 id="menu-tools">Menu azioni</h3>
+          <p>
+            Menu azioni per elementi singoli che necessitano di un pulsante azioni sull'elemento.
+          </p>
+
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-4 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_menu.scss</kbd>
+					</div>
+				</div>
+				<div class="large-8 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classe da utilizzare:</strong> 
+					<kbd>u-menu-tools</kbd>
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
 
 <pre>
   <code class="html">
@@ -52,13 +114,38 @@ title: Unibo Controls
 </section>
 
 <section>
-<h3 id="sso-button">SSO button</h3>
-<p>
-  Questo è il pulsante di SSO da utilizzare per fare login al sistema di Single Sign-On di Ateneo. 
-  <br/>
-  E' possibile utilizzare tutti gli stili adottati per gli altri pulsanti, cioè: tiny, small, large, expanded.
-</p>
+  <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+         
+          <h3 id="sso-button">SSO button</h3>
+          <p>
+            Questo è il pulsante di SSO da utilizzare per fare login al sistema di Single Sign-On di Ateneo. 
+            <br/>
+            E' possibile utilizzare tutti gli stili adottati per gli altri pulsanti, cioè: tiny, small, large, expanded.
+          </p>
 
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-4 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_button.scss</kbd>
+					</div>
+				</div>
+				<div class="large-8 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classe da utilizzare:</strong> 
+					<kbd>sso</kbd>
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
 <pre>
   <code class="html">
   {{> u_sso_button.}}
@@ -70,12 +157,36 @@ title: Unibo Controls
 
 
 <section>
-  <h3 id="u-dropdown">Dropdown</h3>
-  <p>
-    Elemento che si contraddistingue come fosse una card ma in realtà è un button che permette di effettuare una scelta. <br>
-    Può avere sfondo colorato utilizzando la classe <kbd>colored</kbd>.
-  </p>
-  
+  <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+         
+          <h3 id="u-dropdown">Dropdown</h3>
+          <p>
+            Box apri e chiudi che utilizza il dropdown di Foundation.
+          </p>
+          
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-4 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_dropdown.scss</kbd>
+					</div>
+				</div>
+				<div class="large-8 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classe da utilizzare:</strong> 
+					<kbd>u-dropdown</kbd>
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
   <pre>
     <code class="html">
       {{> u_dropdown}}
@@ -85,14 +196,39 @@ title: Unibo Controls
 </section>
 
 <section>
-  <h3 id="u-survey">Questionario</h3>
-  <p>
-    Elemento utilizzabile per inserire un questionario che prevede la possibilità di esprimere una preferenza o valori diversi. <br>
-    Sono utilizzati elementi radio button per selezionare i diversi elementi. <br>
-  </p>
-  <p>
-    E' possibile inserire un'etichetta di descrizione sotto le diverse voci <kbd>&lt;span class="legend-label show-for-sr"&gt;</kbd>.
-  </p>
+  <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+         
+          <h3 id="u-survey">Questionario</h3>
+          <p>
+            Elemento utilizzabile per inserire un questionario che prevede la possibilità di esprimere una preferenza o valori diversi. <br>
+            Sono utilizzati elementi radio button per selezionare i diversi elementi. <br>
+          </p>
+          <p>
+            E' possibile inserire un'etichetta di descrizione sotto le diverse voci <kbd>&lt;span class="legend-label show-for-sr"&gt;</kbd>.
+          </p>
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-4 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_survey.scss</kbd>
+					</div>
+				</div>
+				<div class="large-8 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classe da utilizzare:</strong> 
+					<kbd>u-survey</kbd>
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
   <pre>
     <code class="html">
       {{> u_survey}}
