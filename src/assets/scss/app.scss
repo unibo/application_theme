@@ -86,45 +86,60 @@
 
 
 /* Elementi custom Unibo */
-@import "components/unibo/u_barra_login";
+
+//Generic
 @import "components/unibo/u_base";
-@import "components/unibo/u_button";
-@import "components/unibo/u_breadcrumbs";
-@import "components/unibo/u_card_option";
-@import "components/unibo/u_footer";
-@import "components/unibo/u_form";
-@import "components/unibo/u_header";
-@import "components/unibo/u_highlight_text";
+@import "components/unibo/u_border";
+@import "components/unibo/u_spacing";
+@import "components/unibo/u_visibility";
+
+//Unibo login 
+@import "components/unibo/u_barra_login";
+
+//Basic Layout
 @import "components/unibo/u_menu";
+@import "components/unibo/u_lang";
+@import "components/unibo/u_header";
+@import "components/unibo/u_lead";
+@import "components/unibo/u_footer";
 @import "components/unibo/u_spinner";
-@import "components/unibo/u_stati";
-@import "components/unibo/u_table";
+@import "components/unibo/u_button";
+
+//Navigation components
+@import "components/unibo/u_breadcrumbs";
+@import "components/unibo/u_search_header";
 @import "components/unibo/u_to_top";
 @import "components/unibo/u_top_bar";
-@import "components/unibo/u_visibility";
-@import "components/unibo/u_wizard";
-@import "components/unibo/u_lang";
+
+//Forms, tables and Structured information
+@import "components/unibo/u_table";
+@import "components/unibo/u_responsive_table";
+@import "components/unibo/u_form";
+@import "components/unibo/u_stati";
+@import "components/unibo/u_media_list";
+@import "components/unibo/u_numbered_list";
+
+//Layout components 
+@import "components/unibo/u_highlight_text";
+@import "components/unibo/u_jumbo_lead";
+@import "components/unibo/u_contact";
+@import "components/unibo/u_dropdown";
 @import "components/unibo/u_callout";
 @import "components/unibo/u_description_text";
+
+//Cards
+@import "components/unibo/u_card_option";
 @import "components/unibo/u_radiocard";
 @import "components/unibo/u_buttoncard";
 @import "components/unibo/u_comparison_card";
-@import "components/unibo/u_numbered_list";
-@import "components/unibo/u_search_header";
 @import "components/unibo/u_action_card";
-@import "components/unibo/u_lead";
 @import "components/unibo/u_feature";
-@import "components/unibo/u_contact";
-@import "components/unibo/u_responsive_table";
-@import "components/unibo/u_jumbo_lead";
-@import "components/unibo/u_dropdown";
-@import "components/unibo/u_border";
-@import "components/unibo/u_spacing";
+
+//Specific purpouse
+@import "components/unibo/u_wizard";
 @import "components/unibo/u_survey";
-@import "components/unibo/u_media_list";
 
-
-/* Elementi Foundation Custom */
+/* Elementi Foundation Restyled by Unibo */
 @import "components/foundation-custom/f_accordion";
 @import "components/foundation-custom/f_breadcrumbs";
 @import "components/foundation-custom/f_buttons";
