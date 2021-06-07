@@ -98,12 +98,12 @@
 
 //Basic Layout
 @import "components/unibo/u_menu";
+@import "components/unibo/u_button";
 @import "components/unibo/u_lang";
 @import "components/unibo/u_header";
 @import "components/unibo/u_lead";
 @import "components/unibo/u_footer";
 @import "components/unibo/u_spinner";
-@import "components/unibo/u_button";
 
 //Navigation components
 @import "components/unibo/u_breadcrumbs";
@@ -111,7 +111,7 @@
 @import "components/unibo/u_to_top";
 @import "components/unibo/u_top_bar";
 
-//Forms, tables and Structured information
+//Forms, Tables and Structured information
 @import "components/unibo/u_table";
 @import "components/unibo/u_responsive_table";
 @import "components/unibo/u_form";

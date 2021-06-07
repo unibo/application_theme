@@ -4,13 +4,13 @@ $(function(){
 	$(document).on( 'scroll', function(){
  
 		if ($(window).scrollTop() > 100) {
-			$('.u_to_top').addClass('show');
+			$('.u-to-top').addClass('show');
 		} else {
-			$('.u_to_top').removeClass('show');
+			$('.u-to-top').removeClass('show');
 		}
 	});
  
-	$('.u_to_top').on('click', scrollToTop);
+	$('.u-to-top').on('click', scrollToTop);
 });
  
 function scrollToTop() {
