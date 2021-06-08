@@ -73,15 +73,13 @@ src
 └─ partials       All html snippets used in pages.
 ```
 ## Bug reports and requests for help 
-Is something get wrong or it's not what you expected? Please open an issue in this repository on github.
-Otherwise, if you want to report a security issue write us at ***@****.it . Don't use public issue for a security problem. Thank you for contributing!
+Is something get wrong or it's not what you expected? Please open an issue in this repository on github. Thank you for contributing!
 
 ## License software of third part component
 
 The components distributed with Unibo Applicatione Theme that have their own license other than CC0 are listed below. 
 
   - [Foundation](foundation.zurb.com/) 6.6.3 ©  Zurb Foundation, MIT license.
-  - [Slick](http://kenwheeler.github.io/slick/) ©  kenwheeler, MIT license.
   - [Cinzel Google Font](https://fonts.google.com/specimen/Cinzel) ©  Google, MIT license.
   - [Font Awesome Free](https://fontawesome.com) 5.15.3 © License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
   - [Monokai Sublime style](http://nn.mit-license.org). Derived from Monokai by noformnocontent http://nn.mit-license.org/
