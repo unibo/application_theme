@@ -1,4 +1,4 @@
-# UNIBO APPLICATION THEME - based on ZURB Template
+# UNIBO APPLICATION THEME 
 
 This is the official Unibo Application Theme based on [Foundation for Sites](https://get.foundation/).
 Unibo Application Theme is suited for the creation and development of application website in University of Bologna network.
