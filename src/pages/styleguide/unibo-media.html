@@ -5,15 +5,80 @@ title: Style Guide Unibo Controls
 
 <h1>Style Guide Unibo Controls</h1>
 <section>
-  <h3 id="stati">Stati</h3>
+
+  <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">    
+          <h3 id="stati">Stati</h3>
+          <p>In aggiunta alle <a href="https://get.foundation/sites/docs/prototyping-utilities.html">prototype classes</a> usate in Foundation, 
+            è stato sviluppata la possibilità di avere padding e margin più piccoli.
+          </p>
+          <p>
+            Per utilizzare la funzionalità è sufficiente usare la classe <kbd>padding-half</kbd> o <kbd>margin-half</kbd>. 
+            In questo modo la spaziatura sarà la metà del padding/margin normale.
+          <p>
+            E' possibile indicare anche solo un lato a cui applicare la spaziatura. 
+            Ad esempio, in questo modo: <kbd>padding-top-half</kbd>, verrà applicato la spaziatura dimezzata solo al lato superiore dell'elemento.
+          </p>
+				</div>
+
+			</div>
+		</div>
+		<div class="grid-x grid-padding-x">
+			<div class="large-5 cell">
+        <div class="icon-left">
+        <i class="fab fa-css3-alt fa-2x"></i>
+        <strong>SCSS da includere:</strong> <kbd>u_stati.scss</kbd>
+        </div>
+      </div>
+      <div class="large-7 cell">
+        <div class="icon-left">
+        <i class="far fa-file-code fa-2x"></i>
+        <strong>Classe da utilizzare:</strong> 
+        <kbd>u-state-*</kbd>
+        </div>
+        
+      </div>
+		</div>
+	</div>  
+  <pre>
+    <code class="html">
+    {{> u_stati}}
+    </code>
+  </pre>
   {{> u_stati}}
 </section>
 
 <section>
-    <h3 id="media-list">Lista con icone e azioni</h3>
-    <p class="section-description">
-      Lista elementi con icone e pulsanti di azione, utilizzabile al posto di tabelle con poche colonne.
-    </p>
+  <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">    
+          <h3 id="media-list">Lista con icone e azioni</h3>
+          <p>Lista elementi con icone e pulsanti di azione, utilizzabile al posto di tabelle con poche colonne.
+          </p>
+				</div>
+
+			</div>
+		</div>
+		<div class="grid-x grid-padding-x">
+			<div class="large-5 cell">
+        <div class="icon-left">
+        <i class="fab fa-css3-alt fa-2x"></i>
+        <strong>SCSS da includere:</strong> <kbd>u_media_list.scss</kbd>
+        </div>
+      </div>
+      <div class="large-7 cell">
+        <div class="icon-left">
+        <i class="far fa-file-code fa-2x"></i>
+        <strong>Classe da utilizzare:</strong> 
+        <kbd>u-media-list</kbd>
+        </div>
+        
+      </div>
+		</div>
+	</div>  
     <pre>
       <code class="html">
           {{> u_media_list}}
