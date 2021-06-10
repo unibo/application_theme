@@ -15,6 +15,7 @@
     "css-what": "^5.0.1",
     "decompress": "^4.2.1",
     "foundation-sites": "^6.6.0",
+    "glob-parent": "^5.1.2",
     "highlight.js": "^10.7.2",
     "is-svg": "^4.2.2",
     "jquery": "^3.2.1",
