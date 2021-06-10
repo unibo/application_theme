@@ -12,11 +12,17 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@types/highlight.js": "^10.1.0",
+    "css-what": "^5.0.1",
+    "decompress": "^4.2.1",
     "foundation-sites": "^6.6.0",
     "highlight.js": "^10.7.2",
+    "is-svg": "^4.2.2",
     "jquery": "^3.2.1",
+    "lodash.template": "^4.5.0",
     "motion-ui": "^2.0.3",
-    "what-input": "^5.1.2"
+    "trim-newlines": "^3.0.1",
+    "what-input": "^5.1.2",
+    "xmlhttprequest-ssl": "^1.6.2"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
