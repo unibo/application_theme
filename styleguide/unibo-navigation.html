@@ -1,0 +1,455 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../assets/css/app.css">  </head>
+
+  <body>
+    <main class="grid-container fluid">
+      <div class="grid-x">
+        <div class="large-2 cell show-for-large">
+          <nav class="docs-toc-wrap sticky-container" id="docsToc" data-sticky-container>
+              <div class="docs-toc sticky is-at-top is-stuck" data-sticky-on>
+                  <a class="back" href="../">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>Indietro
+                  </a>
+              </div>
+          </nav>
+        </div>    
+
+        <div class="large-10 cell styleguide">
+          
+          <h1 class="huge">Style Guide Unibo Navigation</h1>
+          <h2>Componenti custom Unibo per la navigazione.</h2>
+          
+          <section>
+            <h3 id="unibo-menu">Unibo Menu</h3>
+            <p class="section-description">
+              Menu Unibo utilizzabile fino a 6 voci.
+            </p>
+            
+            <pre>
+              <code class="html">
+                <ul class="menu vertical u-menu u-menu-main u-main-menu-icons">
+                  <li>
+                    <a href="">
+                      <i class="fa fa-home"></i>
+                      <span class="hide-for-sr-small-only">Home</span>
+                    </a>
+                  </li>
+                
+                  <li class="selected">
+                    <a href="">
+                      <i class="fa fa-user"></i>
+                      <span class="hide-for-sr-small-only">Elenco Utenze</span>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="">
+                      <i class="fas fa-phone-alt"></i>
+                      <span class="hide-for-sr-small-only">Elenco Apparati</span>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="">
+                      <i class="far fa-clock"></i>
+                      <span class="hide-for-sr-small-only">Storico Richieste</span>
+                    </a>
+                  </li>
+                </ul>
+              </code>
+            </pre>
+            <div class="grid-x grid-padding-x">
+              <div class="cell large-4">
+                <ul class="menu vertical u-menu u-menu-main u-main-menu-icons">
+                  <li>
+                    <a href="">
+                      <i class="fa fa-home"></i>
+                      <span class="hide-for-sr-small-only">Home</span>
+                    </a>
+                  </li>
+                
+                  <li class="selected">
+                    <a href="">
+                      <i class="fa fa-user"></i>
+                      <span class="hide-for-sr-small-only">Elenco Utenze</span>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="">
+                      <i class="fas fa-phone-alt"></i>
+                      <span class="hide-for-sr-small-only">Elenco Apparati</span>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="">
+                      <i class="far fa-clock"></i>
+                      <span class="hide-for-sr-small-only">Storico Richieste</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          
+          <section>
+            <h3 id="unibo-menug">Unibo Menu Gerarchico</h3>
+            <p class="section-description">
+              Menu Unibo gerarchico su due livelli
+            </p>
+            
+            <pre>
+              <code class="html">
+                <ul class="menu vertical u-menu u-menu-main">
+                  <li>
+                    <a href="">
+                      <i class="fa fa-home"></i> Home
+                    </a>
+                  </li>
+                  
+                
+                  <li class="selected">
+                    <a href="">
+                      <i class="fa fa-user"></i> Elenco Utenze
+                    </a>
+                    <ul class="nested vertical menu">
+                      <li class="selected"><a href="#">One</a></li>
+                      <li><a href="#">Two</a></li>
+                      <li><a href="#">Three</a></li>
+                    </ul>
+                  </li>
+                
+                  <li>
+                    <a href="">
+                      <i class="fas fa-phone-alt"></i> Elenco Apparati
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="">
+                      <i class="far fa-clock"></i> Storico Richieste
+                    </a>
+                  </li>
+                </ul>
+              </code>
+            </pre>
+            <div class="grid-x grid-padding-x">
+              <div class="cell large-4">
+                <ul class="menu vertical u-menu u-menu-main">
+                  <li>
+                    <a href="">
+                      <i class="fa fa-home"></i> Home
+                    </a>
+                  </li>
+                  
+                
+                  <li class="selected">
+                    <a href="">
+                      <i class="fa fa-user"></i> Elenco Utenze
+                    </a>
+                    <ul class="nested vertical menu">
+                      <li class="selected"><a href="#">One</a></li>
+                      <li><a href="#">Two</a></li>
+                      <li><a href="#">Three</a></li>
+                    </ul>
+                  </li>
+                
+                  <li>
+                    <a href="">
+                      <i class="fas fa-phone-alt"></i> Elenco Apparati
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="">
+                      <i class="far fa-clock"></i> Storico Richieste
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          
+          <section>
+            <h3 id="resp_nav">Unibo Responsive Navigation</h3>
+            <pre>
+              <code>
+                <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                  <a class="title-bar-title" data-toggle="example-menu">Menu</a>
+                </div>
+                
+                <div class="" id="example-menu">
+                    <ul class="dropdown vertical menu u-menu u-menu-main" data-dropdown-menu>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-home"></i> Home
+                        </a>
+                        <ul class="menu vertical">
+                          <li><a href="#">One</a></li>
+                          <li><a href="#">Two</a></li>
+                          <li><a href="#">Three</a></li>
+                        </ul>
+                      </li>
+                      <li class="selected">
+                        <a href="#">
+                          <i class="fa fa-user"></i> Elenco Utenze  
+                        </a>
+                      </li>
+                      <li><a href="#">
+                        <i class="fas fa-phone-alt"></i> Elenco Apparati
+                      </a></li>
+                      <li><a href="#">
+                        <i class="far fa-clock"></i> Storico Richieste
+                      </a></li>
+                    </ul>
+                </div>
+              </code>
+            </pre>
+            <div class="grid-x grid-padding-x">
+              <div class="medium-4 cell">
+                <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                  <a class="title-bar-title" data-toggle="example-menu">Menu</a>
+                </div>
+                
+                <div class="" id="example-menu">
+                    <ul class="dropdown vertical menu u-menu u-menu-main" data-dropdown-menu>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-home"></i> Home
+                        </a>
+                        <ul class="menu vertical">
+                          <li><a href="#">One</a></li>
+                          <li><a href="#">Two</a></li>
+                          <li><a href="#">Three</a></li>
+                        </ul>
+                      </li>
+                      <li class="selected">
+                        <a href="#">
+                          <i class="fa fa-user"></i> Elenco Utenze  
+                        </a>
+                      </li>
+                      <li><a href="#">
+                        <i class="fas fa-phone-alt"></i> Elenco Apparati
+                      </a></li>
+                      <li><a href="#">
+                        <i class="far fa-clock"></i> Storico Richieste
+                      </a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section>
+            <h3 id="unibo-menu">Unibo Breadcrumbs/path di navigazione <kbd>(u-breadcrumbs)</kbd></h3>
+            <p class="section-description">
+              Percorso di navigazione con spaziature e enfasi su homepage
+            </p>
+            <p>Utilizza di base le Breadcrumbs di Foundation.</p>
+            <p>Possibilità di inserire un percorso di navigazione personalizzato con spaziature differenti e con enfasi sul link alla homepage.</p>
+            <p>E' possibile inserire le breadcrumbs immediatamente dopo la testata <kbd>header</kbd> e all'interno della colonna principale.</p>
+            
+            <pre>
+              <code class="html">
+                  <div class="u-breadcrumbs">
+                     <nav aria-label="You are here:" role="navigation">
+                        <ul class="breadcrumbs">
+                           <li class="home"><a href="#">Home - Nome dell'applicativo</a></li>
+                           <li><a href="#">Features</a></li>
+                           <li class="disabled">Gene Splicing</li>
+                           <li>
+                           <span class="show-for-sr">Current: </span> Cloning
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>    </code>
+            </pre>
+            <div class="grid-x grid-padding-x">
+              <div class="cell large-8">
+                <div class="u-breadcrumbs">
+                   <nav aria-label="You are here:" role="navigation">
+                      <ul class="breadcrumbs">
+                         <li class="home"><a href="#">Home - Nome dell'applicativo</a></li>
+                         <li><a href="#">Features</a></li>
+                         <li class="disabled">Gene Splicing</li>
+                         <li>
+                         <span class="show-for-sr">Current: </span> Cloning
+                         </li>
+                      </ul>
+                   </nav>
+                </div>    </div>
+            </div>
+          </section>
+          
+          <section>
+            <h3 id="unibo-topbar">Unibo Top Bar</h3>
+            <p>Per utilizzare la top bar custom Unibo inserire la classe u-top-bar. 
+              <br>
+              Questo componente sfrutta la proprietà css <kbd>display: flex</kbd> e agisce come fosse una griglia fluida in base agli elementi contenuti in esso.
+              Per poter sfruttare la fluidità del componente, i box al suo interno devono avere la classe <kbd>.top-bar-box</kbd>.
+              All'interno di <kbd>.top-bar-box</kbd> possono essere inseriti input, select e pulsanti.
+              <br>
+              Di default un elemento <kbd>.top-bar-box</kbd> si allarga a seconda dello spazio disponibile e se non c'è più spazio va a capo.
+              <br>
+              Un elemento <kbd>.top-bar-box</kbd> può avere anche classe <kbd>.u-button-group</kbd>, pensato appositamente per pulsanti che si allineano a destra della pagina.
+              </p>
+            <pre>
+              <code>
+                <div class="u-top-bar">
+                    <div class="top-bar-box">
+                        <select>
+                            <option value="husker">Tutti i centri</option>
+                            <option value="starbuck">Starbuck</option>
+                            <option value="hotdog">Cesia</option>
+                            <option value="apollo">Apollo</option>
+                        </select>
+                        <input type="text" placeholder="Nome" />
+                        <button class="button primary" href="#">
+                            Aggiungi nuovo
+                        </button> 
+                
+                    </div>
+                
+                    <div class="top-bar-box u-button-group">
+                        <button class="button secondary" href="#">
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                            Esporta dati
+                        </button>   
+                        <button class="button alert" href="#">
+                            <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                            Elimina dati
+                        </button>
+                
+                    </div>
+                
+                </div>    </code>
+            </pre>
+            <div class="u-top-bar">
+                <div class="top-bar-box">
+                    <select>
+                        <option value="husker">Tutti i centri</option>
+                        <option value="starbuck">Starbuck</option>
+                        <option value="hotdog">Cesia</option>
+                        <option value="apollo">Apollo</option>
+                    </select>
+                    <input type="text" placeholder="Nome" />
+                    <button class="button primary" href="#">
+                        Aggiungi nuovo
+                    </button> 
+            
+                </div>
+            
+                <div class="top-bar-box u-button-group">
+                    <button class="button secondary" href="#">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        Esporta dati
+                    </button>   
+                    <button class="button alert" href="#">
+                        <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                        Elimina dati
+                    </button>
+            
+                </div>
+            
+            </div>  <p>
+              L'elemento <kbd>.top-bar-box</kbd> può avere anche classe <kbd>.u-search-group</kbd>, ovvero una ricerca contestuale a seconda dell'elemento selezionato dalla tendina. 
+            </p>
+            <pre>
+                <code>
+                  <div class="u-top-bar">
+                      <div class="top-bar-box">
+                          <select>
+                              <option value="husker">Tutti i centri</option>
+                              <option value="starbuck">Starbuck</option>
+                              <option value="hotdog">Cesia</option>
+                              <option value="apollo">Apollo</option>
+                          </select>
+                      </div>
+                  
+                      <div class="top-bar-box u-button-group">       
+                          <button class="button alert" href="#">
+                              <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                              Elimina dati
+                          </button>
+                          <button class="button secondary" href="#">
+                              <i class="fa fa-download" aria-hidden="true"></i>
+                              Esporta dati
+                          </button>   
+                      </div>
+                      <div class="top-bar-box u-search-group">
+                          <select>
+                              <option value="husker">Utilizzatore</option>
+                              <option value="starbuck">John Smith</option>
+                              <option value="hotdog">Agatha Doe</option>
+                              <option value="apollo">Tony Vlad</option>
+                              </select>
+                          <input class="input-group-field" type="text" placeholder="Cerca...">
+                          
+                          <div class="input-group-button">
+                              <a class="button primary" href="#">
+                                  <span class="show-for-sr">Vai</span>
+                                  <i class="fa fa-search" aria-hidden="true"></i>
+                              </a>
+                          </div>
+                      </div>
+                  </div>      </code>
+              </pre>
+          <div class="u-top-bar">
+              <div class="top-bar-box">
+                  <select>
+                      <option value="husker">Tutti i centri</option>
+                      <option value="starbuck">Starbuck</option>
+                      <option value="hotdog">Cesia</option>
+                      <option value="apollo">Apollo</option>
+                  </select>
+              </div>
+          
+              <div class="top-bar-box u-button-group">       
+                  <button class="button alert" href="#">
+                      <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                      Elimina dati
+                  </button>
+                  <button class="button secondary" href="#">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                      Esporta dati
+                  </button>   
+              </div>
+              <div class="top-bar-box u-search-group">
+                  <select>
+                      <option value="husker">Utilizzatore</option>
+                      <option value="starbuck">John Smith</option>
+                      <option value="hotdog">Agatha Doe</option>
+                      <option value="apollo">Tony Vlad</option>
+                      </select>
+                  <input class="input-group-field" type="text" placeholder="Cerca...">
+                  
+                  <div class="input-group-button">
+                      <a class="button primary" href="#">
+                          <span class="show-for-sr">Vai</span>
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                      </a>
+                  </div>
+              </div>
+          </div></section>
+        </div>
+      </div>
+    </main>
+    <script src="../assets/js/app.js"></script>
+    <script>
+      jQuery('pre code').each(function () {
+        var $block = jQuery(this);
+        $block.text($block.html());
+      });
+      hljs.highlightAll();
+    </script> 
+    
+  </body>
+</html>

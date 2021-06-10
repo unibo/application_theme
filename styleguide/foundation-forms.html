@@ -1,0 +1,300 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../assets/css/app.css">  </head>
+
+  <body>
+    <main class="grid-container fluid">
+      <div class="grid-x">
+        <div class="large-2 cell show-for-large">
+          <nav class="docs-toc-wrap sticky-container" id="docsToc" data-sticky-container>
+              <div class="docs-toc sticky is-at-top is-stuck" data-sticky-on>
+                  <a class="back" href="../">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>Indietro
+                  </a>
+              </div>
+          </nav>
+        </div>    
+
+        <div class="large-10 cell styleguide">
+          <h1 class="huge">Forms</h1>
+          <a href="http://foundation.zurb.com/sites/docs/forms.html">See on Foundation Guide</a>
+          <section>  
+            <h3 id="text">Text Inputs</h3>
+            <p>These input types create a text field: text, date, datetime, datetime-local, email, month, number, password, search, tel, time, url, and week.</p>
+            <pre>
+              <code class="html">
+          <label>
+            Input Label
+            <input type="text" placeholder="Input placeholder">
+          </label>
+              </code>
+            </pre>
+            <label>
+              Input Label
+              <input type="text" placeholder="Input placeholder">
+            </label>
+          </section>
+          
+          <section>  
+            <h3 id="number">Number Inputs</h3>
+            <p></p>
+            <pre>
+              <code class="html">
+          <label>
+            How many puppies?
+            <input type="number" value="100">
+          </label>
+              </code>
+            </pre>
+            <label>
+              How many puppies?
+              <input type="number" value="100">
+            </label>
+          </section>
+          
+          <section>  
+            <h3 id="text_areas">Text Areas</h3>
+            <pre>
+              <code class="html">
+          <label>
+            What books did you read over summer break?
+            <textarea placeholder="None"></textarea>
+          </label>
+              </code>
+            </pre>
+            <label>
+              What books did you read over summer break?
+              <textarea placeholder="None"></textarea>
+            </label>
+          </section>
+          
+          <section>  
+            <h3 id="select">Select Menus</h3>
+            <pre>
+              <code class="html">
+          <select>
+            <option value="husker">Husker</option>
+            <option value="starbuck">Starbuck</option>
+            <option value="hotdog">Hot Dog</option>
+            <option value="apollo">Apollo</option>
+          </select>
+              </code>
+            </pre>
+              <select>
+                <option value="husker">Husker</option>
+                <option value="starbuck">Starbuck</option>
+                <option value="hotdog">Hot Dog</option>
+                <option value="apollo">Apollo</option>
+              </select>
+          </section>
+          
+          <section>
+            <h3 id="selectm">Select Multiple</h3>
+            <p>Add the multiple attribute to allow more than one option to be selected. Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+            <pre>
+              <code class="html">
+          <label>
+            Multiple Select Menu
+            <select multiple>
+              <option value="showboat">Showboat</option>
+              <option value="redwing">Redwing</option>
+              <option value="narcho">Narcho</option>
+              <option value="hardball">Hardball</option>
+            </select>
+          </label>
+              </code>
+            </pre>
+            <label>
+              Multiple Select Menu
+              <select multiple>
+                <option value="showboat">Showboat</option>
+                <option value="redwing">Redwing</option>
+                <option value="narcho">Narcho</option>
+                <option value="hardball">Hardball</option>
+              </select>
+            </label>
+          </section>
+          
+          <section>  
+            <h3 id="cb">Checkboxes</h3>
+            <pre>
+              <code class="html">
+          <input id="checkbox1" type="checkbox">
+          <label for="checkbox1">Checkbox 1</label>
+          <input id="checkbox2" type="checkbox">
+          <label for="checkbox2">Checkbox 2</label>
+          <input id="checkbox3" type="checkbox">
+          <label for="checkbox3">Checkbox 3</label>
+              </code>
+            </pre>
+            <input id="checkbox1" type="checkbox">
+            <label for="checkbox1">Checkbox 1</label>
+            <input id="checkbox2" type="checkbox">
+            <label for="checkbox2">Checkbox 2</label>
+            <input id="checkbox3" type="checkbox">
+            <label for="checkbox3">Checkbox 3</label>
+          </section>
+          
+          <section>  
+            <h3 id="radio">Radio</h3>
+            <pre>
+              <code class="html">
+          <input type="radio" name="pokemon" value="Red" id="pokemonRed" required>
+          <label for="pokemonRed">Red</label>
+          <input type="radio" name="pokemon" value="Blue" id="pokemonBlue">
+          <label for="pokemonBlue">Blue</label>
+          <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow">
+          <label for="pokemonYellow">Yellow</label>
+              </code>
+            </pre>
+            <input type="radio" name="pokemon" value="Red" id="pokemonRed" required>
+            <label for="pokemonRed">Red</label>
+            <input type="radio" name="pokemon" value="Blue" id="pokemonBlue">
+            <label for="pokemonBlue">Blue</label>
+            <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow">
+            <label for="pokemonYellow">Yellow</label>
+          </section>
+          
+          <section>  
+            <h3 id="fieldset">Fieldset</h3>
+            <pre>
+              <code class="html">
+          <fieldset class="fieldset">
+            <legend>Check these out</legend>
+            <input id="checkbox12" type="checkbox"><label for="checkbox12">Checkbox 1</label>
+            <input id="checkbox22" type="checkbox"><label for="checkbox22">Checkbox 2</label>
+            <input id="checkbox32" type="checkbox"><label for="checkbox32">Checkbox 3</label>
+          </fieldset>
+              </code>
+            </pre>
+            <fieldset class="fieldset">
+              <legend>Check these out</legend>
+              <input id="checkbox12" type="checkbox"><label for="checkbox12">Checkbox 1</label>
+              <input id="checkbox22" type="checkbox"><label for="checkbox22">Checkbox 2</label>
+              <input id="checkbox32" type="checkbox"><label for="checkbox32">Checkbox 3</label>
+            </fieldset>
+          </section>
+          
+          <section>  
+            <h3 id="fieldset">Inline Labels and Buttons</h3>
+            <pre>
+              <code class="html">
+          <div class="input-group">
+            <span class="input-group-label">$</span>
+            <input class="input-group-field" type="number">
+            <div class="input-group-button">
+              <input type="submit" class="button" value="Submit">
+            </div>
+          </div>
+              </code>
+            </pre>
+            <div class="input-group">
+              <span class="input-group-label">$</span>
+              <input class="input-group-field" type="number">
+              <div class="input-group-button">
+                <input type="submit" class="button" value="Submit">
+              </div>
+            </div>
+          </section>
+          
+          <section>  
+            <h3 id="fileupload">File Upload Button</h3>
+            <pre>
+              <code class="html">
+          <label for="exampleFileUpload" class="button">Upload File</label>
+          <input type="file" id="exampleFileUpload" class="show-for-sr">
+              </code>
+            </pre>
+            <label for="exampleFileUpload" class="button">Upload File</label>
+            <input type="file" id="exampleFileUpload" class="show-for-sr">
+          </section>
+          
+          <section>  
+            <h3 id="error">Errori</h3>
+            <p>Foundation utilizza il plugin Abide per validare i campi required in html5.</p>
+            <p>Per utilizzare il plugin è sufficiente inserire gli attributi <kbd>data-abide</kbd> e <kbd>novalidate</kbd> all'interno del tag <kbd>form</kbd>. L'attributo <kbd>novalidate</kbd> impedisce di inserire gli stili di default del browser per la validazione, poiché questi vengono inseriti dal plugin.</p>
+            <p><a href="http://foundation.zurb.com/sites/docs/abide.html">Maggiori informazioni su Abide</a>
+          </p>
+            <pre>
+              <code class="html">
+          <!-- Stato iniziale -->
+          <form data-abide novalidate>
+            <!-- Add "display: none" right away -->
+            <div data-abide-error class="alert callout" style="display: none;">
+              <p>There are some errors in your form.</p>
+            </div>
+            <label>
+              Name
+              <input type="text" required>
+              <span class="form-error">This field is required.</span>
+            </label>
+          </form>
+          
+          <!-- Stato Errore -->
+          <form data-abide novalidate>
+            <!-- Add role="alert" -->
+            <!-- Add "display: block" -->
+            <div data-abide-error role="alert" class="alert callout" style="display: block;">
+              <p>There are some errors in your form.</p>
+            </div>
+            <!-- Add "is-invalid-label" -->
+            <label class="is-invalid-label">
+              Name
+              <!-- Add "is-invalid-input" -->
+              <input type="text" class="is-invalid-input" required aria-invalid aria-describedby="uuid">
+              <!-- Add "is-visible" -->
+              <span class="form-error is-visible" id="uuid">This field is required.</span>
+            </label>
+          </form>    </code>
+            </pre>
+            <!-- Stato iniziale -->
+            <form data-abide novalidate>
+              <!-- Add "display: none" right away -->
+              <div data-abide-error class="alert callout" style="display: none;">
+                <p>There are some errors in your form.</p>
+              </div>
+              <label>
+                Name
+                <input type="text" required>
+                <span class="form-error">This field is required.</span>
+              </label>
+            </form>
+            
+            <!-- Stato Errore -->
+            <form data-abide novalidate>
+              <!-- Add role="alert" -->
+              <!-- Add "display: block" -->
+              <div data-abide-error role="alert" class="alert callout" style="display: block;">
+                <p>There are some errors in your form.</p>
+              </div>
+              <!-- Add "is-invalid-label" -->
+              <label class="is-invalid-label">
+                Name
+                <!-- Add "is-invalid-input" -->
+                <input type="text" class="is-invalid-input" required aria-invalid aria-describedby="uuid">
+                <!-- Add "is-visible" -->
+                <span class="form-error is-visible" id="uuid">This field is required.</span>
+              </label>
+            </form></section>
+                    
+                  
+        </div>
+      </div>
+    </main>
+    <script src="../assets/js/app.js"></script>
+    <script>
+      jQuery('pre code').each(function () {
+        var $block = jQuery(this);
+        $block.text($block.html());
+      });
+      hljs.highlightAll();
+    </script> 
+    
+  </body>
+</html>

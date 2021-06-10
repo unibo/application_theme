@@ -1,0 +1,599 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../assets/css/app.css">  </head>
+
+  <body>
+    <main class="grid-container fluid">
+      <div class="grid-x">
+        <div class="large-2 cell show-for-large">
+          <nav class="docs-toc-wrap sticky-container" id="docsToc" data-sticky-container>
+              <div class="docs-toc sticky is-at-top is-stuck" data-sticky-on>
+                  <a class="back" href="../">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>Indietro
+                  </a>
+              </div>
+          </nav>
+        </div>    
+
+        <div class="large-10 cell styleguide">
+          
+          
+          <h1>Foundation Controls</h1>
+          <h2>Stile delle componenti di controllo (button, button group, close button, slider, switch) di Foundation adattate alla grafica Unibo</h2>
+                  
+              <section>
+                <h3 id="bottoni_foundation">Bottoni Foundation</h3>
+                <a href="http://foundation.zurb.com/sites/docs/button.html">See on Foundation Guide</a>
+                <p class="section-description">Dimensioni</p>
+                <pre>
+                  <code class="html">
+                <a class="button tiny" href="#">So Tiny</a>
+                <a class="button small" href="#">So Small</a>
+                <a class="button" href="#">So Basic</a>
+                <a class="button large" href="#">So Large</a>
+                <a class="button expanded" href="#">Such Expand</a>
+                <a class="button small expanded" href="#">Wow, Small Expand</a>
+                  </code>
+                </pre>  
+                <a class="button tiny" href="#">So Tiny</a>
+                <a class="button small" href="#">So Small</a>
+                <a class="button" href="#">So Basic</a>
+                <a class="button large" href="#">So Large</a>
+                <a class="button expanded" href="#">Such Expand</a>
+                <a class="button small expanded" href="#">Wow, Small Expand</a>
+                
+                
+                <p class="section-description">Colori</p>
+                <pre>
+                  <code class="html">
+                <a class="button primary" href="#">Primary</a>
+                <a class="button secondary" href="#">Secondary</a>
+                <a class="button success" href="#">Success</a>
+                <a class="button alert" href="#">Alert</a>
+                <a class="button warning" href="#">Warning</a>
+                <a class="button disabled" href="#" aria-disabled>Disabled</a>
+                <a class="button primary" href="#"><i class="fa fa-user"></i>With Icon</a>
+                  </code>
+                </pre>  
+                <a class="button primary" href="#">Primary</a>
+                <a class="button secondary" href="#">Secondary</a>
+                <a class="button success" href="#">Success</a>
+                <a class="button alert" href="#">Alert</a>
+                <a class="button warning" href="#">Warning</a>
+                <a class="button disabled" href="#" aria-disabled>Disabled</a>
+                <a class="button primary" href="#"><i class="fa fa-user"></i>With Icon</a>
+                
+                
+                
+                <p class="section-description">Hollow style</p>
+                <pre>
+                  <code class="html">
+                <button class="hollow button" href="#">Primary</button>
+                <button class="hollow button secondary" href="#">Secondary</button>
+                <button class="hollow button success" href="#">Success</button>
+                <button class="hollow button alert" href="#">Alert</button>
+                <button class="hollow button warning" href="#">Warning</button>
+                <button type="button" class="button" disabled>Disabled</button>
+                  </code>
+                </pre>
+                <button class="hollow button" href="#">Primary</button>
+                <button class="hollow button secondary" href="#">Secondary</button>
+                <button class="hollow button success" href="#">Success</button>
+                <button class="hollow button alert" href="#">Alert</button>
+                <button class="hollow button warning" href="#">Warning</button>
+                <button type="button" class="button" disabled>Disabled</button>
+                
+                
+                <p class="section-description">Bottone con freccia per dropdown</p>
+                <pre>
+                  <code class="html">
+                <button class="dropdown button">Dropdown Button</button>
+                  </code>
+                </pre>
+                <button class="dropdown button">Dropdown Button</button>
+                
+                
+                <p class="section-description">Accessibilità</p>
+                <p>Make sure that the text of the button is descriptive. If for some reason, your button contains no readable text (for example, just a symbol or icon), add screen reader-only text to the button to clarify its purpose. The symbol or icon should be wrapped in an element with the attribute aria-hidden="true", to prevent screen readers from trying to pronounce the symbol.<br/>
+                  Use the .show-for-sr class to define screen reader-only text.</p>
+                <pre>
+                  <code class="html">
+                <button class="button" type="button">
+                 <!-- Screen readers will see "close" -->
+                  <span class="show-for-sr">Close</span>
+                 <!-- Visual users will see the X, but not the "Close" text -->
+                  <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+                  </code>
+                </pre>
+                <button class="button" type="button">
+                  <!-- Screen readers will see "close" -->
+                  <span class="show-for-sr">Close</span>
+                  <!-- Visual users will see the X, but not the "Close" text -->
+                  <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+              </section>
+              
+              <section>
+                <h3 id="gruppi_bottoni">Gruppi Bottoni</h3>
+                <a href="http://foundation.zurb.com/sites/docs/button-group.html">See on Foundation Guide</a>
+                <p class="section-description">Basics</p>
+                <pre>
+                  <code class="html">
+                <div class="button-group">
+                  <a class="button">One</a>
+                  <a class="button">Two</a>
+                  <a class="button">Three</a>
+                </div>
+                  </code>
+                </pre>
+                <div class="button-group">
+                  <a class="button">One</a>
+                  <a class="button">Two</a>
+                  <a class="button">Three</a>
+                </div>
+                
+                <p class="section-description">Sizing</p>
+                <pre>
+                  <code class="html">
+                <div class="small button-group">
+                  <a class="button">Small</a>
+                  <a class="button">Button</a>
+                  <a class="button">Group</a>
+                </div>
+                  </code>
+                </pre>
+                <div class="small button-group">
+                  <a class="button">Small</a>
+                  <a class="button">Button</a>
+                  <a class="button">Group</a>
+                </div>
+                
+                <p class="section-description">Coloring</p>
+                <pre>
+                  <code class="html">
+                <div class="button-group">
+                  <a class="secondary button">View</a>
+                  <a class="success button">Edit</a>
+                  <a class="warning button">Share</a>
+                  <a class="alert button">Delete</a>
+                </div>
+                <div class="secondary button-group">
+                  <a class="button">Harder</a>
+                  <a class="button">Better</a>
+                  <a class="button">Faster</a>
+                  <a class="button">Stronger</a>
+                </div>
+                  </code>
+                </pre>
+                <div class="button-group">
+                  <a class="secondary button">View</a>
+                  <a class="success button">Edit</a>
+                  <a class="warning button">Share</a>
+                  <a class="alert button">Delete</a>
+                </div>
+                <div class="secondary button-group">
+                  <a class="button">Harder</a>
+                  <a class="button">Better</a>
+                  <a class="button">Faster</a>
+                  <a class="button">Stronger</a>
+                </div>
+                
+                
+                <p class="section-description">Even-width Group</p>
+                <pre>
+                  <code class="html">
+                <div class="expanded button-group">
+                  <a class="button">Expanded</a>
+                  <a class="button">Button</a>
+                  <a class="button">Group</a>
+                </div>
+                  </code>
+                </pre>
+                <div class="expanded button-group">
+                  <a class="button">Expanded</a>
+                  <a class="button">Button</a>
+                  <a class="button">Group</a>
+                </div>
+                
+                
+                <p class="section-description">Stacking</p>
+                <pre>
+                  <code class="html">
+                <div class="stacked-for-small button-group">
+                  <a class="button">How</a>
+                  <a class="button">Low</a>
+                  <a class="button">Can</a>
+                  <a class="button">You</a>
+                  <a class="button">Go</a>
+                </div>
+                  </code>
+                </pre>
+                <div class="stacked-for-small button-group">
+                  <a class="button">How</a>
+                  <a class="button">Low</a>
+                  <a class="button">Can</a>
+                  <a class="button">You</a>
+                  <a class="button">Go</a>
+                </div>
+                 
+                
+                <p class="section-description">Split Buttons</p> 
+                <pre>
+                  <code class="html">
+                <div class="button-group">
+                  <a class="button">Primary Action</a>
+                  <a class="dropdown button arrow-only">
+                    <span class="show-for-sr">Show menu</span>
+                  </a>
+                </div>
+                  </code>
+                </pre>
+                <div class="button-group">
+                  <a class="button">Primary Action</a>
+                  <a class="dropdown button arrow-only">
+                    <span class="show-for-sr">Show menu</span>
+                  </a>
+                </div>    </section>
+              
+              <section>
+                <h3 id="bottone_close">Bottone close</h3>
+                <a href="http://foundation.zurb.com/sites/docs/close-button.html">See on Foundation Guide</a>
+              <pre>
+                <code class="html">
+              <div class="callout">
+                <button class="close-button" aria-label="Close alert" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <p>Look at this close button!</p>
+              </div>
+                </code>
+              </pre>
+              <div class="callout">
+                <button class="close-button" aria-label="Close alert" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <p>Look at this close button!</p>
+              </div>
+              
+              
+              <p class="section-description">Colori</p>
+              <pre>
+                <code class="html">
+              <div class="callout" data-closable>
+                <p>You can so totally close this!</p>
+                <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="success callout" data-closable="slide-out-right">
+                <p>You can close me too, and I close using a Motion UI animation.</p>
+                <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+                </code>
+              </pre>
+              <div class="callout" data-closable>
+                <p>You can so totally close this!</p>
+                <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="success callout" data-closable="slide-out-right">
+                <p>You can close me too, and I close using a Motion UI animation.</p>
+                <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              </section>
+              
+              <section>
+                <h3 id="slider" class="js">Slider</h3>
+                <a href="http://foundation.zurb.com/sites/docs/slider.html">See on Foundation Guide</a>
+                <p class="section-description">Basics</p>
+                <pre>
+                  <code class="html">
+                <div class="slider" data-slider data-initial-start="50" data-end="200">
+                  <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+                  <span class="slider-fill" data-slider-fill></span>
+                  <input type="hidden">
+                </div>
+                  </code>
+                </pre>
+                <div class="slider" data-slider data-initial-start="50" data-end="200">
+                  <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+                  <span class="slider-fill" data-slider-fill></span>
+                  <input type="hidden">
+                </div>
+                
+                
+                <p class="section-description">Vertical</p>
+                <pre>
+                  <code class="html">
+                <div class="slider vertical" data-slider data-initial-start="25" data-end="200" data-vertical="true">
+                  <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                  <span class="slider-fill" data-slider-fill></span>
+                  <input type="hidden">
+                </div>
+                  </code>
+                </pre>
+                <div class="slider vertical" data-slider data-initial-start="25" data-end="200" data-vertical="true">
+                  <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                  <span class="slider-fill" data-slider-fill></span>
+                  <input type="hidden">
+                </div>
+                
+                
+                <p class="section-description">Disabled</p>
+                <pre>
+                  <code class="html">
+                <div class="slider disabled" data-slider data-initial-start="78">
+                  <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                  <span class="slider-fill" data-slider-fill></span>
+                  <input type="hidden">
+                </div>
+                  </code>
+                </pre>
+                <div class="slider disabled" data-slider data-initial-start="78">
+                  <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                  <span class="slider-fill" data-slider-fill></span>
+                  <input type="hidden">
+                </div>
+                
+                
+                <p class="section-description">Two Handles</p>
+                <pre>
+                  <code class="html">
+                <div class="slider" data-slider data-initial-start="25" data-initial-end="75">
+                  <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                  <span class="slider-fill" data-slider-fill></span>
+                  <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                  <input type="hidden">
+                  <input type="hidden">
+                </div>
+                  </code>
+                </pre>
+                <div class="slider" data-slider data-initial-start="25" data-initial-end="75">
+                  <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                  <span class="slider-fill" data-slider-fill></span>
+                  <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                  <input type="hidden">
+                  <input type="hidden">
+                </div>
+                
+                
+                <p class="section-description">Data Binding</p>
+                <pre>
+                  <code class="html">
+                <div class="grid-x grid-padding-x">
+                  <div class="small-10 cell">
+                    <div class="slider" data-slider data-initial-start="50">
+                      <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1"></span>
+                      <span class="slider-fill" data-slider-fill></span>
+                    </div>
+                  </div>
+                  <div class="small-2 cell">
+                    <input type="number" id="sliderOutput1">
+                  </div>
+                </div>
+                  </code>
+                </pre>
+                <div class="grid-x grid-padding-x">
+                  <div class="small-10 cell">
+                    <div class="slider" data-slider data-initial-start="50">
+                      <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1"></span>
+                      <span class="slider-fill" data-slider-fill></span>
+                    </div>
+                  </div>
+                  <div class="small-2 cell">
+                    <input type="number" id="sliderOutput1">
+                  </div>
+                </div>
+                
+                
+                <p class="section-description">Data Binding with step size</p>
+                <pre>
+                  <code class="html">
+                <div class="grid-x grid-padding-x">
+                  <div class="small-10 cell">
+                    <div class="slider" data-slider data-initial-start="50" data-step="5">
+                      <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput2"></span>
+                      <span class="slider-fill" data-slider-fill></span>
+                    </div>
+                  </div>
+                  <div class="small-2 cell">
+                    <input type="number" id="sliderOutput2">
+                  </div>
+                </div>
+                  </code>
+                </pre>
+                <div class="grid-x grid-padding-x">
+                  <div class="small-10 cell">
+                    <div class="slider" data-slider data-initial-start="50" data-step="5">
+                      <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput2"></span>
+                      <span class="slider-fill" data-slider-fill></span>
+                    </div>
+                  </div>
+                  <div class="small-2 cell">
+                    <input type="number" id="sliderOutput2">
+                  </div>
+                </div>
+                
+                
+                <p class="section-description">Non-linear value translation</p>
+                <pre>
+                  <code class="html">
+                <div class="grid-x grid-padding-x">
+                  <div class="small-10 cell">
+                  <div class="slider" data-slider data-initial-start="50" data-step="1" data-position-value-function="log" data-non-linear-base="5">
+                    <span class="slider-handle" data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutputNonLinear"></span>
+                  </div>
+                  </div>
+                  <div class="small-2 cell">
+                    <input type="number" id="sliderOutputNonLinear">
+                  </div>
+                </div>
+                  </code>
+                </pre>
+                <div class="grid-x grid-padding-x">
+                  <div class="small-10 cell">
+                  <div class="slider" data-slider data-initial-start="50" data-step="1" data-position-value-function="log" data-non-linear-base="5">
+                    <span class="slider-handle" data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutputNonLinear"></span>
+                  </div>
+                  </div>
+                  <div class="small-2 cell">
+                    <input type="number" id="sliderOutputNonLinear">
+                  </div>
+                </div>    </section>
+              
+              <section>
+                <h3 id="switch">Switch</h3>
+                <a href="http://foundation.zurb.com/sites/docs/switch.html">See on Foundation Guide</a>
+                <p class="section-description">Basics</p>
+                <pre>
+                  <code class="html">
+                <div class="switch">
+                  <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
+                  <label class="switch-paddle" for="exampleSwitch">
+                    <span class="show-for-sr">Download Kittens</span>
+                  </label>
+                </div>
+                  </code>
+                </pre>
+                <div class="switch">
+                  <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
+                  <label class="switch-paddle" for="exampleSwitch">
+                    <span class="show-for-sr">Download Kittens</span>
+                  </label>
+                </div>
+                
+                
+                <p class="section-description">Radio Switch</p>
+                <pre>
+                  <code class="html">
+                <div class="switch">
+                  <input class="switch-input" id="exampleRadioSwitch1" type="radio" checked name="testGroup">
+                  <label class="switch-paddle" for="exampleRadioSwitch1">
+                    <span class="show-for-sr">Bulbasaur</span>
+                  </label>
+                </div>
+                <div class="switch">
+                  <input class="switch-input" id="exampleRadioSwitch2" type="radio" checked name="testGroup">
+                  <label class="switch-paddle" for="exampleRadioSwitch2">
+                    <span class="show-for-sr">Bulbasaur</span>
+                  </label>
+                </div>
+                <div class="switch">
+                  <input class="switch-input" id="exampleRadioSwitch3" type="radio" checked name="testGroup">
+                  <label class="switch-paddle" for="exampleRadioSwitch3">
+                    <span class="show-for-sr">Bulbasaur</span>
+                  </label>
+                </div>
+                  </code>
+                </pre>
+                <div class="switch">
+                  <input class="switch-input" id="exampleRadioSwitch1" type="radio" checked name="testGroup">
+                  <label class="switch-paddle" for="exampleRadioSwitch1">
+                    <span class="show-for-sr">Bulbasaur</span>
+                  </label>
+                </div>
+                <div class="switch">
+                  <input class="switch-input" id="exampleRadioSwitch2" type="radio" checked name="testGroup">
+                  <label class="switch-paddle" for="exampleRadioSwitch2">
+                    <span class="show-for-sr">Bulbasaur</span>
+                  </label>
+                </div>
+                <div class="switch">
+                  <input class="switch-input" id="exampleRadioSwitch3" type="radio" checked name="testGroup">
+                  <label class="switch-paddle" for="exampleRadioSwitch3">
+                    <span class="show-for-sr">Bulbasaur</span>
+                  </label>
+                </div>
+                
+                
+                <p class="section-description">Sizing Classes</p>
+                <pre>
+                  <code class="html">
+                <div class="switch tiny">
+                  <input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch">
+                  <label class="switch-paddle" for="tinySwitch">
+                    <span class="show-for-sr">Tiny Sandwiches Enabled</span>
+                  </label>
+                </div>
+                <div class="switch small">
+                  <input class="switch-input" id="smallSwitch" type="checkbox" name="exampleSwitch">
+                  <label class="switch-paddle" for="smallSwitch">
+                    <span class="show-for-sr">Small Portions Only</span>
+                  </label>
+                </div> 
+                <div class="switch large">
+                  <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
+                  <label class="switch-paddle" for="largeSwitch">
+                    <span class="show-for-sr">Show Large Elephants</span>
+                  </label>
+                </div>
+                  </code>
+                </pre>
+                <div class="switch tiny">
+                  <input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch">
+                  <label class="switch-paddle" for="tinySwitch">
+                    <span class="show-for-sr">Tiny Sandwiches Enabled</span>
+                  </label>
+                </div>
+                <div class="switch small">
+                  <input class="switch-input" id="smallSwitch" type="checkbox" name="exampleSwitch">
+                  <label class="switch-paddle" for="smallSwitch">
+                    <span class="show-for-sr">Small Portions Only</span>
+                  </label>
+                </div> 
+                <div class="switch large">
+                  <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
+                  <label class="switch-paddle" for="largeSwitch">
+                    <span class="show-for-sr">Show Large Elephants</span>
+                  </label>
+                </div>
+                
+                
+                <p class="section-description">Inner Labels</p>
+                <pre>
+                  <code class="html">
+                <div class="switch large">
+                  <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
+                  <label class="switch-paddle" for="yes-no">
+                    <span class="show-for-sr">Do you like me?</span>
+                    <span class="switch-active" aria-hidden="true">Yes</span>
+                    <span class="switch-inactive" aria-hidden="true">No</span>
+                  </label>
+                </div>
+                  </code>
+                </pre>
+                <div class="switch large">
+                  <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
+                  <label class="switch-paddle" for="yes-no">
+                    <span class="show-for-sr">Do you like me?</span>
+                    <span class="switch-active" aria-hidden="true">Yes</span>
+                    <span class="switch-inactive" aria-hidden="true">No</span>
+                  </label>
+                </div>    </section>
+          
+        </div>
+      </div>
+    </main>
+    <script src="../assets/js/app.js"></script>
+    <script>
+      jQuery('pre code').each(function () {
+        var $block = jQuery(this);
+        $block.text($block.html());
+      });
+      hljs.highlightAll();
+    </script> 
+    
+  </body>
+</html>

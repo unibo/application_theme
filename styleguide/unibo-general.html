@@ -1,0 +1,276 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../assets/css/app.css">  </head>
+
+  <body>
+    <main class="grid-container fluid">
+      <div class="grid-x">
+        <div class="large-2 cell show-for-large">
+          <nav class="docs-toc-wrap sticky-container" id="docsToc" data-sticky-container>
+              <div class="docs-toc sticky is-at-top is-stuck" data-sticky-on>
+                  <a class="back" href="../">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>Indietro
+                  </a>
+              </div>
+          </nav>
+        </div>    
+
+        <div class="large-10 cell styleguide">
+          
+          <h1>Style Guide Unibo General</h1>
+          <section>
+            <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                      
+                    <h3 id="visibilitysr">Visibilità per Screenreaders</h3>
+                    <p>Utilizzare queste classi per nascondere il contenuto solamente in determinati breakpoints, mantenendo la leggibilità per gli screen readers</p>
+          				</div>
+          
+          			</div>
+          		</div>
+          		<div class="grid-x grid-padding-x">
+          			<div class="large-4 cell">
+                  <div class="icon-left">
+                  <i class="fab fa-css3-alt fa-2x"></i>
+                  <strong>SCSS da includere:</strong> <kbd>u_visibility.scss</kbd>
+                  </div>
+                </div>
+                <div class="large-8 cell">
+                  <div class="icon-left">
+                  <i class="far fa-file-code fa-2x"></i>
+                  <strong>Classe da utilizzare:</strong> 
+                  <kbd>hide-for-sr-*</kbd>
+                  </div>
+                  
+                </div>
+          		</div>
+          	</div>  
+            <pre>
+              <code class="html">
+          <p class="hide-for-sr-small-only">You are <em>definitely not</em> on a small screen.</p>
+          <p class="hide-for-sr-medium-only">You are <em>definitely not</em> on a medium screen.</p>
+          <p class="hide-for-sr-large-only">You are <em>definitely not</em> on a large screen.</p>
+              </code>
+            </pre>
+            
+            <p class="hide-for-sr-small-only">You are <em>definitely not</em> on a small screen.</p>
+            <p class="hide-for-sr-medium-only">You are <em>definitely not</em> on a medium screen.</p>
+            <p class="hide-for-sr-large-only">You are <em>definitely not</em> on a large screen.</p>
+          </section>
+          
+          <section>
+            <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                      
+                    <h3 id="spinner">Spinner</h3>
+                    <p>Il widget per lo spinner ha una posizione Fixed, pertanto deve essere messo all'interno di qualsiasi elemento con "position: relative" se si vuole delimitarlo. Per averlo full-screen basta inserirlo come figlio del body (<a href="../templates/Layout%20Examples/Layout%20-%20Spinner.html">Vedi esempio</a>).</p>
+          				</div>
+          
+          			</div>
+          		</div>
+          		<div class="grid-x grid-padding-x">
+          			<div class="large-4 cell">
+                  <div class="icon-left">
+                  <i class="fab fa-css3-alt fa-2x"></i>
+                  <strong>SCSS da includere:</strong> <kbd>u_spinner.scss</kbd>
+                  </div>
+                </div>
+                <div class="large-8 cell">
+                  <div class="icon-left">
+                  <i class="far fa-file-code fa-2x"></i>
+                  <strong>Classe da utilizzare:</strong> 
+                  <kbd>u-spinner-container</kbd> e <kbd>u-spinner</kbd> 
+                  </div>
+                  
+                </div>
+          		</div>
+          	</div>  
+            
+            <pre>
+              <code class="html">
+            <div class="u-spinner-container">
+              <div class="u-spinner"></div>
+            </div>
+              </code>
+            </pre>
+            
+            <div class="u-styleguide-spinner-container">
+              <div class="u-styleguide-spinner-container">
+                <div class="u-highlight-text fixed-width">  
+                  <div class="grid-x grid-padding-x">
+                    <div class="large-12 cell">
+                      <p class="main-label">Lorem ipsum</p>
+                      <h3>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</h3>
+                      <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-spinner-container" style="position: absolute">
+                  <div class="u-spinner"></div>
+                </div>
+            </div>
+            </div>
+          </section>
+          
+          <section>
+            
+            <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">    
+                    <h3 id="totop" class="js">To Top</h3>
+                    <p>Questo elemento rimane fisso in basso a destra dello schermo e viene usato per tornare a inizio pagina.</p>
+          				</div>
+          
+          			</div>
+          		</div>
+          		<div class="grid-x grid-padding-x">
+          			<div class="large-4 cell">
+                  <div class="icon-left">
+                  <i class="fab fa-css3-alt fa-2x"></i>
+                  <strong>SCSS da includere:</strong> <kbd>u_to_top.scss</kbd>
+                  </div>
+                </div>
+                <div class="large-8 cell">
+                  <div class="icon-left">
+                  <i class="far fa-file-code fa-2x"></i>
+                  <strong>Classe da utilizzare:</strong> 
+                  <kbd>u-to-top</kbd> 
+                  </div>
+                  
+                </div>
+          		</div>
+          	</div>  
+            <pre>
+              <code class="html">
+          <span class="u-to-top">
+            <i class="fa fa-2x fa-angle-up" aria-hidden="true"></i>
+          </span>
+              </code>
+            </pre>
+            <span class="u-to-top">
+              <i class="fa fa-2x fa-angle-up" aria-hidden="true"></i>
+            </span>
+          </section>
+          
+          <section>
+            
+            <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">    
+                    <h3 id="border">Bordi</h3>
+                    <p>In maniera analoga alle <a href="https://get.foundation/sites/docs/prototyping-utilities.html">prototype classes</a> usate in Foundation, 
+                      è stato sviluppata una funzione analoga per la creazione di bordi.
+                    </p>
+                    <p>
+                      Per utilizzare la funzionalità è sufficiente usare la classe <kbd>border-*</kbd> dove * indica il border-width.
+                      Ad esempio per avere un bordo di 1px si utilizza la classe <kbd>border-1</kbd>. </p>
+                    <p>
+                      E' possibile indicare anche solo un lato a cui applicare il bordo. 
+                      Ad esempio, in questo modo: <kbd>border-top-1</kbd>, verrà applicato un bordo di 1px al lato superiore dell'elemento.
+                    </p>
+                    <p>Il colore del bordo è definito dalla variabile <kbd>$border-color</kbd></p>
+          				</div>
+          
+          			</div>
+          		</div>
+          		<div class="grid-x grid-padding-x">
+          			<div class="large-4 cell">
+                  <div class="icon-left">
+                  <i class="fab fa-css3-alt fa-2x"></i>
+                  <strong>SCSS da includere:</strong> <kbd>u_border.scss</kbd>
+                  </div>
+                </div>
+                <div class="large-8 cell">
+                  <div class="icon-left">
+                  <i class="far fa-file-code fa-2x"></i>
+                  <strong>Classe da utilizzare:</strong> 
+                  <kbd>border-*</kbd> 
+                  </div>
+                  
+                </div>
+          		</div>
+          	</div>  
+            <pre>
+              <code class="html">
+          <div class="border-1 padding-1">
+            <h2>Styleguide Foundation</h2>
+          </div>
+              </code>
+            </pre>
+            <div class="border-1 padding-1">
+              <h2>Styleguide Foundation</h2>
+            </div>
+          </section>
+          <section>
+            
+            <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">    
+                    <h3 id="spacing">Spaziature</h3>
+                    <p>In aggiunta alle <a href="https://get.foundation/sites/docs/prototyping-utilities.html">prototype classes</a> usate in Foundation, 
+                      è stato sviluppata la possibilità di avere padding e margin più piccoli.
+                    </p>
+                    <p>
+                      Per utilizzare la funzionalità è sufficiente usare la classe <kbd>padding-half</kbd> o <kbd>margin-half</kbd>. 
+                      In questo modo la spaziatura sarà la metà del padding/margin normale.
+                    <p>
+                      E' possibile indicare anche solo un lato a cui applicare la spaziatura. 
+                      Ad esempio, in questo modo: <kbd>padding-top-half</kbd>, verrà applicato la spaziatura dimezzata solo al lato superiore dell'elemento.
+                    </p>
+          				</div>
+          
+          			</div>
+          		</div>
+          		<div class="grid-x grid-padding-x">
+          			<div class="large-4 cell">
+                  <div class="icon-left">
+                  <i class="fab fa-css3-alt fa-2x"></i>
+                  <strong>SCSS da includere:</strong> <kbd>u_spacing.scss</kbd>
+                  </div>
+                </div>
+                <div class="large-8 cell">
+                  <div class="icon-left">
+                  <i class="far fa-file-code fa-2x"></i>
+                  <strong>Classe da utilizzare:</strong> 
+                  <kbd>padding-half</kbd> o <kbd>margin-half</kbd>
+                  </div>
+                  
+                </div>
+          		</div>
+          	</div>  
+            <pre>
+              <code class="html">
+          <div class="border-1 padding-half">
+            <h2>Styleguide Foundation</h2>
+          </div>
+              </code>
+            </pre>
+            <div class="border-1 padding-half">
+              <h2>Styleguide Foundation</h2>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="../assets/js/app.js"></script>
+    <script>
+      jQuery('pre code').each(function () {
+        var $block = jQuery(this);
+        $block.text($block.html());
+      });
+      hljs.highlightAll();
+    </script> 
+    
+  </body>
+</html>

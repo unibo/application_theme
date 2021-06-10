@@ -1,0 +1,950 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../assets/css/app.css">  </head>
+
+  <body>
+    <main class="grid-container fluid">
+      <div class="grid-x">
+        <div class="large-2 cell show-for-large">
+          <nav class="docs-toc-wrap sticky-container" id="docsToc" data-sticky-container>
+              <div class="docs-toc sticky is-at-top is-stuck" data-sticky-on>
+                  <a class="back" href="../">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>Indietro
+                  </a>
+              </div>
+          </nav>
+        </div>    
+
+        <div class="large-10 cell styleguide">
+          
+          
+          <h1 class="huge">Style Guide Unibo Forms</h1>
+          <h2>In questa pagina ci sono i componenti custom relativi alle form sviluppati ed utilizzati esclusivamente per applicazioni unibo.</h2>
+          
+          <section>
+            <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+                   
+                    <h3 id="griglia_form">Form su una o più colonne</h3>
+                    
+                    <p>Per poter utilizzare questo componente è necessario inserire la classe <kbd>u-grid-form</kbd> sul tag <kbd>form</kbd>.</p>
+          
+                    <p>E' possibile usare la struttura delle form con la griglia di Foundation, in modo da poter allineare e strutturare i contenuti liberamente.</p>
+                    
+                    <p>
+                      E' attivo il plugin <kbd>Abide</kbd>. <br />
+                      Sono stati utilizzati anche i componenti <code> &lt;p class="subheader"&gt;</code> e <code> &lt;p class="help-text"&gt;</code> 
+                    </p>
+                    
+                    <p>E' stato inserito un titolo aggiuntivo, in caso ci sia bisogno di esplicitare il titolo della form <code> &lt;h2 class="title-fieldset"&gt;</code> </p>
+          
+                    <p>Ecco alcuni esempi di form a cui è applicata la griglia:</p>
+          					<ul>
+          						<li>
+          							<a href="#u-grid-form">Form su una colonna</a>
+          						</li>
+          						<li>
+          							<a href="#u-grid-form-columns">Form su due colonne</a>
+          						</li>
+          						<li>
+          							<a href="#u-grid-form-columns-field">Form su due colonne con una griglia interna sui campi checkbox</a>
+          						</li>
+          					</ul>
+          				</div>
+          
+          			</div>
+          		</div>
+          		<div class="grid-x grid-padding-x">
+          			<div class="large-4 cell">
+                  <div class="icon-left">
+                  <i class="fab fa-css3-alt fa-2x"></i>
+                  <strong>SCSS da includere:</strong> <kbd>u_form.scss</kbd>
+                  </div>
+                </div>
+                <div class="large-8 cell">
+                  <div class="icon-left">
+                  <i class="far fa-file-code fa-2x"></i>
+                  <strong>Classe da utilizzare:</strong> 
+                  <kbd>u-grid-form</kbd>
+                  </div>
+                  
+                </div>
+          		</div>
+          	</div>  
+            
+            <h4 class="section-description" id="u-grid-form">Form su una colonna</h4>
+            
+            <p>
+              E' preferibile utilizzare un unico <code> &lt;p class="subheader"&gt;</code> </kbd> che contiene l'aiuto contestuale.
+            </p>
+            <p>
+              La struttura è la griglia utilizzata in Foundation, quindi si utilizza la larghezza 12 nel caso in cui si voglia la riga piena. <br />
+              In alternativa si può usare la larghezza che si preferisce con l'aggiunta della classe <kbd>end</kbd>.
+            </p>
+            
+            <pre>
+              <code class="html">
+                <div class="u-grid-form" >
+                  <form data-abide novalidate>
+                    
+                    <div class="grid-x grid-padding-x grid-padding-x">
+                      <div class="medium-8 end cell">
+                        <label class="lead required" for="el_text2">Text con info</label>
+                        <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+                        <input id="el_text2" required type="text" placeholder="Input placeholder">
+                        <p class="help-text">
+                          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                          <strong>Attenzione: </strong>Avviso per la compilazione
+                        </p>
+                      </div>
+                    </div>
+                
+                    <div class="grid-x grid-padding-x">       
+                      <div class="medium-8 end cell">
+                        <label class="lead required" for="el_select">Select</label>
+                        <p class="subheader">Informazioni aggiuntive per la compilazione</p>
+                        <select required id="el_select">
+                          
+                          <option selected disabled value="">Seleziona opzione</option>
+                          <option value="husker">Husker</option>
+                          <option value="starbuck">Starbuck</option>
+                          <option value="hotdog">Hot Dog</option>
+                          <option value="apollo">Apollo</option>
+                        </select>
+                        <p class="help-text">
+                          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                          <strong>Attenzione: </strong>Avviso per la compilazione
+                        </p>
+                      </div>
+                    </div>
+                
+                    <div class="grid-x grid-padding-x">
+                      <div class="medium-12 cell">
+                        <label class="lead">Checkboxes</label>
+                        <p class="subheader">Questo componente ha una opzione per riga e utilizza dei div</p>
+                          <fieldset>
+                            <div>
+                              <input id="checkbox1" type="checkbox">
+                              <label for="checkbox1">Authoritatively</label>
+                            </div>
+                            <div>
+                              <input id="checkbox2" type="checkbox">
+                              <label for="checkbox2">Progressively</label>
+                            </div>
+                            <div>
+                              <input id="checkbox3" type="checkbox">
+                              <label for="checkbox3">Energistically</label>
+                            </div>
+                          </fieldset>
+                      </div>
+                    </div>
+                
+                  </form>
+                </div>    </code>
+            </pre>
+            <div class="u-grid-form" >
+              <form data-abide novalidate>
+                
+                <div class="grid-x grid-padding-x grid-padding-x">
+                  <div class="medium-8 end cell">
+                    <label class="lead required" for="el_text2">Text con info</label>
+                    <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+                    <input id="el_text2" required type="text" placeholder="Input placeholder">
+                    <p class="help-text">
+                      <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                      <strong>Attenzione: </strong>Avviso per la compilazione
+                    </p>
+                  </div>
+                </div>
+            
+                <div class="grid-x grid-padding-x">       
+                  <div class="medium-8 end cell">
+                    <label class="lead required" for="el_select">Select</label>
+                    <p class="subheader">Informazioni aggiuntive per la compilazione</p>
+                    <select required id="el_select">
+                      
+                      <option selected disabled value="">Seleziona opzione</option>
+                      <option value="husker">Husker</option>
+                      <option value="starbuck">Starbuck</option>
+                      <option value="hotdog">Hot Dog</option>
+                      <option value="apollo">Apollo</option>
+                    </select>
+                    <p class="help-text">
+                      <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                      <strong>Attenzione: </strong>Avviso per la compilazione
+                    </p>
+                  </div>
+                </div>
+            
+                <div class="grid-x grid-padding-x">
+                  <div class="medium-12 cell">
+                    <label class="lead">Checkboxes</label>
+                    <p class="subheader">Questo componente ha una opzione per riga e utilizza dei div</p>
+                      <fieldset>
+                        <div>
+                          <input id="checkbox1" type="checkbox">
+                          <label for="checkbox1">Authoritatively</label>
+                        </div>
+                        <div>
+                          <input id="checkbox2" type="checkbox">
+                          <label for="checkbox2">Progressively</label>
+                        </div>
+                        <div>
+                          <input id="checkbox3" type="checkbox">
+                          <label for="checkbox3">Energistically</label>
+                        </div>
+                      </fieldset>
+                  </div>
+                </div>
+            
+              </form>
+            </div>
+            
+            <h4 class="section-description" id="u-grid-form-columns">Form su due colonne</h4>
+            
+            <p>
+              Rispetto alla versione in una colonna è sufficiente utilizzare le classi <kbd>text-right</kbd> sulla <kbd>label</kbd> e sul <code> &lt;p class="subheader"&gt;</code>, in modo da avere l'allineamento a destra. <br />
+              
+            </p>
+            
+          
+            <pre>
+              <code class="html">
+                <div class="u-grid-form" >
+                  <form data-abide novalidate>
+                    
+                    <div class="grid-x grid-padding-x">
+                      <div class="medium-3 cell">
+                        <h2 class="title-fieldset">
+                          Titolo del fieldset
+                        </h2> 
+                      </div>
+                    </div>
+                
+                    <div data-abide-error class="alert callout" style="display: none;">
+                      <p>There are some errors in your form.</p>
+                    </div>
+                
+                    <div class="grid-x grid-padding-x">
+                      <div class="medium-3 cell">
+                        <label class="text-right lead required" for="el_text">Text</label>
+                      </div>
+                      <div class="large-4 medium-8 cell end">
+                        <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+                        <input id="el_text" type="text" placeholder="Insert 6 or more characters" required pattern=".{6,}">
+                      </div>
+                    </div>
+                
+                    <div class="grid-x grid-padding-x">
+                      <div class="medium-3 cell">
+                        <label class="text-right lead required" for="el_text2">Text con info</label>
+                        <p class="text-right subheader">L'aiuto contestuale (qualora la label non fosse sufficiente)</p>
+                      </div>
+                      <div class="large-4 medium-8 end cell">
+                        <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+                        <input id="el_text2" required type="text" placeholder="Input placeholder">
+                        <p class="help-text">
+                          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                          <strong>Attenzione: </strong>Avviso per la compilazione
+                        </p>
+                      </div>
+                    </div>
+                
+                    <div class="grid-x grid-padding-x">
+                      <div class="medium-3 cell">
+                        <label class="text-right lead required" for="el_select">Select</label>
+                        <p class="text-right subheader">L'aiuto contestuale (qualora la label non fosse sufficiente)</p>
+                      </div>
+                       
+                      <div class="large-4 medium-8 end cell">
+                        <p class="subheader">Informazioni aggiuntive per la compilazione</p>
+                        <select required id="el_select">
+                          
+                          <option selected disabled value="">Seleziona opzione</option>
+                          <option value="husker">Husker</option>
+                          <option value="starbuck">Starbuck</option>
+                          <option value="hotdog">Hot Dog</option>
+                          <option value="apollo">Apollo</option>
+                        </select>
+                        <p class="help-text">
+                          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                          <strong>Attenzione: </strong>Avviso per la compilazione
+                        </p>
+                      </div>
+                    </div>
+                
+                    <div class="grid-x grid-padding-x">
+                      <div class="medium-3 cell">
+                        <label class="text-right lead">Checkboxes</label>
+                        <p class="subheader text-right">Questo componente ha una opzione per riga e utilizza dei div</p>
+                      </div>
+                      <div class="medium-9 cell">
+                        <p class="subheader">E' particolarmente indicato per opzioni con testo lungo</p>
+                          <fieldset>
+                            <div>
+                              <input id="checkbox1" type="checkbox">
+                              <label for="checkbox1">Authoritatively</label>
+                            </div>
+                            <div>
+                              <input id="checkbox2" type="checkbox">
+                              <label for="checkbox2">Progressively</label>
+                            </div>
+                            <div>
+                              <input id="checkbox3" type="checkbox">
+                              <label for="checkbox3">Energistically</label>
+                            </div>
+                          </fieldset>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="grid-x grid-padding-x">
+                      <div class="medium-3 cell">
+                        <label class="text-right lead">Radio Inline</label>
+                        <p class="subheader text-right">Questo componente ha le opzioni inlinea e utilizza degli span</p>
+                      </div>
+                      <div class="medium-9 cell">
+                        <p class="subheader">E' particolarmente indicato per opzioni con testo breve, per avere una form compatta</p>
+                       
+                        <fieldset>
+                          <span>
+                            <input type="radio" name="radio1" value="Red" id="radio1">
+                            <label for="radio1">Proactively</label>
+                          </span>
+                          <span>
+                            <input type="radio" name="radio1" value="Blue" id="radio2">
+                            <label for="radio2">Alignments</label>
+                          </span>
+                        </fieldset>
+                      </div>
+                    </div>
+                
+                  <div class="grid-x grid-padding-x">
+                      <div class="medium-3 cell">
+                        <label class="text-right lead">Checkboxes Inline</label>
+                        <p class="subheader text-right">Questo componente ha le opzioni inlinea e utilizza degli span</p>
+                      </div>
+                      <div class="medium-9 cell">
+                        <p class="subheader">E' particolarmente indicato per opzioni con testo breve, per avere una form compatta</p>
+                          <fieldset>
+                            <span>
+                              <input id="checkbox4" type="checkbox">
+                              <label for="checkbox4">Authoritatively</label>
+                            </span>
+                            <span>
+                              <input id="checkbox5" type="checkbox">
+                              <label for="checkbox5">Progressively</label>
+                            </span>
+                            <span>
+                              <input id="checkbox6" type="checkbox">
+                              <label for="checkbox6">Energistically</label>
+                            </span>
+                            <span>
+                              <input id="checkbox7" type="checkbox">
+                              <label for="checkbox7">Seamless</label>
+                            </span>
+                            <span>
+                              <input id="checkbox8" type="checkbox">
+                              <label for="checkbox8">Quickly strategize</label>
+                            </span>
+                          </fieldset>
+                      </div>
+                    </div>
+                
+                
+                    <div class="grid-x grid-padding-x">
+                        <div class="medium-3 cell">
+                          <label class="text-right lead">Checkboxes</label>
+                          <p class="subheader text-right">Questo componente ha una opzione per riga e utilizza dei div</p>
+                        </div>
+                        <div class="medium-9 cell">
+                          <p class="subheader">E' particolarmente indicato per opzioni con testo lungo</p>
+                          <div>
+                            <input id="checkbox1" type="checkbox">
+                            <label for="checkbox1"><b>Verifica delle informazioni di identità e consenso al trattamento dei dati personali</b></label>
+                          </div>
+                        </div>
+                      </div>
+                
+                    <div class="grid-x grid-padding-x">
+                      <div class="medium-9 cell medium-offset-3">
+                        <button class="button secondary" type="reset">Reset</button>
+                        <button class="button primary" type="submit">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>    </code>
+            </pre>
+            <div class="u-grid-form" >
+              <form data-abide novalidate>
+                
+                <div class="grid-x grid-padding-x">
+                  <div class="medium-3 cell">
+                    <h2 class="title-fieldset">
+                      Titolo del fieldset
+                    </h2> 
+                  </div>
+                </div>
+            
+                <div data-abide-error class="alert callout" style="display: none;">
+                  <p>There are some errors in your form.</p>
+                </div>
+            
+                <div class="grid-x grid-padding-x">
+                  <div class="medium-3 cell">
+                    <label class="text-right lead required" for="el_text">Text</label>
+                  </div>
+                  <div class="large-4 medium-8 cell end">
+                    <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+                    <input id="el_text" type="text" placeholder="Insert 6 or more characters" required pattern=".{6,}">
+                  </div>
+                </div>
+            
+                <div class="grid-x grid-padding-x">
+                  <div class="medium-3 cell">
+                    <label class="text-right lead required" for="el_text2">Text con info</label>
+                    <p class="text-right subheader">L'aiuto contestuale (qualora la label non fosse sufficiente)</p>
+                  </div>
+                  <div class="large-4 medium-8 end cell">
+                    <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+                    <input id="el_text2" required type="text" placeholder="Input placeholder">
+                    <p class="help-text">
+                      <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                      <strong>Attenzione: </strong>Avviso per la compilazione
+                    </p>
+                  </div>
+                </div>
+            
+                <div class="grid-x grid-padding-x">
+                  <div class="medium-3 cell">
+                    <label class="text-right lead required" for="el_select">Select</label>
+                    <p class="text-right subheader">L'aiuto contestuale (qualora la label non fosse sufficiente)</p>
+                  </div>
+                   
+                  <div class="large-4 medium-8 end cell">
+                    <p class="subheader">Informazioni aggiuntive per la compilazione</p>
+                    <select required id="el_select">
+                      
+                      <option selected disabled value="">Seleziona opzione</option>
+                      <option value="husker">Husker</option>
+                      <option value="starbuck">Starbuck</option>
+                      <option value="hotdog">Hot Dog</option>
+                      <option value="apollo">Apollo</option>
+                    </select>
+                    <p class="help-text">
+                      <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                      <strong>Attenzione: </strong>Avviso per la compilazione
+                    </p>
+                  </div>
+                </div>
+            
+                <div class="grid-x grid-padding-x">
+                  <div class="medium-3 cell">
+                    <label class="text-right lead">Checkboxes</label>
+                    <p class="subheader text-right">Questo componente ha una opzione per riga e utilizza dei div</p>
+                  </div>
+                  <div class="medium-9 cell">
+                    <p class="subheader">E' particolarmente indicato per opzioni con testo lungo</p>
+                      <fieldset>
+                        <div>
+                          <input id="checkbox1" type="checkbox">
+                          <label for="checkbox1">Authoritatively</label>
+                        </div>
+                        <div>
+                          <input id="checkbox2" type="checkbox">
+                          <label for="checkbox2">Progressively</label>
+                        </div>
+                        <div>
+                          <input id="checkbox3" type="checkbox">
+                          <label for="checkbox3">Energistically</label>
+                        </div>
+                      </fieldset>
+                  </div>
+                </div>
+            
+            
+            
+                <div class="grid-x grid-padding-x">
+                  <div class="medium-3 cell">
+                    <label class="text-right lead">Radio Inline</label>
+                    <p class="subheader text-right">Questo componente ha le opzioni inlinea e utilizza degli span</p>
+                  </div>
+                  <div class="medium-9 cell">
+                    <p class="subheader">E' particolarmente indicato per opzioni con testo breve, per avere una form compatta</p>
+                   
+                    <fieldset>
+                      <span>
+                        <input type="radio" name="radio1" value="Red" id="radio1">
+                        <label for="radio1">Proactively</label>
+                      </span>
+                      <span>
+                        <input type="radio" name="radio1" value="Blue" id="radio2">
+                        <label for="radio2">Alignments</label>
+                      </span>
+                    </fieldset>
+                  </div>
+                </div>
+            
+              <div class="grid-x grid-padding-x">
+                  <div class="medium-3 cell">
+                    <label class="text-right lead">Checkboxes Inline</label>
+                    <p class="subheader text-right">Questo componente ha le opzioni inlinea e utilizza degli span</p>
+                  </div>
+                  <div class="medium-9 cell">
+                    <p class="subheader">E' particolarmente indicato per opzioni con testo breve, per avere una form compatta</p>
+                      <fieldset>
+                        <span>
+                          <input id="checkbox4" type="checkbox">
+                          <label for="checkbox4">Authoritatively</label>
+                        </span>
+                        <span>
+                          <input id="checkbox5" type="checkbox">
+                          <label for="checkbox5">Progressively</label>
+                        </span>
+                        <span>
+                          <input id="checkbox6" type="checkbox">
+                          <label for="checkbox6">Energistically</label>
+                        </span>
+                        <span>
+                          <input id="checkbox7" type="checkbox">
+                          <label for="checkbox7">Seamless</label>
+                        </span>
+                        <span>
+                          <input id="checkbox8" type="checkbox">
+                          <label for="checkbox8">Quickly strategize</label>
+                        </span>
+                      </fieldset>
+                  </div>
+                </div>
+            
+            
+                <div class="grid-x grid-padding-x">
+                    <div class="medium-3 cell">
+                      <label class="text-right lead">Checkboxes</label>
+                      <p class="subheader text-right">Questo componente ha una opzione per riga e utilizza dei div</p>
+                    </div>
+                    <div class="medium-9 cell">
+                      <p class="subheader">E' particolarmente indicato per opzioni con testo lungo</p>
+                      <div>
+                        <input id="checkbox1" type="checkbox">
+                        <label for="checkbox1"><b>Verifica delle informazioni di identità e consenso al trattamento dei dati personali</b></label>
+                      </div>
+                    </div>
+                  </div>
+            
+                <div class="grid-x grid-padding-x">
+                  <div class="medium-9 cell medium-offset-3">
+                    <button class="button secondary" type="reset">Reset</button>
+                    <button class="button primary" type="submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>  
+            <h4 class="section-description" id="u-grid-form-columns-field">Form su due colonne con una griglia interna sui campi checkbox</h4>
+            
+            <p>In questo componente è prevista la possibilità di inserire una griglia innestata per le input all'interno che possono essere su più colonne. 
+              In particolare questa funzionalità è utile per i radio button e checkbox.</p>
+            <pre>
+              <code class="html">
+                <div class="u-grid-form">
+                  <form data-abide novalidate>
+                    
+                    <div class="grid-x grid-padding-x">
+                      <div class="medium-3 cell">
+                        <h2 class="title-fieldset">
+                          Titolo del fieldset
+                        </h2> 
+                      </div>
+                    </div>
+                
+                    <div data-abide-error class="alert callout" style="display: none;">
+                      <p>There are some errors in your form.</p>
+                    </div>
+                
+                    <div class="grid-x grid-padding-x">
+                      <div class="medium-3 cell">
+                        <label class="text-right lead required" for="nest_el_text">Text</label>
+                      </div>
+                      <div class="large-4 medium-8 cell end">
+                        <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+                        <input id="nest_el_text" type="text" placeholder="Insert 6 or more characters" required pattern=".{6,}">
+                      </div>
+                    </div>
+                
+                    <div class="grid-x grid-padding-x">
+                      <div class="medium-3 cell">
+                        <label class="text-right lead required" for="nest_el_text2">Text con info</label>
+                        <p class="text-right subheader">L'aiuto contestuale (qualora la label non fosse sufficiente)</p>
+                      </div>
+                      <div class="large-4 medium-8 end cell">
+                        <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+                        <input id="nest_el_text2" required type="text" placeholder="Input placeholder">
+                        <p class="help-text">
+                          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                          <strong>Attenzione: </strong>Avviso per la compilazione
+                        </p>
+                      </div>
+                    </div>
+                
+                    <div class="grid-x grid-padding-x">
+                      <div class="medium-3 cell">
+                        <label class="text-right lead required" for="nest_el_select">Select</label>
+                        <p class="text-right subheader">L'aiuto contestuale (qualora la label non fosse sufficiente)</p>
+                      </div>
+                       
+                      <div class="large-4 medium-8 end cell">
+                        <p class="subheader">Informazioni aggiuntive per la compilazione</p>
+                        <select required id="nest_el_select">
+                          
+                          <option selected disabled value="">Seleziona opzione</option>
+                          <option value="husker">Husker</option>
+                          <option value="starbuck">Starbuck</option>
+                          <option value="hotdog">Hot Dog</option>
+                          <option value="apollo">Apollo</option>
+                        </select>
+                        <p class="help-text">
+                          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                          <strong>Attenzione: </strong>Avviso per la compilazione
+                        </p>
+                      </div>
+                    </div>
+                
+                    <div class="grid-x grid-padding-x">
+                      <div class="medium-3 cell">
+                          <label class="text-right lead">Checkboxes</label>
+                      </div>
+                      <div class="medium-9 cell">
+                        <p class="subheader">E' indicato quando le opzioni hanno un testo breve e quando si ha la necessità di avere una form compatta ma ordinata</p>
+                        <fieldset>
+                          <div class="grid-x grid-padding-x">
+                            <div class="medium-4 cells">
+                              <input id="nest_checkbox4" type="checkbox">
+                              <label for="nest_checkbox4">Authoritatively empower 2.0</label>
+                            </div>
+                            <div class="medium-4 cells">
+                              <input id="nest_checkbox5" type="checkbox">
+                              <label for="nest_checkbox5">Progressively synthesize</label>
+                            </div>
+                            <div class="medium-4 cells">
+                              <input id="nest_checkbox6" type="checkbox">
+                              <label for="nest_checkbox6">Energistically administrate</label>
+                            </div>
+                            <div class="medium-4 cells">
+                              <input id="nest_checkbox7" type="checkbox">
+                              <label for="nest_checkbox7">Seamless mindshare</label>
+                            </div>
+                            <div class="medium-4 cells end">
+                              <input id="nest_checkbox8" type="checkbox">
+                              <label for="nest_checkbox8">Quickly strategize</label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                
+                    <div class="grid-x">
+                      <div class="medium-3 cell">
+                        <label class="text-right lead">Radio</label>
+                      </div>
+                      <div class="medium-9 cell">
+                        <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+                       
+                        <fieldset>
+                          <div class="grid-x">
+                            <div class="medium-6 cells">
+                              <input type="radio" name="nest_radio1" value="Red" id="nest_radio1">
+                              <label for="nest_radio1">Proactively iterate accurate</label>
+                            </div>
+                            <div class="medium-6 cells end">
+                              <input type="radio" name="nest_radio1" value="Blue" id="nest_radio2">
+                              <label for="nest_radio2">Alignments after bricks-and-clicks channels</label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                
+                    <div class="grid-x">
+                      <div class="medium-9 cell medium-offset-3">
+                        <button class="button secondary" type="reset">Reset</button>
+                        <button class="button primary" type="submit">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>    </code>
+            </pre>
+            <div class="u-grid-form">
+              <form data-abide novalidate>
+                
+                <div class="grid-x grid-padding-x">
+                  <div class="medium-3 cell">
+                    <h2 class="title-fieldset">
+                      Titolo del fieldset
+                    </h2> 
+                  </div>
+                </div>
+            
+                <div data-abide-error class="alert callout" style="display: none;">
+                  <p>There are some errors in your form.</p>
+                </div>
+            
+                <div class="grid-x grid-padding-x">
+                  <div class="medium-3 cell">
+                    <label class="text-right lead required" for="nest_el_text">Text</label>
+                  </div>
+                  <div class="large-4 medium-8 cell end">
+                    <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+                    <input id="nest_el_text" type="text" placeholder="Insert 6 or more characters" required pattern=".{6,}">
+                  </div>
+                </div>
+            
+                <div class="grid-x grid-padding-x">
+                  <div class="medium-3 cell">
+                    <label class="text-right lead required" for="nest_el_text2">Text con info</label>
+                    <p class="text-right subheader">L'aiuto contestuale (qualora la label non fosse sufficiente)</p>
+                  </div>
+                  <div class="large-4 medium-8 end cell">
+                    <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+                    <input id="nest_el_text2" required type="text" placeholder="Input placeholder">
+                    <p class="help-text">
+                      <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                      <strong>Attenzione: </strong>Avviso per la compilazione
+                    </p>
+                  </div>
+                </div>
+            
+                <div class="grid-x grid-padding-x">
+                  <div class="medium-3 cell">
+                    <label class="text-right lead required" for="nest_el_select">Select</label>
+                    <p class="text-right subheader">L'aiuto contestuale (qualora la label non fosse sufficiente)</p>
+                  </div>
+                   
+                  <div class="large-4 medium-8 end cell">
+                    <p class="subheader">Informazioni aggiuntive per la compilazione</p>
+                    <select required id="nest_el_select">
+                      
+                      <option selected disabled value="">Seleziona opzione</option>
+                      <option value="husker">Husker</option>
+                      <option value="starbuck">Starbuck</option>
+                      <option value="hotdog">Hot Dog</option>
+                      <option value="apollo">Apollo</option>
+                    </select>
+                    <p class="help-text">
+                      <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                      <strong>Attenzione: </strong>Avviso per la compilazione
+                    </p>
+                  </div>
+                </div>
+            
+                <div class="grid-x grid-padding-x">
+                  <div class="medium-3 cell">
+                      <label class="text-right lead">Checkboxes</label>
+                  </div>
+                  <div class="medium-9 cell">
+                    <p class="subheader">E' indicato quando le opzioni hanno un testo breve e quando si ha la necessità di avere una form compatta ma ordinata</p>
+                    <fieldset>
+                      <div class="grid-x grid-padding-x">
+                        <div class="medium-4 cells">
+                          <input id="nest_checkbox4" type="checkbox">
+                          <label for="nest_checkbox4">Authoritatively empower 2.0</label>
+                        </div>
+                        <div class="medium-4 cells">
+                          <input id="nest_checkbox5" type="checkbox">
+                          <label for="nest_checkbox5">Progressively synthesize</label>
+                        </div>
+                        <div class="medium-4 cells">
+                          <input id="nest_checkbox6" type="checkbox">
+                          <label for="nest_checkbox6">Energistically administrate</label>
+                        </div>
+                        <div class="medium-4 cells">
+                          <input id="nest_checkbox7" type="checkbox">
+                          <label for="nest_checkbox7">Seamless mindshare</label>
+                        </div>
+                        <div class="medium-4 cells end">
+                          <input id="nest_checkbox8" type="checkbox">
+                          <label for="nest_checkbox8">Quickly strategize</label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+            
+                <div class="grid-x">
+                  <div class="medium-3 cell">
+                    <label class="text-right lead">Radio</label>
+                  </div>
+                  <div class="medium-9 cell">
+                    <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+                   
+                    <fieldset>
+                      <div class="grid-x">
+                        <div class="medium-6 cells">
+                          <input type="radio" name="nest_radio1" value="Red" id="nest_radio1">
+                          <label for="nest_radio1">Proactively iterate accurate</label>
+                        </div>
+                        <div class="medium-6 cells end">
+                          <input type="radio" name="nest_radio1" value="Blue" id="nest_radio2">
+                          <label for="nest_radio2">Alignments after bricks-and-clicks channels</label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+            
+                <div class="grid-x">
+                  <div class="medium-9 cell medium-offset-3">
+                    <button class="button secondary" type="reset">Reset</button>
+                    <button class="button primary" type="submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div></section>
+          
+          <section>
+            <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+                   
+                    <h3 id="grid_error_form">Errori nella Griglia Form</h3>
+                    <p class="section-description">Errori nei radio button e checkbox</p>
+                    <p>E' possibile inserire la classe <kbd>is-invalid-inuput</kbd> su tutto il contenitore del campo, cioè su <kbd>column</kbd>. Consigliamo di evidenziare sempre anche la relativa label utilizzando la classe <kbd>is-invalid-label</kbd>. <br /> Questa funzionalità è utile per i gruppi di radio e checkbutton.</p>
+          				</div>
+          
+          			</div>
+          		</div>
+          		<div class="grid-x grid-padding-x">
+          			<div class="large-4 cell">
+                  <div class="icon-left">
+                  <i class="fab fa-css3-alt fa-2x"></i>
+                  <strong>SCSS da includere:</strong> <kbd>u_form.scss</kbd>
+                  </div>
+                </div>
+                <div class="large-8 cell">
+                  <div class="icon-left">
+                  <i class="far fa-file-code fa-2x"></i>
+                  <strong>Classe da utilizzare:</strong> 
+                  <kbd>u-grid-form</kbd>
+                  </div>
+                  
+                </div>
+          		</div>
+          	</div>  
+            <pre>
+              <code class="html">
+                <form data-abide>
+                  <div data-abide-error role="alert" class="alert callout" style="display: block;">
+                    <p>There are some errors in your form.</p>
+                  </div>
+                  
+                  <div class="grid-x grid-padding-x">
+                    <div class="medium-3 cell">
+                      <label class="text-right lead is-invalid-label required" for="nest_el_text2">Text con info</label>
+                      <p class="text-right subheader">L'aiuto contestuale (qualora la label non fosse sufficiente)</p>
+                    </div>
+                    <div class="medium-4 end cell">
+                      <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+                      <input id="nest_el_text2" class="is-invalid-input" aria-invalid required type="text" placeholder="Input placeholder">
+                      <p class="help-text">
+                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        <strong>Attenzione: </strong>Avviso per la compilazione
+                      </p>
+                      <span class="form-error is-visible" id="uuid">Questo campo è obbligatorio.</span>
+                      
+                    </div>
+                  </div>
+                
+                  <div class="grid-x grid-padding-x">
+                    <div class="medium-3 cell">
+                      <label class="text-right lead is-invalid-label required">Radio</label>
+                    </div>
+                    <div class="medium-9 cell is-invalid-input">
+                      <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+                     
+                      <fieldset>
+                        <div class="grid-x grid-padding-x">
+                          <div class="medium-6 cells">
+                            <input type="radio" required name="nest_radio1" value="Red" id="nest_radio1a">
+                            <label for="nest_radio1a">Proactively iterate accurate</label>
+                          </div>
+                          <div class="medium-6 cells end">
+                            <input type="radio" required name="nest_radio1" value="Blue" id="nest_radio2a">
+                            <label for="nest_radio2a">Alignments after bricks-and-clicks channels</label>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                
+                </form>    </code>
+            </pre>
+            <form data-abide>
+              <div data-abide-error role="alert" class="alert callout" style="display: block;">
+                <p>There are some errors in your form.</p>
+              </div>
+              
+              <div class="grid-x grid-padding-x">
+                <div class="medium-3 cell">
+                  <label class="text-right lead is-invalid-label required" for="nest_el_text2">Text con info</label>
+                  <p class="text-right subheader">L'aiuto contestuale (qualora la label non fosse sufficiente)</p>
+                </div>
+                <div class="medium-4 end cell">
+                  <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+                  <input id="nest_el_text2" class="is-invalid-input" aria-invalid required type="text" placeholder="Input placeholder">
+                  <p class="help-text">
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                    <strong>Attenzione: </strong>Avviso per la compilazione
+                  </p>
+                  <span class="form-error is-visible" id="uuid">Questo campo è obbligatorio.</span>
+                  
+                </div>
+              </div>
+            
+              <div class="grid-x grid-padding-x">
+                <div class="medium-3 cell">
+                  <label class="text-right lead is-invalid-label required">Radio</label>
+                </div>
+                <div class="medium-9 cell is-invalid-input">
+                  <p class="subheader">Informazioni aggiuntive alla compilazione</p>
+                 
+                  <fieldset>
+                    <div class="grid-x grid-padding-x">
+                      <div class="medium-6 cells">
+                        <input type="radio" required name="nest_radio1" value="Red" id="nest_radio1a">
+                        <label for="nest_radio1a">Proactively iterate accurate</label>
+                      </div>
+                      <div class="medium-6 cells end">
+                        <input type="radio" required name="nest_radio1" value="Blue" id="nest_radio2a">
+                        <label for="nest_radio2a">Alignments after bricks-and-clicks channels</label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            
+            </form></section>
+                
+          
+        </div>
+      </div>
+    </main>
+    <script src="../assets/js/app.js"></script>
+    <script>
+      jQuery('pre code').each(function () {
+        var $block = jQuery(this);
+        $block.text($block.html());
+      });
+      hljs.highlightAll();
+    </script> 
+    
+  </body>
+</html>

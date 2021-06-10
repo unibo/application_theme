@@ -1,0 +1,830 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../assets/css/app.css">  </head>
+
+  <body>
+    <main class="grid-container fluid">
+      <div class="grid-x">
+        <div class="large-2 cell show-for-large">
+          <nav class="docs-toc-wrap sticky-container" id="docsToc" data-sticky-container>
+              <div class="docs-toc sticky is-at-top is-stuck" data-sticky-on>
+                  <a class="back" href="../">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>Indietro
+                  </a>
+              </div>
+          </nav>
+        </div>    
+
+        <div class="large-10 cell styleguide">
+          
+          <h1 class="huge">Style Guide Unibo Card</h1>
+          <h2>In questa pagina ci sono i componenti custom relativi ai contenitori sviluppati con una grafica a card.</h2>
+          
+          <section>
+          
+          	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+          					
+          				<h3 id="u-card">
+          					Card Option 
+          				</h3>
+          				<p>Questo elemento può essere utilizzato come box esplicativo per linkare un servizio o una sezione. 
+          					<br /> Può contenere un'icona (Fontawesome), del testo (anche titolazioni) e un pulsante.
+          				</p>
+          				<p>Ci sono due versioni di questo elemento:</p>
+          					<ul>
+          						<li>
+          							<a href="#u-card-option">Card Option Basic</a>
+          						</li>
+          						<li>
+          							<a href="#u-card-option-fixed">Card Option a dimensione fissa</a>
+          						</li>
+          					</ul>
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-4 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_card_option.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-8 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classe da utilizzare:</strong> 
+          					<kbd>u-card-option</kbd>
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
+          	<h4 class="section-description" id="u-card-option">Card Option Basic</h4>
+          	<pre>
+          		<code>
+          <div class="u-card-option">
+            <i class="fas fa-globe-americas icon-large" aria-hidden="true"></i>
+            <h2>Robortis nisl ut aliquip</h2>
+            <p>Energistically deliver user-centric systems without orthogonal catalysts for change. Synergistically productivate market positioning niches whereas distributed best practices.</p>
+            <h3>Assistenza</h3>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+            <a href="" class="button button-primary">Vedi tutto</a>
+          </div>
+          		</code>
+          	</pre>
+          <div class="u-card-option">
+            <i class="fas fa-globe-americas icon-large" aria-hidden="true"></i>
+            <h2>Robortis nisl ut aliquip</h2>
+            <p>Energistically deliver user-centric systems without orthogonal catalysts for change. Synergistically productivate market positioning niches whereas distributed best practices.</p>
+            <h3>Assistenza</h3>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+            <a href="" class="button button-primary">Vedi tutto</a>
+          </div>
+          <h4 class="section-description" id="u-card-option-fixed">Card Option con larghezza fissa</h4>
+          
+          <p>Questo componente può essere inserito in una griglia per avere più blocchi di elementi. In alternativa, può avere una larghezza fissa di 300px se viene inserita la classe 
+          	<kbd>fixed-width</kbd>.
+          </p>
+          	<pre>
+          		<code>
+          <div class="u-card-option fixed-width">
+            <i class="fa fa-3x fa-globe" aria-hidden="true"></i>
+            <h2>Robortis nisl ut aliquip</h2>
+            <p>Del illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.</p>
+            <h3>Assistenza</h3>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+            <a href="" class="button button-primary">Vedi tutto</a>
+          </div>
+          		</code>
+          	</pre>
+          	<div class="u-card-option fixed-width">
+          	  <i class="fa fa-3x fa-globe" aria-hidden="true"></i>
+          	  <h2>Robortis nisl ut aliquip</h2>
+          	  <p>Del illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.</p>
+          	  <h3>Assistenza</h3>
+          	  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+          	  <a href="" class="button button-primary">Vedi tutto</a>
+          	</div>
+          </section>
+          
+          <section>
+          
+          	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+          				
+          				<h3 id="u-comparison-card">Card feature 
+          				</h3>
+          				<p>Questo elemento può essere utilizzato come box per comparare diverse feature e spiegare la differenza tra diverse opzioni.</p>
+          				<p>Graficamente è uguale al componente 
+          					<a href="#radio-card">Radio card</a> 
+          				a parte che non ha la possibilità di selezionare l'opzione.
+          				</p>
+          				<p>Questo elemento può essere utilizzato come box esplicativo per linkare un servizio o una sezione. 
+          					<br /> Può contenere un'icona (Fontawesome), del testo (anche titolazioni) e un pulsante.
+          				</p>
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-6 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_comparison_card.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-6 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classe da utilizzare:</strong> 
+          					<kbd>u-comparison-card</kbd>
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
+          	<pre>
+          		<code>
+          <div class="u-comparison-card">
+          
+              <div class="card-tile">
+                  <i class="fas fa-3x fa-mobile-alt" aria-hidden="true"></i>
+                  <h2>SMS</h2>
+                  <p>Energistically deliver user-centric systems without orthogonal catalysts for change. Synergistically productivate market positioning niches whereas distributed best practices.</p>
+                  
+                  <div class="text-wrap">
+                          <h3 class="best">Vantaggi</h3>
+                          <ul>
+                              <li>Interactively maintain fully researched materials after stand-alone</li>
+                              <li>Materials after stand-alone web-readiness</li>
+                              <li>Assertively morph client-centered leadership</li>
+                          </ul>
+                      </div>
+                      <div class="text-wrap">
+                          <h3 class="worst">Svantaggi</h3>
+                          <ul>
+                              <li>Uniquely supply corporate ideas with distributed communities</li>
+                              <li>Skills before multidisciplinary scenarios</li>
+                              <li>Globally streamline flexible infrastructures</li>
+                          </ul>
+                      </div>
+              </div>
+          
+              <div class="card-tile">
+                  <i class="fa fa-3x fa-rocket" aria-hidden="true"></i>
+                  <h2>APP</h2>
+                  <p>Conveniently coordinate economically sound testing procedures.</p>
+                  <div class="text-wrap">
+                      <h3 class="best">Vantaggi</h3>
+                      <ul>
+                          <li>Rather than sustainable data</li>
+                          <li>Energistically productize performance based potentialities</li>
+                          <li>Ethical synergy</li>
+                      </ul>
+                  </div>
+                  <div class="text-wrap">
+                      <h3 class="worst">Svantaggi</h3>
+                      <ul>
+                          <li>Monotonectally promote B2C initiatives</li>
+                          <li>Future-proof e-services</li>
+                          <li>Proseculim sot risulum</li>
+                      </ul>
+                  </div>
+              </div>
+              
+          </div>		</code>
+          	</pre>
+          <div class="u-comparison-card">
+          
+              <div class="card-tile">
+                  <i class="fas fa-3x fa-mobile-alt" aria-hidden="true"></i>
+                  <h2>SMS</h2>
+                  <p>Energistically deliver user-centric systems without orthogonal catalysts for change. Synergistically productivate market positioning niches whereas distributed best practices.</p>
+                  
+                  <div class="text-wrap">
+                          <h3 class="best">Vantaggi</h3>
+                          <ul>
+                              <li>Interactively maintain fully researched materials after stand-alone</li>
+                              <li>Materials after stand-alone web-readiness</li>
+                              <li>Assertively morph client-centered leadership</li>
+                          </ul>
+                      </div>
+                      <div class="text-wrap">
+                          <h3 class="worst">Svantaggi</h3>
+                          <ul>
+                              <li>Uniquely supply corporate ideas with distributed communities</li>
+                              <li>Skills before multidisciplinary scenarios</li>
+                              <li>Globally streamline flexible infrastructures</li>
+                          </ul>
+                      </div>
+              </div>
+          
+              <div class="card-tile">
+                  <i class="fa fa-3x fa-rocket" aria-hidden="true"></i>
+                  <h2>APP</h2>
+                  <p>Conveniently coordinate economically sound testing procedures.</p>
+                  <div class="text-wrap">
+                      <h3 class="best">Vantaggi</h3>
+                      <ul>
+                          <li>Rather than sustainable data</li>
+                          <li>Energistically productize performance based potentialities</li>
+                          <li>Ethical synergy</li>
+                      </ul>
+                  </div>
+                  <div class="text-wrap">
+                      <h3 class="worst">Svantaggi</h3>
+                      <ul>
+                          <li>Monotonectally promote B2C initiatives</li>
+                          <li>Future-proof e-services</li>
+                          <li>Proseculim sot risulum</li>
+                      </ul>
+                  </div>
+              </div>
+              
+          </div>
+          </section>
+          
+          <section>
+          	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+          				
+          					<h3 id="radio-card">Radio card</h3>
+          					<p>
+          						Elemento che si contraddistingue come fosse una card ma in realtà è un radio button che permette di effettuare una scelta.
+          					</p>
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-6 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_radiocard.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-6 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classe da utilizzare:</strong> 
+          					<kbd>u-radiocard</kbd>
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
+          	
+          
+          <pre>
+          	<code class="html">
+          	<div class="u-radiocard">
+          	
+          	    <div class="input-container">
+          	        <input id="radio-1" class="radio-button" type="radio" name="radio" />
+          	        <div class="radio-tile">
+          	            <i class="fas fa-3x fa-mobile-alt" aria-hidden="true"></i>
+          	            <h2>SMS</h2>
+          	            <p>Energistically deliver user-centric systems without orthogonal catalysts for change. Synergistically productivate market positioning niches whereas distributed best practices.</p>
+          	            <i class="fa fa-check-circle" aria-hidden="true"></i>
+          	            <label for="radio-1" class="radio-tile-label">Seleziona</label>
+          	            <div class="text-wrap">
+          	                    <h3>Vantaggi</h3>
+          	                    <ul>
+          	                        <li>Interactively maintain fully researched materials after stand-alone</li>
+          	                        <li>Materials after stand-alone web-readiness</li>
+          	                        <li>Assertively morph client-centered leadership</li>
+          	                    </ul>
+          	                </div>
+          	                <div class="text-wrap">
+          	                    <h3>Svantaggi</h3>
+          	                    <ul>
+          	                        <li>Uniquely supply corporate ideas with distributed communities</li>
+          	                        <li>Skills before multidisciplinary scenarios</li>
+          	                        <li>Globally streamline flexible infrastructures</li>
+          	                    </ul>
+          	                </div>
+          	        </div>
+          	    </div>
+          	
+          	    <div class="input-container">
+          	        <input id="radio-2" class="radio-button" type="radio" name="radio" />
+          	        <div class="radio-tile">
+          	            <i class="fa fa-3x fa-rocket" aria-hidden="true"></i>
+          	            <h2>APP</h2>
+          	            <p>Conveniently coordinate economically sound testing procedures.</p>
+          	            <i class="fa fa-check-circle" aria-hidden="true"></i>
+          	            <label for="radio-2" class="radio-tile-label">Seleziona</label>
+          	            <div class="text-wrap">
+          	                <h3>Vantaggi</h3>
+          	                <ul>
+          	                    <li>Rather than sustainable data</li>
+          	                    <li>Energistically productize performance based potentialities</li>
+          	                    <li>Ethical synergy</li>
+          	                </ul>
+          	            </div>
+          	            <div class="text-wrap">
+          	                <h3>Svantaggi</h3>
+          	                <ul>
+          	                    <li>Monotonectally promote B2C initiatives</li>
+          	                    <li>Future-proof e-services</li>
+          	                    <li>Proseculim sot risulum</li>
+          	                </ul>
+          	            </div>
+          	        </div>
+          	    </div>
+          	    
+          	</div>	</code>
+          </pre>
+          <div class="u-radiocard">
+          
+              <div class="input-container">
+                  <input id="radio-1" class="radio-button" type="radio" name="radio" />
+                  <div class="radio-tile">
+                      <i class="fas fa-3x fa-mobile-alt" aria-hidden="true"></i>
+                      <h2>SMS</h2>
+                      <p>Energistically deliver user-centric systems without orthogonal catalysts for change. Synergistically productivate market positioning niches whereas distributed best practices.</p>
+                      <i class="fa fa-check-circle" aria-hidden="true"></i>
+                      <label for="radio-1" class="radio-tile-label">Seleziona</label>
+                      <div class="text-wrap">
+                              <h3>Vantaggi</h3>
+                              <ul>
+                                  <li>Interactively maintain fully researched materials after stand-alone</li>
+                                  <li>Materials after stand-alone web-readiness</li>
+                                  <li>Assertively morph client-centered leadership</li>
+                              </ul>
+                          </div>
+                          <div class="text-wrap">
+                              <h3>Svantaggi</h3>
+                              <ul>
+                                  <li>Uniquely supply corporate ideas with distributed communities</li>
+                                  <li>Skills before multidisciplinary scenarios</li>
+                                  <li>Globally streamline flexible infrastructures</li>
+                              </ul>
+                          </div>
+                  </div>
+              </div>
+          
+              <div class="input-container">
+                  <input id="radio-2" class="radio-button" type="radio" name="radio" />
+                  <div class="radio-tile">
+                      <i class="fa fa-3x fa-rocket" aria-hidden="true"></i>
+                      <h2>APP</h2>
+                      <p>Conveniently coordinate economically sound testing procedures.</p>
+                      <i class="fa fa-check-circle" aria-hidden="true"></i>
+                      <label for="radio-2" class="radio-tile-label">Seleziona</label>
+                      <div class="text-wrap">
+                          <h3>Vantaggi</h3>
+                          <ul>
+                              <li>Rather than sustainable data</li>
+                              <li>Energistically productize performance based potentialities</li>
+                              <li>Ethical synergy</li>
+                          </ul>
+                      </div>
+                      <div class="text-wrap">
+                          <h3>Svantaggi</h3>
+                          <ul>
+                              <li>Monotonectally promote B2C initiatives</li>
+                              <li>Future-proof e-services</li>
+                              <li>Proseculim sot risulum</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              
+          </div></section>
+          
+          
+          <section>
+          	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+          				
+          					<h3 id="button-card">Button Card</h3>
+          					<p>
+          					Elemento che si contraddistingue come fosse una card ma in realtà è un button che permette di effettuare una scelta. <br>
+          					Può avere sfondo colorato utilizzando la classe <kbd>colored</kbd>.
+          					</p>
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-6 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_buttoncard.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-6 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classe da utilizzare:</strong> 
+          					<kbd>u-buttoncard</kbd>
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
+          	
+          	<pre>
+          	  <code class="html">
+          		<div class="u-buttoncard">
+          		
+          		    <button>
+          		        <i class="fa fa-2x fa-wrench" aria-hidden="true"></i>
+          		        <h2>Gestisci firma</h2>
+          		        <p>Conveniently evisculate resource-leveling niches.</p>    
+          		    </button>
+          		
+          		    <button>
+          		        <i class="fa fa-2x fa-file" aria-hidden="true"></i>
+          		        <h2>Firma documento</h2>
+          		        <p>Conveniently coordinate economically sound testing procedures.</p>
+          		    </button>
+          		    
+          		</div>
+          		
+          		<div class="u-buttoncard colored">
+          		
+          		    <button>
+          		        <i class="fa fa-2x fa-wrench" aria-hidden="true"></i>
+          		        <h2>Gestisci firma</h2>
+          		        <p>Conveniently evisculate resource-leveling niches.</p>    
+          		    </button>
+          		    <button>
+          		        <i class="fa fa-2x fa-file" aria-hidden="true"></i>
+          		        <h2>Firma documento</h2>
+          		        <p>Conveniently coordinate economically sound testing procedures.</p>
+          		    </button>
+          		    <button>
+          		        <i class="fas fa-2x fa-pencil-alt" aria-hidden="true"></i>
+          		        <h2>Modifica Informazioni</h2>
+          		        <p>Intrinsicly reintermediate compelling users with.</p>
+          		    </button>
+          		    
+          		</div>	  </code>
+          	</pre>
+          	
+          <div class="u-buttoncard">
+          
+              <button>
+                  <i class="fa fa-2x fa-wrench" aria-hidden="true"></i>
+                  <h2>Gestisci firma</h2>
+                  <p>Conveniently evisculate resource-leveling niches.</p>    
+              </button>
+          
+              <button>
+                  <i class="fa fa-2x fa-file" aria-hidden="true"></i>
+                  <h2>Firma documento</h2>
+                  <p>Conveniently coordinate economically sound testing procedures.</p>
+              </button>
+              
+          </div>
+          
+          <div class="u-buttoncard colored">
+          
+              <button>
+                  <i class="fa fa-2x fa-wrench" aria-hidden="true"></i>
+                  <h2>Gestisci firma</h2>
+                  <p>Conveniently evisculate resource-leveling niches.</p>    
+              </button>
+              <button>
+                  <i class="fa fa-2x fa-file" aria-hidden="true"></i>
+                  <h2>Firma documento</h2>
+                  <p>Conveniently coordinate economically sound testing procedures.</p>
+              </button>
+              <button>
+                  <i class="fas fa-2x fa-pencil-alt" aria-hidden="true"></i>
+                  <h2>Modifica Informazioni</h2>
+                  <p>Intrinsicly reintermediate compelling users with.</p>
+              </button>
+              
+          </div></section>
+          
+          <section>
+          
+          	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+          				
+          				<h3 id="u-action-card">Card con azioni </h3>
+          				<p>Questo elemento può essere utilizzato come box per verificare il corretto funzionamento di un processo o di un'azione.</p>
+          				<p>Viene utilizzata la card 
+          					<kbd>card-tile</kbd> per inserire i valori da verificare e successivamente le card 
+          					<kbd>card-tile success</kbd> e 
+          					<kbd>card-tile failure</kbd>
+          			definiscono il risultato che può essere positivo o negativo.
+          				</p>
+          				<p>E' presente anche una card 
+          					<kbd>disabled</kbd> per gestire anche gli stati intermedi di caricamento o disabilitate.
+          				</p>
+          
+          				<p>E' possibile usare questa tipologia di card anche in forma orizzontale usando la classe 
+          					<kbd>horizontal</kbd>.
+          				</p>
+          
+          				<p>Ci sono due versioni di questo elemento:</p>
+          					<ul>
+          						<li>
+          							<a href="#u-action-card-based">Card con azioni Basic</a>
+          						</li>
+          						<li>
+          							<a href="#u-action-card-horizontal">Card con azioni orizzontale</a>
+          						</li>
+          					</ul>
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-4 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_action_card.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-8 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classe da utilizzare:</strong> 
+          					<kbd>u-action-card</kbd>
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
+          	<h4 class="section-description" id="u-action-card-based">Card con azioni Basic</h4>
+          	<pre>
+          		<code>
+          <div class="u-action-card">
+              <div class="card-tile margin-bottom-1">
+                  <i class="fa fa-2x fa-upload colored-icon" aria-hidden="true"></i>
+                  <h2>Carica un documento</h2>
+                  <div class="controls">
+                      <label for="doc">
+                          <p>Seleziona un documento da firmare</p>
+                          <input name="doc" id="doc" type="file">
+                      </label>
+                  </div>
+                  <a href="" class="button button-primary expanded">Verifica</a>
+              </div>
+          
+              <div class="card-tile disabled margin-bottom-1">
+                  <i class="fas fa-2x fa-sync-alt" aria-hidden="true"></i>
+                  <h2>Caricamento...</h2>
+                  <div class="controls">
+                      <p class="result">
+                          Attendi il caricamento
+                      </p>
+                  </div>
+              </div>
+              
+              <div class="card-tile success margin-bottom-1">
+                  <i class="fa fa-2x fa-check-circle" aria-hidden="true"></i>
+                  <h2>Azione completata</h2>
+                  <div class="controls">
+                      <p class="result">
+                          <strong>nomedocumento.p7m</strong><br> è risultato valido.
+                      </p>
+                      <a href="">Carica un altro documento</a>
+                  </div>
+              </div>
+          
+              <div class="card-tile failure margin-bottom-1">
+                  <i class="far fa-2x fa-times-circle" aria-hidden="true"></i>
+                  <h2>Documento non valido</h2>
+                  <div class="controls">
+                      <p class="result">
+                          <strong>nomedocumento.p7m</strong><br> è risultato non valido.
+                      </p>
+                      <a href="">Carica un altro documento</a>
+                  </div>
+              </div>
+          </div>
+          		</code>
+          	</pre>
+          
+          <div class="u-action-card">
+              <div class="card-tile margin-bottom-1">
+                  <i class="fa fa-2x fa-upload colored-icon" aria-hidden="true"></i>
+                  <h2>Carica un documento</h2>
+                  <div class="controls">
+                      <label for="doc">
+                          <p>Seleziona un documento da firmare</p>
+                          <input name="doc" id="doc" type="file">
+                      </label>
+                  </div>
+                  <a href="" class="button button-primary expanded">Verifica</a>
+              </div>
+          
+              <div class="card-tile disabled margin-bottom-1">
+                  <i class="fas fa-2x fa-sync-alt" aria-hidden="true"></i>
+                  <h2>Caricamento...</h2>
+                  <div class="controls">
+                      <p class="result">
+                          Attendi il caricamento
+                      </p>
+                  </div>
+              </div>
+              
+              <div class="card-tile success margin-bottom-1">
+                  <i class="fa fa-2x fa-check-circle" aria-hidden="true"></i>
+                  <h2>Azione completata</h2>
+                  <div class="controls">
+                      <p class="result">
+                          <strong>nomedocumento.p7m</strong><br> è risultato valido.
+                      </p>
+                      <a href="">Carica un altro documento</a>
+                  </div>
+              </div>
+          
+              <div class="card-tile failure margin-bottom-1">
+                  <i class="far fa-2x fa-times-circle" aria-hidden="true"></i>
+                  <h2>Documento non valido</h2>
+                  <div class="controls">
+                      <p class="result">
+                          <strong>nomedocumento.p7m</strong><br> è risultato non valido.
+                      </p>
+                      <a href="">Carica un altro documento</a>
+                  </div>
+              </div>
+          </div>
+          <h4 class="section-description" id="u-action-card-horizontal">Card con azioni orizzontale</h4>
+          	<pre>
+          		<code>
+          
+          <div class="u-action-card horizontal">
+                  <div class="card-tile margin-bottom-1">
+                      <div class="grid-x margin-0">
+                          <div class="cell medium-1 text-center">
+                              <i class="fa fa-2x fa-upload colored-icon" aria-hidden="true"></i>
+                          </div>
+              
+                          <div class="cell medium-7">
+                              <h2>Carica un documento</h2>
+                              <div class="controls">
+                                  <input name="doc" id="doc" type="file">
+                              </div>
+                          </div>
+                          <div class="cell medium-4 text-center">
+                              <a href="" class="button button-primary">Verifica la firma</a>
+                          </div>
+                      </div>
+                  </div>
+              
+                  <div class="card-tile disabled margin-bottom-1">
+                      <div class="grid-x margin-0">
+                          <div class="cell medium-1 text-center">
+                              <i class="fas fa-2x fa-sync-alt" aria-hidden="true"></i>
+                          </div>
+              
+                          <div class="cell medium-11">
+                              <h2>Caricamento...</h2>
+                              <div class="controls">
+                                  <p class="result">
+                                      Il download inizierà entro 5 secondi.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              
+              
+                  <div class="card-tile success margin-bottom-1">
+                      <div class="grid-x margin-0">
+                          <div class="cell medium-1 text-center">
+                              <i class="fa fa-2x fa-check-circle" aria-hidden="true"></i>
+                          </div>
+              
+                          <div class="cell medium-11">
+                              <h2>Azione completata</h2>
+                              <div class="controls">
+                                  <p class="result">
+                                      <strong>nomedocumento.p7m</strong> è risultato valido.
+                                  </p>
+                                  <a href="">Carica un altro documento</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              
+                  <div class="card-tile failure margin-bottom-1">
+                      <div class="grid-x margin-0">
+                          <div class="cell medium-1 text-center">
+                              <i class="far fa-2x fa-times-circle" aria-hidden="true"></i>
+                          </div>
+              
+                          <div class="cell medium-11">
+                              <h2>Azione non completata</h2>
+                              <div class="controls">
+                                  <p class="result">
+                                      <strong>nomedocumento.p7m</strong> è risultato non valido.
+                                  </p>
+                                  <a href="">Carica un altro documento</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>		</code>
+          	</pre>
+          
+          	
+          	<div class="u-action-card horizontal">
+          	        <div class="card-tile margin-bottom-1">
+          	            <div class="grid-x margin-0">
+          	                <div class="cell medium-1 text-center">
+          	                    <i class="fa fa-2x fa-upload colored-icon" aria-hidden="true"></i>
+          	                </div>
+          	    
+          	                <div class="cell medium-7">
+          	                    <h2>Carica un documento</h2>
+          	                    <div class="controls">
+          	                        <input name="doc" id="doc" type="file">
+          	                    </div>
+          	                </div>
+          	                <div class="cell medium-4 text-center">
+          	                    <a href="" class="button button-primary">Verifica la firma</a>
+          	                </div>
+          	            </div>
+          	        </div>
+          	    
+          	        <div class="card-tile disabled margin-bottom-1">
+          	            <div class="grid-x margin-0">
+          	                <div class="cell medium-1 text-center">
+          	                    <i class="fas fa-2x fa-sync-alt" aria-hidden="true"></i>
+          	                </div>
+          	    
+          	                <div class="cell medium-11">
+          	                    <h2>Caricamento...</h2>
+          	                    <div class="controls">
+          	                        <p class="result">
+          	                            Il download inizierà entro 5 secondi.
+          	                        </p>
+          	                    </div>
+          	                </div>
+          	            </div>
+          	        </div>
+          	    
+          	    
+          	        <div class="card-tile success margin-bottom-1">
+          	            <div class="grid-x margin-0">
+          	                <div class="cell medium-1 text-center">
+          	                    <i class="fa fa-2x fa-check-circle" aria-hidden="true"></i>
+          	                </div>
+          	    
+          	                <div class="cell medium-11">
+          	                    <h2>Azione completata</h2>
+          	                    <div class="controls">
+          	                        <p class="result">
+          	                            <strong>nomedocumento.p7m</strong> è risultato valido.
+          	                        </p>
+          	                        <a href="">Carica un altro documento</a>
+          	                    </div>
+          	                </div>
+          	            </div>
+          	        </div>
+          	    
+          	        <div class="card-tile failure margin-bottom-1">
+          	            <div class="grid-x margin-0">
+          	                <div class="cell medium-1 text-center">
+          	                    <i class="far fa-2x fa-times-circle" aria-hidden="true"></i>
+          	                </div>
+          	    
+          	                <div class="cell medium-11">
+          	                    <h2>Azione non completata</h2>
+          	                    <div class="controls">
+          	                        <p class="result">
+          	                            <strong>nomedocumento.p7m</strong> è risultato non valido.
+          	                        </p>
+          	                        <a href="">Carica un altro documento</a>
+          	                    </div>
+          	                </div>
+          	            </div>
+          	        </div>
+          	    </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="../assets/js/app.js"></script>
+    <script>
+      jQuery('pre code').each(function () {
+        var $block = jQuery(this);
+        $block.text($block.html());
+      });
+      hljs.highlightAll();
+    </script> 
+    
+  </body>
+</html>

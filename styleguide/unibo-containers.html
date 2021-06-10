@@ -1,0 +1,1256 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../assets/css/app.css">  </head>
+
+  <body>
+    <main class="grid-container fluid">
+      <div class="grid-x">
+        <div class="large-2 cell show-for-large">
+          <nav class="docs-toc-wrap sticky-container" id="docsToc" data-sticky-container>
+              <div class="docs-toc sticky is-at-top is-stuck" data-sticky-on>
+                  <a class="back" href="../">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>Indietro
+                  </a>
+              </div>
+          </nav>
+        </div>    
+
+        <div class="large-10 cell styleguide">
+          
+          <h1 class="huge">Style Guide Unibo Containers</h1>
+          <h2>In questa pagina ci sono i componenti custom relativi ai contenitori sviluppati ed utilizzati esclusivamente per applicazioni unibo.</h2>
+          <section>
+          	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+          					<h3 id="barra-login" class="js">
+          						Barra Login DSA
+          					</h3>
+          					<p>La barra di Login è composta da un dropdown menù di Foundation. Questo può avere dei sottomenù che si aprono sull'hover o sul click.</p>
+          					<p>In linea generale è preferibile lasciare le voci di menù sempre visibili. In caso ci siano molte voci è tuttavia preferibile utilizzare la versione con l'apertura sul click poiché nella versione mobile, l'hover può non essere interpretato correttamente da alcuni dispositivi.</p>
+          					<p>Ci sono più versioni di questo elemento:</p>
+          					<ul>
+          						<li>
+          							<a href="#barra-login-click">Login con dropdown che si apre al click</a>
+          						</li>
+          						<li>
+          							<a href="#barra-login-hover">Login con dropdown che si apre all'hover</a>
+          						</li>
+          						<li>
+          							<a href="#barra-login-impersonamento">Login con impersonamento</a>
+          						</li>
+          					</ul>
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-6 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_barra_login.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-6 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classe da utilizzare:</strong> <kbd>u-barra-login</kbd> 
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
+          	<h4 class="section-description" id="barra-login-click">Login con dropdown che si apre al click</h4>
+          
+          
+          	<pre>
+          		<code class="html">
+          <div class="u-barra-login" id="barra-login">
+            <ul class="dropdown menu horizontal" data-dropdown-menu data-disable-hover="true" data-click-open="true">
+              <li>
+                <a href="#">
+                  <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">     
+                  <span>Mario Rossi</span>
+                </a>
+                <ul class="menu">
+                  <li>
+                    <div class="u-change-user">
+                        <p class="disabled">
+                          <i class="fa fa-users" aria-hidden="true"></i>
+                          <strong>Responsabile</strong>
+                          <br />
+                          <a href="#">Attiva questo ruolo</a>
+                        </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">Testo</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="far fa-address-card" aria-hidden="true"></i> Icona e testo</a>
+                  </li>
+                  <li>
+                    <a href="#"><span>Logout</span></a>
+                  </li>
+                </ul>
+              </li>
+          
+              <li class="u-lang">
+                <a href="#">
+                  <i class="fas fa-globe-americas" aria-hidden="true"></i><span>IT</span>
+                </a>
+                <ul class="menu">
+                  <li>
+                    <a href="https://www.google.it/?gws_rd=ssl">
+                      EN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.google.it/?gws_rd=ssl">
+                      FR
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <a href="" class="no-arrow">
+                  <i class="fa fa-cog" aria-hidden="true"></i>
+                  <span class="show-for-sr">Impostazioni</span>
+                </a>
+                <ul class="menu">
+                  <li>
+                    <a href="">Impostazioni generali</a>
+                  </li>
+                  <li>
+                    <a href="">Autorizzazioni</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div> 		</code>
+          	</pre>  
+          
+          	<div class="u-barra-login" id="barra-login">
+          	  <ul class="dropdown menu horizontal" data-dropdown-menu data-disable-hover="true" data-click-open="true">
+          	    <li>
+          	      <a href="#">
+          	        <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">     
+          	        <span>Mario Rossi</span>
+          	      </a>
+          	      <ul class="menu">
+          	        <li>
+          	          <div class="u-change-user">
+          	              <p class="disabled">
+          	                <i class="fa fa-users" aria-hidden="true"></i>
+          	                <strong>Responsabile</strong>
+          	                <br />
+          	                <a href="#">Attiva questo ruolo</a>
+          	              </p>
+          	          </div>
+          	        </li>
+          	        <li>
+          	          <a href="#">Testo</a>
+          	        </li>
+          	        <li>
+          	          <a href="#"><i class="far fa-address-card" aria-hidden="true"></i> Icona e testo</a>
+          	        </li>
+          	        <li>
+          	          <a href="#"><span>Logout</span></a>
+          	        </li>
+          	      </ul>
+          	    </li>
+          	
+          	    <li class="u-lang">
+          	      <a href="#">
+          	        <i class="fas fa-globe-americas" aria-hidden="true"></i><span>IT</span>
+          	      </a>
+          	      <ul class="menu">
+          	        <li>
+          	          <a href="https://www.google.it/?gws_rd=ssl">
+          	            EN
+          	          </a>
+          	        </li>
+          	        <li>
+          	          <a href="https://www.google.it/?gws_rd=ssl">
+          	            FR
+          	          </a>
+          	        </li>
+          	      </ul>
+          	    </li>
+          	    
+          	    <li>
+          	      <a href="" class="no-arrow">
+          	        <i class="fa fa-cog" aria-hidden="true"></i>
+          	        <span class="show-for-sr">Impostazioni</span>
+          	      </a>
+          	      <ul class="menu">
+          	        <li>
+          	          <a href="">Impostazioni generali</a>
+          	        </li>
+          	        <li>
+          	          <a href="">Autorizzazioni</a>
+          	        </li>
+          	      </ul>
+          	    </li>
+          	  </ul>
+          	</div> 
+          	<h4 class="section-description" id="barra-unibo-login-responsive">Login barra apri/chiudi in responsive</h4>
+          	<p>In questo caso per la versione responsive abbiamo inserito l'apri/chiudi 
+          		<kbd> div class="title-bar" data-responsive-toggle="barra-login" data-hide-for="medium"</kbd> inserendo l'etichetta "menu".
+          	</p>
+          	<p>E' preferibile 
+          		<strong>non</strong> utilizzare l'apri/chiudi ma lasciare le voci visibili. Solamente se sono tanti elementi ha senso nascondere le voci del menu.
+          	</p>
+          	<pre>
+          		<code class="html">
+          <div class="title-bar" data-responsive-toggle="barra-login-responsive" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle="barra-login-responsive"></button>
+            <a class="title-bar-title" data-toggle="barra-login">Menu</a>
+          </div>
+          
+          <div class="u-barra-login" id="barra-login-responsive">
+            <ul class="dropdown menu horizontal" data-dropdown-menu data-disable-hover="true" data-click-open="true" data-close-on-click="true" data-close-on-click-inside="true">       
+              <li>
+                <a href="#">
+                  <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">     
+                  <span>Mario Rossi</span>
+                </a>
+                <ul class="menu">
+                  <li>
+                    <div class="u-change-user">
+                        <p class="disabled">
+                          <i class="fa fa-users" aria-hidden="true"></i>
+                          <strong>Responsabile</strong>
+                          <br />
+                          <a href="#">Attiva questo ruolo</a>
+                        </p>
+                    </div>
+                    <div class="u-change-user">
+                        <p class="disabled">
+                          <i class="fa fa-users" aria-hidden="true"></i>
+                          <strong>Completely engage open-source architectures for virtual services.</strong>
+                          <br />
+                          <a href="#">Attiva questo ruolo</a>
+                        </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">Testo</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="far fa-address-card" aria-hidden="true"></i> Icona e testo</a>
+                  </li>
+                  <li>
+                    <a href="#"><span>Logout</span></a>
+                  </li>
+                </ul>
+              </li>
+          
+              <li class="u-lang">
+                <a href="#">
+                  <i class="fas fa-globe-americas" aria-hidden="true"></i> 
+                  <span>IT</span>
+                </a>
+                <ul class="menu text-right">
+                  <li>
+                    <a href="https://www.google.it/?gws_rd=ssl">
+                      EN
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <a href="" class="no-arrow">
+                  <i class="fa fa-cog" aria-hidden="true"></i>
+                  <span class="hide-for-sr-medium-only hide-for-sr-large-only">Impostazioni</span>
+                </a>
+                <ul class="menu">
+                  <li>
+                    <a href="">Impostazioni generali</a>
+                  </li>
+                  <li>
+                    <a href="">Autorizzazioni</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div> 		</code>
+          	</pre>  
+          
+          	<div class="title-bar" data-responsive-toggle="barra-login-responsive" data-hide-for="medium">
+          	  <button class="menu-icon" type="button" data-toggle="barra-login-responsive"></button>
+          	  <a class="title-bar-title" data-toggle="barra-login">Menu</a>
+          	</div>
+          	
+          	<div class="u-barra-login" id="barra-login-responsive">
+          	  <ul class="dropdown menu horizontal" data-dropdown-menu data-disable-hover="true" data-click-open="true" data-close-on-click="true" data-close-on-click-inside="true">       
+          	    <li>
+          	      <a href="#">
+          	        <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">     
+          	        <span>Mario Rossi</span>
+          	      </a>
+          	      <ul class="menu">
+          	        <li>
+          	          <div class="u-change-user">
+          	              <p class="disabled">
+          	                <i class="fa fa-users" aria-hidden="true"></i>
+          	                <strong>Responsabile</strong>
+          	                <br />
+          	                <a href="#">Attiva questo ruolo</a>
+          	              </p>
+          	          </div>
+          	          <div class="u-change-user">
+          	              <p class="disabled">
+          	                <i class="fa fa-users" aria-hidden="true"></i>
+          	                <strong>Completely engage open-source architectures for virtual services.</strong>
+          	                <br />
+          	                <a href="#">Attiva questo ruolo</a>
+          	              </p>
+          	          </div>
+          	        </li>
+          	        <li>
+          	          <a href="#">Testo</a>
+          	        </li>
+          	        <li>
+          	          <a href="#"><i class="far fa-address-card" aria-hidden="true"></i> Icona e testo</a>
+          	        </li>
+          	        <li>
+          	          <a href="#"><span>Logout</span></a>
+          	        </li>
+          	      </ul>
+          	    </li>
+          	
+          	    <li class="u-lang">
+          	      <a href="#">
+          	        <i class="fas fa-globe-americas" aria-hidden="true"></i> 
+          	        <span>IT</span>
+          	      </a>
+          	      <ul class="menu text-right">
+          	        <li>
+          	          <a href="https://www.google.it/?gws_rd=ssl">
+          	            EN
+          	          </a>
+          	        </li>
+          	      </ul>
+          	    </li>
+          	    
+          	    <li>
+          	      <a href="" class="no-arrow">
+          	        <i class="fa fa-cog" aria-hidden="true"></i>
+          	        <span class="hide-for-sr-medium-only hide-for-sr-large-only">Impostazioni</span>
+          	      </a>
+          	      <ul class="menu">
+          	        <li>
+          	          <a href="">Impostazioni generali</a>
+          	        </li>
+          	        <li>
+          	          <a href="">Autorizzazioni</a>
+          	        </li>
+          	      </ul>
+          	    </li>
+          	  </ul>
+          	</div> 
+          	<h4 class="section-description" id="barra-login-hover">Login con dropdown che si apre all'hover</h4>
+          	<p>E' preferibile utilizzare la versione con l'apertura sul click poiché nella versione mobile, l'hover può non essere interpretato correttamente da alcuni dispositivi.</p>
+          	<p>In questo caso per la versione responsive non abbiamo inserito l'apri/chiudi e non abbiamo inserito la classe 
+          		<kbd>vertical</kbd> poiché preferiamo lasciare le voci visibili.
+          	</p>
+          	<pre>
+          		<code class="html">
+          <div class="u-barra-login" id="barra-login-hover">
+            <ul class="dropdown menu" data-dropdown-menu data-closing-time="50">
+              <li>
+                <a href="#">
+                  <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">     
+                  <span>Mario Rossi</span>
+                </a>
+                <ul class="menu">
+                  <li>
+                    <a href="#">Testo</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="far fa-address-card" aria-hidden="true"></i> Icona e testo</a>
+                  </li>
+                  <li>
+                    <a href="#"><span>Logout</span></a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <a href="" class="no-arrow">
+                  <i class="fa fa-cog" aria-hidden="true"></i>
+                  <span class="hide-for-sr-medium-only hide-for-sr-large-only">Impostazioni</span>
+                </a>
+                <ul class="menu">
+                  <li>
+                    <a href="">Impostazioni generali</a>
+                  </li>
+                  <li>
+                    <a href="">Autorizzazioni</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div> 
+          		</code>
+          	</pre>  
+          
+          	<div class="u-barra-login" id="barra-login-hover">
+          	  <ul class="dropdown menu" data-dropdown-menu data-closing-time="50">
+          	    <li>
+          	      <a href="#">
+          	        <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">     
+          	        <span>Mario Rossi</span>
+          	      </a>
+          	      <ul class="menu">
+          	        <li>
+          	          <a href="#">Testo</a>
+          	        </li>
+          	        <li>
+          	          <a href="#"><i class="far fa-address-card" aria-hidden="true"></i> Icona e testo</a>
+          	        </li>
+          	        <li>
+          	          <a href="#"><span>Logout</span></a>
+          	        </li>
+          	      </ul>
+          	    </li>
+          	    
+          	    <li>
+          	      <a href="" class="no-arrow">
+          	        <i class="fa fa-cog" aria-hidden="true"></i>
+          	        <span class="hide-for-sr-medium-only hide-for-sr-large-only">Impostazioni</span>
+          	      </a>
+          	      <ul class="menu">
+          	        <li>
+          	          <a href="">Impostazioni generali</a>
+          	        </li>
+          	        <li>
+          	          <a href="">Autorizzazioni</a>
+          	        </li>
+          	      </ul>
+          	    </li>
+          	  </ul>
+          	</div> 
+          
+          	<h4 class="section-description" id="barra-login-impersonamento">Login con impersonamento</h4>
+          		<p>E' preferibile utilizzare la versione con l'apertura sul click poiché nella versione mobile, l'hover può non essere interpretato correttamente da alcuni dispositivi.</p>
+          		<p>In questo caso per la versione responsive non abbiamo inserito l'apri/chiudi e non abbiamo inserito la classe 
+          			<kbd>vertical</kbd> poiché preferiamo lasciare le voci visibili.
+          		</p>
+          		<pre>
+          			<code class="html">
+          <div class="u-barra-login" id="barra-login">
+            <ul class="dropdown menu horizontal" data-dropdown-menu data-disable-hover="true" data-click-open="true">
+              <li>
+                <a href="#">
+                    <i class="ui-user-change" aria-hidden="true"></i>
+                    <span>Alessandro Alessandrini</span>
+                </a>
+                <ul class="menu">
+                  <li>
+                    <div class="u-utente-reale">
+                        <p>
+                          <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">     
+                          <span>Mario Rossi</span>
+                        </p>
+                    </div>
+                    <div class="u-login-info">
+                      <p>
+                      Stai accedendo come <strong>alessadro.alessandrini@unibo.it</strong>, 
+                      per tornare al tuo utente puoi <a href="">terminare questo impersonamento</a>.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-sign-out-alt" aria-hidden="true"></i> <span>Logout</span></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>			</code>
+          		</pre>  
+          
+          		<div class="u-barra-login" id="barra-login">
+          		  <ul class="dropdown menu horizontal" data-dropdown-menu data-disable-hover="true" data-click-open="true">
+          		    <li>
+          		      <a href="#">
+          		          <i class="ui-user-change" aria-hidden="true"></i>
+          		          <span>Alessandro Alessandrini</span>
+          		      </a>
+          		      <ul class="menu">
+          		        <li>
+          		          <div class="u-utente-reale">
+          		              <p>
+          		                <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">     
+          		                <span>Mario Rossi</span>
+          		              </p>
+          		          </div>
+          		          <div class="u-login-info">
+          		            <p>
+          		            Stai accedendo come <strong>alessadro.alessandrini@unibo.it</strong>, 
+          		            per tornare al tuo utente puoi <a href="">terminare questo impersonamento</a>.
+          		            </p>
+          		          </div>
+          		        </li>
+          		        <li>
+          		          <a href="#"><i class="fas fa-sign-out-alt" aria-hidden="true"></i> <span>Logout</span></a>
+          		        </li>
+          		      </ul>
+          		    </li>
+          		  </ul>
+          		</div>
+          	</section>
+          	<section>
+          		<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          			<div class="grid-container">
+          				<div class="grid-x grid-padding-x">
+          					<div class="large-12 cell">                   
+          						<h3 id="header">Header</h3>
+          						<p>Ci sono due versioni di questo elemento:</p>
+          						<ul>
+          							<li>
+          								<a href="#u-header-left">Header allineato a sinistra</a>
+          							</li>
+          							<li>
+          								<a href="#u-header-centered">Header centrato</a>
+          							</li>
+          						</ul>
+          					</div>
+          				</div>
+          				<div class="grid-x grid-padding-x">
+          					<div class="large-4 cell">
+          						<div class="icon-left">
+          						<i class="fab fa-css3-alt fa-2x"></i>
+          						<strong>SCSS da includere:</strong> <kbd>u_header.scss</kbd>
+          						</div>
+          					</div>
+          					<div class="large-8 cell">
+          						<div class="icon-left">
+          						<i class="far fa-file-code fa-2x"></i>
+          						<strong>Classe da utilizzare:</strong> <kbd>u-header-left</kbd> solo se si vuole allineamento a sinistra 
+          						</div>
+          						
+          					</div>
+          				</div>
+          			</div>  
+          		</div>
+          		<h4 id="u-header-left" class="section-description">Header allineato a sinistra</h4>
+          		<pre>
+          			<code class="html">
+          <header class="u-header-left small-left">
+            <div class="grid-x grid-padding-x">
+              <div class="cell content medium-12">
+                <a href="/">
+                  <img class="logo" src="../assets/img/sigillo2x.png" alt="">
+                  <div class="text">
+                    <p class="alma-mater">Alma Mater Studiorum Università di Bologna</p>
+                    <p class="title">Nome dell'applicativo</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </header>			</code>
+          		</pre>
+          		<header class="u-header-left small-left">
+          		  <div class="grid-x grid-padding-x">
+          		    <div class="cell content medium-12">
+          		      <a href="/">
+          		        <img class="logo" src="../assets/img/sigillo2x.png" alt="">
+          		        <div class="text">
+          		          <p class="alma-mater">Alma Mater Studiorum Università di Bologna</p>
+          		          <p class="title">Nome dell'applicativo</p>
+          		        </div>
+          		      </a>
+          		    </div>
+          		  </div>
+          		</header>		
+          		<h4 id="u-header-centered" class="section-description">Header centrato</h4>
+          		<pre>
+          			<code class="html">
+          				<header>
+          				  <div class="grid-x expanded grid-padding-x">
+          				    <div class="cell content">
+          				      <a href="/">
+          				        <img class="logo" src="../assets/img/sigillo2x.png" alt="">
+          				        <div class="text">
+          				          <p class="alma-mater">Alma Mater Studiorum Università di Bologna</p>
+          				          <p class="title">Nome dell'applicativo</p>
+          				        </div>
+          				      </a>
+          				    </div>
+          				  </div>
+          				</header>
+          			</code>
+          		</pre>
+          
+          	<header>
+          	  <div class="grid-x expanded grid-padding-x">
+          	    <div class="cell content">
+          	      <a href="/">
+          	        <img class="logo" src="../assets/img/sigillo2x.png" alt="">
+          	        <div class="text">
+          	          <p class="alma-mater">Alma Mater Studiorum Università di Bologna</p>
+          	          <p class="title">Nome dell'applicativo</p>
+          	        </div>
+          	      </a>
+          	    </div>
+          	  </div>
+          	</header>
+          
+          	</section>
+          	<section>
+          		<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          			<div class="grid-container">
+          				<div class="grid-x grid-padding-x">
+          					<div class="large-12 cell">                   
+          						
+          						<h3 id="hightlight-text">Highlight text</h3>
+          						<p>Questo elemento può essere utilizzato in un layout ad una colonna per evidenziare o differenziare una sezione, in quanto inserisce uno sfondo grigio su tutta la riga. </p>
+          						<p>Può avere una griglia di più colonne all'interno per avere più blocchi di elementi. </p>
+          						<p>Ci sono due versioni di questo elemento:</p>
+          						<ul>
+          							<li>
+          								<a href="#u-hightlight">Highlight Basic</a>
+          							</li>
+          							<li>
+          								<a href="#u-hightlight-fixed">Highlight a dimensione fissa</a>
+          							</li>
+          						</ul>
+          					</div>
+          				</div>
+          				<div class="grid-x grid-padding-x">
+          					<div class="large-6 cell">
+          						<div class="icon-left">
+          						<i class="fab fa-css3-alt fa-2x"></i>
+          						<strong>SCSS da includere:</strong> <kbd>u_highlight_text.scss</kbd>
+          						</div>
+          					</div>
+          					<div class="large-6 cell">
+          						<div class="icon-left">
+          						<i class="far fa-file-code fa-2x"></i>
+          						<strong>Classe da utilizzare:</strong> <kbd>u-highlight-text</kbd>
+          						</div>
+          						
+          					</div>
+          				</div>
+          			</div>  
+          		</div>
+          		<h4 class="section-description" id="u-hightlight">Highlight Basic</h4>
+          		
+          		<pre>
+          			<code class="html">
+          <div class="u-highlight-text">  
+            <div class="grid-x grid-padding-x">
+              <div class="large-6 cell">
+                <p class="main-label">Lorem ipsum</p>
+                <h3>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</h3>
+                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+              </div>
+              <div class="large-6 cell">
+                <p class="main-label">Lorem ipsum</p>
+                <h3>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</h3>
+                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+              </div>
+            </div>
+          </div>
+                			</code>
+          		</pre>
+          		<div class="u-highlight-text">  
+          		  <div class="grid-x grid-padding-x">
+          		    <div class="large-6 cell">
+          		      <p class="main-label">Lorem ipsum</p>
+          		      <h3>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</h3>
+          		      <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+          		    </div>
+          		    <div class="large-6 cell">
+          		      <p class="main-label">Lorem ipsum</p>
+          		      <h3>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</h3>
+          		      <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+          		    </div>
+          		  </div>
+          		</div>
+          		      		<h4 class="section-description" id="u-hightlight-fixed">Highlight a dimensione fissa</h4>
+          		<p>Se viene inserita la classe 
+          			<kbd>fixed-width</kbd>, l'elemento all'interno avrà una larghezza massima di 550px, utile per non avere un contenuto troppo lungo e difficile da leggere.
+          		</p>
+          		<pre>
+          			<code class="html">
+          <div class="u-highlight-text fixed-width">  
+            <div class="grid-x">
+              <div class="large-12 cell">
+                <p class="main-label">Lorem ipsum</p>
+                <h3>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</h3>
+                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+              </div>
+            </div>
+          </div>
+                			</code>
+          		</pre>
+          
+          		<div class="u-highlight-text fixed-width">  
+          		  <div class="grid-x">
+          		    <div class="large-12 cell">
+          		      <p class="main-label">Lorem ipsum</p>
+          		      <h3>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</h3>
+          		      <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+          		    </div>
+          		  </div>
+          		</div>
+          		      
+          </section>
+          <section>
+          	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+          					
+          					<h3 id="tabella_dark">Tabella dark</h3>
+          					<p>
+          						Versione scura della tabella di default.
+          					</p>
+          					
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-6 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_table.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-6 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classe da utilizzare:</strong> <kbd>dark</kbd>
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
+          	
+          	<pre>
+          		<code class="html">
+          <table class="dark">
+          </table>
+          		</code>
+          	</pre>
+          	<table class="dark">
+          		<thead>
+          			<tr>
+          				<th width="200">Table Header</th>
+          				<th>Table Header</th>
+          				<th width="150">Table Header</th>
+          				<th width="150">Table Header</th>
+          			</tr>
+          		</thead>
+          		<tbody>
+          			<tr>
+          				<td>Content Goes Here</td>
+          				<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+          				<td>Content Goes Here</td>
+          				<td>Content Goes Here</td>
+          			</tr>
+          			<tr>
+          				<td>Content Goes Here</td>
+          				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+          				<td>Content Goes Here</td>
+          				<td>Content Goes Here</td>
+          			</tr>
+          			<tr>
+          				<td>Content Goes Here</td>
+          				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+          				<td>Content Goes Here</td>
+          				<td>Content Goes Here</td>
+          			</tr>
+          		</tbody>
+          	</table>
+          </section>
+          <section>
+          	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+          					
+          				<h3 id="tabella_bordi">Tabella senza bordi</h3>
+          				<p>
+          				Per ottenere una tabella senza i bordi.
+          				</p>
+          					
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-6 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_table.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-6 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classe da utilizzare:</strong> <kbd>no-border</kbd>
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
+          	<pre>
+          		<code class="html">
+          <table class="no-border"></table>
+          		</code>
+          	</pre>
+          	<table class="no-border">
+          		<thead>
+          			<tr>
+          				<th width="200">Table Header</th>
+          				<th>Table Header</th>
+          				<th width="150">Table Header</th>
+          				<th width="150">Table Header</th>
+          			</tr>
+          		</thead>
+          		<tbody>
+          			<tr>
+          				<td>Content Goes Here</td>
+          				<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+          				<td>Content Goes Here</td>
+          				<td>Content Goes Here</td>
+          			</tr>
+          			<tr>
+          				<td>Content Goes Here</td>
+          				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+          				<td>Content Goes Here</td>
+          				<td>Content Goes Here</td>
+          			</tr>
+          			<tr>
+          				<td>Content Goes Here</td>
+          				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+          				<td>Content Goes Here</td>
+          				<td>Content Goes Here</td>
+          			</tr>
+          		</tbody>
+          	</table>
+          </section>
+          <section>
+          	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+          					
+          				<h3 id="tabella_sort">Ordinamento tabella</h3>
+          				<p>
+          				Per ottenere lo stile sull'ordinamento.
+          				</p>
+          				<p>La classe 
+          					<kbd>.sort</kbd> inserisce un'icona con le doppie frecce che sta ad indicare che quella colonna è ordinabile. 
+          				</p>
+          				<p>Le classi 
+          					<kbd>.sorted-up</kbd> e 
+          					<kbd>.sorted-down</kbd> indicano se quella colonna è ordinata in modo crescente o decrescente.
+          				</p>
+          				<p>E' possibile utilizzare le classi 
+          					<kbd>.sorted-up-light</kbd> e 
+          					<kbd>.sorted-down-light</kbd> nel 
+          					<kbd>
+          						<th></th>
+          					</kbd> per avere uno stile più leggero nelle colonne ordinate.
+          				</p>
+          				<p>Nelle celle della colonna evidenziata va inserito 
+          					<kbd>.sorted-light</kbd>.
+          				</p>
+          				<p>Si può utilizzare anche nelle tabelle 
+          					<kbd>.dark</kbd>, in quel caso lo stile è differente in base ai colori più scuri della tabella.
+          				</p>
+          				<p>Le classi da utilizzare per la tabella dark sono 
+          					<kbd>.sorted-up</kbd> e 
+          					<kbd>.sorted-down</kbd>.
+          				</p>
+          				<p>Nelle celle della colonna evidenziata va inserito 
+          					<kbd>.sorted</kbd>.
+          				</p>
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-4 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_table.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-8 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classi da utilizzare:</strong> 
+          					<kbd>.sort</kbd> , 
+          					<kbd>.sorted-up</kbd> e 
+          					<kbd>.sorted-down</kbd>
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
+          	
+          	<pre>
+          		<code class="html">
+          <table>
+          	<thead>
+          		<tr>
+          			<th width="200" class="sort">Table Header</th>
+          			<th class="sort">Table Header</th>
+          			<th width="150" class="sorted-up">Table Header</th>
+          			<th width="150" class="sort">Table Header</th>
+          		</tr>
+          	</thead>
+          	<tbody>
+          		<tr>
+          			<td>Content Goes Here</td>
+          			<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+          			<td class="sorted">Content Goes Here</td>
+          			<td>Content Goes Here</td>
+          		</tr>
+          		<tr>
+          			<td>Content Goes Here</td>
+          			<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+          			<td class="sorted">Content Goes Here</td>
+          			<td>Content Goes Here</td>
+          		</tr>
+          		<tr>
+          			<td>Content Goes Here</td>
+          			<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+          			<td class="sorted">Content Goes Here</td>
+          			<td>Content Goes Here</td>
+          		</tr>
+          	</tbody>
+          </table>
+          		</code>
+          	</pre>
+          	<table>
+          		<thead>
+          			<tr>
+          				<th width="200" class="sort">Table Header</th>
+          				<th class="sort">Table Header</th>
+          				<th width="150" class="sorted-up">Table Header</th>
+          				<th width="150" class="sort">Table Header</th>
+          			</tr>
+          		</thead>
+          		<tbody>
+          			<tr>
+          				<td>Content Goes Here</td>
+          				<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+          				<td class="sorted">Content Goes Here</td>
+          				<td>Content Goes Here</td>
+          			</tr>
+          			<tr>
+          				<td>Content Goes Here</td>
+          				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+          				<td class="sorted">Content Goes Here</td>
+          				<td>Content Goes Here</td>
+          			</tr>
+          			<tr>
+          				<td>Content Goes Here</td>
+          				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+          				<td class="sorted">Content Goes Here</td>
+          				<td>Content Goes Here</td>
+          			</tr>
+          		</tbody>
+          	</table>
+          	<h4 class="section-description" id="light-table">Tabella con stile light</h4>
+          	<pre>
+          		<code class="html">
+          <table>
+          	<thead>
+          		<tr>
+          			<th width="200" class="sort">Table Header</th>
+          			<th class="sort">Table Header</th>
+          			<th width="150" class="sorted-up-light">Table Header</th>
+          			<th width="150" class="sort">Table Header</th>
+          		</tr>
+          	</thead>
+          	<tbody>
+          		<tr>
+          			<td>Content Goes Here</td>
+          			<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+          			<td class="sorted-light">Content Goes Here</td>
+          			<td>Content Goes Here</td>
+          		</tr>
+          		<tr>
+          			<td>Content Goes Here</td>
+          			<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+          			<td class="sorted-light">Content Goes Here</td>
+          			<td>Content Goes Here</td>
+          		</tr>
+          		<tr>
+          			<td>Content Goes Here</td>
+          			<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+          			<td class="sorted-light">Content Goes Here</td>
+          			<td>Content Goes Here</td>
+          		</tr>
+          	</tbody>
+          </table>
+          		</code>
+          	</pre>
+          	
+          	<table>
+          		<thead>
+          			<tr>
+          				<th width="200" class="sort">Table Header</th>
+          				<th class="sort">Table Header</th>
+          				<th width="150" class="sorted-up-light">Table Header</th>
+          				<th width="150" class="sort">Table Header</th>
+          			</tr>
+          		</thead>
+          		<tbody>
+          			<tr>
+          				<td>Content Goes Here</td>
+          				<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+          				<td class="sorted-light">Content Goes Here</td>
+          				<td>Content Goes Here</td>
+          			</tr>
+          			<tr>
+          				<td>Content Goes Here</td>
+          				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+          				<td class="sorted-light">Content Goes Here</td>
+          				<td>Content Goes Here</td>
+          			</tr>
+          			<tr>
+          				<td>Content Goes Here</td>
+          				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+          				<td class="sorted-light">Content Goes Here</td>
+          				<td>Content Goes Here</td>
+          			</tr>
+          		</tbody>
+          	</table>
+          	<h4 class="section-description" id="dark-table">Tabella con stile dark</h4>
+          	<table class="dark">
+          		<thead>
+          			<tr>
+          				<th width="200" class="sort">Table Header</th>
+          				<th class="sort">Table Header</th>
+          				<th width="150" class="sorted-down-light">Table Header</th>
+          				<th width="150" class="sort">Table Header</th>
+          			</tr>
+          		</thead>
+          		<tbody>
+          			<tr>
+          				<td>Content Goes Here</td>
+          				<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+          				<td class="sorted">Content Goes Here</td>
+          				<td>Content Goes Here</td>
+          			</tr>
+          			<tr>
+          				<td>Content Goes Here</td>
+          				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+          				<td class="sorted">Content Goes Here</td>
+          				<td>Content Goes Here</td>
+          			</tr>
+          			<tr>
+          				<td>Content Goes Here</td>
+          				<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+          				<td class="sorted">Content Goes Here</td>
+          				<td>Content Goes Here</td>
+          			</tr>
+          		</tbody>
+          	</table>
+          </section>
+          <section>
+          	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+          				
+          				<h3 id="u-numbered-list">Lista con numeri
+          				</h3>
+          				<p>Questo elemento può essere utilizzato come box per spiegare una procedura in più step.</p>
+          				<p>Può anche essere centrato e a quel punto va aggiunta la classe 
+          					<kbd>centered</kbd>
+          				</p>
+          				<p>Ci sono due versioni di questo elemento:</p>
+          					<ul>
+          						<li>
+          							<a href="#u-numbered-list-basic">Lista con numeri</a>
+          						</li>
+          						<li>
+          							<a href="#u-numbered-list-centered">Lista con numeri centrato</a>
+          						</li>
+          					</ul>
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-5 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_numbered_list.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-7 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classe da utilizzare:</strong> 
+          					<kbd>u-numbered-list</kbd>
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
+          	<h4 class="section-description" id="u-numbered-list-basic">Lista con numeri</h4>
+          	<pre>
+          		<code>
+          <div class="u-numbered-list">
+              <ol>
+                  <li>
+                      <div class="text-wrap">
+                          <p>Quickly build robust relationships for frictionless interfaces. Distinctively drive open-source testing procedures after holistic interfaces. Synergistically formulate stand-alone convergence whereas long-term high-impact services. Interactively streamline quality schemas after optimal action items. Interactively recaptiualize integrated ROI rather than end-to-end synergy.</p>
+                          <p>Conveniently target timely alignments and turnkey paradigms. Enthusiastically.</p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="text-wrap">
+                          <p>Dynamically customize frictionless intellectual capital rather than ethical partnerships. Proactively recaptiualize team driven scenarios and e-business metrics. Monotonectally seize sticky core competencies after next-generation data. Conveniently evolve clicks-and-mortar initiatives through sustainable leadership skills. Completely impact inexpensive ideas whereas front-end products.</p>
+                          <p>Energistically maximize equity invested opportunities via resource.</p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="text-wrap">                    
+                          <p>Efficiently drive interoperable infomediaries vis-a-vis timely process improvements. Collaboratively utilize business systems and top-line potentialities. Collaboratively foster strategic vortals vis-a-vis unique networks. Dynamically evolve emerging processes without inexpensive markets. Professionally redefine real-time niches before next-generation results.</p>
+                          <p>Competently monetize fully tested processes and high-quality core competencies. Monotonectally revolutionize.</p>
+                      </div>
+                  </li>
+              </ol>
+          </div>	</code>
+          	</pre>
+          	<div class="u-numbered-list">
+          	    <ol>
+          	        <li>
+          	            <div class="text-wrap">
+          	                <p>Quickly build robust relationships for frictionless interfaces. Distinctively drive open-source testing procedures after holistic interfaces. Synergistically formulate stand-alone convergence whereas long-term high-impact services. Interactively streamline quality schemas after optimal action items. Interactively recaptiualize integrated ROI rather than end-to-end synergy.</p>
+          	                <p>Conveniently target timely alignments and turnkey paradigms. Enthusiastically.</p>
+          	            </div>
+          	        </li>
+          	        <li>
+          	            <div class="text-wrap">
+          	                <p>Dynamically customize frictionless intellectual capital rather than ethical partnerships. Proactively recaptiualize team driven scenarios and e-business metrics. Monotonectally seize sticky core competencies after next-generation data. Conveniently evolve clicks-and-mortar initiatives through sustainable leadership skills. Completely impact inexpensive ideas whereas front-end products.</p>
+          	                <p>Energistically maximize equity invested opportunities via resource.</p>
+          	            </div>
+          	        </li>
+          	        <li>
+          	            <div class="text-wrap">                    
+          	                <p>Efficiently drive interoperable infomediaries vis-a-vis timely process improvements. Collaboratively utilize business systems and top-line potentialities. Collaboratively foster strategic vortals vis-a-vis unique networks. Dynamically evolve emerging processes without inexpensive markets. Professionally redefine real-time niches before next-generation results.</p>
+          	                <p>Competently monetize fully tested processes and high-quality core competencies. Monotonectally revolutionize.</p>
+          	            </div>
+          	        </li>
+          	    </ol>
+          	</div>	<h4 class="section-description" id="u-numbered-list-centered">Lista con numeri centrato</h4>
+          	<pre>
+          		<code>
+          <div class="u-numbered-list centered">
+              <ol>
+                  <li>
+                      <div class="text-wrap">
+                          <p>Quickly build robust relationships for frictionless interfaces. Distinctively drive open-source testing procedures after holistic interfaces. Synergistically formulate stand-alone convergence whereas long-term high-impact services. Interactively streamline quality schemas after optimal action items. Interactively recaptiualize integrated ROI rather than end-to-end synergy.</p>
+                          <p>Conveniently target timely alignments and turnkey paradigms. Enthusiastically.</p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="text-wrap">
+                          <p>Dynamically customize frictionless intellectual capital rather than ethical partnerships. Proactively recaptiualize team driven scenarios and e-business metrics. Monotonectally seize sticky core competencies after next-generation data. Conveniently evolve clicks-and-mortar initiatives through sustainable leadership skills. Completely impact inexpensive ideas whereas front-end products.</p>
+                          <p>Energistically maximize equity invested opportunities via resource.</p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="text-wrap">                    
+                          <p>Efficiently drive interoperable infomediaries vis-a-vis timely process improvements. Collaboratively utilize business systems and top-line potentialities. Collaboratively foster strategic vortals vis-a-vis unique networks. Dynamically evolve emerging processes without inexpensive markets. Professionally redefine real-time niches before next-generation results.</p>
+                          <p>Competently monetize fully tested processes and high-quality core competencies. Monotonectally revolutionize.</p>
+                      </div>
+                  </li>
+              </ol>
+          </div>		</code>
+          	</pre>
+          	<div class="u-numbered-list centered">
+          	    <ol>
+          	        <li>
+          	            <div class="text-wrap">
+          	                <p>Quickly build robust relationships for frictionless interfaces. Distinctively drive open-source testing procedures after holistic interfaces. Synergistically formulate stand-alone convergence whereas long-term high-impact services. Interactively streamline quality schemas after optimal action items. Interactively recaptiualize integrated ROI rather than end-to-end synergy.</p>
+          	                <p>Conveniently target timely alignments and turnkey paradigms. Enthusiastically.</p>
+          	            </div>
+          	        </li>
+          	        <li>
+          	            <div class="text-wrap">
+          	                <p>Dynamically customize frictionless intellectual capital rather than ethical partnerships. Proactively recaptiualize team driven scenarios and e-business metrics. Monotonectally seize sticky core competencies after next-generation data. Conveniently evolve clicks-and-mortar initiatives through sustainable leadership skills. Completely impact inexpensive ideas whereas front-end products.</p>
+          	                <p>Energistically maximize equity invested opportunities via resource.</p>
+          	            </div>
+          	        </li>
+          	        <li>
+          	            <div class="text-wrap">                    
+          	                <p>Efficiently drive interoperable infomediaries vis-a-vis timely process improvements. Collaboratively utilize business systems and top-line potentialities. Collaboratively foster strategic vortals vis-a-vis unique networks. Dynamically evolve emerging processes without inexpensive markets. Professionally redefine real-time niches before next-generation results.</p>
+          	                <p>Competently monetize fully tested processes and high-quality core competencies. Monotonectally revolutionize.</p>
+          	            </div>
+          	        </li>
+          	    </ol>
+          	</div>
+          </section>
+          <section>
+          	<h3 id="u-contact">Contatto
+          		<kbd>
+          			<u-contact></u-contact>
+          		</kbd>
+          	</h3>
+          	<p>Questo elemento può essere utilizzato come box inserire un contatto.</p>
+          	<pre>
+          		<code>
+          <div class="contact colored-icon">
+              <h2>Supporto dell'applicativo Firma digitale remota</h2>
+              <p>Contattaci per avere informazioni, segnalare un'anomalia, inviare un suggerimento.</p>
+              <div class="info">
+                  <h3>CeSIA - Settore Sistemi e middleware - Ufficio Unità specialistica Identità digitale </h3>
+                  <p class="email">
+                      <i class="far fa-envelope" aria-hidden="true"></i> cesia.firmadigitale@unibo.it
+                  </p>
+                  <p>
+                      <i class="fa fa-phone" aria-hidden="true"></i> 051 202020
+                  </p>
+                  <p>
+                  <i class="far fa-clock" aria-hidden="true"></i> Orari di apertura: dal Lunedì al Giovedì 9-13; 14-17; Venerdì 9-14</p>
+              </div>
+          </div>		</code>
+          	</pre>
+          	<div class="contact colored-icon">
+          	    <h2>Supporto dell'applicativo Firma digitale remota</h2>
+          	    <p>Contattaci per avere informazioni, segnalare un'anomalia, inviare un suggerimento.</p>
+          	    <div class="info">
+          	        <h3>CeSIA - Settore Sistemi e middleware - Ufficio Unità specialistica Identità digitale </h3>
+          	        <p class="email">
+          	            <i class="far fa-envelope" aria-hidden="true"></i> cesia.firmadigitale@unibo.it
+          	        </p>
+          	        <p>
+          	            <i class="fa fa-phone" aria-hidden="true"></i> 051 202020
+          	        </p>
+          	        <p>
+          	        <i class="far fa-clock" aria-hidden="true"></i> Orari di apertura: dal Lunedì al Giovedì 9-13; 14-17; Venerdì 9-14</p>
+          	    </div>
+          	</div></section>
+        </div>
+      </div>
+    </main>
+    <script src="../assets/js/app.js"></script>
+    <script>
+      jQuery('pre code').each(function () {
+        var $block = jQuery(this);
+        $block.text($block.html());
+      });
+      hljs.highlightAll();
+    </script> 
+    
+  </body>
+</html>

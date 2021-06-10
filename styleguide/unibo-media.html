@@ -1,0 +1,266 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../assets/css/app.css">  </head>
+
+  <body>
+    <main class="grid-container fluid">
+      <div class="grid-x">
+        <div class="large-2 cell show-for-large">
+          <nav class="docs-toc-wrap sticky-container" id="docsToc" data-sticky-container>
+              <div class="docs-toc sticky is-at-top is-stuck" data-sticky-on>
+                  <a class="back" href="../">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>Indietro
+                  </a>
+              </div>
+          </nav>
+        </div>    
+
+        <div class="large-10 cell styleguide">
+          
+          <h1>Style Guide Unibo Controls</h1>
+          <section>
+          
+            <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">    
+                    <h3 id="stati">Stati</h3>
+                    <p>In aggiunta alle <a href="https://get.foundation/sites/docs/prototyping-utilities.html">prototype classes</a> usate in Foundation, 
+                      è stato sviluppata la possibilità di avere padding e margin più piccoli.
+                    </p>
+                    <p>
+                      Per utilizzare la funzionalità è sufficiente usare la classe <kbd>padding-half</kbd> o <kbd>margin-half</kbd>. 
+                      In questo modo la spaziatura sarà la metà del padding/margin normale.
+                    <p>
+                      E' possibile indicare anche solo un lato a cui applicare la spaziatura. 
+                      Ad esempio, in questo modo: <kbd>padding-top-half</kbd>, verrà applicato la spaziatura dimezzata solo al lato superiore dell'elemento.
+                    </p>
+          				</div>
+          
+          			</div>
+          		</div>
+          		<div class="grid-x grid-padding-x">
+          			<div class="large-5 cell">
+                  <div class="icon-left">
+                  <i class="fab fa-css3-alt fa-2x"></i>
+                  <strong>SCSS da includere:</strong> <kbd>u_stati.scss</kbd>
+                  </div>
+                </div>
+                <div class="large-7 cell">
+                  <div class="icon-left">
+                  <i class="far fa-file-code fa-2x"></i>
+                  <strong>Classe da utilizzare:</strong> 
+                  <kbd>u-state-*</kbd>
+                  </div>
+                  
+                </div>
+          		</div>
+          	</div>  
+            <pre>
+              <code class="html">
+              <p class="u-state-default"><i class="fa fa-circle" aria-hidden="true"></i>Default</p>
+              <p class="u-state-completed"><i class="fa fa-circle" aria-hidden="true"></i>Completato</p>
+              <p class="u-state-progress"><i class="fa fa-circle" aria-hidden="true"></i>Attesa</p>
+              <p class="u-state-rejected"><i class="fa fa-circle" aria-hidden="true"></i>Rifiutato</p>    
+              <p class="u-state-default"><i class="fa fa-square" aria-hidden="true"></i>Default con altra icona</p>
+              <p class="u-state-progress"><i class="fas fa-circle-notch fa-spin" aria-hidden="true"></i>Attesa con altra icona e spin</p>    
+                    </code>
+            </pre>
+            <p class="u-state-default"><i class="fa fa-circle" aria-hidden="true"></i>Default</p>
+            <p class="u-state-completed"><i class="fa fa-circle" aria-hidden="true"></i>Completato</p>
+            <p class="u-state-progress"><i class="fa fa-circle" aria-hidden="true"></i>Attesa</p>
+            <p class="u-state-rejected"><i class="fa fa-circle" aria-hidden="true"></i>Rifiutato</p>    
+            <p class="u-state-default"><i class="fa fa-square" aria-hidden="true"></i>Default con altra icona</p>
+            <p class="u-state-progress"><i class="fas fa-circle-notch fa-spin" aria-hidden="true"></i>Attesa con altra icona e spin</p>    
+              </section>
+          
+          <section>
+            <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">    
+                    <h3 id="media-list">Lista con icone e azioni</h3>
+                    <p>Lista elementi con icone e pulsanti di azione, utilizzabile al posto di tabelle con poche colonne.
+                    </p>
+          				</div>
+          
+          			</div>
+          		</div>
+          		<div class="grid-x grid-padding-x">
+          			<div class="large-5 cell">
+                  <div class="icon-left">
+                  <i class="fab fa-css3-alt fa-2x"></i>
+                  <strong>SCSS da includere:</strong> <kbd>u_media_list.scss</kbd>
+                  </div>
+                </div>
+                <div class="large-7 cell">
+                  <div class="icon-left">
+                  <i class="far fa-file-code fa-2x"></i>
+                  <strong>Classe da utilizzare:</strong> 
+                  <kbd>u-media-list</kbd>
+                  </div>
+                  
+                </div>
+          		</div>
+          	</div>  
+              <pre>
+                <code class="html">
+                    <ul class="u-media-list margin-top-1 margin-bottom-1">
+                        <li>
+                            <div class="grid-x">
+                                <div class="cell medium-8">
+                                    <div class="media-wrap primary">
+                                        <div class="icon-wrap margin-right-1">
+                                            <i class="fa fa-lg fa-question" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="text-wrap">
+                                            <h2>Occupabilità e ricerca attiva del lavoro - Parte 1 </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell medium-4 text-right">
+                                    <a href="" class="button secondary">Compila</a>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="grid-x">
+                                <div class="cell medium-12">
+                                    <div class="media-wrap disabled">
+                                        <div class="icon-wrap margin-right-1">
+                                            <i class="fa-lg fas fa-sync-alt" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="text-wrap">
+                                            <h2>Occupabilità e ricerca attiva del lavoro - Parte 2</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        
+                        <li>
+                            <div class="grid-x">
+                                <div class="cell medium-8">
+                                    <div class="media-wrap success">
+                                            <div class="icon-wrap margin-right-1">
+                                                <i class="fa fa-lg fa-check" aria-hidden="true"></i>
+                                            </div>
+                                        <div class="text-wrap">
+                                            <h2>Occupabilità e ricerca attiva del lavoro - Parte 3 </h2>
+                                            <p>Ultima compilazione: 20/09/2018 13:50:00 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell medium-4 text-right">
+                                    <a href="" class="button secondary">Visualizza report</a>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="grid-x">
+                                <div class="cell medium-11">
+                                    <div class="media-wrap failure">
+                                        <div class="icon-wrap margin-right-1">
+                                            <i class="fas fa-lg fa-times" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="text-wrap">
+                                            <h2>Occupabilità e ricerca attiva del lavoro - Parte 4</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>      </code>
+              </pre>
+              <ul class="u-media-list margin-top-1 margin-bottom-1">
+                  <li>
+                      <div class="grid-x">
+                          <div class="cell medium-8">
+                              <div class="media-wrap primary">
+                                  <div class="icon-wrap margin-right-1">
+                                      <i class="fa fa-lg fa-question" aria-hidden="true"></i>
+                                  </div>
+                                  <div class="text-wrap">
+                                      <h2>Occupabilità e ricerca attiva del lavoro - Parte 1 </h2>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="cell medium-4 text-right">
+                              <a href="" class="button secondary">Compila</a>
+                          </div>
+                      </div>
+                  </li>
+                  
+                  <li>
+                      <div class="grid-x">
+                          <div class="cell medium-12">
+                              <div class="media-wrap disabled">
+                                  <div class="icon-wrap margin-right-1">
+                                      <i class="fa-lg fas fa-sync-alt" aria-hidden="true"></i>
+                                  </div>
+                                  <div class="text-wrap">
+                                      <h2>Occupabilità e ricerca attiva del lavoro - Parte 2</h2>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  
+                  
+                  <li>
+                      <div class="grid-x">
+                          <div class="cell medium-8">
+                              <div class="media-wrap success">
+                                      <div class="icon-wrap margin-right-1">
+                                          <i class="fa fa-lg fa-check" aria-hidden="true"></i>
+                                      </div>
+                                  <div class="text-wrap">
+                                      <h2>Occupabilità e ricerca attiva del lavoro - Parte 3 </h2>
+                                      <p>Ultima compilazione: 20/09/2018 13:50:00 </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="cell medium-4 text-right">
+                              <a href="" class="button secondary">Visualizza report</a>
+                          </div>
+                      </div>
+                  </li>
+                  
+                  <li>
+                      <div class="grid-x">
+                          <div class="cell medium-11">
+                              <div class="media-wrap failure">
+                                  <div class="icon-wrap margin-right-1">
+                                      <i class="fas fa-lg fa-times" aria-hidden="true"></i>
+                                  </div>
+                                  <div class="text-wrap">
+                                      <h2>Occupabilità e ricerca attiva del lavoro - Parte 4</h2>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+              </ul></section>
+        </div>
+      </div>
+    </main>
+    <script src="../assets/js/app.js"></script>
+    <script>
+      jQuery('pre code').each(function () {
+        var $block = jQuery(this);
+        $block.text($block.html());
+      });
+      hljs.highlightAll();
+    </script> 
+    
+  </body>
+</html>

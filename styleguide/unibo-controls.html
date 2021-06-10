@@ -1,0 +1,797 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../assets/css/app.css">  </head>
+
+  <body>
+    <main class="grid-container fluid">
+      <div class="grid-x">
+        <div class="large-2 cell show-for-large">
+          <nav class="docs-toc-wrap sticky-container" id="docsToc" data-sticky-container>
+              <div class="docs-toc sticky is-at-top is-stuck" data-sticky-on>
+                  <a class="back" href="../">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>Indietro
+                  </a>
+              </div>
+          </nav>
+        </div>    
+
+        <div class="large-10 cell styleguide">
+          
+          
+          <h1>Style Guide Unibo Controls</h1>
+          <h2>In questa pagina ci sono i componenti custom relativi ai controlli e azioni sviluppati ed utilizzati esclusivamente per applicazioni unibo.</h2>
+          
+          <section>
+          	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+          				
+                  <h3 id="wizard">Wizard</h3>
+                  <p>
+                    Elemento Wizard.
+                  </p>
+          
+          				<p>Ci sono due versioni di questo elemento:</p>
+          					<ul>
+          						<li>
+          							<a href="#u-wizard-vertical">Wizard verticale</a>
+          						</li>
+          						<li>
+          							<a href="#u-wizard-horizontal">Wizard orizzontale</a>
+          						</li>
+          					</ul>
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-4 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_wizard.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-8 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classe da utilizzare:</strong> 
+          					<kbd>u-wizard-path</kbd>
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
+            <h4 class="section-description" id="u-wizard-vertical">Wizard verticale</h4>
+          <pre>
+            <code class="html">
+                <ul class="u-wizard-path">         		                    
+                  <li class="previous-step">
+                    <a><span>Presentazione del servizio</span></a>
+                    <p></p>
+                  </li>
+                  <li class="previous-step">
+                    <a><span>Informazioni generali sull'evento</span></a>
+                    <p></p>
+                  </li>
+                  <li class="previous-step">
+                    <a><span>Informazioni amministrative</span></a>
+                    <p></p>
+                  </li>
+                  <li class="previous-step">
+                    <a><span>Servizi a richiesta</span></a>
+                    <p></p>
+                  </li>
+                  <li class="final-step current-step">
+                    <a><span>Stato della richiesta</span></a>
+                    <p></p>
+                  </li>
+                </ul>
+            </code>
+          </pre>
+          
+          <ul class="u-wizard-path">         		                    
+            <li class="previous-step">
+              <a><span>Presentazione del servizio</span></a>
+              <p></p>
+            </li>
+            <li class="previous-step">
+              <a><span>Informazioni generali sull'evento</span></a>
+              <p></p>
+            </li>
+            <li class="previous-step">
+              <a><span>Informazioni amministrative</span></a>
+              <p></p>
+            </li>
+            <li class="previous-step">
+              <a><span>Servizi a richiesta</span></a>
+              <p></p>
+            </li>
+            <li class="final-step current-step">
+              <a><span>Stato della richiesta</span></a>
+              <p></p>
+            </li>
+          </ul>
+          </section>
+          
+          <section>
+          <h4 class="section-description" id="u-wizard-horizontal">Wizard Orizzontale</h4>
+          
+          <pre>
+            <code class="html">
+              <ul class="u-wizard-path horizontal">         		                   
+                <li class="previous-step">
+                  <a><span>Presentazione del servizio</span></a>
+                  <p></p>
+                </li>
+                <li class="previous-step">
+                  <a><span>Informazioni generali sull'evento</span></a>
+                  <p></p>
+                </li>
+                <li class="previous-step">
+                  <a><span>Informazioni amministrative</span></a>
+                  <p></p>
+                </li>
+                <li class="previous-step">
+                  <a><span>Servizi a richiesta</span></a>
+                  <p></p>
+                </li>
+                <li class="final-step current-step">
+                  <a><span>Stato della richiesta</span></a>
+                  <p></p>
+                </li>
+              </ul>
+            </code>
+          </pre>
+          
+          <ul class="u-wizard-path horizontal">         		                   
+            <li class="previous-step">
+              <a><span>Presentazione del servizio</span></a>
+              <p></p>
+            </li>
+            <li class="previous-step">
+              <a><span>Informazioni generali sull'evento</span></a>
+              <p></p>
+            </li>
+            <li class="previous-step">
+              <a><span>Informazioni amministrative</span></a>
+              <p></p>
+            </li>
+            <li class="previous-step">
+              <a><span>Servizi a richiesta</span></a>
+              <p></p>
+            </li>
+            <li class="final-step current-step">
+              <a><span>Stato della richiesta</span></a>
+              <p></p>
+            </li>
+          </ul>
+          </section>
+          
+          <section>
+            <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+                 
+                    <h3 id="menu-tools" class="js">Menu azioni</h3>
+                    <p>
+                      Menu azioni per elementi singoli che necessitano di un pulsante azioni sull'elemento.
+                    </p>
+          
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-4 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_menu.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-8 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classe da utilizzare:</strong> 
+          					<kbd>u-menu-tools</kbd>
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
+          
+          <pre>
+            <code class="html">
+              <ul class="dropdown menu" data-dropdown-menu data-disable-hover="true" data-click-open="true" data-close-on-click="true" data-close-on-click-inside="true">
+                  <li class="u-menu-tools">
+                      <a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                      <ul class="menu">
+                          <li>
+                              <a title="Opzione 1" href="#">
+                                  <span>Opzione 1</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a title="Opzione 2" href="#">
+                                  <span>Opzione 2</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a onclick="return confirm('Attenzione! ...');" title="Elimina" href="#">
+                                  <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                                  <span>Elimina</span>
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>  </code>
+          </pre>
+          
+            <ul class="dropdown menu" data-dropdown-menu data-disable-hover="true" data-click-open="true" data-close-on-click="true" data-close-on-click-inside="true">
+                <li class="u-menu-tools">
+                    <a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                    <ul class="menu">
+                        <li>
+                            <a title="Opzione 1" href="#">
+                                <span>Opzione 1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Opzione 2" href="#">
+                                <span>Opzione 2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a onclick="return confirm('Attenzione! ...');" title="Elimina" href="#">
+                                <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                                <span>Elimina</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul></section>
+          
+          <section>
+            <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+                   
+                    <h3 id="sso-button">SSO button</h3>
+                    <p>
+                      Questo è il pulsante di SSO da utilizzare per fare login al sistema di Single Sign-On di Ateneo. 
+                      <br/>
+                      E' possibile utilizzare tutti gli stili adottati per gli altri pulsanti, cioè: tiny, small, large, expanded.
+                    </p>
+          
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-4 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_button.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-8 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classe da utilizzare:</strong> 
+          					<kbd>sso</kbd>
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
+          <pre>
+            <code class="html">
+            <a class="button tiny sso" href="#">
+              <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">
+              Login
+            </a>
+            <a class="button sso small" href="#">
+              <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">
+              Login
+            </a>
+            <a class="button sso" href="#">
+              <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">
+              Login
+            </a>
+            <a class="button sso large" href="#">
+              <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">
+              Login
+            </a>
+            <a class="button sso expanded" href="#">
+              <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">
+              Login
+            </a>
+            <a class="button sso large expanded" href="#">
+              <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">
+              Login
+            </a>
+            </code>
+          </pre>
+          <a class="button tiny sso" href="#">
+            <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">
+            Login
+          </a>
+          <a class="button sso small" href="#">
+            <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">
+            Login
+          </a>
+          <a class="button sso" href="#">
+            <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">
+            Login
+          </a>
+          <a class="button sso large" href="#">
+            <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">
+            Login
+          </a>
+          <a class="button sso expanded" href="#">
+            <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">
+            Login
+          </a>
+          <a class="button sso large expanded" href="#">
+            <img alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">
+            Login
+          </a>
+          </section>
+          
+          
+          
+          <section>
+            <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+                   
+                    <h3 id="u-dropdown" class="js">Dropdown</h3>
+                    <p>
+                      Box apri e chiudi che utilizza il dropdown di Foundation.
+                    </p>
+                    
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-4 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_dropdown.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-8 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classe da utilizzare:</strong> 
+          					<kbd>u-dropdown</kbd>
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
+            <pre>
+              <code class="html">
+                <div class="u-dropdown margin-bottom-1">
+                    <div class="grid-x grid-padding-x" data-toggle="item-dropdown down up">
+                        <div class="cell medium-11">
+                            <h3 class="label-dropdown">Scopri come fare: Registrazione della richiesta</h3>
+                        </div>
+                
+                        <div class="cell medium-1 text-right">
+                            <i id="down" data-toggler=".hide" class="fas fa-chevron-down color-light" aria-hidden="true" aria-expanded="false"></i>
+                            <i id="up" data-toggler=".hide" class="fas fa-chevron-up hide color-light" aria-hidden="true" aria-expanded="false"></i>
+                        </div>
+                    </div>
+                
+                    <div class="grid-x grid-padding-x dropdown-content" id="item-dropdown"  data-toggler=".is-open">
+                        <div class="cell medium-12">
+                            <div class="padding-top-half padding-bottom-half">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/IQtXfMdTG6I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="u-dropdown margin-bottom-1">
+                    <div class="grid-x grid-padding-x" data-toggle="item-dropdown1 down up">
+                
+                        <div class="cell medium-11">
+                            <h3 class="label-dropdown">Credibly promote covalent</h3>
+                        </div>
+                
+                        <div class="cell medium-1 text-right">
+                            <i id="down" data-toggler=".hide" class="fas fa-chevron-down color-light" aria-hidden="true" aria-expanded="false"></i>
+                            <i id="up" data-toggler=".hide" class="fas fa-chevron-up hide color-light" aria-hidden="true" aria-expanded="false"></i>
+                        </div>
+                    </div>
+                
+                    <div class="grid-x grid-padding-x dropdown-content" id="item-dropdown1"  data-toggler=".is-open">
+                        <div class="cell medium-12">
+                            <div class="padding-top-half padding-bottom-half">
+                                    Quickly cultivate transparent paradigms before goal-oriented innovation. Credibly promote covalent intellectual capital after competitive technology. Uniquely productize sustainable partnerships via goal-oriented web services. Objectively provide access to standardized manufactured products through client-based materials. Dramatically orchestrate compelling users via long-term high-impact e-business.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </code>
+            </pre>
+            <div class="u-dropdown margin-bottom-1">
+                <div class="grid-x grid-padding-x" data-toggle="item-dropdown down up">
+                    <div class="cell medium-11">
+                        <h3 class="label-dropdown">Scopri come fare: Registrazione della richiesta</h3>
+                    </div>
+            
+                    <div class="cell medium-1 text-right">
+                        <i id="down" data-toggler=".hide" class="fas fa-chevron-down color-light" aria-hidden="true" aria-expanded="false"></i>
+                        <i id="up" data-toggler=".hide" class="fas fa-chevron-up hide color-light" aria-hidden="true" aria-expanded="false"></i>
+                    </div>
+                </div>
+            
+                <div class="grid-x grid-padding-x dropdown-content" id="item-dropdown"  data-toggler=".is-open">
+                    <div class="cell medium-12">
+                        <div class="padding-top-half padding-bottom-half">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/IQtXfMdTG6I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="u-dropdown margin-bottom-1">
+                <div class="grid-x grid-padding-x" data-toggle="item-dropdown1 down up">
+            
+                    <div class="cell medium-11">
+                        <h3 class="label-dropdown">Credibly promote covalent</h3>
+                    </div>
+            
+                    <div class="cell medium-1 text-right">
+                        <i id="down" data-toggler=".hide" class="fas fa-chevron-down color-light" aria-hidden="true" aria-expanded="false"></i>
+                        <i id="up" data-toggler=".hide" class="fas fa-chevron-up hide color-light" aria-hidden="true" aria-expanded="false"></i>
+                    </div>
+                </div>
+            
+                <div class="grid-x grid-padding-x dropdown-content" id="item-dropdown1"  data-toggler=".is-open">
+                    <div class="cell medium-12">
+                        <div class="padding-top-half padding-bottom-half">
+                                Quickly cultivate transparent paradigms before goal-oriented innovation. Credibly promote covalent intellectual capital after competitive technology. Uniquely productize sustainable partnerships via goal-oriented web services. Objectively provide access to standardized manufactured products through client-based materials. Dramatically orchestrate compelling users via long-term high-impact e-business.
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+          
+          <section>
+            <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+                   
+                    <h3 id="u-survey">Questionario</h3>
+                    <p>
+                      Elemento utilizzabile per inserire un questionario che prevede la possibilità di esprimere una preferenza o valori diversi. <br>
+                      Sono utilizzati elementi radio button per selezionare i diversi elementi. <br>
+                    </p>
+                    <p>
+                      E' possibile inserire un'etichetta di descrizione sotto le diverse voci <kbd>&lt;span class="legend-label show-for-sr"&gt;</kbd>.
+                    </p>
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-4 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_survey.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-8 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classe da utilizzare:</strong> 
+          					<kbd>u-survey</kbd>
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
+            <pre>
+              <code class="html">
+                <div class="u-survey border-1 margin-top-1">
+                    <div class="survey-heading">
+                        <div class="grid-x grid-padding-x">
+                            <div class="large-6 cell">
+                                <div class="text-wrap">
+                                    <h4>Titolo delle domande</h4>
+                                </div>      
+                            </div>
+                            <div class="large-6 cell">
+                                <div class="range-value show-for-large">
+                                    <span>Completamente in disaccordo</span>
+                                    <span>
+                                    <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i></span>
+                                    <span>Completamente d'accordo</span>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="survey-content">
+                        <div class="grid-x grid-padding-x">
+                            <div class="large-6 cell">
+                                <div class="text-wrap">
+                                    <p>
+                                        1. Assertively disseminate technically sound vortals after web-enabled infrastructures. 
+                                        Completely impact multifunctional core competencies rather than flexible quality vectors?
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="large-6 cell">
+                                <div class="radio-group">
+                                    <span>
+                                        <input type="radio" name="survey" value="1" id="minimo" checked>
+                                        <label for="minimo">
+                                            <span class="value">1</span>
+                                            <span class="show-for-sr legend-label">Completamente in disaccordo</span>
+                                        </label>
+                                    </span>
+                                    <span>
+                                        <input type="radio" name="survey" value="2" id="unpo">
+                                        <label for="unpo">
+                                            <span class="value">2</span>
+                                            <span class="show-for-sr legend-label">Più no che sì</span>
+                                        </label>
+                                    </span>
+                                    <span>
+                                        <input type="radio" name="survey" value="3" id="meta">
+                                        <label for="meta">
+                                            <span class="value">3</span>
+                                            <span class="show-for-sr legend-label">Indifferente</span>
+                                        </label>
+                                    </span>
+                                    <span>
+                                        <input type="radio" name="survey" value="4" id="quasi">
+                                        <label for="quasi">
+                                            <span class="value">4</span>
+                                            <span class="show-for-sr legend-label">Più si che no</span>
+                                        </label>
+                                    </span>
+                                    <span>
+                                        <input type="radio" name="survey" value="5" id="massimo">
+                                        <label for="massimo">
+                                            <span class="value">5</span>
+                                            <span class="show-for-sr legend-label">Completamente d'accordo</span>
+                                        </label>
+                                    </span>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="survey-content">
+                        <div class="grid-x grid-padding-x">
+                            <div class="large-6 cell">
+                                <div class="text-wrap">
+                                    <p>
+                                        2. Proactively coordinate magnetic convergence vis-a-vis client-focused ROI. Completely syndicate leveraged.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="large-6 cell">
+                                <div class="radio-group">
+                                    <span>
+                                        <input name="survey1" value="1" id="minimo1" checked="" type="radio">
+                                        <label for="minimo1">
+                                            <span class="value">1</span>
+                                            <span class="show-for-sr legend-label">Completamente in disaccordo</span>
+                                        </label>
+                                    </span>
+                                    <span>
+                                        <input name="survey1" value="2" id="unpo1" type="radio">
+                                        <label for="unpo1">
+                                            <span class="value">2</span>
+                                            <span class="show-for-sr legend-label">Più no che sì</span>
+                                        </label>
+                                    </span>
+                                    <span>
+                                        <input name="survey1" value="3" id="meta1" type="radio">
+                                        <label for="meta1">
+                                            <span class="value">3</span>
+                                            <span class="show-for-sr legend-label">Indifferente</span>
+                                        </label>
+                                    </span>
+                                    <span>
+                                        <input name="survey1" value="4" id="quasi1" type="radio">
+                                        <label for="quasi1">
+                                            <span class="value">4</span>
+                                            <span class="show-for-sr legend-label">Più si che no</span>
+                                        </label>
+                                    </span>
+                                    <span>
+                                        <input name="survey1" value="5" id="massimo1" type="radio">
+                                        <label for="massimo1">
+                                            <span class="value">5</span>
+                                            <span class="show-for-sr legend-label">Completamente d'accordo</span>
+                                        </label>
+                                    </span>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="survey-heading">
+                        <div class="grid-x grid-padding-x">
+                            <div class="large-6 cell">
+                            </div>
+                            <div class="large-6 cell">
+                                <div class="range-value show-for-large">
+                                    <span>Completamente in disaccordo</span>
+                                    <span>
+                <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i></span>
+                                    <span>Completamente d'accordo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                                      </code>
+            </pre>
+            <div class="u-survey border-1 margin-top-1">
+                <div class="survey-heading">
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <div class="text-wrap">
+                                <h4>Titolo delle domande</h4>
+                            </div>      
+                        </div>
+                        <div class="large-6 cell">
+                            <div class="range-value show-for-large">
+                                <span>Completamente in disaccordo</span>
+                                <span>
+                                <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i></span>
+                                <span>Completamente d'accordo</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="survey-content">
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <div class="text-wrap">
+                                <p>
+                                    1. Assertively disseminate technically sound vortals after web-enabled infrastructures. 
+                                    Completely impact multifunctional core competencies rather than flexible quality vectors?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="large-6 cell">
+                            <div class="radio-group">
+                                <span>
+                                    <input type="radio" name="survey" value="1" id="minimo" checked>
+                                    <label for="minimo">
+                                        <span class="value">1</span>
+                                        <span class="show-for-sr legend-label">Completamente in disaccordo</span>
+                                    </label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="survey" value="2" id="unpo">
+                                    <label for="unpo">
+                                        <span class="value">2</span>
+                                        <span class="show-for-sr legend-label">Più no che sì</span>
+                                    </label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="survey" value="3" id="meta">
+                                    <label for="meta">
+                                        <span class="value">3</span>
+                                        <span class="show-for-sr legend-label">Indifferente</span>
+                                    </label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="survey" value="4" id="quasi">
+                                    <label for="quasi">
+                                        <span class="value">4</span>
+                                        <span class="show-for-sr legend-label">Più si che no</span>
+                                    </label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="survey" value="5" id="massimo">
+                                    <label for="massimo">
+                                        <span class="value">5</span>
+                                        <span class="show-for-sr legend-label">Completamente d'accordo</span>
+                                    </label>
+                                </span>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+                <div class="survey-content">
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <div class="text-wrap">
+                                <p>
+                                    2. Proactively coordinate magnetic convergence vis-a-vis client-focused ROI. Completely syndicate leveraged.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="large-6 cell">
+                            <div class="radio-group">
+                                <span>
+                                    <input name="survey1" value="1" id="minimo1" checked="" type="radio">
+                                    <label for="minimo1">
+                                        <span class="value">1</span>
+                                        <span class="show-for-sr legend-label">Completamente in disaccordo</span>
+                                    </label>
+                                </span>
+                                <span>
+                                    <input name="survey1" value="2" id="unpo1" type="radio">
+                                    <label for="unpo1">
+                                        <span class="value">2</span>
+                                        <span class="show-for-sr legend-label">Più no che sì</span>
+                                    </label>
+                                </span>
+                                <span>
+                                    <input name="survey1" value="3" id="meta1" type="radio">
+                                    <label for="meta1">
+                                        <span class="value">3</span>
+                                        <span class="show-for-sr legend-label">Indifferente</span>
+                                    </label>
+                                </span>
+                                <span>
+                                    <input name="survey1" value="4" id="quasi1" type="radio">
+                                    <label for="quasi1">
+                                        <span class="value">4</span>
+                                        <span class="show-for-sr legend-label">Più si che no</span>
+                                    </label>
+                                </span>
+                                <span>
+                                    <input name="survey1" value="5" id="massimo1" type="radio">
+                                    <label for="massimo1">
+                                        <span class="value">5</span>
+                                        <span class="show-for-sr legend-label">Completamente d'accordo</span>
+                                    </label>
+                                </span>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+                <div class="survey-heading">
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                        </div>
+                        <div class="large-6 cell">
+                            <div class="range-value show-for-large">
+                                <span>Completamente in disaccordo</span>
+                                <span>
+            <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i></span>
+                                <span>Completamente d'accordo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                              </section>
+        </div>
+      </div>
+    </main>
+    <script src="../assets/js/app.js"></script>
+    <script>
+      jQuery('pre code').each(function () {
+        var $block = jQuery(this);
+        $block.text($block.html());
+      });
+      hljs.highlightAll();
+    </script> 
+    
+  </body>
+</html>

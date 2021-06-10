@@ -1,0 +1,690 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../assets/css/app.css">  </head>
+
+  <body>
+    <main class="grid-container fluid">
+      <div class="grid-x">
+        <div class="large-2 cell show-for-large">
+          <nav class="docs-toc-wrap sticky-container" id="docsToc" data-sticky-container>
+              <div class="docs-toc sticky is-at-top is-stuck" data-sticky-on>
+                  <a class="back" href="../">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>Indietro
+                  </a>
+              </div>
+          </nav>
+        </div>    
+
+        <div class="large-10 cell styleguide">
+          
+          <h1>Foundation Containers</h1>
+          
+          
+          <section>
+            <h3 id="accordion" class="js">Accordion</h3>
+            <p>Una particolare tipologia di accordion è utilizzata per le faq: <a href="/++theme++application_theme/templates/Layout Examples/Layout - Guida o faq.html#deeplink2">Esempio di deep link sul secondo tab dell'accordion</a>.</p>
+            <a href="http://foundation.zurb.com/sites/docs/accordion.html">See on Foundation Guide</a>
+            <p class="section-description">Basics</p>
+            
+            <pre>
+              <code class="html">
+                <ul class="accordion" data-accordion data-multi-expand="true">
+                  <li class="accordion-item is-active" data-accordion-item="" role="presentation">
+                    <a href="#" class="accordion-title" aria-controls="7p6bf4-accordion" role="tab" id="7p6bf4-accordion-label" aria-expanded="true" aria-selected="true">Accordion 1</a>
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="7p6bf4-accordion-label" aria-hidden="false" id="7p6bf4-accordion" style="display: block;">
+                      <p>Panel 1. Lorem ipsum dolor</p>
+                      <a href="#">Nowhere to Go</a>
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item="" role="presentation">
+                    <a href="#" class="accordion-title" aria-controls="kvbkz4-accordion" role="tab" id="kvbkz4-accordion-label" aria-expanded="false" aria-selected="false">Accordion 2</a>
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="kvbkz4-accordion-label" aria-hidden="true" id="kvbkz4-accordion" style="display: none;">
+                      <textarea></textarea>
+                      <button class="button">I do nothing!</button>
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item="" role="presentation">
+                    <a href="#" class="accordion-title" aria-controls="aycbfx-accordion" role="tab" id="aycbfx-accordion-label" aria-expanded="false" aria-selected="false">Accordion 3</a>
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="aycbfx-accordion-label" aria-hidden="true" id="aycbfx-accordion" style="display: none;">
+                      Type your name!
+                      <input type="text">
+                    </div>
+                  </li>
+                </ul>
+              </code>
+            </pre>
+            
+            <ul class="accordion" data-accordion data-multi-expand="true">
+              <li class="accordion-item is-active" data-accordion-item="" role="presentation">
+                <a href="#" class="accordion-title" aria-controls="7p6bf4-accordion" role="tab" id="7p6bf4-accordion-label" aria-expanded="true" aria-selected="true">Accordion 1</a>
+                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="7p6bf4-accordion-label" aria-hidden="false" id="7p6bf4-accordion" style="display: block;">
+                  <p>Panel 1. Lorem ipsum dolor</p>
+                  <a href="#">Nowhere to Go</a>
+                </div>
+              </li>
+              <li class="accordion-item" data-accordion-item="" role="presentation">
+                <a href="#" class="accordion-title" aria-controls="kvbkz4-accordion" role="tab" id="kvbkz4-accordion-label" aria-expanded="false" aria-selected="false">Accordion 2</a>
+                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="kvbkz4-accordion-label" aria-hidden="true" id="kvbkz4-accordion" style="display: none;">
+                  <textarea></textarea>
+                  <button class="button">I do nothing!</button>
+                </div>
+              </li>
+              <li class="accordion-item" data-accordion-item="" role="presentation">
+                <a href="#" class="accordion-title" aria-controls="aycbfx-accordion" role="tab" id="aycbfx-accordion-label" aria-expanded="false" aria-selected="false">Accordion 3</a>
+                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="aycbfx-accordion-label" aria-hidden="true" id="aycbfx-accordion" style="display: none;">
+                  Type your name!
+                  <input type="text">
+                </div>
+              </li>
+            </ul></section>
+          
+          <section>
+            <h3 id="tables">Tables</h3>
+            <a href="http://foundation.zurb.com/sites/docs/table.html">See on Foundation Guide</a>
+            <p class="section-description">Basics</p>
+            
+            <pre>
+              <code class="html">
+            <table>
+              <thead>
+                <tr>
+                  <th width="200">Table Header</th>
+                  <th>Table Header</th>
+                  <th width="150">Table Header</th>
+                  <th width="150">Table Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+              </tbody>
+            </table>
+              </code>
+            </pre>
+            
+            <table>
+              <thead>
+                <tr>
+                  <th width="200">Table Header</th>
+                  <th>Table Header</th>
+                  <th width="150">Table Header</th>
+                  <th width="150">Table Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            
+            <p class="section-description">Hover State</p>
+            <p>Need to spiff up the table just a tad? Just add the class .hover to lightly darken the table rows on hover.</p>
+            
+            <pre>
+              <code class="html">
+            <table class="hover">
+            </table>
+              </code>
+            </pre>
+            
+            <table class="hover">
+              <thead>
+                <tr>
+                  <th width="200">Table Header</th>
+                  <th>Table Header</th>
+                  <th width="150">Table Header</th>
+                  <th width="150">Table Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            
+            <p class="section-description">Stripes</p>
+            <p>By default, table rows are striped. There's an .unstriped class to remove the stripes. If you change $table-is-striped to false to remove stripes from all tables, use the .striped class to add stripes.</p>
+            
+            <pre>
+              <code class="html">
+            <table class="unstriped">
+            </table>
+              </code>
+            </pre>
+            
+            <table class="unstriped">
+              <thead>
+                <tr>
+                  <th width="200">Table Header</th>
+                  <th>Table Header</th>
+                  <th width="150">Table Header</th>
+                  <th width="150">Table Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            
+            <p class="section-description">Stacked Table</p>
+            <p>To stack a table on small screens, add the class .stack.</p>
+            
+            <pre>
+              <code class="html">
+            <table class="stack">
+            </table>
+              </code>
+            </pre>
+            
+            <table class="stack">
+              <thead>
+                <tr>
+                  <th width="200">Table Header</th>
+                  <th>Table Header</th>
+                  <th width="150">Table Header</th>
+                  <th width="150">Table Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            
+            <p class="section-description">Scrolling Table</p>
+            <p>Got a lot of tubular tabular data? Add a wrapper element with the class .table-scroll around your table to enable horizontal scrolling.</p>
+            
+            <pre>
+              <code class="html">
+            <div class="table-scroll">
+              <table></table>
+            </div>
+              </code>
+            </pre>
+            
+            <div class="table-scroll">
+              <table>
+                <thead>
+                  <tr>
+                    <th>This is the description!</th>
+                    <th>One</th>
+                    <th>Two</th>
+                    <th>Three</th>
+                    <th>Four</th>
+                    <th>Five</th>
+                    <th>Six</th>
+                    <th>Seven</th>
+                    <th>Eight</th>
+                    <th>Nine</th>
+                    <th>Ten</th>
+                    <th>Eleven</th>
+                    <th>Twelve</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="display:block; width:400px;">These are all the words that people use to describe Foundation 6!</td>
+                    <td>Cool</td>
+                    <td>Swag</td>
+                    <td>Chill</td>
+                    <td>Killer</td>
+                    <td>Rad</td>
+                    <td>Baller</td>
+                    <td>OMG</td>
+                    <td>Sweet</td>
+                    <td>Awesome</td>
+                    <td>Beast</td>
+                    <td>Dope</td>
+                    <td>Tubular</td>
+                  </tr>
+                  <tr>
+                    <td>These are some words that people use to describe other web frameworks.</td>
+                    <td>Whatevs</td>
+                    <td>Ugh.</td>
+                    <td>LOL</td>
+                    <td>K</td>
+                    <td>Aight</td>
+                    <td>Eh.</td>
+                    <td>Grrr...</td>
+                    <td>Meh.</td>
+                    <td>TTYL</td>
+                    <td>Bleh.</td>
+                    <td>Really?</td>
+                    <td>Why?</td>
+                  </tr>
+                  <tr>
+                    <td>Here are some great super heros.</td>
+                    <td>Batman</td>
+                    <td>Superman</td>
+                    <td>Spiderman</td>
+                    <td>Wonder Woman</td>
+                    <td>Hulk</td>
+                    <td>Nicolas Cage</td>
+                    <td>Antman</td>
+                    <td>Aquaman</td>
+                    <td>Captain America</td>
+                    <td>Wolverine</td>
+                    <td>Thor</td>
+                    <td>Iron Man</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td>Here's a footer, just in case</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            
+          </section>
+          
+          <section>
+            <h3 id="tabs" class="js">Tabs</h3>
+            <a href="http://foundation.zurb.com/sites/docs/tabs.html">See on Foundation Guide</a>
+            <p class="section-description">Basics</p>
+            <pre>
+              <code class="html">
+            <ul class="tabs" data-tabs id="example-tabs">
+              <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+              <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+            </ul>
+            <div class="tabs-content" data-tabs-content="example-tabs">
+              <div class="tabs-panel is-active" id="panel1">
+                <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+              </div>
+              <div class="tabs-panel" id="panel2">
+                <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+              </div>
+            </div>
+              </code>
+            </pre>
+            <ul class="tabs" data-tabs id="example-tabs">
+              <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+              <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+            </ul>
+            <div class="tabs-content" data-tabs-content="example-tabs">
+              <div class="tabs-panel is-active" id="panel1">
+                <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+              </div>
+              <div class="tabs-panel" id="panel2">
+                <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+              </div>
+            </div>
+            
+            
+            <p class="section-description">Vertical Tabs</p>
+            <pre>
+              <code class="html">
+            <div class="grid-x collapse">
+              <div class="medium-3 cell">
+                <ul class="tabs vertical" id="example-vert-tabs" data-tabs>
+                  <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Tab 1</a></li>
+                  <li class="tabs-title"><a href="#panel2v">Tab 2</a></li>
+                  <li class="tabs-title"><a href="#panel3v">Tab 3</a></li>
+                  <li class="tabs-title"><a href="#panel4v">Tab 4</a></li>
+                  <li class="tabs-title"><a href="#panel5v">Tab 5</a></li>
+                  <li class="tabs-title"><a href="#panel6v">Tab 6</a></li>
+                </ul>
+                </div>
+                <div class="medium-9 cell">
+                <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
+                  <div class="tabs-panel is-active" id="panel1v">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="tabs-panel" id="panel2v">
+                    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+                  </div>
+                  <div class="tabs-panel" id="panel3v">
+                    <img class="thumbnail" src="assets/img/generic/rectangle-3.jpg">
+                  </div>
+                  <div class="tabs-panel" id="panel4v">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="tabs-panel" id="panel5v">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                  <div class="tabs-panel" id="panel6v">
+                    <img class="thumbnail" src="assets/img/generic/rectangle-5.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+              </code>
+            </pre>
+            <div class="grid-x collapse">
+              <div class="medium-3 cell">
+                <ul class="tabs vertical" id="example-vert-tabs" data-tabs>
+                  <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Tab 1</a></li>
+                  <li class="tabs-title"><a href="#panel2v">Tab 2</a></li>
+                  <li class="tabs-title"><a href="#panel3v">Tab 3</a></li>
+                  <li class="tabs-title"><a href="#panel4v">Tab 4</a></li>
+                  <li class="tabs-title"><a href="#panel5v">Tab 5</a></li>
+                  <li class="tabs-title"><a href="#panel6v">Tab 6</a></li>
+                </ul>
+                </div>
+                <div class="medium-9 cell">
+                <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
+                  <div class="tabs-panel is-active" id="panel1v">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="tabs-panel" id="panel2v">
+                    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+                  </div>
+                  <div class="tabs-panel" id="panel3v">
+                    <img class="thumbnail" src="assets/img/generic/rectangle-3.jpg">
+                  </div>
+                  <div class="tabs-panel" id="panel4v">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="tabs-panel" id="panel5v">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                  <div class="tabs-panel" id="panel6v">
+                    <img class="thumbnail" src="assets/img/generic/rectangle-5.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <p class="section-description">Collapsing Tabs</p>
+            <pre>
+              <code class="html">
+            <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
+              <li class="tabs-title is-active"><a href="#panel1c" aria-selected="true">Tab 1</a></li>
+              <li class="tabs-title"><a href="#panel2c">Tab 2</a></li>
+              <li class="tabs-title"><a href="#panel3c">Tab 3</a></li>
+              <li class="tabs-title"><a href="#panel4c">Tab 4</a></li>
+            </ul>
+            
+            <div class="tabs-content" data-tabs-content="collapsing-tabs">
+              <div class="tabs-panel is-active" id="panel1c">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="tabs-panel" id="panel2c">
+                <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+              </div>
+              <div class="tabs-panel" id="panel3c">
+                <img class="thumbnail" src="assets/img/generic/rectangle-3.jpg">
+              </div>
+              <div class="tabs-panel" id="panel4c">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+              </code>
+            </pre>
+            <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
+              <li class="tabs-title is-active"><a href="#panel1c" aria-selected="true">Tab 1</a></li>
+              <li class="tabs-title"><a href="#panel2c">Tab 2</a></li>
+              <li class="tabs-title"><a href="#panel3c">Tab 3</a></li>
+              <li class="tabs-title"><a href="#panel4c">Tab 4</a></li>
+            </ul>
+            
+            <div class="tabs-content" data-tabs-content="collapsing-tabs">
+              <div class="tabs-panel is-active" id="panel1c">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="tabs-panel" id="panel2c">
+                <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+              </div>
+              <div class="tabs-panel" id="panel3c">
+                <img class="thumbnail" src="assets/img/generic/rectangle-3.jpg">
+              </div>
+              <div class="tabs-panel" id="panel4c">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+            
+            
+            <p class="section-description">Tabs and URLs</p>
+            <pre>
+              <code class="html">
+            <ul class="tabs" data-deep-link="true" data-tabs id="deeplinked-tabs">
+              <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">Tab 1</a></li>
+              <li class="tabs-title"><a href="#panel2d">Tab 2</a></li>
+              <li class="tabs-title"><a href="#panel3d">Tab 3</a></li>
+              <li class="tabs-title"><a href="#panel4d">Tab 4</a></li>
+            </ul>
+            
+            <div class="tabs-content" data-tabs-content="deeplinked-tabs">
+              <div class="tabs-panel is-active" id="panel1d">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="tabs-panel" id="panel2d">
+                <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+              </div>
+              <div class="tabs-panel" id="panel3d">
+                <img class="thumbnail" src="assets/img/generic/rectangle-3.jpg">
+              </div>
+              <div class="tabs-panel" id="panel4d">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+              </code>
+            </pre>
+            <ul class="tabs" data-deep-link="true" data-tabs id="deeplinked-tabs">
+              <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">Tab 1</a></li>
+              <li class="tabs-title"><a href="#panel2d">Tab 2</a></li>
+              <li class="tabs-title"><a href="#panel3d">Tab 3</a></li>
+              <li class="tabs-title"><a href="#panel4d">Tab 4</a></li>
+            </ul>
+            
+            <div class="tabs-content" data-tabs-content="deeplinked-tabs">
+              <div class="tabs-panel is-active" id="panel1d">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="tabs-panel" id="panel2d">
+                <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+              </div>
+              <div class="tabs-panel" id="panel3d">
+                <img class="thumbnail" src="assets/img/generic/rectangle-3.jpg">
+              </div>
+              <div class="tabs-panel" id="panel4d">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div></section>
+          
+          <section>
+            <h3 id="resptabs" class="js">Accordion Tabs</h3>
+            <a href="http://foundation.zurb.com/sites/docs/responsive-accordion-tabs.html">See on Foundation Guide</a>
+          <p class="section-description">Basics</p>
+          <p>Either the Accordion Markup or the Tabs Markup can be used to responsively switch between the two components at different breakpoints.</p>
+          <p>The Accordion should have an id specified, but the plugin will automatically generate one if the id is omitted.</p>
+          <p>Accordion content should also have an ID, or the # of the href should be specified, otherwise a random id will be generated</p>
+          
+          <p>Once you put it all together, here's what you get!<br/>
+          Scale your browser down to see the toggle happen.<br/>
+          I am an Accordion on small and large but I am Tabs on medium</p>
+          
+          <pre>
+            <code>
+          <ul class="accordion" data-responsive-accordion-tabs="tabs medium-accordion large-tabs">
+            <li class="accordion-item is-active" data-accordion-item>
+              <a href="#" class="accordion-title">Accordion 1</a>
+              <div class="accordion-content" data-tab-content>
+                I would start in the open state, due to using the `is-active` state class.
+              </div>
+            </li>
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title">Accordion 2</a>
+              <div class="accordion-content" data-tab-content>
+                Content of the second Accordion.
+              </div>
+            </li>
+          </ul>
+            </code>
+          </pre>
+          
+          <ul class="accordion" data-responsive-accordion-tabs="accordion medium-tabs large-accordion">
+            <li class="accordion-item is-active" data-accordion-item>
+              <a href="#" class="accordion-title">Accordion 1</a>
+              <div class="accordion-content" data-tab-content>
+                I would start in the open state, due to using the `is-active` state class.
+              </div>
+            </li>
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title">Accordion 2</a>
+              <div class="accordion-content" data-tab-content>
+                Content of the second Accordion.
+              </div>
+            </li>
+          </ul>
+          
+          <p>Tabs HTML Markup</p>
+          <p>Scale your browser down to see the toggle happen.<br/>
+          I am Tabs on small and large and Accordion on medium</p>
+          
+          <pre>
+            <code>
+          <ul class="tabs" data-deep-link="true" id="tabs-markup" data-responsive-accordion-tabs="accordion medium-accordion large-tabs">
+            <li class="tabs-title is-active"><a href="#panel1_tab_acc" aria-selected="true">Tab 1</a></li>
+            <li class="tabs-title"><a href="#panel2_tab_acc">Tab 2</a></li>
+            <li class="tabs-title"><a href="#panel3_tab_acc">Tab 3</a></li>
+            <li class="tabs-title"><a href="#panel4_tab_acc">Tab 4</a></li>
+          </ul>
+          
+            </code>
+          </pre>
+          
+          <ul class="tabs" data-deep-link="true" id="tabs-markup" data-responsive-accordion-tabs="accordion medium-accordion large-tabs">
+            <li class="tabs-title is-active"><a href="#panel1_tab_acc" aria-selected="true">Tab 1</a></li>
+            <li class="tabs-title"><a href="#panel2_tab_acc">Tab 2</a></li>
+            <li class="tabs-title"><a href="#panel3_tab_acc">Tab 3</a></li>
+            <li class="tabs-title"><a href="#panel4_tab_acc">Tab 4</a></li>
+          </ul>
+          
+          <div class="tabs-content" data-tabs-content="tabs-markup">
+            <div class="tabs-panel is-active" id="panel1_tab_acc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="tabs-panel" id="panel2_tab_acc">
+              <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+            </div>
+            <div class="tabs-panel" id="panel3_tab_acc">
+              <img class="thumbnail" src="../snippets/foundation/assets/img/generic/rectangle-3.jpg">
+            </div>
+            <div class="tabs-panel" id="panel4_tab_acc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          
+          <p>The responsive behavior can be set through the data-responsive-accordion-tabs option.
+          tabs|accordion , medium-tabs|accordion , large-tabs|accordion sets the behavior</p></section>
+          
+        </div>
+      </div>
+    </main>
+    <script src="../assets/js/app.js"></script>
+    <script>
+      jQuery('pre code').each(function () {
+        var $block = jQuery(this);
+        $block.text($block.html());
+      });
+      hljs.highlightAll();
+    </script> 
+    
+  </body>
+</html>

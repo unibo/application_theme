@@ -1,0 +1,570 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../assets/css/app.css">  </head>
+
+  <body>
+    <main class="grid-container fluid">
+      <div class="grid-x">
+        <div class="large-2 cell show-for-large">
+          <nav class="docs-toc-wrap sticky-container" id="docsToc" data-sticky-container>
+              <div class="docs-toc sticky is-at-top is-stuck" data-sticky-on>
+                  <a class="back" href="../">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>Indietro
+                  </a>
+              </div>
+          </nav>
+        </div>    
+
+        <div class="large-10 cell styleguide">
+          
+          <h1 class="huge">Style Guide Unibo Responsive Table</h1>
+          <h2>Tabelle responsive personalizzate sviluppate appositamente per Unibo</h2>
+          <p>
+          Esistono diverse soluzioni in css e js per creare delle tabelle responsive. <br>
+          Per questo pacchetto non abbiamo previsto librerie js, ma abbiamo deciso di adottare soluzioni basate sull'uso di solo css.
+          </p>
+          <p>
+          In generale si consiglia di scegliere la soluzione in base al tipo di tabella e di contenuto da visualizzare. <br>
+          Su <a href="https://css-tricks.com/accessible-simple-responsive-tables/">css-tricks.com</a> ci sono 4 proposte, da cui abbiamo
+          preso spunto per sviluppare le nostre soluzioni:
+          </p>
+          <img class="float-center" src="https://cdn.css-tricks.com/wp-content/uploads/2016/03/types-of-responsive-tables.gif" alt="esempi tabelle responsive">
+          <p>
+          La soluzione <strong>squish</strong> è il comportamento di base di una tabella senza nessuno stile applicato.<br>
+          La soluzione <strong>scroll</strong> è la soluzione adottata dal pacchetto di Foundation base visibile nella
+          pagina <a href="foundation%20-%20containers.html#tables">Foundation Containers.html</a> nella sezione "Scrolling Table".<br>
+          Le soluzioni <strong>collapse rows</strong> e <strong>collapse columns</strong> sono di seguito sviluppate:
+          </p>
+          <section>
+            <h3 id="unibo-collapse-row">Tabella orientata per colonne</h3>
+            <p class="section-description">Informazioni per colonna</p>
+            <p>
+              Nella maggior parte dei casi, le informazioni delle tabelle sono disposte per colonne. In questo caso, nel
+              responsive il <kbd>thead</kbd> e il <kbd>tbody</kbd> vengono affiancati.
+            </p>
+            <pre>
+              <code class="html">
+                <table class="collapse-column">
+                    <thead>
+                        <tr>
+                            <th>Eddard Stark</th>
+                            <th>Jon Snow</th>
+                            <th>Arya Stark</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Has a sword named Ice</td>
+                            <td>Has a sword named Longclaw</td>
+                            <td>Has a sword named Needle</td>
+                        </tr>
+                        <tr>
+                            <td>No direwolf</td>
+                            <td>Direwolf: Ghost</td>
+                            <td>Direwolf: Nymeria</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lord of Winterfell</strong></td>
+                            <td><strong>Knows nothing</strong></td>
+                            <td><strong>No one</strong></td>
+                        </tr>
+                    </tbody>
+                    
+                </table>    </code>
+            </pre>
+            <div class="grid-x grid-padding-x">
+              <div class="cell large-4">
+                <table class="collapse-column">
+                    <thead>
+                        <tr>
+                            <th>Eddard Stark</th>
+                            <th>Jon Snow</th>
+                            <th>Arya Stark</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Has a sword named Ice</td>
+                            <td>Has a sword named Longclaw</td>
+                            <td>Has a sword named Needle</td>
+                        </tr>
+                        <tr>
+                            <td>No direwolf</td>
+                            <td>Direwolf: Ghost</td>
+                            <td>Direwolf: Nymeria</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lord of Winterfell</strong></td>
+                            <td><strong>Knows nothing</strong></td>
+                            <td><strong>No one</strong></td>
+                        </tr>
+                    </tbody>
+                    
+                </table>    </div>
+            </div>
+          </section>
+          
+          <section>
+          <h3 id="unibo-collapse-row">Tabella orientata per righe</h3>
+          <p class="section-description">Informazioni per riga</p>
+          <p>
+            Le informazioni della tabella sono disposte per riga, quindi nel responsive le informazioni saranno
+            visualizzate come una tabella inline.
+          </p>
+          <pre>
+            <code class="html">
+                <table class="collapse-row">
+                    <tbody>
+                        <tr>
+                            <th>Eddard Stark</th>
+                            <td>Has a sword named Ice</td>
+                            <td>No direwolf</td>
+                            <td><strong>Lord of Winterfell</strong></td>
+                        </tr>
+                        <tr>
+                            <th>Jon Snow</th>
+                            <td>Has a sword named Longclaw</td>
+                            <td>Direwolf: Ghost</td>
+                            <td><strong>Knows nothing</strong></td>
+                        </tr>
+                        <tr>
+                            <th>Arya Stark</th>
+                            <td>Has a sword named Needle</td>
+                            <td>Direwolf: Nymeria</td>
+                            <td><strong>No one</strong></td>
+                        </tr>
+                    </tbody>
+                </table>  </code>
+          </pre>
+          <div class="grid-x grid-padding-x">
+            <div class="cell large-4">
+               <table class="collapse-row">
+                   <tbody>
+                       <tr>
+                           <th>Eddard Stark</th>
+                           <td>Has a sword named Ice</td>
+                           <td>No direwolf</td>
+                           <td><strong>Lord of Winterfell</strong></td>
+                       </tr>
+                       <tr>
+                           <th>Jon Snow</th>
+                           <td>Has a sword named Longclaw</td>
+                           <td>Direwolf: Ghost</td>
+                           <td><strong>Knows nothing</strong></td>
+                       </tr>
+                       <tr>
+                           <th>Arya Stark</th>
+                           <td>Has a sword named Needle</td>
+                           <td>Direwolf: Nymeria</td>
+                           <td><strong>No one</strong></td>
+                       </tr>
+                   </tbody>
+               </table>  </div>
+          </div>
+          </section>    
+          
+          <section>
+            <h3 id="unibo-collapse-row">Tabella orientamento misto</h3>
+            <p class="section-description">Informazioni su riga e colonna, con necessità di duplicare il testo</p>
+            <p>
+              Le informazioni della tabella sono eterogenee e vengono disposte sia per riga che per colonna.<br>
+              Nel responsive i <kbd>th</kbd> che si trovano all'interno del <kbd>thead</kbd> vengono nascosti nella versione responsive 
+              e le etichette vengono duplicate a fianco al valore.<br>
+              Per poter visualizzare l'etichetta di fianco al valore è necessario duplicare la label dentro il <kbd>td</kbd> 
+              usando <kbd><span class="data-label"></span></kbd>.
+            </p>
+            <pre>
+              <code class="html">
+                 <table class="double-label">
+                     <thead>
+                         <tr class="show-label">
+                             <th>&nbsp;</th>
+                             <th>Totale</th>
+                             <th>Primo anno</th>
+                             <th>Altri anni</th>                    
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <tr>
+                             <td>
+                                 Numero iscritti regolari
+                                 <p class="hide-label">Etichetta visibile solo su schermi piccoli</p>
+                             </td>
+                             <td class="data-row">
+                                 <span class="data-label">Totale</span>
+                                 <strong>569</strong>
+                             </td>
+                             <td class="data-row">
+                                 <span class="data-label">Primo anno</span>
+                                 <strong>267</strong>
+                             </td>
+                             <td class="data-row">
+                                 <span class="data-label">Altri anni</span>
+                                 <strong>302</strong>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>
+                                 Numero di schede compilate
+                             </td>
+                             <td class="data-row">
+                                 <span class="data-label">Totale</span>
+                                 <strong>1400</strong>
+                             </td>
+                             <td class="data-row">
+                                 <span class="data-label">Primo anno</span>
+                                 <strong>739</strong>
+                             </td>
+                             <td class="data-row">
+                                 <span class="data-label">Altri anni</span>
+                                 <strong>661</strong>
+                             </td>
+                         </tr>
+                     </tbody>
+                 </table>
+                 
+                 <table class="unstriped double-label" id="2016_2">
+                     <thead>
+                         <tr class="show-label">
+                             <th>Descrizione Insegnamento</th>
+                             <th>Codice Corso</th>
+                             <th>Corso di Studi</th>
+                             <th>
+                                 Data di Rilevazione
+                                 <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="ywqzho-tooltip" data-yeti-box="ywqzho-tooltip" data-toggle="ywqzho-tooltip" data-resize="ywqzho-tooltip" data-e="pmfo5d-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                             </th>
+                             <th>
+                                 Numero dei Presenti
+                                 <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="b81do0-tooltip" data-yeti-box="b81do0-tooltip" data-toggle="b81do0-tooltip" data-resize="b81do0-tooltip" data-e="lfbzmw-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                             </th>
+                             <th>
+                                 Scheda Individuale
+                                 <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="5tuo3k-tooltip" data-yeti-box="5tuo3k-tooltip" data-toggle="5tuo3k-tooltip" data-resize="5tuo3k-tooltip" data-e="ukof60-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                             </th>
+                             <th>
+                                 Immagini Questionari
+                                 <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="fpcj1y-tooltip" data-yeti-box="fpcj1y-tooltip" data-toggle="fpcj1y-tooltip" data-resize="fpcj1y-tooltip" data-e="8cty3k-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                             </th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <tr>
+                 
+                             <td class="data-row">
+                                 <span class="data-label">
+                                     Descrizione Insegnamento
+                                 </span>
+                                 <span>
+                                         <i class="fas fa-tablet-alt fa-2x" aria-hidden="true"></i>
+                                     STORIA DELLA MUSICA I: MEDIOEVO E RINASCIMENTO (1)
+                                 </span>
+                             </td>
+                             <td class="data-row">
+                                 <span class="data-label">
+                                     Codice Corso
+                                 </span>
+                                 0956
+                             </td>
+                             <td class="data-row">
+                                 <span class="data-label">
+                                     Corso di Studi
+                                 </span>
+                                 DAMS - DISCIPLINE DELLE ARTI, DELLA MUSICA  E DELLO SPETTACOLO
+                             </td>
+                             <td class="data-row">
+                                 <span class="data-label">
+                                     Data di Rilevazione
+                                     <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="dutttq-tooltip" data-yeti-box="dutttq-tooltip" data-toggle="dutttq-tooltip" data-resize="dutttq-tooltip" data-e="uzx5c3-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                                 </span>
+                                 07/03/2017
+                             </td>
+                             <td class="data-row">
+                                 <span class="data-label">
+                                     Numero dei Presenti
+                                     <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="ummsec-tooltip" data-yeti-box="ummsec-tooltip" data-toggle="ummsec-tooltip" data-resize="ummsec-tooltip" data-e="u8xbcy-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                                 </span>
+                                 4
+                             </td>
+                             <td class="data-row">
+                                 <span class="data-label">
+                                     Scheda Individuale
+                                     <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="920nph-tooltip" data-yeti-box="920nph-tooltip" data-toggle="920nph-tooltip" data-resize="920nph-tooltip" data-e="oi0ryb-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                                 </span>
+                 <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="57ukhq-tooltip" data-yeti-box="57ukhq-tooltip" data-toggle="57ukhq-tooltip" data-resize="57ukhq-tooltip" data-e="updqz8-e" data-events="resize">Non disponibile</span>                                </td>
+                             <td class="nobr data-row">
+                                 <span class="data-label">
+                                     Immagini Questionari
+                                     <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="vbf2n8-tooltip" data-yeti-box="vbf2n8-tooltip" data-toggle="vbf2n8-tooltip" data-resize="vbf2n8-tooltip" data-e="p174zq-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                                 </span>
+                 
+                                     <span>
+                                         <a href="">Schede</a> |
+                 
+                                         <a href="">PDF Completo</a>
+                                     </span>
+                             </td>
+                         </tr>
+                         <tr>
+                 
+                             <td class="data-row">
+                                 <span class="data-label">
+                                     Descrizione Insegnamento
+                                 </span>
+                                 <span>
+                                     SEMINARIO DI MUSICA (1) 
+                                 </span>
+                             </td>
+                             <td class="data-row">
+                                 <span class="data-label">
+                                     Codice Corso
+                                 </span>
+                                 0956
+                             </td>
+                             <td class="data-row">
+                                 <span class="data-label">
+                                     Corso di Studi
+                                 </span>
+                                 DAMS - DISCIPLINE DELLE ARTI, DELLA MUSICA  E DELLO SPETTACOLO L
+                             </td>
+                             <td class="data-row">
+                                 <span class="data-label">
+                                     Data di Rilevazione
+                                     <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="4tuywc-tooltip" data-yeti-box="4tuywc-tooltip" data-toggle="4tuywc-tooltip" data-resize="4tuywc-tooltip" data-e="0qf7jj-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                                 </span>
+                                 01/03/2017
+                             </td>
+                             <td class="data-row">
+                                 <span class="data-label">
+                                     Numero dei Presenti
+                                     <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="269246-tooltip" data-yeti-box="269246-tooltip" data-toggle="269246-tooltip" data-resize="269246-tooltip" data-e="br5f8y-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                                 </span>
+                                 13
+                             </td>
+                             <td class="data-row">
+                                 <span class="data-label">
+                                     Scheda Individuale
+                                     <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="xa061z-tooltip" data-yeti-box="xa061z-tooltip" data-toggle="xa061z-tooltip" data-resize="xa061z-tooltip" data-e="3zpq63-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                                 </span>
+                 <a href="">Resoconto</a>                                </td>
+                             <td class="nobr data-row">
+                                 <span class="data-label">
+                                     Immagini Questionari
+                                     <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="o90rql-tooltip" data-yeti-box="o90rql-tooltip" data-toggle="o90rql-tooltip" data-resize="o90rql-tooltip" data-e="1io453-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                                 </span>
+                 
+                                     <span>
+                                         <a href="">Schede</a> |
+                 
+                                         <a href="">PDF Completo</a>
+                                     </span>
+                             </td>
+                         </tr>
+                     </tbody>
+                 </table>    </code>
+            </pre>
+              <table class="double-label">
+                  <thead>
+                      <tr class="show-label">
+                          <th>&nbsp;</th>
+                          <th>Totale</th>
+                          <th>Primo anno</th>
+                          <th>Altri anni</th>                    
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>
+                              Numero iscritti regolari
+                              <p class="hide-label">Etichetta visibile solo su schermi piccoli</p>
+                          </td>
+                          <td class="data-row">
+                              <span class="data-label">Totale</span>
+                              <strong>569</strong>
+                          </td>
+                          <td class="data-row">
+                              <span class="data-label">Primo anno</span>
+                              <strong>267</strong>
+                          </td>
+                          <td class="data-row">
+                              <span class="data-label">Altri anni</span>
+                              <strong>302</strong>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              Numero di schede compilate
+                          </td>
+                          <td class="data-row">
+                              <span class="data-label">Totale</span>
+                              <strong>1400</strong>
+                          </td>
+                          <td class="data-row">
+                              <span class="data-label">Primo anno</span>
+                              <strong>739</strong>
+                          </td>
+                          <td class="data-row">
+                              <span class="data-label">Altri anni</span>
+                              <strong>661</strong>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+              
+              <table class="unstriped double-label" id="2016_2">
+                  <thead>
+                      <tr class="show-label">
+                          <th>Descrizione Insegnamento</th>
+                          <th>Codice Corso</th>
+                          <th>Corso di Studi</th>
+                          <th>
+                              Data di Rilevazione
+                              <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="ywqzho-tooltip" data-yeti-box="ywqzho-tooltip" data-toggle="ywqzho-tooltip" data-resize="ywqzho-tooltip" data-e="pmfo5d-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                          </th>
+                          <th>
+                              Numero dei Presenti
+                              <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="b81do0-tooltip" data-yeti-box="b81do0-tooltip" data-toggle="b81do0-tooltip" data-resize="b81do0-tooltip" data-e="lfbzmw-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                          </th>
+                          <th>
+                              Scheda Individuale
+                              <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="5tuo3k-tooltip" data-yeti-box="5tuo3k-tooltip" data-toggle="5tuo3k-tooltip" data-resize="5tuo3k-tooltip" data-e="ukof60-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                          </th>
+                          <th>
+                              Immagini Questionari
+                              <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="fpcj1y-tooltip" data-yeti-box="fpcj1y-tooltip" data-toggle="fpcj1y-tooltip" data-resize="fpcj1y-tooltip" data-e="8cty3k-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                          </th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+              
+                          <td class="data-row">
+                              <span class="data-label">
+                                  Descrizione Insegnamento
+                              </span>
+                              <span>
+                                      <i class="fas fa-tablet-alt fa-2x" aria-hidden="true"></i>
+                                  STORIA DELLA MUSICA I: MEDIOEVO E RINASCIMENTO (1)
+                              </span>
+                          </td>
+                          <td class="data-row">
+                              <span class="data-label">
+                                  Codice Corso
+                              </span>
+                              0956
+                          </td>
+                          <td class="data-row">
+                              <span class="data-label">
+                                  Corso di Studi
+                              </span>
+                              DAMS - DISCIPLINE DELLE ARTI, DELLA MUSICA  E DELLO SPETTACOLO
+                          </td>
+                          <td class="data-row">
+                              <span class="data-label">
+                                  Data di Rilevazione
+                                  <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="dutttq-tooltip" data-yeti-box="dutttq-tooltip" data-toggle="dutttq-tooltip" data-resize="dutttq-tooltip" data-e="uzx5c3-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                              </span>
+                              07/03/2017
+                          </td>
+                          <td class="data-row">
+                              <span class="data-label">
+                                  Numero dei Presenti
+                                  <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="ummsec-tooltip" data-yeti-box="ummsec-tooltip" data-toggle="ummsec-tooltip" data-resize="ummsec-tooltip" data-e="u8xbcy-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                              </span>
+                              4
+                          </td>
+                          <td class="data-row">
+                              <span class="data-label">
+                                  Scheda Individuale
+                                  <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="920nph-tooltip" data-yeti-box="920nph-tooltip" data-toggle="920nph-tooltip" data-resize="920nph-tooltip" data-e="oi0ryb-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                              </span>
+              <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="57ukhq-tooltip" data-yeti-box="57ukhq-tooltip" data-toggle="57ukhq-tooltip" data-resize="57ukhq-tooltip" data-e="updqz8-e" data-events="resize">Non disponibile</span>                                </td>
+                          <td class="nobr data-row">
+                              <span class="data-label">
+                                  Immagini Questionari
+                                  <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="vbf2n8-tooltip" data-yeti-box="vbf2n8-tooltip" data-toggle="vbf2n8-tooltip" data-resize="vbf2n8-tooltip" data-e="p174zq-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                              </span>
+              
+                                  <span>
+                                      <a href="">Schede</a> |
+              
+                                      <a href="">PDF Completo</a>
+                                  </span>
+                          </td>
+                      </tr>
+                      <tr>
+              
+                          <td class="data-row">
+                              <span class="data-label">
+                                  Descrizione Insegnamento
+                              </span>
+                              <span>
+                                  SEMINARIO DI MUSICA (1) 
+                              </span>
+                          </td>
+                          <td class="data-row">
+                              <span class="data-label">
+                                  Codice Corso
+                              </span>
+                              0956
+                          </td>
+                          <td class="data-row">
+                              <span class="data-label">
+                                  Corso di Studi
+                              </span>
+                              DAMS - DISCIPLINE DELLE ARTI, DELLA MUSICA  E DELLO SPETTACOLO L
+                          </td>
+                          <td class="data-row">
+                              <span class="data-label">
+                                  Data di Rilevazione
+                                  <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="4tuywc-tooltip" data-yeti-box="4tuywc-tooltip" data-toggle="4tuywc-tooltip" data-resize="4tuywc-tooltip" data-e="0qf7jj-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                              </span>
+                              01/03/2017
+                          </td>
+                          <td class="data-row">
+                              <span class="data-label">
+                                  Numero dei Presenti
+                                  <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="269246-tooltip" data-yeti-box="269246-tooltip" data-toggle="269246-tooltip" data-resize="269246-tooltip" data-e="br5f8y-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                              </span>
+                              13
+                          </td>
+                          <td class="data-row">
+                              <span class="data-label">
+                                  Scheda Individuale
+                                  <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="xa061z-tooltip" data-yeti-box="xa061z-tooltip" data-toggle="xa061z-tooltip" data-resize="xa061z-tooltip" data-e="3zpq63-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                              </span>
+              <a href="">Resoconto</a>                                </td>
+                          <td class="nobr data-row">
+                              <span class="data-label">
+                                  Immagini Questionari
+                                  <span aria-haspopup="true" class="has-tip top" data-disable-hover="false" data-tooltip="" tabindex="2" title="" aria-describedby="o90rql-tooltip" data-yeti-box="o90rql-tooltip" data-toggle="o90rql-tooltip" data-resize="o90rql-tooltip" data-e="1io453-e" data-events="resize"><i class="fa fa-question-circle"></i></span>
+                              </span>
+              
+                                  <span>
+                                      <a href="">Schede</a> |
+              
+                                      <a href="">PDF Completo</a>
+                                  </span>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table></section>    
+        </div>
+      </div>
+    </main>
+    <script src="../assets/js/app.js"></script>
+    <script>
+      jQuery('pre code').each(function () {
+        var $block = jQuery(this);
+        $block.text($block.html());
+      });
+      hljs.highlightAll();
+    </script> 
+    
+  </body>
+</html>

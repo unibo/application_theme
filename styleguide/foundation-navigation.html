@@ -1,0 +1,205 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../assets/css/app.css">  </head>
+
+  <body>
+    <main class="grid-container fluid">
+      <div class="grid-x">
+        <div class="large-2 cell show-for-large">
+          <nav class="docs-toc-wrap sticky-container" id="docsToc" data-sticky-container>
+              <div class="docs-toc sticky is-at-top is-stuck" data-sticky-on>
+                  <a class="back" href="../">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>Indietro
+                  </a>
+              </div>
+          </nav>
+        </div>    
+
+        <div class="large-10 cell styleguide">
+          
+          <h1>Foundation Navigation</h1>
+          
+          <section>
+            <h3 id="resp_nav">Responsive Navigation</h3>
+            <a href="http://foundation.zurb.com/sites/docs/badge.html">See on Foundation Guide</a>
+            <p class="section-description">Responsive Navigation</p>
+             <pre>
+              <code>
+                <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                  <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+                  <a class="title-bar-title" data-toggle="example-menu">Menu</a>
+                </div>
+                
+                <div id="example-menu">
+                  <ul class="vertical menu" data-accordion-menu="">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-home"></i> Home
+                      </a>
+                      <ul class="menu vertical nested">
+                        <li><a href="#">One</a></li>
+                        <li><a href="#">Two</a></li>
+                        <li><a href="#">Three</a></li>
+                      </ul>
+                    </li>
+                    <li class="selected">
+                      <a href="#">
+                        <i class="fa fa-user"></i> Elenco Utenze  
+                      </a>
+                    </li>
+                    <li><a href="#">
+                      <i class="fas fa-phone-alt"></i> Elenco Apparati
+                    </a></li>
+                    <li><a href="#">
+                      <i class="far fa-clock"></i> Storico Richieste
+                    </a></li>
+                  </ul>
+                </div>
+              </code>
+            </pre>
+            <div class="grid-x">
+              <div class="cell large-4">
+                <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                  <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+                  <a class="title-bar-title" data-toggle="example-menu">Menu</a>
+                </div>
+                
+                <div id="example-menu">
+                  <ul class="vertical menu" data-accordion-menu="">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-home"></i> Home
+                      </a>
+                      <ul class="menu vertical nested">
+                        <li><a href="#">One</a></li>
+                        <li><a href="#">Two</a></li>
+                        <li><a href="#">Three</a></li>
+                      </ul>
+                    </li>
+                    <li class="selected">
+                      <a href="#">
+                        <i class="fa fa-user"></i> Elenco Utenze  
+                      </a>
+                    </li>
+                    <li><a href="#">
+                      <i class="fas fa-phone-alt"></i> Elenco Apparati
+                    </a></li>
+                    <li><a href="#">
+                      <i class="far fa-clock"></i> Storico Richieste
+                    </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="cell large-8">
+                
+              </div>
+            </div></section>
+          
+          <section>
+            <h3 id="pagination">Pagination</h3>
+            <a href="http://foundation.zurb.com/sites/docs/responsive-navigation.html">See on Foundation Guide</a>
+            <p class="section-description">Basics</p>
+            <pre>
+              <code class="html">
+                <ul class="pagination" role="navigation" aria-label="Pagination">
+                  <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+                  <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                  <li><a href="#" aria-label="Page 2">2</a></li>
+                  <li><a href="#" aria-label="Page 3">3</a></li>
+                  <li><a href="#" aria-label="Page 4">4</a></li>
+                  <li class="ellipsis" aria-hidden="true"></li>
+                  <li><a href="#" aria-label="Page 12">12</a></li>
+                  <li><a href="#" aria-label="Page 13">13</a></li>
+                  <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+                </ul>
+              </code>
+            </pre>
+            <ul class="pagination" role="navigation" aria-label="Pagination">
+              <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+              <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+              <li><a href="#" aria-label="Page 2">2</a></li>
+              <li><a href="#" aria-label="Page 3">3</a></li>
+              <li><a href="#" aria-label="Page 4">4</a></li>
+              <li class="ellipsis" aria-hidden="true"></li>
+              <li><a href="#" aria-label="Page 12">12</a></li>
+              <li><a href="#" aria-label="Page 13">13</a></li>
+              <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+            </ul>
+            
+            
+            <p class="section-description">Centrato</p>
+            <pre>
+              <code class="html">
+                <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+                  <li class="pagination-previous disabled">Previous</li>
+                  <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                  <li><a href="#" aria-label="Page 2">2</a></li>
+                  <li><a href="#" aria-label="Page 3">3</a></li>
+                  <li><a href="#" aria-label="Page 4">4</a></li>
+                  <li class="ellipsis"></li>
+                  <li><a href="#" aria-label="Page 12">12</a></li>
+                  <li><a href="#" aria-label="Page 13">13</a></li>
+                  <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+                </ul>
+              </code>
+            </pre>
+            <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+              <li class="pagination-previous disabled">Previous</li>
+              <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+              <li><a href="#" aria-label="Page 2">2</a></li>
+              <li><a href="#" aria-label="Page 3">3</a></li>
+              <li><a href="#" aria-label="Page 4">4</a></li>
+              <li class="ellipsis"></li>
+              <li><a href="#" aria-label="Page 12">12</a></li>
+              <li><a href="#" aria-label="Page 13">13</a></li>
+              <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+            </ul></section>
+          
+          <section>
+            <h3 id="breadcrumbs">Breadcrumbs</h3>
+            <a href="http://foundation.zurb.com/sites/docs/breadcrumbs.html">See on Foundation Guide</a>
+            <pre>
+              <code class="html">
+                <nav aria-label="You are here:" role="navigation">
+                  <ul class="breadcrumbs">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li class="disabled">Gene Splicing</li>
+                    <li>
+                      <span class="show-for-sr">Current: </span> Cloning
+                    </li>
+                  </ul>
+                </nav>
+              </code>
+            </pre>
+            <nav aria-label="You are here:" role="navigation">
+              <ul class="breadcrumbs">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li class="disabled">Gene Splicing</li>
+                <li>
+                  <span class="show-for-sr">Current: </span> Cloning
+                </li>
+              </ul>
+            </nav></section>
+          
+        </div>
+      </div>
+    </main>
+    <script src="../assets/js/app.js"></script>
+    <script>
+      jQuery('pre code').each(function () {
+        var $block = jQuery(this);
+        $block.text($block.html());
+      });
+      hljs.highlightAll();
+    </script> 
+    
+  </body>
+</html>
