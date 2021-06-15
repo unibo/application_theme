@@ -1,14 +1,14 @@
 {
-  "name": "foundation-zurb-template",
+  "name": "unibo-application-theme",
   "version": "1.0.0",
-  "description": "Official ZURB Template for Foundation for Sites.",
+  "description": "Official Unibo Application Theme based on Foundation for Sites.",
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
     "build": "gulp build --production"
   },
-  "author": "ZURB <foundation@zurb.com>",
-  "license": "MIT",
+  "author": "University of Bologna",
+  "license": "BSD 3-Clause",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@types/highlight.js": "^10.1.0",
