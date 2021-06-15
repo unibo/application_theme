@@ -70,6 +70,7 @@ src
 └─ pages          List of all pages.
    ├─ index       * Main page of the theme, to be updated manually, to view the content list.
    ├─ styleguide  * All styleguide pages.
+   ├─ layout      * All example pages.
 └─ partials       All html snippets used in pages.
 ```
 ## Bug reports and requests for help 
