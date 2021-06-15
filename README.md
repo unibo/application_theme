@@ -96,7 +96,7 @@ The components distributed with Unibo Applicatione Theme that have their own lic
 
 ## How to use
 Using this styleguide is very simple and immediate. Copy the html code of the element you want to use in your application and include the relative scss in app.scss (or your main scss of project).
-Example can be found in our [demo site](unibo.github.io/application_theme/).
+Example can be found in our [demo site](https://unibo.github.io/application_theme/).
 
 ## Copyright and terms of use 
 The license of Unibo Applicatione Theme is BSD 3-Clause and is visible in LICENSE file.
