@@ -22,6 +22,7 @@
         &.is-active{
             .accordion-title{
                 font-weight: bold;
+                pointer-events: none;
             }
             .accordion-content{
                 border-top: none;

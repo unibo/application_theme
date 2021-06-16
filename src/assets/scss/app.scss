@@ -1,3 +1,4 @@
+//Import standard Foundation
 @charset 'utf-8';
 
 @import 'settings';
@@ -64,7 +65,7 @@
 @include motion-ui-animations;
 
 
-// Import Custom Components
+// Import custom UNIBO
 
 /* Unibo Settings */
 @import "global/u_variables";
@@ -93,19 +94,18 @@
 @import "components/unibo/u_spacing";
 @import "components/unibo/u_visibility";
 
+//Basic Layout
+@import "components/unibo/u_menu";
+@import "components/unibo/u_lang";
+@import "components/unibo/u_header";
+@import "components/unibo/u_footer";
+
+
 //Unibo login 
 @import "components/unibo/u_barra_login";
 
-//Basic Layout
-@import "components/unibo/u_menu";
-@import "components/unibo/u_button";
-@import "components/unibo/u_lang";
-@import "components/unibo/u_header";
-@import "components/unibo/u_lead";
-@import "components/unibo/u_footer";
-@import "components/unibo/u_spinner";
-
 //Navigation components
+@import "components/unibo/u_button";
 @import "components/unibo/u_breadcrumbs";
 @import "components/unibo/u_search_header";
 @import "components/unibo/u_to_top";
@@ -120,6 +120,8 @@
 @import "components/unibo/u_numbered_list";
 
 //Layout components 
+@import "components/unibo/u_lead";
+@import "components/unibo/u_spinner";
 @import "components/unibo/u_highlight_text";
 @import "components/unibo/u_jumbo_lead";
 @import "components/unibo/u_contact";
