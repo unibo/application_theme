@@ -1,0 +1,105 @@
+/* Stile per la styleguide*/
+    .styleguide .docs-toc {
+        font-size: 1.2em;
+    }
+
+    .styleguide section {
+        margin-bottom: 2em;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 2em;
+        display: block;
+    }
+        .styleguide section .u-feature h2,
+        .styleguide section .u-feature h3 {
+            color: #3191d4;
+            font-weight: normal;
+            font-size: 1.8em;
+            margin-bottom: .5em;
+        }
+        .styleguide section > h3{
+
+            color: #3191d4;
+            font-weight: normal;
+            display: inline-block;
+            text-align: center;
+        }
+        .styleguide section > p,
+        .styleguide section > ul {
+            font-size: 1.1em;
+            padding: .5em 0 0;
+        }
+        .styleguide section li{
+            margin-bottom: 1em;
+           
+        } 
+        .styleguide section li li{
+            margin-bottom: .5em;
+        }
+    
+    
+        .styleguide section > h3 + a {
+        margin-left: 1em;
+    }
+    
+    .styleguide .section-description {
+        font-size: 1.2em;
+        margin-top: 2.5em;
+        margin-bottom: 0.5em;
+        color: #666;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-left: 4px solid #1779ba;
+        padding: 0 0.5em;
+    }
+    .styleguide .label-font {
+        color: #00b7ff;
+    }
+    
+    .styleguide pre {
+        display: flex;
+        margin: 2em 0;
+        max-height: 300px;
+
+    }
+
+    .styleguide code {
+        width: 100%;
+    }
+    
+    .styleguide .js:after {
+        content: 'JS';
+        padding: 2px 4px;
+        background-color: #1779ba;
+        color: #fff;
+        font-size: 0.7em;
+        margin-left: 5px;
+        font-weight: bold;
+    }
+    
+    .styleguide .grid-x.display {
+        background: #eee;
+        font-size: 11px;
+        margin-bottom: 10px;
+        line-height: 2rem;
+        border: solid 1px #c6c6c6;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .styleguide .grid-x.display-end {
+        background: #fff;
+        font-size: 11px;
+        margin-bottom: 10px;
+        line-height: 2rem;
+        border: solid 1px #c6c6c6;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        
+    }
+    .styleguide .grid-x.display-end .cell {
+        background: #e1e1e1;
+        border-left: 1px solid #c6c6c6;
+    }
+    
+    .styleguide  .u-styleguide-spinner-container {
+        position: relative;
+    }

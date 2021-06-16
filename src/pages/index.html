@@ -40,25 +40,68 @@
     </div>
 </div>
 
-<main class="grid-container">
 
     <div class="grid-x grid-padding-x align-center">
         <section class="medium-6 cell">
 
             <div class="u-numbered-list centered margin-top-1 margin-bottom-2">
                 <h2>Come usare questa styleguide</h2>
-                <h3 class="margin-bottom-1">Inizia a usare il pacchetto in 5 semplici passi.</h3>
+                <h3 class="margin-bottom-1">Inizia a usare il tema in 4 semplici passi.</h3>
                 <ol>
                     <li>
                         <div class="text-wrap">
-                            <h4>Predisponi l'ambiente di sviluppo</h4>
+                            <h4>Scegli l'ambiente di sviluppo</h4>
+                            <p>Il tema è versatile per cui puoi usare Sass oppure CSS e js già compilati.</p>
                             <p>
-                                In questo pacchetto vengono utilizzati <a href="http://gulpjs.com" rel="nofollow">Gulp</a> e <a href="https://webpack.js.org">Webpack</a>. <br />
-                                Gulp si occupa della compilazione del sass e del js, della compressione delle immagini e dell'aggiornamento dei file. <br />
+                                Se vuoi usare Sass e sfruttarne la modularità avrai bisogno di un compilatore. <br>
+                                In questo tema vengono utilizzati <a href="http://gulpjs.com" rel="nofollow">Gulp</a> e <a href="https://webpack.js.org">Webpack</a>. <br />
+                                Gulp si occupa della compilazione del Sass e del js, della compressione delle immagini e dell'aggiornamento dei file. <br />
                                 Webpack si occupa invece della gestione degli import e moduli js. <br />
-                                Se vuoi approfondire questo argomento, leggi la nostra <a href="how-to.html">guida</a>.
+                                Se vuoi approfondire questo argomento, leggi la nostra <a href="styleguide/how-to.html">guida</a>.
                             </p>
-                            <p>Non è obbligatorio usare questi toolkit, però se vuoi sfruttare la modularità dei sass avrai bisogno di un compilatore.</p>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text-wrap">
+                            <h4>Scarica il codice compilato</h4>
+                            <p>
+                                Per utilizzare il codice compilato di Unibo application, 
+                                è sufficiente scaricare ed includere nella pagina HTML alcuni file, 
+                                tra cui un file CSS, un Javascript, i fonts e le immagini.
+                            </p>
+                            <div>
+                                <a class="button large" href="../starter-kit.zip">Scarica lo starter-kit</a>
+                            </div>
+                            <p>
+                                Se invece vuoi utilizzare sass e js non compilato, è necessaio scaricare il pacchetto completo da github.
+                                <br />
+                                Puoi trovarli all'interno della cartella <code>dist/assets</code>.
+                            </p>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text-wrap">
+                            <h4>Caricare la libreria</h4>
+                            
+                            <p>
+                                Una volta scaricato e decompresso il file, all’interno della cartella css 
+                                sarà presente un file CSS e un file JS. <br />
+                                Per includere il CSS all’interno del tuo progetto sarà sufficiente 
+                                aggiungere il tag <code>&lt;link&gt;</code> all’interno del tag <code>&lt;head&gt;</code>della pagina, 
+                                in questo modo: <br />
+                                <code>&lt;link rel="stylesheet" href="css/app.css"&gt;</code>
+                            </p>
+                            <p>
+                                Invece, per includere il JS all’interno del tuo progetto dovrai
+                                aggiungere il tag <code>&lt;script&gt;</code> alla fine del <code>&lt;body&gt;</code> della pagina, in questo modo:
+                                <br />
+                                <code>&lt;script src="js/app.js"&gt;</script></code>
+                                
+                            </p>
+
+                            
                         </div>
                     </li>
                     <li>
@@ -66,62 +109,73 @@
                             <h4>Scegli un template</h4>
                             <p>
                                 In base alle tue esigenze, scegli un template da cui partire per lo sviluppo. <br /> 
-                                Ad esempio puoi usare il <a href="base_template.html">template di base</a>. <br /> 
+                                Ad esempio puoi usare il  <a href="layout/base_template.html">Template di base</a>. <br />
+                                Nella pagina del template troverai le informazioni sulla struttura HTML e su come implementarlo.
                             </p>
-                            <p>
-                                Inserisci il sass <kbd>app.scss</kbd> nel tuo progetto e richiamalo nel template appena creato. <br />
-                                Non dimenticarti di includere anche il javascript <kbd>app.js</kbd>. 
-                            </p>
-                            <p>Se preferisci utilizzare css e js già compilati, puoi trovarli all'interno della cartella <kbd>dist/assets</kbd>.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="text-wrap">
-                            <h4>Esplora la styleguide</h4>
-                            <p>
-                                Cerca tra i componenti di <strong>Styleguide Unibo</strong>, l'elemento più adatto alle tue necessità. 
-                            </p>
-                            <p>Puoi anche decidere di utilizzare componenti di Foundation, alcuni di essi sono stati personalizzati
-                                sullo stile di Unibo. <br/>
-                                Puoi trovarli in <strong>Styleguide Foundation</strong>.
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="text-wrap">
-                            <h4>Copia e incolla l'html nel tuo progetto</h4>
-                            <p>Copia l'html dell'elemento che vuoi utilizzare nella tua applicazione. 
-                                <br /> 
-                                Fai attenzione che ci sia la classe css che contraddistinge l'elemento.
-                            </p>
-                            <p>
-                                Trovi questa indicazione nella descrizione dell'elemento alla voce <strong>Classe da utilizzare</strong>.
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="text-wrap">                
-                            <h4>Includi il sass nel file .scss principale</h4>    
-                            <p>
-                                Includi il scss dell'elemento nell'app.scss (o nel sass principale del progetto).
-                                <br />
-                                Ad esempio:
-                                <kbd>@import "components/unibo/u_radiocard";</kbd>
-                            </p>
-                            <p>
-                                Trovi questa indicazione nella descrizione dell'elemento alla voce <strong>SCSS da includere</strong>. 
-                            </p>
+                            
                         </div>
                     </li>
                 </ol>
             </div>	
         </section>
     </div>
+
+    <div class="u-feature background-light padding-top-1 padding-bottom-1">  
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+            <div class="large-12 cell">                   
+                <h2>Ti serve altro?</h2>
+                <p>Il tema Unibo Application oltre a darti una struttura di base, offre anche componenti aggiuntivi. </p>
+            </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <div class="large-6 cell">
+                    <div class="icon-left">
+                    <i class="far fa-star" aria-hidden="true"></i>
+                    <h3> Arricchisci la tua interfaccia</h3>
+                    </div>
+                    <p>
+                        Sono a disposizione alcuni componenti che abbiamo sviluppato nel corso degli anni.
+                    <br />
+                        Puoi trovare questi snippet di codice in <a href="#styleguide-unibo"><strong>Styleguide Unibo</strong></a>, raggruppati per tipologia. 
+                    </p>
+                    <p>Puoi anche decidere di utilizzare componenti di Foundation, alcuni di essi sono stati personalizzati
+                        sullo stile di Unibo. Puoi trovarli in <a href="#styleguide-unibo"><strong>Styleguide Foundation</strong></a>.
+                    </p>
+                </div>
+                <div class="large-6 cell">
+                    <div class="icon-left">
+                    <i class="far fa-file-code" aria-hidden="true"></i>
+                    <h3>Inserisci un componente</h3>
+                    </div>
+                    <p>Copia l'html dell'elemento che vuoi utilizzare nel tuo template. 
+                        <br /> 
+                        Fai attenzione che ci sia la classe CSS che contraddistinge l'elemento.
+                    </p>
+                    <p>
+                        Trovi questa indicazione nella descrizione dell'elemento alla voce <strong>Classe da utilizzare</strong>.
+                    </p>            
+                     
+                    <p>
+                        Se stai sviluppando con Sass, includi il Sass dell'elemento nel file 
+                        <code>app.scss</code>.
+                        <br />
+                        Ad esempio:
+                        <code>@import "components/unibo/u_radiocard";</code>
+                    </p>
+                    <p>
+                        Trovi questa indicazione nella descrizione dell'elemento alla voce <strong>SCSS da includere</strong>. 
+                    </p>
+                </div>
+            </div>
+        </div>  
+    </div>
         
+<main class="grid-container">
     <div class="grid-x grid-padding-x">
         <section class="medium-6 cell">
             <div class="u-description-text border-1">
-                <h2>Styleguide Unibo</h2>
+                <h2 id="styleguide-unibo">Styleguide Unibo</h2>
                 <p>Tutti i componenti sviluppati all'interno di Unibo</p>
                 <ul>
                     <li> <a href="styleguide/unibo-containers.html">Containers</a> </li>
@@ -137,7 +191,7 @@
         </section>
         <section class="medium-6 cell">
             <div class="u-description-text border-1">
-                <h2>Styleguide Foundation</h2>
+                <h2 id="styleguide-foundation">Styleguide Foundation</h2>
                 <p>Alcuni componenti di Foundation rivisitati graficamente in stile Unibo</p>
                 <ul>
                     <li> <a href="styleguide/foundation-containers.html">Containers</a> </li>
