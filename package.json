@@ -57,11 +57,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zurb/foundation-zurb-template.git"
+    "url": "https://github.com/unibo/application_theme"
   },
   "bugs": {
-    "url": "https://github.com/zurb/foundation-sites/issues",
-    "email": "foundation@zurb.com"
+    "url": "https://github.com/unibo/application_theme/issues"
   },
   "private": true
 }
