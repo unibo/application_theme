@@ -22,6 +22,7 @@
         </div>    
 
         <div class="large-10 cell styleguide">
+          <h1>Guida</h1>
           <section>
             <h3 id="struttura">La struttura dei contenuti</h3>
             <pre>
@@ -67,11 +68,13 @@
                   </code>
                 </pre>
           		</p>
+              
           </section>
           
           <section>
             <h3 id="caratteristiche">Le caratteristiche del Tema</h3>
-          <p>Cosa fa questo pacchetto tema:</p>
+            <p>Questo tema utilizza il sistema di compilazione <a href="http://gulpjs.com" rel="nofollow">Gulp</a> per automatizzare il processo di compilazione di Sass, elaborazione di JavaScript, copia di file e altro.</p>
+            <p>In particolare:</p>
             <ul>
               <li>
                 <p>
@@ -80,8 +83,6 @@
                 Gulp copierà qualsiasi cosa sia contenuta nella cartella <code>src/assets</code> così com'è nella cartella <code>assets</code> del progetto finale. 
                 I file Sass, quelli JavaScript e le immagini non fanno parte di questo processo di copia, in quanto soggetti alla compilazione.
               </li>
-            </ul>
-            <ul>
               <li>
                 <p>
                   <strong>Compilazione delle Pagine</strong>
@@ -126,11 +127,14 @@
                 </p>
                 <p>Nella compilazione viene creata una mappa che esegue la mappatura ai file originali. Per impostazione predefinita, il file <code>app.js</code> in bundle non è compresso. 
                   Durante la creazione per la produzione, il file viene eseguito tramite <strong>UglifyJS</strong> per la compressione.
-                  L'intero processo di raggruppamento è gestito da <strong>Webpack</strong>, che gestisce tutte le risorse e le dipendenze e le compila in un unico file.
+                  L'intero processo di raggruppamento è gestito da <a href="https://webpack.js.org"><strong>Webpack</strong></a>, che gestisce tutte le risorse e le dipendenze e le compila in un unico file.
                 </p>
-                <p>The whole bundling process is handled by 
-                  <a href="https://webpack.js.org">webpack</a>: it manages all assets and dependencies for you and compiles them into one single file. If you're unfamiliar with imports or module bundling, check out:
-                </p>
+                <p>Se non hai dimestichezza con import o module bundling, puoi approfondire qui:</p>
+                <ul>
+                  <li><a href="http://2ality.com/2014/09/es6-modules-final.html" rel="nofollow">What are ES6 imports</a></li>
+                  <li><a href="https://medium.com/javascript-training/beginner-s-guide-to-webpack-b1f1a3638460" rel="nofollow">Beginner’s guide to webpack</a></li>
+                  <li><a href="https://medium.freecodecamp.org/javascript-modules-a-beginner-s-guide-783f7d7a5fcc" rel="nofollow">Beginner’s guide to JavaScript Modules</a>.</li>
+                  </ul>
               </li>
               <li>
                 <p>
