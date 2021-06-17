@@ -97,8 +97,11 @@ The components distributed with Unibo Applicatione Theme that have their own lic
 
 ## How to use
 Using this styleguide is very simple and immediate.
+
 Download the [starter kit](https://github.com/unibo/application_theme/releases/download/0.1.0/starter-kit.zip), add `<link rel="stylesheet" href="css/app.css">` inside tag `<head>` and `<script src="js/app.js">` at the bottom of page (before end of tag `<body>`).
+
 Choose a template from our styleguide and start code!
+
 Example can be found in our [demo site](https://unibo.github.io/application_theme/) (italian language).
 
 ## Copyright and terms of use 
