@@ -12,7 +12,6 @@
   </head>
 <body>
 
-<title>Unibo Tabella</title>
   <form method="post" action="/tol/mobile/" class="u-content-wrapper" id="mainForm">
     <div class="u-barra-login" id="barra-login">
       <ul class="dropdown menu horizontal" data-dropdown-menu data-disable-hover="true" data-click-open="true">
@@ -310,45 +309,321 @@
     
   </form>
 
-  <div class="grid-container styleguide">
-    <div class="grid-x">
-      <div class="large-12 cell">
-        <h2 style="margin-top: 2em;">Istruzioni per l'implementazione di questo template</h2>
-        <ul>
-          <li>
-            <p>La classe "u-content-wrapper" può essere associata a un <kbd>div</kbd> o un altro elemento, ad esempio <kbd>form</kbd>. L'importante è che sia il primo elemento dopo il <kbd>body</kbd> e che contenga tutta la pagina.
-            </p>
-          </li>
-          <li>
-            <p>Le eventuali Breadcrumbs vanno inserite all'interno del <kbd>main</kbd>.</p>
-          </li>
-          <li>
-            <p>Il <kbd>main</kbd> ha sempre una spaziatura superiore e inferiore (padding-top e padding-bottom).</p>
-          </li>
-        </ul>
-        <pre>
-          <code class="html">
-              <form class="u-content-wrapper">
-                <div class="grid-x expanded u-barra-login"> ... </div>
-                <header> ... </header>
-                <main>
-                  <div class="grid-x">
-                    <div class="small-12 cell">
-                      <div class="u-breadcrumbs">...</div>
-                      ...
-                      <div class="grid-x u-top-bar">...</div>
-                      <table class="hover stack"></table>
-                      <ul class="pagination text-center">...</ul>
+  
+<div class="grid-container styleguide">
+  <div class="grid-x">
+    <div class="large-12 cell">
+      <h2 class="margin-top-2">Istruzioni per l'implementazione di questo template</h2>
+      <h3>Copia questo HTML e incollalo all'interno del <code>&lt;body&gt;</code> della tua pagina html.</h3>
+      <p><strong>Nota:</strong> La classe "u-content-wrapper" può essere associata a un <kbd>div</kbd> o un altro elemento, ad esempio <kbd>form</kbd>.
+          L'importante è che sia il primo elemento dopo il <kbd>body</kbd> e che contenga tutta la pagina.
+      </p>
+        
+
+      <pre>
+        <code class="html">
+          <form method="post" action="/tol/mobile/" class="u-content-wrapper" id="mainForm">
+            <div class="u-barra-login" id="barra-login">
+              <ul class="dropdown menu horizontal" data-dropdown-menu data-disable-hover="true" data-click-open="true">
+                <li>
+                  <a href="#">
+                    <img loading="lazy" alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">     
+                    <span>Mario Rossi</span>
+                  </a>
+                  <ul class="menu">
+                    <li>
+                      <div class="u-change-user">
+                          <p class="disabled">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <strong>Responsabile</strong>
+                            <br />
+                            <a href="#">Attiva questo ruolo</a>
+                          </p>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Testo</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="far fa-address-card" aria-hidden="true"></i> Icona e testo</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>Logout</span></a>
+                    </li>
+                  </ul>
+                </li>
+            
+                <li class="u-lang">
+                  <a href="#">
+                    <i class="fas fa-globe-americas" aria-hidden="true"></i><span>IT</span>
+                  </a>
+                  <ul class="menu">
+                    <li>
+                      <a href="https://www.google.it/?gws_rd=ssl">
+                        EN
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.google.it/?gws_rd=ssl">
+                        FR
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <li>
+                  <a href="" class="no-arrow">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    <span class="show-for-sr">Impostazioni</span>
+                  </a>
+                  <ul class="menu">
+                    <li>
+                      <a href="">Impostazioni generali</a>
+                    </li>
+                    <li>
+                      <a href="">Autorizzazioni</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>             <header class="u-header-left small-left">
+              <div class="grid-x grid-padding-x">
+                <div class="cell content medium-12">
+                  <a href="/">
+                    <img loading="lazy" class="logo" src="../assets/img/sigillo2x.png" alt="">
+                    <div class="text">
+                      <p class="alma-mater">Alma Mater Studiorum Università di Bologna</p>
+                      <p class="title">Nome dell'applicativo</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </header>            <main>
+              <div class="grid-x grid-padding-x">
+                <div class="small-12 cell">    
+                  <div class="u-breadcrumbs">
+                    <nav aria-label="You are here:" role="navigation">
+                      <ul class="breadcrumbs">
+                        <li><a href="#">Home - Nome dell'applicativo</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li class="disabled">Gene Splicing</li>
+                        <li><span class="show-for-sr">Current: </span> Cloning</li>
+                      </ul>
+                    </nav>
+                  </div>                  
+                  <h1>Esempio layout con tabella e controlli</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="u-top-bar">
+                      <div class="top-bar-box">
+                          <select>
+                              <option value="husker">Tutti i centri</option>
+                              <option value="starbuck">Starbuck</option>
+                              <option value="hotdog">Cesia</option>
+                              <option value="apollo">Apollo</option>
+                          </select>
+                      </div>
+                  
+                      <div class="top-bar-box u-button-group">       
+                          <button class="button alert" href="#">
+                              <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                              Elimina dati
+                          </button>
+                          <button class="button secondary" href="#">
+                              <i class="fa fa-download" aria-hidden="true"></i>
+                              Esporta dati
+                          </button>   
+                      </div>
+                      <div class="top-bar-box u-search-group">
+                          <select>
+                              <option value="husker">Utilizzatore</option>
+                              <option value="starbuck">John Smith</option>
+                              <option value="hotdog">Agatha Doe</option>
+                              <option value="apollo">Tony Vlad</option>
+                              </select>
+                          <input class="input-group-field" type="text" placeholder="Cerca...">
+                          
+                          <div class="input-group-button">
+                              <a class="button primary" href="#">
+                                  <span class="show-for-sr">Vai</span>
+                                  <i class="fa fa-search" aria-hidden="true"></i>
+                              </a>
+                          </div>
+                      </div>
+                  </div>                  <table class="hover stack">
+                    <thead>
+                      <tr>
+                        <th width="200">Table Header</th>
+                        <th><a href="">Table Header with link</a></th>
+                        <th width="150" class="sort"><a href="">Header to Sort</a></th>
+                        <th width="150">Stati</th>
+                        <th width="150">Azioni</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Content Goes Here</td>
+                        <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                        <td class="sort">Content Goes Here</td>
+                        <td><span class="u-state-default"><i class="fa fa-circle"></i>Default</span></td>
+                        <td>
+                          <ul class="dropdown menu" data-dropdown-menu data-disable-hover="true" data-click-open="true" data-close-on-click="true" data-close-on-click-inside="true">
+                              <li class="u-menu-tools">
+                                  <a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                                  <ul class="menu">
+                                      <li>
+                                          <a title="Opzione 1" href="#">
+                                              <span>Opzione 1</span>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a title="Opzione 2" href="#">
+                                              <span>Opzione 2</span>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a onclick="return confirm('Attenzione! ...');" title="Elimina" href="#">
+                                              <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                                              <span>Elimina</span>
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </li>
+                          </ul>                          </td>
+                      </tr>
+                      <tr>
+                        <td>Content Goes Here</td>
+                        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                        <td class="sort">Content Goes Here</td>
+                        <td><span class="u-state-completed"><i class="fa fa-circle"></i>Completato</span></td>
+                        <td>
+                          <ul class="dropdown menu" data-dropdown-menu data-disable-hover="true" data-click-open="true" data-close-on-click="true" data-close-on-click-inside="true">
+                              <li class="u-menu-tools">
+                                  <a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                                  <ul class="menu">
+                                      <li>
+                                          <a title="Opzione 1" href="#">
+                                              <span>Opzione 1</span>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a title="Opzione 2" href="#">
+                                              <span>Opzione 2</span>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a onclick="return confirm('Attenzione! ...');" title="Elimina" href="#">
+                                              <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                                              <span>Elimina</span>
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </li>
+                          </ul>                          </td>
+                      </tr>
+                      <tr>
+                        <td>Content Goes Here</td>
+                        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                        <td class="sort">Content Goes Here</td>
+                        <td><span class="u-state-progress"><i class="fa fa-circle"></i> In attesa</span></td>
+                        <td>
+                          <ul class="dropdown menu" data-dropdown-menu data-disable-hover="true" data-click-open="true" data-close-on-click="true" data-close-on-click-inside="true">
+                              <li class="u-menu-tools">
+                                  <a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                                  <ul class="menu">
+                                      <li>
+                                          <a title="Opzione 1" href="#">
+                                              <span>Opzione 1</span>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a title="Opzione 2" href="#">
+                                              <span>Opzione 2</span>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a onclick="return confirm('Attenzione! ...');" title="Elimina" href="#">
+                                              <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                                              <span>Elimina</span>
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </li>
+                          </ul>                        </td>
+                      </tr>
+                      <tr>
+                        <td>Content Goes Here</td>
+                        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                        <td class="sort">Content Goes Here</td>
+                        <td><span class="u-state-rejected"><i class="fa fa-circle"></i>Rifiutato</span></td>
+                        <td>
+                          <ul class="dropdown menu" data-dropdown-menu data-disable-hover="true" data-click-open="true" data-close-on-click="true" data-close-on-click-inside="true">
+                              <li class="u-menu-tools">
+                                  <a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                                  <ul class="menu">
+                                      <li>
+                                          <a title="Opzione 1" href="#">
+                                              <span>Opzione 1</span>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a title="Opzione 2" href="#">
+                                              <span>Opzione 2</span>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a onclick="return confirm('Attenzione! ...');" title="Elimina" href="#">
+                                              <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                                              <span>Elimina</span>
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </li>
+                          </ul>                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+                    <li class="pagination-previous disabled">Previous</li>
+                    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                    <li><a href="#" aria-label="Page 2">2</a></li>
+                    <li><a href="#" aria-label="Page 3">3</a></li>
+                    <li><a href="#" aria-label="Page 4">4</a></li>
+                    <li class="ellipsis"></li>
+                    <li><a href="#" aria-label="Page 12">12</a></li>
+                    <li><a href="#" aria-label="Page 13">13</a></li>
+                    <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </main>
+            <footer>
+              <div class="grid-container full">
+                <div class="grid-x expanded grid-padding-x">
+                <div class="large-12 cell">
+                  
+                  © 2021 - ALMA MATER STUDIORUM - Università di Bologna - Via Zamboni, 33 - 40126 Bologna - Partita IVA: 01131710376
+                  
+                  <div class="link-container">
+                    <a target="_blank" href="https://www.unibo.it/it/ateneo/privacy-e-note-legali/privacy/informative-sul-trattamento-dei-dati-personali">Privacy</a> |
+                    <a target="_blank" href="https://www.unibo.it/it/ateneo/privacy-e-note-legali/note-legali">Note legali</a> |
+                    <a target="_blank" href="https://github.com/unibo/application_theme">GitHub</a>
                   </div>
-                  </div>  
-                </main>
-                <footer> ... </footer>
-              </form>
-          </code>
-        </pre>
-      </div>
+                  
+                </div> 
+              </div>
+              </div>
+            </footer>
+            
+            
+          </form>
+        </code>
+      </pre>
+      
     </div>
   </div>
+</div>
   <script src="../assets/js/app.js"></script>
   <script>
     jQuery('pre code').each(function () {

@@ -13,7 +13,6 @@
 <body>
 
 <div class="u-content-wrapper">
-  <title>Layout per la guida (o faq)</title>
   <div class="u-barra-login" id="barra-login">
     <ul class="dropdown menu horizontal" data-dropdown-menu data-disable-hover="true" data-click-open="true">
       <li>
@@ -338,16 +337,360 @@
   </footer>
   
   
-  <script src="../assets/js/app.js"></script>
-  <script>
-    jQuery('pre code').each(function () {
-      var $block = jQuery(this);
-      $block.text($block.html());
-    });
-    hljs.highlightAll();
-  </script> 
-  
 </div>   
+
+
+<div class="grid-container styleguide">
+  <div class="grid-x">
+    <div class="large-12 cell">
+      <h2 class="margin-top-2">Istruzioni per l'implementazione di questo template</h2>
+      <h3>Copia questo HTML e incollalo all'interno del <code>&lt;body&gt;</code> della tua pagina html.</h3>
+      <p><strong>Nota:</strong> La classe "u-content-wrapper" può essere associata a un <kbd>div</kbd> o un altro elemento, ad esempio <kbd>form</kbd>.
+        L'importante è che sia il primo elemento dopo il <kbd>body</kbd> e che contenga tutta la pagina.</p>
+      
+      <pre>
+        <code class="html">
+          <div class="u-content-wrapper">
+            <div class="u-barra-login" id="barra-login">
+              <ul class="dropdown menu horizontal" data-dropdown-menu data-disable-hover="true" data-click-open="true">
+                <li>
+                  <a href="#">
+                    <img loading="lazy" alt="Logo Single Sign-On di Ateneo" src="../assets/img/ssologo36x36.png">     
+                    <span>Mario Rossi</span>
+                  </a>
+                  <ul class="menu">
+                    <li>
+                      <div class="u-change-user">
+                          <p class="disabled">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <strong>Responsabile</strong>
+                            <br />
+                            <a href="#">Attiva questo ruolo</a>
+                          </p>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Testo</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="far fa-address-card" aria-hidden="true"></i> Icona e testo</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>Logout</span></a>
+                    </li>
+                  </ul>
+                </li>
+            
+                <li class="u-lang">
+                  <a href="#">
+                    <i class="fas fa-globe-americas" aria-hidden="true"></i><span>IT</span>
+                  </a>
+                  <ul class="menu">
+                    <li>
+                      <a href="https://www.google.it/?gws_rd=ssl">
+                        EN
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.google.it/?gws_rd=ssl">
+                        FR
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <li>
+                  <a href="" class="no-arrow">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    <span class="show-for-sr">Impostazioni</span>
+                  </a>
+                  <ul class="menu">
+                    <li>
+                      <a href="">Impostazioni generali</a>
+                    </li>
+                    <li>
+                      <a href="">Autorizzazioni</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>             <header class="u-header-left small-left">
+              <div class="grid-x grid-padding-x">
+                <div class="cell content medium-12">
+                  <a href="/">
+                    <img loading="lazy" class="logo" src="../assets/img/sigillo2x.png" alt="">
+                    <div class="text">
+                      <p class="alma-mater">Alma Mater Studiorum Università di Bologna</p>
+                      <p class="title">Nome dell'applicativo</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </header>            <!-- breadcrumbs -->               
+            <div class="u-breadcrumbs">
+               <nav aria-label="You are here:" role="navigation">
+                  <ul class="breadcrumbs">
+                     <li class="home"><a href="#">Home - Nome dell'applicativo</a></li>
+                     <li><a href="#">Features</a></li>
+                     <li class="disabled">Gene Splicing</li>
+                     <li>
+                     <span class="show-for-sr">Current: </span> Cloning
+                     </li>
+                  </ul>
+               </nav>
+            </div>          
+            <div class="grid-x expanded grid-padding-x">
+                <nav class="large-2 cell nopadding">
+                  <ul class="menu vertical u-menu u-menu-main u-main-menu-icons">
+                    <li>
+                      <a href="">
+                        <i class="fa fa-home"></i>
+                        <span class="hide-for-sr-small-only">Home</span>
+                      </a>
+                    </li>
+                  
+                    <li class="selected">
+                      <a href="">
+                        <i class="fa fa-user"></i>
+                        <span class="hide-for-sr-small-only">Utenti</span>
+                      </a>
+                    </li>
+                  
+                  </ul>
+                </nav>
+          
+                <div class="large-8 cell padding-top-1 padding-bottom-1">
+                  <main class="grid-container">
+                    <div class="grid-x grid-margin-x">
+                        <div class="large-12 cell">
+                          <div class="u-search-header">
+                            <div class="text-center">
+                              <h1>Guida del servizio</h1>
+                              <p class="description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                          
+                            </div>
+                            <div class="input-group margin-top-1">
+                              <input class="input-group-field" placeholder="Cerca nella guida" type="text">
+                              <div class="input-group-button">
+                                  <a class="button primary" href="#">
+                                      <span class="show-for-sr">Vai</span>
+                                      <i class="fa fa-search" aria-hidden="true"></i>
+                                  </a>
+                                </div>
+                            </div>
+          
+                            <ul class="accordion margin-top-1" data-accordion="" data-deep-link="true" data-update-history="true">
+                              <li class="accordion-item" data-accordion-item="">
+                                <a href="#deeplink1" class="accordion-title">Posso utilizzare la mia smart card?</a>
+                                <div class="accordion-content" data-tab-content="" id="deeplink1">
+                                  
+                              <p>
+                                  In home page è possibile inserire una breve nota biografica (max 1000 battute spazi inclusi) che descriva le informazioni più rilevanti relative al proprio percorso formativo e professionale. Se il campo è compilato si attiva un link automatico alla pagina Curriculum Vitae, che ovviamente deve essere pubblicato.
+                                </p>
+                                <img loading="lazy" src="http://placehold.it/120x120" class="float-left">
+                                <p>
+                                  La nota può essere inserita solo sulla versione italiana del sito oppure su entrambe le versioni predisponendo un testo in italiano e uno in inglese.
+                                </p>
+          
+                                <h3>Esempio di Nota biografica:</h3>
+                                <p>
+                                  Professore associato all'Università di Bologna dal 2005, svolge le sue ricerche nell'ambito dell'antropologia culturale. Gli interessi di ricerca sono rivolti in particolare alle forme simboliche del mito, ai rituali di passaggio e alla critica dell'autorità etnografica. Attualmente incentra la sua ricerca sul tema della permanenza e della funzione del mito nelle società industrializzate contemporanee.
+                                  <br>
+                                  Impegnato in progetti di ricerca nazionali e internazionali, collabora con diversi Istituti europei. Autore di numerose pubblicazioni ha ricevuto diversi premi e riconoscimenti da prestigiosi Centri e Istituti.
+          
+                                </p>
+                                  <h4>Note per operatore</h4>
+                                  <p>
+                                    Per segnalazioni: <a href="mailto:webdesk@unibo.it">webdesk@unibo.it</a> 
+                                  </p>
+                                </div>
+                              
+                              </li>
+                              <li class="accordion-item" data-accordion-item="">
+                                <a href="#deeplink2" class="accordion-title">Seamlessly enhance fully researched e-tailers.</a>
+                                <div class="accordion-content" data-tab-content="" id="deeplink2">
+                                  
+                              <p>Sotto il nome del titolare del sito è presente:</p>
+                              
+                              <img loading="lazy" src="http://placehold.it/120x120" class="float-right">
+                              <ul>
+                                <li>la qualifica; </li>
+                                <li>sede della struttura di appartenenza;</li>
+                                <li>il Settore Scientifico Disciplinare (per i docenti e ricercatori);</li>
+                                <li>eventuali cariche o incarichi.</li>
+                              </ul>
+                              
+                              <p>
+                                Queste informazioni sono prelevate automaticamente dai database di Ateneo. Non possono quindi essere modificate direttamente dal Sito web personale ed eventuali anomalie vanno segnalate al Supporto.
+                              </p>
+                                <h4>Note per operatore</h4>
+                                <p>
+                                  La struttura di appartenenza compare sempre sotto la qualifica.
+                                </p>
+                                <p>
+                                  Per Assegnisti e Docenti a contratto, che non hanno una sede di servizio, la sede di appartenenza compare nella sezione Contatti e nella rubrica. Nel caso ce ne fossero più d'una nella sezione “Contatti” compariranno tutte, mentre in Rubrica comparirà solo la prima.
+                                </p>
+                                <p>
+                                  Se un TA svolge un'attività di Professore a contratto, è Dottorando o ha altra qualifica che prevede l'attivazione del Sito web personale: 
+                                </p>
+                                <ul>
+                                  <li>
+                                  sulla rubrica rimangono indicate entrambe le qualifiche e il recapito telefonico;
+                                  </li>
+                                  <li>
+                                  sul Sito web personale non compare la qualifica da TA, non compaiono i numeri di telefono e fax (né i principali né i numeri aggiuntivi eventualmente inseriti su DSA). L'unico modo per il titolare di inserire dei recapiti sarà scriverli redazionalmente nel box “Orario di ricevimento”. Eventuali cariche legate alla qualifica di TA (es. Componente Comitato unico di garanzia per le pari opportunità-CUG) non compaiono.
+                                  </li>
+                                </ul>
+                                
+                                <img loading="lazy" src="http://placehold.it/120x120" class="float-center">
+                                <p>Le cariche prelevate dal database del personale e pubblicate sul sito sono:</p>
+                                <ul>
+                                  <li>
+                                  Magnifico rettore;</li>
+                                  <li>
+                                  Prorettore vicario;</li>
+                                  <li>
+                                  Prorettore;</li>
+                                  <li>
+                                  Presidente Scuola;</li>
+                                  <li>
+                                  Vice-presidente Scuola;</li>
+                                  <li>
+                                  Coordinatore consiglio di Campus;</li>
+                                  <li>
+                                  Direttore Dipartimento;</li>
+                                  <li>
+                                  Coordinatore corso di studio;</li>
+                                  <li>
+                                  Presidente Comitato unico di garanzia per le pari opportunità-CUG;</li>
+                                  <li>
+                                  Membro Comitato unico di garanzia per le pari opportunità-CUG;</li>
+                                  <li>
+                                  Direttore Centro Interdipartimentale;</li>
+                                  <li>
+                                  Direttore Centro Interdipartimentale di Ricerca;</li>
+                                  <li>
+                                  Direttore Scuola di Specializzazione;</li>
+                                  <li>
+                                  Direttore Scuola Superiore;</li>
+                                  <li>
+                                  Direttore Collegio Superiore;</li>
+                                  <li>
+                                  Presidente Azienda Agraria;</li>
+                                  <li>
+                                  Presidente Sistema Museale di Ateneo;</li>
+                                  <li>
+                                  Presidente Istituto di Studi Superiori;</li>
+                                  <li>
+                                  Presidente Sistema Bibliotecario di Ateneo.</li>
+                                  </ul>
+                                  <p>
+                                  <strong>Altre cariche:</strong>
+                                  Direttore di: Scuola Europea di Alti Studi Tributari; Centro di Studi Avanzati sul Turismo; Istituto di Studi Avanzati; Servizio Veterinario Centralizzato per la protezione degli animali utilizzati a fini sperimentali; Centro di Ricerca e Formazione sul Settore Pubblico; Centro di Ricerca sui Sistemi Elettronici per l'Ingegneria dell'Informazione e delle Telecomunicazioni «Ercole De Castro».</p>
+                                
+                                <h4>Note per operatore</h4>
+                                <p>Per segnalazioni e aggiornamenti relativi a <strong>nome, cognome, sede di appartenenza, cariche, SSD, qualifiche</strong>, contattare:</p>
+                                <ul>
+                                  <li>
+                                    Professori di ruolo (I e II fascia a tempo ind.) e ricercatori a tempo ind.: <a href="mailto:apos.carrieredocenti@unibo.it">apos.carrieredocenti@unibo.it</a>
+                                  </li>
+                                  <li>
+                                    Professori a contratto: <a href="mailto:apos.profacontratto@unibo.it">apos.profacontratto@unibo.it</a>
+                                  </li>
+                                  <li>
+                                    Ricercatori a tempo det.: <a href="mailto:apos.ricercatoritempodeterminato@unibo.it">apos.ricercatoritempodeterminato@unibo.it</a>
+                                  </li>
+                                  <li>
+                                    Assegnisti: <a href="mailto:apos.assegnidiricerca@unibo.it">apos.assegnidiricerca@unibo.it</a>
+                                  </li>
+                                  <li>
+                                    Dottorandi: <a href="mailto:udottricerca@unibo.it">udottricerca@unibo.it</a>
+                                  </li>
+                                  <li>
+                                    Cel: <a href="mailto:apos.ricercatoritempodeterminato@unibo.it">apos.ricercatoritempodeterminato@unibo.it</a>
+                                  </li>
+                                  <li>
+                                    Tutor: <a href="mailto:apos.profacontratto@unibo.it">apos.profacontratto@unibo.it</a>
+                                  </li>
+                                  <li>
+                                    Formatori Linguistici: <a href="mailto:apos.profacontratto@unibo.it">apos.profacontratto@unibo.it</a>
+                                  </li>
+                                </ul>
+                                <p>
+                                  Per segnalazioni su traduzioni in inglese delle informazioni: <a href="mailto:webdesk@unibo.it">webdesk@unibo.it</a> 
+                                </p>
+          
+                            
+                                </div>
+                              </li>
+                              <li class="accordion-item" data-accordion-item="">
+                                <a href="#deeplink3" class="accordion-title">Seamlessly ggrid-x clicks-and-mortar infrastructures whereas.</a>
+                                <div class="accordion-content" data-tab-content="" id="deeplink3">
+                                  I would start in the open state, due to using the `is-active` state class.
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+          
+                        </div>
+                      </div>
+                    </main>
+                </div>
+                <aside class="large-2 cell">
+                    <div class="u-card-option contact colored-icon">
+                      <i class="fa fa-2x fa-life-ring" aria-hidden="true"></i>
+                      <h2>Supporto dell'applicativo Firma digitale remota</h2>
+                      <p>Contattaci per avere informazioni, segnalare un'anomalia, inviare un suggerimento.</p>
+                      <div class="info">
+                          <h3>CeSIA - Settore Sistemi e middleware - Ufficio Unità specialistica Identità digitale </h3>
+                          <p class="email">
+                             <i class="far fa-envelope" aria-hidden="true"></i>cesia.firmadigitale@unibo.it
+                          </p>
+                          <p>
+                            <i class="fas fa-phone-alt" aria-hidden="true"></i> 051 202020
+                          </p>
+                          <p>
+                              <i class="far fa-clock" aria-hidden="true"></i> Orari di apertura: dal Lunedì al Giovedì 9-13; 14-17; Venerdì 9-14</p>
+                        </div>
+                    </div>
+          
+                </aside>
+              </div>
+            <footer>
+              <div class="grid-container full">
+                <div class="grid-x expanded grid-padding-x">
+                <div class="large-12 cell">
+                  
+                  © 2021 - ALMA MATER STUDIORUM - Università di Bologna - Via Zamboni, 33 - 40126 Bologna - Partita IVA: 01131710376
+                  
+                  <div class="link-container">
+                    <a target="_blank" href="https://www.unibo.it/it/ateneo/privacy-e-note-legali/privacy/informative-sul-trattamento-dei-dati-personali">Privacy</a> |
+                    <a target="_blank" href="https://www.unibo.it/it/ateneo/privacy-e-note-legali/note-legali">Note legali</a> |
+                    <a target="_blank" href="https://github.com/unibo/application_theme">GitHub</a>
+                  </div>
+                  
+                </div> 
+              </div>
+              </div>
+            </footer>
+            
+            
+          </div>   
+          
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
+<script src="../assets/js/app.js"></script>
+<script>
+  jQuery('pre code').each(function () {
+    var $block = jQuery(this);
+    $block.text($block.html());
+  });
+  hljs.highlightAll();
+</script> 
+
 
 </body>
 </html>
