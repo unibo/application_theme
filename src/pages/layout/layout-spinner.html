@@ -1,4 +1,3 @@
-<title>Unibo Tabella</title>
 <form method="post" action="/tol/mobile/" class="u-content-wrapper" id="mainForm">
   {{> u_barra_login}}
   {{> u_header_left}}
@@ -102,9 +101,144 @@
     </div>
   </main>
   {{> footer}}
+  <div class="u-spinner-container">
+    <div class="u-spinner"></div>
+  </div>
 </form>
-<div class="u-spinner-container">
-  <div class="u-spinner"></div>
+
+<style>
+  .u-content-wrapper{
+    position: relative;
+  }
+  .u-spinner-container{
+    position: absolute;
+  }
+
+</style>
+<div class="grid-container styleguide">
+  <div class="grid-x">
+    <div class="large-12 cell">
+      <h2 class="margin-top-2">Istruzioni per l'implementazione di questo template</h2>
+      <h3>Copia questo HTML e incollalo all'interno del <code>&lt;body&gt;</code> della tua pagina html.</h3>
+      <p><strong>Nota:</strong> Lo spinner è fatto esclusivamente in css e per 
+        visualizzare l'elemento va inserito <code>&lt;div class="u-spinner-container"&gt;</code> in fondo alla pagina.
+      </p>
+        
+
+      <pre>
+        <code class="html">
+          <form method="post" action="/tol/mobile/" class="u-content-wrapper" id="mainForm">
+            {{> u_barra_login}}
+            {{> u_header_left}}
+            <main class="grid-container">
+              <div class="grid-x grid-padding-x">
+                <div class="small-12 cell">    
+                  <div class="u-breadcrumbs">
+                    <nav aria-label="You are here:" role="navigation">
+                      <ul class="breadcrumbs">
+                        <li><a href="#">Home - Nome dell'applicativo</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li class="disabled">Gene Splicing</li>
+                        <li><span class="show-for-sr">Current: </span> Cloning</li>
+                      </ul>
+                    </nav>
+                  </div>                  
+                
+                  <h1>Esempio layout con tabella e controlli</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  
+                  <div class="grid-x grid-padding-x padding-top-big">
+                    <div class="medium-5 cell">
+                      <button class="button secondary" href="#">Aggiorna</button>
+                      <button class="button warning" href="#">Reset</button>
+                      <button class="button alert" type="button">
+                        <!-- Screen readers will see "close" -->
+                        <span class="show-for-sr">Elimina</span>
+                        <!-- Visual users will see the X, but not the "Close" text -->
+                        <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <div class="medium-3 cell">
+                      <select class="float-left">
+                        <option value="husker">Husker</option>
+                        <option value="starbuck">Starbuck</option>
+                        <option value="hotdog">Hot Dog</option>
+                        <option value="apollo">Apollo</option>
+                      </select>
+                    </div>
+                    <div class="medium-4 cell">
+                      <div class="input-group">
+                        <input class="input-group-field" type="text" placeholder="Cerca...">
+                        
+                        <div class="input-group-button">
+                          <a class="button primary" href="#">Vai</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <table class="hover stack">
+                    <thead>
+                      <tr>
+                        <th width="200">Table Header</th>
+                        <th>Table Header</th>
+                        <th width="150">Table Header</th>
+                        <th width="150">Stati</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Content Goes Here</td>
+                        <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                        <td>Content Goes Here</td>
+                        <td><span class="u-state-default"><i class="fa fa-circle"></i>Default</span></td>
+                      </tr>
+                      <tr>
+                        <td>Content Goes Here</td>
+                        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                        <td>Content Goes Here</td>
+                        <td><span class="u-state-completed"><i class="fa fa-circle"></i>Completato</span></td>
+                      </tr>
+                      <tr>
+                        <td>Content Goes Here</td>
+                        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                        <td>Content Goes Here</td>
+                        <td><span class="u-state-progress"><i class="fa fa-circle"></i> In attesa</span></td>
+                      </tr>
+                      <tr>
+                        <td>Content Goes Here</td>
+                        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                        <td>Content Goes Here</td>
+                        <td><span class="u-state-rejected"><i class="fa fa-circle"></i>Rifiutato</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+                    <li class="pagination-previous disabled">Previous</li>
+                    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                    <li><a href="#" aria-label="Page 2">2</a></li>
+                    <li><a href="#" aria-label="Page 3">3</a></li>
+                    <li><a href="#" aria-label="Page 4">4</a></li>
+                    <li class="ellipsis"></li>
+                    <li><a href="#" aria-label="Page 12">12</a></li>
+                    <li><a href="#" aria-label="Page 13">13</a></li>
+                    <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </main>
+            {{> footer}}
+          </form>
+          <div class="u-spinner-container">
+            <div class="u-spinner"></div>
+          </div>
+        </code>
+      </pre>
+      
+    </div>
+  </div>
 </div>
 {{> end_of_body}}
 

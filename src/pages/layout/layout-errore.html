@@ -13,5 +13,39 @@
     </div>
   </main>
   {{> footer}}
-  {{> end_of_body}}
 </form>
+
+
+<div class="grid-container styleguide">
+  <div class="grid-x">
+    <div class="large-12 cell">
+      <h2 class="margin-top-2">Istruzioni per l'implementazione di questo template</h2>
+      <h3>Copia questo HTML e incollalo all'interno del <code>&lt;body&gt;</code> della tua pagina html.</h3>
+      <p><strong>Nota:</strong> La classe "u-content-wrapper" può essere associata a un <kbd>div</kbd> o un altro elemento, ad esempio <kbd>form</kbd>.
+        L'importante è che sia il primo elemento dopo il <kbd>body</kbd> e che contenga tutta la pagina.</p>
+      
+      <pre>
+        <code class="html">
+          <form method="post" action="/" class="u-content-wrapper" id="mainForm">
+            {{> u_barra_login}}
+            {{> u_header}}
+            <main>
+              <div class="grid-x grid-padding-x">
+                <div class="medium-6 medium-offset-3 cell padding-top-1 padding-bottom-1">
+                  <div class="callout alert">
+                    <h1>Errore 404</h1>
+                    <p>La pagina che stai cercando non è stata trovata.</p>
+                    <a href="#">Torna alla pagina principale</a>
+                  </div>
+                </div>
+              </div>
+            </main>
+            {{> footer}}
+          </form>
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
+
+{{> end_of_body}}
