@@ -28,11 +28,11 @@
             font-size: 1.1em;
             padding: .5em 0 0;
         }
-        .styleguide section li{
+        .styleguide section > li{
             margin-bottom: 1em;
            
         } 
-        .styleguide section li li{
+        .styleguide section > li > li{
             margin-bottom: .5em;
         }
     
