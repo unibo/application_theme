@@ -7,7 +7,7 @@
     position: relative;
     padding-bottom: 2em;
     padding-right: 2em;
-    padding-left: 6em;
+    padding-left: 5em;
     
     &:before {
       content: "";
@@ -26,7 +26,6 @@
         color: $light-black;
         
         &:before {
-          margin-left: -31px;
           color: currentColor;
         }
       }
@@ -41,20 +40,12 @@
       &:before {
         display: none;
       }
-      a {
-        padding-bottom: 0;
-        
-        &:before {
-          margin-left: -28px;
-          top: 0;
-        }
-      }
     }
     a {
       font-size: 1.15384615em;
       line-height: 19px;
       color: $light-black;
-      display: block;
+      display: inline-block;
       margin-bottom: 0.5em;
       padding-top: 3px;
       text-decoration: none;
@@ -63,7 +54,7 @@
         counter-increment: step;
         content: counter(step);
         position: absolute;
-        margin-left: -44px;
+        left: 33px;
         top: 0;
         font-size: 16px;
         line-height: 20px;
@@ -105,9 +96,6 @@
     &.current-step a {
       color: $primary-color;
       
-      &:before {
-        margin-left: -31px;
-      }
     }
   }
   .current-step a {
