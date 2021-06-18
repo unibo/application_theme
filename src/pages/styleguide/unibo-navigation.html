@@ -7,10 +7,53 @@ title: Style Guide Unibo Navigation
 <h2>Componenti custom Unibo per la navigazione.</h2>
 
 <section>
-  <h3 id="unibo-menu">Unibo Menu</h3>
-  <p class="section-description">
-    Menu Unibo utilizzabile fino a 6 voci.
-  </p>
+
+	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+					
+          <h3 id="unibo-menu">Unibo Menu</h3>
+          <p>
+            Menù Unibo con icone utilizzabile fino a 6 voci, 
+            per essere visualizzato correttamente nella versione in responsive.
+            <br />
+            Se il menù è su più livelli, nella versione responsive non vengono visualizzati.
+          </p>
+          <p>Si può utilizzare la classe <code>hide-for-sr-small-only</code> nel caso in cui 
+            si voglia nascondere l'etichetta per i dispositivi più piccoli mantenendo la leggibilità per Screen Reader</p>
+
+				<p>Ci sono due versioni di questo elemento:</p>
+					<ul>
+						<li>
+							<a href="#u-menu-basic">Menù Basic</a>
+						</li>
+						<li>
+							<a href="#u-menu-nested">Menù con più livelli</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-5 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_menu.scss</kbd>
+					</div>
+				</div>
+				<div class="large-7 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classe da utilizzare:</strong> 
+					<kbd>u-menu-main</kbd>
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
+	<h4 class="section-description" id="u-menu-basic">Menu Basic</h4>
+  
   
   <pre>
     <code class="html">
@@ -25,11 +68,8 @@ title: Style Guide Unibo Navigation
 </section>
 
 <section>
-  <h3 id="unibo-menug">Unibo Menu Gerarchico</h3>
-  <p class="section-description">
-    Menu Unibo gerarchico su due livelli
-  </p>
-  
+  <h4 class="section-description" id="unibo-menug">Unibo Menu Gerarchico su due livelli</h4>
+
   <pre>
     <code class="html">
       {{> u_main_menu_nested}}
@@ -42,29 +82,44 @@ title: Style Guide Unibo Navigation
   </div>
 </section>
 
-<section>
-  <h3 id="resp_nav">Unibo Responsive Navigation</h3>
-  <pre>
-    <code>
-      {{> u_responsive_navigation}}           
-    </code>
-  </pre>
-  <div class="grid-x grid-padding-x">
-    <div class="medium-4 cell">
-      {{> u_responsive_navigation}}   
-    </div>
-  </div>
-</section>
 
 <section>
-  <h3 id="unibo-menu">Unibo Breadcrumbs/path di navigazione <kbd>(u-breadcrumbs)</kbd></h3>
-  <p class="section-description">
-    Percorso di navigazione con spaziature e enfasi su homepage
-  </p>
-  <p>Utilizza di base le Breadcrumbs di Foundation.</p>
-  <p>Possibilità di inserire un percorso di navigazione personalizzato con spaziature differenti e con enfasi sul link alla homepage.</p>
-  <p>E' possibile inserire le breadcrumbs immediatamente dopo la testata <kbd>header</kbd> e all'interno della colonna principale.</p>
   
+	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+					
+          <h3 id="unibo-menu">Unibo Breadcrumbs/path di navigazione</h3>
+          <p>
+            Percorso di navigazione con spaziature e enfasi su homepage
+          </p>
+          <p>Utilizza di base le Breadcrumbs di Foundation.</p>
+          <p>Possibilità di inserire un percorso di navigazione personalizzato con spaziature differenti e con enfasi sul link alla homepage.</p>
+          <p>E' possibile inserire le breadcrumbs immediatamente dopo la testata <kbd>header</kbd> e all'interno della colonna principale.</p>
+          
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-5 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_breadcrumbs.scss</kbd>
+					</div>
+				</div>
+				<div class="large-7 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classe da utilizzare:</strong> 
+					<kbd>u-breadcrumbs</kbd>
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
+  
+ 
   <pre>
     <code class="html">
         {{> u_breadcrumbs}}   
@@ -78,17 +133,43 @@ title: Style Guide Unibo Navigation
 </section>
 
 <section>
-  <h3 id="unibo-topbar">Unibo Top Bar</h3>
-  <p>Per utilizzare la top bar custom Unibo inserire la classe u-top-bar. 
-    <br>
-    Questo componente sfrutta la proprietà css <kbd>display: flex</kbd> e agisce come fosse una griglia fluida in base agli elementi contenuti in esso.
-    Per poter sfruttare la fluidità del componente, i box al suo interno devono avere la classe <kbd>.top-bar-box</kbd>.
-    All'interno di <kbd>.top-bar-box</kbd> possono essere inseriti input, select e pulsanti.
-    <br>
-    Di default un elemento <kbd>.top-bar-box</kbd> si allarga a seconda dello spazio disponibile e se non c'è più spazio va a capo.
-    <br>
-    Un elemento <kbd>.top-bar-box</kbd> può avere anche classe <kbd>.u-button-group</kbd>, pensato appositamente per pulsanti che si allineano a destra della pagina.
-    </p>
+  <div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">                   
+					<h3 id="unibo-topbar">Unibo Top Bar</h3>
+        
+          <p>Per utilizzare la top bar custom Unibo inserire la classe u-top-bar. 
+          <br>
+          Questo componente sfrutta la proprietà css <kbd>display: flex</kbd> e agisce come fosse una griglia fluida in base agli elementi contenuti in esso.
+          Per poter sfruttare la fluidità del componente, i box al suo interno devono avere la classe <kbd>.top-bar-box</kbd>.
+          All'interno di <kbd>.top-bar-box</kbd> possono essere inseriti input, select e pulsanti.
+          <br>
+          Di default un elemento <kbd>.top-bar-box</kbd> si allarga a seconda dello spazio disponibile e se non c'è più spazio va a capo.
+          <br>
+          Un elemento <kbd>.top-bar-box</kbd> può avere anche classe <kbd>.u-button-group</kbd>, pensato appositamente per pulsanti che si allineano a destra della pagina.
+          </p>
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-5 cell">
+					<div class="icon-left">
+					<i class="fab fa-css3-alt fa-2x"></i>
+					<strong>SCSS da includere:</strong> <kbd>u_top_bar.scss</kbd>
+					</div>
+				</div>
+				<div class="large-7 cell">
+					<div class="icon-left">
+					<i class="far fa-file-code fa-2x"></i>
+					<strong>Classe da utilizzare:</strong> 
+					<kbd>u-top-bar</kbd>
+					</div>
+					
+				</div>
+			</div>
+		</div>  
+	</div>
+  
   <pre>
     <code>
       {{> u_top_bar_simple}}   

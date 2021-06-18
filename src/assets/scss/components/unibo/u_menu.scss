@@ -1,4 +1,5 @@
-.u-menu {
+
+.u-menu-main {
   margin: 0;
   list-style-type: none;
 	
@@ -8,13 +9,19 @@
     position: relative;
     font-weight: 400;
     transition: background-color 0.3s;
-  
+    border-bottom: 1px solid $medium-gray;
+    
+
     a {
       padding: $padding-xs $padding-xs $padding-xs $padding-small;
       text-decoration: none;
       display: block;
       line-height: inherit;
-      
+      color: $light-black;
+      &:hover {
+        background-color: lighten($secondary-color, 47%);
+      }
+
       i, 
       svg {
         vertical-align: baseline;
@@ -65,18 +72,7 @@
       }
     }
   }
-}
-
-.u-menu-main {
   li {
-    border-bottom: 1px solid $medium-gray;
-    
-    a {
-      color: $light-black;
-      &:hover {
-        background-color: lighten($secondary-color, 47%);
-      }
-    }
   }
   .selected {
     > a {
@@ -89,82 +85,24 @@
   }
 }
 
-.u-menu-off-canvas {
-  li {
-    border-bottom: 1px solid $dark-gray;
-    
-    &:hover {
-      background-color: $theme-color;
-    }
-    a {
-      color: $white;
-      
-      &:focus {
-        outline: none;
-      }
-    }
-    &.close {
-      a {
-        height: 48px;
-      }
-    }
-    &.is-submenu-item {
-      background-color: $dark-gray;
-      &:hover {
-        background-color: $theme-color;
-      }
-    }
-  }
-  .selected {
-    > a {
-      color: $e-gray; 
-      
-      &:before {
-        background-color: $theme-color;
-      }
-    }
-  }
-  .is-accordion-submenu-parent {
-    > a {
-      &:after {
-        border-color: $white transparent transparent;
-      }
-    }
-  }
-}
-[data-whatinput="keyboard"] {
-  .u-menu-off-canvas {
-    li {
-      a {  
-        &:focus {
-          &:before {
-            content: "";
-            width: 6px;
-            position: absolute;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-color: $white;
-          }
-        }
-      }
-    }
-  }
-}
+
 
 @include breakpoint(medium down){
 
-  .u-main-menu-icons {
+  .u-menu-main {
     display: flex;
     justify-content: center;
     text-align: center;
 
-    &.menu.vertical {
+    &.vertical {
       flex-direction: row;
     }
     
     > li {
       flex-grow: 1;
+    }
+    .nested{
+      display: none;
     }
     
     .selected {
