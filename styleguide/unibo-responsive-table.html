@@ -26,7 +26,7 @@
         <div class="large-10 cell styleguide">
           
           <h1 class="huge">Style Guide Unibo Responsive Table</h1>
-          <h2>Tabelle responsive personalizzate sviluppate appositamente per Unibo</h2>
+          <h2>Tabelle responsive personalizzate e sviluppate appositamente per Unibo</h2>
           <p>
           Esistono diverse soluzioni in css e js per creare delle tabelle responsive. <br>
           Per questo pacchetto non abbiamo previsto librerie js, ma abbiamo deciso di adottare soluzioni basate sull'uso di solo css.
@@ -36,135 +36,104 @@
           Su <a href="https://css-tricks.com/accessible-simple-responsive-tables/">css-tricks.com</a> ci sono 4 proposte, da cui abbiamo
           preso spunto per sviluppare le nostre soluzioni:
           </p>
-          <img loading="lazy" class="float-center" src="https://cdn.css-tricks.com/wp-content/uploads/2016/03/types-of-responsive-tables.gif" alt="esempi tabelle responsive">
+          <img loading="lazy" src="https://i1.wp.com/css-tricks.com/wp-content/uploads/2016/03/types-of-responsive-tables.gif" alt="esempi tabelle responsive">
           <p>
-          La soluzione <strong>squish</strong> è il comportamento di base di una tabella senza nessuno stile applicato.<br>
-          La soluzione <strong>scroll</strong> è la soluzione adottata dal pacchetto di Foundation base visibile nella
-          pagina <a href="foundation%20-%20containers.html#tables">Foundation Containers.html</a> nella sezione "Scrolling Table".<br>
-          Le soluzioni <strong>collapse rows</strong> e <strong>collapse columns</strong> sono di seguito sviluppate:
+            La soluzione <strong>squish</strong> è il comportamento di base di una tabella senza nessuno stile applicato.
           </p>
-          <section>
-            <h3 id="unibo-collapse-row">Tabella orientata per colonne</h3>
-            <p class="section-description">Informazioni per colonna</p>
-            <p>
-              Nella maggior parte dei casi, le informazioni delle tabelle sono disposte per colonne. In questo caso, nel
-              responsive il <kbd>thead</kbd> e il <kbd>tbody</kbd> vengono affiancati.
-            </p>
-            <pre>
-              <code class="html">
-                <table class="collapse-column">
-                    <thead>
-                        <tr>
-                            <th>Eddard Stark</th>
-                            <th>Jon Snow</th>
-                            <th>Arya Stark</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Has a sword named Ice</td>
-                            <td>Has a sword named Longclaw</td>
-                            <td>Has a sword named Needle</td>
-                        </tr>
-                        <tr>
-                            <td>No direwolf</td>
-                            <td>Direwolf: Ghost</td>
-                            <td>Direwolf: Nymeria</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Lord of Winterfell</strong></td>
-                            <td><strong>Knows nothing</strong></td>
-                            <td><strong>No one</strong></td>
-                        </tr>
-                    </tbody>
-                    
-                </table>    </code>
-            </pre>
-            <div class="grid-x grid-padding-x">
-              <div class="cell large-4">
-                <table class="collapse-column">
-                    <thead>
-                        <tr>
-                            <th>Eddard Stark</th>
-                            <th>Jon Snow</th>
-                            <th>Arya Stark</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Has a sword named Ice</td>
-                            <td>Has a sword named Longclaw</td>
-                            <td>Has a sword named Needle</td>
-                        </tr>
-                        <tr>
-                            <td>No direwolf</td>
-                            <td>Direwolf: Ghost</td>
-                            <td>Direwolf: Nymeria</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Lord of Winterfell</strong></td>
-                            <td><strong>Knows nothing</strong></td>
-                            <td><strong>No one</strong></td>
-                        </tr>
-                    </tbody>
-                    
-                </table>    </div>
-            </div>
-          </section>
+            La soluzione <strong>scroll</strong> è la soluzione adottata da Foundation base visibile sulla
+            documentazione <a href="https://get.foundation/sites/docs/table.html#scrolling-table">nella sezione "Scrolling Table"</a> .
+          </p>
+          <p>
+          La soluzione <strong>collapse rows</strong> è sviluppata di seguito nella sezione <a href="#unibo-collapse-row">Tabella orientata per righe</a>.
+          </p>
+          Infine, la soluzione <strong>collapse columns</strong> non è possibile
+          svilupparla come nella proposta di css-tricks indicata sopra, senza modificarne l'html. <br />
+          Per questo motivo, le tabelle con orientamento in colonna sono fatte con una variante ad hoc che non prevede l'utilizzo di js o etichette nascoste.
+          </p>
+          <p>
+          Tutte le soluzioni precedenti sono ottimali nel caso siano tabelle con valori semplici.
+          <br />
+          Per tabelle più complesse si vedano le <a href="#unibo-collapse-mixed">tabelle con orientamento misto</a>.
+          </p>
           
           <section>
-          <h3 id="unibo-collapse-row">Tabella orientata per righe</h3>
-          <p class="section-description">Informazioni per riga</p>
-          <p>
-            Le informazioni della tabella sono disposte per riga, quindi nel responsive le informazioni saranno
-            visualizzate come una tabella inline.
-          </p>
+          
+          	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+          					
+                    <h3 id="unibo-collapse-row">Tabella orientata per righe</h3>
+                    <p>
+                      Le informazioni della tabella sono disposte per riga, quindi nel responsive le informazioni saranno
+                      visualizzate come una tabella inline.
+                    </p>
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-5 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_responsive_table.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-7 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classe da utilizzare:</strong> 
+          					<kbd>collapse-row</kbd>
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
           <pre>
             <code class="html">
                 <table class="collapse-row">
                     <tbody>
                         <tr>
-                            <th>Eddard Stark</th>
-                            <td>Has a sword named Ice</td>
-                            <td>No direwolf</td>
-                            <td><strong>Lord of Winterfell</strong></td>
+                            <th>Harry Potter</th>
+                            <td>Grifondoro</td>
+                            <td>Bacchetta formata da legno di Agrifoglio e un nucleo di Piuma di Fenice</td>
+                            <td>Patronus Cervo</td>
                         </tr>
                         <tr>
-                            <th>Jon Snow</th>
-                            <td>Has a sword named Longclaw</td>
-                            <td>Direwolf: Ghost</td>
-                            <td><strong>Knows nothing</strong></td>
+                            <th>Severus Piton</th>
+                            <td>Serpeverde</td>
+                            <td>Bacchetta formata da betulla e crine di unicorno</td>
+                            <td>Patronus Cerva</td>
                         </tr>
                         <tr>
-                            <th>Arya Stark</th>
-                            <td>Has a sword named Needle</td>
-                            <td>Direwolf: Nymeria</td>
-                            <td><strong>No one</strong></td>
+                            <th>Hermione Granger</th>
+                            <td>Corvonero</td>
+                            <td>Bacchetta formata da vite e corda di cuore di drago</td>
+                            <td>Patronus Lontra</td>
                         </tr>
                     </tbody>
                 </table>  </code>
           </pre>
           <div class="grid-x grid-padding-x">
-            <div class="cell large-4">
+            <div class="cell large-10">
                <table class="collapse-row">
                    <tbody>
                        <tr>
-                           <th>Eddard Stark</th>
-                           <td>Has a sword named Ice</td>
-                           <td>No direwolf</td>
-                           <td><strong>Lord of Winterfell</strong></td>
+                           <th>Harry Potter</th>
+                           <td>Grifondoro</td>
+                           <td>Bacchetta formata da legno di Agrifoglio e un nucleo di Piuma di Fenice</td>
+                           <td>Patronus Cervo</td>
                        </tr>
                        <tr>
-                           <th>Jon Snow</th>
-                           <td>Has a sword named Longclaw</td>
-                           <td>Direwolf: Ghost</td>
-                           <td><strong>Knows nothing</strong></td>
+                           <th>Severus Piton</th>
+                           <td>Serpeverde</td>
+                           <td>Bacchetta formata da betulla e crine di unicorno</td>
+                           <td>Patronus Cerva</td>
                        </tr>
                        <tr>
-                           <th>Arya Stark</th>
-                           <td>Has a sword named Needle</td>
-                           <td>Direwolf: Nymeria</td>
-                           <td><strong>No one</strong></td>
+                           <th>Hermione Granger</th>
+                           <td>Corvonero</td>
+                           <td>Bacchetta formata da vite e corda di cuore di drago</td>
+                           <td>Patronus Lontra</td>
                        </tr>
                    </tbody>
                </table>  </div>
@@ -172,15 +141,133 @@
           </section>    
           
           <section>
-            <h3 id="unibo-collapse-row">Tabella orientamento misto</h3>
-            <p class="section-description">Informazioni su riga e colonna, con necessità di duplicare il testo</p>
-            <p>
-              Le informazioni della tabella sono eterogenee e vengono disposte sia per riga che per colonna.<br>
-              Nel responsive i <kbd>th</kbd> che si trovano all'interno del <kbd>thead</kbd> vengono nascosti nella versione responsive 
-              e le etichette vengono duplicate a fianco al valore.<br>
-              Per poter visualizzare l'etichetta di fianco al valore è necessario duplicare la label dentro il <kbd>td</kbd> 
-              usando <kbd><span class="data-label"></span></kbd>.
-            </p>
+          
+          	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+          					
+                    <h3 id="unibo-collapse-column">Tabella orientata per colonne</h3>
+                    <p>
+                      Nella maggior parte dei casi, le informazioni delle tabelle sono disposte per colonne. In questo caso, nel
+                      responsive il <kbd>thead</kbd> e il <kbd>tbody</kbd> vengono affiancati.
+                    </p>
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-5 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_responsive_table.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-7 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classe da utilizzare:</strong> 
+          					<kbd>collapse-column</kbd>
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
+            
+            <pre>
+              <code class="html">
+                <table class="collapse-column">
+                    <thead>
+                        <tr>
+                            <th>Harry Potter</th>
+                            <th>Severus Piton</th>
+                            <th>Hermione Granger</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Grifondoro</td>
+                            <td>Serpeverde</td>
+                            <td>Corvonero</td>
+                        </tr>
+                        <tr>
+                            <td>Bacchetta formata da legno di Agrifoglio e un nucleo di Piuma di Fenice</td>
+                            <td>Bacchetta formata da betulla e crine di unicorno</td>
+                            <td>Bacchetta formata da vite e corda di cuore di drago</td>
+                        </tr>
+                        <tr>
+                            <td>Patronus Cervo</td>
+                            <td>Patronus Cerva</td>
+                            <td>Patronus Lontra</td>
+                        </tr>
+                    </tbody>
+                    
+                </table>    </code>
+            </pre>
+            <div class="grid-x grid-padding-x">
+              <div class="cell large-10">
+                <table class="collapse-column">
+                    <thead>
+                        <tr>
+                            <th>Harry Potter</th>
+                            <th>Severus Piton</th>
+                            <th>Hermione Granger</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Grifondoro</td>
+                            <td>Serpeverde</td>
+                            <td>Corvonero</td>
+                        </tr>
+                        <tr>
+                            <td>Bacchetta formata da legno di Agrifoglio e un nucleo di Piuma di Fenice</td>
+                            <td>Bacchetta formata da betulla e crine di unicorno</td>
+                            <td>Bacchetta formata da vite e corda di cuore di drago</td>
+                        </tr>
+                        <tr>
+                            <td>Patronus Cervo</td>
+                            <td>Patronus Cerva</td>
+                            <td>Patronus Lontra</td>
+                        </tr>
+                    </tbody>
+                    
+                </table>    </div>
+            </div>
+          </section>
+          <section>
+          
+          	<div class="u-feature background-light padding-top-1 padding-bottom-1 margin-top-1">  
+          		<div class="grid-container">
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-12 cell">                   
+                            
+                    <h3 id="unibo-collapse-mixed">Tabella orientamento misto</h3>
+                    <p>
+                      Le informazioni della tabella sono eterogenee e vengono disposte sia per riga che per colonna.<br>
+                      Nel responsive i <kbd>th</kbd> che si trovano all'interno del <kbd>thead</kbd> vengono nascosti nella versione responsive 
+                      e le etichette vengono duplicate a fianco al valore.<br>
+                      Per poter visualizzare l'etichetta di fianco al valore è <strong>necessario duplicare</strong> la label per ogni valore dentro il <kbd>td</kbd> 
+                      usando <code>&lt;span class="data-label"&gt;</code>.
+          				</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+          				<div class="large-5 cell">
+          					<div class="icon-left">
+          					<i class="fab fa-css3-alt fa-2x"></i>
+          					<strong>SCSS da includere:</strong> <kbd>u_responsive_table.scss</kbd>
+          					</div>
+          				</div>
+          				<div class="large-7 cell">
+          					<div class="icon-left">
+          					<i class="far fa-file-code fa-2x"></i>
+          					<strong>Classe da utilizzare:</strong> 
+          					<kbd>double-label</kbd>
+          					</div>
+          					
+          				</div>
+          			</div>
+          		</div>  
+          	</div>
             <pre>
               <code class="html">
                  <table class="double-label">
