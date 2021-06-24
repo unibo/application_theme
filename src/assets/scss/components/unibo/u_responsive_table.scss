@@ -5,42 +5,71 @@ table{
         @include breakpoint($table-label-resolution - 1px down){            
             display: flex;
             flex-direction: row;            
+            border-top: 1px solid $e-gray;
+            border-right: 1px solid $e-gray;
             tr,
             th,
             td {
                 display: block;
-                width: 100%;
             }
             td,
             th {
+                border-left: 1px solid $e-gray;
                 border-bottom: 1px solid $e-gray;
                 padding-top: $padding-xs;
                 padding-bottom: $padding-xs;
                 background-color: #fff;
             }
             thead{
-                border-bottom: none;
-                border-right: none;
+                border-top: 1px solid $e-gray;
+                flex-grow: 1;
+                border: none;
                 th{
-                    font-weight: normal;
-                    text-align: left;
+                    white-space: nowrap;
+                    background-color: $light-gray;
                 }
                 tr{
-                    border-bottom: none;
+                    white-space: nowrap;
                 }
             }
             tbody{
+                border: none;
                 display: flex;
                 flex-grow: 1;
-                border-bottom: none;
-                text-align: right;
-                border-left: none;
-                font-weight: bold;
+                overflow-x: scroll;
                 tr{
-                    border-bottom: none;
+                    white-space: nowrap;
                 }
             }
         }
+
+        .hide-label{
+            @include breakpoint($table-label-resolution){
+                display: none;
+            }
+        }
+        .show-label{
+            @include breakpoint($table-label-resolution - 1px down){
+                display: none;
+            }
+        }
+    }
+    &.collapse-row{
+        @include breakpoint($table-label-resolution - 1px down){
+            tr{
+                th,
+                td{
+                    display: block;
+                    &:not(:first-child){
+                        padding-top: $padding-xs;
+                    }
+                    &:not(:last-child){
+                        padding-bottom: $padding-xs;
+                    }
+                }
+            }
+        }
+
         .hide-label{
             @include breakpoint($table-label-resolution){
                 display: none;
