@@ -2,11 +2,6 @@ body{
   font-size: 112.5%;
 }
 
-main {
-  &.nopadding{
-    padding: 0;
-  }
-}
 
 aside.cell,
 nav.cell {
@@ -18,14 +13,6 @@ aside.cell {
   margin-top: $margin;
   @include breakpoint(medium){
     margin-top: 0;
-  }
-}
-
-.cell,
-.columns {  
-  &.nopadding {
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -50,10 +37,6 @@ aside.cell {
   > .grid-x {
     width: 100%;        
   }
-}
-
-.u-magellan-menu {
-  background-color: $white;
 }
 
 .colored-icon {
@@ -81,19 +64,4 @@ i.colored-icon {
 
 .color-primary {
   color: $primary-color;
-}
-
-//fix temporanea per select (il compilatore non ha autoprefix)
-select {
-  -webkit-appearance: none;
-  -moz-appearance:    none;
-  appearance:         none;
-}
-
-.padding-top-big {
-  padding-top: $padding-big;
-}
-
-.margin-top-big {
-  padding-top: $margin-big;
 }
