@@ -13,10 +13,12 @@
             font-size: 20px;
             margin-top: -16px;
             font-weight: bold;
+            color: $primary-color;
         }
     }
     .accordion-item{
         .accordion-title{
+            color: $base-font-color;
             line-height: normal;
         }
         &.is-active{

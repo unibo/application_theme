@@ -24,9 +24,12 @@ preso spunto per sviluppare le nostre soluzioni:
 <p>
 La soluzione <strong>collapse rows</strong> è sviluppata di seguito nella sezione <a href="#unibo-collapse-row">Tabella orientata per righe</a>.
 </p>
-Infine, la soluzione <strong>collapse columns</strong> non è possibile
-svilupparla come nella proposta di css-tricks indicata sopra, senza modificarne l'html. <br />
-Per questo motivo, le tabelle con orientamento in colonna sono fatte con una variante ad hoc che non prevede l'utilizzo di js o etichette nascoste.
+Infine, non è possibile sviluppare la proposta <strong>collapse columns</strong> come 
+indicata da css-tricks, senza modificare l'html. <br />
+Per questo motivo, le tabelle con orientamento in colonna, hanno un comportamento differente e 
+le intestazionin definite nel <code>&lt;thed&gt;</code> vengono affiancate al <code>&lt;tbody&gt;</code>.
+Se le colonne nel <code>&lt;tbody&gt;</code> sono maggiori rispetto allo spazio in pagina, compare lo scroll.  <br />
+Questa soluzione non prevede l'utilizzo di js o etichette nascoste duplicate.
 </p>
 <p>
 Tutte le soluzioni precedenti sono ottimali nel caso siano tabelle con valori semplici.
@@ -87,8 +90,9 @@ Per tabelle più complesse si vedano le <a href="#unibo-collapse-mixed">tabelle 
 					
           <h3 id="unibo-collapse-column">Tabella orientata per colonne</h3>
           <p>
-            Nella maggior parte dei casi, le informazioni delle tabelle sono disposte per colonne. In questo caso, nel
-            responsive il <kbd>thead</kbd> e il <kbd>tbody</kbd> vengono affiancati.
+            Nella maggior parte dei casi, le informazioni delle tabelle sono disposte per colonne. In questo caso nel
+            responsive, il <kbd>thead</kbd> e il <kbd>tbody</kbd> vengono affiancati e sul <kbd>tbody</kbd> compare lo scoll
+            quando non c'è abbastanza spazio. Inoltre, i valori nel <code>&lt;td&gt;</code> sono sempre su una riga e non vanno mai a capo.
           </p>
 				</div>
 			</div>
