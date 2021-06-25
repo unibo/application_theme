@@ -28,6 +28,7 @@
     
     h1 {
         margin-bottom: 20px; 
+        position: relative;
         @include breakpoint(large){
             @include huge-fancy();
             margin-bottom: 40px; 
@@ -61,7 +62,6 @@
 
     //progress bar
     .progress {
-        margin-bottom: $margin-xs;
         .progress-meter {
             background-color: darken($theme-color, 20);
         }
