@@ -37,19 +37,19 @@
 }
 
 @for $spacer from 0 through 3{
-    .border-#{$spacer} {
+    &.border-#{$spacer} {
         @include border($spacer);
     }
-    .border-top-#{$spacer} {
+    &.border-top-#{$spacer} {
         @include border-top($spacer);
     }
-    .border-bottom-#{$spacer} {
+    &.border-bottom-#{$spacer} {
         @include border-bottom($spacer);
     }
-    .border-right-#{$spacer} {
+    &.border-right-#{$spacer} {
         @include border-right($spacer);
     }
-    .border-left-#{$spacer} {
+    &.border-left-#{$spacer} {
         @include border-left($spacer);
     }
 }

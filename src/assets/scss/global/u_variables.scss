@@ -14,13 +14,13 @@ $u-stati-palette: (
 
 // Padding e Margin
 $margin: $global-margin;
-$margin-xs: calc($margin / 4);
-$margin-small: calc( $margin / 2);
+$margin-xs: $margin / 4;
+$margin-small: $margin / 2;
 $margin-big: $margin * 2;
 
 $padding: $global-padding;
-$padding-xs: calc($padding / 4);
-$padding-small: calc($padding / 2);
+$padding-xs: $padding / 4;
+$padding-small: $padding / 2;
 $padding-big: $padding * 2;
 
 
