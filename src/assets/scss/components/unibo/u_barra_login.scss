@@ -89,6 +89,8 @@
 
     > li > a {
       background: transparent;
+      padding-top: 0;
+      padding-bottom: 0;
     }
     
     &[role="menubar"] {
