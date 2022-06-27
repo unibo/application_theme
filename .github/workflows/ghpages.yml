@@ -8,12 +8,15 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           submodules: true
           fetch-depth: 0
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '10'
       - name: Install
         run: yarn install
       - name: Build
