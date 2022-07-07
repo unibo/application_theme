@@ -1,5 +1,4 @@
 @mixin u-feature{
-    margin-bottom: $margin;
     h2 {
         @include very-large-fancy;
     }
