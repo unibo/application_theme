@@ -1,0 +1,34 @@
+
+.callout{
+    border-radius: 10px;
+    .fas{
+        margin-right: $margin-xs;
+    }
+    &.primary{
+        .svg-inline--fa,
+        .fas{
+            color: $primary-color;
+        }
+    }
+    &.secondary{
+        border: 1px solid rgba($black, 0.10);
+    }
+    &.success{
+        .svg-inline--fa,
+        .fas{
+            color: $success-color;
+        }
+    }
+    &.warning{
+        .svg-inline--fa,
+        .fas{
+            color: $warning-color;
+        }
+    }
+    &.alert{
+        .svg-inline--fa,
+        .fas{
+            color: $alert-color;
+        }
+    }
+}
