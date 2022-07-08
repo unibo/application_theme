@@ -4,7 +4,6 @@
   list-style-type: none;
 	
   li {
-    @include small-fancy();
     line-height: 28px;
     position: relative;
     font-weight: 400;

@@ -13,7 +13,8 @@
   
   .home {
     text-transform: none;
-    
+    @include large-fancy();
+    line-height: 23px;
     a {
       color: inherit;
       &:hover {

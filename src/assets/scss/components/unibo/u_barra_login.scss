@@ -2,7 +2,6 @@
 
 
 .u-barra-login {
-  @include small();
   position: relative;
   z-index: 9;
   background: $primary-color;
