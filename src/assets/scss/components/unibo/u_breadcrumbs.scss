@@ -12,11 +12,7 @@
   }
   
   .home {
-    @include very-large-fancy();
-    font-weight: 300;
     text-transform: none;
-    position: relative;
-    top: -2px;
     
     a {
       color: inherit;
@@ -27,13 +23,6 @@
     //fratelli di .home
     ~ li {
       text-transform: none;
-      font-size: 1.25em;
-      &:not(:last-child)::after {
-        top: 0px;
-      }
-    }
-    &:not(:last-child)::after {
-      top: 0px;
     }
   }
   + main {
