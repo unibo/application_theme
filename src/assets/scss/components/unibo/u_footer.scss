@@ -1,25 +1,15 @@
 footer {
   background-color: $dark-gray;
-  background-image: linear-gradient($dark-gray, darken($dark-gray, 10%));
   color: $white;
   padding: $padding 0;
   text-align: center;
   line-height: 1.4;
   flex: none;
-  
-  @include breakpoint(large){
-    line-height: normal;
-    text-align: left;
-  }
-  
+  position: relative;
+  @include small();
   .link-container {
     text-align: center;
-    padding-top: $padding;
-    
-    @include breakpoint(large){
-      float: right;
-      padding-top: 0;
-    }
+    padding-top: $padding-xs;
   }
   
   a,
@@ -28,5 +18,14 @@ footer {
   a:link {
     color: $white;
     text-decoration: underline;
+  }
+}
+@include breakpoint(medium down){
+  footer {
+    padding-top: $padding;
+      &::before,
+      &::after{
+        display: none;
+      }
   }
 }
