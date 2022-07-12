@@ -25,7 +25,8 @@
 
   a {
     //color: color-pick-contrast($u-barra-login, (#fff, $base-font-color));
-    color: $u-barra-login;
+    //color: $u-barra-login;
+    color: $base-font-color;
     text-decoration: none;
     display: inline-block;
     border-bottom: 0;
@@ -150,6 +151,7 @@
         > a {
           display: block;
           line-height: 34px;
+          font-weight: 300;
           &:after { // Dropdown Arrow
               border: inset 5px;
               border-top-style: solid;
