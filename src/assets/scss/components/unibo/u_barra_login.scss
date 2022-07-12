@@ -4,7 +4,7 @@
 .u-barra-login {
   position: relative;
   z-index: 9;
-  background: $primary-color;
+  background: $u-barra-login;
   height: 4px;
   margin-bottom: 10px;
 
@@ -21,7 +21,7 @@
   }
 
   a {
-    color: color-pick-contrast($primary-color, (#fff, $base-font-color));
+    color: color-pick-contrast($u-barra-login, (#fff, $base-font-color));
     text-decoration: none;
     display: inline-block;
     border-bottom: 0;
@@ -38,8 +38,8 @@
     float: right;
     > li:not(.is-dropdown-submenu-item) {
       margin-right: 2px;
-      background-color: $primary-color;
-      border-top: 4px solid $primary-color;
+      background-color: $u-barra-login;
+      border-top: 4px solid $u-barra-login;
       border-radius: $global-radius;
       white-space: nowrap;
       > a {
@@ -106,7 +106,7 @@
       }
       .is-active {
         
-        background-color: lighten($primary-color, 50);
+        background-color: lighten($u-barra-login, 50);
         a {
           color: $light-black;
 
@@ -165,7 +165,7 @@
         &.is-dropdown-submenu-parent {
         
           &:hover {
-            background-color: lighten($primary-color, 50);
+            background-color: lighten($u-barra-login, 50);
             
             > a {
               color: $light-black;

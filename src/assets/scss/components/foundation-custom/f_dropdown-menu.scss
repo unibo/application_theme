@@ -5,8 +5,9 @@
             border-bottom: 1px solid $medium-gray;
         }
         &.is-active > a {
+            i,
             svg {
-                color: $dropdown-menu-item-color-active;
+                color: inherit;
             }
         
             &::after {
