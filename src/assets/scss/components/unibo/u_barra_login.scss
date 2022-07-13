@@ -4,14 +4,13 @@
 .u-barra-login {
   position: relative;
   z-index: 9;
-  background: $u-barra-login;
-  height: 4px;
+  background-color: transparent;
   margin-bottom: 10px;
+  height: 0;
 
   @include breakpoint(small only){
     height: auto;
-    background-color: transparent;
-    border-top: 4px solid $u-barra-login;
+    border-bottom: 1px solid $e-gray;
     margin-bottom: 0;
   }
 
@@ -24,15 +23,10 @@
   }
 
   a {
-    //color: color-pick-contrast($u-barra-login, (#fff, $base-font-color));
-    //color: $u-barra-login;
     color: $base-font-color;
     text-decoration: none;
     display: inline-block;
     border-bottom: 0;
-    @include breakpoint(small only){
-        //color: color-pick-contrast($u-barra-login, (#fff, $base-font-color));
-    }
   }
 
   //sso
@@ -44,10 +38,18 @@
 
   .menu {
     float: right;
+
+    li:last-of-type{
+      margin-right: $margin-small;
+    }
+
+    &:not(.submenu) > li{
+      font-weight: 300;
+    }
+    //non c'è apri chiudi (dropdown)
     > li:not(.is-dropdown-submenu-item) {
       margin-right: 2px;
       margin-top: 4px;
-      //background-color: $u-barra-login;
       white-space: nowrap;
       @include breakpoint(small only){
         margin-top: 0;
@@ -61,147 +63,79 @@
         }
       }
     }
-
-    li:last-of-type{
-      margin-right: $margin-small;
-    }
-    @include breakpoint(small only){
-      .is-dropdown-submenu{
-        background: #fff;
-      }
-    }
-  }
-
-  //elementi senza dropdown arrow
-  .no-arrow {
-    padding-right: 0 !important;
-    &:after { // Nascondo la freccia per dispositivi da medium in su
-      display: none !important;
-    }
     
-  }
-
-  .is-dropdown-submenu {
-    border-top: 0;
-  }
-
-  .dropdown.menu { // Foundation menu
-    opacity: 0;
-    transition: opacity 0.5s;
-    overflow: hidden;
-    
-
-    > li > a {
-      background: transparent;
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-    
-    &[role="menubar"] {
-      opacity: 1;
-      overflow: visible;
+    //c'è apri e chiudi
+    &.dropdown {
       display: flex;
       line-height: 34px;
-      
-      &.vertical {
-        > li {
-          .is-dropdown-submenu {
-            &.vertical {
-                margin-left: -1px;
-                top: 100%;
-            }
-          }
-        }
-      }
-      .is-active {
-        
-        //background-color: lighten($u-barra-login, 50);
-        a {
-          color: $light-black;
-
-          &::after {
-            border-color: $light-black transparent transparent;
-          }
-        }
-        
-        > .is-dropdown-submenu {
-          border: 1px solid $medium-gray;
-          border-radius: $global-radius;
-          /*cambio apertura popup perché il menu è a destra */
-          left: auto;
-          right: 0px;
-        }        
-      }
-    }
-    
-    > li {
-      transition: opacity 2s linear;
-      
-
-      .is-dropdown-submenu.vertical {
-        //eliminato min-width perché forza la larghezza massima al 100% del contenitore
-        min-width: 100%;
-        //min-width: 100px;
-        //max-width: 250px;
-      }
-      &.is-dropdown-submenu-parent {
-        transition: background-color 0.2s;    
-        box-sizing: content-box;    
-        
+      > li {
         > a {
-          display: block;
-          line-height: 34px;
-          font-weight: 300;
-          &:after { // Dropdown Arrow
-              border: inset 5px;
-              border-top-style: solid;
-              right: 5px;
-              border-color: currentColor transparent transparent;
-            }
-        }
-        
-        .menu {
-          li {
-            a {
-              transition: background-color 0.2s;
-              display: block;
-            }
-          }
+          padding-top: 0;
+          padding-bottom: 0;
         }
       }
 
-      @include breakpoint(large){
-        &.is-dropdown-submenu-parent {
-        
-          &:hover {
-            //background-color: lighten($u-barra-login, 58);
-            
-            > a {
-              color: $light-black;
-            }
-          }
+
+      .is-dropdown-submenu {
+        border-radius: $global-radius;
+        a{
+          display: block;
         }
-        > a{
-          &:hover {
-            color: $light-black;
-            background-color: transparent;
-          }
+      }  
+    
+      li.is-dropdown-submenu-parent .no-arrow::after{
+        display: none;
+      }
+
+      .is-active {
+        //background-color: $e-gray;
+        a {
+          //color: $light-black;
+
         }
 
-        .menu {
-          li {
-            a {              
-              &:hover {
-                background-color: darken($white, 12%);
-                color: darken($light-black, 25%);
+      }
+
+      > li {       
+        
+  
+        @include breakpoint(large){
+          &.is-dropdown-submenu-parent {
+          
+            &:hover {            
+              > a {
+                //color: $light-black;
               }
             }
           }
+          > a{
+            &:hover {
+              //  color: $light-black;
+              //  background-color: transparent;
+            }
+          }
+  
+          .menu {
+            li {
+              a {              
+                &:hover {
+                  background-color: $e-gray;
+                  //  color: darken($light-black, 25%);
+                }
+              }
+            }
+          }
+  
         }
-
       }
     }
   }
+  .u-lang{
+    .is-dropdown-submenu {
+      min-width: 100%;
+    }
+  }
+
 }
 
 /* stile per impersonamento */
