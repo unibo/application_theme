@@ -8,6 +8,11 @@ nav.cell {
   background-color: $light-gray;
 }
 
+h5,
+h6{
+  font-weight: 500;
+}
+
 aside.cell {
   overflow: hidden;
   margin-top: $margin;

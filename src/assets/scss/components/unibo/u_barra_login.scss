@@ -37,6 +37,7 @@
   .menu {
     float: right;
     line-height: 27px;
+    background-color: #fff;
 
     li:last-of-type{
       margin-right: $margin-small;
@@ -48,7 +49,6 @@
     //non c'è apri chiudi (dropdown)
     > li:not(.is-dropdown-submenu-item) {
       margin-right: 2px;
-      margin-top: 4px;
       white-space: nowrap;
       @include breakpoint(small only){
         margin-top: 0;

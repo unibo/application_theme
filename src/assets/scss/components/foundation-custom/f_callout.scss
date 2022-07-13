@@ -5,6 +5,7 @@
         margin-right: $margin-xs;
     }
     &.primary{
+        border: 1px solid rgba($primary-color, 0.10);
         .svg-inline--fa,
         .fas{
             color: $primary-color;
@@ -14,18 +15,21 @@
         border: 1px solid rgba($black, 0.10);
     }
     &.success{
+        border: 1px solid rgba($success-color, 0.10);
         .svg-inline--fa,
         .fas{
             color: $success-color;
         }
     }
     &.warning{
+        border: 1px solid rgba($warning-color, 0.10);
         .svg-inline--fa,
         .fas{
             color: $warning-color;
         }
     }
     &.alert{
+        border: 1px solid rgba($alert-color, 0.10);
         .svg-inline--fa,
         .fas{
             color: $alert-color;
