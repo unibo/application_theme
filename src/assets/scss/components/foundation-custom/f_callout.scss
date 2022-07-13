@@ -15,14 +15,14 @@
         border: 1px solid rgba($black, 0.10);
     }
     &.success{
-        border: 1px solid rgba($success-color, 0.10);
+        border: 1px solid rgba($success-color, 0.20);
         .svg-inline--fa,
         .fas{
             color: $success-color;
         }
     }
     &.warning{
-        border: 1px solid rgba($warning-color, 0.10);
+        border: 1px solid rgba($warning-color, 0.20);
         .svg-inline--fa,
         .fas{
             color: $warning-color;
