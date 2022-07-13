@@ -5,13 +5,11 @@
   position: relative;
   z-index: 9;
   background-color: transparent;
-  margin-bottom: 10px;
   height: 0;
 
-  @include breakpoint(small only){
+  @include breakpoint(medium only){
     height: auto;
     border-bottom: 1px solid $e-gray;
-    margin-bottom: 0;
   }
 
   //fix per float
@@ -38,6 +36,7 @@
 
   .menu {
     float: right;
+    line-height: 27px;
 
     li:last-of-type{
       margin-right: $margin-small;
@@ -67,7 +66,6 @@
     //c'è apri e chiudi
     &.dropdown {
       display: flex;
-      line-height: 34px;
       > li {
         > a {
           padding-top: 0;
@@ -185,44 +183,5 @@
       }
     }
     
-  }
-}
-
-
-@include breakpoint(small only){
-  /* comportamento quando c'è pulsante apri-chiudi (le sottovoci devono essere width 100% e non avere il float) */
-  div[data-responsive-toggle]{
-    + .u-barra-login{
-      .dropdown.menu[role="menubar"] {
-        border: none;
-        float: none;
-        display: block;
-        > li{
-          display: block;
-          width: 100%;
-          border-right: none;
-          border-bottom: 1px solid $light-black;
-          padding-right: 0;
-          box-sizing: inherit;
-        }
-        .is-active {
-          > a{
-            border-left: 1px solid $medium-gray;
-            border-right: 1px solid $medium-gray;
-          }
-          > .is-dropdown-submenu{
-            right: auto;
-            text-align: left;
-          }
-        }
-      }
-      /* quando c'è apri/chiudi responsive la lingua va allineata a sinistra */
-      .u-lang {
-        text-align: left;
-        a {
-          text-align: left;
-        }
-      }
-    }
   }
 }
