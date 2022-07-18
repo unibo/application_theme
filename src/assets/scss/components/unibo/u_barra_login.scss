@@ -7,12 +7,8 @@
   background-color: transparent;
   height: 0;
   //l'elemento successivo deve prevedere lo spazio per la toolbar
-  
   + * {
     padding-top: 20px;
-    @include breakpoint(medium){
-        padding-top: 5px;
-    }
 }
 
   //fix per float
