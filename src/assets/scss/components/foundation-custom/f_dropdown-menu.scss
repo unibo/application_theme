@@ -11,7 +11,7 @@
             }
         
             &::after {
-                border-color: $dropdown-menu-item-color-active transparent transparent;
+                border-color: currentColor transparent transparent;
             }
         }
     }

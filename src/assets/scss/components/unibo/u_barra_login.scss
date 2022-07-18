@@ -7,14 +7,13 @@
   background-color: transparent;
   height: 0;
   //l'elemento successivo deve prevedere lo spazio per la toolbar
+  
   + * {
-    padding-top: 25px;
-  }
-
-  @include breakpoint(medium only){
-    height: auto;
-    border-bottom: 1px solid $e-gray;
-  }
+    padding-top: 20px;
+    @include breakpoint(medium){
+        padding-top: 5px;
+    }
+}
 
   //fix per float
   &:after{
@@ -81,6 +80,7 @@
 
       .is-dropdown-submenu {
         border-radius: $global-radius;
+        overflow: hidden;
         a{
           display: block;
         }
@@ -89,14 +89,9 @@
       li.is-dropdown-submenu-parent .no-arrow::after{
         display: none;
       }
-
-      .is-active {
-        //background-color: $e-gray;
-        a {
-          //color: $light-black;
-
-        }
-
+      
+      li.is-active > a {
+        color: $u-barra-login;
       }
 
       > li {       
