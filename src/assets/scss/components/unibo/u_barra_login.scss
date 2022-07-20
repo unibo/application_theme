@@ -8,7 +8,10 @@
   height: 0;
   //l'elemento successivo deve prevedere lo spazio per la toolbar
   + * {
-    padding-top: 20px;
+    padding-top: 24px;
+    @include breakpoint(medium){
+      padding-top: 20px;
+    }
 }
 
   //fix per float
@@ -26,19 +29,31 @@
     border-bottom: 0;
   }
 
-  //sso
-  img {
-    height: 18px;
-    vertical-align: text-top;
-    width: 18px;
+  //sso e icone
+  img,
+  i, 
+  svg {
+    height: 13px;
+    width: 13px;
+    min-width: 13px;
+    text-align: center;
+    @include breakpoint(medium){
+      height: 18px;
+      width: 18px;
+      min-width: 18px;
+    }
   }
-
+  
   .menu {
     float: right;
     line-height: 27px;
     background-color: #fff;
     border-radius: 0px 0px 0px 5px;
-
+    @include small();
+    margin-top: 3px;
+    @include breakpoint(medium){
+      font-size: inherit;
+    }
     li:last-of-type{
       margin-right: $margin-small;
     }
@@ -52,14 +67,6 @@
       white-space: nowrap;
       @include breakpoint(small only){
         margin-top: 0;
-      }
-      > a {
-        img,
-        i, 
-        svg {
-          min-width: 18px;
-          text-align: center;
-        }
       }
     }
     
